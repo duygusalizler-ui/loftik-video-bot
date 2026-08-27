@@ -18,20 +18,59 @@ Hızlıca test etmek için: `python -m src.scraper`
 """
 from __future__ import annotations
 
+import random
 import re
 import time
 from dataclasses import dataclass, field
 from typing import Optional
 from urllib.parse import urljoin
 
-import requests
 from bs4 import BeautifulSoup
+from curl_cffi import requests as cffi_requests
 
 from . import config
 
-HEADERS = {
-    "User-Agent": "Mozilla/5.0 (compatible; LoftikVideoBot/1.0)"
+# Site bir WAF/bot-koruması (ör. Cloudflare) arkasında olduğu için normal
+# `requests` kütüphanesi 520 hatası alıyordu -- TLS parmak izi bot gibi
+# görünüyordu. curl_cffi, gerçek bir Chrome tarayıcısının TLS parmak izini
+# taklit ediyor, bu yüzden onu kullanıyoruz.
+BROWSER_HEADERS = {
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+    "Accept-Language": "tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7",
 }
+IMPERSONATE = "chrome124"
+RETRYABLE_STATUS = {429, 500, 502, 503, 504, 520, 521, 522, 523, 524}
+
+
+def _request(url: str, max_attempts: int = 4):
+    """Yeniden denemeli, tarayıcı-taklitli GET isteği."""
+    last_exc: Exception | None = None
+    for attempt in range(1, max_attempts + 1):
+        try:
+            time.sleep(random.uniform(0.4, 1.2))  # istek deseni çok robotik olmasın
+            resp = cffi_requests.get(
+                url,
+                headers=BROWSER_HEADERS,
+                impersonate=IMPERSONATE,
+                timeout=25,
+            )
+            if resp.status_code in RETRYABLE_STATUS:
+                raise RuntimeError(f"HTTP {resp.status_code} (gecici, tekrar denenecek)")
+            resp.raise_for_status()
+            return resp
+        except Exception as exc:  # noqa: BLE001
+            last_exc = exc
+            wait = attempt * 3
+            print(f"  [{url}] deneme {attempt}/{max_attempts} basarisiz: {exc} -- {wait}sn sonra tekrar")
+            time.sleep(wait)
+    raise last_exc
+
+
+def download_binary(url: str, dest_path: str) -> str:
+    resp = _request(url)
+    with open(dest_path, "wb") as f:
+        f.write(resp.content)
+    return dest_path
 
 
 @dataclass
@@ -47,8 +86,7 @@ class Product:
 
 
 def _get_soup(url: str) -> BeautifulSoup:
-    resp = requests.get(url, headers=HEADERS, timeout=20)
-    resp.raise_for_status()
+    resp = _request(url)
     return BeautifulSoup(resp.text, "html.parser")
 
 
@@ -84,15 +122,23 @@ def list_product_urls(category_url: str, max_pages: int = 20):
 
 
 def list_light_catalog():
-    """Tüm izlenen kategorilerdeki ürünleri toplar (BOT kategorisi hariç)."""
+    """
+    Tüm izlenen kategorilerdeki ürünleri toplar (BOT kategorisi hariç).
+    Bir kategori sürekli hata verirse (site geçici olarak engelliyorsa vb.)
+    tüm otomasyon çökmesin diye o kategoriyi atlar, diğerlerine devam eder.
+    """
     catalog = []
     for cat_url in config.CATEGORY_URLS:
         slug = category_slug_from_url(cat_url)
         if slug in config.EXCLUDED_CATEGORY_SLUGS:
             continue
-        for item in list_product_urls(cat_url):
-            item["category_slug"] = slug
-            catalog.append(item)
+        try:
+            for item in list_product_urls(cat_url):
+                item["category_slug"] = slug
+                catalog.append(item)
+        except Exception as exc:  # noqa: BLE001
+            print(f"UYARI: {cat_url} taranamadi, atlaniyor. Hata: {exc}")
+            continue
     return catalog
 
 

@@ -15,22 +15,12 @@ Ana akış:
 """
 import sys
 import tempfile
-from pathlib import Path
-
-import requests
 
 from . import caption as caption_mod
 from . import scraper, state
 from .gemini_video import generate_product_video
 from .story_image import build_story_image
 from .telegram_post import send_photo, send_video
-
-
-def _download(url: str, dest: str) -> str:
-    resp = requests.get(url, timeout=30)
-    resp.raise_for_status()
-    Path(dest).write_bytes(resp.content)
-    return dest
 
 
 def run() -> None:
@@ -51,7 +41,7 @@ def run() -> None:
         return
 
     with tempfile.TemporaryDirectory() as tmp:
-        image_path = _download(product.main_image, f"{tmp}/product.jpg")
+        image_path = scraper.download_binary(product.main_image, f"{tmp}/product.jpg")
         video_path = f"{tmp}/product_video.mp4"
         story_path = f"{tmp}/story.jpg"
 

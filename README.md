@@ -88,6 +88,15 @@ python -m src.main
   HTML yapısına göre yazıldı. Site teması değişirse `src/scraper.py`
   içindeki seçicileri güncellemek gerekebilir — `python -m src.scraper`
   ile hızlıca test edebilirsin.
+- **"520 Server Error" hatası**: Site bir bot koruması (WAF/Cloudflare vb.)
+  arkasında olduğu için scraper `curl_cffi` ile tarayıcı TLS parmak izini
+  taklit ediyor + otomatik yeniden deniyor. Bu düzeltmeden sonra da hata
+  **sürekli** tekrarlarsa, muhtemel sebep sitenin GitHub Actions'ın
+  sunucu IP aralığını toptan engellemesidir — bu durumda tek çözüm bir
+  proxy servisi (ör. residential proxy) kullanmak ya da GitHub Actions
+  yerine kendi sunucunda (self-hosted runner) çalıştırmaktır. Ara sıra
+  (her çalışmada değil) 520 alman normal, otomatik yeniden deneme onu
+  zaten çözer.
 - **Instagram**: Şimdilik video ve hikaye görseli Telegram'a düşüyor,
   oradan Instagram'a elle paylaşabilirsin (günde 2 defa istediğin gibi
   planlayabilirsin). Instagram Graph API ile tam otomatik paylaşım için
