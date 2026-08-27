@@ -1,0 +1,45 @@
+name: Loftik Otomatik Ürün Videosu
+
+on:
+  schedule:
+    # Saatler UTC'dir (Türkiye yazın UTC+3, saatlere 3 ekleyerek TR saatini bulabilirsin).
+    - cron: "0 6 * * *"    # TR 09:00
+    - cron: "30 9 * * *"   # TR 12:30
+    - cron: "0 13 * * *"   # TR 16:00
+    - cron: "30 16 * * *"  # TR 19:30
+  workflow_dispatch: {}   # Actions sekmesinden elle de tetikleyebilirsin
+
+concurrency:
+  group: loftik-video-bot
+  cancel-in-progress: false
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Bağımlılıkları kur
+        run: pip install -r requirements.txt
+
+      - name: Otomasyonu çalıştır
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python -m src.main
+
+      - name: posted.json değişikliğini kaydet
+        run: |
+          git config user.name "loftik-video-bot"
+          git config user.email "actions@github.com"
+          git add data/posted.json
+          git diff --cached --quiet || git commit -m "chore: posted.json güncellendi [skip ci]"
+          git push
