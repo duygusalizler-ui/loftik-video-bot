@@ -50,11 +50,38 @@ Repo → **Settings → Actions → General → Workflow permissions** →
 **"Read and write permissions"** seç. (posted.json'u otomatik commit
 edebilmesi için gerekli.)
 
-### 4. Zamanlamayı ayarla
+### 4. Zamanlama (ÖNEMLİ -- GitHub'ın kendi cron'u yerine dış servis)
 
-`.github/workflows/auto_post.yml` içindeki `cron` satırları günde 4 kez
-tetikliyor (TR saatiyle 09:00 / 12:30 / 16:00 / 19:30). İstersen saatleri
-veya sıklığı değiştir — sadece cron saatlerinin **UTC** olduğunu unutma.
+GitHub Actions'ın kendi `schedule:` tetikleyicisi bu repoda güvenilir çalışmadı
+(hiç ateşlenmedi). Bunun yerine **cron-job.org** (ücretsiz) gibi dış bir
+servisten, `workflow_dispatch` endpoint'ine düzenli POST isteği atarak
+tetikliyoruz.
+
+**Kurulum:**
+
+1. https://cron-job.org adresinde ücretsiz hesap aç
+2. **Create cronjob** → şu bilgileri gir:
+   - **URL**: `https://api.github.com/repos/duygusalizler-ui/loftik-video-bot/actions/workflows/auto_post.yml/dispatches`
+   - **Request method**: `POST`
+   - **Schedule**: Custom → `10 6,8,11,13,16 * * *` (bu, TR saatiyle 09:10, 11:10, 14:10, 16:10, 19:10 demek -- günde 5 kez)
+   - **Headers** (Advanced/Headers sekmesinde ekle):
+     - `Authorization: Bearer <TOKEN>`
+     - `Accept: application/vnd.github+json`
+     - `Content-Type: application/json`
+   - **Request body**: `{"ref":"main"}`
+3. `<TOKEN>` için: github.com → Settings → Developer settings → Personal access
+   tokens → Fine-grained tokens → yeni token:
+   - Resource owner: `duygusalizler-ui`
+   - Repository access: Only select repositories → `loftik-video-bot`
+   - Permissions: **Contents** (Read and write), **Workflows** (Read and write)
+   - **Expiration**: bu token cron-job.org'da uzun süre kalacak, en uzun
+     seçeneği (genelde 1 yıl) seç ve takvime bir hatırlatma koy
+4. Kaydet, cron-job.org'un "Test run" / "Execute now" butonuyla bir kere
+   elle test et -- Actions sekmesinde yeni bir run görmelisin
+
+Bu token GitHub'a değil, cron-job.org'a kayıtlı olacak -- yani onu Claude'a
+tekrar yapıştırman gerekmiyor, doğrudan cron-job.org'un header alanına
+kendin gireceksin.
 
 ### 5. İlk testi çalıştır
 

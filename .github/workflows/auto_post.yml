@@ -1,14 +1,12 @@
 name: Loftik Otomatik Ürün Videosu
 
 on:
-  schedule:
-    # Saatler UTC'dir (Türkiye yazın UTC+3, saatlere 3 ekleyerek TR saatini bulabilirsin).
-    - cron: "5 6 * * *"    # TR 09:05
-    - cron: "35 8 * * *"   # TR 11:35
-    - cron: "5 11 * * *"   # TR 14:05
-    - cron: "35 13 * * *"  # TR 16:35
-    - cron: "35 16 * * *"  # TR 19:35
-  workflow_dispatch: {}   # Actions sekmesinden elle de tetikleyebilirsin
+  # GitHub'ın kendi `schedule:` tetikleyicisi bu repoda hic ates almadi
+  # (kanit: butun run gecmisi "workflow_dispatch" -- tek bir "schedule"
+  # event'i bile yok). Bu yuzden zamanlamayi disaridan (cron-job.org gibi
+  # ucretsiz bir servisten) bu workflow_dispatch endpoint'ine POST atarak
+  # yapiyoruz. Kurulum icin README.md'ye bak.
+  workflow_dispatch: {}
 
 concurrency:
   group: loftik-video-bot
