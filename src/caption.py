@@ -3,16 +3,10 @@ import random
 
 from . import config
 
-HASHTAG_POOL = [
-    "#sneaker",
-    "#ayakkabı",
-    "#günlükstil",
-    "#ayakkabımoda",
-    "#kombin",
-    "#erkekmoda",
-    "#kadınmoda",
-    "#style",
-]
+# Cinsiyet-nötr etiketler (her ürün için kullanılabilir)
+NEUTRAL_HASHTAGS = ["#sneaker", "#ayakkabı", "#günlükstil", "#ayakkabımoda", "#kombin", "#style"]
+MALE_HASHTAGS = ["#erkekmoda", "#erkekayakkabı", "#erkekstil"]
+FEMALE_HASHTAGS = ["#kadınmoda", "#kadınayakkabı", "#kadınstil"]
 
 # Kategori slug'ını okunabilir bir Türkçe etikete çeviriyor (bir tür "özellik" satırı).
 CATEGORY_LABELS = {
@@ -48,6 +42,28 @@ def build_spec_line(specs) -> str | None:
     return template.format(material=material, lining=lining, heel=heel)
 
 
+def _detect_gender(title: str, category_slug) -> str:
+    combined = f"{title} {category_slug or ''}".upper()
+    has_male = "ERKEK" in combined
+    has_female = "KADIN" in combined
+    if has_male and not has_female:
+        return "male"
+    if has_female and not has_male:
+        return "female"
+    return "neutral"
+
+
+def _hashtags_for(title: str, category_slug) -> list:
+    gender = _detect_gender(title, category_slug)
+    if gender == "male":
+        pool = NEUTRAL_HASHTAGS + MALE_HASHTAGS
+    elif gender == "female":
+        pool = NEUTRAL_HASHTAGS + FEMALE_HASHTAGS
+    else:
+        pool = NEUTRAL_HASHTAGS
+    return random.sample(pool, k=min(4, len(pool)))
+
+
 def build_caption(title: str, brand, category_slug=None, spec_line: str | None = None) -> str:
     lines = [f"✨ {title}"]
     if brand:
@@ -61,7 +77,7 @@ def build_caption(title: str, brand, category_slug=None, spec_line: str | None =
     lines.append("Sipariş vermek için bio'daki linke tıkla 👆")
     lines.append("")
 
-    tags = random.sample(HASHTAG_POOL, k=min(4, len(HASHTAG_POOL)))
+    tags = _hashtags_for(title, category_slug)
     tags.append(config.BRAND_HASHTAG)
     lines.append(" ".join(tags))
 

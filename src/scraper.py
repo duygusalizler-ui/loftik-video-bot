@@ -121,6 +121,19 @@ def list_product_urls(category_url: str, max_pages: int = 20):
     return results
 
 
+BOOT_WORD_RE = re.compile(r"\bBOT\b", re.IGNORECASE)
+
+
+def _is_boot(title: str) -> bool:
+    """
+    Ürün BOT kategorisinde listelenmemiş olsa bile, başlığında "Bot" kelimesi
+    geçiyorsa (ör. bir ürün hem "erkek-ayakkabi" hem "bot" kategorisinde
+    listelenmiş olabilir) yine de eleniyor. Kategori sayfasını hariç tutmak
+    tek başına yetmiyordu.
+    """
+    return bool(BOOT_WORD_RE.search(title))
+
+
 def list_light_catalog():
     """
     Tüm izlenen kategorilerdeki ürünleri toplar (BOT kategorisi hariç).
@@ -134,6 +147,8 @@ def list_light_catalog():
             continue
         try:
             for item in list_product_urls(cat_url):
+                if _is_boot(item["title"]):
+                    continue
                 item["category_slug"] = slug
                 catalog.append(item)
         except Exception as exc:  # noqa: BLE001
