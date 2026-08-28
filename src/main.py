@@ -5,9 +5,10 @@ Ana akış:
 2. Daha önce paylaşılmamış rastgele bir ürün seç
 3. Seçilen ürünün detayını çek (görsel, marka, fiyat)
 4. Ana ürün görselini indir
-5. Görseli "ayaksız" ürün fotoğrafına çevir (en fazla 3 deneme)
-6. Gemini (Veo) ile dikey (9:16) ürün videosu üret
-7. Instagram/Telegram hikayesi için dikey görsel üret
+5. Hikaye görseli için "ayaksız" bir versiyon üret (en fazla 3 deneme)
+6. Gemini (Veo) ile dikey (9:16) ürün videosu üret -- BİLEREK ham (giyili)
+   görselden başlar (~1sn "kapak" gibi), sonra döner podyuma geçiş yapar
+7. Instagram/Telegram hikayesi için dikey (temiz, ayaksız) görsel üret
 8. Chekich.com.tr'de en yakın eşleşen ürünü bulup gerçek malzeme/astar/topuk
    bilgisini çek (bulamazsa uydurmadan atlar)
 9. Açıklama + hashtag oluştur
@@ -48,28 +49,32 @@ def run() -> None:
     with tempfile.TemporaryDirectory() as tmp:
         raw_image_path = scraper.download_binary(product.main_image, f"{tmp}/product_raw.jpg")
 
+        # Video, BİLEREK ham (giyili) görselden başlıyor -- ilk ~1sn "kapak" gibi,
+        # sonra podyuma geçiş yapıyor (bkz. gemini_video.SCENE_PROMPT).
+        # Hikaye görseli (statik) için ise ayrı olarak "ayaksız" temiz görsel üretiyoruz,
+        # çünkü sabit bir görselde yarım kesilmiş bacak iyi durmuyor.
         clean_image_path = f"{tmp}/product_clean.jpg"
-        image_path = raw_image_path
+        story_source_path = raw_image_path
         for attempt in range(1, CLEANUP_MAX_ATTEMPTS + 1):
             try:
-                print(f"Ürün görseli 'ayaksız' hale getiriliyor (deneme {attempt}/{CLEANUP_MAX_ATTEMPTS})...")
+                print(f"Hikaye görseli için 'ayaksız' versiyon üretiliyor (deneme {attempt}/{CLEANUP_MAX_ATTEMPTS})...")
                 clean_product_shot(raw_image_path, clean_image_path)
-                image_path = clean_image_path
+                story_source_path = clean_image_path
                 break
             except Exception as exc:  # noqa: BLE001
                 print(f"UYARI: görsel temizleme denemesi {attempt} başarısız: {exc}")
                 if attempt == CLEANUP_MAX_ATTEMPTS:
-                    print("Tüm denemeler başarısız, orijinal görselle devam ediliyor.")
-                    image_path = raw_image_path
+                    print("Tüm denemeler başarısız, hikaye görseli de ham fotoğraftan üretilecek.")
+                    story_source_path = raw_image_path
 
         video_path = f"{tmp}/product_video.mp4"
         story_path = f"{tmp}/story.jpg"
 
         print("Gemini ile video üretiliyor (birkaç dakika sürebilir)...")
-        generate_product_video(image_path, video_path)
+        generate_product_video(raw_image_path, video_path)
 
         print("Hikaye görseli oluşturuluyor...")
-        build_story_image(image_path, product.title, product.price_text, story_path)
+        build_story_image(story_source_path, product.title, product.price_text, story_path)
 
         spec_line = None
         try:
