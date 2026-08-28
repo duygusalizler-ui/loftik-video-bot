@@ -69,7 +69,7 @@ def run() -> None:
         print("Hikaye görseli oluşturuluyor...")
         build_story_image(image_path, product.title, product.price_text, story_path)
 
-        text = caption_mod.build_caption(product.title, product.brand, product.price_text, product.url)
+        text = caption_mod.build_caption(product.title, product.brand, product.category_slug)
 
         print("Telegram'a gönderiliyor...")
         send_video(video_path, text)
