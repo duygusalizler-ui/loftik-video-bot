@@ -5,11 +5,12 @@ Ana akış:
 2. Daha önce paylaşılmamış rastgele bir ürün seç
 3. Seçilen ürünün detayını çek (görsel, marka, fiyat)
 4. Ana ürün görselini indir
-5. Gemini (Veo) ile dikey (9:16) ürün videosu üret
-6. Instagram/Telegram hikayesi için dikey görsel üret
-7. Açıklama + hashtag oluştur
-8. Telegram'a video + hikaye görselini gönder
-9. data/posted.json dosyasını güncelle (GitHub Actions bunu commit'ler)
+5. Görseli "ayaksız" ürün fotoğrafına çevir (en fazla 3 deneme)
+6. Gemini (Veo) ile dikey (9:16) ürün videosu üret
+7. Instagram/Telegram hikayesi için dikey görsel üret
+8. Açıklama + hashtag oluştur
+9. Telegram'a video + hikaye görselini gönder
+10. data/posted.json dosyasını güncelle (GitHub Actions bunu commit'ler)
 
 Çalıştırmak için: python -m src.main
 """
@@ -21,6 +22,8 @@ from . import scraper, state
 from .gemini_video import clean_product_shot, generate_product_video
 from .story_image import build_story_image
 from .telegram_post import send_photo, send_video
+
+CLEANUP_MAX_ATTEMPTS = 3
 
 
 def run() -> None:
@@ -44,13 +47,18 @@ def run() -> None:
         raw_image_path = scraper.download_binary(product.main_image, f"{tmp}/product_raw.jpg")
 
         clean_image_path = f"{tmp}/product_clean.jpg"
-        try:
-            print("Ürün görseli 'ayaksız' hale getiriliyor...")
-            clean_product_shot(raw_image_path, clean_image_path)
-            image_path = clean_image_path
-        except Exception as exc:  # noqa: BLE001
-            print(f"UYARI: görsel temizleme başarısız ({exc}), orijinal görselle devam ediliyor.")
-            image_path = raw_image_path
+        image_path = raw_image_path
+        for attempt in range(1, CLEANUP_MAX_ATTEMPTS + 1):
+            try:
+                print(f"Ürün görseli 'ayaksız' hale getiriliyor (deneme {attempt}/{CLEANUP_MAX_ATTEMPTS})...")
+                clean_product_shot(raw_image_path, clean_image_path)
+                image_path = clean_image_path
+                break
+            except Exception as exc:  # noqa: BLE001
+                print(f"UYARI: görsel temizleme denemesi {attempt} başarısız: {exc}")
+                if attempt == CLEANUP_MAX_ATTEMPTS:
+                    print("Tüm denemeler başarısız, orijinal görselle devam ediliyor.")
+                    image_path = raw_image_path
 
         video_path = f"{tmp}/product_video.mp4"
         story_path = f"{tmp}/story.jpg"

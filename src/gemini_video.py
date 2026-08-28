@@ -19,17 +19,22 @@ from google.genai import types
 from . import config
 
 SCENE_PROMPT = (
-    "Cinematic product showcase video of the exact pair of shoes shown in the "
+    "Static product showcase video of the exact pair of shoes shown in the "
     "reference image (same shoe, same colorway, same design -- do not change or "
-    "redesign the shoe itself). The shoes rest on a light travertine stone pedestal "
-    "in a sunlit outdoor courtyard, warm golden-hour light, soft natural shadows, "
-    "shallow depth of field, blurred archways in the background. Slow, smooth "
-    "camera push-in with a gentle orbit around the shoes. Elegant, minimal, "
-    "premium footwear advertisement style, vertical mobile-first framing. "
+    "redesign the shoe itself). The camera itself is completely FIXED and STATIC "
+    "-- it does not move, pan, orbit, or zoom at all throughout the whole video. "
+    "The shoes sit on top of a round matte white rotating display podium -- a "
+    "simple circular turntable pedestal, like a professional product-photography "
+    "spinning stand. Only this turntable slowly rotates a full 360 degrees, "
+    "carrying the shoes around in place, showing all angles of the shoes one by "
+    "one, while the camera stays locked in one fixed position the entire time. "
+    "Soft studio-style lighting, shallow depth of field, softly blurred background "
+    "(the background style itself can vary, that part does not matter). Elegant, "
+    "minimal, premium footwear advertisement style, vertical mobile-first framing. "
     "No added text, no added logos. "
     "IMPORTANT: no people, no human body parts, no foot, no leg, no ankle, no skin "
     "anywhere in the video, not even in the first frame -- only the shoes themselves, "
-    "resting on the pedestal, from the very start of the video to the end."
+    "resting on the rotating podium, from the very start of the video to the end."
 )
 
 CLEANUP_PROMPT = (
