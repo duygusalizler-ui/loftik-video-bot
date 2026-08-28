@@ -48,15 +48,28 @@ def generate_product_video(image_path: str, output_path: str) -> str:
     client = _client()
     uploaded = _upload_image(client, image_path)
 
-    operation = client.models.generate_videos(
-        model=config.VIDEO_MODEL,
-        prompt=SCENE_PROMPT,
-        image=uploaded,
-        config=types.GenerateVideosConfig(
-            aspect_ratio=config.VIDEO_ASPECT_RATIO,
-            number_of_videos=1,
-        ),
-    )
+    try:
+        operation = client.models.generate_videos(
+            model=config.VIDEO_MODEL,
+            prompt=SCENE_PROMPT,
+            image=uploaded,
+            config=types.GenerateVideosConfig(
+                aspect_ratio=config.VIDEO_ASPECT_RATIO,
+                number_of_videos=1,
+            ),
+        )
+    except Exception as exc:  # noqa: BLE001
+        msg = str(exc)
+        if "404" in msg or "NOT_FOUND" in msg:
+            raise RuntimeError(
+                "Gemini video modeline erisilemedi (404). Olasi sebepler: "
+                "(1) VEO_MODEL adi bu API anahtarinda mevcut degil -- kontrol "
+                "icin tarayicida https://generativelanguage.googleapis.com/v1beta/models?key=SENIN_KEYIN "
+                "adresini ac, 'veo' ara, gecerli bir model adi sec; "
+                "(2) API anahtarina bagli Cloud projesinde billing kapali olabilir. "
+                "Orijinal hata: " + msg
+            ) from exc
+        raise
 
     # Video üretimi asenkron çalışıyor; operation bitene kadar bekliyoruz.
     while not operation.done:

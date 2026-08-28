@@ -20,11 +20,11 @@ GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
 TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
 TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID")
 
-# Google'ın "Veo 2" modeli hem 16:9 hem 9:16 (dikey) görsel-den-videoyu
-# resmi olarak destekliyor (Ağustos 2026 itibarıyla). Veo 3 bazı arayüzlerde
-# görsel referanslı üretimde henüz sadece 16:9 destekliyor olabilir; sorun
-# yaşarsan güncel duruma https://ai.google.dev/gemini-api/docs/video adresinden bak.
-VIDEO_MODEL = os.environ.get("VEO_MODEL", "veo-2.0-generate-001")
+# Bu API anahtari icin ListModels ile dogrulandi: sadece Veo 3.1 preview
+# modelleri destekleniyor (veo-2.0 / veo-3.0 bu anahtarda YOK). "fast" varyanti
+# hem daha ucuz hem daha hizli uretiyor -- gunde 4-5 video icin mantikli secim.
+# Daha kaliteli ama daha pahali/yavas istersen: veo-3.1-generate-preview
+VIDEO_MODEL = os.environ.get("VEO_MODEL", "veo-3.1-fast-generate-preview")
 VIDEO_ASPECT_RATIO = "9:16"
 
 STATE_FILE = "data/posted.json"
