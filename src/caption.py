@@ -22,14 +22,41 @@ CATEGORY_LABELS = {
     "deri-ayakkabi": "Deri Ayakkabı",
 }
 
+# Chekich'ten bulunan gerçek malzeme/astar/topuk bilgisini her seferinde
+# FARKLI bir cümle kalıbıyla anlatmak için -- bilgiler değişmiyor, sadece
+# anlatım şekli değişiyor. Hiçbir kalıp yeni bir özellik uydurmuyor.
+SPEC_TEMPLATES = [
+    "{material} kullanılarak üretildi, iç kısmında {lining} astar var, topuk yüksekliği {heel}.",
+    "Malzemesi {material}; astarı {lining}; topuğu {heel} yükseklikte.",
+    "{heel} topuk ile rahat bir kullanım sunuyor. Dış yüzeyi {material}, iç astarı {lining}.",
+    "İçi {lining} astarlı, dışı {material}. Topuk yüksekliği {heel}.",
+    "{material} üzerine {lining} iç astar ve {heel} topuk detayına sahip.",
+    "Dış malzeme {material}, iç astar {lining}, topuk {heel}.",
+]
 
-def build_caption(title: str, brand, category_slug=None) -> str:
+
+def build_spec_line(specs) -> str | None:
+    """specs: chekich.ChekichSpecs veya None. Eksik alan varsa uygun kelimeyle atlar."""
+    if specs is None:
+        return None
+    if not (specs.material or specs.lining or specs.heel_height):
+        return None
+    material = specs.material or "kaliteli malzeme"
+    lining = specs.lining or "yumuşak astar"
+    heel = specs.heel_height or "standart yükseklikte"
+    template = random.choice(SPEC_TEMPLATES)
+    return template.format(material=material, lining=lining, heel=heel)
+
+
+def build_caption(title: str, brand, category_slug=None, spec_line: str | None = None) -> str:
     lines = [f"✨ {title}"]
     if brand:
         lines.append(f"Marka: {brand}")
     label = CATEGORY_LABELS.get(category_slug)
     if label:
         lines.append(label)
+    if spec_line:
+        lines.append(spec_line)
     lines.append("")
     lines.append("Sipariş vermek için bio'daki linke tıkla 👆")
     lines.append("")

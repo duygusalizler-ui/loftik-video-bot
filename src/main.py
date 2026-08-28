@@ -8,9 +8,11 @@ Ana akış:
 5. Görseli "ayaksız" ürün fotoğrafına çevir (en fazla 3 deneme)
 6. Gemini (Veo) ile dikey (9:16) ürün videosu üret
 7. Instagram/Telegram hikayesi için dikey görsel üret
-8. Açıklama + hashtag oluştur
-9. Telegram'a video + hikaye görselini gönder
-10. data/posted.json dosyasını güncelle (GitHub Actions bunu commit'ler)
+8. Chekich.com.tr'de en yakın eşleşen ürünü bulup gerçek malzeme/astar/topuk
+   bilgisini çek (bulamazsa uydurmadan atlar)
+9. Açıklama + hashtag oluştur
+10. Telegram'a video + hikaye görselini gönder
+11. data/posted.json dosyasını güncelle (GitHub Actions bunu commit'ler)
 
 Çalıştırmak için: python -m src.main
 """
@@ -18,7 +20,7 @@ import sys
 import tempfile
 
 from . import caption as caption_mod
-from . import scraper, state
+from . import chekich, scraper, state
 from .gemini_video import clean_product_shot, generate_product_video
 from .story_image import build_story_image
 from .telegram_post import send_photo, send_video
@@ -69,7 +71,19 @@ def run() -> None:
         print("Hikaye görseli oluşturuluyor...")
         build_story_image(image_path, product.title, product.price_text, story_path)
 
-        text = caption_mod.build_caption(product.title, product.brand, product.category_slug)
+        spec_line = None
+        try:
+            print("Chekich'te en yakın eşleşen ürün aranıyor (gerçek malzeme/astar bilgisi için)...")
+            specs = chekich.find_matching_specs(product.title)
+            if specs:
+                print(f"Eşleşme bulundu: {specs.matched_title} -> {specs.source_url}")
+                spec_line = caption_mod.build_spec_line(specs)
+            else:
+                print("Yeterince iyi bir eşleşme bulunamadı, özellik satırı eklenmeyecek.")
+        except Exception as exc:  # noqa: BLE001
+            print(f"UYARI: Chekich eşleştirme başarısız ({exc}), özellik satırı olmadan devam ediliyor.")
+
+        text = caption_mod.build_caption(product.title, product.brand, product.category_slug, spec_line)
 
         print("Telegram'a gönderiliyor...")
         send_video(video_path, text)
