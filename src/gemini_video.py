@@ -45,7 +45,15 @@ SCENE_PROMPT = (
     "IMPORTANT: after that opening ~1 second, no person, foot, leg, ankle "
     "or skin should appear anywhere in the video again -- only the pair of "
     "shoes themselves, both together, resting on the rotating podium, for "
-    "the rest of the video."
+    "the rest of the video. "
+    "CRITICAL: the exact colors of the shoes -- upper material, sole, "
+    "laces, every part -- must stay perfectly IDENTICAL throughout the "
+    "entire video, during and after the transition. Do not lighten, "
+    "darken, desaturate, or shift the color of the sole or any other part "
+    "at any point. The sole color in particular must exactly match the "
+    "reference image's sole color the whole time -- if the sole is white "
+    "in the reference image, it must stay exactly that same white the "
+    "whole video; it must never turn grey or any other shade."
 )
 
 CLEANUP_PROMPT = (
