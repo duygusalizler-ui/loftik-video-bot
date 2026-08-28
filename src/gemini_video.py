@@ -36,23 +36,22 @@ def _client() -> genai.Client:
     return genai.Client(api_key=config.GEMINI_API_KEY)
 
 
-def _upload_image(client: genai.Client, image_path: str):
-    # google-genai sürümüne göre parametre adı değişebiliyor (file= veya path=).
-    try:
-        return client.files.upload(file=image_path)
-    except TypeError:
-        return client.files.upload(path=image_path)
-
-
 def generate_product_video(image_path: str, output_path: str) -> str:
     client = _client()
-    uploaded = _upload_image(client, image_path)
+
+    # NOT: generate_videos'un image= parametresi, files.upload() ile alinan
+    # bir dosya referansi degil, base64 goruntu byte'lari + mimeType icermeli
+    # ("Input instance with `image` should contain both `bytesBase64Encoded`
+    # and `mimeType`" hatasi bunun icin cikiyordu).
+    image_bytes = Path(image_path).read_bytes()
+    mime = "image/png" if image_path.lower().endswith(".png") else "image/jpeg"
+    image_arg = types.Image(image_bytes=image_bytes, mime_type=mime)
 
     try:
         operation = client.models.generate_videos(
             model=config.VIDEO_MODEL,
             prompt=SCENE_PROMPT,
-            image=uploaded,
+            image=image_arg,
             config=types.GenerateVideosConfig(
                 aspect_ratio=config.VIDEO_ASPECT_RATIO,
                 number_of_videos=1,
