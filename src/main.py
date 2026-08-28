@@ -22,7 +22,7 @@ import tempfile
 
 from . import caption as caption_mod
 from . import chekich, scraper, state
-from .gemini_video import clean_product_shot, generate_product_video
+from .gemini_video import QuotaExceededError, clean_product_shot, generate_product_video
 from .story_image import build_story_image
 from .telegram_post import send_photo, send_video
 
@@ -101,6 +101,13 @@ def run() -> None:
 if __name__ == "__main__":
     try:
         run()
+    except QuotaExceededError as exc:
+        # Bu bir hata degil -- Gemini kotasi (429) dolmus. Kirmizi X yerine
+        # temiz, bilgilendirici bir cikis yapiyoruz; bir sonraki tetiklemede
+        # kota yenilenmis olacak ve otomasyon normal calisacak.
+        print(f"BİLGİ: {exc}")
+        print("Bu run'i basarisiz saymiyoruz -- sadece kota doldugu icin atlaniyor.")
+        sys.exit(0)
     except Exception as exc:  # noqa: BLE001
         print(f"HATA: {exc}", file=sys.stderr)
         raise

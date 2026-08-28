@@ -82,6 +82,12 @@ def _client() -> genai.Client:
     return genai.Client(api_key=config.GEMINI_API_KEY)
 
 
+class QuotaExceededError(RuntimeError):
+    """Gemini API kotasi (429 RESOURCE_EXHAUSTED) doldugunda firlatilir.
+    Bu bir kod hatasi degildir -- main.py bunu yakalayip sessizce/temiz
+    bir sekilde cikar (kirmizi X yerine bilgilendirici bir mesajla)."""
+
+
 def clean_product_shot(image_path: str, output_path: str) -> str:
     """
     Sitedeki ürün fotoğrafları genelde ayakta giyili çekiliyor. Bu fonksiyon
@@ -134,6 +140,13 @@ def generate_product_video(image_path: str, output_path: str) -> str:
         )
     except Exception as exc:  # noqa: BLE001
         msg = str(exc)
+        if "429" in msg or "RESOURCE_EXHAUSTED" in msg:
+            raise QuotaExceededError(
+                "Gemini video (Veo) gunluk/dakikalik kotasi doldu (429). "
+                "Bu bir hata degil, gecici bir durum -- kota yenilenince "
+                "(genelde ertesi gun) otomasyon normal calisir. "
+                "Orijinal mesaj: " + msg
+            ) from exc
         if "404" in msg or "NOT_FOUND" in msg:
             raise RuntimeError(
                 "Gemini video modeline erisilemedi (404). Olasi sebepler: "
