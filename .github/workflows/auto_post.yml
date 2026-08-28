@@ -3,10 +3,11 @@ name: Loftik Otomatik Ürün Videosu
 on:
   schedule:
     # Saatler UTC'dir (Türkiye yazın UTC+3, saatlere 3 ekleyerek TR saatini bulabilirsin).
-    - cron: "0 6 * * *"    # TR 09:00
-    - cron: "30 9 * * *"   # TR 12:30
-    - cron: "0 13 * * *"   # TR 16:00
-    - cron: "30 16 * * *"  # TR 19:30
+    - cron: "5 6 * * *"    # TR 09:05
+    - cron: "35 8 * * *"   # TR 11:35
+    - cron: "5 11 * * *"   # TR 14:05
+    - cron: "35 13 * * *"  # TR 16:35
+    - cron: "35 16 * * *"  # TR 19:35
   workflow_dispatch: {}   # Actions sekmesinden elle de tetikleyebilirsin
 
 concurrency:
