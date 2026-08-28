@@ -18,7 +18,7 @@ import tempfile
 
 from . import caption as caption_mod
 from . import scraper, state
-from .gemini_video import generate_product_video
+from .gemini_video import clean_product_shot, generate_product_video
 from .story_image import build_story_image
 from .telegram_post import send_photo, send_video
 
@@ -41,7 +41,17 @@ def run() -> None:
         return
 
     with tempfile.TemporaryDirectory() as tmp:
-        image_path = scraper.download_binary(product.main_image, f"{tmp}/product.jpg")
+        raw_image_path = scraper.download_binary(product.main_image, f"{tmp}/product_raw.jpg")
+
+        clean_image_path = f"{tmp}/product_clean.jpg"
+        try:
+            print("Ürün görseli 'ayaksız' hale getiriliyor...")
+            clean_product_shot(raw_image_path, clean_image_path)
+            image_path = clean_image_path
+        except Exception as exc:  # noqa: BLE001
+            print(f"UYARI: görsel temizleme başarısız ({exc}), orijinal görselle devam ediliyor.")
+            image_path = raw_image_path
+
         video_path = f"{tmp}/product_video.mp4"
         story_path = f"{tmp}/story.jpg"
 
