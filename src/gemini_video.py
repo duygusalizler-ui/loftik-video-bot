@@ -40,9 +40,12 @@ SCENE_PROMPT = (
     "background of the second shot. "
     "From the cut to the end of the video, BOTH shoes of the pair -- left "
     "AND right -- must stay together, side by side, fully visible at all "
-    "times. Never show only one shoe alone. Only the turntable rotates a "
-    "full 360 degrees after the cut, carrying both shoes around together, "
-    "showing all angles of the pair, while the camera stays completely "
+    "times. Never show only one shoe alone. After the cut, the turntable "
+    "rotates SLOWLY and GENTLY, only a partial rotation (roughly 60-100 "
+    "degrees), smoothly in ONE single consistent direction the whole time "
+    "-- it must never reverse direction, never jump, never spin back and "
+    "forth. A small, steady, one-directional rotation is strongly "
+    "preferred over a large or fast one. The camera stays completely "
     "FIXED and STATIC for this entire second shot -- it does not move, "
     "pan, orbit, or zoom at all. Soft studio-style lighting, shallow depth "
     "of field, softly blurred background in the second shot (the exact "
@@ -131,6 +134,36 @@ def clean_product_shot(image_path: str, output_path: str) -> str:
     raise RuntimeError("Gemini gorsel duzenleme yaniti bir resim icermiyor.")
 
 
+def read_visible_text(image_path: str) -> str:
+    """
+    Ürün üzerinde (arka etiket, tab, logo vb.) görünen gerçek yazıyı okur.
+    Bu metin video prompt'una gömülür ki Veo videoyu üretirken yazıyı
+    kendi kafasına göre "uydurup" bozmasın, gerçek metni tekrar etsin.
+    Okunamıyorsa/emin değilse boş döner (video normal devam eder).
+    """
+    try:
+        client = _client()
+        image_bytes = Path(image_path).read_bytes()
+        mime = "image/png" if image_path.lower().endswith(".png") else "image/jpeg"
+        response = client.models.generate_content(
+            model="gemini-2.5-flash",
+            contents=[
+                types.Part.from_bytes(data=image_bytes, mime_type=mime),
+                "Bu bir ayakkabı fotoğrafı. Ayakkabının üzerinde (etiket, "
+                "tab, logo, taban vb.) net şekilde okunabilen bir yazı "
+                "varsa, sadece o yazıyı harf harf doğru şekilde yaz. "
+                "Hiçbir şey net okunmuyorsa veya emin değilsen sadece "
+                "YOK yaz. Başka hiçbir açıklama ekleme.",
+            ],
+        )
+        text = (response.text or "").strip()
+        if not text or text.upper().startswith("YOK") or len(text) > 40:
+            return ""
+        return text
+    except Exception:  # noqa: BLE001
+        return ""  # best-effort -- basarisiz olursa video normal (metinsiz ipucu) devam eder
+
+
 def generate_product_video(image_path: str, output_path: str) -> str:
     client = _client()
 
@@ -142,10 +175,21 @@ def generate_product_video(image_path: str, output_path: str) -> str:
     mime = "image/png" if image_path.lower().endswith(".png") else "image/jpeg"
     image_arg = types.Image(image_bytes=image_bytes, mime_type=mime)
 
+    prompt = SCENE_PROMPT
+    visible_text = read_visible_text(image_path)
+    if visible_text:
+        prompt += (
+            f' The shoe has a real, existing text/label on it that reads '
+            f'exactly: "{visible_text}". Reproduce this exact text '
+            f'precisely and legibly wherever it appears on the shoe '
+            f'throughout the video -- do not garble, blur, misspell, '
+            f'invent extra words, or alter these letters in any way.'
+        )
+
     try:
         operation = client.models.generate_videos(
             model=config.VIDEO_MODEL,
-            prompt=SCENE_PROMPT,
+            prompt=prompt,
             image=image_arg,
             config=types.GenerateVideosConfig(
                 aspect_ratio=config.VIDEO_ASPECT_RATIO,
