@@ -5,16 +5,20 @@ Ana akış:
 2. Daha önce paylaşılmamış rastgele bir ürün seç
 3. Seçilen ürünün detayını çek (görsel, marka, fiyat)
 4. Ana ürün görselini indir
-5. Hikaye görseli için "ayaksız" bir versiyon üret (en fazla 3 deneme)
-6. Wiro AI (MiniMax H3 R2V) ile dikey (9:16) ürün videosu üret -- birden
-   fazla ürün görseli referans olarak gönderilir (tasarım tutarlılığı için).
-   Başarısız olursa otomatik olarak Gemini (Veo) ile tekrar dener.
-7. Instagram/Telegram hikayesi için dikey (temiz, ayaksız) görsel üret
-8. Chekich.com.tr'de en yakın eşleşen ürünü bulup gerçek malzeme/astar/topuk
-   bilgisini çek (bulamazsa uydurmadan atlar)
-9. Açıklama + hashtag oluştur
-10. Telegram'a video + hikaye görselini gönder
-11. data/posted.json dosyasını güncelle (GitHub Actions bunu commit'ler)
+5. Chekich.com.tr'de en yakın eşleşen ürünü bulup gerçek malzeme/astar/topuk
+   bilgisini çek (bulamazsa uydurmadan atlar), açıklama + hashtag oluştur
+
+CONTENT_MODE = "post" (varsayılan) ise:
+6a. AI YOK -- sadece sitedeki GERÇEK fotoğraf + marka şablonuyla feed
+    gönderisi görseli üret, Telegram'a gönder.
+
+CONTENT_MODE = "video" ise (eski akış):
+6b. Hikaye görseli için "ayaksız" bir versiyon üret (en fazla 3 deneme)
+7b. Wiro AI (MiniMax H3 R2V) ile dikey (9:16) ürün videosu üret --
+    başarısız olursa Gemini (Veo) ile tekrar dener
+8b. Hikaye görseli oluştur, video + hikaye görselini Telegram'a gönder
+
+9. data/posted.json dosyasını güncelle (GitHub Actions bunu commit'ler)
 
 Çalıştırmak için: python -m src.main
 """
@@ -26,7 +30,7 @@ from . import chekich, config, scraper, state
 from . import wiro_video
 from .gemini_video import QuotaExceededError, clean_product_shot
 from .gemini_video import generate_product_video as generate_product_video_gemini
-from .story_image import build_story_image
+from .story_image import build_post_image, build_story_image
 from .telegram_post import send_photo, send_video
 
 CLEANUP_MAX_ATTEMPTS = 3
@@ -52,45 +56,6 @@ def run() -> None:
     with tempfile.TemporaryDirectory() as tmp:
         raw_image_path = scraper.download_binary(product.main_image, f"{tmp}/product_raw.jpg")
 
-        # Video, BİLEREK ham (giyili) görselden başlıyor -- ilk ~1sn "kapak" gibi,
-        # sonra podyuma geçiş yapıyor (bkz. gemini_video.SCENE_PROMPT).
-        # Hikaye görseli (statik) için ise ayrı olarak "ayaksız" temiz görsel üretiyoruz,
-        # çünkü sabit bir görselde yarım kesilmiş bacak iyi durmuyor.
-        clean_image_path = f"{tmp}/product_clean.jpg"
-        story_source_path = raw_image_path
-        for attempt in range(1, CLEANUP_MAX_ATTEMPTS + 1):
-            try:
-                print(f"Hikaye görseli için 'ayaksız' versiyon üretiliyor (deneme {attempt}/{CLEANUP_MAX_ATTEMPTS})...")
-                clean_product_shot(raw_image_path, clean_image_path)
-                story_source_path = clean_image_path
-                break
-            except Exception as exc:  # noqa: BLE001
-                print(f"UYARI: görsel temizleme denemesi {attempt} başarısız: {exc}")
-                if attempt == CLEANUP_MAX_ATTEMPTS:
-                    print("Tüm denemeler başarısız, hikaye görseli de ham fotoğraftan üretilecek.")
-                    story_source_path = raw_image_path
-
-        video_path = f"{tmp}/product_video.mp4"
-        story_path = f"{tmp}/story.jpg"
-
-        if config.VIDEO_PROVIDER == "wiro":
-            print("Wiro (MiniMax H3 R2V) ile video üretiliyor (birkaç dakika sürebilir)...")
-            image_urls = [product.main_image] + [
-                u for u in product.gallery_images if u != product.main_image
-            ]
-            image_urls = image_urls[:5]  # ilk 5 gorsel ucretsiz (referans gorsel maliyeti icin)
-            try:
-                wiro_video.generate_product_video(image_urls, video_path)
-            except Exception as exc:  # noqa: BLE001
-                print(f"UYARI: Wiro basarisiz ({exc}), Gemini (Veo) ile tekrar deneniyor.")
-                generate_product_video_gemini(raw_image_path, video_path)
-        else:
-            print("Gemini ile video üretiliyor (birkaç dakika sürebilir)...")
-            generate_product_video_gemini(raw_image_path, video_path)
-
-        print("Hikaye görseli oluşturuluyor...")
-        build_story_image(story_source_path, product.title, product.price_text, story_path)
-
         spec_line = None
         try:
             print("Chekich'te en yakın eşleşen ürün aranıyor (gerçek malzeme/astar bilgisi için)...")
@@ -105,9 +70,57 @@ def run() -> None:
 
         text = caption_mod.build_caption(product.title, product.brand, product.category_slug, spec_line)
 
-        print("Telegram'a gönderiliyor...")
-        send_video(video_path, text)
-        send_photo(story_path, "📲 Hikayede paylaşmak için hazır görsel")
+        if config.CONTENT_MODE == "post":
+            # AI video / gorsel duzenleme adimi YOK -- sadece sitedeki
+            # GERCEK fotograf + marka sablonu. Hallucination riski sifir,
+            # urun tam olarak sitedeki gibi gorunur.
+            post_path = f"{tmp}/post.jpg"
+            print("Feed gönderisi görseli oluşturuluyor (gerçek fotoğraf, AI yok)...")
+            build_post_image(raw_image_path, product.title, product.price_text, post_path)
+
+            print("Telegram'a gönderiliyor...")
+            send_photo(post_path, text)
+
+        else:
+            # Eski akis: AI video (Wiro/Gemini) + hikaye gorseli.
+            clean_image_path = f"{tmp}/product_clean.jpg"
+            story_source_path = raw_image_path
+            for attempt in range(1, CLEANUP_MAX_ATTEMPTS + 1):
+                try:
+                    print(f"Hikaye görseli için 'ayaksız' versiyon üretiliyor (deneme {attempt}/{CLEANUP_MAX_ATTEMPTS})...")
+                    clean_product_shot(raw_image_path, clean_image_path)
+                    story_source_path = clean_image_path
+                    break
+                except Exception as exc:  # noqa: BLE001
+                    print(f"UYARI: görsel temizleme denemesi {attempt} başarısız: {exc}")
+                    if attempt == CLEANUP_MAX_ATTEMPTS:
+                        print("Tüm denemeler başarısız, hikaye görseli de ham fotoğraftan üretilecek.")
+                        story_source_path = raw_image_path
+
+            video_path = f"{tmp}/product_video.mp4"
+            story_path = f"{tmp}/story.jpg"
+
+            if config.VIDEO_PROVIDER == "wiro":
+                print("Wiro (MiniMax H3 R2V) ile video üretiliyor (birkaç dakika sürebilir)...")
+                image_urls = [product.main_image] + [
+                    u for u in product.gallery_images if u != product.main_image
+                ]
+                image_urls = image_urls[:5]  # ilk 5 gorsel ucretsiz
+                try:
+                    wiro_video.generate_product_video(image_urls, video_path)
+                except Exception as exc:  # noqa: BLE001
+                    print(f"UYARI: Wiro basarisiz ({exc}), Gemini (Veo) ile tekrar deneniyor.")
+                    generate_product_video_gemini(raw_image_path, video_path)
+            else:
+                print("Gemini ile video üretiliyor (birkaç dakika sürebilir)...")
+                generate_product_video_gemini(raw_image_path, video_path)
+
+            print("Hikaye görseli oluşturuluyor...")
+            build_story_image(story_source_path, product.title, product.price_text, story_path)
+
+            print("Telegram'a gönderiliyor...")
+            send_video(video_path, text)
+            send_photo(story_path, "📲 Hikayede paylaşmak için hazır görsel")
 
     state.mark_posted(product.url, product.title)
     print("Tamamlandı, data/posted.json güncellendi.")

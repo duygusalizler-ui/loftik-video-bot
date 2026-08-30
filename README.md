@@ -42,6 +42,7 @@ Repo → **Settings → Secrets and variables → Actions → New repository sec
 |---|---|
 | `GEMINI_API_KEY` | https://aistudio.google.com/apikey |
 | `WIRO_API_KEY` | https://wiro.ai/panel/project (Yeni Project → "API Key Only") -- ana video sağlayıcı, ~$0.08/sn (768P) |
+| `CONTENT_MODE` | (opsiyonel) `post` = sadece gerçek fotoğraf + marka şablonu, AI yok (varsayılan). `video` = eski AI video akışı |
 | `TELEGRAM_BOT_TOKEN` | Telegram'da @BotFather → `/newbot` |
 | `TELEGRAM_CHAT_ID` | Botu kanala ekle, bir mesaj at, sonra `https://api.telegram.org/bot<TOKEN>/getUpdates` adresine bak, `"chat":{"id": ...}` değerini al |
 
