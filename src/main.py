@@ -6,8 +6,9 @@ Ana akış:
 3. Seçilen ürünün detayını çek (görsel, marka, fiyat)
 4. Ana ürün görselini indir
 5. Hikaye görseli için "ayaksız" bir versiyon üret (en fazla 3 deneme)
-6. Gemini (Veo) ile dikey (9:16) ürün videosu üret -- BİLEREK ham (giyili)
-   görselden başlar (~1sn "kapak" gibi), sonra döner podyuma geçiş yapar
+6. Wiro AI (MiniMax H3 R2V) ile dikey (9:16) ürün videosu üret -- birden
+   fazla ürün görseli referans olarak gönderilir (tasarım tutarlılığı için).
+   Başarısız olursa otomatik olarak Gemini (Veo) ile tekrar dener.
 7. Instagram/Telegram hikayesi için dikey (temiz, ayaksız) görsel üret
 8. Chekich.com.tr'de en yakın eşleşen ürünü bulup gerçek malzeme/astar/topuk
    bilgisini çek (bulamazsa uydurmadan atlar)
@@ -21,8 +22,10 @@ import sys
 import tempfile
 
 from . import caption as caption_mod
-from . import chekich, scraper, state
-from .gemini_video import QuotaExceededError, clean_product_shot, generate_product_video
+from . import chekich, config, scraper, state
+from . import wiro_video
+from .gemini_video import QuotaExceededError, clean_product_shot
+from .gemini_video import generate_product_video as generate_product_video_gemini
 from .story_image import build_story_image
 from .telegram_post import send_photo, send_video
 
@@ -70,8 +73,20 @@ def run() -> None:
         video_path = f"{tmp}/product_video.mp4"
         story_path = f"{tmp}/story.jpg"
 
-        print("Gemini ile video üretiliyor (birkaç dakika sürebilir)...")
-        generate_product_video(raw_image_path, video_path)
+        if config.VIDEO_PROVIDER == "wiro":
+            print("Wiro (MiniMax H3 R2V) ile video üretiliyor (birkaç dakika sürebilir)...")
+            image_urls = [product.main_image] + [
+                u for u in product.gallery_images if u != product.main_image
+            ]
+            image_urls = image_urls[:5]  # ilk 5 gorsel ucretsiz (referans gorsel maliyeti icin)
+            try:
+                wiro_video.generate_product_video(image_urls, video_path)
+            except Exception as exc:  # noqa: BLE001
+                print(f"UYARI: Wiro basarisiz ({exc}), Gemini (Veo) ile tekrar deneniyor.")
+                generate_product_video_gemini(raw_image_path, video_path)
+        else:
+            print("Gemini ile video üretiliyor (birkaç dakika sürebilir)...")
+            generate_product_video_gemini(raw_image_path, video_path)
 
         print("Hikaye görseli oluşturuluyor...")
         build_story_image(story_source_path, product.title, product.price_text, story_path)

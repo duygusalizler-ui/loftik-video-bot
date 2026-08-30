@@ -19,6 +19,10 @@ EXCLUDED_CATEGORY_SLUGS = {"bot"}
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
 TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
 TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID")
+WIRO_API_KEY = os.environ.get("WIRO_API_KEY")
+
+# Video uretimi icin hangi saglayici kullanilsin: "wiro" veya "gemini"
+VIDEO_PROVIDER = os.environ.get("VIDEO_PROVIDER", "wiro")
 
 # Bu API anahtari icin ListModels ile dogrulandi: sadece Veo 3.1 preview
 # modelleri destekleniyor (veo-2.0 / veo-3.0 bu anahtarda YOK). "fast" varyanti
