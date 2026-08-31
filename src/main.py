@@ -9,8 +9,8 @@ Ana akış:
    bilgisini çek (bulamazsa uydurmadan atlar), açıklama + hashtag oluştur
 
 CONTENT_MODE = "post" (varsayılan) ise:
-6a. AI YOK -- sadece sitedeki GERÇEK fotoğraf + marka şablonuyla feed
-    gönderisi görseli üret, Telegram'a gönder.
+6a. AI YOK -- sitedeki GERÇEK ürün fotoğraflarını (en fazla 10 tane),
+    olduğu gibi, kaydırmalı (carousel) tek gönderi olarak Telegram'a yollar.
 
 CONTENT_MODE = "video" ise (eski akış):
 6b. Hikaye görseli için "ayaksız" bir versiyon üret (en fazla 3 deneme)
@@ -30,8 +30,8 @@ from . import chekich, config, scraper, state
 from . import wiro_video
 from .gemini_video import QuotaExceededError, clean_product_shot
 from .gemini_video import generate_product_video as generate_product_video_gemini
-from .story_image import build_post_image, build_story_image
-from .telegram_post import send_photo, send_video
+from .story_image import build_story_image
+from .telegram_post import send_media_group, send_photo, send_video
 
 CLEANUP_MAX_ATTEMPTS = 3
 
@@ -71,15 +71,27 @@ def run() -> None:
         text = caption_mod.build_caption(product.title, product.brand, product.category_slug, spec_line)
 
         if config.CONTENT_MODE == "post":
-            # AI video / gorsel duzenleme adimi YOK -- sadece sitedeki
-            # GERCEK fotograf + marka sablonu. Hallucination riski sifir,
-            # urun tam olarak sitedeki gibi gorunur.
-            post_path = f"{tmp}/post.jpg"
-            print("Feed gönderisi görseli oluşturuluyor (gerçek fotoğraf, AI yok)...")
-            build_post_image(raw_image_path, product.title, product.price_text, post_path)
+            # AI YOK -- sitedeki GERCEK fotograflari, oldugu gibi, kaydirmali
+            # (carousel) tek gonderi olarak yolluyoruz. Marka sablonu/AI
+            # duzenleme yok, hallucination riski sifir.
+            gallery_urls = [product.main_image] + [
+                u for u in product.gallery_images if u != product.main_image
+            ]
+            gallery_urls = gallery_urls[:10]  # Telegram/Instagram carousel ust siniri
 
-            print("Telegram'a gönderiliyor...")
-            send_photo(post_path, text)
+            local_paths = [raw_image_path]  # ana gorsel zaten indirildi
+            for i, url in enumerate(gallery_urls[1:], start=1):
+                try:
+                    p = scraper.download_binary(url, f"{tmp}/gallery_{i}.jpg")
+                    local_paths.append(p)
+                except Exception as exc:  # noqa: BLE001
+                    print(f"UYARI: galeri görseli indirilemedi ({url}): {exc}")
+
+            print(f"{len(local_paths)} gerçek ürün fotoğrafı Telegram'a (kaydırmalı) gönderiliyor...")
+            if len(local_paths) >= 2:
+                send_media_group(local_paths, text)
+            else:
+                send_photo(local_paths[0], text)
 
         else:
             # Eski akis: AI video (Wiro/Gemini) + hikaye gorseli.

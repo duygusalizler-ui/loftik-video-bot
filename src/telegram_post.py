@@ -1,4 +1,6 @@
 """Telegram Bot API ile video ve fotoğraf paylaşımı."""
+import json
+
 import requests
 
 from . import config
@@ -40,3 +42,39 @@ def send_photo(photo_path: str, caption: str = "") -> dict:
         )
     resp.raise_for_status()
     return resp.json()
+
+
+def send_media_group(photo_paths: list, caption: str = "") -> dict:
+    """
+    Birden fazla fotoğrafı TEK bir "kaydırmalı" (carousel) gönderi olarak
+    yollar -- Instagram'daki çoklu-görsel gönderiye karşılık gelir.
+    Telegram en az 2 medya gerektirir; tek görsel varsa send_photo kullan.
+    """
+    if len(photo_paths) < 2:
+        raise ValueError("send_media_group en az 2 fotoğraf gerektirir; tek görsel için send_photo kullan.")
+
+    media = []
+    files = {}
+    open_files = []
+    try:
+        for i, path in enumerate(photo_paths):
+            key = f"photo{i}"
+            item = {"type": "photo", "media": f"attach://{key}"}
+            if i == 0 and caption:
+                item["caption"] = caption
+            media.append(item)
+            f = open(path, "rb")
+            open_files.append(f)
+            files[key] = f
+
+        resp = requests.post(
+            _url("sendMediaGroup"),
+            data={"chat_id": _chat_id(), "media": json.dumps(media)},
+            files=files,
+            timeout=180,
+        )
+        resp.raise_for_status()
+        return resp.json()
+    finally:
+        for f in open_files:
+            f.close()
