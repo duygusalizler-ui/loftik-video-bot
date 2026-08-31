@@ -4,21 +4,24 @@ Ana akış:
 1. Kategorilerdeki ürün linklerini topla (BOT kategorisi hariç)
 2. Daha önce paylaşılmamış rastgele bir ürün seç
 3. Seçilen ürünün detayını çek (görsel, marka, fiyat)
-4. Ana ürün görselini indir
+4. Ana ürün görselini ve galerideki diğer gerçek fotoğrafları indir
 5. Chekich.com.tr'de en yakın eşleşen ürünü bulup gerçek malzeme/astar/topuk
    bilgisini çek (bulamazsa uydurmadan atlar), açıklama + hashtag oluştur
 
-CONTENT_MODE = "post" (varsayılan) ise:
-6a. AI YOK -- sitedeki GERÇEK ürün fotoğraflarını (en fazla 10 tane),
-    olduğu gibi, kaydırmalı (carousel) tek gönderi olarak Telegram'a yollar.
+CONTENT_MODE = "remotion" (varsayılan) ise:
+6a. AI YOK -- Remotion (kod ile video oluşturan sistem) gerçek fotoğrafları
+    yakınlaşma+geçiş+metin animasyonuyla videoya çevirir. Render başarısız
+    olursa (nadir), gerçek fotoğrafları kaydırmalı gönderi olarak yollar.
+
+CONTENT_MODE = "post" ise:
+6b. AI YOK -- gerçek fotoğrafları olduğu gibi kaydırmalı (carousel) gönderi
+    olarak yollar (video render'a gerek yoksa).
 
 CONTENT_MODE = "video" ise (eski akış):
-6b. Hikaye görseli için "ayaksız" bir versiyon üret (en fazla 3 deneme)
-7b. Wiro AI (MiniMax H3 R2V) ile dikey (9:16) ürün videosu üret --
-    başarısız olursa Gemini (Veo) ile tekrar dener
-8b. Hikaye görseli oluştur, video + hikaye görselini Telegram'a gönder
+6c. Wiro AI (MiniMax H3 R2V) / Gemini (Veo) ile AI video üretir (giyili
+    kapak + dönen podyum).
 
-9. data/posted.json dosyasını güncelle (GitHub Actions bunu commit'ler)
+7. data/posted.json dosyasını güncelle (GitHub Actions bunu commit'ler)
 
 Çalıştırmak için: python -m src.main
 """
@@ -26,7 +29,7 @@ import sys
 import tempfile
 
 from . import caption as caption_mod
-from . import chekich, config, scraper, state
+from . import chekich, config, remotion_video, scraper, state
 from . import wiro_video
 from .gemini_video import QuotaExceededError, clean_product_shot
 from .gemini_video import generate_product_video as generate_product_video_gemini
@@ -34,6 +37,22 @@ from .story_image import build_story_image
 from .telegram_post import send_media_group, send_photo, send_video
 
 CLEANUP_MAX_ATTEMPTS = 3
+
+
+def _download_gallery(product, raw_image_path: str, tmp: str) -> list:
+    gallery_urls = [product.main_image] + [
+        u for u in product.gallery_images if u != product.main_image
+    ]
+    gallery_urls = gallery_urls[:10]
+
+    local_paths = [raw_image_path]  # ana gorsel zaten indirildi
+    for i, url in enumerate(gallery_urls[1:], start=1):
+        try:
+            p = scraper.download_binary(url, f"{tmp}/gallery_{i}.jpg")
+            local_paths.append(p)
+        except Exception as exc:  # noqa: BLE001
+            print(f"UYARI: galeri görseli indirilemedi ({url}): {exc}")
+    return local_paths
 
 
 def run() -> None:
@@ -70,28 +89,30 @@ def run() -> None:
 
         text = caption_mod.build_caption(product.title, product.brand, product.category_slug, spec_line)
 
-        if config.CONTENT_MODE == "post":
-            # AI YOK -- sitedeki GERCEK fotograflari, oldugu gibi, kaydirmali
-            # (carousel) tek gonderi olarak yolluyoruz. Marka sablonu/AI
-            # duzenleme yok, hallucination riski sifir.
-            gallery_urls = [product.main_image] + [
-                u for u in product.gallery_images if u != product.main_image
-            ]
-            gallery_urls = gallery_urls[:10]  # Telegram/Instagram carousel ust siniri
+        if config.CONTENT_MODE in ("remotion", "post"):
+            local_paths = _download_gallery(product, raw_image_path, tmp)
 
-            local_paths = [raw_image_path]  # ana gorsel zaten indirildi
-            for i, url in enumerate(gallery_urls[1:], start=1):
+            if config.CONTENT_MODE == "remotion":
+                video_path = f"{tmp}/product_video.mp4"
+                print(f"Remotion ile video üretiliyor ({len(local_paths)} gerçek fotoğraf, AI yok)...")
                 try:
-                    p = scraper.download_binary(url, f"{tmp}/gallery_{i}.jpg")
-                    local_paths.append(p)
+                    remotion_video.generate_product_video(
+                        local_paths, product.title, product.brand, product.price_text, video_path
+                    )
+                    print("Telegram'a gönderiliyor...")
+                    send_video(video_path, text)
                 except Exception as exc:  # noqa: BLE001
-                    print(f"UYARI: galeri görseli indirilemedi ({url}): {exc}")
-
-            print(f"{len(local_paths)} gerçek ürün fotoğrafı Telegram'a (kaydırmalı) gönderiliyor...")
-            if len(local_paths) >= 2:
-                send_media_group(local_paths, text)
+                    print(f"UYARI: Remotion render başarısız ({exc}), gerçek fotoğraflar kaydırmalı gönderi olarak yollanıyor.")
+                    if len(local_paths) >= 2:
+                        send_media_group(local_paths, text)
+                    else:
+                        send_photo(local_paths[0], text)
             else:
-                send_photo(local_paths[0], text)
+                print(f"{len(local_paths)} gerçek ürün fotoğrafı Telegram'a (kaydırmalı) gönderiliyor...")
+                if len(local_paths) >= 2:
+                    send_media_group(local_paths, text)
+                else:
+                    send_photo(local_paths[0], text)
 
         else:
             # Eski akis: AI video (Wiro/Gemini) + hikaye gorseli.

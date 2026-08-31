@@ -25,12 +25,23 @@ jobs:
         with:
           python-version: "3.11"
 
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+          cache-dependency-path: remotion/package-lock.json
+
       - name: Bağımlılıkları kur
         run: pip install -r requirements.txt
+
+      - name: Remotion bağımlılıklarını kur
+        working-directory: remotion
+        run: npm install
 
       - name: Otomasyonu çalıştır
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          WIRO_API_KEY: ${{ secrets.WIRO_API_KEY }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python -m src.main

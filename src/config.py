@@ -24,11 +24,14 @@ WIRO_API_KEY = os.environ.get("WIRO_API_KEY")
 # Video uretimi icin hangi saglayici kullanilsin: "wiro" veya "gemini"
 VIDEO_PROVIDER = os.environ.get("VIDEO_PROVIDER", "wiro")
 
-# "post"  -> AI video YOK, sadece sitedeki GERCEK fotograf + marka sablonu
-#            (hallucination riski sifir -- toka/logo/desen degismez cunku
-#            hicbir AI video/gorsel duzenleme adimi calismiyor)
-# "video" -> eski akis: AI ile giyili-kapak + donen podyum videosu uretir
-CONTENT_MODE = os.environ.get("CONTENT_MODE", "post")
+# "remotion" -> AI YOK, kod (Remotion/React) ile GERCEK fotograflari
+#               hareketlendirip (yakinlasma+gecis+metin animasyonu) video
+#               uretir. Hallucination riski sifir -- varsayilan bu.
+# "post"     -> AI YOK, gercek fotograflari oldugu gibi kaydirmali gonderi
+#               olarak yollar (video degil, video render suresi olmasin
+#               istenirse kullanilir)
+# "video"    -> eski AI video akisi (Wiro/Gemini)
+CONTENT_MODE = os.environ.get("CONTENT_MODE", "remotion")
 
 # Bu API anahtari icin ListModels ile dogrulandi: sadece Veo 3.1 preview
 # modelleri destekleniyor (veo-2.0 / veo-3.0 bu anahtarda YOK). "fast" varyanti
