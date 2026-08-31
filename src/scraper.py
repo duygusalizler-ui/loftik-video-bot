@@ -178,8 +178,10 @@ def fetch_product(url: str, category_slug: Optional[str] = None) -> Product:
     # Aynı fotoğraf sitede hem tam boyut ("...-731.jpg") hem küçük/thumbnail
     # ("...-731_min.jpg") olarak iki ayrı <img> etiketinde geçebiliyor.
     # Bunları AYNI fotoğraf sayıp tekilleştiriyoruz (yoksa carousel'de aynı
-    # görsel iki kez -- biri büyük biri küçük boy -- çıkıyordu), ve tercihen
-    # tam boyutlu (kalitesi daha iyi) versiyonu kullanıyoruz.
+    # görsel iki kez çıkıyordu), ama URL'yi OLDUĞU GİBİ kullanıyoruz --
+    # "_min" ekini silip "büyük boy" dosya adı TAHMİN ETMİYORUZ, çünkü o
+    # dosya sitede gerçekten var olmayabiliyor (404 -> indirme sessizce
+    # başarısız oluyor, sonuçta tek görsel kalıyordu).
     gallery = []
     seen_keys = set()
     for img in soup.find_all("img"):
@@ -187,12 +189,11 @@ def fetch_product(url: str, category_slug: Optional[str] = None) -> Product:
         if "/myassets/products/" not in src:
             continue
         clean_src = src.split("?")[0]
-        key = re.sub(r"_min(\.\w+)$", r"\1", clean_src)  # tekillestirme anahtari
+        key = re.sub(r"_min(\.\w+)$", r"\1", clean_src)  # sadece tekillestirme anahtari
         if key in seen_keys:
             continue
         seen_keys.add(key)
-        full_src = clean_src.replace("_min.", ".", 1) if "_min." in clean_src else clean_src
-        gallery.append(full_src)
+        gallery.append(clean_src)  # gercekte var olan URL, degistirilmeden
 
     if main_image:
         main_key = re.sub(r"_min(\.\w+)$", r"\1", main_image)
