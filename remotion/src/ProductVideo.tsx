@@ -15,27 +15,48 @@ type Props = z.infer<typeof productVideoSchema>;
 const OVERLAP = 15; // gecis (crossfade) icin komsu sahnelerin ortustugu kare sayisi
 
 /**
- * Tek bir fotografi "Ken Burns" (yavas yakinlasma) efektiyle gosterir.
- * SADECE gercek fotografin uzerinde kod ile hareket -- hicbir AI/hayal
- * etme yok, bu yuzden urun tasarimi asla degismez.
+ * Her "cekim" (shot), AYNI fotografin farkli bir bolgesine (genel gorunum,
+ * burun detayi, baglama detayi, taban/topuk detayi) farkli bir yakinlasma
+ * ile "kamera" gibi davranir -- boylece tek fotografla bile cok parcali,
+ * "kurgulanmis" bir video hissi verir. Hepsi GERCEK fotografin uzerinde
+ * kod ile hareket -- hicbir AI/hayal etme yok.
  */
-const KenBurnsImage: React.FC<{
+type ShotPreset = {
+  originX: string;
+  originY: string;
+  scaleFrom: number;
+  scaleTo: number;
+  panX: number;
+  panY: number;
+};
+
+const SHOT_PRESETS: ShotPreset[] = [
+  { originX: "50%", originY: "45%", scaleFrom: 1.0, scaleTo: 1.24, panX: -22, panY: 0 },
+  { originX: "30%", originY: "75%", scaleFrom: 1.18, scaleTo: 1.44, panX: 16, panY: -18 },
+  { originX: "70%", originY: "28%", scaleFrom: 1.15, scaleTo: 1.4, panX: -18, panY: 16 },
+  { originX: "50%", originY: "90%", scaleFrom: 1.18, scaleTo: 1.38, panX: 10, panY: -14 },
+];
+
+const ShotImage: React.FC<{
   src: string;
+  preset: ShotPreset;
   localFrame: number;
   durationInFrames: number;
   isFirst: boolean;
-}> = ({ src, localFrame, durationInFrames, isFirst }) => {
-  const scale = interpolate(localFrame, [0, durationInFrames], [1, 1.12], {
+}> = ({ src, preset, localFrame, durationInFrames, isFirst }) => {
+  const scale = interpolate(localFrame, [0, durationInFrames], [preset.scaleFrom, preset.scaleTo], {
     extrapolateLeft: "clamp",
     extrapolateRight: "clamp",
   });
-  const translateX = interpolate(localFrame, [0, durationInFrames], [0, -18], {
+  const translateX = interpolate(localFrame, [0, durationInFrames], [0, preset.panX], {
+    extrapolateLeft: "clamp",
+    extrapolateRight: "clamp",
+  });
+  const translateY = interpolate(localFrame, [0, durationInFrames], [0, preset.panY], {
     extrapolateLeft: "clamp",
     extrapolateRight: "clamp",
   });
 
-  // Sahne girisi/cikisinda crossfade icin opaklik
-  // Ilk goruntu siyahtan baslamasin -- sadece SONRAKI goruntuler icin fade-in var
   const fadeIn = isFirst
     ? 1
     : interpolate(localFrame, [0, OVERLAP], [0, 1], {
@@ -54,7 +75,8 @@ const KenBurnsImage: React.FC<{
     <AbsoluteFill style={{ opacity }}>
       <AbsoluteFill
         style={{
-          transform: `scale(${scale}) translateX(${translateX}px)`,
+          transform: `scale(${scale}) translateX(${translateX}px) translateY(${translateY}px)`,
+          transformOrigin: `${preset.originX} ${preset.originY}`,
         }}
       >
         <Img
@@ -75,7 +97,17 @@ export const ProductVideo: React.FC<Props> = ({ title, brand, priceText, images 
   const { durationInFrames } = useVideoConfig();
 
   const safeImages = images.length > 0 ? images : ["assets/img0.jpg"];
-  const perImage = Math.floor(durationInFrames / safeImages.length);
+
+  // Az fotograf olsa bile en az 3 farkli "cekim" -- ayni fotograf farkli
+  // bolgelerle tekrar kullanilir, boylece video hep hareketli/kurgulanmis
+  // hisseder, asla tek bir sabit yakinlasma gibi "sade" durmaz.
+  const numShots = Math.max(3, Math.min(4, safeImages.length === 1 ? 3 : safeImages.length));
+  const shots = Array.from({ length: numShots }).map((_, i) => ({
+    image: safeImages[i % safeImages.length],
+    preset: SHOT_PRESETS[i % SHOT_PRESETS.length],
+  }));
+
+  const perShot = Math.floor(durationInFrames / shots.length);
 
   // Metin animasyonu: ilk 20 karede yukari kayarak belirir
   const textIn = interpolate(frame, [0, 20], [30, 0], {
@@ -89,14 +121,16 @@ export const ProductVideo: React.FC<Props> = ({ title, brand, priceText, images 
 
   return (
     <AbsoluteFill style={{ backgroundColor: "#111111" }}>
-      {safeImages.map((img, i) => {
-        const start = i * perImage;
-        const dur = i === safeImages.length - 1 ? durationInFrames - start : perImage + OVERLAP;
+      {shots.map((shot, i) => {
+        const start = i * perShot;
+        const dur = i === shots.length - 1 ? durationInFrames - start : perShot + OVERLAP;
+        const seqStart = Math.max(0, start - (i > 0 ? OVERLAP : 0));
         return (
-          <Sequence key={img + i} from={Math.max(0, start - (i > 0 ? OVERLAP : 0))} durationInFrames={dur}>
-            <KenBurnsImage
-              src={staticFile(img)}
-              localFrame={frame - Math.max(0, start - (i > 0 ? OVERLAP : 0))}
+          <Sequence key={i} from={seqStart} durationInFrames={dur}>
+            <ShotImage
+              src={staticFile(shot.image)}
+              preset={shot.preset}
+              localFrame={frame - seqStart}
               durationInFrames={dur}
               isFirst={i === 0}
             />
