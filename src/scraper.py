@@ -175,14 +175,30 @@ def fetch_product(url: str, category_slug: Optional[str] = None) -> Product:
     if og_image_tag and og_image_tag.get("content"):
         main_image = og_image_tag["content"].split("?")[0]
 
+    # Aynı fotoğraf sitede hem tam boyut ("...-731.jpg") hem küçük/thumbnail
+    # ("...-731_min.jpg") olarak iki ayrı <img> etiketinde geçebiliyor.
+    # Bunları AYNI fotoğraf sayıp tekilleştiriyoruz (yoksa carousel'de aynı
+    # görsel iki kez -- biri büyük biri küçük boy -- çıkıyordu), ve tercihen
+    # tam boyutlu (kalitesi daha iyi) versiyonu kullanıyoruz.
     gallery = []
+    seen_keys = set()
     for img in soup.find_all("img"):
         src = img.get("src") or ""
-        if "/myassets/products/" in src:
-            gallery.append(src.split("?")[0])
-    gallery = list(dict.fromkeys(gallery))  # sıralı unique
-    if main_image and main_image not in gallery:
-        gallery.insert(0, main_image)
+        if "/myassets/products/" not in src:
+            continue
+        clean_src = src.split("?")[0]
+        key = re.sub(r"_min(\.\w+)$", r"\1", clean_src)  # tekillestirme anahtari
+        if key in seen_keys:
+            continue
+        seen_keys.add(key)
+        full_src = clean_src.replace("_min.", ".", 1) if "_min." in clean_src else clean_src
+        gallery.append(full_src)
+
+    if main_image:
+        main_key = re.sub(r"_min(\.\w+)$", r"\1", main_image)
+        if main_key not in seen_keys:
+            gallery.insert(0, main_image)
+            seen_keys.add(main_key)
 
     price_text = None
     price_match = re.search(r"[\d.]+,\d{2}\s*TL", soup.get_text())
