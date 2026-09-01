@@ -12,7 +12,7 @@ import { productVideoSchema } from "./Root";
 
 type Props = z.infer<typeof productVideoSchema>;
 
-const OVERLAP = 15;
+const OVERLAP = 0; // net kesme (hard cut) -- yumusak gecis/hayalet karisma yok
 
 /**
  * PODYUM SAHNESI:
@@ -100,29 +100,14 @@ const ShotImage: React.FC<{
   preset: ShotPreset;
   localFrame: number;
   durationInFrames: number;
-  isFirst: boolean;
-}> = ({ src, preset, localFrame, durationInFrames, isFirst }) => {
+}> = ({ src, preset, localFrame, durationInFrames }) => {
   const scale = interpolate(localFrame, [0, durationInFrames], [preset.scaleFrom, preset.scaleTo], {
     extrapolateLeft: "clamp",
     extrapolateRight: "clamp",
   });
 
-  const fadeIn = isFirst
-    ? 1
-    : interpolate(localFrame, [0, OVERLAP], [0, 1], {
-        extrapolateLeft: "clamp",
-        extrapolateRight: "clamp",
-      });
-  const fadeOut = interpolate(
-    localFrame,
-    [durationInFrames - OVERLAP, durationInFrames],
-    [1, 0],
-    { extrapolateLeft: "clamp", extrapolateRight: "clamp" }
-  );
-  const opacity = Math.min(fadeIn, fadeOut);
-
   return (
-    <AbsoluteFill style={{ opacity }}>
+    <AbsoluteFill>
       <AbsoluteFill
         style={{
           transform: `scale(${scale})`,
@@ -190,16 +175,14 @@ export const ProductVideo: React.FC<Props> = ({ title, brand, priceText, images 
         >
           {shots.map((shot, i) => {
             const start = i * perShot;
-            const dur = i === shots.length - 1 ? durationInFrames - start : perShot + OVERLAP;
-            const seqStart = Math.max(0, start - (i > 0 ? OVERLAP : 0));
+            const dur = i === shots.length - 1 ? durationInFrames - start : perShot;
             return (
-              <Sequence key={i} from={seqStart} durationInFrames={dur}>
+              <Sequence key={i} from={start} durationInFrames={dur}>
                 <ShotImage
                   src={staticFile(shot.image)}
                   preset={shot.preset}
-                  localFrame={frame - seqStart}
+                  localFrame={frame - start}
                   durationInFrames={dur}
-                  isFirst={i === 0}
                 />
               </Sequence>
             );
