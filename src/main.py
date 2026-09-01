@@ -9,9 +9,13 @@ Ana akış:
    bilgisini çek (bulamazsa uydurmadan atlar), açıklama + hashtag oluştur
 
 CONTENT_MODE = "remotion" (varsayılan) ise:
-6a. AI YOK -- Remotion (kod ile video oluşturan sistem) gerçek fotoğrafları
-    yakınlaşma+geçiş+metin animasyonuyla videoya çevirir. Render başarısız
-    olursa (nadir), gerçek fotoğrafları kaydırmalı gönderi olarak yollar.
+6a. Bacak/ayak kaldırılır (AI, ama SADECE bu tek iş için -- ürünü yeniden
+    çizmiyor, sadece etrafındaki bacağı siliyor; en fazla 3 deneme)
+6b. Arka plan kaldırılır (rembg -- AI DEĞİL, sadece segmentasyon/kesme)
+6c. Remotion (kod ile video oluşturan sistem), bu temiz kesimi kod ile
+    çizilmiş dönen bir podyumun üzerine yerleştirip videoya çevirir.
+    Render başarısız olursa gerçek fotoğrafları kaydırmalı gönderi
+    olarak yollar.
 
 CONTENT_MODE = "post" ise:
 6b. AI YOK -- gerçek fotoğrafları olduğu gibi kaydırmalı (carousel) gönderi
@@ -29,7 +33,7 @@ import sys
 import tempfile
 
 from . import caption as caption_mod
-from . import chekich, config, remotion_video, scraper, state
+from . import background_removal, chekich, config, remotion_video, scraper, state
 from . import wiro_video
 from .gemini_video import QuotaExceededError, clean_product_shot
 from .gemini_video import generate_product_video as generate_product_video_gemini
@@ -94,10 +98,37 @@ def run() -> None:
 
             if config.CONTENT_MODE == "remotion":
                 video_path = f"{tmp}/product_video.mp4"
-                print(f"Remotion ile video üretiliyor ({len(local_paths)} gerçek fotoğraf, AI yok)...")
+
+                # 1) Bacagi/ayagi kaldir (AI, ama SADECE bu tek is icin --
+                #    urunun kendisini "yeniden cizmiyor", sadece etrafindaki
+                #    bacagi siliyor). En fazla 3 deneme.
+                leg_free_path = raw_image_path
+                for attempt in range(1, CLEANUP_MAX_ATTEMPTS + 1):
+                    try:
+                        print(f"Bacak/ayak kaldırılıyor (deneme {attempt}/{CLEANUP_MAX_ATTEMPTS})...")
+                        candidate_path = f"{tmp}/product_legfree.jpg"
+                        clean_product_shot(raw_image_path, candidate_path)
+                        leg_free_path = candidate_path
+                        break
+                    except Exception as exc:  # noqa: BLE001
+                        print(f"UYARI: bacak kaldırma denemesi {attempt} başarısız: {exc}")
+                        if attempt == CLEANUP_MAX_ATTEMPTS:
+                            print("Tüm denemeler başarısız, orijinal (giyili) fotoğrafla devam ediliyor.")
+
+                # 2) Arka planı kaldır (rembg, AI DEĞİL -- sadece segmentasyon).
+                podium_paths = [leg_free_path]
+                try:
+                    print("Ürün arka planı kaldırılıyor (rembg, AI değil -- segmentasyon)...")
+                    cutout_path = f"{tmp}/product_cutout.png"
+                    background_removal.remove_background(leg_free_path, cutout_path)
+                    podium_paths = [cutout_path]
+                except Exception as exc:  # noqa: BLE001
+                    print(f"UYARI: arka plan kaldırma başarısız ({exc}), bacaksız fotoğrafla devam ediliyor.")
+
+                print("Remotion ile video üretiliyor (podyum sahnesi)...")
                 try:
                     remotion_video.generate_product_video(
-                        local_paths, product.title, product.brand, product.price_text, video_path
+                        podium_paths, product.title, product.brand, product.price_text, video_path
                     )
                     print("Telegram'a gönderiliyor...")
                     send_video(video_path, text)

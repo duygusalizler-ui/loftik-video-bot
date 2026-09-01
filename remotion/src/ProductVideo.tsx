@@ -1,7 +1,6 @@
 import {
   AbsoluteFill,
   Img,
-  Sequence,
   interpolate,
   staticFile,
   useCurrentFrame,
@@ -12,47 +11,26 @@ import { productVideoSchema } from "./Root";
 
 type Props = z.infer<typeof productVideoSchema>;
 
-const OVERLAP = 0; // net kesme (hard cut) -- yumusak gecis/hayalet karisma yok
-
 /**
- * PODYUM SAHNESI:
- * - Podyum (taban) TAMAMEN kod ile cizilmis bir grafik -- gercek degil,
- *   sadece bir "sahne" prop'u. Uzerinde donen bir isik yansimasi var,
- *   boylece "donuyormus" hissi veriyor.
- * - Urun fotografi bu podyumun USTUNDE yuzen bir "kart" icinde gosteriliyor,
- *   kartin icinde hafif yakinlasma (Ken Burns) var.
- * - URUNUN KENDISI (fotograf) hicbir sekilde degistirilmiyor/uretilmiyor --
- *   sadece kod ile konumlandirilip yakinlastiriliyor. Hallucination riski
- *   sifir, cunku ortada hicbir AI/goruntu uretimi yok.
+ * PODYUM SAHNESI v2:
+ * - Podyum TAMAMEN kod ile cizilmis -- gercek degil, sadece sahne prop'u.
+ *   Uzerinde donen bir isik yansimasi var ("donuyormus" hissi).
+ * - Urun fotografi artik bir KUTU/KART icinde degil -- arka plani
+ *   kaldirilmis (rembg ile, AI degil, sadece on/arka plan ayrimi) sekilde
+ *   DOGRUDAN podyumun uzerine oturuyor, hafif bir 3D sallanma ile
+ *   "donuyor" hissi veriyor.
+ * - URUNUN KENDI PIKSELLERI hicbir zaman degistirilmiyor/uretilmiyor --
+ *   sadece konumlandirma + hafif rotasyon kod ile yapiliyor.
  */
 
-type ShotPreset = {
-  originX: string;
-  originY: string;
-  scaleFrom: number;
-  scaleTo: number;
-};
-
-const SHOT_PRESETS: ShotPreset[] = [
-  { originX: "50%", originY: "45%", scaleFrom: 1.0, scaleTo: 1.14 },
-  { originX: "30%", originY: "70%", scaleFrom: 1.08, scaleTo: 1.24 },
-  { originX: "70%", originY: "30%", scaleFrom: 1.06, scaleTo: 1.22 },
-  { originX: "50%", originY: "85%", scaleFrom: 1.08, scaleTo: 1.2 },
-];
-
-const CARD_W = 860;
-const CARD_H = 1040;
-
 const Podium: React.FC<{ frame: number }> = ({ frame }) => {
-  // Podyum yuzeyindeki isik yansimasi yavasca doner -- "donen podyum" hissi
   const sweepAngle = (frame / 90) * 360;
-
   return (
     <svg
       viewBox="0 0 1080 400"
       width={1080}
       height={400}
-      style={{ position: "absolute", left: 0, top: 1330 }}
+      style={{ position: "absolute", left: 0, top: 1360 }}
     >
       <defs>
         <radialGradient id="podiumTop" cx="50%" cy="35%" r="65%">
@@ -69,17 +47,11 @@ const Podium: React.FC<{ frame: number }> = ({ frame }) => {
         </clipPath>
       </defs>
 
-      {/* zemin golgesi */}
       <ellipse cx="540" cy="110" rx="430" ry="95" fill="url(#shadow)" />
-
-      {/* podyum govdesi (yan taraf, hafif silindir hissi) */}
       <rect x="160" y="90" width="760" height="60" fill="#8f8f8f" />
       <ellipse cx="540" cy="150" rx="380" ry="80" fill="#7c7c7c" />
-
-      {/* podyum ust yuzeyi */}
       <ellipse cx="540" cy="90" rx="380" ry="80" fill="url(#podiumTop)" />
 
-      {/* donen isik yansimasi -- "spin" hissini veren tek gercek hareket */}
       <g clipPath="url(#ellipseClip)">
         <g transform={`rotate(${sweepAngle} 540 90)`}>
           <ellipse cx="540" cy="90" rx="130" ry="28" fill="rgba(255,255,255,0.85)" />
@@ -89,34 +61,8 @@ const Podium: React.FC<{ frame: number }> = ({ frame }) => {
         </g>
       </g>
 
-      {/* ust yuzey kenar cizgisi */}
       <ellipse cx="540" cy="90" rx="380" ry="80" fill="none" stroke="#ffffff" strokeOpacity="0.4" strokeWidth="2" />
     </svg>
-  );
-};
-
-const ShotImage: React.FC<{
-  src: string;
-  preset: ShotPreset;
-  localFrame: number;
-  durationInFrames: number;
-}> = ({ src, preset, localFrame, durationInFrames }) => {
-  const scale = interpolate(localFrame, [0, durationInFrames], [preset.scaleFrom, preset.scaleTo], {
-    extrapolateLeft: "clamp",
-    extrapolateRight: "clamp",
-  });
-
-  return (
-    <AbsoluteFill>
-      <AbsoluteFill
-        style={{
-          transform: `scale(${scale})`,
-          transformOrigin: `${preset.originX} ${preset.originY}`,
-        }}
-      >
-        <Img src={src} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
-      </AbsoluteFill>
-    </AbsoluteFill>
   );
 };
 
@@ -124,19 +70,19 @@ export const ProductVideo: React.FC<Props> = ({ title, brand, priceText, images 
   const frame = useCurrentFrame();
   const { durationInFrames } = useVideoConfig();
 
-  const safeImages = images.length > 0 ? images : ["assets/img0.jpg"];
-  const numShots = Math.max(3, Math.min(4, safeImages.length === 1 ? 3 : safeImages.length));
-  const shots = Array.from({ length: numShots }).map((_, i) => ({
-    image: safeImages[i % safeImages.length],
-    preset: SHOT_PRESETS[i % SHOT_PRESETS.length],
-  }));
-  const perShot = Math.floor(durationInFrames / shots.length);
+  const productSrc = staticFile(images[0] || "assets/img0.jpg");
 
-  // Kart -- kucuk bir "yuzuyor" hissi icin cok hafif yukari-asagi salinim
-  const floatY = Math.sin(frame / 40) * 10;
+  // Urun podyumda hafifce "donuyor" (3D sallanma) -- gercek 360 acisi yok
+  // (elimizde tek acidan foto var), ama surekli, yumusak bir hareket
+  // "canli sergileniyor" hissini veriyor.
+  const swayY = Math.sin(frame / 55) * 14; // derece
+  const swayX = Math.sin(frame / 70) * 3;
 
-  // Sahne genel yakinlasmasi (kart + podyum birlikte, cok yavas)
-  const sceneScale = interpolate(frame, [0, durationInFrames], [1, 1.06], {
+  // Podyumla birlikte cok hafif yukari-asagi "yuzme"
+  const floatY = Math.sin(frame / 40) * 8;
+
+  // Sahnenin geneli cok yavas yakinlasiyor
+  const sceneScale = interpolate(frame, [0, durationInFrames], [1, 1.08], {
     extrapolateLeft: "clamp",
     extrapolateRight: "clamp",
   });
@@ -149,6 +95,10 @@ export const ProductVideo: React.FC<Props> = ({ title, brand, priceText, images 
     extrapolateLeft: "clamp",
     extrapolateRight: "clamp",
   });
+  const productIn = interpolate(frame, [0, 18], [40, 0], {
+    extrapolateLeft: "clamp",
+    extrapolateRight: "clamp",
+  });
 
   return (
     <AbsoluteFill
@@ -156,37 +106,39 @@ export const ProductVideo: React.FC<Props> = ({ title, brand, priceText, images 
         background: "radial-gradient(ellipse at 50% 30%, #2a2a2a 0%, #0d0d0d 70%)",
       }}
     >
-      <AbsoluteFill style={{ transform: `scale(${sceneScale})`, transformOrigin: "50% 55%" }}>
+      <AbsoluteFill style={{ transform: `scale(${sceneScale})`, transformOrigin: "50% 60%" }}>
         <Podium frame={frame} />
 
-        {/* Urun karti -- gercek fotograf, sadece konum/yakinlasma kod ile */}
+        {/* Urun -- podyumun tam ustunde, arka plani kaldirilmis gercek foto */}
         <div
           style={{
             position: "absolute",
-            left: (1080 - CARD_W) / 2,
-            top: 300 + floatY,
-            width: CARD_W,
-            height: CARD_H,
-            borderRadius: 28,
-            overflow: "hidden",
-            boxShadow: "0 40px 70px rgba(0,0,0,0.55)",
-            border: "2px solid rgba(255,255,255,0.15)",
+            left: 0,
+            width: 1080,
+            bottom: 1920 - 1400 + floatY - productIn,
+            display: "flex",
+            justifyContent: "center",
+            perspective: 1400,
           }}
         >
-          {shots.map((shot, i) => {
-            const start = i * perShot;
-            const dur = i === shots.length - 1 ? durationInFrames - start : perShot;
-            return (
-              <Sequence key={i} from={start} durationInFrames={dur}>
-                <ShotImage
-                  src={staticFile(shot.image)}
-                  preset={shot.preset}
-                  localFrame={frame - start}
-                  durationInFrames={dur}
-                />
-              </Sequence>
-            );
-          })}
+          <div
+            style={{
+              transform: `rotateY(${swayY}deg) rotateX(${swayX}deg)`,
+              transformStyle: "preserve-3d",
+              filter: "drop-shadow(0 30px 40px rgba(0,0,0,0.6))",
+            }}
+          >
+            <Img
+              src={productSrc}
+              style={{
+                maxWidth: 760,
+                maxHeight: 950,
+                width: "auto",
+                height: "auto",
+                objectFit: "contain",
+              }}
+            />
+          </div>
         </div>
       </AbsoluteFill>
 
