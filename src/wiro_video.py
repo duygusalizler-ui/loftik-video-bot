@@ -35,11 +35,14 @@ PROMPT_TEMPLATE = (
     "filmed casually on a phone by a regular person, NOT a polished "
     "studio advertisement. The reference image shows a pair of shoes worn "
     "on a person's feet while walking outdoors. Continue this exact scene "
-    "naturally: the person keeps walking at a relaxed, everyday pace "
+    "naturally: the person keeps walking with a CONFIDENT, SMOOTH, STEADY "
+    "gait at a brisk, energetic everyday pace -- NOT hesitant, NOT "
+    "stumbling, NOT staggering, NOT wobbling, no uncertain or unsteady "
+    "footing at any point. Each step is even, balanced, and purposeful, "
     "along the same street/path. The camera follows at a low angle "
-    "(roughly ankle to knee height), with a natural handheld feel -- a "
-    "little natural camera wobble/shake is good and expected, do not "
-    "smooth it into a stabilized cinematic shot. Real daylight, real "
+    "(roughly ankle to knee height), simply and simply framed like a "
+    "real phone recording -- steady enough to clearly follow the feet, "
+    "not an intentionally shaky or wobbly camera. Real daylight, real "
     "outdoor environment, genuine and casual the whole time. ABSOLUTELY "
     "NO studio lighting, NO rotating display podium, NO product-showcase "
     "staging, NO dramatic camera moves, NO scene cuts or transitions of "
@@ -62,7 +65,8 @@ NEGATIVE_PROMPT = (
     "studio lighting, rotating podium, product display stand, scene cut, "
     "transition, logo change, new logo, changed pattern, changed buckle "
     "shape, changed color, blurry text, distorted shoe, extra limbs, "
-    "watermark"
+    "watermark, stumbling, staggering, wobbling, unsteady walk, tripping, "
+    "shaky camera, jittery camera"
 )
 
 
