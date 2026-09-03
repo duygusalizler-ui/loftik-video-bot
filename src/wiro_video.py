@@ -1,23 +1,23 @@
 """
-Wiro AI uzerinden MiniMax H3 R2V modeliyle urun videosu uretir.
+Wiro AI uzerinden KlingAI v2.1-master modeliyle urun videosu uretir.
 
-Bu model ozellikle "urunun tasarimini birebir koru, kamera/sahne hareketi
-ekle" isine odaklanmis (Veo'da yasadigimiz sahte logo / desen degisimi
-sorunlarini cozmesi beklenir). Ayrica birden fazla referans goruntu kabul
-ediyor (biz burada urunun ana + varsa galeri gorsellerini gonderiyoruz).
+NEDEN KLING: 2026 karsilastirmalarinda Kling, "referans goruntuye sadakat"
+konusunda one cikan model -- Veo/Sora gibi modeller referansi "yaratici"
+sekilde yeniden yorumlayabiliyor (bizim yasadigimiz sahte logo/desen
+sorunlarinin sebebi), Kling ise verilen goruntuyu cok daha sadik koruyor.
+Ayrica metin/yazi tutarliliginda da lider (bizim "yazi bozulmasi"
+sorunumuzu da azaltmasi beklenir).
 
 API akisi (asenkron):
-1) POST /v1/Run/MiniMax/h3-r2v -> taskid doner
+1) POST /v1/Run/klingai/image-to-video-klingai-v2.1-master -> taskid doner
 2) POST /v1/Task/Detail (taskid ile) -> tamamlanana kadar sorgula
 3) pexit == "0" ise outputs[0]['url'] gercek video CDN linkidir, indir
 
-NOT: Bu kod, Wiro'nun genel API dokumantasyonuna gore yazildi (Agustos
-2026). inputImage parametresinin JSON'da birden fazla URL icin tam olarak
-liste mi yoksa baska bir format mi bekledigi %100 dogrulanamadi (Wiro'nun
-kendi playground'u dosya yukleme odakli, ben sadece dokumani okuyabildim).
-Bu yuzden once liste ile deneyip, basarisiz olursa tek goruntuyle (ilk
-gorsel) otomatik tekrar deniyor -- boylece yanlis format tum otomasyonu
-kirmiyor.
+Parametreler (Wiro'nun kendi model sayfasindan dogrulandi):
+- prompt: metin talimati
+- negativePrompt: istenmeyen seyler (opsiyonel)
+- inputImageFirst: baslangic karesi olacak goruntunun URL'si
+- videoSeconds: 5 veya 10
 """
 from __future__ import annotations
 
@@ -28,45 +28,41 @@ import requests
 from . import config
 
 BASE_URL = "https://api.wiro.ai/v1"
+MODEL_PATH = "klingai/image-to-video-klingai-v2.1-master"
 
 PROMPT_TEMPLATE = (
-    "The reference images show the exact same pair of shoes worn on a "
-    "person's feet while walking outdoors -- this is authentic, candid, "
-    "unpolished content, like something filmed casually on a phone by a "
-    "regular person, NOT a polished studio advertisement. Continue this "
-    "exact scene naturally: the person keeps walking at a relaxed, "
-    "everyday pace along the same street/path. The camera follows at a "
-    "low angle (roughly ankle to knee height), with a natural handheld "
-    "feel -- a little natural camera wobble/shake is good and expected, "
-    "do not smooth it into a stabilized cinematic shot. Real daylight, "
-    "real outdoor environment, genuine and casual the whole time. "
-    "ABSOLUTELY NO studio lighting, NO rotating display podium, NO "
-    "product-showcase staging, NO dramatic camera moves, NO scene cuts "
-    "or transitions of any kind -- this must stay one continuous, "
-    "unedited-looking shot from start to end, same camera style, same "
-    "location throughout. "
-    "Keep the shoe design, colors, materials, graphic patterns, "
-    "hardware, buckles, clasps, and metal fittings EXACTLY identical to "
-    "the reference images throughout the entire video -- do not alter, "
-    "redesign, simplify, resize, or reshape any buckle, clasp, or metal "
-    "hardware (for example, if the reference shows a D-shaped or "
-    "oval-shaped buckle, it must stay that exact same shape -- do not "
-    "turn it into an H-shaped, rectangular, or any other differently "
-    "shaped buckle or clasp). Also do not invent any new pattern, logo, "
+    "This is authentic, candid, unpolished content -- like something "
+    "filmed casually on a phone by a regular person, NOT a polished "
+    "studio advertisement. The reference image shows a pair of shoes worn "
+    "on a person's feet while walking outdoors. Continue this exact scene "
+    "naturally: the person keeps walking at a relaxed, everyday pace "
+    "along the same street/path. The camera follows at a low angle "
+    "(roughly ankle to knee height), with a natural handheld feel -- a "
+    "little natural camera wobble/shake is good and expected, do not "
+    "smooth it into a stabilized cinematic shot. Real daylight, real "
+    "outdoor environment, genuine and casual the whole time. ABSOLUTELY "
+    "NO studio lighting, NO rotating display podium, NO product-showcase "
+    "staging, NO dramatic camera moves, NO scene cuts or transitions of "
+    "any kind -- one continuous, unedited-looking shot from start to "
+    "end, same camera style, same location throughout, the person and "
+    "their legs stay visible the entire time exactly as in the "
+    "reference. "
+    "CRITICAL: keep the shoe design, colors, materials, graphic "
+    "patterns, hardware, buckles, clasps, and any text or logos EXACTLY "
+    "identical to the reference image throughout -- do not alter, "
+    "redesign, simplify, or invent any new pattern, logo, buckle shape, "
     "or brand text anywhere on the shoes. If a part of the shoe is "
-    "plain/blank in the references, keep it plain and blank. "
-    "TREAT THIS AS A PRODUCT-ACCURACY TASK, NOT A CREATIVE REDESIGN: every "
-    "small visual detail from the reference images must survive unchanged "
-    "-- stitching lines and their exact placement, heel shape and height, "
-    "sole thickness and texture, toe shape, strap width and where straps "
-    "attach, eyelets and lace pattern if present, any decorative elements "
-    "(bows, studs, embellishments) and their exact position, and the "
-    "precise shade of every color used. When unsure about a small detail, "
-    "copy it directly from the closest reference image rather than "
-    "guessing or simplifying it. "
-    "Vertical mobile-first framing, natural everyday clothing and "
-    "surroundings exactly as in the reference, no added text, no added "
-    "logos or overlays baked into the video itself."
+    "plain/blank in the reference, keep it plain and blank. Every small "
+    "detail (stitching, heel shape, sole texture and color, toe shape, "
+    "laces, decorative elements) must survive unchanged -- when unsure, "
+    "copy it directly from the reference rather than guessing."
+)
+
+NEGATIVE_PROMPT = (
+    "studio lighting, rotating podium, product display stand, scene cut, "
+    "transition, logo change, new logo, changed pattern, changed buckle "
+    "shape, changed color, blurry text, distorted shoe, extra limbs, "
+    "watermark"
 )
 
 
@@ -76,20 +72,17 @@ def _headers() -> dict:
     return {"x-api-key": config.WIRO_API_KEY, "Content-Type": "application/json"}
 
 
-def _start_run(image_urls: list) -> str:
+def _start_run(image_url: str) -> str:
     payload = {
         "prompt": PROMPT_TEMPLATE,
-        "inputImage": image_urls if len(image_urls) > 1 else image_urls[0],
-        "duration": 8,
-        "resolution": "768P",
-        "aspectRatio": "9:16",
+        "negativePrompt": NEGATIVE_PROMPT,
+        "inputImageFirst": image_url,
+        "videoSeconds": 5,
     }
-    resp = requests.post(
-        f"{BASE_URL}/Run/MiniMax/h3-r2v", headers=_headers(), json=payload, timeout=30
-    )
+    resp = requests.post(f"{BASE_URL}/Run/{MODEL_PATH}", headers=_headers(), json=payload, timeout=30)
     data = resp.json()
     if not data.get("result"):
-        raise RuntimeError(f"Wiro run baslatilamadi: {data.get('errors')}")
+        raise RuntimeError(f"Wiro (Kling) run baslatilamadi: {data.get('errors')}")
     return data["taskid"]
 
 
@@ -134,19 +127,7 @@ def _download(url: str, dest_path: str) -> str:
 
 
 def generate_product_video(image_urls: list, output_path: str) -> str:
-    """
-    image_urls: en az 1, en fazla ~9 gorsel URL'si (ilk gorsel = ana/giyili foto).
-    Basit URL listesi formatinda calismazsa, otomatik olarak sadece ilk
-    gorselle (tek gorsel) tekrar dener.
-    """
-    try:
-        taskid = _start_run(image_urls)
-    except Exception as exc:  # noqa: BLE001
-        if len(image_urls) > 1:
-            print(f"UYARI: coklu gorsel formati basarisiz ({exc}), tek gorselle tekrar deneniyor.")
-            taskid = _start_run([image_urls[0]])
-        else:
-            raise
-
+    """image_urls: en az 1 gorsel URL'si -- sadece ilki (ana/giyili foto) kullanilir."""
+    taskid = _start_run(image_urls[0])
     video_url = _poll_task(taskid)
     return _download(video_url, output_path)
