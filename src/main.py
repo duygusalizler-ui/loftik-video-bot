@@ -33,7 +33,7 @@ import sys
 import tempfile
 
 from . import caption as caption_mod
-from . import background_removal, chekich, config, remotion_video, scraper, state
+from . import chekich, config, remotion_video, scraper, state
 from . import wiro_video
 from .gemini_video import QuotaExceededError, clean_product_shot
 from .gemini_video import generate_product_video as generate_product_video_gemini
@@ -118,6 +118,8 @@ def run() -> None:
                 # 2) Arka planı kaldır (rembg, AI DEĞİL -- sadece segmentasyon).
                 podium_paths = [leg_free_path]
                 try:
+                    from . import background_removal  # lazy import (bkz. background_removal.py notu)
+
                     print("Ürün arka planı kaldırılıyor (rembg, AI değil -- segmentasyon)...")
                     cutout_path = f"{tmp}/product_cutout.png"
                     background_removal.remove_background(leg_free_path, cutout_path)

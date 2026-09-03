@@ -9,22 +9,18 @@ Veo/Wiro gibi "hayal etme" riski yoktur.
 """
 from __future__ import annotations
 
-from PIL import Image
-from rembg import new_session, remove
-
-_session = None
-
-
-def _get_session():
-    global _session
-    if _session is None:
-        # u2netp: ~4MB, hizli, kaynak dostu -- GitHub Actions'ta sorunsuz calisir
-        _session = new_session("u2netp")
-    return _session
-
 
 def remove_background(input_path: str, output_path: str) -> str:
+    # rembg/onnxruntime importu BURADA (fonksiyon icinde) yapiliyor --
+    # boylece bu kutuphanede bir sorun olsa bile (ornegin eksik sistem
+    # kutuphanesi), sadece BU fonksiyon cagrildiginda hata verir, tum
+    # main.py'nin import asamasinda cokmesine sebep olmaz. main.py zaten
+    # bu fonksiyonu try/except ile cagiriyor.
+    from PIL import Image
+    from rembg import new_session, remove
+
+    session = new_session("u2netp")  # hafif model (~4MB)
     img = Image.open(input_path).convert("RGB")
-    out = remove(img, session=_get_session())
+    out = remove(img, session=session)
     out.save(output_path)
     return output_path
