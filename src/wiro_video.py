@@ -58,14 +58,22 @@ PROMPT_TEMPLATE = (
     "plain/blank in the reference, keep it plain and blank. Every small "
     "detail (stitching, heel shape, sole texture and color, toe shape, "
     "laces, decorative elements) must survive unchanged -- when unsure, "
-    "copy it directly from the reference rather than guessing."
+    "copy it directly from the reference rather than guessing. "
+    "CRITICAL: there are EXACTLY two feet and EXACTLY one pair of shoes "
+    "in this video, at all times, in every single frame including the "
+    "very first frame -- never generate a third foot, a third shoe, an "
+    "extra leg, or any duplicate/partial limb anywhere in the frame, "
+    "even briefly or partially at the edge of the frame. Anatomically "
+    "correct: one left foot, one right foot, nothing more."
 )
 
 NEGATIVE_PROMPT = (
     "studio lighting, rotating podium, product display stand, scene cut, "
     "transition, logo change, new logo, changed pattern, changed buckle "
     "shape, changed color, blurry text, distorted shoe, extra limbs, "
-    "watermark, stumbling, staggering, wobbling, unsteady walk, tripping, "
+    "extra foot, extra leg, third foot, third leg, duplicate foot, "
+    "duplicate limb, deformed foot, malformed anatomy, watermark, "
+    "stumbling, staggering, wobbling, unsteady walk, tripping, "
     "shaky camera, jittery camera"
 )
 
