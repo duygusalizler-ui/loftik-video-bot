@@ -59,6 +59,96 @@
       "job_id": "a9013deb-8825-441a-81b4-084c4c9055a6",
       "credits": 7.5,
       "event": "submit"
+    },
+    {
+      "ts": "2026-09-29T21:53:03+00:00",
+      "month": "2026-09",
+      "episode": "ep001",
+      "scene": "walter",
+      "kind": "image",
+      "job_id": "c8e81981-308e-4351-ac1d-80b490b98096",
+      "credits": 1.0,
+      "event": "submit"
+    },
+    {
+      "ts": "2026-09-29T21:53:03+00:00",
+      "month": "2026-09",
+      "episode": "ep001",
+      "scene": "maud",
+      "kind": "image",
+      "job_id": "a4efa55d-1fd3-447e-9439-eef8015427c0",
+      "credits": 1.0,
+      "event": "submit"
+    },
+    {
+      "ts": "2026-09-29T21:53:03+00:00",
+      "month": "2026-09",
+      "episode": "ep001",
+      "scene": "agnes",
+      "kind": "image",
+      "job_id": "5b252017-b37c-42f4-9fe7-e0682826fbda",
+      "credits": 1.0,
+      "event": "submit"
+    },
+    {
+      "ts": "2026-09-29T21:53:03+00:00",
+      "month": "2026-09",
+      "episode": "ep001",
+      "scene": "joan",
+      "kind": "image",
+      "job_id": "c6d5ff16-978b-40cf-97ee-77beb9b5976f",
+      "credits": 1.0,
+      "event": "submit"
+    },
+    {
+      "ts": "2026-09-29T21:53:03+00:00",
+      "month": "2026-09",
+      "episode": "ep001",
+      "scene": "hugh",
+      "kind": "image",
+      "job_id": "004e87d7-91f4-4c7f-af87-24c1f8084d6a",
+      "credits": 1.0,
+      "event": "submit"
+    },
+    {
+      "ts": "2026-09-29T21:53:03+00:00",
+      "month": "2026-09",
+      "episode": "ep001",
+      "scene": "tom",
+      "kind": "image",
+      "job_id": "4264890b-6843-4e4c-8c53-faab8e51ac04",
+      "credits": 1.0,
+      "event": "submit"
+    },
+    {
+      "ts": "2026-09-29T21:53:03+00:00",
+      "month": "2026-09",
+      "episode": "ep001",
+      "scene": "alice",
+      "kind": "image",
+      "job_id": "9d75d95e-c72e-4e07-a5f4-9b2b532b2943",
+      "credits": 1.0,
+      "event": "submit"
+    },
+    {
+      "ts": "2026-09-29T21:53:04+00:00",
+      "month": "2026-09",
+      "episode": "ep001",
+      "scene": "house_inside",
+      "kind": "image",
+      "job_id": "b9808d71-4116-45c2-b6a9-be1d64b49d81",
+      "credits": 1.0,
+      "event": "submit"
+    },
+    {
+      "ts": "2026-09-29T21:53:04+00:00",
+      "month": "2026-09",
+      "episode": "ep001",
+      "scene": "house_outside",
+      "kind": "image",
+      "job_id": "d46a5af4-bb93-4c4f-adbd-0061211afd96",
+      "credits": 1.0,
+      "event": "submit"
     }
   ]
 }

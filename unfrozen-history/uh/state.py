@@ -80,7 +80,16 @@ def save_episode(ep: dict) -> None:
     _write(ep_path(ep["id"]), ep)
 
 
-def scene(ep: dict, n: int) -> dict:
+def is_ref(n) -> bool:
+    return isinstance(n, str) and not n.isdigit()
+
+
+def scene(ep: dict, n) -> dict:
+    """Sahne (int) ya da referans kartı (str anahtar: 'walter', 'house_inside'…)."""
+    if is_ref(n):
+        if n not in ep.get("refs", {}):
+            raise KeyError(f"Referans yok: {n}")
+        return ep["refs"][n]
     for s in ep["scenes"]:
         if s["n"] == n:
             return s
@@ -97,14 +106,20 @@ def cost_of(kind: str) -> float:
 
 def estimate(ep: dict) -> dict:
     n = len(ep["scenes"])
+    refs = ep.get("refs", {})
     remaining = 0.0
     for s in ep["scenes"]:
         for kind in ("image", "clip"):
             if asset(s, kind)["status"] != "done":
                 remaining += cost_of(kind)
+    for r in refs.values():
+        if asset(r, "image")["status"] != "done" and r.get("generate", True):
+            remaining += C.IMAGE_COST
     return {
         "scenes": n,
-        "full_cost": n * (C.IMAGE_COST + C.CLIP_COST),
+        "refs": len(refs),
+        "full_cost": n * (C.IMAGE_COST + C.CLIP_COST)
+                     + sum(C.IMAGE_COST for r in refs.values() if r.get("generate", True)),
         "remaining_cost": remaining,
         "spent": spent(episode=ep["id"]),
     }
@@ -129,8 +144,15 @@ def preflight(ep: dict, n: int, kind: str, balance: float) -> float:
 
     if not gate_ok(ep, "script"):
         raise BudgetError("Senaryo onayı (kapı 1) yok — üretim yapılamaz.")
-    if n not in ep.get("preview_scenes", []) and not gate_ok(ep, "preview"):
+    if is_ref(n):
+        if kind != "image":
+            raise BudgetError("Referans kartı sadece görseldir.")
+    elif n not in ep.get("preview_scenes", []) and not gate_ok(ep, "preview"):
         raise BudgetError(f"Sahne {n} önizleme dışında ve kapı 2 onayı yok.")
+    elif kind == "image" and asset(s, "image")["status"] != "done":
+        missing = [r for r in s.get("refs", []) if asset(scene(ep, r), "image")["status"] != "done"]
+        if missing:
+            raise BudgetError(f"Sahne {n} için önce referans kartları gerekli: {missing}")
     if a["status"] == "done":
         raise BudgetError(f"Sahne {n} {kind} zaten bitti (job {a.get('job_id')}) — tekrar üretilmez.")
     if a["status"] == "running":

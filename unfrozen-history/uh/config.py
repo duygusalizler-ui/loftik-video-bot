@@ -34,7 +34,20 @@ STYLE = (
     "Hand-painted gouache and watercolor storybook illustration, visible brush "
     "texture, warm amber firelight against cold blue winter light, cinematic "
     "composition, historically accurate early 14th-century English peasant "
-    "material culture, soft painterly detail, no text, no letters, no watermark"
+    "material culture: no chimneys (smoke escapes through the thatch), no glass in "
+    "windows (small openings with wooden shutters), soft painterly detail, no text, "
+    "no letters, no watermark"
+)
+# Referans kartları (karakter/mekân) — her bölümde önce bunlar üretilir
+REF_STYLE = (
+    "Hand-painted gouache and watercolor storybook character/location reference "
+    "sheet, same painterly look as the episode, even neutral lighting, plain warm "
+    "parchment background, historically accurate early 14th-century English "
+    "peasant clothing, original fictional person, no text, no labels, no watermark"
+)
+REF_LEAD = (
+    "Use the attached reference images only to keep the same characters "
+    "(faces, hair, clothing) and the same places consistent; compose a new scene:"
 )
 POV_HINT = (
     "First-person point of view: we see through the narrator's own eyes, "

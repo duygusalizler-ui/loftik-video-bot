@@ -75,7 +75,11 @@
         "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260929_211738_a9013deb-8825-441a-81b4-084c4c9055a6.mp4",
         "finished": "2026-09-29T21:19:58+00:00"
       },
-      "beat": "SOĞUK AÇILIŞ + FRAGMAN (0:00)"
+      "beat": "SOĞUK AÇILIŞ + FRAGMAN (0:00)",
+      "refs": [
+        "maud",
+        "house_inside"
+      ]
     },
     {
       "n": 2,
@@ -153,7 +157,10 @@
         "job_id": "061702ee-2b95-4971-80ad-5497ac633d2a",
         "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260929_211727_061702ee-2b95-4971-80ad-5497ac633d2a.mp4",
         "finished": "2026-09-29T21:20:17+00:00"
-      }
+      },
+      "refs": [
+        "walter"
+      ]
     },
     {
       "n": 4,
@@ -174,7 +181,10 @@
       "clip": {
         "status": "pending",
         "attempts": []
-      }
+      },
+      "refs": [
+        "house_outside"
+      ]
     },
     {
       "n": 5,
@@ -195,7 +205,10 @@
       "clip": {
         "status": "pending",
         "attempts": []
-      }
+      },
+      "refs": [
+        "house_outside"
+      ]
     },
     {
       "n": 6,
@@ -216,7 +229,10 @@
       "clip": {
         "status": "pending",
         "attempts": []
-      }
+      },
+      "refs": [
+        "house_inside"
+      ]
     },
     {
       "n": 7,
@@ -237,7 +253,11 @@
       "clip": {
         "status": "pending",
         "attempts": []
-      }
+      },
+      "refs": [
+        "agnes",
+        "house_outside"
+      ]
     },
     {
       "n": 8,
@@ -258,7 +278,10 @@
       "clip": {
         "status": "pending",
         "attempts": []
-      }
+      },
+      "refs": [
+        "house_inside"
+      ]
     },
     {
       "n": 9,
@@ -280,7 +303,10 @@
         "status": "pending",
         "attempts": []
       },
-      "beat": "⚡ KIRILMA 1 (2:47): Biri odun çalıyor"
+      "beat": "⚡ KIRILMA 1 (2:47): Biri odun çalıyor",
+      "refs": [
+        "house_outside"
+      ]
     },
     {
       "n": 10,
@@ -301,7 +327,10 @@
       "clip": {
         "status": "pending",
         "attempts": []
-      }
+      },
+      "refs": [
+        "house_inside"
+      ]
     },
     {
       "n": 11,
@@ -322,7 +351,12 @@
       "clip": {
         "status": "pending",
         "attempts": []
-      }
+      },
+      "refs": [
+        "agnes",
+        "joan",
+        "house_inside"
+      ]
     },
     {
       "n": 12,
@@ -343,7 +377,10 @@
       "clip": {
         "status": "pending",
         "attempts": []
-      }
+      },
+      "refs": [
+        "house_inside"
+      ]
     },
     {
       "n": 13,
@@ -364,7 +401,12 @@
       "clip": {
         "status": "pending",
         "attempts": []
-      }
+      },
+      "refs": [
+        "agnes",
+        "joan",
+        "house_inside"
+      ]
     },
     {
       "n": 14,
@@ -385,7 +427,10 @@
       "clip": {
         "status": "pending",
         "attempts": []
-      }
+      },
+      "refs": [
+        "house_inside"
+      ]
     },
     {
       "n": 15,
@@ -407,7 +452,11 @@
         "status": "pending",
         "attempts": []
       },
-      "beat": "⚡ KIRILMA 2 (4:53): Hırsız ortaya çıkıyor"
+      "beat": "⚡ KIRILMA 2 (4:53): Hırsız ortaya çıkıyor",
+      "refs": [
+        "tom",
+        "house_outside"
+      ]
     },
     {
       "n": 16,
@@ -428,7 +477,11 @@
       "clip": {
         "status": "pending",
         "attempts": []
-      }
+      },
+      "refs": [
+        "tom",
+        "house_outside"
+      ]
     },
     {
       "n": 17,
@@ -449,7 +502,10 @@
       "clip": {
         "status": "pending",
         "attempts": []
-      }
+      },
+      "refs": [
+        "house_inside"
+      ]
     },
     {
       "n": 18,
@@ -470,7 +526,11 @@
       "clip": {
         "status": "pending",
         "attempts": []
-      }
+      },
+      "refs": [
+        "joan",
+        "house_inside"
+      ]
     },
     {
       "n": 19,
@@ -512,7 +572,10 @@
       "clip": {
         "status": "pending",
         "attempts": []
-      }
+      },
+      "refs": [
+        "walter"
+      ]
     },
     {
       "n": 21,
@@ -533,7 +596,11 @@
       "clip": {
         "status": "pending",
         "attempts": []
-      }
+      },
+      "refs": [
+        "tom",
+        "alice"
+      ]
     },
     {
       "n": 22,
@@ -576,7 +643,12 @@
         "status": "pending",
         "attempts": []
       },
-      "beat": "⚡ KIRILMA 3 (7:42): Anne hasta, 3 bağ odun kaldı"
+      "beat": "⚡ KIRILMA 3 (7:42): Anne hasta, 3 bağ odun kaldı",
+      "refs": [
+        "maud",
+        "agnes",
+        "house_inside"
+      ]
     },
     {
       "n": 24,
@@ -597,7 +669,12 @@
       "clip": {
         "status": "pending",
         "attempts": []
-      }
+      },
+      "refs": [
+        "maud",
+        "agnes",
+        "house_inside"
+      ]
     },
     {
       "n": 25,
@@ -618,7 +695,11 @@
       "clip": {
         "status": "pending",
         "attempts": []
-      }
+      },
+      "refs": [
+        "agnes",
+        "house_inside"
+      ]
     },
     {
       "n": 26,
@@ -639,7 +720,13 @@
       "clip": {
         "status": "pending",
         "attempts": []
-      }
+      },
+      "refs": [
+        "agnes",
+        "joan",
+        "hugh",
+        "maud"
+      ]
     },
     {
       "n": 27,
@@ -660,7 +747,12 @@
       "clip": {
         "status": "pending",
         "attempts": []
-      }
+      },
+      "refs": [
+        "maud",
+        "hugh",
+        "house_inside"
+      ]
     },
     {
       "n": 28,
@@ -682,7 +774,12 @@
         "status": "pending",
         "attempts": []
       },
-      "beat": "⚡ ÖDÜL (9:28): Anne yaşıyor"
+      "beat": "⚡ ÖDÜL (9:28): Anne yaşıyor",
+      "refs": [
+        "maud",
+        "agnes",
+        "house_inside"
+      ]
     },
     {
       "n": 29,
@@ -703,7 +800,12 @@
       "clip": {
         "status": "pending",
         "attempts": []
-      }
+      },
+      "refs": [
+        "tom",
+        "walter",
+        "house_outside"
+      ]
     },
     {
       "n": 30,
@@ -745,7 +847,13 @@
       "clip": {
         "status": "pending",
         "attempts": []
-      }
+      },
+      "refs": [
+        "agnes",
+        "joan",
+        "hugh",
+        "maud"
+      ]
     },
     {
       "n": 32,
@@ -767,7 +875,180 @@
         "status": "pending",
         "attempts": []
       },
-      "beat": "BİTİŞ EKRANI (son 20 sn)"
+      "beat": "BİTİŞ EKRANI (son 20 sn)",
+      "refs": [
+        "house_outside"
+      ]
     }
-  ]
+  ],
+  "refs": {
+    "walter": {
+      "kind": "character",
+      "prompt": "Character reference sheet: on the left a full-body view standing upright facing the viewer, head to toe, on the right a chest-up portrait of the same person; identical original character in both views, single character only, no other people, no props except those described. Walter, English peasant man about 35, lean and weathered, short brown beard, brown eyes, brown wool hood with shoulder cape, knee-length brown wool tunic with leather belt, wool leg wraps, simple leather shoes. Match the face, hair and clothing of the person in the attached image exactly",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "c8e81981-308e-4351-ac1d-80b490b98096",
+            "submitted": "2026-09-29T21:53:03+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "c8e81981-308e-4351-ac1d-80b490b98096",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260929_215252_c8e81981-308e-4351-ac1d-80b490b98096.png",
+        "finished": "2026-09-29T21:53:48+00:00"
+      },
+      "from": [
+        "1f9107d3-0e64-4ab3-a8ad-c2614df43564"
+      ],
+      "n": "walter"
+    },
+    "maud": {
+      "kind": "character",
+      "prompt": "Character reference sheet: on the left a full-body view standing upright facing the viewer, head to toe, on the right a chest-up portrait of the same person; identical original character in both views, single character only, no other people, no props except those described. Maud, very old English peasant woman about 70, deeply lined face, thin grey hair under a dark brown wool hood, heavy grey-brown wool shawl, long dark wool kirtle. Match the face, hair and clothing of the person in the attached image exactly",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "a4efa55d-1fd3-447e-9439-eef8015427c0",
+            "submitted": "2026-09-29T21:53:03+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "a4efa55d-1fd3-447e-9439-eef8015427c0",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260929_215252_a4efa55d-1fd3-447e-9439-eef8015427c0.png",
+        "finished": "2026-09-29T21:53:49+00:00"
+      },
+      "from": [
+        "1e924c82-9c53-4c37-a97b-9041a65e9f46"
+      ],
+      "n": "maud"
+    },
+    "agnes": {
+      "kind": "character",
+      "prompt": "Character reference sheet: on the left a full-body view standing upright facing the viewer, head to toe, on the right a chest-up portrait of the same person; identical original character in both views, single character only, no other people, no props except those described. Agnes, English peasant woman about 30, oval face, calm grey-green eyes, a few freckles, white linen head-kerchief covering her hair, brown wool kirtle with rolled sleeves over a linen undershirt, grey wool apron, leather shoes, mature adult features",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "5b252017-b37c-42f4-9fe7-e0682826fbda",
+            "submitted": "2026-09-29T21:53:03+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "5b252017-b37c-42f4-9fe7-e0682826fbda",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260929_215251_5b252017-b37c-42f4-9fe7-e0682826fbda.png",
+        "finished": "2026-09-29T21:53:50+00:00"
+      },
+      "n": "agnes"
+    },
+    "joan": {
+      "kind": "character",
+      "prompt": "Character reference sheet: on the left a full-body view standing upright facing the viewer, head to toe, on the right a chest-up portrait of the same person; identical original character in both views, single character only, no other people, no props except those described. Joan, English peasant girl about 10, round face, braided brown hair, grey wool hood, dark green wool tunic dress, small leather shoes",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "c6d5ff16-978b-40cf-97ee-77beb9b5976f",
+            "submitted": "2026-09-29T21:53:03+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "c6d5ff16-978b-40cf-97ee-77beb9b5976f",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260929_215252_c6d5ff16-978b-40cf-97ee-77beb9b5976f.png",
+        "finished": "2026-09-29T21:53:50+00:00"
+      },
+      "n": "joan"
+    },
+    "hugh": {
+      "kind": "character",
+      "prompt": "Character reference sheet: on the left a full-body view standing upright facing the viewer, head to toe, on the right a chest-up portrait of the same person; identical original character in both views, single character only, no other people, no props except those described. Hugh, small English peasant boy about 5, fair tousled hair, rosy cheeks, oversized russet-red wool hood, short brown wool tunic, wool leg wraps",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "004e87d7-91f4-4c7f-af87-24c1f8084d6a",
+            "submitted": "2026-09-29T21:53:03+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "004e87d7-91f4-4c7f-af87-24c1f8084d6a",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260929_215251_004e87d7-91f4-4c7f-af87-24c1f8084d6a.png",
+        "finished": "2026-09-29T21:53:51+00:00"
+      },
+      "n": "hugh"
+    },
+    "tom": {
+      "kind": "character",
+      "prompt": "Character reference sheet: on the left a full-body view standing upright facing the viewer, head to toe, on the right a chest-up portrait of the same person; identical original character in both views, single character only, no other people, no props except those described. Tom, thin English peasant boy about 9, hollow cheeks, dark messy hair, no hood, ragged patched grey tunic, rags tied around his bare feet",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "4264890b-6843-4e4c-8c53-faab8e51ac04",
+            "submitted": "2026-09-29T21:53:03+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "4264890b-6843-4e4c-8c53-faab8e51ac04",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260929_215253_4264890b-6843-4e4c-8c53-faab8e51ac04.png",
+        "finished": "2026-09-29T21:53:52+00:00"
+      },
+      "n": "tom"
+    },
+    "alice": {
+      "kind": "character",
+      "prompt": "Character reference sheet: on the left a full-body view standing upright facing the viewer, head to toe, on the right a chest-up portrait of the same person; identical original character in both views, single character only, no other people, no props except those described. Alice, thin English peasant widow about 30, tired kind face, dark hair under a plain off-white linen kerchief, patched grey wool cloak over a faded blue kirtle",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "9d75d95e-c72e-4e07-a5f4-9b2b532b2943",
+            "submitted": "2026-09-29T21:53:03+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "9d75d95e-c72e-4e07-a5f4-9b2b532b2943",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260929_215251_9d75d95e-c72e-4e07-a5f4-9b2b532b2943.png",
+        "finished": "2026-09-29T21:53:53+00:00"
+      },
+      "n": "alice"
+    },
+    "house_inside": {
+      "kind": "location",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "b9808d71-4116-45c2-b6a9-be1d64b49d81",
+            "submitted": "2026-09-29T21:53:04+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "b9808d71-4116-45c2-b6a9-be1d64b49d81",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260929_215252_b9808d71-4116-45c2-b6a9-be1d64b49d81.png",
+        "finished": "2026-09-29T21:53:54+00:00"
+      },
+      "prompt": "Location reference, wide establishing view of the interior of one small medieval English peasant longhouse: curved cruck timbers, central stone-ringed open hearth on a beaten earth floor, smoke-blackened rafters and underside of the thatch, wattle-and-daub walls, a wooden bed with straw mattress and sheepskins on one side, sacks, clay pots and hanging onions, a small unglazed window opening with a wooden shutter, a low wooden door, and at the far end a wattle partition with a brown cow behind it and hens roosting on a beam, no chimney, no people, warm firelight with cold blue light from the shutter",
+      "n": "house_inside"
+    },
+    "house_outside": {
+      "kind": "location",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "d46a5af4-bb93-4c4f-adbd-0061211afd96",
+            "submitted": "2026-09-29T21:53:04+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "d46a5af4-bb93-4c4f-adbd-0061211afd96",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260929_215251_d46a5af4-bb93-4c4f-adbd-0061211afd96.png",
+        "finished": "2026-09-29T21:53:54+00:00"
+      },
+      "prompt": "Location reference, three-quarter exterior view of one small medieval English peasant cottage in winter: wattle-and-daub walls on a cruck timber frame, very thick snow-covered thatched roof with smoke seeping through the thatch, no chimney, one small unglazed window opening with a wooden shutter, a low wooden door, a woodpile of brushwood bundles stacked under the eaves, a woven wattle fence, snowy yard, no people",
+      "n": "house_outside"
+    }
+  }
 }

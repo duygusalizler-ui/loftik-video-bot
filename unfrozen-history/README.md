@@ -5,8 +5,9 @@
 ## Akış
 
 1. **Senaryo + sahne listesi** → `episodes/epXXX/episode.json`, okunabilir hali `SCRIPT.md` → **Kapı 1 onayı** (0 kredi)
-2. **Önizleme** (ilk 3 sahne ≈ 60 sn, ~26 kredi) → **Kapı 2 onayı**
-3. **Tam üretim** → montaj → YouTube'a *liste dışı* yükleme → **Kapı 3 onayı** → herkese açık
+2. **Oyuncu kadrosu (referans kartları)** → her karakter + ana mekânlar için 1 kart (1'er kredi); her sahnenin görseli ve klibi bu kartlarla üretilir → karakter/mekân tutarlılığı
+3. **Önizleme** (ilk 3 sahne ≈ 60 sn, ~26 kredi) → **Kapı 2 onayı**
+4. **Tam üretim** → montaj → YouTube'a *liste dışı* yükleme → **Kapı 3 onayı** → herkese açık
 
 Sahne başına: 1 başlangıç karesi (`gpt_image_2`, medium, 1k, 16:9 = 1 kredi) + 1 klip (`seedance_2_0_mini`, 15 sn, 480p, ortam sesli = 7,5 kredi). Her klip 3 açılı çekim (~5 sn/açı) olarak istenir.
 Her sahne ≈ 20 sn anlatım; klip, anlatım süresine göre yavaşlatılır (en fazla 0,65x, ara kare üretimli), 1080p'ye büyütülür (lanczos + unsharp).

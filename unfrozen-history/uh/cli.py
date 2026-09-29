@@ -32,10 +32,26 @@ def _scenes(spec: str | None) -> list[int] | None:
     return out
 
 
+def _n(v: str):
+    return int(v) if v.isdigit() else v
+
+
+def ref_media(ep: dict, keys: list[str], role: str) -> list[dict]:
+    out = []
+    for k in keys:
+        a = S.asset(S.scene(ep, k), "image")
+        out.append({"role": role, "value": a.get("media_id") or a["job_id"]})
+    return out
+
+
 def full_prompt(ep: dict, s: dict, kind: str) -> str:
+    if S.is_ref(s.get("n")):
+        style = C.REF_STYLE if s["kind"] == "character" else C.STYLE
+        return f"{s['prompt']}. {ep['setting']}. Style: {style}."
     if kind == "image":
         pov = f" {C.POV_HINT}." if s.get("pov") else ""
-        return f"{s['image_prompt']}.{pov} {ep['setting']}. Style: {C.STYLE}."
+        lead = C.REF_LEAD + " " if s.get("refs") else ""
+        return f"{lead}{s['image_prompt']}.{pov} {ep['setting']}. Style: {C.STYLE}."
     shots = " ".join(f"Shot {i}: {t}." for i, t in enumerate(s["shots"], 1))
     return (f"Multi-shot sequence, about 5 seconds per shot. {shots} {C.MOTION_SUFFIX}. "
             f"Sound: {s['sound']}. {C.SOUND_SUFFIX}.")
@@ -52,6 +68,8 @@ def cmd_status(a):
         i, c = S.asset(s, "image"), S.asset(s, "clip")
         words = len(s["narration"].split())
         print(f"  {s['n']:>2} [{words:>2} kelime] görsel={i['status']:<7} klip={c['status']:<7} {s['title']}")
+    for k, r in ep.get("refs", {}).items():
+        print(f"  ref {k:<13} {r['kind']:<9} görsel={S.asset(r, 'image')['status']}")
 
 
 def cmd_check(a):
@@ -67,6 +85,14 @@ def cmd_check(a):
     params["prompt"] = full_prompt(ep, s, a.kind)
     if a.kind == "clip":
         params["medias"] = [{"role": "start_image", "value": S.asset(s, "image")["job_id"]}]
+        chars = [r for r in s.get("refs", []) if ep["refs"][r]["kind"] == "character"]
+        params["medias"] += ref_media(ep, chars[:3], "image_references")
+    elif S.is_ref(a.n):
+        params["medias"] = [{"role": "image", "value": v} for v in s.get("from", [])]
+    elif s.get("refs"):
+        params["medias"] = ref_media(ep, s["refs"], "image")
+    if not params.get("medias"):
+        params.pop("medias", None)
     print(json.dumps({"ok": True, "cost": cost, "params": params}, ensure_ascii=False, indent=2))
 
 
@@ -144,7 +170,7 @@ def main():
     x = sub.add_parser("status"); x.add_argument("ep"); x.set_defaults(f=cmd_status)
     x = sub.add_parser("approve"); x.add_argument("ep"); x.add_argument("gate", choices=S.GATES); x.set_defaults(f=cmd_approve)
     for name, fn in (("check", cmd_check), ("submitted", cmd_submitted), ("result", cmd_result)):
-        x = sub.add_parser(name); x.add_argument("ep"); x.add_argument("n", type=int)
+        x = sub.add_parser(name); x.add_argument("ep"); x.add_argument("n", type=_n)
         x.add_argument("kind", choices=("image", "clip")); x.set_defaults(f=fn)
         if name == "check":
             x.add_argument("--balance", type=float, required=True)
