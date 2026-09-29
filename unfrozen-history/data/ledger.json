@@ -149,6 +149,16 @@
       "job_id": "d46a5af4-bb93-4c4f-adbd-0061211afd96",
       "credits": 1.0,
       "event": "submit"
+    },
+    {
+      "ts": "2026-09-29T22:05:46+00:00",
+      "month": "2026-09",
+      "episode": "channel",
+      "scene": "voice_clone",
+      "kind": "voice",
+      "job_id": "07112420-b262-46e4-8698-6d2a177958f4",
+      "credits": 40.0,
+      "event": "submit"
     }
   ]
 }

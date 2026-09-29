@@ -63,6 +63,11 @@ SOUND_SUFFIX = "Natural ambient sound effects only; no speech, no voices talking
 VOICE_EN = "en-US-ChristopherNeural"
 VOICE_RATE = "-5%"
 VOICE_DE = "de-DE-ConradNeural"  # ileride ikinci ses kanalı
+# Kanal sahibinin klon sesi (Higgsfield, Qwen TTS ~0,11 kredi/sahne). Klon bir kerelik 40 kredi.
+CLONE_VOICE_ID = "07112420-b262-46e4-8698-6d2a177958f4"
+CLONE_TTS = {"model": "qwen_audio_tts", "voice_type": "element", "voice_id": CLONE_VOICE_ID,
+             "language": "en", "format": "mp3", "sample_rate": 44100, "speech_rate": 1.1,
+             "instruction": "Calm, low, warm storyteller by the fire; steady pace, short natural pauses; clear native English."}
 
 # --- Montaj ---
 OUT_W, OUT_H, OUT_FPS = 1920, 1080, 30
