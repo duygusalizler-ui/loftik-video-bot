@@ -68,8 +68,10 @@ def _download_gallery(product, raw_image_path: str, tmp: str) -> list:
 
 def _run_ad_mode(product, candidate, raw_image_path: str, base_caption: str, tmp: str) -> None:
     video_path = f"{tmp}/reklam.mp4"
+    gallery = _download_gallery(product, raw_image_path, tmp)
     result = ad_pipeline.build_ad(
-        product, raw_image_path, bool(candidate.get("is_boot")), f"{tmp}/reklam_is", video_path
+        product, raw_image_path, bool(candidate.get("is_boot")), f"{tmp}/reklam_is", video_path,
+        extra_refs=gallery[1:3],
     )
     brief = result.brief
 
@@ -86,7 +88,7 @@ def _run_ad_mode(product, candidate, raw_image_path: str, base_caption: str, tmp
         )
     else:
         print("Kalite kontrolünden geçen klip yok -- gerçek fotoğraflar gönderiliyor.")
-        local_paths = _download_gallery(product, raw_image_path, tmp)
+        local_paths = gallery
         send_message(
             "⚠️ Bu ürün için kalite kontrolünden geçen video çıkmadı, hatalı video "
             "göndermek yerine gerçek fotoğrafları yolluyorum.\n\n" + ad_pipeline.qa_summary(result)

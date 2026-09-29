@@ -66,14 +66,21 @@ SCENE_IMAGE_RULES = (
 )
 
 
-def generate_scene_image(reference_path: str, prompt: str, out_path: str) -> str:
+def generate_scene_image(reference_path, prompt: str, out_path: str, product_title: str = "") -> str:
+    """reference_path: tek yol ya da yol listesi (ilki ana foto, digerleri farkli acilar)."""
     from google.genai import types
 
     client = _client()
-    parts = [
-        types.Part.from_bytes(data=Path(reference_path).read_bytes(), mime_type=_mime(reference_path)),
-        prompt + SCENE_IMAGE_RULES,
-    ]
+    refs = [reference_path] if isinstance(reference_path, str) else list(reference_path)
+    parts = [types.Part.from_bytes(data=Path(r).read_bytes(), mime_type=_mime(r)) for r in refs]
+    product_line = (
+        f"The product is: {product_title}. The {len(refs)} reference photo(s) show this SAME exact "
+        "product from different angles -- copy its construction exactly (e.g. a chelsea boot has "
+        "NO laces and has elastic side panels; keep leather vs suede texture exactly as shown; keep "
+        "the same shaft height). "
+        if product_title else ""
+    )
+    parts.append(product_line + prompt + SCENE_IMAGE_RULES)
     cfg_kwargs = {"response_modalities": ["TEXT", "IMAGE"]}
     try:
         cfg = types.GenerateContentConfig(**cfg_kwargs, image_config=types.ImageConfig(aspect_ratio="9:16"))
@@ -141,12 +148,15 @@ def generate_clip(image_path: str, motion_prompt: str, out_path: str) -> str:
     return out_path
 
 
-def _best_scene_image(reference: str, prompt: str, work: str, idx: int, qa_log: list) -> str | None:
+def _best_scene_image(reference: str, prompt: str, work: str, idx: int, qa_log: list,
+                      refs: list | None = None, product_title: str = "") -> str | None:
     best = (None, -1)
     for attempt in range(1, config.SCENE_IMAGE_ATTEMPTS + 1):
         try:
             print(f"Sahne {idx + 1}: görsel üretiliyor (deneme {attempt})...")
-            img = generate_scene_image(reference, prompt, os.path.join(work, f"scene{idx}_{attempt}.png"))
+            img = generate_scene_image(
+                refs or reference, prompt, os.path.join(work, f"scene{idx}_{attempt}.png"), product_title
+            )
         except QuotaExceededError:
             raise
         except Exception as exc:  # noqa: BLE001
@@ -182,7 +192,15 @@ def _good_clip(reference: str, scene_img: str, motion: str, work: str, idx: int,
     return None
 
 
-def build_ad(product, reference_path: str, is_boot: bool, work: str, output_path: str) -> AdResult:
+ALT_MOTION = (
+    "Same scene, different shot: the camera starts close on the shoes and slowly pulls back and "
+    "rises to reveal the full outfit while the person takes two calm steps forward; natural "
+    "handheld phone movement."
+)
+
+
+def build_ad(product, reference_path: str, is_boot: bool, work: str, output_path: str,
+             extra_refs: list | None = None) -> AdResult:
     os.makedirs(work, exist_ok=True)
     print("Rakip reklam analizi yapılıyor...")
     brief = competitor_ads.build_brief(product, is_boot=is_boot)
@@ -190,13 +208,20 @@ def build_ad(product, reference_path: str, is_boot: bool, work: str, output_path
 
     qa_log: list = []
     clips, scene_images = [], []
+    refs = [reference_path] + list(extra_refs or [])[:2]
     for idx, scene in enumerate(brief["sahneler"]):
-        img = _best_scene_image(reference_path, scene["gorsel_prompt"], work, idx, qa_log)
+        motion = scene["hareket_prompt"]
+        img = _best_scene_image(reference_path, scene["gorsel_prompt"], work, idx, qa_log, refs, product.title)
+        if not img and scene_images:
+            # Bu sahnenin gorseli tutmadi: kontrolden gecmis onceki sahne gorselini
+            # farkli bir kamera hareketiyle tekrar kullan (video kisa kalmasin).
+            print(f"Sahne {idx + 1}: görsel tutmadı, önceki sahne görseli farklı kamera hareketiyle kullanılıyor.")
+            img, motion = scene_images[-1], ALT_MOTION
         if not img:
             print(f"Sahne {idx + 1}: kalite kontrolünden geçen görsel yok, sahne atlandı.")
             continue
         scene_images.append(img)
-        clip = _good_clip(reference_path, img, scene["hareket_prompt"], work, idx, qa_log)
+        clip = _good_clip(reference_path, img, motion, work, idx, qa_log)
         if clip:
             clips.append(clip)
         else:
