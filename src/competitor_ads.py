@@ -27,7 +27,7 @@ from urllib.parse import quote
 
 import requests
 
-from . import config
+from . import config, gemini_util
 
 APIFY_RUN_URL = "https://api.apify.com/v2/acts/{actor}/run-sync-get-dataset-items"
 
@@ -258,10 +258,10 @@ def analyze_with_ads(product, ads: list[dict], n_scenes: int) -> dict:
         except requests.RequestException:
             continue
 
-    resp = client.models.generate_content(
-        model=config.GEMINI_TEXT_MODEL,
-        contents=parts,
-        config=types.GenerateContentConfig(response_mime_type="application/json"),
+    resp = gemini_util.generate_content(
+        client,
+        parts,
+        types.GenerateContentConfig(response_mime_type="application/json"),
     )
     return _extract_json(resp.text)
 
@@ -271,14 +271,14 @@ def analyze_with_search(product, keywords: list[str], n_scenes: int) -> dict:
     from google.genai import types
 
     client = _gemini_client()
-    resp = client.models.generate_content(
-        model=config.GEMINI_TEXT_MODEL,
-        contents=_task_text(product, n_scenes)
+    resp = gemini_util.generate_content(
+        client,
+        _task_text(product, n_scenes)
         + "\n\nÖnce Google'da şu konularda Türkiye'deki güncel ayakkabı reklamlarını ve "
         f"Instagram içerik trendlerini araştır: {', '.join(keywords)}. Rakip markaların "
         "(ör. büyük ayakkabı zincirleri ve Instagram butikleri) reklamlarında öne çıkan "
         "kancaları ve formatları çıkar.",
-        config=types.GenerateContentConfig(tools=[types.Tool(google_search=types.GoogleSearch())]),
+        types.GenerateContentConfig(tools=[types.Tool(google_search=types.GoogleSearch())]),
     )
     return _extract_json(resp.text)
 

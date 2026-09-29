@@ -67,6 +67,10 @@ def _request(url: str, max_attempts: int = 4):
 
 
 def download_binary(url: str, dest_path: str) -> str:
+    if url.startswith("//"):  # sitedeki galeri linkleri protokolsuz geliyor
+        url = "https:" + url
+    elif url.startswith("/"):
+        url = config.SITE_BASE_URL.rstrip("/") + url
     resp = _request(url)
     with open(dest_path, "wb") as f:
         f.write(resp.content)

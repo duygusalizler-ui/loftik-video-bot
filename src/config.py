@@ -86,7 +86,13 @@ COMPETITOR_PAGES = [
 ]
 
 # Gemini modelleri (repoda calistigi dogrulanmis olanlar varsayilan)
-GEMINI_TEXT_MODEL = os.environ.get("GEMINI_TEXT_MODEL", "gemini-2.5-flash")
+GEMINI_TEXT_MODEL = os.environ.get("GEMINI_TEXT_MODEL") or "gemini-3.8-flash"
+# Ana model kapanirsa sirayla denenecek yedekler (404 alinca otomatik gecer)
+GEMINI_TEXT_FALLBACKS = [
+    m.strip()
+    for m in (os.environ.get("GEMINI_TEXT_FALLBACKS") or "gemini-3.8-flash,gemini-3-flash,gemini-2.5-flash").split(",")
+    if m.strip()
+]
 GEMINI_IMAGE_MODEL = os.environ.get("GEMINI_IMAGE_MODEL", "gemini-2.5-flash-image")
 
 # Reklam videosu kac sahneden olussun (her sahne ~8 sn Veo klibi).

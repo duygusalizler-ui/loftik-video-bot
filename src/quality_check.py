@@ -12,7 +12,7 @@ import json
 import re
 from pathlib import Path
 
-from . import config
+from . import config, gemini_util
 
 QA_PROMPT = """Sen bir e-ticaret reklam kalite kontrolcüsüsün.
 İLK görsel: sitedeki GERÇEK ürün fotoğrafı (referans).
@@ -48,10 +48,10 @@ def score_images(reference_path: str, candidate_paths: list[str]) -> dict:
     parts = [QA_PROMPT, types.Part.from_bytes(data=Path(reference_path).read_bytes(), mime_type=_mime(reference_path))]
     for p in candidate_paths:
         parts.append(types.Part.from_bytes(data=Path(p).read_bytes(), mime_type=_mime(p)))
-    resp = client.models.generate_content(
-        model=config.GEMINI_TEXT_MODEL,
-        contents=parts,
-        config=types.GenerateContentConfig(response_mime_type="application/json"),
+    resp = gemini_util.generate_content(
+        client,
+        parts,
+        types.GenerateContentConfig(response_mime_type="application/json"),
     )
     text = (resp.text or "").strip()
     text = re.sub(r"^```(?:json)?|```$", "", text, flags=re.MULTILINE).strip()

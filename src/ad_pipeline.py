@@ -79,7 +79,18 @@ def generate_scene_image(reference_path: str, prompt: str, out_path: str) -> str
         cfg = types.GenerateContentConfig(**cfg_kwargs, image_config=types.ImageConfig(aspect_ratio="9:16"))
     except Exception:  # noqa: BLE001 -- eski SDK'da image_config yoksa
         cfg = types.GenerateContentConfig(**cfg_kwargs)
-    resp = client.models.generate_content(model=config.GEMINI_IMAGE_MODEL, contents=parts, config=cfg)
+    resp = None
+    for model in dict.fromkeys([config.GEMINI_IMAGE_MODEL, "gemini-3-pro-image", "gemini-2.5-flash-image"]):
+        try:
+            resp = client.models.generate_content(model=model, contents=parts, config=cfg)
+            break
+        except Exception as exc:  # noqa: BLE001
+            if "404" in str(exc) or "NOT_FOUND" in str(exc):
+                print(f"UYARI: görsel modeli '{model}' kullanılamıyor, sıradaki deneniyor.")
+                continue
+            raise
+    if resp is None:
+        raise RuntimeError("Kullanılabilir Gemini görsel modeli bulunamadı.")
     for part in resp.candidates[0].content.parts:
         inline = getattr(part, "inline_data", None)
         if inline is not None and getattr(inline, "data", None):
