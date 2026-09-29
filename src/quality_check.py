@@ -23,11 +23,16 @@ SONRAKİ görsel(ler): yapay zekâyla üretilmiş reklam karesi/kareleri.
 2. Renkler aynı mı (üst malzeme VE taban rengi -- taban rengi çok önemli)?
 3. Uydurma logo, yazı, desen eklenmiş mi?
 4. Anatomik hata var mı (üçüncü ayak, fazla bacak/el, eriyen şekiller)?
-5. Genel olarak gerçekçi ve reklamda kullanılabilir mi?
+5. Yapay zekâ olduğu belli oluyor mu? (plastik/pürüzsüz ciltler, aşırı sinematik ışık,
+   HDR parlaması, fazla kusursuz/steril ortam, mantıksız arka plan detayları, eriyen yazılar,
+   garip eller). Sıradan bir telefon çekimi gibi mi duruyor?
+6. Genel olarak reklamda kullanılabilir mi?
 
 Sadece şu JSON'u döndür:
-{"urun_benzerligi": 0-10, "gercekcilik": 0-10, "hatalar": ["kısa Türkçe madde"], "puan": 0-10}
-"puan" = en düşük kritik değer; taban rengi yanlışsa veya fazla uzuv varsa puan en fazla 4 olsun.
+{"urun_benzerligi": 0-10, "gercekcilik": 0-10, "yapay_zeka_belli_mi": 0-10, "hatalar": ["kısa Türkçe madde"], "puan": 0-10}
+"yapay_zeka_belli_mi": 0 = hiç belli değil, 10 = çok belli.
+"puan" = en düşük kritik değer; taban rengi yanlışsa veya fazla uzuv varsa puan en fazla 4 olsun;
+yapay_zeka_belli_mi 5 veya üstüyse puan en fazla 6 olsun (güven sarsar, kullanılamaz).
 """
 
 

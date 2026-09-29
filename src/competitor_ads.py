@@ -177,7 +177,7 @@ Sadece şu JSON'u döndür (başka metin yok):
   "kanca_metni": "videonun ilk 2 saniyesinde ekranda yazacak Türkçe kanca, EN FAZLA 6 kelime",
   "urun_satiri": "ortada çıkacak kısa ürün satırı, Türkçe, EN FAZLA 7 kelime",
   "cta": "kapanış çağrısı, Türkçe, EN FAZLA 4 kelime",
-  "paylasim_metni": "Instagram açıklaması, Türkçe, 2-3 kısa satır + 4-5 hashtag",
+  "paylasim_metni": "Instagram açıklaması, Türkçe, 2-3 kısa satır; ilk satır paylaşıma/etiketlemeye davet etsin (ör. 'Bunu bot arayan arkadaşına gönder'), + 4-5 hashtag",
   "sahneler": [
     {"gorsel_prompt": "ENGLISH prompt for a photoreal 9:16 lifestyle still that shows the exact product", "hareket_prompt": "ENGLISH prompt describing calm camera + subject motion for an 8 second clip"}
   ]
@@ -219,6 +219,12 @@ def _task_text(product, n_scenes: int) -> str:
         + f"\nTam olarak {n_scenes} sahne üret. {SCENE_RULES}\n"
         "Her gorsel_prompt ürünü referans fotoğraftaki haliyle birebir tarif etsin "
         "(renk, taban, model) ve kişinin yüzü kadrajda olmasın ya da çok küçük olsun. "
+        "HEDEF: izleyicinin videoyu bir arkadaşına DM ile GÖNDERMESİ ve kaydetmesi (organik "
+        "büyüme için en önemli sinyal). Kanca metni paylaşım tetiklesin: birini etiketletecek, "
+        "hediye/kombin fikri verecek, 'bunu X'e gönder' dedirtecek, samimi ve günlük dilde. "
+        "Videoda KONUŞMA YOK, sadece ürün görüntüsü + ekran yazısı + kısık müzik. "
+        "Görüntüler yapay zekâ olduğu belli olmayacak kadar doğal, telefonla çekilmiş gibi olmalı; "
+        "sinematik/fantastik sahne önerme. "
         "Rakiplerde gördüğün kazanan kalıpları kullan ama kopyalama; rakip marka adı, "
         "logo, yanıltıcı indirim veya sahte müşteri yorumu kullanma.\n"
         + BRIEF_SCHEMA_HINT

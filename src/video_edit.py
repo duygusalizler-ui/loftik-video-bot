@@ -7,14 +7,25 @@ kullanilir; drawtext filtresine ihtiyac yok (yazilar Pillow ile ciziliyor).
 """
 from __future__ import annotations
 
+import glob
 import json
 import os
+import random
 import subprocess
 
 from PIL import Image, ImageDraw, ImageFont
 
 W, H = 1080, 1920
 FPS = 30
+
+MUSIC_DIR = "assets/music"
+MUSIC_VOLUME = float(os.environ.get("MUSIC_VOLUME", "0.18"))  # arka plan muzigi (kisik)
+VIDEO_VOLUME = 1.0  # videonun kendi sesi (ayak sesi, sokak) -- KISILMIYOR
+
+
+def pick_music() -> str | None:
+    tracks = sorted(glob.glob(os.path.join(MUSIC_DIR, "*.mp3")) + glob.glob(os.path.join(MUSIC_DIR, "*.m4a")))
+    return random.choice(tracks) if tracks else None
 
 
 def ffmpeg_exe() -> str:
@@ -136,7 +147,7 @@ def text_card(path: str, blocks: list[tuple[str, int]], center_y: int) -> str:
 
 
 def compose_ad(clips: list[str], brief: dict, product_title: str, price_text: str | None,
-               site: str, work_dir: str, output_path: str) -> str:
+               site: str, work_dir: str, output_path: str, music_path: str | None = None) -> str:
     """Klipleri birlestirir + kanca / urun satiri / kapanis kartini bindirir."""
     os.makedirs(work_dir, exist_ok=True)
     norm = [normalize_clip(c, os.path.join(work_dir, f"norm_{i}.mp4")) for i, c in enumerate(clips)]
@@ -166,9 +177,22 @@ def compose_ad(clips: list[str], brief: dict, product_title: str, price_text: st
         inputs += ["-i", p]
     n = len(norm)
     inputs += ["-i", hook, "-i", mid, "-i", end]
+    if music_path:
+        inputs += ["-stream_loop", "-1", "-i", music_path]
     concat_in = "".join(f"[{i}:v][{i}:a]" for i in range(n))
+    if music_path:
+        m = n + 3
+        audio = (
+            f"{concat_in}concat=n={n}:v=1:a=1[v][va];"
+            f"[va]volume={VIDEO_VOLUME}[va2];"
+            f"[{m}:a]volume={MUSIC_VOLUME},atrim=0:{total:.2f},"
+            f"afade=t=in:d=0.8,afade=t=out:st={max(total - 1.5, 0):.2f}:d=1.5[mu];"
+            f"[va2][mu]amix=inputs=2:duration=first:normalize=0[a];"
+        )
+    else:
+        audio = f"{concat_in}concat=n={n}:v=1:a=1[v][a];"
     fc = (
-        f"{concat_in}concat=n={n}:v=1:a=1[v][a];"
+        audio +
         f"[v][{n}:v]overlay=0:0:enable='between(t,0.2,{hook_end:.2f})'[v1];"
         f"[v1][{n + 1}:v]overlay=0:0:enable='between(t,{mid_start:.2f},{end_start - 0.2:.2f})'[v2];"
         f"[v2][{n + 2}:v]overlay=0:0:enable='gte(t,{end_start:.2f})'[vout]"

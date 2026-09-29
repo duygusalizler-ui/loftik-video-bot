@@ -57,8 +57,12 @@ def _to_vertical(path: str) -> str:
 SCENE_IMAGE_RULES = (
     " The product MUST be EXACTLY the shoe in the reference image: same shape, same upper "
     "color, same sole color and thickness, same details. Do not add logos or text anywhere. "
-    "Exactly two feet, anatomically correct. Photorealistic, natural light, looks like a real "
-    "photo shot on a good phone. Vertical 9:16 composition, shoes large and in sharp focus."
+    "Exactly two feet, anatomically correct. Vertical 9:16 composition, shoes large and in "
+    "sharp focus. MUST NOT look AI-generated: shot on a normal smartphone by a real person, "
+    "everyday real location (Turkish city street, cafe, office, home entrance), natural "
+    "imperfect light, slight real-world clutter, real fabric wrinkles, real dust/texture on "
+    "the ground, no cinematic grading, no HDR glow, no bokeh fireworks, no perfect symmetry, "
+    "no plastic skin, no overly glossy surfaces, no fantasy or surreal elements."
 )
 
 
@@ -88,7 +92,9 @@ VIDEO_RULES = (
     " Keep the shoes EXACTLY identical to the first frame in every frame: same shape, same "
     "colors, same sole color. No new logos or text. Exactly two feet and two legs, no extra "
     "limbs. One continuous shot, no cuts, no transitions, calm realistic motion, no slow-motion "
-    "effects, no water splashes. Natural ambient sound only, no music, no speech."
+    "effects, no water splashes. Looks like real handheld smartphone footage, not CGI, not "
+    "cinematic. Natural ambient sound only (footsteps, street, room tone): NO speech, NO "
+    "voices, NO singing, NO music."
 )
 
 
@@ -190,7 +196,7 @@ def build_ad(product, reference_path: str, is_boot: bool, work: str, output_path
 
     video_edit.compose_ad(
         clips, brief, product.title, product.price_text, config.SITE_BASE_URL,
-        os.path.join(work, "kurgu"), output_path,
+        os.path.join(work, "kurgu"), output_path, music_path=video_edit.pick_music(),
     )
     return AdResult(output_path, brief, qa_log, scene_images)
 
