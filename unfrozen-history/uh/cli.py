@@ -36,7 +36,9 @@ def full_prompt(ep: dict, s: dict, kind: str) -> str:
     if kind == "image":
         pov = f" {C.POV_HINT}." if s.get("pov") else ""
         return f"{s['image_prompt']}.{pov} {ep['setting']}. Style: {C.STYLE}."
-    return f"{s['motion_prompt']}. {C.MOTION_SUFFIX}."
+    shots = " ".join(f"Shot {i}: {t}." for i, t in enumerate(s["shots"], 1))
+    return (f"Multi-shot sequence, about 5 seconds per shot. {shots} {C.MOTION_SUFFIX}. "
+            f"Sound: {s['sound']}. {C.SOUND_SUFFIX}.")
 
 
 def cmd_status(a):
@@ -96,8 +98,11 @@ def cmd_tts(a):
 
 
 def description(ep: dict) -> str:
+    """İlk 2 satır videoya özel + anahtar kelime (arama sonucunda görünen kısım)."""
     src = "\n".join(f"• {s}" for s in ep["sources"])
-    return (f"{ep['title']}\n\nHistory, lived from the inside.\n\n{ep['disclosure']}\n\n"
+    return (f"{ep['hook_description']}\n\n"
+            f"History, lived from the inside. Every episode is told by one ordinary person "
+            f"living through a hard season of the past.\n\n{ep['disclosure']}\n\n"
             f"Sources & further reading:\n{src}\n")
 
 
@@ -106,12 +111,16 @@ def cmd_doc(a):
     ep = S.load_episode(a.ep)
     est = S.estimate(ep)
     lines = [f"# {ep['title']}", "", f"**Anlatıcı:** {ep['character']}", "",
+             f"**Kapak:** {ep['thumbnail']}", "",
              f"**Sahne:** {est['scenes']} · **Tahmini maliyet:** {est['full_cost']} kredi · "
              f"**Önizleme sahneleri:** {ep['preview_scenes']}", ""]
     for s in ep["scenes"]:
+        if s.get("beat"):
+            lines += [f"### ⚡ {s['beat']}", ""]
         lines += [f"## {s['n']}. {s['title']}{' (POV)' if s['pov'] else ''}", "",
-                  f"> {s['narration']}", "", f"- **Görsel:** {s['image_prompt']}",
-                  f"- **Hareket:** {s['motion_prompt']}", ""]
+                  f"> {s['narration']}", "", f"- **Başlangıç karesi:** {s['image_prompt']}"]
+        lines += [f"- **Açı {i}:** {t}" for i, t in enumerate(s["shots"], 1)]
+        lines += [f"- **Ses:** {s['sound']}", ""]
     lines += ["## YouTube açıklaması (taslak)", "", "```", description(ep).strip(), "```", ""]
     out = S.ep_path(a.ep).with_name("SCRIPT.md")
     out.write_text("\n".join(lines), encoding="utf-8")

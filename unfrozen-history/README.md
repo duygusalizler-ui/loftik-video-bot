@@ -8,8 +8,17 @@
 2. **Önizleme** (ilk 3 sahne ≈ 60 sn, ~26 kredi) → **Kapı 2 onayı**
 3. **Tam üretim** → montaj → YouTube'a *liste dışı* yükleme → **Kapı 3 onayı** → herkese açık
 
-Sahne başına: 1 başlangıç karesi (`gpt_image_2`, medium, 1k, 16:9 = 1 kredi) + 1 klip (`seedance_2_0_mini`, 15 sn, 480p, sessiz = 7,5 kredi).
+Sahne başına: 1 başlangıç karesi (`gpt_image_2`, medium, 1k, 16:9 = 1 kredi) + 1 klip (`seedance_2_0_mini`, 15 sn, 480p, ortam sesli = 7,5 kredi). Her klip 3 açılı çekim (~5 sn/açı) olarak istenir.
 Her sahne ≈ 20 sn anlatım; klip, anlatım süresine göre yavaşlatılır (en fazla 0,65x, ara kare üretimli), 1080p'ye büyütülür (lanczos + unsharp).
+
+## Senaryo kuralları (Operatör Oyun Kitabı)
+
+- Soğuk açılış + fragman: ilk kare somut an, 3–8 sn'de ödül vaadi, sonra mini-ödül ve yolculuk
+- Her ~2,5 dk'da bir kırılma (`beat` alanı), büyük ödül sona saklı
+- Kısa cümleler, duyusal detay; sahne başına ≈ 20 sn anlatım (en fazla ~22,5 sn)
+- Anlatım altında ortam sesi (ASMR katmanı), her şey İngilizce
+- Açıklamanın ilk 2 satırı videoya özel (`hook_description`); başlık ≠ kapak
+- Tekrar engeli: `data/used_topics.json`
 
 ## Bütçe korumaları (`uh/state.py`)
 

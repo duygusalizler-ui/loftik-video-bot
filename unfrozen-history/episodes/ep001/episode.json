@@ -1,13 +1,19 @@
 {
   "id": "ep001",
+  "version": 2,
   "title": "How Medieval Peasants Survived Winter Without Heating",
+  "thumbnail": "Painterly close-up of Walter's worried face lit by a dying fire, his hand holding the last small bundle of sticks; text: '3 BUNDLES LEFT' (A/B test against a no-text version)",
+  "hook_description": "How did medieval peasants survive a brutal winter with no chimney, no glass windows and no heating? Walter, a 14th-century English villager, tells you how his family lived through the great frost of 1309–1310.",
   "character": "Walter of Ashcombe, a fictional villein (unfree peasant) in an English village, winter 1309-1310",
   "setting": "Small English village of Ashcombe in the upper Thames valley, winter of 1309 to 1310",
   "cast": {
+    "Walter": "Walter (peasant man about 35, short brown beard, brown wool hood)",
     "Agnes": "Agnes (woman about 30, brown wool kirtle, white linen head-kerchief)",
     "Joan": "Joan (girl about 10, braided brown hair, grey wool hood)",
     "Hugh": "Hugh (small boy about 5, fair hair, oversized russet wool hood)",
-    "Maud": "Maud (old woman, deeply lined face, dark wool hood and shawl)"
+    "Maud": "Maud (old woman, deeply lined face, dark wool hood and shawl)",
+    "Tom": "Tom (thin boy about 9, ragged tunic, no hood, rags tied round his feet)",
+    "Alice": "Alice (thin widow about 30, patched grey cloak)"
   },
   "preview_scenes": [
     1,
@@ -27,15 +33,20 @@
     "Ian Currie — Frosts, Freezes and Fairs: Chronicles of the Frozen Thames and Harsh Winters in Britain (1996)",
     "Historic England — Wharram Percy deserted medieval village excavations"
   ],
-  "disclosure": "Walter and his family are fictional characters, built from historical research on English peasant life around 1300. Illustrations and animation were created with AI tools; narration uses a synthetic voice.",
+  "disclosure": "Walter, his family and neighbours are fictional characters, built from historical research on English peasant life around 1300. Illustrations and animation were created with AI tools; narration uses a synthetic voice.",
   "scenes": [
     {
       "n": 1,
-      "title": "The river froze",
+      "title": "Tonight",
       "pov": true,
-      "narration": "The river froze three days ago. I broke the ice with the back of my axe, and the water underneath was black and slow, like it was thinking about stopping too. My name is Walter. It is the winter of thirteen hundred and nine, and it will be a long one.",
-      "image_prompt": "Dawn on a frozen English river, the narrator's hands raise an iron axe over cracked ice, black water showing through, frosted reeds, distant thatched roofs with thin smoke, pale pink sky",
-      "motion_prompt": "The hands lift the axe slightly and bring it down onto the ice, small ice chips scatter, breath mist drifts, reeds tremble in cold wind",
+      "narration": "Tonight, the fire must not go out. If it does, my mother will not see the morning. There is snow up to the door, the woodpile is almost gone, and somebody in this village has been stealing from it. My name is Walter. And this is the longest winter of my life.",
+      "image_prompt": "Extreme close-up of a few glowing red embers in grey ash on a stone hearth in a pitch-dark medieval cottage, a sliver of cold blue moonlight at the edge",
+      "shots": [
+        "the last embers glow and fade in the darkness of the hearth",
+        "at night in the snow, a small hand pulls a bundle of sticks from a woodpile, face unseen",
+        "Maud (old woman, deeply lined face, dark wool hood and shawl) coughs under wool blankets by a dim fire, deep shadows"
+      ],
+      "sound": "embers crackling softly, wind howling outside, a dry old cough",
       "image": {
         "status": "pending",
         "attempts": []
@@ -43,15 +54,21 @@
       "clip": {
         "status": "pending",
         "attempts": []
-      }
+      },
+      "beat": "SOĞUK AÇILIŞ + FRAGMAN (0:00)"
     },
     {
       "n": 2,
-      "title": "Walking home",
+      "title": "Three weeks earlier",
       "pov": true,
-      "narration": "Nobody I know has a chimney, a glass window, or a coat of fur. Our walls are sticks and mud. And yet, winter after winter, my family comes through to spring. Not by luck. By a hundred small, careful habits. Let me show you them, from the inside.",
-      "image_prompt": "Walking along a snowy frozen path toward a small thatched cruck-framed cottage, smoke seeping through the thatch, bare trees, blue morning light, footprints in snow",
-      "motion_prompt": "Slow forward walking motion toward the cottage, gentle head-bob, smoke drifts from the thatch, light snow falls",
+      "narration": "Three weeks earlier, the river froze. The year is thirteen hundred and nine. In London, they say, the Thames itself has turned to ice. We have no chimney, no glass, no coat of fur. So how does a family like mine survive? Let me show you.",
+      "image_prompt": "Dawn on a frozen English river, the narrator's hands raise an iron axe over cracked ice, black water visible through the crack, frosted reeds, distant thatched roofs with thin smoke, pale pink sky",
+      "shots": [
+        "the hands bring the axe down and the ice cracks, chips scatter",
+        "close-up of black slow water under the broken ice",
+        "wide view of the frozen river winding through a snowy valley toward a small village at dawn"
+      ],
+      "sound": "ice cracking under axe blows, crows calling, cold wind over reeds",
       "image": {
         "status": "pending",
         "attempts": []
@@ -63,11 +80,16 @@
     },
     {
       "n": 3,
-      "title": "The manor of Ashcombe",
+      "title": "Ashcombe",
       "pov": false,
-      "narration": "I am a villein of the manor of Ashcombe, in the valley of the Thames. I hold fifteen acres of the lord's land, and for that I owe him work, rent, and a hen at Christmas. My wife is Agnes. We have two living children, Joan and little Hugh.",
-      "image_prompt": "Wide view of a small medieval English village in winter: cluster of thatched cottages, a stone parish church tower, a modest stone manor house, snow-covered strips of open field, grey sky, smoke from chimneyless roofs",
-      "motion_prompt": "Slow aerial drift over the village, smoke rising from roofs, a few tiny figures moving between houses, light snow",
+      "narration": "This is Ashcombe, a village in the Thames valley. I farm fifteen acres, and I owe the lord my labour, my rent, and a hen every Christmas. But what I truly owe is this: to keep five people alive until spring. And the first secret of that is the house itself.",
+      "image_prompt": "Wide view of a small medieval English village in winter: cluster of thatched cottages, a stone parish church tower, a modest stone manor house, snow-covered strips of open field, grey sky, smoke seeping from chimneyless roofs",
+      "shots": [
+        "slow drift over the snowy village roofs with smoke rising",
+        "the stone church tower against the grey winter sky",
+        "Walter (peasant man about 35, short brown beard, brown wool hood) walking toward his thatched cottage holding a brown hen under his arm"
+      ],
+      "sound": "winter wind, a distant church bell, hens clucking",
       "image": {
         "status": "pending",
         "attempts": []
@@ -79,11 +101,16 @@
     },
     {
       "n": 4,
-      "title": "Wattle and daub",
+      "title": "Mud and hazel",
       "pov": true,
-      "narration": "This is our house. My father and his neighbours raised it on great curved timbers, and filled the walls with woven hazel and daub — clay, dung and straw pressed together. Every autumn I patch the cracks. A wall that whistles in November will kill someone by February.",
-      "image_prompt": "The narrator's hands press wet daub of clay and straw into a crack in a woven hazel wattle wall, cold daylight through the gap, curved cruck timber beside",
-      "motion_prompt": "Hands smooth the daub into the crack, fingers pressing slowly, small bits of straw fall, light through the crack fades as it is sealed",
+      "narration": "Our walls are hazel sticks, woven like a basket, and plastered with daub: clay, dung and straw. It sounds poor. It is clever. Daub holds heat and stops the wind. Every autumn I fill the cracks, because a wall that whistles in November can kill by February.",
+      "image_prompt": "The narrator's hands press wet daub of clay and straw into a crack in a woven hazel wattle wall, cold daylight through the gap, a curved cruck timber beside it",
+      "shots": [
+        "hands weave thin hazel rods into a wattle panel",
+        "hands press and smooth wet daub into the crack until the light disappears",
+        "outside, frost glitters on the finished daub wall of the cottage"
+      ],
+      "sound": "wet clay squelching, wind whistling through a gap then falling silent",
       "image": {
         "status": "pending",
         "attempts": []
@@ -97,9 +124,14 @@
       "n": 5,
       "title": "A white roof",
       "pov": false,
-      "narration": "Above us is thatch, as thick as my arm is long. Straw holds warm air the way wool does. Snow on top helps too; it seals the roof like a blanket. We never knock the snow off. My grandfather said a white roof is a warm house, and he was right.",
+      "narration": "Above us, the thatch is as thick as my arm is long. And here is something most people never guess: snow is our friend. On the roof, it seals the straw like a blanket. We never knock it off. My grandfather used to say, a white roof is a warm house. He was right.",
       "image_prompt": "Exterior of a medieval thatched cottage with a thick blanket of snow on the roof, smoke rising through the thatch, blue dusk, warm firelight glowing through a small shuttered window",
-      "motion_prompt": "Gentle snowfall, smoke curls up from the roof, the window glow flickers warmly, very slow push-in",
+      "shots": [
+        "slow push toward the snow-covered cottage at dusk, smoke rising",
+        "close-up of the deep layer of snow resting on thick straw thatch",
+        "the small window glows warm amber as snow falls past it"
+      ],
+      "sound": "hushed snowfall, a muffled crackle of fire from inside",
       "image": {
         "status": "pending",
         "attempts": []
@@ -113,9 +145,14 @@
       "n": 6,
       "title": "The hearth",
       "pov": true,
-      "narration": "Inside, everything turns around the hearth. It sits in the middle of the floor, a ring of stones on beaten earth. There is no chimney. The smoke finds its own way up through the thatch, and on still days it hangs over our heads like a grey ceiling.",
-      "image_prompt": "Interior of a dim medieval cottage, an open central hearth ringed with stones on a beaten earth floor, fire burning, smoke rising to dark soot-blackened rafters and the underside of the thatch",
-      "motion_prompt": "Flames flicker, smoke rises slowly and spreads under the rafters, slow upward tilt following the smoke",
+      "narration": "Inside, everything turns around one thing: the hearth, a ring of stones in the middle of the floor. There is no chimney. The smoke finds its own way out through the thatch. It stings our eyes all winter, but it dries the roof, keeps the insects away, and cures the bacon above our heads.",
+      "image_prompt": "Interior of a dim medieval cottage, an open central hearth ringed with stones on a beaten earth floor, fire burning, smoke rising to soot-blackened rafters",
+      "shots": [
+        "the fire burns in the stone ring on the earth floor",
+        "smoke drifts up and spreads beneath the dark rafters and thatch",
+        "sides of bacon and hams hang in the smoke from a blackened beam"
+      ],
+      "sound": "fire crackling, a pot bubbling, a child coughing from the smoke",
       "image": {
         "status": "pending",
         "attempts": []
@@ -127,11 +164,16 @@
     },
     {
       "n": 7,
-      "title": "Smoke and bacon",
+      "title": "Hook or crook",
       "pov": true,
-      "narration": "The smoke stings our eyes and makes us cough all winter. But it does good work too. It dries the thatch, it keeps the rot and the insects out of the rafters, and it cures the bacon hanging above us. In our house, nothing is wasted, not even smoke.",
-      "image_prompt": "Looking up at sides of bacon and hams hanging from smoke-blackened rafters, smoke curling around them, firelight from below",
-      "motion_prompt": "Smoke curls and drifts around the hanging meat, hams sway very slightly, flickering warm light from below",
+      "narration": "The fire eats all day. The woods belong to the lord, but old custom lets us take dead wood, whatever we can pull down with a hook or a shepherd's crook. All autumn we gather branches, gorse and bundles of brushwood. Agnes counts every bundle, the way a miser counts coins.",
+      "image_prompt": "The narrator's hands reach up with a long iron-tipped wooden hook to pull down a dead branch from a bare oak at the snowy edge of a wood, cold blue light",
+      "shots": [
+        "the hook tugs and the dead branch snaps and falls into the snow",
+        "walking along the woodland edge carrying a tied bundle of brushwood",
+        "Agnes (woman about 30, brown wool kirtle, white linen head-kerchief) beside the woodpile under the eaves, counting bundles on her fingers"
+      ],
+      "sound": "a branch snapping, footsteps crunching in snow, wind in bare trees",
       "image": {
         "status": "pending",
         "attempts": []
@@ -143,11 +185,16 @@
     },
     {
       "n": 8,
-      "title": "By hook or by crook",
+      "title": "The curfew",
       "pov": true,
-      "narration": "The fire needs feeding every hour of every day. The lord owns the woods, but custom lets us take dead wood — whatever we can pull down with a hook or a shepherd's crook. We gather it all autumn: fallen branches, gorse, broom, bundles of brushwood we call faggots.",
-      "image_prompt": "The narrator's arms carry a bound bundle of brushwood faggots along the snowy edge of a bare winter wood, a wooden crook leaning on a tree, cold blue light",
-      "motion_prompt": "Walking forward carrying the bundle, bare branches pass by, snow crunches, breath mist",
+      "narration": "And at night, we never let the fire die. We rake the embers into a heap, bury them in ash, and cover them with a clay lid called the curfew. By morning they are still alive. Relighting a fire with flint and steel, with frozen fingers, is a misery you only want once.",
+      "image_prompt": "The narrator's hands rake glowing embers into a heap on a central hearth with a small iron rake, dark cottage, red glow",
+      "shots": [
+        "hands rake the glowing embers together and bury them in grey ash",
+        "hands lower a domed earthenware fire-cover over the heap",
+        "grey morning: the cover lifts, a breath of air and a twist of straw, and a flame leaps up"
+      ],
+      "sound": "ash scraping, a clay lid clunking down, a soft whoosh of flame",
       "image": {
         "status": "pending",
         "attempts": []
@@ -159,11 +206,16 @@
     },
     {
       "n": 9,
-      "title": "Counting the woodpile",
+      "title": "Missing wood",
       "pov": false,
-      "narration": "Look at that woodpile. Agnes counts it the way the lord's reeve counts sheep. If it shrinks too fast before Christmas, we burn less and sit closer. A big fire is a fool's fire. A small fire, kept alive all winter long, is the one that saves you.",
-      "image_prompt": "A neatly stacked woodpile under the eaves of a snowy thatched cottage, Agnes (woman about 30, brown wool kirtle, white linen head-kerchief) standing beside it counting on her fingers with a serious expression",
-      "motion_prompt": "Agnes counts slowly on her fingers, glances along the woodpile, light snow falls, her breath mists",
+      "narration": "Then, one frozen morning, I notice it. The woodpile is lower than it should be. Three bundles, maybe four. Agnes swears she has not miscounted. There are footprints in the snow, small ones, leading away toward the edge of the village. Someone is stealing our fire.",
+      "image_prompt": "A woodpile under snowy cottage eaves with an obvious gap where several bundles are missing, early morning blue light",
+      "shots": [
+        "slow push toward the gap in the woodpile",
+        "close-up of small bare-footed footprints pressed into fresh snow",
+        "the footprints lead away across the snow to a small ruined-looking hovel at the edge of the village"
+      ],
+      "sound": "cold wind, a single crow cawing, tense quiet",
       "image": {
         "status": "pending",
         "attempts": []
@@ -171,15 +223,21 @@
       "clip": {
         "status": "pending",
         "attempts": []
-      }
+      },
+      "beat": "⚡ KIRILMA 1 (2:47): Biri odun çalıyor"
     },
     {
       "n": 10,
-      "title": "The curfew",
+      "title": "Dressing for the cold",
       "pov": true,
-      "narration": "At night we never let the fire die. We rake the embers into a heap, bury them under ash, and cover them with a clay lid we call the curfew. In the morning, a breath of air and a handful of straw wake them. Flint and steel is slow, cold work.",
-      "image_prompt": "The narrator's hands lower a domed earthenware fire-cover over a heap of glowing embers banked in ash on a central hearth, dark interior, red glow",
-      "motion_prompt": "Hands slowly lower the clay cover over the embers, the red glow dims beneath it, faint smoke escapes",
+      "narration": "I say nothing yet. First, I dress for the cold. A linen shirt against the skin. Two woollen tunics. A thick hood over my shoulders. Strips of wool wound around my legs, and hay stuffed in my shoes. Wool keeps you warm even when it is wet.",
+      "image_prompt": "Looking down at the narrator's own body: layered undyed wool tunics, his hands winding strips of wool cloth around his lower legs, simple leather shoes beside, firelit",
+      "shots": [
+        "hands pull a woollen tunic over a linen shirt",
+        "hands wind wool strips tightly around the lower leg",
+        "hands stuff dry hay into a worn leather shoe"
+      ],
+      "sound": "rustle of wool, crunch of dry hay, fire crackling",
       "image": {
         "status": "pending",
         "attempts": []
@@ -191,11 +249,16 @@
     },
     {
       "n": 11,
-      "title": "Our second house",
-      "pov": true,
-      "narration": "Our clothes are our second house. Next to the skin, a linen shirt. Over it, a woollen tunic, then another, then a thick hood over my shoulders. I wrap my legs in strips of wool, and stuff my shoes with hay. Wool keeps you warm even when it is wet.",
-      "image_prompt": "Looking down at the narrator's own body: layered undyed wool tunics, his hands winding strips of wool cloth around his lower legs, simple leather shoes with hay sticking out, firelit",
-      "motion_prompt": "Hands wind the wool strip around the leg, tuck the end in, then press hay into the shoe",
+      "title": "Agnes spins",
+      "pov": false,
+      "narration": "Every thread I wear, Agnes spun from the wool of our four sheep. In the dark afternoons her spindle never stops. When the children outgrow a tunic, it is cut down, patched and passed on. At the very end, it becomes rags, and the rags go into the cracks of the wall.",
+      "image_prompt": "Agnes (woman about 30, brown wool kirtle, white linen head-kerchief) seated by the hearth spinning wool with a drop spindle and distaff, warm firelight on her face, cold blue light from a half-open door behind",
+      "shots": [
+        "Agnes spins by the fire, the spindle dropping and turning",
+        "close-up of wool twisting into thread on the spindle",
+        "Joan (girl about 10, braided brown hair, grey wool hood) patching a small tunic with needle and thread"
+      ],
+      "sound": "soft whir of the spindle, fire crackling",
       "image": {
         "status": "pending",
         "attempts": []
@@ -207,11 +270,16 @@
     },
     {
       "n": 12,
-      "title": "Agnes spins",
-      "pov": false,
-      "narration": "Every thread we wear, Agnes spun herself. Even now, in the dark afternoons, her spindle never stops. The wool comes from our own four sheep. When the children outgrow a tunic, it is cut down, patched, and passed on. Last, it becomes rags that stuff the cracks in the wall.",
-      "image_prompt": "Agnes (woman about 30, brown wool kirtle, white linen head-kerchief) seated by the hearth spinning wool with a drop spindle and distaff, warm firelight on her face, cold blue light from a half-open door behind",
-      "motion_prompt": "The spindle turns and drops slowly, wool thread twists, firelight flickers across her face",
+      "title": "Martinmas",
+      "pov": true,
+      "narration": "Our winter food was decided back in November, at Martinmas, when we killed the pig. There is nothing to feed a pig in winter, so it becomes bacon, sausages, lard and salt meat, packed tight in a barrel. Even the blood becomes pudding. Nothing is wasted. Nothing can be.",
+      "image_prompt": "The narrator's hands rub coarse grey salt into a cut of pork on a wooden board beside an open wooden barrel of salted meat, firelit cottage interior, not gory",
+      "shots": [
+        "hands rub salt into the pork",
+        "strings of sausages hanging from a beam in the firelight",
+        "a wooden lid is pressed down onto the packed barrel"
+      ],
+      "sound": "salt grinding against meat, a heavy wooden lid thumping shut",
       "image": {
         "status": "pending",
         "attempts": []
@@ -223,11 +291,16 @@
     },
     {
       "n": 13,
-      "title": "Martinmas",
-      "pov": true,
-      "narration": "Our winter really begins at Martinmas, in November. That is when we kill the pig. There is no food for it in the cold months, and it would eat what we need. So it becomes bacon, sausages, lard and salt meat, packed in a barrel. Even the blood becomes pudding.",
-      "image_prompt": "The narrator's hands rub coarse grey salt into a cut of pork on a wooden board beside an open wooden barrel half full of salted meat, firelit cottage interior, not gory",
-      "motion_prompt": "Hands rub salt into the meat, salt grains fall, then place the piece into the barrel",
+      "title": "The winter store",
+      "pov": false,
+      "narration": "The rest of our winter lives in sacks and pots. Dried peas and beans. Onions hanging from the beams. Apples wrapped in straw. And every day, a pot of pottage over the fire, where all of it goes in together. Hot food, eaten slowly, warms you from the inside.",
+      "image_prompt": "Storage corner of a medieval cottage: coarse sacks of grain, earthenware pots, strings of onions hanging from a beam, apples nestled in straw, soft firelight",
+      "shots": [
+        "slow drift across the sacks, pots and hanging onions",
+        "a wooden ladle stirs thick pottage of peas and leeks in an iron cauldron over the fire",
+        "the family eats from wooden bowls around the hearth"
+      ],
+      "sound": "pottage bubbling, wooden spoons knocking on bowls",
       "image": {
         "status": "pending",
         "attempts": []
@@ -239,11 +312,16 @@
     },
     {
       "n": 14,
-      "title": "The winter store",
-      "pov": false,
-      "narration": "The rest of our winter lives in sacks and pots. Dried peas and beans. Oats and barley. Onions and garlic hanging from the beams. A cheese or two, if the cow was kind. Apples wrapped in straw. Every sack must last until spring, and there is no market in the snow.",
-      "image_prompt": "Storage corner of a medieval cottage: coarse sacks of grain, earthenware pots, strings of onions and garlic hanging from a beam, a wheel of cheese, apples nestled in straw, soft firelight",
-      "motion_prompt": "Slow lateral drift across the stores, onions sway gently, dust motes in the firelight",
+      "title": "Waiting",
+      "pov": true,
+      "narration": "With it, dark bread of rye and barley, heavy enough to break a toe, and weak ale that Agnes brews. A cup of it, warmed at the fire, is the best moment of a winter day. But that night, I do not drink it. I take my stick, and I wait.",
+      "image_prompt": "A rough wooden table in firelight: a dark round loaf of rye bread, wooden cups, a brown earthenware jug",
+      "shots": [
+        "hands tear the dark loaf and pour ale into a wooden cup",
+        "the narrator's hand takes a wooden staff from beside the door",
+        "view from the dark doorway across moonlit snow to the woodpile"
+      ],
+      "sound": "ale pouring, a door creaking, night wind",
       "image": {
         "status": "pending",
         "attempts": []
@@ -255,11 +333,16 @@
     },
     {
       "n": 15,
-      "title": "Pottage",
-      "pov": true,
-      "narration": "Every day we eat pottage. A pot hangs over the fire from morning to night, and whatever we have goes in: peas, oats, leeks, cabbage, a scrap of bacon for taste. The pot is rarely emptied; we just add to it. Hot food, eaten slowly, warms you from the inside.",
-      "image_prompt": "The narrator's hand stirs a thick pottage of peas, oats and leeks with a wooden spoon in an iron cauldron hanging over the central hearth, steam rising",
-      "motion_prompt": "The spoon stirs slowly, pottage bubbles, steam rises and curls, flames lick the pot",
+      "title": "The thief",
+      "pov": false,
+      "narration": "Near midnight, a shape creeps up to the woodpile. It is Tom, the widow Alice's boy. No hood, no shoes, just rags tied round his feet. His father died at harvest. Their woodpile ran out a week ago. He looks at me, and he does not run.",
+      "image_prompt": "Moonlit snowy night, Tom (thin boy about 9, ragged tunic, no hood, rags tied round his feet) crouching at a woodpile under cottage eaves, pulling out a bundle of sticks",
+      "shots": [
+        "the small figure pulls a bundle from the woodpile in the moonlight",
+        "close-up of rag-wrapped feet in the snow",
+        "the boy's frightened thin face turns and looks up into the camera"
+      ],
+      "sound": "footsteps crunching snow, wind, a boy's shaky breathing",
       "image": {
         "status": "pending",
         "attempts": []
@@ -267,15 +350,21 @@
       "clip": {
         "status": "pending",
         "attempts": []
-      }
+      },
+      "beat": "⚡ KIRILMA 2 (4:53): Hırsız ortaya çıkıyor"
     },
     {
       "n": 16,
-      "title": "Bread and ale",
-      "pov": false,
-      "narration": "With it we eat dark bread of rye and barley, heavy enough to break a toe. We drink ale — weak ale that Agnes brews every few days. In winter a cup of it, warmed by the fire, is the best moment of the day, and it fills the belly too.",
-      "image_prompt": "A rough wooden table in firelight: a dark round loaf of rye bread, wooden cups, a brown earthenware jug, family hands reaching for bread",
-      "motion_prompt": "Hands tear the loaf and pour ale from the jug into a wooden cup, steam from the warm ale",
+      "title": "The choice",
+      "pov": true,
+      "narration": "Taking another man's wood is a crime. Every year the manor court fines people for it, and the clerk writes their names on the roll. I could take him there tomorrow. Instead, I load his arms with two bundles, and tell him to come back on Sunday. Winter is hard enough alone.",
+      "image_prompt": "The narrator's hands pile two bundles of brushwood into the thin arms of Tom (thin boy about 9, ragged tunic, no hood, rags tied round his feet) in the moonlit snow",
+      "shots": [
+        "hands load the bundles into the boy's arms",
+        "the boy walks away across the snow toward a dim hovel, glancing back",
+        "the narrator's breath steams in the moonlight as he watches"
+      ],
+      "sound": "soft footsteps fading into the wind",
       "image": {
         "status": "pending",
         "attempts": []
@@ -287,11 +376,16 @@
     },
     {
       "n": 17,
-      "title": "The cow in the house",
+      "title": "The cow",
       "pov": true,
-      "narration": "At the far end of the house, behind a wattle fence, lives our cow. Townsfolk laugh at that. Let them try a January night. A cow is a great warm beast that breathes like a bellows. She warms our house, and we keep her alive. It is a fair bargain.",
+      "narration": "But generosity has a price, and in winter, everything is counted. At the far end of our house, behind a wattle fence, lives our cow. She is a great warm beast who breathes like a bellows, and she heats the house. In return, we must keep her alive until the grass returns.",
       "image_prompt": "Looking down the length of a dim medieval longhouse to a brown cow behind a low wattle partition at the far end, her breath steaming, hens roosting on a beam above, faint firelight",
-      "motion_prompt": "The cow breathes out slow clouds of steam and shifts her head, hens ruffle feathers, firelight flickers",
+      "shots": [
+        "slow push down the longhouse toward the cow",
+        "close-up of the cow's nostrils breathing out clouds of steam",
+        "hens roosting on the beam above ruffle their feathers"
+      ],
+      "sound": "cow breathing and lowing softly, hens clucking",
       "image": {
         "status": "pending",
         "attempts": []
@@ -303,11 +397,16 @@
     },
     {
       "n": 18,
-      "title": "A small feast",
-      "pov": false,
-      "narration": "The hens roost in the rafters above her, and in winter they lay few eggs, so each one is a small feast. We feed the cow hay from the loft and pea straw. If the hay runs out before the grass returns, she starves, and so might we.",
-      "image_prompt": "Joan (girl about 10, braided brown hair, grey wool hood) carefully lifting a single brown egg from a straw nest, hens around her, warm light in a dim byre",
-      "motion_prompt": "Joan slowly lifts the egg and smiles, a hen tilts its head, straw dust floats in the light",
+      "title": "The hay",
+      "pov": true,
+      "narration": "And the hay is running low. Each morning I climb to the loft, and each morning there is less. If the hay runs out, she starves, and we lose her milk and the calf in spring. Joan finds one egg today. In winter, a single egg is a feast.",
+      "image_prompt": "A nearly empty hayloft under the thatch, a few thin piles of hay, a wooden ladder, dim light",
+      "shots": [
+        "the narrator's hands fork a thin bundle of hay down from the loft",
+        "the cow eats the small pile of hay",
+        "Joan (girl about 10, braided brown hair, grey wool hood) holds up a single brown egg with a proud smile"
+      ],
+      "sound": "ladder creaking, pitchfork in dry hay, a hen clucking",
       "image": {
         "status": "pending",
         "attempts": []
@@ -321,9 +420,14 @@
       "n": 19,
       "title": "The flail",
       "pov": true,
-      "narration": "Winter is no time for rest. Three days a week I owe the lord my labour, and now that means threshing his grain in the great barn with a flail, two sticks joined by leather. Thump, thump, thump, all day long. Hard work — but warm work, out of the wind.",
-      "image_prompt": "The narrator's hands grip a wooden flail above sheaves of grain on a barn threshing floor, shafts of cold light through the barn door, dust in the air, other peasants threshing in the background",
-      "motion_prompt": "The flail swings down rhythmically onto the grain, chaff and dust rise into the light shafts",
+      "narration": "Work does not stop for cold. Three days a week I owe the lord my labour, threshing his grain in the great barn with a flail, two sticks joined by leather. Thump, thump, thump, from dawn to dusk. My shoulders burn. But the barn is dry, and hard work is warm work.",
+      "image_prompt": "The narrator's hands grip a wooden flail above sheaves of grain on a barn threshing floor, shafts of cold light through the barn door, dust in the air",
+      "shots": [
+        "the flail swings down onto the grain",
+        "wide view of the barn, several peasants threshing in rhythm, dust in light shafts",
+        "chaff and dust float slowly through a beam of light"
+      ],
+      "sound": "rhythmic thumps of flails, men breathing hard",
       "image": {
         "status": "pending",
         "attempts": []
@@ -335,11 +439,16 @@
     },
     {
       "n": 20,
-      "title": "Everyone works",
+      "title": "Christmas",
       "pov": false,
-      "narration": "My own days are just as full. I mend the plough, cut hazel rods, and weave new hurdles for the sheep pens. Agnes brews and spins and bakes. Joan fetches water and minds the hens. Even little Hugh has his task: he gathers kindling and keeps the fire fed.",
-      "image_prompt": "Hugh (small boy about 5, fair hair, oversized russet wool hood) carrying an armful of kindling sticks through the doorway of a firelit cottage from the snowy outside",
-      "motion_prompt": "Hugh walks carefully inside with the sticks, a few fall, snow blows in behind him",
+      "narration": "Then, Christmas. For twelve days, the lord's work stops. I carry my rent hen to the manor, and on Christmas Day the tenants eat in the lord's hall. We bring our own bread, a cup, and a log for his fire. And for one day, we eat meat until we can barely stand.",
+      "image_prompt": "Walter (peasant man about 35, short brown beard, brown wool hood) carrying a brown hen through the snow toward a stone manor house with glowing windows",
+      "shots": [
+        "Walter walks through the snow toward the manor with the hen",
+        "inside a great hall with a roaring fire, peasants in wool hoods feast at long trestle tables, holly and ivy on the walls",
+        "close-up of roast meat on a wooden platter, hands reaching"
+      ],
+      "sound": "murmur of a crowd, laughter, clinking cups, a big fire roaring",
       "image": {
         "status": "pending",
         "attempts": []
@@ -351,11 +460,16 @@
     },
     {
       "n": 21,
-      "title": "Rushlights",
+      "title": "Midnight Mass",
       "pov": false,
-      "narration": "Darkness comes before supper. Candles of wax are for the church and the lord; we have rushlights. Joan peels the rushes and dips the pith in bacon fat, and each burns about as long as the priest's Sunday sermon. Mostly, when the sun goes, we go too — to bed.",
-      "image_prompt": "Close view of Joan (girl about 10, braided brown hair, grey wool hood) dipping peeled rush pith into a small dish of melted fat, a lit rushlight in an iron holder beside her, dark room, small warm flame",
-      "motion_prompt": "The small flame flickers, Joan slowly draws the rush out of the fat, shadows move",
+      "narration": "At midnight Mass the church glows with candles, and I see Tom and his mother by the door, thin but alive. Alice nods to me. She says nothing. She does not need to. The priest says Christ was born in the cold too. For one night, the whole village feels warm.",
+      "image_prompt": "A small stone village church at night in deep snow, its windows glowing with candlelight, villagers with lanterns walking toward the door",
+      "shots": [
+        "villagers with lanterns walk through the snow to the glowing church",
+        "inside, candles flicker along the stone walls",
+        "Alice (thin widow about 30, patched grey cloak) and Tom (thin boy about 9, ragged tunic, no hood, rags tied round his feet) by the church door; Alice gives a small grateful nod"
+      ],
+      "sound": "church bell ringing, footsteps in snow, soft murmur",
       "image": {
         "status": "pending",
         "attempts": []
@@ -367,11 +481,16 @@
     },
     {
       "n": 22,
-      "title": "One bed",
-      "pov": true,
-      "narration": "We all sleep together on one big bed: a wooden frame with a mattress of straw, covered with sheepskins and every blanket we own. Agnes and I, Joan, Hugh, and my old mother, Maud. Five bodies under one cover make their own fire. In deep winter, we sleep in our clothes.",
-      "image_prompt": "View from lying in bed: the family bundled together under sheepskins and wool blankets on a straw-filled bed, Agnes (woman about 30, brown wool kirtle, white linen head-kerchief), the two children, and Maud (old woman, deeply lined face, dark wool hood and shawl), dim red ember glow, breath faintly visible",
-      "motion_prompt": "The family breathes slowly in sleep, Hugh shifts closer, ember glow pulses softly",
+      "title": "The great frost",
+      "pov": false,
+      "narration": "But after Twelfth Night, the real cold comes. The ground rings like iron. A carter swears the Thames at London is frozen solid, that people walk across it and light fires on the ice. The birds fall silent. Even the well freezes. And then my mother begins to cough.",
+      "image_prompt": "Looking out through a small open wooden shutter at a frozen snow-bound landscape, icicles hanging from the thatch eaves, a pale low sun",
+      "shots": [
+        "icicles glint on the eaves as a gust blows snow",
+        "a carter with a small cart on a frozen road, gesturing as he talks",
+        "a wooden bucket drops into a well and thuds onto solid ice"
+      ],
+      "sound": "howling wind, cart wheels creaking, a bucket thudding on ice",
       "image": {
         "status": "pending",
         "attempts": []
@@ -383,11 +502,16 @@
     },
     {
       "n": 23,
-      "title": "Warm stones",
-      "pov": true,
-      "narration": "Before bed, Agnes heats flat stones at the edge of the fire, wraps them in rags, and pushes them under the covers. We sleep with our heads wrapped. The little ones go in the middle, where it is warmest. The cold hunts the very young and the very old first.",
-      "image_prompt": "Agnes (woman about 30, brown wool kirtle, white linen head-kerchief)'s hands lift a flat hearth stone from the edge of the fire with a cloth and wrap it in rags, glowing embers, dark cottage",
-      "motion_prompt": "Hands lift the warm stone and fold the rag around it, heat shimmer, embers glow",
+      "title": "Three bundles",
+      "pov": false,
+      "narration": "Maud is old, and the cold hunts the old first. Agnes gives her warm ale with honey and sage, and we move her bed nearest the hearth. But the cough gets worse, and the fire must burn higher to keep her warm. I go to the woodpile. There are three bundles left.",
+      "image_prompt": "Maud (old woman, deeply lined face, dark wool hood and shawl) wrapped in blankets close to the hearth holding a steaming wooden cup, Agnes (woman about 30, brown wool kirtle, white linen head-kerchief) kneeling beside her",
+      "shots": [
+        "Maud sips from the steaming cup as Agnes rubs her back",
+        "the narrator's hand touches the tiny remaining woodpile in the snow",
+        "close-up: only three bundles of sticks left"
+      ],
+      "sound": "coughing, fire crackling, wind",
       "image": {
         "status": "pending",
         "attempts": []
@@ -395,15 +519,21 @@
       "clip": {
         "status": "pending",
         "attempts": []
-      }
+      },
+      "beat": "⚡ KIRILMA 3 (7:42): Anne hasta, 3 bağ odun kaldı"
     },
     {
       "n": 24,
-      "title": "First sleep",
-      "pov": false,
-      "narration": "Our first sleep ends around midnight. We wake, check the embers, whisper, pray, sometimes tell stories in the dark. Then we sleep again until the cock crows. On the longest nights, the dark lasts sixteen hours. You cannot sleep through all of it, so you learn to share it.",
-      "image_prompt": "Night inside the cottage, dim red ember glow, the family sitting up in bed wrapped in blankets, Maud (old woman, deeply lined face, dark wool hood and shawl) telling a story with a raised hand, the children listening, deep blue shadows",
-      "motion_prompt": "Maud gestures slowly as she speaks, the children lean in, ember glow flickers on their faces",
+      "title": "The longest night",
+      "pov": true,
+      "narration": "This is the night I told you about. Three bundles, sixteen hours of darkness, and a sick old woman. If I burn it all now, we freeze before dawn. If I burn too little, Maud may not wake. So we do what peasants have always done. We use everything.",
+      "image_prompt": "Dark cottage interior at night, a small low fire, the family's anxious faces half-lit around it",
+      "shots": [
+        "the family sits close around the small fire, faces worried",
+        "the narrator looks at three bundles of sticks stacked by the hearth",
+        "close-up of a small flame fighting the dark"
+      ],
+      "sound": "wind battering the walls, faint crackle, a cough",
       "image": {
         "status": "pending",
         "attempts": []
@@ -415,11 +545,16 @@
     },
     {
       "n": 25,
-      "title": "Christmas at the hall",
+      "title": "Warm stones",
       "pov": true,
-      "narration": "Then comes Christmas, and for twelve days the lord's work stops. I bring my hen to the manor, as my rent demands. In return, on Christmas Day, the tenants eat at the lord's hall. We bring our own bread, cup and firewood, and we eat meat until we can barely stand.",
-      "image_prompt": "Seated at a long trestle table in a medieval manor hall at Christmas, peasants in wool hoods eating and laughing, a great fire, holly and ivy greenery on the walls, warm golden light",
-      "motion_prompt": "People laugh and eat, a servant carries a platter past, the fire flickers, slow drift along the table",
+      "narration": "First, the stones. Agnes heats flat stones at the edge of the fire, wraps them in rags, and pushes them under the blankets. They hold heat for hours, long after the flames are low. Then I pull back the cow's fence a little, so her warm breath can reach us.",
+      "image_prompt": "Agnes (woman about 30, brown wool kirtle, white linen head-kerchief)'s hands lift a flat hot stone from the edge of the fire with a cloth, glowing embers, dark cottage",
+      "shots": [
+        "hands wrap the hot stone in rags",
+        "the wrapped stones are pushed under sheepskins on the bed",
+        "the narrator's hands pull a wattle hurdle aside; the cow's steaming breath drifts in"
+      ],
+      "sound": "stones clacking, rags rustling, a cow breathing",
       "image": {
         "status": "pending",
         "attempts": []
@@ -431,11 +566,16 @@
     },
     {
       "n": 26,
-      "title": "Midnight Mass",
-      "pov": false,
-      "narration": "Those twelve days carry us through the darkest part of the year. There is ale, singing, games in the snow, and the church glowing with candles at midnight Mass. The priest says Christ was born in the cold too. It helps, to feel that someone up there knows what winter is.",
-      "image_prompt": "A small stone village church at night in deep snow, its windows glowing with candlelight, villagers with lanterns walking toward the door, stars above",
-      "motion_prompt": "Lanterns bob as villagers walk to the church, snow falls softly, window glow flickers",
+      "title": "One bed",
+      "pov": true,
+      "narration": "Then all of us, into one bed. A straw mattress, sheepskins and every blanket we own. Agnes and I on the outside. Joan, little Hugh and my mother in the middle, where it is warmest. Five bodies under one cover make their own fire. We sleep in our clothes.",
+      "image_prompt": "View from lying in bed: the family bundled together under sheepskins and wool blankets on a straw-filled bed, Agnes (woman about 30, brown wool kirtle, white linen head-kerchief), Joan (girl about 10, braided brown hair, grey wool hood), Hugh (small boy about 5, fair hair, oversized russet wool hood) and Maud (old woman, deeply lined face, dark wool hood and shawl), dim red ember glow",
+      "shots": [
+        "the family climbs into the one big bed",
+        "view from the pillow across the bundled family",
+        "Hugh snuggles close against his grandmother"
+      ],
+      "sound": "straw rustling, blankets, slow breathing",
       "image": {
         "status": "pending",
         "attempts": []
@@ -447,11 +587,16 @@
     },
     {
       "n": 27,
-      "title": "The great frost",
+      "title": "Midnight",
       "pov": true,
-      "narration": "But after Twelfth Night, the real cold arrives. The ground rings like iron. A carter swore that at London the Thames itself had frozen, and that men walked across it and lit fires on the ice. I do not know if it is true. Here, it feels true.",
-      "image_prompt": "Looking out through a small open wooden shutter at a frozen snow-bound landscape, icicles hanging from the thatch eaves, a pale low sun, frozen river in the distance",
-      "motion_prompt": "Icicles glint, a gust blows snow off the eaves, the pale sun shimmers, very slow push-in",
+      "narration": "In the long nights we sleep in two parts. Near midnight I wake. The fire is almost gone. I feed it one stick, and listen. Maud's breathing is slow and rough. Hugh whispers, is Grandmother going to die? I tell him to pray. So do I.",
+      "image_prompt": "Pitch-dark cottage, only a dim red ember glow, the narrator's hand placing a single thin stick on the embers",
+      "shots": [
+        "the hand lays one stick on the dying embers; a small flame catches",
+        "Maud (old woman, deeply lined face, dark wool hood and shawl)'s sleeping face, breathing slowly in the dark",
+        "Hugh (small boy about 5, fair hair, oversized russet wool hood)'s small face whispering in the dark"
+      ],
+      "sound": "wind, a small crackle as the stick catches, a child's whisper",
       "image": {
         "status": "pending",
         "attempts": []
@@ -463,11 +608,16 @@
     },
     {
       "n": 28,
-      "title": "Sickness",
+      "title": "Dawn",
       "pov": false,
-      "narration": "This is when sickness comes. Coughs that will not leave, fingers cracked and swollen with chilblains, fevers. My mother has been coughing for a week. Agnes gives her warm ale with honey and sage, and we keep her nearest the fire. We do what we can. The rest is God's.",
-      "image_prompt": "Maud (old woman, deeply lined face, dark wool hood and shawl) wrapped in blankets close to the hearth holding a steaming wooden cup, Agnes (woman about 30, brown wool kirtle, white linen head-kerchief) kneeling beside her with a hand on her shoulder, warm firelight, cold shadows",
-      "motion_prompt": "Maud sips slowly, steam rises from the cup, Agnes gently rubs her shoulder, firelight flickers",
+      "narration": "Before dawn, I bank the last embers under the curfew, and I must have slept, because the next thing I hear is the cock. Grey light through the shutter. And a voice, hoarse and cross: Walter, why is this house so cold? My mother is alive. I have never heard a sweeter complaint.",
+      "image_prompt": "Grey dawn light falling through a wooden shutter into a cold cottage, frost on the shutter",
+      "shots": [
+        "grey dawn light slides across the floor",
+        "a rooster on a snowy fence crows",
+        "Maud (old woman, deeply lined face, dark wool hood and shawl) sitting up in bed with a grumpy face while Agnes (woman about 30, brown wool kirtle, white linen head-kerchief) laughs with relief"
+      ],
+      "sound": "a rooster crowing, then soft relieved laughter",
       "image": {
         "status": "pending",
         "attempts": []
@@ -475,15 +625,21 @@
       "clip": {
         "status": "pending",
         "attempts": []
-      }
+      },
+      "beat": "⚡ ÖDÜL (9:28): Anne yaşıyor"
     },
     {
       "n": 29,
-      "title": "Not everyone sees spring",
+      "title": "Sunday",
       "pov": false,
-      "narration": "Not everyone sees the spring. In our village, winter fills the churchyard faster than any other season, and the ground is so hard the gravedigger must light a fire on it first. Two winters ago, we lost a baby son. Agnes still counts him when she counts her children.",
-      "image_prompt": "A quiet snowy churchyard with simple wooden crosses, a dark old yew tree, the stone church wall, soft grey winter light, peaceful and sombre",
-      "motion_prompt": "Snow falls gently, yew branches sway slightly, very slow drift",
+      "narration": "On Sunday, Tom comes back, as I told him. But he is not alone. His uncle is pulling a sledge piled with gorse and dead thornwood from the common. Enough for a week. Kindness in winter is not charity. It is how a village stays alive.",
+      "image_prompt": "Tom (thin boy about 9, ragged tunic, no hood, rags tied round his feet) and a bearded man pulling a wooden sledge piled with gorse and brushwood through the snow toward a thatched cottage",
+      "shots": [
+        "the sledge slides through the snow, piled with wood",
+        "the narrator greets them at the cottage door",
+        "the woodpile under the eaves is full again"
+      ],
+      "sound": "sledge runners scraping snow, greetings, laughter",
       "image": {
         "status": "pending",
         "attempts": []
@@ -497,9 +653,14 @@
       "n": 30,
       "title": "Candlemas",
       "pov": true,
-      "narration": "Then, at Candlemas, in early February, the light changes. The afternoons stretch a little longer. The ice on the river groans and cracks. In store we have half a sack of oats, a little bacon, some hay. It is not much. But it is enough.",
-      "image_prompt": "Standing on the riverbank looking at river ice beginning to crack under a low golden late-winter sun, icicles dripping from overhanging branches, first patches of bare earth",
-      "motion_prompt": "Cracks spread slowly across the ice, water drips from icicles, golden light sparkles",
+      "narration": "By Candlemas, in early February, the light changes. The afternoons stretch a little longer. The river groans and cracks. In store we have half a sack of oats, a little bacon, a few forkfuls of hay. It is not much. But it is enough. It is always just enough.",
+      "image_prompt": "Standing on the riverbank looking at river ice beginning to crack under a low golden late-winter sun, icicles dripping from overhanging branches",
+      "shots": [
+        "cracks spread slowly across the river ice",
+        "icicles drip in the golden light",
+        "the cow eats the last forkful of hay"
+      ],
+      "sound": "ice groaning and cracking, water dripping, first birdsong",
       "image": {
         "status": "pending",
         "attempts": []
@@ -513,9 +674,14 @@
       "n": 31,
       "title": "Warmth",
       "pov": true,
-      "narration": "You might wonder how we live without heating. But we are not without warmth. We have it in our wool, our thatch, our fire that never dies, our animals, and in each other. We do not fight winter. We prepare for it all year, and then we wait it out, together.",
-      "image_prompt": "The narrator's hands warming near the central hearth fire, across the fire the family gathered close: Agnes (woman about 30, brown wool kirtle, white linen head-kerchief), the two children sleepy, and Maud (old woman, deeply lined face, dark wool hood and shawl), warm amber glow against cold blue shadows",
-      "motion_prompt": "Hands rub together near the flames, the family sits close, Hugh leans sleepily on Agnes, flames dance",
+      "narration": "You might wonder how we live without heating. But we are never without warmth. It is in our wool, our thatch, a fire that never dies, a cow's breath, and in each other. We do not fight winter. We prepare for it all year, and then we wait it out, together.",
+      "image_prompt": "The narrator's hands warming near the central hearth fire, across the fire the family gathered close: Agnes (woman about 30, brown wool kirtle, white linen head-kerchief), Joan (girl about 10, braided brown hair, grey wool hood), Hugh (small boy about 5, fair hair, oversized russet wool hood) and Maud (old woman, deeply lined face, dark wool hood and shawl)",
+      "shots": [
+        "hands rub together near the flames",
+        "the whole family laughs around the fire",
+        "Hugh falls asleep on Agnes's lap"
+      ],
+      "sound": "fire crackling, gentle laughter",
       "image": {
         "status": "pending",
         "attempts": []
@@ -529,9 +695,14 @@
       "n": 32,
       "title": "The fire is still burning",
       "pov": false,
-      "narration": "My name is Walter of Ashcombe, and this was my winter of thirteen hundred and nine. Other winters are waiting — in Viking halls, in Roman streets, on the frozen edge of the world. If you want to live them from the inside too, stay with us. The fire is still burning.",
-      "image_prompt": "Wide view at dusk of the lone thatched cottage in the snow, warm light glowing in the small window, smoke rising, first stars in a deep blue sky, the frozen river beyond",
-      "motion_prompt": "Very slow pull back away from the cottage, smoke rises, stars twinkle, snow drifts gently",
+      "narration": "My name is Walter of Ashcombe, and this was my winter of thirteen hundred and nine. Other winters are waiting, in Viking halls, in Roman streets, on the frozen edge of the world. If you want to live them from the inside, stay with us. The fire is still burning.",
+      "image_prompt": "Wide view at dusk of a lone thatched cottage in the snow, warm light glowing in the small window, smoke rising, first stars in a deep blue sky",
+      "shots": [
+        "slow pull back from the glowing cottage",
+        "smoke rises toward the first stars",
+        "the whole snowy village at night, windows glowing, very still"
+      ],
+      "sound": "gentle wind, a faint crackle, silence",
       "image": {
         "status": "pending",
         "attempts": []
@@ -539,7 +710,8 @@
       "clip": {
         "status": "pending",
         "attempts": []
-      }
+      },
+      "beat": "BİTİŞ EKRANI (son 20 sn)"
     }
   ]
 }

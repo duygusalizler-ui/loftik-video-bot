@@ -5,6 +5,7 @@ ROOT = Path(__file__).resolve().parent.parent
 EPISODES_DIR = ROOT / "episodes"
 DATA_DIR = ROOT / "data"
 LEDGER_PATH = DATA_DIR / "ledger.json"
+USED_TOPICS_PATH = DATA_DIR / "used_topics.json"  # tekrar engeli
 BUILD_DIR = ROOT / "build"  # gitignore'da; indirilen klipler, ses, render
 
 # --- Bütçe (kredi) — kod seviyesinde sert sınırlar ---
@@ -23,10 +24,10 @@ CLIP_SECONDS = 15
 VIDEO_PARAMS = {
     "duration": CLIP_SECONDS,
     "resolution": "480p",
-    "generate_audio": False,
+    "generate_audio": True,  # ortam sesi (ateş, rüzgâr, kar) — fiyat aynı, get_cost ile doğrulandı
     "aspect_ratio": "16:9",
 }
-CLIP_COST = 7.5  # 0.5 kredi/sn x 15 sn
+CLIP_COST = 7.5  # 0.5 kredi/sn x 15 sn (sesli/sessiz aynı)
 
 # --- Görsel stil (her sahne promptuna eklenir) ---
 STYLE = (
@@ -40,9 +41,10 @@ POV_HINT = (
     "his rough work-worn hands and wool sleeves may be visible in the foreground"
 )
 MOTION_SUFFIX = (
-    "Slow, gentle, natural motion; subtle camera drift; painterly style stays "
-    "consistent; no text; no sudden cuts"
+    "Gentle natural motion, soft cuts between shots, painterly style and "
+    "characters stay consistent across shots, no text"
 )
+SOUND_SUFFIX = "Natural ambient sound effects only; no speech, no voices talking, no music"
 
 # --- Ses ---
 VOICE_EN = "en-US-ChristopherNeural"
@@ -54,3 +56,4 @@ OUT_W, OUT_H, OUT_FPS = 1920, 1080, 30
 MIN_SPEED = 0.65  # sakin klipler en fazla bu kadar yavaşlatılır (15 sn -> ~23 sn)
 BEAT_PAD = 0.35   # her cümle bloğu sonrası nefes payı (sn)
 MUSIC_DB = -24    # müzik, anlatımın altında
+AMBIENCE_DB = -14  # klip ortam sesi (ASMR katmanı), anlatımın altında

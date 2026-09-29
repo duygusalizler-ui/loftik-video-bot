@@ -59,6 +59,26 @@ def render_segment(src: Path, out: Path, target: float) -> dict:
     return {"speed": round(speed, 3), "hold": round(hold, 2)}
 
 
+def has_audio(path: Path) -> bool:
+    out = subprocess.run(["ffprobe", "-v", "error", "-select_streams", "a", "-show_entries",
+                          "stream=index", "-of", "csv=p=0", str(path)],
+                         capture_output=True, text=True).stdout.strip()
+    return bool(out)
+
+
+def render_ambience(src: Path, out: Path, beat: float) -> None:
+    """Klibin ortam sesini (ASMR katmanı) sahne süresine uydurur; sesi yoksa sessizlik."""
+    speed, _ = plan_speed(beat)
+    fade = f"afade=t=in:d=0.3,afade=t=out:st={max(beat - 0.4, 0):.2f}:d=0.4"
+    if has_audio(src):
+        af = f"aresample=48000,atempo={speed:.4f},apad,atrim=0:{beat:.3f},{fade}"
+        cmd = ["ffmpeg", "-y", "-i", str(src), "-vn", "-af", af, "-ac", "2", str(out)]
+    else:
+        cmd = ["ffmpeg", "-y", "-f", "lavfi", "-i", "anullsrc=r=48000:cl=stereo",
+               "-t", f"{beat:.3f}", str(out)]
+    _run(cmd)
+
+
 def assemble(ep: dict, scenes: list[int] | None = None, music: Path | None = None,
              lang: str = "en", out_name: str | None = None) -> Path:
     work = C.BUILD_DIR / ep["id"]
@@ -66,7 +86,7 @@ def assemble(ep: dict, scenes: list[int] | None = None, music: Path | None = Non
     if not chosen:
         raise ValueError("Sahne seçilmedi")
 
-    segs, beats, report = [], [], []
+    segs, beats, ambs, report = [], [], [], []
     for i, s in enumerate(chosen):
         clip = asset(s, "clip")
         if clip["status"] != "done" or not clip.get("url"):
@@ -79,6 +99,10 @@ def assemble(ep: dict, scenes: list[int] | None = None, music: Path | None = Non
         seg.parent.mkdir(parents=True, exist_ok=True)
         # geçiş örtüşmesi kadar fazladan video; ses zamanlaması değişmez
         info = render_segment(src, seg, beat + (0 if last else XFADE))
+        amb = work / "ambience" / f"{s['n']:03d}.wav"
+        amb.parent.mkdir(parents=True, exist_ok=True)
+        render_ambience(src, amb, beat)
+        ambs.append(amb)
         segs.append(seg)
         beats.append((mp3, beat))
         report.append({"n": s["n"], "beat": round(beat, 2), **info})
@@ -108,16 +132,24 @@ def assemble(ep: dict, scenes: list[int] | None = None, music: Path | None = Non
     a_fc.append("".join(f"[a{k}]" for k in range(len(beats))) + f"concat=n={len(beats)}:v=0:a=1[aout]")
     _run(["ffmpeg", "-y", *a_in, "-filter_complex", ";".join(a_fc), "-map", "[aout]", str(narr)])
 
-    # --- final: video + anlatım (+ müzik) + ses normalizasyonu ---
+    # --- ortam sesi (ASMR): sahne ortam seslerini sırayla birleştir ---
+    amb_all = work / "ambience.wav"
+    lst = work / "ambience.txt"
+    lst.write_text("".join(f"file '{p.resolve()}'\n" for p in ambs))
+    _run(["ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", str(lst), "-c", "copy", str(amb_all)])
+
+    # --- final: video + anlatım + ortam sesi (+ müzik) + ses normalizasyonu ---
     total = sum(b for _, b in beats)
     out = work / (out_name or f"{ep['id']}_{lang}.mp4")
-    cmd = ["ffmpeg", "-y", "-i", str(video), "-i", str(narr)]
+    cmd = ["ffmpeg", "-y", "-i", str(video), "-i", str(narr), "-i", str(amb_all)]
+    fc = f"[2:a]volume={C.AMBIENCE_DB}dB[amb];"
+    mix = "[1:a][amb]"
     if music:
         cmd += ["-stream_loop", "-1", "-i", str(music)]
-        fc = (f"[2:a]volume={C.MUSIC_DB}dB,afade=t=in:d=2,afade=t=out:st={max(total - 4, 0):.2f}:d=4[m];"
-              f"[1:a][m]amix=inputs=2:duration=first:normalize=0,loudnorm=I=-14:TP=-1.5:LRA=11[a]")
-    else:
-        fc = "[1:a]loudnorm=I=-14:TP=-1.5:LRA=11[a]"
+        fc += f"[3:a]volume={C.MUSIC_DB}dB,afade=t=in:d=2,afade=t=out:st={max(total - 4, 0):.2f}:d=4[m];"
+        mix += "[m]"
+    n_in = mix.count("[")
+    fc += f"{mix}amix=inputs={n_in}:duration=first:normalize=0,loudnorm=I=-14:TP=-1.5:LRA=11[a]"
     fc += f";[0:v]fade=t=in:d=1,fade=t=out:st={max(total - 1.5, 0):.2f}:d=1.5[v]"
     cmd += ["-filter_complex", fc, "-map", "[v]", "-map", "[a]", "-t", f"{total:.3f}",
             "-c:v", "libx264", "-preset", "medium", "-crf", "18", "-pix_fmt", "yuv420p",
