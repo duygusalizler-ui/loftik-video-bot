@@ -109,8 +109,9 @@ def generate_scene_image(reference_path, prompt: str, out_path: str, product_tit
 VIDEO_RULES = (
     " Keep the shoes EXACTLY identical to the first frame in every frame: same shape, same "
     "colors, same sole color. No new logos or text. Exactly two feet and two legs, no extra "
-    "limbs. One continuous shot, no cuts, no transitions, calm realistic motion, no slow-motion "
-    "effects, no water splashes. Looks like real handheld smartphone footage, not CGI, not "
+    "limbs. One continuous shot, no cuts, no transitions. REAL-TIME SPEED: normal everyday "
+    "walking pace at 1x speed, brisk natural steps, ABSOLUTELY NO slow motion, no floaty or "
+    "dreamy movement, no lingering camera; energetic like a quick phone clip. No water splashes. Looks like real handheld smartphone footage, not CGI, not "
     "cinematic. Natural ambient sound only (footsteps, street, room tone): NO speech, NO "
     "voices, NO singing, NO music."
 )
@@ -193,9 +194,9 @@ def _good_clip(reference: str, scene_img: str, motion: str, work: str, idx: int,
 
 
 ALT_MOTION = (
-    "Same scene, different shot: the camera starts close on the shoes and slowly pulls back and "
-    "rises to reveal the full outfit while the person takes two calm steps forward; natural "
-    "handheld phone movement."
+    "Same scene, different shot: the camera starts close on the shoes and quickly pulls back and "
+    "rises to reveal the full outfit while the person takes a few brisk steps forward at normal "
+    "real-time walking speed; natural handheld phone movement, no slow motion."
 )
 
 

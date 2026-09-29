@@ -21,6 +21,11 @@ FPS = 30
 MUSIC_DIR = "assets/music"
 MUSIC_VOLUME = float(os.environ.get("MUSIC_VOLUME", "0.18"))  # arka plan muzigi (kisik)
 VIDEO_VOLUME = 1.0  # videonun kendi sesi (ayak sesi, sokak) -- KISILMIYOR
+# AI klipleri hafif agir cekim gibi akiyor ve yapay duruyor; kurguda hizlandirip
+# bas/sondaki durgun anlari kesiyoruz. 1.25 = %25 daha hizli.
+CLIP_SPEED = float(os.environ.get("CLIP_SPEED") or "1.25")
+TRIM_START = 0.3  # sn, klibin basindaki donuk an
+TRIM_END = 0.4    # sn, klibin sonundaki yavaslayan an
 
 
 def pick_music() -> str | None:
@@ -72,13 +77,19 @@ def extract_frames(video_path: str, out_dir: str, count: int = 4) -> list[str]:
 
 
 def normalize_clip(src: str, dst: str) -> str:
-    """1080x1920, 30fps, stereo ses (ses yoksa sessiz ses ekler)."""
-    vf = f"scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},setsar=1,fps={FPS}"
+    """1080x1920, 30fps, stereo ses; bas/son kirpilir ve CLIP_SPEED kadar hizlandirilir."""
+    total = duration(src)
+    start = TRIM_START if total > 3 else 0
+    length = max(total - start - (TRIM_END if total > 3 else 0), 1.0)
+    vf = (f"setpts=PTS/{CLIP_SPEED},scale={W}:{H}:force_original_aspect_ratio=increase,"
+          f"crop={W}:{H},setsar=1,fps={FPS}")
+    af = f"atempo={CLIP_SPEED}"
+    cut = ["-ss", f"{start:.2f}", "-t", f"{length:.2f}"]
     if has_audio(src):
-        _run(["-i", src, "-vf", vf, "-c:v", "libx264", "-crf", "20", "-pix_fmt", "yuv420p",
-              "-c:a", "aac", "-ar", "44100", "-ac", "2", dst])
+        _run([*cut, "-i", src, "-vf", vf, "-af", af, "-c:v", "libx264", "-crf", "20",
+              "-pix_fmt", "yuv420p", "-c:a", "aac", "-ar", "44100", "-ac", "2", dst])
     else:
-        _run(["-i", src, "-f", "lavfi", "-i", "anullsrc=r=44100:cl=stereo", "-shortest",
+        _run([*cut, "-i", src, "-f", "lavfi", "-i", "anullsrc=r=44100:cl=stereo", "-shortest",
               "-vf", vf, "-c:v", "libx264", "-crf", "20", "-pix_fmt", "yuv420p",
               "-c:a", "aac", dst])
     return dst
