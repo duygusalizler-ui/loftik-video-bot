@@ -20,7 +20,9 @@
     2,
     3
   ],
-  "gates": {},
+  "gates": {
+    "script": "2026-09-29T21:15:26+00:00"
+  },
   "sources": [
     "Christopher Dyer — Standards of Living in the Later Middle Ages (Cambridge University Press, 1989)",
     "Christopher Dyer — Making a Living in the Middle Ages: The People of Britain 850–1520 (Yale University Press, 2002)",
@@ -48,12 +50,30 @@
       ],
       "sound": "embers crackling softly, wind howling outside, a dry old cough",
       "image": {
-        "status": "pending",
-        "attempts": []
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "4769d26a-44e6-495a-9e3a-ef94772e306c",
+            "submitted": "2026-09-29T21:15:57+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "4769d26a-44e6-495a-9e3a-ef94772e306c",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260929_211547_4769d26a-44e6-495a-9e3a-ef94772e306c.png",
+        "finished": "2026-09-29T21:16:57+00:00"
       },
       "clip": {
-        "status": "pending",
-        "attempts": []
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "a9013deb-8825-441a-81b4-084c4c9055a6",
+            "submitted": "2026-09-29T21:17:42+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "a9013deb-8825-441a-81b4-084c4c9055a6",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260929_211738_a9013deb-8825-441a-81b4-084c4c9055a6.mp4",
+        "finished": "2026-09-29T21:19:58+00:00"
       },
       "beat": "SOĞUK AÇILIŞ + FRAGMAN (0:00)"
     },
@@ -70,12 +90,30 @@
       ],
       "sound": "ice cracking under axe blows, crows calling, cold wind over reeds",
       "image": {
-        "status": "pending",
-        "attempts": []
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "7fc272c7-1858-4a6b-9145-abb141126d23",
+            "submitted": "2026-09-29T21:15:57+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "7fc272c7-1858-4a6b-9145-abb141126d23",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260929_211547_7fc272c7-1858-4a6b-9145-abb141126d23.png",
+        "finished": "2026-09-29T21:16:57+00:00"
       },
       "clip": {
-        "status": "pending",
-        "attempts": []
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "b11e5c06-f638-4398-be0c-5da35c66fddb",
+            "submitted": "2026-09-29T21:17:34+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "b11e5c06-f638-4398-be0c-5da35c66fddb",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260929_211727_b11e5c06-f638-4398-be0c-5da35c66fddb.mp4",
+        "finished": "2026-09-29T21:20:17+00:00"
       }
     },
     {
@@ -91,12 +129,30 @@
       ],
       "sound": "winter wind, a distant church bell, hens clucking",
       "image": {
-        "status": "pending",
-        "attempts": []
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "9adf21e9-10de-4f42-b778-0cf6c63a7458",
+            "submitted": "2026-09-29T21:15:57+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "9adf21e9-10de-4f42-b778-0cf6c63a7458",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260929_211549_9adf21e9-10de-4f42-b778-0cf6c63a7458.png",
+        "finished": "2026-09-29T21:17:07+00:00"
       },
       "clip": {
-        "status": "pending",
-        "attempts": []
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "061702ee-2b95-4971-80ad-5497ac633d2a",
+            "submitted": "2026-09-29T21:17:34+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "061702ee-2b95-4971-80ad-5497ac633d2a",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260929_211727_061702ee-2b95-4971-80ad-5497ac633d2a.mp4",
+        "finished": "2026-09-29T21:20:17+00:00"
       }
     },
     {
