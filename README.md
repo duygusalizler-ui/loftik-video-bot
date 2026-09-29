@@ -1,5 +1,43 @@
 # Loftik Video Bot
 
+## YENİ: "reklam" modu (varsayılan)
+
+Her çalışmada şunları yapar:
+
+1. **Ürün seçer.** Sezona göre: Eylül–Mart arası botlar otomatik dahil olur ve
+   öncelik alır, yazın otomatik çıkar (`BOT_MODE=on/off` ile elle zorlanabilir).
+2. **Rakip reklam analizi yapar.** Meta Reklam Kütüphanesi'nde (Türkiye) o ürünle
+   ilgili şu an yayında olan rakip reklamları Apify ile tarar. En uzun süredir
+   yayında olanları "kazanan" kabul eder, Gemini ile analiz eder ve videonun
+   planını (kanca yazısı, sahneler, açıklama) buna göre çıkarır. Rapor
+   `data/rakip_raporlari/` klasörüne kaydedilir, özeti Telegram'a gelir.
+   `APIFY_TOKEN` yoksa Google aramasıyla trend analizi yapar.
+3. **Sahne görselleri üretir.** Sitedeki gerçek ürün fotoğrafından (Gemini).
+4. **Video klipleri üretir.** Her sahne yaklaşık 8 sn (Veo); 2 sahne yaklaşık 16 sn.
+5. **Otomatik kalite kontrolü yapar.** Her görsel ve her klip, gerçek ürün
+   fotoğrafıyla karşılaştırılır (şekil, renk, taban rengi, uydurma logo, fazla
+   ayak). 10 üzerinden 8 altı atılır ve yeniden üretilir. Hiçbir şey geçmezse
+   hatalı video yerine gerçek fotoğraflar gönderilir.
+6. **Kurgular.** Türkçe kanca yazısı, ürün satırı + fiyat, LOFTIK kapanış kartı.
+7. **Telegram'a gönderir.** Video + rakip analizi özeti + kalite puanları +
+   önerilen açıklama.
+
+Günde en fazla `MAX_POSTS_PER_DAY` (varsayılan 2) içerik üretilir.
+
+### Yeni ayarlar
+
+| Ad | Tür | Açıklama |
+|---|---|---|
+| `APIFY_TOKEN` | Secret | https://console.apify.com/account/integrations -- Meta Ad Library taraması için |
+| `COMPETITOR_PAGES` | Variable (opsiyonel) | Takip edilecek rakip marka adları, virgülle |
+| `CONTENT_MODE` | Variable (opsiyonel) | `reklam` (varsayılan), `remotion`, `post`, `video` |
+
+Zamanlama: cron-job.org'a ek olarak workflow'da yedek `schedule:` var
+(TR 10:40 ve 18:40). İkisi birden çalışsa bile günlük limit aşılmaz.
+
+---
+
+
 `loftikayakkabi.com` sitesindeki ürünleri otomatik tarar, Gemini'nin video
 modeli (Veo) ile dikey (9:16) ürün videosu üretir, Instagram hikayesine
 uygun bir görsel oluşturur, ürün adı + fiyat + 3-5 hashtag içeren bir

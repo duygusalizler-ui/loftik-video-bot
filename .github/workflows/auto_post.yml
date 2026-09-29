@@ -7,6 +7,12 @@ on:
   # ucretsiz bir servisten) bu workflow_dispatch endpoint'ine POST atarak
   # yapiyoruz. Kurulum icin README.md'ye bak.
   workflow_dispatch: {}
+  # Yedek zamanlama: cron-job.org calismazsa diye GitHub'in kendi cron'u da
+  # acik. Iki tetikleyici ayni gun ust uste calissa bile MAX_POSTS_PER_DAY
+  # (varsayilan 2) asilmaz -- fazla calisma sessizce cikar.
+  # 07:40 ve 15:40 UTC = TR 10:40 ve 18:40
+  schedule:
+    - cron: "40 7,15 * * *"
 
 concurrency:
   group: loftik-video-bot
@@ -15,7 +21,7 @@ concurrency:
 jobs:
   post:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 45
     permissions:
       contents: write
     steps:
@@ -42,6 +48,9 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           WIRO_API_KEY: ${{ secrets.WIRO_API_KEY }}
+          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+          COMPETITOR_PAGES: ${{ vars.COMPETITOR_PAGES }}
+          CONTENT_MODE: ${{ vars.CONTENT_MODE }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python -m src.main
@@ -50,6 +59,6 @@ jobs:
         run: |
           git config user.name "loftik-video-bot"
           git config user.email "actions@github.com"
-          git add data/posted.json
-          git diff --cached --quiet || git commit -m "chore: posted.json güncellendi [skip ci]"
+          git add data/posted.json data/rakip_raporlari || git add data/posted.json
+          git diff --cached --quiet || git commit -m "chore: posted.json ve rakip raporu güncellendi [skip ci]"
           git push

@@ -136,20 +136,30 @@ def _is_boot(title: str) -> bool:
 
 def list_light_catalog():
     """
-    Tüm izlenen kategorilerdeki ürünleri toplar (BOT kategorisi hariç).
+    Tüm izlenen kategorilerdeki ürünleri toplar. Botlar sadece bot sezonunda
+    (config.boots_enabled) dahil edilir.
     Bir kategori sürekli hata verirse (site geçici olarak engelliyorsa vb.)
     tüm otomasyon çökmesin diye o kategoriyi atlar, diğerlerine devam eder.
     """
     catalog = []
+    boots_on = config.boots_enabled()
+    seen = set()
     for cat_url in config.CATEGORY_URLS:
         slug = category_slug_from_url(cat_url)
         if slug in config.EXCLUDED_CATEGORY_SLUGS:
             continue
+        if slug == "bot" and not boots_on:
+            continue
         try:
             for item in list_product_urls(cat_url):
-                if _is_boot(item["title"]):
+                is_boot = slug == "bot" or _is_boot(item["title"])
+                if is_boot and not boots_on:
                     continue
+                if item["url"] in seen:
+                    continue
+                seen.add(item["url"])
                 item["category_slug"] = slug
+                item["is_boot"] = is_boot
                 catalog.append(item)
         except Exception as exc:  # noqa: BLE001
             print(f"UYARI: {cat_url} taranamadi, atlaniyor. Hata: {exc}")
