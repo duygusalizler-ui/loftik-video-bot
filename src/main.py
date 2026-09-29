@@ -99,7 +99,7 @@ def _run_ad_mode(product, candidate, raw_image_path: str, base_caption: str, tmp
 
 def run() -> None:
     done_today = state.posts_today()
-    if done_today >= config.MAX_POSTS_PER_DAY:
+    if done_today >= config.MAX_POSTS_PER_DAY and not config.IGNORE_DAILY_LIMIT:
         print(f"Bugün zaten {done_today} içerik üretildi (limit {config.MAX_POSTS_PER_DAY}), çıkılıyor.")
         return
 

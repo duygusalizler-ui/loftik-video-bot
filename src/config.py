@@ -99,12 +99,14 @@ GEMINI_IMAGE_MODEL = os.environ.get("GEMINI_IMAGE_MODEL", "gemini-2.5-flash-imag
 # 2 sahne = ~16 sn video.
 AD_SCENES = int(os.environ.get("AD_SCENES", "2"))
 # Kalite kontrolu: 10 uzerinden bu puanin altindaki gorsel/klip atilir.
-QA_MIN_SCORE = int(os.environ.get("QA_MIN_SCORE", "8"))
+QA_MIN_SCORE = int(os.environ.get("QA_MIN_SCORE") or "7")
 SCENE_IMAGE_ATTEMPTS = int(os.environ.get("SCENE_IMAGE_ATTEMPTS", "3"))
 CLIP_ATTEMPTS = int(os.environ.get("CLIP_ATTEMPTS", "2"))
 
 # Gunde en fazla kac icerik uretilsin (hem cron-job.org hem GitHub
 # schedule tetiklese bile bu sayi asilmaz).
-MAX_POSTS_PER_DAY = int(os.environ.get("MAX_POSTS_PER_DAY", "2"))
+MAX_POSTS_PER_DAY = int(os.environ.get("MAX_POSTS_PER_DAY") or "2")
+# Elle deneme calistirmalarinda gunluk limiti atlamak icin (workflow input'u)
+IGNORE_DAILY_LIMIT = (os.environ.get("IGNORE_DAILY_LIMIT") or "").lower() in ("1", "true", "evet")
 
 COMPETITOR_REPORT_DIR = "data/rakip_raporlari"
