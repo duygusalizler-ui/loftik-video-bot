@@ -839,6 +839,16 @@
       "job_id": "b51e0070 elevenlabs punctuation",
       "credits": 0.9,
       "event": "submit"
+    },
+    {
+      "ts": "2026-09-30T09:21:03+00:00",
+      "month": "2026-09",
+      "episode": "ep001",
+      "scene": "narration_elevenlabs",
+      "kind": "voice",
+      "job_id": "text2speech_v2 x31",
+      "credits": 27.9,
+      "event": "submit"
     }
   ]
 }
