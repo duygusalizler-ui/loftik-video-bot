@@ -129,7 +129,8 @@ def description(ep: dict) -> str:
     return (f"{ep['hook_description']}\n\n"
             f"History, lived from the inside. Every episode is told by one ordinary person "
             f"living through a hard season of the past.\n\n{ep['disclosure']}\n\n"
-            f"Sources & further reading:\n{src}\n")
+            f"Sources & further reading:\n{src}\n"
+            + (f"\n{ep['music_credit']}\n" if ep.get("music_credit") else ""))
 
 
 def cmd_doc(a):

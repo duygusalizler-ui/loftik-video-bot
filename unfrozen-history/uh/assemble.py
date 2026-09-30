@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import subprocess
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 import requests
@@ -89,6 +90,39 @@ def render_ambience(src: Path, out: Path, beat: float, rng=None) -> None:
     _run(cmd)
 
 
+def music_bed(ep: dict, chosen: list[dict], beats: list[float], work: Path) -> Path:
+    """Bölüm müzik planı (ep['music']: [{'from': sahne_no, 'track': dosya}]) → tek müzik yatağı.
+    Her parça kendi bölümünün süresi kadar (gerekirse döngü) çalar, girişte/çıkışta yumuşak geçiş."""
+    cues = sorted(ep["music"], key=lambda c: c["from"])
+    starts, t = {}, 0.0
+    for s, b in zip(chosen, beats):
+        starts[s["n"]] = t
+        t += b
+    total = t
+    parts = []
+    for i, c in enumerate(cues):
+        a = next((starts[n] for n in sorted(starts) if n >= c["from"]), None)
+        if a is None:
+            continue
+        nxt = [starts[n] for n in sorted(starts) if i + 1 < len(cues) and n >= cues[i + 1]["from"]]
+        b = nxt[0] if nxt else total
+        if b - a < 0.5:
+            continue
+        d = b - a
+        part = work / "music" / f"cue_{i:02d}.wav"
+        part.parent.mkdir(parents=True, exist_ok=True)
+        _run(["ffmpeg", "-y", "-stream_loop", "-1", "-i", str(C.MUSIC_DIR / c["track"]),
+              "-t", f"{d:.3f}", "-af",
+              f"aresample=48000,loudnorm=I=-20:TP=-2,afade=t=in:d=1.5,afade=t=out:st={max(d - 2.5, 0):.2f}:d=2.5",
+              "-ac", "2", str(part)])
+        parts.append(part)
+    bed = work / "music_bed.wav"
+    lst = work / "music.txt"
+    lst.write_text("".join(f"file '{p.resolve()}'\n" for p in parts))
+    _run(["ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", str(lst), "-c", "copy", str(bed)])
+    return bed
+
+
 def assemble(ep: dict, scenes: list[int] | None = None, music: Path | None = None,
              lang: str = "en", out_name: str | None = None) -> Path:
     work = C.BUILD_DIR / ep["id"]
@@ -96,8 +130,8 @@ def assemble(ep: dict, scenes: list[int] | None = None, music: Path | None = Non
     if not chosen:
         raise ValueError("Sahne seçilmedi")
 
-    segs, beats, ambs, report = [], [], [], []
-    for i, s in enumerate(chosen):
+    def one(i_s):
+        i, s = i_s
         clip = asset(s, "clip")
         if clip["status"] != "done" or not clip.get("url"):
             raise RuntimeError(f"Sahne {s['n']} klibi hazır değil")
@@ -112,10 +146,14 @@ def assemble(ep: dict, scenes: list[int] | None = None, music: Path | None = Non
         amb = work / "ambience" / f"{s['n']:03d}.wav"
         amb.parent.mkdir(parents=True, exist_ok=True)
         render_ambience(src, amb, beat, s.get("clip_range"))
-        ambs.append(amb)
-        segs.append(seg)
-        beats.append((mp3, beat))
-        report.append({"n": s["n"], "beat": round(beat, 2), **info})
+        return seg, (mp3, beat), amb, {"n": s["n"], "beat": round(beat, 2), **info}
+
+    with ThreadPoolExecutor(max_workers=C.RENDER_WORKERS) as pool:
+        results = list(pool.map(one, enumerate(chosen)))
+    segs = [r[0] for r in results]
+    beats = [r[1] for r in results]
+    ambs = [r[2] for r in results]
+    report = [r[3] for r in results]
 
     # --- video: xfade zinciri ---
     video = work / "video_only.mp4"
@@ -151,13 +189,23 @@ def assemble(ep: dict, scenes: list[int] | None = None, music: Path | None = Non
     # --- final: video + anlatım + ortam sesi (+ müzik) + ses normalizasyonu ---
     total = sum(b for _, b in beats)
     out = work / (out_name or f"{ep['id']}_{lang}.mp4")
+    bed = music_bed(ep, chosen, [b for _, b in beats], work) if ep.get("music") and not music else None
     cmd = ["ffmpeg", "-y", "-i", str(video), "-i", str(narr), "-i", str(amb_all)]
     fc = f"[2:a]volume={C.AMBIENCE_DB}dB[amb];"
-    mix = "[1:a][amb]"
-    if music:
-        cmd += ["-stream_loop", "-1", "-i", str(music)]
-        fc += f"[3:a]volume={C.MUSIC_DB}dB,afade=t=in:d=2,afade=t=out:st={max(total - 4, 0):.2f}:d=4[m];"
+    mix = "[nar][amb]"
+    if bed or music:
+        if bed:
+            cmd += ["-i", str(bed)]
+            fc += f"[3:a]volume={C.MUSIC_BED_DB}dB[m0];"
+        else:
+            cmd += ["-stream_loop", "-1", "-i", str(music)]
+            fc += f"[3:a]volume={C.MUSIC_DB}dB,afade=t=in:d=2,afade=t=out:st={max(total - 4, 0):.2f}:d=4[m0];"
+        # müzik anlatım konuşurken alçalır, cümle aralarında yükselir (ducking)
+        fc += ("[1:a]asplit=2[nar][key];[m0][key]sidechaincompress=threshold=0.02:ratio=6:"
+               "attack=30:release=600:makeup=1[m];")
         mix += "[m]"
+    else:
+        fc += "[1:a]anull[nar];"
     n_in = mix.count("[")
     fc += f"{mix}amix=inputs={n_in}:duration=first:normalize=0,loudnorm=I=-14:TP=-1.5:LRA=11[a]"
     fc += f";[0:v]fade=t=in:d=1,fade=t=out:st={max(total - 1.5, 0):.2f}:d=1.5[v]"

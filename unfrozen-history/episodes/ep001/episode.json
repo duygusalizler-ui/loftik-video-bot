@@ -21,7 +21,8 @@
     3
   ],
   "gates": {
-    "script": "2026-09-29T21:15:26+00:00"
+    "script": "2026-09-29T21:15:26+00:00",
+    "preview": "2026-09-30T06:52:35+00:00"
   },
   "sources": [
     "Christopher Dyer — Standards of Living in the Later Middle Ages (Cambridge University Press, 1989)",
@@ -79,7 +80,8 @@
       "refs": [
         "maud",
         "house_inside"
-      ]
+      ],
+      "voice_mood": "tense"
     },
     {
       "n": 2,
@@ -123,7 +125,8 @@
         0.0,
         9.95
       ],
-      "note": "3. açı (pembe gün doğumu köyü) sahne 3'teki gri köyle çelişiyor; kesildi"
+      "note": "3. açı (pembe gün doğumu köyü) sahne 3'teki gri köyle çelişiyor; kesildi",
+      "voice_mood": "intrigue"
     },
     {
       "n": 3,
@@ -165,7 +168,8 @@
       },
       "refs": [
         "walter"
-      ]
+      ],
+      "voice_mood": "intrigue"
     },
     {
       "n": 4,
@@ -180,16 +184,35 @@
       ],
       "sound": "wet clay squelching, wind whistling through a gap then falling silent",
       "image": {
-        "status": "pending",
-        "attempts": []
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "b219ceb9-5414-4016-9b5b-a4a0d4f21468",
+            "submitted": "2026-09-30T06:54:16+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "b219ceb9-5414-4016-9b5b-a4a0d4f21468",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_065404_b219ceb9-5414-4016-9b5b-a4a0d4f21468.png",
+        "finished": "2026-09-30T06:56:06+00:00"
       },
       "clip": {
-        "status": "pending",
-        "attempts": []
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "e1fbe651-109e-475a-8bd1-06dbaddab13e",
+            "submitted": "2026-09-30T06:58:20+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "e1fbe651-109e-475a-8bd1-06dbaddab13e",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_065811_e1fbe651-109e-475a-8bd1-06dbaddab13e.mp4",
+        "finished": "2026-09-30T07:04:05+00:00"
       },
       "refs": [
         "house_outside"
-      ]
+      ],
+      "voice_mood": "warm"
     },
     {
       "n": 5,
@@ -204,16 +227,35 @@
       ],
       "sound": "hushed snowfall, a muffled crackle of fire from inside",
       "image": {
-        "status": "pending",
-        "attempts": []
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "cd4377b3-849d-404f-ae8e-c7a8018a80ff",
+            "submitted": "2026-09-30T06:54:16+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "cd4377b3-849d-404f-ae8e-c7a8018a80ff",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_065403_cd4377b3-849d-404f-ae8e-c7a8018a80ff.png",
+        "finished": "2026-09-30T06:56:06+00:00"
       },
       "clip": {
-        "status": "pending",
-        "attempts": []
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "b1f513c5-615d-4b81-a0df-6fee417dabf3",
+            "submitted": "2026-09-30T06:58:20+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "b1f513c5-615d-4b81-a0df-6fee417dabf3",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_065810_b1f513c5-615d-4b81-a0df-6fee417dabf3.mp4",
+        "finished": "2026-09-30T07:04:05+00:00"
       },
       "refs": [
         "house_outside"
-      ]
+      ],
+      "voice_mood": "warm"
     },
     {
       "n": 6,
@@ -228,16 +270,35 @@
       ],
       "sound": "fire crackling, a pot bubbling, a child coughing from the smoke",
       "image": {
-        "status": "pending",
-        "attempts": []
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "5bf32989-7966-4113-b027-8d0dd8e25197",
+            "submitted": "2026-09-30T06:54:16+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "5bf32989-7966-4113-b027-8d0dd8e25197",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_065403_5bf32989-7966-4113-b027-8d0dd8e25197.png",
+        "finished": "2026-09-30T06:56:06+00:00"
       },
       "clip": {
-        "status": "pending",
-        "attempts": []
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "8bdd3c68-710a-427d-a47a-fbf86594baa3",
+            "submitted": "2026-09-30T06:58:48+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "8bdd3c68-710a-427d-a47a-fbf86594baa3",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_065840_8bdd3c68-710a-427d-a47a-fbf86594baa3.mp4",
+        "finished": "2026-09-30T07:04:05+00:00"
       },
       "refs": [
         "house_inside"
-      ]
+      ],
+      "voice_mood": "warm"
     },
     {
       "n": 7,
@@ -252,17 +313,36 @@
       ],
       "sound": "a branch snapping, footsteps crunching in snow, wind in bare trees",
       "image": {
-        "status": "pending",
-        "attempts": []
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "f824d556-5ab2-43a1-9ded-449c8503c536",
+            "submitted": "2026-09-30T06:54:16+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "f824d556-5ab2-43a1-9ded-449c8503c536",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_065404_f824d556-5ab2-43a1-9ded-449c8503c536.png",
+        "finished": "2026-09-30T06:56:06+00:00"
       },
       "clip": {
-        "status": "pending",
-        "attempts": []
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "9948a00b-f624-4995-8601-eaf3cbbb25a8",
+            "submitted": "2026-09-30T06:58:20+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "9948a00b-f624-4995-8601-eaf3cbbb25a8",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_065811_9948a00b-f624-4995-8601-eaf3cbbb25a8.mp4",
+        "finished": "2026-09-30T07:04:05+00:00"
       },
       "refs": [
         "agnes",
         "house_outside"
-      ]
+      ],
+      "voice_mood": "warm"
     },
     {
       "n": 8,
@@ -277,16 +357,35 @@
       ],
       "sound": "ash scraping, a clay lid clunking down, a soft whoosh of flame",
       "image": {
-        "status": "pending",
-        "attempts": []
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "21e9f3ff-615a-4565-97ca-30142908eb64",
+            "submitted": "2026-09-30T06:54:16+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "21e9f3ff-615a-4565-97ca-30142908eb64",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_065404_21e9f3ff-615a-4565-97ca-30142908eb64.png",
+        "finished": "2026-09-30T06:56:06+00:00"
       },
       "clip": {
-        "status": "pending",
-        "attempts": []
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "e2c8df3f-8b75-4274-8005-457d60ef8326",
+            "submitted": "2026-09-30T06:58:21+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "e2c8df3f-8b75-4274-8005-457d60ef8326",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_065811_e2c8df3f-8b75-4274-8005-457d60ef8326.mp4",
+        "finished": "2026-09-30T07:04:05+00:00"
       },
       "refs": [
         "house_inside"
-      ]
+      ],
+      "voice_mood": "warm"
     },
     {
       "n": 9,
@@ -301,18 +400,37 @@
       ],
       "sound": "cold wind, a single crow cawing, tense quiet",
       "image": {
-        "status": "pending",
-        "attempts": []
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "c2bb4fbe-76a6-46bc-baa2-438c16e5e136",
+            "submitted": "2026-09-30T06:54:16+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "c2bb4fbe-76a6-46bc-baa2-438c16e5e136",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_065404_c2bb4fbe-76a6-46bc-baa2-438c16e5e136.png",
+        "finished": "2026-09-30T06:56:06+00:00"
       },
       "clip": {
-        "status": "pending",
-        "attempts": []
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "099fe01a-5644-4f4d-ac46-8ef72a8934f4",
+            "submitted": "2026-09-30T06:58:48+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "099fe01a-5644-4f4d-ac46-8ef72a8934f4",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_065841_099fe01a-5644-4f4d-ac46-8ef72a8934f4.mp4",
+        "finished": "2026-09-30T07:04:06+00:00"
       },
       "beat": "⚡ KIRILMA 1 (2:47): Biri odun çalıyor",
       "refs": [
         "house_outside",
         "village"
-      ]
+      ],
+      "voice_mood": "tense"
     },
     {
       "n": 10,
@@ -327,16 +445,35 @@
       ],
       "sound": "rustle of wool, crunch of dry hay, fire crackling",
       "image": {
-        "status": "pending",
-        "attempts": []
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "5f4d4344-0f9a-4ad3-b776-60d28946b075",
+            "submitted": "2026-09-30T06:54:16+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "5f4d4344-0f9a-4ad3-b776-60d28946b075",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_065404_5f4d4344-0f9a-4ad3-b776-60d28946b075.png",
+        "finished": "2026-09-30T06:56:06+00:00"
       },
       "clip": {
-        "status": "pending",
-        "attempts": []
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "d3f7a649-a9dd-400e-a76c-b6d540b2f99d",
+            "submitted": "2026-09-30T06:58:21+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "d3f7a649-a9dd-400e-a76c-b6d540b2f99d",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_065810_d3f7a649-a9dd-400e-a76c-b6d540b2f99d.mp4",
+        "finished": "2026-09-30T07:04:06+00:00"
       },
       "refs": [
         "house_inside"
-      ]
+      ],
+      "voice_mood": "warm"
     },
     {
       "n": 11,
@@ -351,18 +488,37 @@
       ],
       "sound": "soft whir of the spindle, fire crackling",
       "image": {
-        "status": "pending",
-        "attempts": []
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "59bfaab7-0bad-4664-bf45-6ad4220c6b00",
+            "submitted": "2026-09-30T06:54:16+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "59bfaab7-0bad-4664-bf45-6ad4220c6b00",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_065404_59bfaab7-0bad-4664-bf45-6ad4220c6b00.png",
+        "finished": "2026-09-30T06:56:06+00:00"
       },
       "clip": {
-        "status": "pending",
-        "attempts": []
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "5439ee69-c2e3-4935-a8c7-7cab63a30e48",
+            "submitted": "2026-09-30T06:58:21+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "5439ee69-c2e3-4935-a8c7-7cab63a30e48",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_065811_5439ee69-c2e3-4935-a8c7-7cab63a30e48.mp4",
+        "finished": "2026-09-30T07:04:06+00:00"
       },
       "refs": [
         "agnes",
         "joan",
         "house_inside"
-      ]
+      ],
+      "voice_mood": "warm"
     },
     {
       "n": 12,
@@ -377,16 +533,35 @@
       ],
       "sound": "salt grinding against meat, a heavy wooden lid thumping shut",
       "image": {
-        "status": "pending",
-        "attempts": []
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "73751a83-3d9b-455e-a790-4da5e117fc0f",
+            "submitted": "2026-09-30T06:54:16+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "73751a83-3d9b-455e-a790-4da5e117fc0f",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_065404_73751a83-3d9b-455e-a790-4da5e117fc0f.png",
+        "finished": "2026-09-30T06:56:06+00:00"
       },
       "clip": {
-        "status": "pending",
-        "attempts": []
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "f640f771-bc5c-44e8-8009-e55a0799d60f",
+            "submitted": "2026-09-30T06:58:48+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "f640f771-bc5c-44e8-8009-e55a0799d60f",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_065841_f640f771-bc5c-44e8-8009-e55a0799d60f.mp4",
+        "finished": "2026-09-30T07:04:06+00:00"
       },
       "refs": [
         "house_inside"
-      ]
+      ],
+      "voice_mood": "warm"
     },
     {
       "n": 13,
@@ -401,18 +576,37 @@
       ],
       "sound": "pottage bubbling, wooden spoons knocking on bowls",
       "image": {
-        "status": "pending",
-        "attempts": []
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "2a68859d-d79a-48e4-a128-9d2b9caf4390",
+            "submitted": "2026-09-30T06:54:16+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "2a68859d-d79a-48e4-a128-9d2b9caf4390",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_065404_2a68859d-d79a-48e4-a128-9d2b9caf4390.png",
+        "finished": "2026-09-30T06:56:06+00:00"
       },
       "clip": {
-        "status": "pending",
-        "attempts": []
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "772fed19-73b8-4461-80cc-181ddb1dd823",
+            "submitted": "2026-09-30T06:58:21+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "772fed19-73b8-4461-80cc-181ddb1dd823",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_065811_772fed19-73b8-4461-80cc-181ddb1dd823.mp4",
+        "finished": "2026-09-30T07:04:06+00:00"
       },
       "refs": [
         "agnes",
         "joan",
         "house_inside"
-      ]
+      ],
+      "voice_mood": "warm"
     },
     {
       "n": 14,
@@ -427,16 +621,35 @@
       ],
       "sound": "ale pouring, a door creaking, night wind",
       "image": {
-        "status": "pending",
-        "attempts": []
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "fe59af49-e38c-4757-99df-059a733e4fb9",
+            "submitted": "2026-09-30T06:54:16+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "fe59af49-e38c-4757-99df-059a733e4fb9",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_065404_fe59af49-e38c-4757-99df-059a733e4fb9.png",
+        "finished": "2026-09-30T06:56:06+00:00"
       },
       "clip": {
-        "status": "pending",
-        "attempts": []
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "c23f0049-ce96-4a8e-bd5d-3a13764005db",
+            "submitted": "2026-09-30T06:58:48+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "c23f0049-ce96-4a8e-bd5d-3a13764005db",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_065841_c23f0049-ce96-4a8e-bd5d-3a13764005db.mp4",
+        "finished": "2026-09-30T07:04:06+00:00"
       },
       "refs": [
         "house_inside"
-      ]
+      ],
+      "voice_mood": "warm"
     },
     {
       "n": 15,
@@ -451,18 +664,37 @@
       ],
       "sound": "footsteps crunching snow, wind, a boy's shaky breathing",
       "image": {
-        "status": "pending",
-        "attempts": []
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "8cf2e7a5-5192-40a7-93d2-20e32372f41f",
+            "submitted": "2026-09-30T06:54:16+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "8cf2e7a5-5192-40a7-93d2-20e32372f41f",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_065405_8cf2e7a5-5192-40a7-93d2-20e32372f41f.png",
+        "finished": "2026-09-30T06:56:06+00:00"
       },
       "clip": {
-        "status": "pending",
-        "attempts": []
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "cc8be2e6-7da0-47a0-b887-325ff1f996ef",
+            "submitted": "2026-09-30T06:58:48+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "cc8be2e6-7da0-47a0-b887-325ff1f996ef",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_065841_cc8be2e6-7da0-47a0-b887-325ff1f996ef.mp4",
+        "finished": "2026-09-30T07:04:06+00:00"
       },
       "beat": "⚡ KIRILMA 2 (4:53): Hırsız ortaya çıkıyor",
       "refs": [
         "tom",
         "house_outside"
-      ]
+      ],
+      "voice_mood": "tense"
     },
     {
       "n": 16,
@@ -477,17 +709,36 @@
       ],
       "sound": "soft footsteps fading into the wind",
       "image": {
-        "status": "pending",
-        "attempts": []
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "f0c6c409-2fcf-418d-bf98-65890f543af2",
+            "submitted": "2026-09-30T06:55:15+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "f0c6c409-2fcf-418d-bf98-65890f543af2",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_065507_f0c6c409-2fcf-418d-bf98-65890f543af2.png",
+        "finished": "2026-09-30T06:56:20+00:00"
       },
       "clip": {
-        "status": "pending",
-        "attempts": []
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "5265bd2d-8fe1-4dfe-a40f-f2292f10cb91",
+            "submitted": "2026-09-30T06:59:45+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "5265bd2d-8fe1-4dfe-a40f-f2292f10cb91",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_065936_5265bd2d-8fe1-4dfe-a40f-f2292f10cb91.mp4",
+        "finished": "2026-09-30T07:04:21+00:00"
       },
       "refs": [
         "tom",
         "house_outside"
-      ]
+      ],
+      "voice_mood": "intrigue"
     },
     {
       "n": 17,
@@ -502,16 +753,35 @@
       ],
       "sound": "cow breathing and lowing softly, hens clucking",
       "image": {
-        "status": "pending",
-        "attempts": []
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "a8ca5914-975e-4cc7-9b11-b9c2028af822",
+            "submitted": "2026-09-30T06:55:15+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "a8ca5914-975e-4cc7-9b11-b9c2028af822",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_065507_a8ca5914-975e-4cc7-9b11-b9c2028af822.png",
+        "finished": "2026-09-30T06:56:20+00:00"
       },
       "clip": {
-        "status": "pending",
-        "attempts": []
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "7694ba9e-5ce5-440d-b735-b7f65abafefc",
+            "submitted": "2026-09-30T06:59:45+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "7694ba9e-5ce5-440d-b735-b7f65abafefc",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_065936_7694ba9e-5ce5-440d-b735-b7f65abafefc.mp4",
+        "finished": "2026-09-30T07:04:21+00:00"
       },
       "refs": [
         "house_inside"
-      ]
+      ],
+      "voice_mood": "warm"
     },
     {
       "n": 18,
@@ -526,17 +796,36 @@
       ],
       "sound": "ladder creaking, pitchfork in dry hay, a hen clucking",
       "image": {
-        "status": "pending",
-        "attempts": []
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "eb59f2b5-1871-4e0a-babf-b4998b8571af",
+            "submitted": "2026-09-30T06:55:15+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "eb59f2b5-1871-4e0a-babf-b4998b8571af",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_065507_eb59f2b5-1871-4e0a-babf-b4998b8571af.png",
+        "finished": "2026-09-30T06:56:20+00:00"
       },
       "clip": {
-        "status": "pending",
-        "attempts": []
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "a64f1d0e-a26f-4d8c-8dbd-87bebbd5d32c",
+            "submitted": "2026-09-30T06:59:46+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "a64f1d0e-a26f-4d8c-8dbd-87bebbd5d32c",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_065936_a64f1d0e-a26f-4d8c-8dbd-87bebbd5d32c.mp4",
+        "finished": "2026-09-30T07:04:21+00:00"
       },
       "refs": [
         "joan",
         "house_inside"
-      ]
+      ],
+      "voice_mood": "warm"
     },
     {
       "n": 19,
@@ -551,13 +840,32 @@
       ],
       "sound": "rhythmic thumps of flails, men breathing hard",
       "image": {
-        "status": "pending",
-        "attempts": []
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "41b5407d-ada0-4167-aae0-48dcdfc5e301",
+            "submitted": "2026-09-30T06:55:16+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "41b5407d-ada0-4167-aae0-48dcdfc5e301",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_065507_41b5407d-ada0-4167-aae0-48dcdfc5e301.png",
+        "finished": "2026-09-30T06:56:20+00:00"
       },
       "clip": {
-        "status": "pending",
-        "attempts": []
-      }
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "3ec20ece-9466-4758-b398-94e3709984a5",
+            "submitted": "2026-09-30T06:59:46+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "3ec20ece-9466-4758-b398-94e3709984a5",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_065936_3ec20ece-9466-4758-b398-94e3709984a5.mp4",
+        "finished": "2026-09-30T07:04:21+00:00"
+      },
+      "voice_mood": "warm"
     },
     {
       "n": 20,
@@ -572,17 +880,36 @@
       ],
       "sound": "murmur of a crowd, laughter, clinking cups, a big fire roaring",
       "image": {
-        "status": "pending",
-        "attempts": []
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "c034289c-9dd0-445e-881d-7aeba6de6732",
+            "submitted": "2026-09-30T06:55:16+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "c034289c-9dd0-445e-881d-7aeba6de6732",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_065508_c034289c-9dd0-445e-881d-7aeba6de6732.png",
+        "finished": "2026-09-30T06:56:20+00:00"
       },
       "clip": {
-        "status": "pending",
-        "attempts": []
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "33088ab6-7f19-41b9-90f8-1866f94d242c",
+            "submitted": "2026-09-30T06:59:46+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "33088ab6-7f19-41b9-90f8-1866f94d242c",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_065936_33088ab6-7f19-41b9-90f8-1866f94d242c.mp4",
+        "finished": "2026-09-30T07:04:21+00:00"
       },
       "refs": [
         "walter",
         "village"
-      ]
+      ],
+      "voice_mood": "festive"
     },
     {
       "n": 21,
@@ -597,18 +924,37 @@
       ],
       "sound": "church bell ringing, footsteps in snow, soft murmur",
       "image": {
-        "status": "pending",
-        "attempts": []
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "658742c8-9952-4869-9615-fd87233437ac",
+            "submitted": "2026-09-30T06:55:16+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "658742c8-9952-4869-9615-fd87233437ac",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_065507_658742c8-9952-4869-9615-fd87233437ac.png",
+        "finished": "2026-09-30T06:56:20+00:00"
       },
       "clip": {
-        "status": "pending",
-        "attempts": []
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "8f004a71-ee96-474d-a733-df8d276e4198",
+            "submitted": "2026-09-30T06:59:46+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "8f004a71-ee96-474d-a733-df8d276e4198",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_065937_8f004a71-ee96-474d-a733-df8d276e4198.mp4",
+        "finished": "2026-09-30T07:04:21+00:00"
       },
       "refs": [
         "tom",
         "alice",
         "village"
-      ]
+      ],
+      "voice_mood": "festive"
     },
     {
       "n": 22,
@@ -623,16 +969,35 @@
       ],
       "sound": "howling wind, cart wheels creaking, a bucket thudding on ice",
       "image": {
-        "status": "pending",
-        "attempts": []
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "5ca57eb0-2601-4cf9-a8bd-9619b1d5138a",
+            "submitted": "2026-09-30T06:55:16+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "5ca57eb0-2601-4cf9-a8bd-9619b1d5138a",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_065507_5ca57eb0-2601-4cf9-a8bd-9619b1d5138a.png",
+        "finished": "2026-09-30T06:56:21+00:00"
       },
       "clip": {
-        "status": "pending",
-        "attempts": []
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "00acfb69-5077-483f-beaa-8924e465d5d7",
+            "submitted": "2026-09-30T06:59:46+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "00acfb69-5077-483f-beaa-8924e465d5d7",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_065937_00acfb69-5077-483f-beaa-8924e465d5d7.mp4",
+        "finished": "2026-09-30T07:04:21+00:00"
       },
       "refs": [
         "village"
-      ]
+      ],
+      "voice_mood": "tense"
     },
     {
       "n": 23,
@@ -647,19 +1012,38 @@
       ],
       "sound": "coughing, fire crackling, wind",
       "image": {
-        "status": "pending",
-        "attempts": []
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "7f8666ce-8ff5-4b7d-a608-03a281fdf0fe",
+            "submitted": "2026-09-30T06:55:16+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "7f8666ce-8ff5-4b7d-a608-03a281fdf0fe",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_065507_7f8666ce-8ff5-4b7d-a608-03a281fdf0fe.png",
+        "finished": "2026-09-30T06:56:21+00:00"
       },
       "clip": {
-        "status": "pending",
-        "attempts": []
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "0d2ab366-6303-45cb-aa8f-dccd9c73cfc9",
+            "submitted": "2026-09-30T06:59:46+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "0d2ab366-6303-45cb-aa8f-dccd9c73cfc9",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_065936_0d2ab366-6303-45cb-aa8f-dccd9c73cfc9.mp4",
+        "finished": "2026-09-30T07:04:22+00:00"
       },
       "beat": "⚡ KIRILMA 3 (7:42): Anne hasta, 3 bağ odun kaldı",
       "refs": [
         "maud",
         "agnes",
         "house_inside"
-      ]
+      ],
+      "voice_mood": "tense"
     },
     {
       "n": 24,
@@ -674,18 +1058,37 @@
       ],
       "sound": "wind battering the walls, faint crackle, a cough",
       "image": {
-        "status": "pending",
-        "attempts": []
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "45afdfa1-4fda-4d53-8b5a-28c6a367a76c",
+            "submitted": "2026-09-30T06:55:16+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "45afdfa1-4fda-4d53-8b5a-28c6a367a76c",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_065507_45afdfa1-4fda-4d53-8b5a-28c6a367a76c.png",
+        "finished": "2026-09-30T06:56:21+00:00"
       },
       "clip": {
-        "status": "pending",
-        "attempts": []
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "c84281aa-d319-4fc0-8962-134cc909ecbf",
+            "submitted": "2026-09-30T06:59:46+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "c84281aa-d319-4fc0-8962-134cc909ecbf",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_065936_c84281aa-d319-4fc0-8962-134cc909ecbf.mp4",
+        "finished": "2026-09-30T07:04:22+00:00"
       },
       "refs": [
         "maud",
         "agnes",
         "house_inside"
-      ]
+      ],
+      "voice_mood": "tense"
     },
     {
       "n": 25,
@@ -700,17 +1103,36 @@
       ],
       "sound": "stones clacking, rags rustling, a cow breathing",
       "image": {
-        "status": "pending",
-        "attempts": []
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "8fc5b178-fed0-400d-873c-e13b2c2ad3fd",
+            "submitted": "2026-09-30T06:55:16+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "8fc5b178-fed0-400d-873c-e13b2c2ad3fd",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_065507_8fc5b178-fed0-400d-873c-e13b2c2ad3fd.png",
+        "finished": "2026-09-30T06:56:21+00:00"
       },
       "clip": {
-        "status": "pending",
-        "attempts": []
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "6629e388-e194-4707-ad7f-f0e35c1772c8",
+            "submitted": "2026-09-30T06:59:46+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "6629e388-e194-4707-ad7f-f0e35c1772c8",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_065937_6629e388-e194-4707-ad7f-f0e35c1772c8.mp4",
+        "finished": "2026-09-30T07:04:22+00:00"
       },
       "refs": [
         "agnes",
         "house_inside"
-      ]
+      ],
+      "voice_mood": "tense"
     },
     {
       "n": 26,
@@ -725,19 +1147,38 @@
       ],
       "sound": "straw rustling, blankets, slow breathing",
       "image": {
-        "status": "pending",
-        "attempts": []
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "02ecdfa6-7d74-43c1-a11b-f66531556062",
+            "submitted": "2026-09-30T06:55:16+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "02ecdfa6-7d74-43c1-a11b-f66531556062",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_065507_02ecdfa6-7d74-43c1-a11b-f66531556062.png",
+        "finished": "2026-09-30T06:56:21+00:00"
       },
       "clip": {
-        "status": "pending",
-        "attempts": []
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "5540d3ac-00cf-44be-95c7-d575236bfe36",
+            "submitted": "2026-09-30T06:59:46+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "5540d3ac-00cf-44be-95c7-d575236bfe36",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_065936_5540d3ac-00cf-44be-95c7-d575236bfe36.mp4",
+        "finished": "2026-09-30T07:04:22+00:00"
       },
       "refs": [
         "agnes",
         "joan",
         "hugh",
         "maud"
-      ]
+      ],
+      "voice_mood": "tense"
     },
     {
       "n": 27,
@@ -752,18 +1193,37 @@
       ],
       "sound": "wind, a small crackle as the stick catches, a child's whisper",
       "image": {
-        "status": "pending",
-        "attempts": []
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "c4f7dd7f-3153-473b-87e9-cf48569cec3d",
+            "submitted": "2026-09-30T06:55:16+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "c4f7dd7f-3153-473b-87e9-cf48569cec3d",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_065507_c4f7dd7f-3153-473b-87e9-cf48569cec3d.png",
+        "finished": "2026-09-30T06:56:21+00:00"
       },
       "clip": {
-        "status": "pending",
-        "attempts": []
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "63c499de-154f-4766-81fd-cac81da1e308",
+            "submitted": "2026-09-30T06:59:46+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "63c499de-154f-4766-81fd-cac81da1e308",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_065936_63c499de-154f-4766-81fd-cac81da1e308.mp4",
+        "finished": "2026-09-30T07:04:22+00:00"
       },
       "refs": [
         "maud",
         "hugh",
         "house_inside"
-      ]
+      ],
+      "voice_mood": "tense"
     },
     {
       "n": 28,
@@ -778,19 +1238,38 @@
       ],
       "sound": "a rooster crowing, then soft relieved laughter",
       "image": {
-        "status": "pending",
-        "attempts": []
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "8de6d4a7-4f55-478d-959a-6b829986fec8",
+            "submitted": "2026-09-30T06:55:48+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "8de6d4a7-4f55-478d-959a-6b829986fec8",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_065537_8de6d4a7-4f55-478d-959a-6b829986fec8.png",
+        "finished": "2026-09-30T06:56:39+00:00"
       },
       "clip": {
-        "status": "pending",
-        "attempts": []
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "e9b3d7bf-5152-4a3c-8e08-77064c261624",
+            "submitted": "2026-09-30T07:00:16+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "e9b3d7bf-5152-4a3c-8e08-77064c261624",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_070009_e9b3d7bf-5152-4a3c-8e08-77064c261624.mp4",
+        "finished": "2026-09-30T07:04:34+00:00"
       },
       "beat": "⚡ ÖDÜL (9:28): Anne yaşıyor",
       "refs": [
         "maud",
         "agnes",
         "house_inside"
-      ]
+      ],
+      "voice_mood": "relief"
     },
     {
       "n": 29,
@@ -805,18 +1284,37 @@
       ],
       "sound": "sledge runners scraping snow, greetings, laughter",
       "image": {
-        "status": "pending",
-        "attempts": []
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "cd28cd5d-c796-430c-98d0-05a5515a7519",
+            "submitted": "2026-09-30T06:55:48+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "cd28cd5d-c796-430c-98d0-05a5515a7519",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_065537_cd28cd5d-c796-430c-98d0-05a5515a7519.png",
+        "finished": "2026-09-30T06:56:39+00:00"
       },
       "clip": {
-        "status": "pending",
-        "attempts": []
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "e0050457-55bb-4ab2-a54f-f00d88f97413",
+            "submitted": "2026-09-30T07:00:16+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "e0050457-55bb-4ab2-a54f-f00d88f97413",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_070008_e0050457-55bb-4ab2-a54f-f00d88f97413.mp4",
+        "finished": "2026-09-30T07:04:34+00:00"
       },
       "refs": [
         "tom",
         "walter",
         "house_outside"
-      ]
+      ],
+      "voice_mood": "relief"
     },
     {
       "n": 30,
@@ -831,13 +1329,32 @@
       ],
       "sound": "ice groaning and cracking, water dripping, first birdsong",
       "image": {
-        "status": "pending",
-        "attempts": []
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "9bc40bd4-5e50-4175-8c90-19eeb5cb46ec",
+            "submitted": "2026-09-30T06:55:48+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "9bc40bd4-5e50-4175-8c90-19eeb5cb46ec",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_065537_9bc40bd4-5e50-4175-8c90-19eeb5cb46ec.png",
+        "finished": "2026-09-30T06:56:39+00:00"
       },
       "clip": {
-        "status": "pending",
-        "attempts": []
-      }
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "72592378-e5e2-4834-9104-7a49211edbaf",
+            "submitted": "2026-09-30T07:00:16+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "72592378-e5e2-4834-9104-7a49211edbaf",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_070009_72592378-e5e2-4834-9104-7a49211edbaf.mp4",
+        "finished": "2026-09-30T07:04:34+00:00"
+      },
+      "voice_mood": "relief"
     },
     {
       "n": 31,
@@ -852,19 +1369,38 @@
       ],
       "sound": "fire crackling, gentle laughter",
       "image": {
-        "status": "pending",
-        "attempts": []
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "5ca366cf-9895-4445-ae2d-f839aa26f1b8",
+            "submitted": "2026-09-30T06:55:48+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "5ca366cf-9895-4445-ae2d-f839aa26f1b8",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_065537_5ca366cf-9895-4445-ae2d-f839aa26f1b8.png",
+        "finished": "2026-09-30T06:56:39+00:00"
       },
       "clip": {
-        "status": "pending",
-        "attempts": []
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "18c70b8f-25ef-4740-afe3-d3aac7508853",
+            "submitted": "2026-09-30T07:00:16+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "18c70b8f-25ef-4740-afe3-d3aac7508853",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_070009_18c70b8f-25ef-4740-afe3-d3aac7508853.mp4",
+        "finished": "2026-09-30T07:04:34+00:00"
       },
       "refs": [
         "agnes",
         "joan",
         "hugh",
         "maud"
-      ]
+      ],
+      "voice_mood": "relief"
     },
     {
       "n": 32,
@@ -879,18 +1415,37 @@
       ],
       "sound": "gentle wind, a faint crackle, silence",
       "image": {
-        "status": "pending",
-        "attempts": []
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "b21eb995-c07c-42d0-95bc-37db5cd0bc3f",
+            "submitted": "2026-09-30T06:55:48+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "b21eb995-c07c-42d0-95bc-37db5cd0bc3f",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_065537_b21eb995-c07c-42d0-95bc-37db5cd0bc3f.png",
+        "finished": "2026-09-30T06:56:39+00:00"
       },
       "clip": {
-        "status": "pending",
-        "attempts": []
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "d30b7ae3-a0a8-4e8c-910f-c7ad674daa9d",
+            "submitted": "2026-09-30T07:00:16+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "d30b7ae3-a0a8-4e8c-910f-c7ad674daa9d",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_070009_d30b7ae3-a0a8-4e8c-910f-c7ad674daa9d.mp4",
+        "finished": "2026-09-30T07:04:34+00:00"
       },
       "beat": "BİTİŞ EKRANI (son 20 sn)",
       "refs": [
         "house_outside",
         "village"
-      ]
+      ],
+      "voice_mood": "outro"
     }
   ],
   "refs": {
@@ -1074,5 +1629,57 @@
         "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260929_211549_9adf21e9-10de-4f42-b778-0cf6c63a7458.png"
       }
     }
-  }
+  },
+  "music": [
+    {
+      "from": 1,
+      "track": "Echoes_of_Time.mp3",
+      "title": "Echoes of Time",
+      "url": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Echoes%20of%20Time.mp3",
+      "mood": "gizem, soğuk açılış"
+    },
+    {
+      "from": 4,
+      "track": "Village_Consort.mp3",
+      "title": "Village Consort",
+      "url": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Village%20Consort.mp3",
+      "mood": "canlı ortaçağ köy havası"
+    },
+    {
+      "from": 9,
+      "track": "Darkest_Child.mp3",
+      "title": "Darkest Child",
+      "url": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Darkest%20Child.mp3",
+      "mood": "gerilim: odun hırsızı"
+    },
+    {
+      "from": 17,
+      "track": "Achaidh_Cheide.mp3",
+      "title": "Achaidh Cheide",
+      "url": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Achaidh%20Cheide.mp3",
+      "mood": "hareketli kelt havası, iş"
+    },
+    {
+      "from": 20,
+      "track": "Master_of_the_Feast.mp3",
+      "title": "Master of the Feast",
+      "url": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Master%20of%20the%20Feast.mp3",
+      "mood": "Noel ziyafeti"
+    },
+    {
+      "from": 22,
+      "track": "Dark_Times.mp3",
+      "title": "Dark Times",
+      "url": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Dark%20Times.mp3",
+      "mood": "büyük don, en uzun gece"
+    },
+    {
+      "from": 28,
+      "track": "Eternal_Hope.mp3",
+      "title": "Eternal Hope",
+      "url": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Eternal%20Hope.mp3",
+      "mood": "şafak, umut, final"
+    }
+  ],
+  "music_credit": "Music by Kevin MacLeod (incompetech.com), licensed under Creative Commons: By Attribution 4.0 — \"Echoes of Time\", \"Village Consort\", \"Darkest Child\", \"Achaidh Cheide\", \"Master of the Feast\", \"Dark Times\", \"Eternal Hope\""
 }

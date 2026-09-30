@@ -74,4 +74,7 @@ OUT_W, OUT_H, OUT_FPS = 1920, 1080, 30
 MIN_SPEED = 0.65  # sakin klipler en fazla bu kadar yavaşlatılır (15 sn -> ~23 sn)
 BEAT_PAD = 0.35   # her cümle bloğu sonrası nefes payı (sn)
 MUSIC_DB = -24    # müzik, anlatımın altında
+MUSIC_BED_DB = -9  # bölüm müzik yatağı (-20 LUFS'e normalize) — ducking ile anlatım altında kalır
+MUSIC_DIR = ROOT / "build" / "music"  # telifsiz parçalar (Kevin MacLeod, CC BY 4.0) — gitignore
+RENDER_WORKERS = 3  # paralel sahne render
 AMBIENCE_DB = -14  # klip ortam sesi (ASMR katmanı), anlatımın altında
