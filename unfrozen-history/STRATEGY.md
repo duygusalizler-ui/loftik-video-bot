@@ -12,6 +12,7 @@ Kaynak: kanal sahibinin verdiği strateji şablonu + Operatör Oyun Kitabı. Her
 2. **Kapak** → başlığı tekrar etmez, tamamlar; en fazla 3–4 kelime (ya da yazısız; A/B test).
 3. **İlk 20 saniye** → başlığın sözünü **açıkça** tekrar eder: *"…and I will show you exactly how we survived."*
 - Selam, logo animasyonu, "bu videoda…" girişi **yok**.
+- **Etiketler cümle halinde** (insanların aradığı arama cümleleri, örn. *how did people survive winter in the middle ages*), tek kelime değil; toplam ≤ 500 karakter, en başta başlığa en yakın cümle, en sonda kanal adı.
 - Yüklemeden önce: aynı konuyu İngilizce YouTube'da ara, üst sıradaki kapakları yan yana koy, bizimkini aralarında test et.
 
 ## 3. Metin — çatışma ("ama") yapısı
