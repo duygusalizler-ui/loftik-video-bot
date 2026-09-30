@@ -68,10 +68,21 @@ def _range_args(rng) -> tuple[list[str], float]:
     return ["-ss", f"{a:.3f}", "-to", f"{b:.3f}"], b - a
 
 
+def _src_len(src: Path, rng) -> tuple[list[str], float]:
+    """Kesit argümanları + gerçek kaynak uzunluğu (birleşik klipler 15 sn olmayabilir)."""
+    if rng:
+        return _range_args(rng)
+    return [], duration(src)
+
+
 def render_segment(src: Path, out: Path, target: float, rng=None,
                    min_speed: float = C.MIN_SPEED) -> dict:
-    cut, length = _range_args(rng)
+    cut, length = _src_len(src, rng)
     speed, hold = plan_speed(target, length, min_speed)
+    sig = f"{src.name}|{src.stat().st_size}|{target:.3f}|{rng}|{min_speed}|{C.OUT_W}x{C.OUT_H}"
+    side = out.with_suffix(".json")
+    if out.exists() and side.exists() and side.read_text() == sig:
+        return {"speed": round(speed, 3), "hold": round(hold, 2), "cached": True}
     vf = []
     if speed < 1.0:
         vf += [f"setpts=PTS/{speed:.4f}", f"minterpolate=fps={C.OUT_FPS}:mi_mode=mci:mc_mode=aobmc:vsbmc=1"]
@@ -86,6 +97,10 @@ def render_segment(src: Path, out: Path, target: float, rng=None,
     vf.append(f"trim=duration={target:.3f},setpts=PTS-STARTPTS")
     _run(["ffmpeg", "-y", *cut, "-i", str(src), "-an", "-vf", ",".join(vf),
           "-c:v", "libx264", "-preset", "medium", "-crf", "16", str(out)])
+    got = duration(out)
+    if got < target - 0.1:
+        raise RuntimeError(f"{out.name}: segment {got:.2f} sn, beklenen {target:.2f} sn — montaj durduruldu")
+    side.write_text(sig)
     return {"speed": round(speed, 3), "hold": round(hold, 2)}
 
 
@@ -99,7 +114,7 @@ def has_audio(path: Path) -> bool:
 def render_ambience(src: Path, out: Path, beat: float, rng=None,
                     min_speed: float = C.MIN_SPEED) -> None:
     """Klibin ortam sesini (ASMR katmanı) sahne süresine uydurur; sesi yoksa sessizlik."""
-    cut, length = _range_args(rng)
+    cut, length = _src_len(src, rng)
     speed, _ = plan_speed(beat, length, max(min_speed, 0.5))
     fade = f"afade=t=in:d=0.3,afade=t=out:st={max(beat - 0.4, 0):.2f}:d=0.4"
     if has_audio(src):
@@ -179,6 +194,13 @@ def assemble(ep: dict, scenes: list[int] | None = None, music: Path | None = Non
     beats = [r[1] for r in results]
     ambs = [r[2] for r in results]
     report = [r[3] for r in results]
+
+    # --- güvenlik: her segment beklenen süre kadar mı? ---
+    for k, (seg, (_, beat)) in enumerate(zip(segs, beats)):
+        need = beat + (0 if k == len(segs) - 1 else XFADE)
+        got = duration(seg)
+        if got < need - 0.1:
+            raise RuntimeError(f"{seg.name}: {got:.2f} sn < {need:.2f} sn — montaj durduruldu")
 
     # --- video: xfade zinciri ---
     video = work / "video_only.mp4"
