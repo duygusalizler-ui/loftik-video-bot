@@ -42,3 +42,8 @@ Biz nişten çıkmıyoruz; **tarihin ünlü kışlarını**, orada yaşayan sır
 - Başlık: POV / ikinci şahıs + ünlü olay + kış tehdidi. Örn: "You're a Soldier in Napoleon's Army. Winter Is Coming."
 - Anlatımda 2–3 kez karakter kameraya bakıp konuşur (vlog hissi), hikâye yine birinci ağızdan.
 - Kapak: karakterin yüzü + 2–3 kelime tehdit ("-40°C", "NO FOOD", "DAY 1").
+
+## 7. Mevsim planı
+- Kış dönemi (şimdi → yaklaşık Mart): yalnızca kış bölümleri ("ünlü kışlar" serisi).
+- Yaz dönemi: aynı format, sert yazlar (kuraklık, sıcak dalgası, çöl/sefer yazları). Kanal açıklaması "hardest seasons … frozen winters, scorching summers" bu yüzden iki mevsimi de kapsıyor; değiştirilmeyecek.
+- Geçiş kademeli: yaz serisi kendi oynatma listesiyle ("Summer: How They Survived") açılır, kış listesi kanalda kalır.

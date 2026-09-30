@@ -24,7 +24,7 @@
 ```
 History, lived from the inside.
 
-How did ordinary people survive the hardest winters of the past — the killing frosts, the endless snow, the long dark nights with nothing but a fire? Every episode is told by one ordinary person who lived through it: a medieval peasant, a Viking farmer, a soldier, a pioneer family.
+How did ordinary people survive the hardest seasons of the past — the frozen winters, the scorching summers, the long dark nights? Every episode is told by one ordinary person who lived through it: a medieval peasant, a Viking farmer, a soldier, a pioneer family.
 
 No kings. No battles. Just the real, everyday tricks that kept people alive — told as a story you can feel.
 
@@ -36,7 +36,7 @@ Characters are fictional, built from historical research; sources are listed und
 🇹🇷 **Türkçe anlamı:**
 > Tarih, içeriden yaşanmış haliyle.
 >
-> Sıradan insanlar geçmişin en sert kışlarını — öldüren donları, bitmeyen karı, sadece bir ateşle geçen uzun karanlık geceleri — nasıl atlattı? Her bölümü o dönemi bizzat yaşamış sıradan bir insan anlatıyor: Orta Çağ köylüsü, Viking çiftçisi, bir asker, öncü bir aile.
+> Sıradan insanlar geçmişin en zor mevsimlerini — donmuş kışları, kavurucu yazları, uzun karanlık geceleri — nasıl atlattı? Her bölümü o dönemi bizzat yaşamış sıradan bir insan anlatıyor: ortaçağ köylüsü, Viking çiftçisi, Romalı bir köle, öncü bir aile.
 >
 > Kral yok. Savaş yok. Sadece insanları hayatta tutan gerçek, günlük yöntemler — hissedebileceğin bir hikâye olarak.
 >
