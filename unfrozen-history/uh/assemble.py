@@ -32,11 +32,12 @@ def download(url: str, out: Path) -> Path:
     return out
 
 
-def plan_speed(target: float, length: float = C.CLIP_SECONDS) -> tuple[float, float]:
+def plan_speed(target: float, length: float = C.CLIP_SECONDS,
+               min_speed: float = C.MIN_SPEED) -> tuple[float, float]:
     """(hız, donma_süresi). Klip `length` sn; hedef uzunsa yavaşlat, yetmezse son kareyi tut."""
     if target <= length:
         return 1.0, 0.0
-    speed = max(length / target, C.MIN_SPEED)
+    speed = max(length / target, min_speed)
     hold = max(0.0, target - length / speed)
     return speed, hold
 
@@ -49,9 +50,10 @@ def _range_args(rng) -> tuple[list[str], float]:
     return ["-ss", f"{a:.3f}", "-to", f"{b:.3f}"], b - a
 
 
-def render_segment(src: Path, out: Path, target: float, rng=None) -> dict:
+def render_segment(src: Path, out: Path, target: float, rng=None,
+                   min_speed: float = C.MIN_SPEED) -> dict:
     cut, length = _range_args(rng)
-    speed, hold = plan_speed(target, length)
+    speed, hold = plan_speed(target, length, min_speed)
     vf = []
     if speed < 1.0:
         vf += [f"setpts=PTS/{speed:.4f}", f"minterpolate=fps={C.OUT_FPS}:mi_mode=mci:mc_mode=aobmc:vsbmc=1"]
@@ -76,10 +78,11 @@ def has_audio(path: Path) -> bool:
     return bool(out)
 
 
-def render_ambience(src: Path, out: Path, beat: float, rng=None) -> None:
+def render_ambience(src: Path, out: Path, beat: float, rng=None,
+                    min_speed: float = C.MIN_SPEED) -> None:
     """Klibin ortam sesini (ASMR katmanı) sahne süresine uydurur; sesi yoksa sessizlik."""
     cut, length = _range_args(rng)
-    speed, _ = plan_speed(beat, length)
+    speed, _ = plan_speed(beat, length, max(min_speed, 0.5))
     fade = f"afade=t=in:d=0.3,afade=t=out:st={max(beat - 0.4, 0):.2f}:d=0.4"
     if has_audio(src):
         af = f"aresample=48000,atempo={speed:.4f},apad,atrim=0:{beat:.3f},{fade}"
@@ -142,10 +145,11 @@ def assemble(ep: dict, scenes: list[int] | None = None, music: Path | None = Non
         seg = work / "segments" / f"{s['n']:03d}.mp4"
         seg.parent.mkdir(parents=True, exist_ok=True)
         # geçiş örtüşmesi kadar fazladan video; ses zamanlaması değişmez
-        info = render_segment(src, seg, beat + (0 if last else XFADE), s.get("clip_range"))
+        ms = s.get("min_speed", C.MIN_SPEED)
+        info = render_segment(src, seg, beat + (0 if last else XFADE), s.get("clip_range"), ms)
         amb = work / "ambience" / f"{s['n']:03d}.wav"
         amb.parent.mkdir(parents=True, exist_ok=True)
-        render_ambience(src, amb, beat, s.get("clip_range"))
+        render_ambience(src, amb, beat, s.get("clip_range"), ms)
         return seg, (mp3, beat), amb, {"n": s["n"], "beat": round(beat, 2), **info}
 
     with ThreadPoolExecutor(max_workers=C.RENDER_WORKERS) as pool:

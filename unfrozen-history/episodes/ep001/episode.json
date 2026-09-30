@@ -42,7 +42,7 @@
       "n": 1,
       "title": "Tonight",
       "pov": true,
-      "narration": "Tonight, the fire must not go out. If it does, my mother will not see the morning. There is snow up to the door, the woodpile is almost gone, and somebody in this village has been stealing from it. My name is Walter. And this is the longest winter of my life.",
+      "narration": "Tonight, the fire must not go out. If it does, my mother will not see the morning. No chimney. No heating. Snow up to the door, and somebody in this village has been stealing our wood. My name is Walter, and I will show you exactly how we survive the longest winter of my life.",
       "image_prompt": "Extreme close-up of a few glowing red embers in grey ash on a stone hearth in a pitch-dark medieval cottage, a sliver of cold blue moonlight at the edge",
       "shots": [
         "the last embers glow and fade in the darkness of the hearth",
@@ -126,7 +126,8 @@
         9.95
       ],
       "note": "3. açı (pembe gün doğumu köyü) sahne 3'teki gri köyle çelişiyor; kesildi",
-      "voice_mood": "intrigue"
+      "voice_mood": "intrigue",
+      "min_speed": 0.52
     },
     {
       "n": 3,
@@ -1406,7 +1407,7 @@
       "n": 32,
       "title": "The fire is still burning",
       "pov": false,
-      "narration": "My name is Walter of Ashcombe, and this was my winter of thirteen hundred and nine. Other winters are waiting, in Viking halls, in Roman streets, on the frozen edge of the world. If you want to live them from the inside, stay with us. The fire is still burning.",
+      "narration": "My name is Walter of Ashcombe, and this was my winter of thirteen hundred and nine. But mine was not the hardest. Far to the north, a Viking family must store enough food in autumn for seven months of darkness. One mistake, and they starve by March. That story is next. The fire is still burning.",
       "image_prompt": "Wide view at dusk of a lone thatched cottage in the snow, warm light glowing in the small window, smoke rising, first stars in a deep blue sky",
       "shots": [
         "slow pull back from the glowing cottage",
@@ -1681,5 +1682,6 @@
       "mood": "şafak, umut, final"
     }
   ],
-  "music_credit": "Music by Kevin MacLeod (incompetech.com), licensed under Creative Commons: By Attribution 4.0 — \"Echoes of Time\", \"Village Consort\", \"Darkest Child\", \"Achaidh Cheide\", \"Master of the Feast\", \"Dark Times\", \"Eternal Hope\""
+  "music_credit": "Music by Kevin MacLeod (incompetech.com), licensed under Creative Commons: By Attribution 4.0 — \"Echoes of Time\", \"Village Consort\", \"Darkest Child\", \"Achaidh Cheide\", \"Master of the Feast\", \"Dark Times\", \"Eternal Hope\"",
+  "next_episode_tease": "Vikings: storing food for a seven-month winter"
 }
