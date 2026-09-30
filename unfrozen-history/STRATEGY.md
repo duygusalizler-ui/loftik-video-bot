@@ -13,6 +13,7 @@ Kaynak: kanal sahibinin verdiği strateji şablonu + Operatör Oyun Kitabı. Her
 3. **İlk 20 saniye** → başlığın sözünü **açıkça** tekrar eder: *"…and I will show you exactly how we survived."*
 - Selam, logo animasyonu, "bu videoda…" girişi **yok**.
 - **Etiketler cümle halinde** (insanların aradığı arama cümleleri, örn. *how did people survive winter in the middle ages*), tek kelime değil; toplam ≤ 500 karakter, en başta başlığa en yakın cümle, en sonda kanal adı.
+- Açıklamanın en sonuna **3 hashtag** (ilk 3'ü başlığın üstünde görünür): `#History #MiddleAges #UnfrozenHistory` gibi — konu + dönem + kanal. 3'ten fazla koyma.
 - Yüklemeden önce: aynı konuyu İngilizce YouTube'da ara, üst sıradaki kapakları yan yana koy, bizimkini aralarında test et.
 
 ## 3. Metin — çatışma ("ama") yapısı
