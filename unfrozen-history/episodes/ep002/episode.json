@@ -472,7 +472,7 @@
         "finished": "2026-09-30T12:46:09+00:00"
       },
       "clip": {
-        "status": "running",
+        "status": "done",
         "attempts": [
           {
             "job_id": "81d08981-1501-4c11-8221-a5ba91ad7172",
@@ -480,7 +480,9 @@
             "credits": 7.5
           }
         ],
-        "job_id": "81d08981-1501-4c11-8221-a5ba91ad7172"
+        "job_id": "81d08981-1501-4c11-8221-a5ba91ad7172",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_124629_81d08981-1501-4c11-8221-a5ba91ad7172.mp4",
+        "finished": "2026-09-30T12:50:21+00:00"
       }
     },
     {
