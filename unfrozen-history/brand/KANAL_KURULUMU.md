@@ -24,7 +24,7 @@
 ```
 History, lived from the inside.
 
-How did ordinary people survive the hardest seasons of the past — the frozen winters, the scorching summers, the long dark nights? Every episode is told by one ordinary person who lived through it: a medieval peasant, a Viking farmer, a soldier, a pioneer family.
+How did ordinary people survive the hardest winters of the past — the killing frosts, the endless snow, the long dark nights with nothing but a fire? Every episode is told by one ordinary person who lived through it: a medieval peasant, a Viking farmer, a soldier, a pioneer family.
 
 No kings. No battles. Just the real, everyday tricks that kept people alive — told as a story you can feel.
 
