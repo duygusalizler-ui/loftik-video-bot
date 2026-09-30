@@ -1,0 +1,765 @@
+{
+  "id": "ep002",
+  "version": 1,
+  "title": "How Vikings Survived a 7-Month Winter",
+  "thumbnail": "Painterly close-up of Ketil's frost-covered face in blue polar-night darkness, lit from below by a small stone oil lamp, holding one hard dried cod; text: 'ONE MISTAKE' (A/B test against a no-text version)",
+  "hook_description": "How did Vikings survive seven months of winter — no fresh food, weeks without sunlight, and not enough hay for the animals? Ketil, a Norse farmer in the far north of Norway, tells you how his family made it to spring in the winter of 872.",
+  "character": "Ketil of Steinvik, a fictional Norse farmer on a coastal farm in Hålogaland (northern Norway), winter of 872 to 873",
+  "setting": "A lonely fictional farm called Steinvik on the coast of Hålogaland in northern Norway, Viking Age, around the year 872",
+  "style": "Hand-painted gouache and watercolor storybook illustration, visible brush texture, warm amber firelight against cold blue arctic light, cinematic composition, historically accurate Viking Age Norwegian farm life around 870 AD: longhouses with stone-and-turf walls and grass turf roofs, a smoke hole in the roof instead of a chimney, a long open hearth in the middle of the floor, no glass windows, no horned helmets, soft painterly detail, no text, no letters, no watermark",
+  "ref_style": "Hand-painted gouache and watercolor storybook character reference sheet, same painterly look as the episode, even neutral lighting, plain warm parchment background, historically accurate Viking Age Norse clothing (wool and linen, no horned helmets), original fictional person, no text, no labels, no watermark",
+  "motion_suffix": "Gentle natural motion, soft cuts between shots, painterly style and characters stay consistent across shots, no text; historically accurate Viking Age Norwegian farm: the only indoor fire is the long open hearth in the middle of the floor, no fireplaces in walls, no chimneys, no glass windows, no horned helmets",
+  "cast": {
+    "Ketil": "Ketil (Norse farmer about 40, weathered face, red-brown beard, blue-grey wool hood)",
+    "Ragnhild": "Ragnhild (Norse woman about 35, fair hair in a braid, dark red wool apron dress with two oval bronze brooches)",
+    "Eyvind": "Eyvind (Norse boy about 13, straight blond hair, brown wool tunic)",
+    "Tora": "Tora (little Norse girl about 6, blond braids, green wool dress)",
+    "Ulf": "Ulf (very old Norse man, long white beard, grey wool cloak)",
+    "Grim": "Grim (Norse man about 30, dark hair and short dark beard, soot-stained grey tunic)",
+    "Asa": "Asa (young Norse woman about 25, dark braided hair, blue-grey wool dress, carrying a swaddled baby)",
+    "Huppa": "Huppa (red-brown cow with a white blaze on her face)"
+  },
+  "preview_scenes": [
+    1,
+    2,
+    3
+  ],
+  "gates": {},
+  "sources": [
+    "Else Roesdahl — The Vikings (Penguin, 3rd ed., 2016)",
+    "Neil Price — Children of Ash and Elm: A History of the Vikings (2020)",
+    "Kirsten Wolf — Daily Life of the Vikings (2004)",
+    "Judith Jesch — Women in the Viking Age (1991)",
+    "James H. Barrett & David C. Orton (eds.) — Cod and Herring: The Archaeology and History of Medieval Sea Fishing (2016)",
+    "The voyage of Ohthere (Óttarr) of Hålogaland, in the Old English Orosius (c. 890)",
+    "Hávamál, Poetic Edda — stanza 3 (\"Fire is needed by the one who comes in…\")",
+    "Lofotr Viking Museum, Borg — reconstructed chieftain's longhouse"
+  ],
+  "disclosure": "Ketil, his family and neighbours are fictional characters, built from historical and archaeological research on Viking Age farm life in northern Norway. Illustrations and animation were created with AI tools; narration uses a synthetic voice.",
+  "refs": {
+    "ketil": {
+      "kind": "character",
+      "prompt": "Character reference sheet: on the left a full-body view standing upright facing the viewer, head to toe, on the right a chest-up portrait of the same person; identical original character in both views, single character only, no other people, no props except those described. Ketil, Norse farmer about 40, weathered face, red-brown beard, grey-blue eyes, blue-grey wool hood, knee-length brown wool tunic with a leather belt and a small knife, wool trousers with leg wraps, leather shoes",
+      "n": "ketil"
+    },
+    "ragnhild": {
+      "kind": "character",
+      "prompt": "Character reference sheet: on the left a full-body view standing upright facing the viewer, head to toe, on the right a chest-up portrait of the same person; identical original character in both views, single character only, no other people, no props except those described. Ragnhild, Norse woman about 35, fair hair in a long braid, calm blue eyes, long linen underdress with a dark red wool apron dress held by two oval bronze brooches, a string of a few glass beads, leather shoes",
+      "n": "ragnhild"
+    },
+    "eyvind": {
+      "kind": "character",
+      "prompt": "Character reference sheet: on the left a full-body view standing upright facing the viewer, head to toe, on the right a chest-up portrait of the same person; identical original character in both views, single character only, no other people, no props except those described. Eyvind, Norse boy about 13, straight blond hair, lean, brown wool tunic with a belt, grey wool trousers, leg wraps, leather shoes",
+      "n": "eyvind"
+    },
+    "tora": {
+      "kind": "character",
+      "prompt": "Character reference sheet: on the left a full-body view standing upright facing the viewer, head to toe, on the right a chest-up portrait of the same person; identical original character in both views, single character only, no other people, no props except those described. Tora, little Norse girl about 6, blond braids, round rosy face, green wool dress over a linen underdress, small leather shoes",
+      "n": "tora"
+    },
+    "ulf": {
+      "kind": "character",
+      "prompt": "Character reference sheet: on the left a full-body view standing upright facing the viewer, head to toe, on the right a chest-up portrait of the same person; identical original character in both views, single character only, no other people, no props except those described. Ulf, very old Norse man about 75, long white beard, deeply lined face, thin white hair, grey wool cloak pinned at the shoulder, long brown tunic, a wooden staff",
+      "n": "ulf"
+    },
+    "grim": {
+      "kind": "character",
+      "prompt": "Character reference sheet: on the left a full-body view standing upright facing the viewer, head to toe, on the right a chest-up portrait of the same person; identical original character in both views, single character only, no other people, no props except those described. Grim, Norse man about 30, dark hair and short dark beard, strong build, soot-stained grey wool tunic, dark trousers, leg wraps",
+      "n": "grim"
+    },
+    "asa": {
+      "kind": "character",
+      "prompt": "Character reference sheet: on the left a full-body view standing upright facing the viewer, head to toe, on the right a chest-up portrait of the same person; identical original character in both views, single character only, no other people, no props except those described. Asa, young Norse woman about 25, dark braided hair, blue-grey wool dress with a simple apron dress and small bronze brooches, carrying a baby swaddled in undyed wool",
+      "n": "asa"
+    },
+    "cow": {
+      "kind": "character",
+      "prompt": "Animal reference sheet: side view and front view of the same small old Norse breed cow, red-brown coat with a white blaze on her face, short horns, standing on straw, single animal only",
+      "n": "cow"
+    },
+    "longhouse_inside": {
+      "kind": "location",
+      "prompt": "Location reference, wide establishing view of the interior of one Viking Age Norwegian longhouse: a long stone-lined open hearth running down the middle of the earth floor, wide raised earth benches along both long walls covered with furs and blankets, two rows of heavy wooden roof posts, smoke-blackened rafters, a smoke hole in the turf roof, walls of timber lined inside with wooden planks, an upright warp-weighted loom, a wooden partition at the far end with a byre behind it, no windows, no chimney, no fireplace in the walls, no furniture chairs",
+      "n": "longhouse_inside"
+    },
+    "longhouse_outside": {
+      "kind": "location",
+      "prompt": "Location reference, wide establishing view of one lonely Viking Age farm on the shore of a northern Norwegian fjord: one long low longhouse with thick stone-and-turf walls and a grass turf roof with a smoke hole, a small byre, a boathouse by the water, drying racks for fish, steep dark mountains behind, late autumn with first snow on the peaks, no chimney, no glass windows",
+      "n": "longhouse_outside"
+    },
+    "boat": {
+      "kind": "location",
+      "prompt": "Reference, a small Viking Age Norwegian clinker-built wooden rowing boat for four oars (a faering), pointed at both ends, pulled up on a rocky northern shore, grey sea and snowy mountains behind, no sail, no dragon head",
+      "n": "boat"
+    }
+  },
+  "music": [
+    {
+      "from": 1,
+      "track": "Frozen_Star.mp3",
+      "title": "Frozen Star",
+      "url": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Frozen%20Star.mp3",
+      "mood": "soğuk açılış, gerilim"
+    },
+    {
+      "from": 2,
+      "track": "Lost_Frontier.mp3",
+      "title": "Lost Frontier",
+      "url": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Lost%20Frontier.mp3",
+      "mood": "kuzey, fiyort, çiftlik"
+    },
+    {
+      "from": 6,
+      "track": "Ossuary_6_-_Air.mp3",
+      "title": "Ossuary 6 - Air",
+      "url": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Ossuary%206%20-%20Air.mp3",
+      "mood": "kötü haber: saman çürük"
+    },
+    {
+      "from": 9,
+      "track": "Master_of_the_Feast.mp3",
+      "title": "Master of the Feast",
+      "url": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Master%20of%20the%20Feast.mp3",
+      "mood": "Kış Geceleri ziyafeti"
+    },
+    {
+      "from": 10,
+      "track": "Crossing_the_Chasm.mp3",
+      "title": "Crossing the Chasm",
+      "url": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Crossing%20the%20Chasm.mp3",
+      "mood": "hazırlık, iş, çözüm"
+    },
+    {
+      "from": 14,
+      "track": "Darkest_Child.mp3",
+      "title": "Darkest Child",
+      "url": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Darkest%20Child.mp3",
+      "mood": "gerilim: yangın"
+    },
+    {
+      "from": 16,
+      "track": "Winter_Reflections.mp3",
+      "title": "Winter Reflections",
+      "url": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Winter%20Reflections.mp3",
+      "mood": "misafir, kutup gecesi, Yule"
+    },
+    {
+      "from": 21,
+      "track": "Dark_Times.mp3",
+      "title": "Dark Times",
+      "url": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Dark%20Times.mp3",
+      "mood": "fırtına, açlık"
+    },
+    {
+      "from": 25,
+      "track": "Dreams_Become_Real.mp3",
+      "title": "Dreams Become Real",
+      "url": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Dreams%20Become%20Real.mp3",
+      "mood": "ödül: morinalar, bahar, final"
+    }
+  ],
+  "next_episode_tease": "Roman soldiers on Hadrian's Wall: surviving a British winter far from home",
+  "voice_engine": {
+    "model": "text2speech_v2",
+    "variant": "elevenlabs",
+    "voice_id": "07112420-b262-46e4-8698-6d2a177958f4",
+    "post": "atempo=1.06,highpass=f=70,equalizer=f=250:t=q:w=1.2:g=-2,equalizer=f=3200:t=q:w=1.0:g=3.5,treble=g=2:f=8000,acompressor=threshold=-20dB:ratio=3:attack=5:release=120:makeup=3,loudnorm=I=-16:TP=-1.5"
+  },
+  "scenes": [
+    {
+      "n": 1,
+      "title": "Seven days",
+      "pov": true,
+      "narration": "This is our last barrel. Seven days of food for eight people. Out there, the sea is full of cod, and the storm will not let us reach it. My best cow can barely stand. My name is Ketil. You call my people Vikings. And I am going to show you exactly how we survive seven months of winter.",
+      "narration_voiced": "This is our LAST barrel. Seven days of food... for eight people. Out there, the sea is FULL of cod — and the storm will not let us reach it. My best cow can barely stand. My name is Ketil. You call my people Vikings. And I am going to show you exactly how we survive... seven months of winter.",
+      "image_prompt": "Close-up of the narrator's hands scraping the last pieces of dried fish from the bottom of an almost empty wooden barrel, lit by the orange glow of a long open hearth in a dark Viking longhouse",
+      "shots": [
+        "the hands lift the last small pieces of dried fish out of the empty barrel by firelight",
+        "huge grey storm waves crash against black rocks on a snowy northern shore under a dark sky",
+        "Huppa (red-brown cow with a white blaze on her face) lies thin and weak on straw in a dim wooden byre, breathing slowly, her breath steaming"
+      ],
+      "sound": "howling storm wind, waves crashing in the distance, wood scraping in an empty barrel",
+      "refs": [
+        "longhouse_inside",
+        "cow"
+      ],
+      "voice_mood": "tense",
+      "beat": "SOĞUK AÇILIŞ + FRAGMAN (0:00)"
+    },
+    {
+      "n": 2,
+      "title": "Winternights",
+      "pov": true,
+      "narration": "Five months earlier. Winternights, the middle of October, when our year turns from summer to winter. Up here, in the far north of Norway, nothing will grow again until May. Seven months! Whatever we eat before then, we must gather now. Every fish, every sheep, every handful of barley. And one wrong guess, just one, means hunger in March.",
+      "narration_voiced": "Five months earlier. Winternights — the middle of October, when our year turns from summer to winter. Up here, in the far north of Norway, nothing will grow again until May. Seven months! Whatever we eat before then, we must gather NOW. Every fish, every sheep, every handful of barley. And one wrong guess — just one — means hunger in March.",
+      "image_prompt": "From a hillside, looking down at a lonely Viking farm on a northern fjord shore in October: one long turf-roofed longhouse, a small byre and boathouse, golden autumn birches, first snow on steep dark mountains, low autumn sun",
+      "shots": [
+        "slow view over the fjord and the steep mountains with the first snow on their peaks",
+        "wind moves golden birch leaves; the first flakes of snow fall",
+        "the lonely turf-roofed longhouse by the shore, thin smoke rising from the hole in its roof"
+      ],
+      "sound": "cold wind, birch leaves rustling, distant sea birds",
+      "refs": [
+        "longhouse_outside"
+      ],
+      "voice_mood": "intrigue"
+    },
+    {
+      "n": 3,
+      "title": "Steinvik",
+      "pov": false,
+      "narration": "This is my farm, Steinvik. One longhouse of stone, timber and turf, a byre, a boathouse by the shore and the mountains behind us like a wall. We are five: my wife Ragnhild, my son Eyvind, my little Tora, and my old father Ulf, who has seen more winters than anyone on this island. And our animals. They matter more than you think.",
+      "narration_voiced": "This is my farm, Steinvik. One longhouse of stone, timber and turf, a byre, a boathouse by the shore... and the mountains behind us like a wall. We are five: my wife Ragnhild, my son Eyvind, my little Tora, and my old father Ulf — who has seen more winters than anyone on this island. And our animals. They matter more than you think.",
+      "image_prompt": "Ragnhild (Norse woman about 35, fair hair in a braid, dark red wool apron dress with two oval bronze brooches), Eyvind (Norse boy about 13, straight blond hair, brown wool tunic), Tora (little Norse girl about 6, blond braids, green wool dress) and Ulf (very old Norse man, long white beard, grey wool cloak) standing together outside the door of a turf-roofed Viking longhouse on a fjord shore in late autumn, sheep and a red-brown cow grazing nearby",
+      "shots": [
+        "Ragnhild (Norse woman about 35, fair hair in a braid, dark red wool apron dress with two oval bronze brooches) smiles and holds Tora (little Norse girl about 6, blond braids, green wool dress) by the hand in front of the longhouse door",
+        "Eyvind (Norse boy about 13, straight blond hair, brown wool tunic) carries firewood past, Ulf (very old Norse man, long white beard, grey wool cloak) leans on a staff and watches the fjord",
+        "sheep and a red-brown cow graze on the last autumn grass by the shore"
+      ],
+      "sound": "sheep bleating, wind, a child laughing, waves lapping",
+      "refs": [
+        "ragnhild",
+        "eyvind",
+        "tora",
+        "ulf",
+        "longhouse_outside"
+      ],
+      "voice_mood": "warm"
+    },
+    {
+      "n": 4,
+      "title": "The longhouse",
+      "pov": true,
+      "narration": "Inside, everything turns around the long hearth, a fire that runs down the middle of the floor. There is no chimney! Only a hole in the roof for the smoke. We sit, work and sleep on wide benches along the walls. And at the far end, behind a wooden wall the cows. Their bodies warm the whole house, all winter long.",
+      "narration_voiced": "Inside, everything turns around the long hearth — a fire that runs down the middle of the floor. There is no chimney! Only a hole in the roof for the smoke. We sit, work and sleep on wide benches along the walls. And at the far end, behind a wooden wall... the cows. Their bodies warm the whole house, all winter long.",
+      "image_prompt": "Interior of a dim Viking longhouse: a long stone-lined hearth running down the middle of the earth floor with a low fire, wide raised benches along both walls covered with furs, heavy roof posts, smoke rising to a hole in the turf roof, a wooden partition at the far end with cows behind it",
+      "shots": [
+        "the long fire burns in its stone-lined hearth down the middle of the floor",
+        "smoke drifts up through the dark rafters and out of the hole in the roof",
+        "at the far end, cows' heads over a wooden partition, their breath steaming in the firelight"
+      ],
+      "sound": "fire crackling, cows shifting and breathing, wind outside",
+      "refs": [
+        "longhouse_inside"
+      ],
+      "voice_mood": "warm"
+    },
+    {
+      "n": 5,
+      "title": "Counting the hay",
+      "pov": false,
+      "narration": "But here is the question that decides everything: how much hay do we have? A cow eats a mountain of it before spring. So each autumn, my father climbs into the hay loft and counts, the way his father did. He measures with his arms and does the sums in his head. Then he tells me how many animals can live.",
+      "narration_voiced": "But here is the question that decides EVERYTHING: how much hay do we have? A cow eats a mountain of it before spring. So each autumn, my father climbs into the hay loft and counts, the way his father did. He measures with his arms... and does the sums in his head. Then he tells me how many animals can live.",
+      "image_prompt": "Ulf (very old Norse man, long white beard, grey wool cloak) standing in a dim hay loft of a Viking farm, measuring a pile of hay with his outstretched arms, dust in a beam of light from the doorway",
+      "shots": [
+        "Ulf (very old Norse man, long white beard, grey wool cloak) climbs a wooden ladder into the hay loft",
+        "Ulf (very old Norse man, long white beard, grey wool cloak) spreads his arms along the hay pile, measuring, lips moving as he counts",
+        "close-up of dry grey-green hay, dust drifting in a beam of light"
+      ],
+      "sound": "hay rustling, a wooden ladder creaking, an old man muttering numbers",
+      "refs": [
+        "ulf"
+      ],
+      "voice_mood": "intrigue"
+    },
+    {
+      "n": 6,
+      "title": "A bad summer",
+      "pov": false,
+      "narration": "This year he climbs down slowly. And he says nothing for a long time. The summer was wet. It rained for weeks while the grass lay cut in the fields, and half of the hay turned black and rotten. 'Ketil,' he says. 'We have hay for four cows. Not six.' And that is how my winter truly began.",
+      "narration_voiced": "This year... he climbs down slowly. And he says nothing for a long time. The summer was wet. It rained for weeks while the grass lay cut in the fields — and half of the hay turned black and rotten. 'Ketil,' he says. 'We have hay for four cows. NOT six.' And that... is how my winter truly began.",
+      "image_prompt": "Close-up of Ulf (very old Norse man, long white beard, grey wool cloak) looking grave and worried in the dim hay loft doorway, a handful of black rotten hay in his old hand",
+      "shots": [
+        "Ulf (very old Norse man, long white beard, grey wool cloak)'s old hand opens to show black, rotten hay",
+        "flashback: grey rain falls on cut grass lying in a wet field below the mountains",
+        "Ulf (very old Norse man, long white beard, grey wool cloak) looks straight ahead, grave, and slowly shakes his head"
+      ],
+      "sound": "rain on grass, a heavy sigh, wind",
+      "refs": [
+        "ulf"
+      ],
+      "voice_mood": "tense",
+      "beat": "⚡ KIRILMA 1 (~2:00): Saman yetmiyor"
+    },
+    {
+      "n": 7,
+      "title": "The choice",
+      "pov": true,
+      "narration": "So we do what every farm in the north must do. We choose. Two cows, the old ram, and most of the pigs will not see the spring. It is hard. Tora cries for the little brown calf. But an animal that starves in March gives us nothing. An animal killed now, gives us meat for the whole winter.",
+      "narration_voiced": "So we do what every farm in the north must do. We choose. Two cows, the old ram, and most of the pigs... will not see the spring. It is hard. Tora cries for the little brown calf. But an animal that starves in March gives us nothing. An animal killed now — gives us meat for the whole winter.",
+      "image_prompt": "The narrator's rough hand resting on the neck of a brown cow in a dim byre, Tora (little Norse girl about 6, blond braids, green wool dress) hugging a small brown calf nearby with tears on her cheeks",
+      "shots": [
+        "the narrator's hand strokes the neck of a brown cow in the byre",
+        "Tora (little Norse girl about 6, blond braids, green wool dress) hugs a little brown calf and cries",
+        "Ragnhild (Norse woman about 35, fair hair in a braid, dark red wool apron dress with two oval bronze brooches) kneels and puts her arm around Tora (little Norse girl about 6, blond braids, green wool dress)"
+      ],
+      "sound": "cows lowing softly, a child sobbing, straw rustling",
+      "refs": [
+        "tora",
+        "ragnhild"
+      ],
+      "voice_mood": "tense"
+    },
+    {
+      "n": 8,
+      "title": "Nothing wasted",
+      "pov": false,
+      "narration": "And nothing is wasted. Meat is smoked above the fire, or dried in the wind. Blood becomes sausage. Fat becomes tallow. Bones are boiled for soup; hides become shoes and blankets. Even the horns become cups! Ragnhild packs meat into barrels of sour whey, it keeps for months, without salt. And salt, up here is precious.",
+      "narration_voiced": "And NOTHING is wasted. Meat is smoked above the fire, or dried in the wind. Blood becomes sausage. Fat becomes tallow. Bones are boiled for soup; hides become shoes and blankets. Even the horns become cups! Ragnhild packs meat into barrels of sour whey — it keeps for months, without salt. And salt, up here... is precious.",
+      "image_prompt": "Ragnhild (Norse woman about 35, fair hair in a braid, dark red wool apron dress with two oval bronze brooches) packing pieces of meat into a wooden barrel of pale sour whey inside the longhouse, strips of meat hanging to smoke over the long hearth behind her",
+      "shots": [
+        "strips of meat hang in the smoke above the long hearth",
+        "Ragnhild (Norse woman about 35, fair hair in a braid, dark red wool apron dress with two oval bronze brooches) presses meat into a barrel of pale whey and lays a wooden lid on top",
+        "cow horns being scraped and polished into drinking cups on a workbench"
+      ],
+      "sound": "fire crackling, liquid sloshing, a knife scraping horn",
+      "refs": [
+        "ragnhild",
+        "longhouse_inside"
+      ],
+      "voice_mood": "intrigue"
+    },
+    {
+      "n": 9,
+      "title": "The feast",
+      "pov": false,
+      "narration": "Then comes the feast! With so much fresh meat, this is the one night of the year when everyone eats until they cannot move. We raise horns of ale to the gods, and to the dead of our family. My father tells the old stories. For one night nobody counts. Tomorrow, every mouthful will be counted again.",
+      "narration_voiced": "Then comes the feast! With so much fresh meat, this is the one night of the year when everyone eats until they cannot move. We raise horns of ale to the gods, and to the dead of our family. My father tells the old stories. For one night... nobody counts. Tomorrow, every mouthful will be counted again.",
+      "image_prompt": "A lively Winternights feast inside the Viking longhouse: Ulf (very old Norse man, long white beard, grey wool cloak) telling a story, Ragnhild (Norse woman about 35, fair hair in a braid, dark red wool apron dress with two oval bronze brooches), Eyvind (Norse boy about 13, straight blond hair, brown wool tunic) and Tora (little Norse girl about 6, blond braids, green wool dress) laughing on the benches, roasted meat and drinking horns, the long hearth blazing",
+      "shots": [
+        "Ulf (very old Norse man, long white beard, grey wool cloak) raises a drinking horn and tells a story with big gestures",
+        "Eyvind (Norse boy about 13, straight blond hair, brown wool tunic) and Tora (little Norse girl about 6, blond braids, green wool dress) laugh with greasy fingers, Ragnhild (Norse woman about 35, fair hair in a braid, dark red wool apron dress with two oval bronze brooches) pours ale",
+        "roasted meat turns on a spit over the long hearth, sparks rising"
+      ],
+      "sound": "laughter, fire roaring, a drinking horn clinking, cheerful voices without words",
+      "refs": [
+        "ulf",
+        "ragnhild",
+        "eyvind",
+        "tora",
+        "longhouse_inside"
+      ],
+      "voice_mood": "festive"
+    },
+    {
+      "n": 10,
+      "title": "Stockfish",
+      "pov": true,
+      "narration": "But meat alone will not carry us to May. Our real treasure is this: stockfish. Cod, split and hung on wooden racks in the cold sea wind until it is dry and hard as a plank. It needs no salt at all. Kept dry, it lasts for years. Before we eat it, we beat it with a stone hammer, for a very, very long time.",
+      "narration_voiced": "But meat alone will NOT carry us to May. Our real treasure is this: stockfish. Cod, split and hung on wooden racks in the cold sea wind... until it is dry and hard as a plank. It needs no salt at all. Kept dry, it lasts for YEARS. Before we eat it, we beat it with a stone hammer — for a very, very long time.",
+      "image_prompt": "Tall wooden drying racks full of hanging split cod beside a northern shore, grey sea and snowy mountains behind; in the foreground the narrator's hands hold a hard dried fish",
+      "shots": [
+        "rows of split cod hang on wooden racks, swaying in the sea wind",
+        "the narrator's hands knock a dried fish against wood — it is hard as a plank",
+        "the hands pound a dried fish with a stone hammer on a flat rock"
+      ],
+      "sound": "sea wind whistling through racks, hard knocking, stone hammer thuds",
+      "refs": [],
+      "voice_mood": "intrigue"
+    },
+    {
+      "n": 11,
+      "title": "The storehouse",
+      "pov": true,
+      "narration": "Our storehouse is dark and cool, and kept dry. Inside: stockfish tied in bundles, barley in sacks, tubs of butter, dried mutton, cheese, and berries dried in the sun. Every evening, I walk through it and I count. Then I count it again. It must be enough. It has to be.",
+      "narration_voiced": "Our storehouse is dark and cool, and kept dry. Inside: stockfish tied in bundles, barley in sacks, tubs of butter, dried mutton, cheese, and berries dried in the sun. Every evening, I walk through it... and I count. Then I count it again. It must be enough. It HAS to be.",
+      "image_prompt": "Inside a small dark Viking storehouse lit by a single small oil lamp: bundles of stockfish hanging from beams, sacks of barley, wooden tubs of butter, round cheeses, dried meat, baskets of dried berries",
+      "shots": [
+        "the narrator's hand holds up a small lamp; light moves across bundles of dried fish",
+        "the hand touches sacks of barley and wooden butter tubs one by one, counting",
+        "the lamp is lowered; shadows swallow the shelves"
+      ],
+      "sound": "wooden door creaking, a lamp flame flickering, quiet footsteps",
+      "refs": [],
+      "voice_mood": "warm"
+    },
+    {
+      "n": 12,
+      "title": "Leaves and seaweed",
+      "pov": false,
+      "narration": "And the hay? We stretch it. All autumn, Eyvind and I cut leafy branches from the birch and the elm, and dry them in bundles for the animals. At low tide, the sheep walk down to the shore and eat seaweed. And when we clean fish, the heads and bones are boiled into a soup for the cows. Yes. Our cows eat fish!",
+      "narration_voiced": "And the hay? We STRETCH it. All autumn, Eyvind and I cut leafy branches from the birch and the elm, and dry them in bundles for the animals. At low tide, the sheep walk down to the shore and eat seaweed. And when we clean fish, the heads and bones are boiled into a soup... for the cows. Yes. Our cows eat fish!",
+      "image_prompt": "Eyvind (Norse boy about 13, straight blond hair, brown wool tunic) carrying big bundles of leafy birch branches on his back past the longhouse, sheep eating seaweed on the rocky shore below at low tide",
+      "shots": [
+        "Eyvind (Norse boy about 13, straight blond hair, brown wool tunic) ties leafy birch branches into bundles and hangs them to dry",
+        "sheep pick their way over wet rocks and eat seaweed at low tide",
+        "Huppa (red-brown cow with a white blaze on her face) drinks steaming fish soup from a wooden bucket in the byre"
+      ],
+      "sound": "branches rustling, sheep bleating, waves on rocks, a cow slurping",
+      "refs": [
+        "eyvind",
+        "cow"
+      ],
+      "voice_mood": "intrigue"
+    },
+    {
+      "n": 13,
+      "title": "Light in the dark",
+      "pov": false,
+      "narration": "By November, the days grow short. Very short. Soon the sun will disappear completely, for more than a month. So we make our own light. The livers of the cod are pressed into oil, and that oil burns in little stone lamps. The whole house smells of fish but it glows. And by that glow, Ragnhild weaves, and I mend nets.",
+      "narration_voiced": "By November, the days grow short. VERY short. Soon the sun will disappear completely — for more than a month. So we make our own light. The livers of the cod are pressed into oil, and that oil burns in little stone lamps. The whole house smells of fish... but it glows. And by that glow, Ragnhild weaves, and I mend nets.",
+      "image_prompt": "Ragnhild (Norse woman about 35, fair hair in a braid, dark red wool apron dress with two oval bronze brooches) weaving at a tall upright warp-weighted loom inside the dark longhouse, lit by small stone oil lamps, fishing nets hanging nearby",
+      "shots": [
+        "a small flame burns in a hollow stone lamp filled with oil",
+        "Ragnhild (Norse woman about 35, fair hair in a braid, dark red wool apron dress with two oval bronze brooches) works the tall upright loom, loom weights swinging",
+        "hands mend a fishing net with a wooden needle by the lamplight"
+      ],
+      "sound": "a soft flame, loom weights clacking gently, wind outside",
+      "refs": [
+        "ragnhild",
+        "longhouse_inside"
+      ],
+      "voice_mood": "warm"
+    },
+    {
+      "n": 14,
+      "title": "Fire across the bay",
+      "pov": true,
+      "narration": "Then, one night in December, Eyvind runs in from the byre. 'Father! Look, there's fire across the bay!' Far away, on the other shore, a red glow is rising into the dark. That is Grim's farm. Our nearest neighbour. In winter, a fire does not just burn a house. It burns the food. It burns the hay. It burns everything.",
+      "narration_voiced": "Then, one night in December, Eyvind runs in from the byre. 'Father! Look — there's FIRE across the bay!' Far away, on the other shore, a red glow is rising into the dark. That is Grim's farm. Our nearest neighbour. In winter, a fire does not just burn a house. It burns the food. It burns the hay. It burns EVERYTHING.",
+      "image_prompt": "At night, from the snowy shore, looking across a dark bay: a burning longhouse glows orange on the far shore under a black winter sky, Eyvind (Norse boy about 13, straight blond hair, brown wool tunic) pointing at it",
+      "shots": [
+        "Eyvind (Norse boy about 13, straight blond hair, brown wool tunic) bursts through the longhouse door into the snow, pointing",
+        "across the dark water, a red fire glows on the far shore, sparks rising",
+        "close-up of the orange glow reflected in the black water of the bay"
+      ],
+      "sound": "a boy shouting without clear words, crackling distant fire, cold wind",
+      "refs": [
+        "eyvind"
+      ],
+      "voice_mood": "tense",
+      "beat": "⚡ KIRILMA 2 (~4:40): Komşunun evi yanıyor"
+    },
+    {
+      "n": 15,
+      "title": "Nothing left",
+      "pov": false,
+      "narration": "I strap on my skis and go along the shore in the dark. When I get there, the longhouse is already falling in. Grim is standing in the snow with his wife Asa and their baby, wrapped in one cloak. They saved their lives and nothing else. No food. No hay. Two sheep. That is all they have left.",
+      "narration_voiced": "I strap on my skis and go along the shore in the dark. When I get there, the longhouse is already falling in. Grim is standing in the snow with his wife Asa and their baby, wrapped in one cloak. They saved their lives... and nothing else. No food. No hay. Two sheep. That is all they have left.",
+      "image_prompt": "Grim (Norse man about 30, dark hair and short dark beard, soot-stained grey tunic) and Asa (young Norse woman about 25, dark braided hair, blue-grey wool dress, carrying a swaddled baby) standing in the snow at night in front of the collapsing, burning ruin of a longhouse, wrapped together in one cloak",
+      "shots": [
+        "a man on wooden skis glides along the dark snowy shore",
+        "the burning roof of a longhouse collapses in sparks",
+        "Grim (Norse man about 30, dark hair and short dark beard, soot-stained grey tunic) holds Asa (young Norse woman about 25, dark braided hair, blue-grey wool dress, carrying a swaddled baby) and the baby close in the snow, faces lit by the fire"
+      ],
+      "sound": "skis hissing on snow, fire roaring, timbers collapsing, a baby crying",
+      "refs": [
+        "grim",
+        "asa"
+      ],
+      "voice_mood": "tense"
+    },
+    {
+      "n": 16,
+      "title": "The law of the guest",
+      "pov": false,
+      "narration": "There is an old saying among us: 'Fire is needed by the one who comes in with frozen knees.' No one turns a guest away in winter. Not ever. So I bring them home. That night there are eight people around my hearth instead of five. My father looks at me, and I know exactly what he is thinking. Eight mouths. Same food.",
+      "narration_voiced": "There is an old saying among us: 'Fire is needed by the one who comes in... with frozen knees.' No one turns a guest away in winter. NOT ever. So I bring them home. That night there are eight people around my hearth instead of five. My father looks at me — and I know exactly what he is thinking. Eight mouths. Same food.",
+      "image_prompt": "Inside the longhouse by the long hearth: Grim (Norse man about 30, dark hair and short dark beard, soot-stained grey tunic) and Asa (young Norse woman about 25, dark braided hair, blue-grey wool dress, carrying a swaddled baby) with the baby sit wrapped in blankets, Ragnhild (Norse woman about 35, fair hair in a braid, dark red wool apron dress with two oval bronze brooches) hands them bowls of hot soup, Ulf (very old Norse man, long white beard, grey wool cloak) watches from his bench with a serious face",
+      "shots": [
+        "Ragnhild (Norse woman about 35, fair hair in a braid, dark red wool apron dress with two oval bronze brooches) gives a steaming bowl to Asa (young Norse woman about 25, dark braided hair, blue-grey wool dress, carrying a swaddled baby), who holds her baby",
+        "Grim (Norse man about 30, dark hair and short dark beard, soot-stained grey tunic) warms his frozen hands at the long fire",
+        "Ulf (very old Norse man, long white beard, grey wool cloak) looks at the fire with a serious, thoughtful face"
+      ],
+      "sound": "fire crackling, a spoon on a wooden bowl, a baby cooing",
+      "refs": [
+        "grim",
+        "asa",
+        "ragnhild",
+        "ulf",
+        "longhouse_inside"
+      ],
+      "voice_mood": "warm"
+    },
+    {
+      "n": 17,
+      "title": "New rules",
+      "pov": false,
+      "narration": "So Ragnhild and I make new rules. Two meals a day, not three. Porridge in the morning, thinner than before. Fish and a little meat in the evening. Grim goes fishing with me whenever the sea allows it; every cod we catch now is one more day we buy. And Asa? She turns out to be the best weaver on the island!",
+      "narration_voiced": "So Ragnhild and I make new rules. Two meals a day, not three. Porridge in the morning — thinner than before. Fish and a little meat in the evening. Grim goes fishing with me whenever the sea allows it; every cod we catch now is one more day we buy. And Asa? She turns out to be the best weaver on the island!",
+      "image_prompt": "Ragnhild (Norse woman about 35, fair hair in a braid, dark red wool apron dress with two oval bronze brooches) ladling thin porridge into wooden bowls for the family at the long hearth in the morning, Asa (young Norse woman about 25, dark braided hair, blue-grey wool dress, carrying a swaddled baby) working at the loom behind her",
+      "shots": [
+        "Ragnhild (Norse woman about 35, fair hair in a braid, dark red wool apron dress with two oval bronze brooches) ladles thin porridge into small wooden bowls",
+        "Grim (Norse man about 30, dark hair and short dark beard, soot-stained grey tunic) carries fishing lines and a wooden bucket toward the shore in the dim light",
+        "Asa (young Norse woman about 25, dark braided hair, blue-grey wool dress, carrying a swaddled baby) weaves fast at the upright loom, smiling"
+      ],
+      "sound": "porridge bubbling, bowls knocking, loom weights clacking",
+      "refs": [
+        "ragnhild",
+        "grim",
+        "asa",
+        "longhouse_inside"
+      ],
+      "voice_mood": "intrigue"
+    },
+    {
+      "n": 18,
+      "title": "The long dark",
+      "pov": false,
+      "narration": "Then the sun disappears. For weeks there is no daylight at all, only a blue glow at midday, and then darkness again. Some people go strange in the long dark. They stop talking. They stop getting up. So we keep busy: stories, songs, board games by the lamp. Anything to keep our minds away from the storehouse.",
+      "narration_voiced": "Then the sun disappears. For weeks there is no daylight at all — only a blue glow at midday, and then darkness again. Some people go strange in the long dark. They stop talking. They stop getting up. So we keep busy: stories, songs, board games by the lamp. Anything... to keep our minds away from the storehouse.",
+      "image_prompt": "Polar night over the lonely snowy Viking farm: deep blue midday twilight, green northern lights over the mountains, warm light glowing from the longhouse door",
+      "shots": [
+        "the northern lights ripple green over snowy mountains and the fjord",
+        "inside, Eyvind (Norse boy about 13, straight blond hair, brown wool tunic) and Grim (Norse man about 30, dark hair and short dark beard, soot-stained grey tunic) play a board game with small pieces by lamplight",
+        "Ulf (very old Norse man, long white beard, grey wool cloak) tells a story to Tora (little Norse girl about 6, blond braids, green wool dress), who listens with wide eyes"
+      ],
+      "sound": "deep silence, faint wind, pieces clicking on a board, an old voice murmuring",
+      "refs": [
+        "longhouse_outside",
+        "eyvind",
+        "grim",
+        "ulf",
+        "tora"
+      ],
+      "voice_mood": "intrigue"
+    },
+    {
+      "n": 19,
+      "title": "Yule",
+      "pov": false,
+      "narration": "And in the deepest dark comes Yule! We brew ale from barley saved all year, and we eat the best of what is left. We drink to a good year, and to the return of the sun. For three nights, the house is loud and warm. And Tora falls asleep in the middle of the table, with a piece of bread still in her hand.",
+      "narration_voiced": "And in the deepest dark... comes Yule! We brew ale from barley saved all year, and we eat the best of what is left. We drink to a good year, and to the return of the sun. For three nights, the house is loud and warm. And Tora falls asleep in the middle of the table — with a piece of bread still in her hand.",
+      "image_prompt": "Yule celebration in the longhouse: all eight people around the long hearth with drinking horns and bread, evergreen branches on the posts, Tora (little Norse girl about 6, blond braids, green wool dress) asleep at the table with bread in her hand",
+      "shots": [
+        "drinking horns are raised around the blazing long hearth",
+        "Grim (Norse man about 30, dark hair and short dark beard, soot-stained grey tunic) and Eyvind (Norse boy about 13, straight blond hair, brown wool tunic) sing, Asa (young Norse woman about 25, dark braided hair, blue-grey wool dress, carrying a swaddled baby) rocks her baby, Ragnhild (Norse woman about 35, fair hair in a braid, dark red wool apron dress with two oval bronze brooches) laughs",
+        "Tora (little Norse girl about 6, blond braids, green wool dress) sleeps with her head on the table, bread in her hand; Ragnhild (Norse woman about 35, fair hair in a braid, dark red wool apron dress with two oval bronze brooches) covers her with a fur"
+      ],
+      "sound": "singing without words, fire roaring, laughter, horns clinking",
+      "refs": [
+        "tora",
+        "ragnhild",
+        "grim",
+        "asa",
+        "eyvind",
+        "longhouse_inside"
+      ],
+      "voice_mood": "festive"
+    },
+    {
+      "n": 20,
+      "title": "The sun returns",
+      "pov": false,
+      "narration": "In the middle of January, we all climb the hill behind the farm and we wait. And then, a thin line of gold touches the tops of the mountains. The sun is back! Tora shouts and dances in the snow. My father closes his eyes and smiles. We made it through the dark. But the hardest part of winter is still ahead.",
+      "narration_voiced": "In the middle of January, we all climb the hill behind the farm... and we wait. And then — a thin line of gold touches the tops of the mountains. The SUN is back! Tora shouts and dances in the snow. My father closes his eyes and smiles. We made it through the dark. But the hardest part of winter... is still ahead.",
+      "image_prompt": "The family on a snowy hilltop above the fjord at midday in January, the first thin line of golden sunlight touching the snowy mountain peaks, Tora (little Norse girl about 6, blond braids, green wool dress) dancing in the snow, Ulf (very old Norse man, long white beard, grey wool cloak) smiling with closed eyes",
+      "shots": [
+        "a thin line of golden light slowly touches the snowy mountain peaks",
+        "Tora (little Norse girl about 6, blond braids, green wool dress) jumps and dances in the snow with joy",
+        "Ulf (very old Norse man, long white beard, grey wool cloak) closes his eyes and smiles as the pale light touches his face"
+      ],
+      "sound": "wind on the hilltop, a child's happy shout, crunching snow",
+      "refs": [
+        "tora",
+        "ulf"
+      ],
+      "voice_mood": "relief"
+    },
+    {
+      "n": 21,
+      "title": "The storms",
+      "pov": true,
+      "narration": "February. Every winter, the cod come, huge shoals of them, to spawn along our coast. This is when we should fill our boats. But this year, the storms will not stop. Day after day, the wind screams, and the waves hit the rocks as high as a house. No boat can go out. And inside. I open the last barrel.",
+      "narration_voiced": "February. Every winter, the cod come — huge shoals of them, to spawn along our coast. This is when we should fill our boats. But this year, the storms will NOT stop. Day after day, the wind screams, and the waves hit the rocks as high as a house. No boat can go out. And inside... I open the last barrel.",
+      "image_prompt": "Violent winter storm on the northern coast: huge grey waves exploding against black rocks, snow blowing sideways, a small wooden boat pulled high up on the shore and tied down",
+      "shots": [
+        "huge waves smash against the black rocks, spray flying high",
+        "a small wooden boat is tied down high on the shore, snow blowing across it",
+        "the narrator's hands pry the lid off the last wooden barrel inside the dark house"
+      ],
+      "sound": "storm wind screaming, waves crashing, a barrel lid creaking open",
+      "refs": [
+        "boat"
+      ],
+      "voice_mood": "tense",
+      "beat": "⚡ KIRILMA 3 (~7:20): Fırtına, son fıçı"
+    },
+    {
+      "n": 22,
+      "title": "Huppa",
+      "pov": false,
+      "narration": "The hay is gone too. The cows eat leaves, seaweed, fish soup, and it is not enough. Huppa, our best milking cow, can hardly stand anymore. If she dies, we lose our milk, our butter, our cheese for the whole next year. Every morning I go into the byre, afraid of what I will find.",
+      "narration_voiced": "The hay is gone too. The cows eat leaves, seaweed, fish soup — and it is not enough. Huppa, our best milking cow, can hardly stand anymore. If she dies, we lose our milk, our butter, our cheese... for the whole next year. Every morning I go into the byre — afraid of what I will find.",
+      "image_prompt": "Huppa (red-brown cow with a white blaze on her face), very thin, lying on straw in the dim byre, Ketil (Norse farmer about 40, weathered face, red-brown beard, blue-grey wool hood) crouching beside her with his hand on her neck, worried",
+      "shots": [
+        "Huppa (red-brown cow with a white blaze on her face) tries to stand on shaking legs and sinks back down",
+        "Ketil (Norse farmer about 40, weathered face, red-brown beard, blue-grey wool hood) strokes her neck, his face full of worry",
+        "an empty wooden hay rack in the dim byre"
+      ],
+      "sound": "a cow's weak lowing, heavy breathing, wind through the walls",
+      "refs": [
+        "cow",
+        "ketil"
+      ],
+      "voice_mood": "tense"
+    },
+    {
+      "n": 23,
+      "title": "The empty barrel",
+      "pov": false,
+      "narration": "On the seventh day of storm, Grim comes to me. 'Ketil, the wind is dropping. Let's go. Now.' The sea is still wild. My father says it is madness. Ragnhild says nothing she just looks at the children. I look at the empty barrel. And I pick up my oars.",
+      "narration_voiced": "On the seventh day of storm, Grim comes to me. 'Ketil — the wind is dropping. Let's go. NOW.' The sea is still wild. My father says it is madness. Ragnhild says nothing... she just looks at the children. I look at the empty barrel. And I pick up my oars.",
+      "image_prompt": "Grim (Norse man about 30, dark hair and short dark beard, soot-stained grey tunic) in the longhouse doorway with grey stormy light behind him, Ketil (Norse farmer about 40, weathered face, red-brown beard, blue-grey wool hood) standing by an empty barrel, Ragnhild (Norse woman about 35, fair hair in a braid, dark red wool apron dress with two oval bronze brooches) and Ulf (very old Norse man, long white beard, grey wool cloak) watching",
+      "shots": [
+        "Grim (Norse man about 30, dark hair and short dark beard, soot-stained grey tunic) stands in the doorway, snow on his shoulders, speaking urgently",
+        "Ulf (very old Norse man, long white beard, grey wool cloak) shakes his head; Ragnhild (Norse woman about 35, fair hair in a braid, dark red wool apron dress with two oval bronze brooches) looks silently at the sleeping children",
+        "Ketil (Norse farmer about 40, weathered face, red-brown beard, blue-grey wool hood) lifts two wooden oars from the wall"
+      ],
+      "sound": "wind at the door, fire crackling, wood knocking",
+      "refs": [
+        "grim",
+        "ketil",
+        "ragnhild",
+        "ulf",
+        "longhouse_inside"
+      ],
+      "voice_mood": "tense"
+    },
+    {
+      "n": 24,
+      "title": "Into the sea",
+      "pov": true,
+      "narration": "We row out in the grey dawn, Grim, Eyvind and me. The waves lift our little boat like a leaf and drop it again. My hands are frozen to the oars. Eyvind bails water as if his life depends on it, because it does. And then, at last, we reach the fishing ground and let our lines down into the black water.",
+      "narration_voiced": "We row out in the grey dawn — Grim, Eyvind and me. The waves lift our little boat like a leaf... and drop it again. My hands are frozen to the oars. Eyvind bails water as if his life depends on it — because it does. And then, at last, we reach the fishing ground... and let our lines down into the black water.",
+      "image_prompt": "POV from inside a small wooden rowing boat in a grey rough sea at dawn: the narrator's hands on the oars, Grim (Norse man about 30, dark hair and short dark beard, soot-stained grey tunic) rowing in front, Eyvind (Norse boy about 13, straight blond hair, brown wool tunic) bailing water, snowy mountains behind",
+      "shots": [
+        "the small boat climbs a big grey wave and drops down its back",
+        "Eyvind (Norse boy about 13, straight blond hair, brown wool tunic) bails icy water out of the boat with a wooden scoop",
+        "a fishing line with a stone sinker disappears into dark water"
+      ],
+      "sound": "oars creaking, waves slapping the hull, wind, water splashing",
+      "refs": [
+        "grim",
+        "eyvind",
+        "boat"
+      ],
+      "voice_mood": "tense"
+    },
+    {
+      "n": 25,
+      "title": "The cod",
+      "pov": true,
+      "narration": "Nothing. Nothing and then, a tug. And another! The line almost pulls Eyvind into the sea! Cod! Big ones, as long as my arm! The shoal is right under us. We pull, and pull, until the boat is so heavy the water almost comes over the side. Grim is laughing like a madman. And we row home singing.",
+      "narration_voiced": "Nothing. Nothing... and then — a TUG. And another! The line almost pulls Eyvind into the sea! Cod! Big ones — as long as my arm! The shoal is right under us. We pull, and pull, until the boat is so heavy the water almost comes over the side. Grim is laughing like a madman. And we row home... singing.",
+      "image_prompt": "Inside the small boat: Eyvind (Norse boy about 13, straight blond hair, brown wool tunic) and Grim (Norse man about 30, dark hair and short dark beard, soot-stained grey tunic) hauling up a huge silver-green cod on a line, the bottom of the boat already full of big fish, grey sea around",
+      "shots": [
+        "Eyvind (Norse boy about 13, straight blond hair, brown wool tunic) is nearly pulled over the side by the line, Grim (Norse man about 30, dark hair and short dark beard, soot-stained grey tunic) grabs him",
+        "a huge cod breaks the surface, silver and green, and is hauled aboard",
+        "the boat low in the water, full of fish; Grim (Norse man about 30, dark hair and short dark beard, soot-stained grey tunic) laughs with his head thrown back"
+      ],
+      "sound": "splashing, wet fish thumping in the boat, men laughing and cheering without words",
+      "refs": [
+        "eyvind",
+        "grim",
+        "boat"
+      ],
+      "voice_mood": "festive",
+      "beat": "ÖDÜL (~8:50): Morinalar geldi"
+    },
+    {
+      "n": 26,
+      "title": "Home",
+      "pov": false,
+      "narration": "The whole family is waiting on the shore. Ragnhild runs into the icy water up to her knees! That night, we eat fresh cod boiled with the last of the butter, the best meal of my life. Huppa gets a whole bucket of fish soup. And in the morning she is standing up.",
+      "narration_voiced": "The whole family is waiting on the shore. Ragnhild runs into the icy water up to her knees! That night, we eat fresh cod boiled with the last of the butter — the best meal of my life. Huppa gets a whole bucket of fish soup. And in the morning... she is standing up.",
+      "image_prompt": "On the snowy shore at dusk, Ragnhild (Norse woman about 35, fair hair in a braid, dark red wool apron dress with two oval bronze brooches) wading into the water toward the returning boat full of fish, Tora (little Norse girl about 6, blond braids, green wool dress), Asa (young Norse woman about 25, dark braided hair, blue-grey wool dress, carrying a swaddled baby) and Ulf (very old Norse man, long white beard, grey wool cloak) waiting on the beach",
+      "shots": [
+        "Ragnhild (Norse woman about 35, fair hair in a braid, dark red wool apron dress with two oval bronze brooches) runs into the shallow water to meet the boat",
+        "the whole family eats fish from steaming bowls around the long hearth",
+        "Huppa (red-brown cow with a white blaze on her face) stands up in the morning light of the byre"
+      ],
+      "sound": "waves, happy shouts, fire crackling, a cow lowing",
+      "refs": [
+        "ragnhild",
+        "tora",
+        "asa",
+        "ulf",
+        "cow",
+        "boat"
+      ],
+      "voice_mood": "relief"
+    },
+    {
+      "n": 27,
+      "title": "Carrying the cows",
+      "pov": false,
+      "narration": "In May, the snow finally melts from the fields, and the first green grass appears. After seven months inside, our cows are so weak they can barely walk. So we do what our grandfathers did: we carry them out to the grass. Yes, we carry them! And when Huppa tastes that first grass she runs.",
+      "narration_voiced": "In May, the snow finally melts from the fields, and the first green grass appears. After seven months inside, our cows are so weak they can barely walk. So we do what our grandfathers did: we CARRY them out to the grass. Yes — we carry them! And when Huppa tastes that first grass... she runs.",
+      "image_prompt": "Spring on the fjord farm: Ketil (Norse farmer about 40, weathered face, red-brown beard, blue-grey wool hood), Grim (Norse man about 30, dark hair and short dark beard, soot-stained grey tunic) and Eyvind (Norse boy about 13, straight blond hair, brown wool tunic) carrying a thin red-brown cow in a rope and wooden-pole sling out of the byre onto green grass, snow patches on the mountains",
+      "shots": [
+        "the men lift the cow in a sling between wooden poles and carry her out",
+        "the first green grass among melting snow patches in the sunlight",
+        "Huppa (red-brown cow with a white blaze on her face) kicks up her heels and runs across the green field"
+      ],
+      "sound": "birds singing, meltwater trickling, men grunting, a happy cow lowing",
+      "refs": [
+        "ketil",
+        "grim",
+        "eyvind",
+        "cow"
+      ],
+      "voice_mood": "warm"
+    },
+    {
+      "n": 28,
+      "title": "How we survived",
+      "pov": true,
+      "narration": "So how did we survive seven months of winter? We counted the hay, and killed what we could not feed. We dried, smoked and soured everything. We fed our cows leaves, seaweed and fish. We burned cod oil for light. We shared our fire. And when the time came we took our chances with the sea.",
+      "narration_voiced": "So how did we survive seven months of winter? We counted the hay — and killed what we could not feed. We dried, smoked and soured everything. We fed our cows leaves, seaweed and fish. We burned cod oil for light. We shared our fire. And when the time came... we took our chances with the sea.",
+      "image_prompt": "The narrator's hands resting on a railing, looking out over the green spring fjord farm: drying racks full of cod, sheep on the hills, smoke rising from the longhouse roof",
+      "shots": [
+        "cod hanging on drying racks in spring sunshine",
+        "sheep and lambs on green hillsides above the fjord",
+        "smoke rises gently from the hole in the longhouse roof"
+      ],
+      "sound": "gentle wind, sea birds, lambs bleating",
+      "refs": [
+        "longhouse_outside"
+      ],
+      "voice_mood": "warm"
+    },
+    {
+      "n": 29,
+      "title": "A new house",
+      "pov": false,
+      "narration": "That summer, we all helped Grim build a new longhouse: stone, timber and turf. When it was finished, Asa gave us the finest cloak she had ever woven. My name is Ketil of Steinvik and that was the winter of eight hundred and seventy-two. But mine was not the only hard winter in history.",
+      "narration_voiced": "That summer, we all helped Grim build a new longhouse: stone, timber and turf. When it was finished, Asa gave us the finest cloak she had ever woven. My name is Ketil of Steinvik... and that was the winter of eight hundred and seventy-two. But mine was not the only hard winter in history.",
+      "image_prompt": "Summer on the far shore of the bay: Grim (Norse man about 30, dark hair and short dark beard, soot-stained grey tunic), Ketil (Norse farmer about 40, weathered face, red-brown beard, blue-grey wool hood) and Eyvind (Norse boy about 13, straight blond hair, brown wool tunic) laying turf on the roof of a new longhouse, Asa (young Norse woman about 25, dark braided hair, blue-grey wool dress, carrying a swaddled baby) holding up a beautiful woven cloak",
+      "shots": [
+        "men lift square blocks of turf onto the roof of a new longhouse",
+        "Asa (young Norse woman about 25, dark braided hair, blue-grey wool dress, carrying a swaddled baby) hands a fine woven cloak to Ragnhild (Norse woman about 35, fair hair in a braid, dark red wool apron dress with two oval bronze brooches), who smiles",
+        "the finished longhouse on the shore in the long summer evening light"
+      ],
+      "sound": "birdsong, hammering on timber, cheerful voices without words",
+      "refs": [
+        "grim",
+        "ketil",
+        "asa",
+        "ragnhild",
+        "eyvind"
+      ],
+      "voice_mood": "outro"
+    },
+    {
+      "n": 30,
+      "title": "What comes next",
+      "pov": false,
+      "narration": "Seven hundred years before me, at the edge of the Roman Empire, a soldier stands on a stone wall at the end of the world, Hadrian's Wall, in the frozen north of Britain. He is far from home, and winter is coming. How did he survive? That story is next. And here the fire is still burning.",
+      "narration_voiced": "Seven hundred years before me, at the edge of the Roman Empire, a soldier stands on a stone wall at the end of the world — Hadrian's Wall, in the frozen north of Britain. He is far from home, and winter is coming. How did HE survive? That story is next. And here... the fire is still burning.",
+      "image_prompt": "Peaceful ending: the Viking longhouse on the fjord shore at a calm spring dusk, a warm glow in the doorway, smoke rising, the long hearth fire visible through the open door",
+      "shots": [
+        "slow push toward the open longhouse door and the warm fire inside",
+        "smoke curls from the roof into a pink and blue evening sky",
+        "the calm fjord reflects the mountains at dusk"
+      ],
+      "sound": "gentle fire crackling, quiet waves, a distant bird",
+      "refs": [
+        "longhouse_outside"
+      ],
+      "voice_mood": "outro",
+      "beat": "BİTİŞ EKRANI (son 20 sn)"
+    }
+  ],
+  "music_credit": "Music by Kevin MacLeod (incompetech.com), licensed under Creative Commons: By Attribution 4.0 — \"Frozen Star\", \"Lost Frontier\", \"Ossuary 6 - Air\", \"Master of the Feast\", \"Crossing the Chasm\", \"Darkest Child\", \"Winter Reflections\", \"Dark Times\", \"Dreams Become Real\""
+}

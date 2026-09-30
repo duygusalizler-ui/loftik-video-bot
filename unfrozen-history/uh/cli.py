@@ -45,15 +45,17 @@ def ref_media(ep: dict, keys: list[str], role: str) -> list[dict]:
 
 
 def full_prompt(ep: dict, s: dict, kind: str) -> str:
+    # Bölüm kendi dönemine göre stil/hareket/POV metnini ezebilir (ep001 = 1300'ler İngiltere varsayılanı)
+    style = ep.get("style", C.STYLE)
     if S.is_ref(s.get("n")):
-        style = C.REF_STYLE if s["kind"] == "character" else C.STYLE
-        return f"{s['prompt']}. {ep['setting']}. Style: {style}."
+        st = ep.get("ref_style", C.REF_STYLE) if s["kind"] == "character" else style
+        return f"{s['prompt']}. {ep['setting']}. Style: {st}."
     if kind == "image":
-        pov = f" {C.POV_HINT}." if s.get("pov") else ""
+        pov = f" {ep.get('pov_hint', C.POV_HINT)}." if s.get("pov") else ""
         lead = C.REF_LEAD + " " if s.get("refs") else ""
-        return f"{lead}{s['image_prompt']}.{pov} {ep['setting']}. Style: {C.STYLE}."
+        return f"{lead}{s['image_prompt']}.{pov} {ep['setting']}. Style: {style}."
     shots = " ".join(f"Shot {i}: {t}." for i, t in enumerate(s["shots"], 1))
-    return (f"Multi-shot sequence, about 5 seconds per shot. {shots} {C.MOTION_SUFFIX}. "
+    return (f"Multi-shot sequence, about 5 seconds per shot. {shots} {ep.get('motion_suffix', C.MOTION_SUFFIX)}. "
             f"Sound: {s['sound']}. {C.SOUND_SUFFIX}.")
 
 
