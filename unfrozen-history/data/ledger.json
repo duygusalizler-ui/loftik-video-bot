@@ -749,6 +749,76 @@
       "job_id": "qwen_tts_32+tests",
       "credits": 4.56,
       "event": "submit"
+    },
+    {
+      "ts": "2026-09-30T08:55:31+00:00",
+      "month": "2026-09",
+      "episode": "ep001",
+      "scene": "voice_test",
+      "kind": "voice",
+      "job_id": "elevenlabs+seed samples",
+      "credits": 2.8,
+      "event": "submit"
+    },
+    {
+      "ts": "2026-09-30T08:56:16+00:00",
+      "month": "2026-09",
+      "episode": "ep001",
+      "scene": 1,
+      "kind": "image",
+      "job_id": "ae718800-d86d-471e-8a74-9685b6190f71",
+      "credits": 1.0,
+      "event": "submit"
+    },
+    {
+      "ts": "2026-09-30T08:56:16+00:00",
+      "month": "2026-09",
+      "episode": "ep001",
+      "scene": 32,
+      "kind": "image",
+      "job_id": "92d859ef-99cc-4379-b136-ff172cc140cd",
+      "credits": 1.0,
+      "event": "submit"
+    },
+    {
+      "ts": "2026-09-30T08:56:16+00:00",
+      "month": "2026-09",
+      "episode": "ep001",
+      "scene": 18,
+      "kind": "clip",
+      "job_id": "7c7a4c5a-a449-4e80-a2d1-05ee5567f98e",
+      "credits": 7.5,
+      "event": "submit"
+    },
+    {
+      "ts": "2026-09-30T08:56:16+00:00",
+      "month": "2026-09",
+      "episode": "ep001",
+      "scene": 31,
+      "kind": "clip",
+      "job_id": "b4e8c541-2d23-47b5-8864-4bfabdaf23e7",
+      "credits": 7.5,
+      "event": "submit"
+    },
+    {
+      "ts": "2026-09-30T08:57:40+00:00",
+      "month": "2026-09",
+      "episode": "ep001",
+      "scene": 1,
+      "kind": "clip",
+      "job_id": "b2dcc331-b6ef-4c96-8325-141d10aa2d1e",
+      "credits": 7.5,
+      "event": "submit"
+    },
+    {
+      "ts": "2026-09-30T08:57:40+00:00",
+      "month": "2026-09",
+      "episode": "ep001",
+      "scene": 32,
+      "kind": "clip",
+      "job_id": "688b8f89-a474-4b5b-a4c6-3ef609508ef4",
+      "credits": 7.5,
+      "event": "submit"
     }
   ]
 }

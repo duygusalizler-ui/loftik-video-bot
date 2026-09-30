@@ -108,6 +108,12 @@ def cmd_result(a):
     print("kaydedildi")
 
 
+def cmd_redo(a):
+    ep = S.load_episode(a.ep)
+    S.redo(ep, a.n, a.kind, a.reason)
+    print(f"{a.n} {a.kind} yeniden üretime açıldı")
+
+
 def cmd_approve(a):
     ep = S.load_episode(a.ep)
     S.approve(ep, a.gate)
@@ -180,6 +186,9 @@ def main():
         if name == "result":
             x.add_argument("--ok", action="store_true"); x.add_argument("--url")
             x.add_argument("--refunded", action="store_true")
+    x = sub.add_parser("redo"); x.add_argument("ep"); x.add_argument("n", type=_n)
+    x.add_argument("kind", choices=("image", "clip")); x.add_argument("--reason", required=True)
+    x.set_defaults(f=cmd_redo)
     x = sub.add_parser("tts"); x.add_argument("ep"); x.set_defaults(f=cmd_tts)
     x = sub.add_parser("doc"); x.add_argument("ep"); x.set_defaults(f=cmd_doc)
     x = sub.add_parser("render"); x.add_argument("ep"); x.add_argument("--scenes")

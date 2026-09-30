@@ -164,8 +164,9 @@ def preflight(ep: dict, n: int, kind: str, balance: float) -> float:
     if balance - cost < C.MIN_BALANCE_RESERVE:
         raise BudgetError(f"Bakiye {balance} → rezerv {C.MIN_BALANCE_RESERVE} altına iner.")
     ep_spent = spent(episode=ep["id"])
-    if ep_spent + cost > C.MAX_CREDITS_PER_VIDEO:
-        raise BudgetError(f"Video limiti: {ep_spent} + {cost} > {C.MAX_CREDITS_PER_VIDEO}")
+    cap = ep.get("max_credits", C.MAX_CREDITS_PER_VIDEO)  # bölüm istisnası (sahibin onayıyla)
+    if ep_spent + cost > cap:
+        raise BudgetError(f"Video limiti: {ep_spent} + {cost} > {cap}")
     m_spent = spent(month=_month())
     if m_spent + cost > C.MAX_CREDITS_PER_MONTH:
         raise BudgetError(f"Aylık limit: {m_spent} + {cost} > {C.MAX_CREDITS_PER_MONTH}")
@@ -183,6 +184,18 @@ def record_submit(ep: dict, n: int, kind: str, job_id: str, credits: float) -> N
     save_episode(ep)
     _log({"ts": _now(), "month": _month(), "episode": ep["id"], "scene": n,
           "kind": kind, "job_id": job_id, "credits": credits, "event": "submit"})
+
+
+def redo(ep: dict, n, kind: str, reason: str) -> None:
+    """Bitmiş bir varlığı bilinçli olarak yeniden üretime aç (hata düzeltme). Eski sonuç geçmişte saklanır."""
+    a = asset(scene(ep, n), kind)
+    if a["status"] != "done":
+        raise BudgetError(f"{n} {kind} bitmemiş; redo gerekmez")
+    old = {k: v for k, v in a.items() if k != "history"}
+    hist = a.get("history", []) + [{**old, "redo_reason": reason, "redo_at": _now()}]
+    a.clear()
+    a.update({"status": "pending", "attempts": [], "history": hist})
+    save_episode(ep)
 
 
 def record_result(ep: dict, n: int, kind: str, job_id: str, ok: bool,

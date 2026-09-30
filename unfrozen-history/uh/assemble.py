@@ -32,6 +32,24 @@ def download(url: str, out: Path) -> Path:
     return out
 
 
+def build_composite(parts: list, out: Path) -> Path:
+    """Sahne klibini birden fazla üretimin parçalarından birleştirir: [[url, başla, bitir], ...]."""
+    if out.exists() and out.stat().st_size > 0:
+        return out
+    tmp = []
+    for i, (url, a, b) in enumerate(parts):
+        src = download(url, out.with_name(f"{out.stem}_src{i}.mp4"))
+        piece = out.with_name(f"{out.stem}_part{i}.mp4")
+        _run(["ffmpeg", "-y", "-ss", f"{a:.3f}", "-to", f"{b:.3f}", "-i", str(src),
+              "-vf", "scale=864:496,fps=24,format=yuv420p", "-af", "aresample=48000",
+              "-c:v", "libx264", "-crf", "14", "-c:a", "aac", "-ac", "2", str(piece)])
+        tmp.append(piece)
+    lst = out.with_suffix(".txt")
+    lst.write_text("".join(f"file '{p.resolve()}'\n" for p in tmp))
+    _run(["ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", str(lst), "-c", "copy", str(out)])
+    return out
+
+
 def plan_speed(target: float, length: float = C.CLIP_SECONDS,
                min_speed: float = C.MIN_SPEED) -> tuple[float, float]:
     """(hız, donma_süresi). Klip `length` sn; hedef uzunsa yavaşlat, yetmezse son kareyi tut."""
@@ -138,7 +156,10 @@ def assemble(ep: dict, scenes: list[int] | None = None, music: Path | None = Non
         clip = asset(s, "clip")
         if clip["status"] != "done" or not clip.get("url"):
             raise RuntimeError(f"Sahne {s['n']} klibi hazır değil")
-        src = download(clip["url"], work / "clips" / f"{s['n']:03d}.mp4")
+        if s.get("clip_composite"):
+            src = build_composite(s["clip_composite"], work / "clips" / f"{s['n']:03d}_composite.mp4")
+        else:
+            src = download(clip["url"], work / "clips" / f"{s['n']:03d}.mp4")
         mp3 = work / f"audio_{lang}" / f"{s['n']:03d}.mp3"
         beat = duration(mp3) + C.BEAT_PAD
         last = i == len(chosen) - 1

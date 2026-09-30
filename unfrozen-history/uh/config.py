@@ -55,7 +55,9 @@ POV_HINT = (
 )
 MOTION_SUFFIX = (
     "Gentle natural motion, soft cuts between shots, painterly style and "
-    "characters stay consistent across shots, no text"
+    "characters stay consistent across shots, no text; historically accurate "
+    "1300s peasant setting: the only fire is an open hearth in the middle of the "
+    "floor, no fireplaces built into walls, no chimneys, no glass windows"
 )
 SOUND_SUFFIX = "Natural ambient sound effects only; no speech, no voices talking, no music"
 
@@ -74,7 +76,7 @@ OUT_W, OUT_H, OUT_FPS = 1920, 1080, 30
 MIN_SPEED = 0.65  # sakin klipler en fazla bu kadar yavaşlatılır (15 sn -> ~23 sn)
 BEAT_PAD = 0.35   # her cümle bloğu sonrası nefes payı (sn)
 MUSIC_DB = -24    # müzik, anlatımın altında
-MUSIC_BED_DB = -9  # bölüm müzik yatağı (-20 LUFS'e normalize) — ducking ile anlatım altında kalır
+MUSIC_BED_DB = -6  # bölüm müzik yatağı (-20 LUFS'e normalize) — ducking ile anlatım altında kalır
 MUSIC_DIR = ROOT / "build" / "music"  # telifsiz parçalar (Kevin MacLeod, CC BY 4.0) — gitignore
 RENDER_WORKERS = 3  # paralel sahne render
 AMBIENCE_DB = -14  # klip ortam sesi (ASMR katmanı), anlatımın altında

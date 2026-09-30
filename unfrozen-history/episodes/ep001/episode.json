@@ -43,45 +43,98 @@
       "title": "Tonight",
       "pov": true,
       "narration": "Tonight, the fire must not go out. If it does, my mother will not see the morning. No chimney. No heating. Snow up to the door, and somebody in this village has been stealing our wood. My name is Walter, and I will show you exactly how we survive the longest winter of my life.",
-      "image_prompt": "Extreme close-up of a few glowing red embers in grey ash on a stone hearth in a pitch-dark medieval cottage, a sliver of cold blue moonlight at the edge",
+      "image_prompt": "Extreme close-up of a few glowing red embers in grey ash on an open stone-ringed hearth in the middle of the earth floor of a pitch-dark medieval peasant cottage, wattle-and-daub wall far behind, a sliver of cold blue moonlight",
       "shots": [
-        "the last embers glow and fade in the darkness of the hearth",
-        "at night in the snow, a small hand pulls a bundle of sticks from a woodpile, face unseen",
-        "Maud (old woman, deeply lined face, dark wool hood and shawl) coughs under wool blankets by a dim fire, deep shadows"
+        "the last embers glow and fade on the open central hearth in the middle of the dark floor",
+        "at night, a small hand pulls a bundle of sticks from a woodpile under snowy thatched eaves, wattle-and-daub wall behind, no windows, face unseen",
+        "Maud (old woman, deeply lined face, dark wool hood and shawl) coughs under wool blankets beside a small open fire on the floor, wattle-and-daub wall behind her, deep shadows"
       ],
       "sound": "embers crackling softly, wind howling outside, a dry old cough",
       "image": {
         "status": "done",
         "attempts": [
           {
-            "job_id": "4769d26a-44e6-495a-9e3a-ef94772e306c",
-            "submitted": "2026-09-29T21:15:57+00:00",
+            "job_id": "ae718800-d86d-471e-8a74-9685b6190f71",
+            "submitted": "2026-09-30T08:56:16+00:00",
             "credits": 1.0
           }
         ],
-        "job_id": "4769d26a-44e6-495a-9e3a-ef94772e306c",
-        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260929_211547_4769d26a-44e6-495a-9e3a-ef94772e306c.png",
-        "finished": "2026-09-29T21:16:57+00:00"
+        "history": [
+          {
+            "status": "done",
+            "attempts": [
+              {
+                "job_id": "4769d26a-44e6-495a-9e3a-ef94772e306c",
+                "submitted": "2026-09-29T21:15:57+00:00",
+                "credits": 1.0
+              }
+            ],
+            "job_id": "4769d26a-44e6-495a-9e3a-ef94772e306c",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260929_211547_4769d26a-44e6-495a-9e3a-ef94772e306c.png",
+            "finished": "2026-09-29T21:16:57+00:00",
+            "redo_reason": "duvar şöminesi",
+            "redo_at": "2026-09-30T08:55:41+00:00"
+          }
+        ],
+        "job_id": "ae718800-d86d-471e-8a74-9685b6190f71",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_085605_ae718800-d86d-471e-8a74-9685b6190f71.png",
+        "finished": "2026-09-30T08:57:11+00:00"
       },
       "clip": {
         "status": "done",
         "attempts": [
           {
-            "job_id": "a9013deb-8825-441a-81b4-084c4c9055a6",
-            "submitted": "2026-09-29T21:17:42+00:00",
+            "job_id": "b2dcc331-b6ef-4c96-8325-141d10aa2d1e",
+            "submitted": "2026-09-30T08:57:40+00:00",
             "credits": 7.5
           }
         ],
-        "job_id": "a9013deb-8825-441a-81b4-084c4c9055a6",
-        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260929_211738_a9013deb-8825-441a-81b4-084c4c9055a6.mp4",
-        "finished": "2026-09-29T21:19:58+00:00"
+        "history": [
+          {
+            "status": "done",
+            "attempts": [
+              {
+                "job_id": "a9013deb-8825-441a-81b4-084c4c9055a6",
+                "submitted": "2026-09-29T21:17:42+00:00",
+                "credits": 7.5
+              }
+            ],
+            "job_id": "a9013deb-8825-441a-81b4-084c4c9055a6",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260929_211738_a9013deb-8825-441a-81b4-084c4c9055a6.mp4",
+            "finished": "2026-09-29T21:19:58+00:00",
+            "redo_reason": "tarih hatası / tutarlılık düzeltmesi",
+            "redo_at": "2026-09-30T08:55:24+00:00"
+          }
+        ],
+        "job_id": "b2dcc331-b6ef-4c96-8325-141d10aa2d1e",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_085733_b2dcc331-b6ef-4c96-8325-141d10aa2d1e.mp4",
+        "finished": "2026-09-30T09:00:45+00:00"
       },
       "beat": "SOĞUK AÇILIŞ + FRAGMAN (0:00)",
       "refs": [
         "maud",
         "house_inside"
       ],
-      "voice_mood": "tense"
+      "voice_mood": "tense",
+      "clip_composite": [
+        [
+          "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_085733_b2dcc331-b6ef-4c96-8325-141d10aa2d1e.mp4",
+          0.0,
+          4.9
+        ],
+        [
+          "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_065841_cc8be2e6-7da0-47a0-b887-325ff1f996ef.mp4",
+          5.6,
+          8.2
+        ],
+        [
+          "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_065936_0d2ab366-6303-45cb-aa8f-dccd9c73cfc9.mp4",
+          0.0,
+          5.8
+        ]
+      ],
+      "min_speed": 0.55,
+      "note": "Fragman: yeni klibin 1. açısı (ortada köz) + sahne 15'ten çıplak ayaklar (hırsız) + sahne 23'ten Maud (ortada ateş)"
     },
     {
       "n": 2,
@@ -170,7 +223,13 @@
       "refs": [
         "walter"
       ],
-      "voice_mood": "intrigue"
+      "voice_mood": "intrigue",
+      "clip_range": [
+        0.0,
+        10.0
+      ],
+      "min_speed": 0.5,
+      "note": "Kesildi — 3. açı: camlı pencere"
     },
     {
       "n": 4,
@@ -256,7 +315,13 @@
       "refs": [
         "house_outside"
       ],
-      "voice_mood": "warm"
+      "voice_mood": "warm",
+      "clip_range": [
+        0.0,
+        10.0
+      ],
+      "min_speed": 0.5,
+      "note": "Kesildi — 3. açı: camlı pencere"
     },
     {
       "n": 6,
@@ -386,7 +451,13 @@
       "refs": [
         "house_inside"
       ],
-      "voice_mood": "warm"
+      "voice_mood": "warm",
+      "clip_range": [
+        3.8,
+        15.0
+      ],
+      "min_speed": 0.5,
+      "note": "Kesildi — 1. açı: duvar şöminesi"
     },
     {
       "n": 9,
@@ -519,7 +590,13 @@
         "joan",
         "house_inside"
       ],
-      "voice_mood": "warm"
+      "voice_mood": "warm",
+      "clip_range": [
+        0.0,
+        9.7
+      ],
+      "min_speed": 0.5,
+      "note": "Kesildi — 3. açı: duvar şöminesi"
     },
     {
       "n": 12,
@@ -792,7 +869,7 @@
       "image_prompt": "A nearly empty hayloft under the thatch, a few thin piles of hay, a wooden ladder, dim light",
       "shots": [
         "the narrator's hands fork a thin bundle of hay down from the loft",
-        "the cow eats the small pile of hay",
+        "the same brown cow from the reference eats the small pile of hay",
         "Joan (girl about 10, braided brown hair, grey wool hood) holds up a single brown egg with a proud smile"
       ],
       "sound": "ladder creaking, pitchfork in dry hay, a hen clucking",
@@ -813,20 +890,51 @@
         "status": "done",
         "attempts": [
           {
-            "job_id": "a64f1d0e-a26f-4d8c-8dbd-87bebbd5d32c",
-            "submitted": "2026-09-30T06:59:46+00:00",
+            "job_id": "7c7a4c5a-a449-4e80-a2d1-05ee5567f98e",
+            "submitted": "2026-09-30T08:56:16+00:00",
             "credits": 7.5
           }
         ],
-        "job_id": "a64f1d0e-a26f-4d8c-8dbd-87bebbd5d32c",
-        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_065936_a64f1d0e-a26f-4d8c-8dbd-87bebbd5d32c.mp4",
-        "finished": "2026-09-30T07:04:21+00:00"
+        "history": [
+          {
+            "status": "done",
+            "attempts": [
+              {
+                "job_id": "a64f1d0e-a26f-4d8c-8dbd-87bebbd5d32c",
+                "submitted": "2026-09-30T06:59:46+00:00",
+                "credits": 7.5
+              }
+            ],
+            "job_id": "a64f1d0e-a26f-4d8c-8dbd-87bebbd5d32c",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_065936_a64f1d0e-a26f-4d8c-8dbd-87bebbd5d32c.mp4",
+            "finished": "2026-09-30T07:04:21+00:00",
+            "redo_reason": "tarih hatası / tutarlılık düzeltmesi",
+            "redo_at": "2026-09-30T08:55:24+00:00"
+          }
+        ],
+        "job_id": "7c7a4c5a-a449-4e80-a2d1-05ee5567f98e",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_085608_7c7a4c5a-a449-4e80-a2d1-05ee5567f98e.mp4",
+        "finished": "2026-09-30T08:58:41+00:00"
       },
       "refs": [
+        "cow",
         "joan",
         "house_inside"
       ],
-      "voice_mood": "warm"
+      "voice_mood": "warm",
+      "clip_composite": [
+        [
+          "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_085608_7c7a4c5a-a449-4e80-a2d1-05ee5567f98e.mp4",
+          0.0,
+          10.0
+        ],
+        [
+          "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_065936_a64f1d0e-a26f-4d8c-8dbd-87bebbd5d32c.mp4",
+          10.1,
+          15.0
+        ]
+      ],
+      "note": "Birleşik klip: yeni üretimin 1-2. açısı (kahverengi inek) + eski üretimin 3. açısı (şöminesiz Joan)"
     },
     {
       "n": 19,
@@ -866,7 +974,13 @@
         "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_065936_3ec20ece-9466-4758-b398-94e3709984a5.mp4",
         "finished": "2026-09-30T07:04:21+00:00"
       },
-      "voice_mood": "warm"
+      "voice_mood": "warm",
+      "clip_range": [
+        2.8,
+        15.0
+      ],
+      "min_speed": 0.5,
+      "note": "Kesildi — 1. açı: ahırda ateş"
     },
     {
       "n": 20,
@@ -910,7 +1024,13 @@
         "walter",
         "village"
       ],
-      "voice_mood": "festive"
+      "voice_mood": "festive",
+      "clip_range": [
+        0.0,
+        11.5
+      ],
+      "min_speed": 0.5,
+      "note": "Kesildi — 3. açı: hindi (1300'lerde Avrupa'da yok)"
     },
     {
       "n": 21,
@@ -1089,7 +1209,13 @@
         "agnes",
         "house_inside"
       ],
-      "voice_mood": "tense"
+      "voice_mood": "tense",
+      "clip_range": [
+        0.0,
+        10.8
+      ],
+      "min_speed": 0.5,
+      "note": "Kesildi — 3. açı: duvar şöminesi"
     },
     {
       "n": 25,
@@ -1364,7 +1490,7 @@
       "narration": "You might wonder how we live without heating. But we are never without warmth. It is in our wool, our thatch, a fire that never dies, a cow's breath, and in each other. We do not fight winter. We prepare for it all year, and then we wait it out, together.",
       "image_prompt": "The narrator's hands warming near the central hearth fire, across the fire the family gathered close: Agnes (woman about 30, brown wool kirtle, white linen head-kerchief), Joan (girl about 10, braided brown hair, grey wool hood), Hugh (small boy about 5, fair hair, oversized russet wool hood) and Maud (old woman, deeply lined face, dark wool hood and shawl)",
       "shots": [
-        "hands rub together near the flames",
+        "the narrator's hands rub together above the open fire burning in a ring of stones in the middle of the earth floor",
         "the whole family laughs around the fire",
         "Hugh falls asleep on Agnes's lap"
       ],
@@ -1386,14 +1512,31 @@
         "status": "done",
         "attempts": [
           {
-            "job_id": "18c70b8f-25ef-4740-afe3-d3aac7508853",
-            "submitted": "2026-09-30T07:00:16+00:00",
+            "job_id": "b4e8c541-2d23-47b5-8864-4bfabdaf23e7",
+            "submitted": "2026-09-30T08:56:16+00:00",
             "credits": 7.5
           }
         ],
-        "job_id": "18c70b8f-25ef-4740-afe3-d3aac7508853",
-        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_070009_18c70b8f-25ef-4740-afe3-d3aac7508853.mp4",
-        "finished": "2026-09-30T07:04:34+00:00"
+        "history": [
+          {
+            "status": "done",
+            "attempts": [
+              {
+                "job_id": "18c70b8f-25ef-4740-afe3-d3aac7508853",
+                "submitted": "2026-09-30T07:00:16+00:00",
+                "credits": 7.5
+              }
+            ],
+            "job_id": "18c70b8f-25ef-4740-afe3-d3aac7508853",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_070009_18c70b8f-25ef-4740-afe3-d3aac7508853.mp4",
+            "finished": "2026-09-30T07:04:34+00:00",
+            "redo_reason": "tarih hatası / tutarlılık düzeltmesi",
+            "redo_at": "2026-09-30T08:55:24+00:00"
+          }
+        ],
+        "job_id": "b4e8c541-2d23-47b5-8864-4bfabdaf23e7",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_085609_b4e8c541-2d23-47b5-8864-4bfabdaf23e7.mp4",
+        "finished": "2026-09-30T08:59:40+00:00"
       },
       "refs": [
         "agnes",
@@ -1401,45 +1544,92 @@
         "hugh",
         "maud"
       ],
-      "voice_mood": "relief"
+      "voice_mood": "relief",
+      "clip_composite": [
+        [
+          "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_085609_b4e8c541-2d23-47b5-8864-4bfabdaf23e7.mp4",
+          0.0,
+          9.9
+        ],
+        [
+          "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_070009_18c70b8f-25ef-4740-afe3-d3aac7508853.mp4",
+          7.2,
+          15.0
+        ]
+      ],
+      "note": "Birleşik klip: yeni üretimin 1-2. açısı (ortada ocak) + eski üretimin 3. açısı (camsız, uyuyan Hugh)"
     },
     {
       "n": 32,
       "title": "The fire is still burning",
       "pov": false,
       "narration": "My name is Walter of Ashcombe, and this was my winter of thirteen hundred and nine. But mine was not the hardest. Far to the north, a Viking family must store enough food in autumn for seven months of darkness. One mistake, and they starve by March. That story is next. The fire is still burning.",
-      "image_prompt": "Wide view at dusk of a lone thatched cottage in the snow, warm light glowing in the small window, smoke rising, first stars in a deep blue sky",
+      "image_prompt": "Wide view at dusk of a lone thatched cottage in the snow, no chimney at all, a thin smoke seeping up through the thatch itself, warm light glowing through a small shuttered window opening, first stars in a deep blue sky",
       "shots": [
-        "slow pull back from the glowing cottage",
-        "smoke rises toward the first stars",
-        "the whole snowy village at night, windows glowing, very still"
+        "very slow pull back from the glowing cottage, smoke seeping through the thatch",
+        "the smoke drifts up from the thatch toward the first stars",
+        "the whole snowy village at night, thatched roofs without chimneys, very still"
       ],
       "sound": "gentle wind, a faint crackle, silence",
       "image": {
         "status": "done",
         "attempts": [
           {
-            "job_id": "b21eb995-c07c-42d0-95bc-37db5cd0bc3f",
-            "submitted": "2026-09-30T06:55:48+00:00",
+            "job_id": "92d859ef-99cc-4379-b136-ff172cc140cd",
+            "submitted": "2026-09-30T08:56:16+00:00",
             "credits": 1.0
           }
         ],
-        "job_id": "b21eb995-c07c-42d0-95bc-37db5cd0bc3f",
-        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_065537_b21eb995-c07c-42d0-95bc-37db5cd0bc3f.png",
-        "finished": "2026-09-30T06:56:39+00:00"
+        "history": [
+          {
+            "status": "done",
+            "attempts": [
+              {
+                "job_id": "b21eb995-c07c-42d0-95bc-37db5cd0bc3f",
+                "submitted": "2026-09-30T06:55:48+00:00",
+                "credits": 1.0
+              }
+            ],
+            "job_id": "b21eb995-c07c-42d0-95bc-37db5cd0bc3f",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_065537_b21eb995-c07c-42d0-95bc-37db5cd0bc3f.png",
+            "finished": "2026-09-30T06:56:39+00:00",
+            "redo_reason": "tarih hatası / tutarlılık düzeltmesi",
+            "redo_at": "2026-09-30T08:55:24+00:00"
+          }
+        ],
+        "job_id": "92d859ef-99cc-4379-b136-ff172cc140cd",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_085605_92d859ef-99cc-4379-b136-ff172cc140cd.png",
+        "finished": "2026-09-30T08:57:02+00:00"
       },
       "clip": {
         "status": "done",
         "attempts": [
           {
-            "job_id": "d30b7ae3-a0a8-4e8c-910f-c7ad674daa9d",
-            "submitted": "2026-09-30T07:00:16+00:00",
+            "job_id": "688b8f89-a474-4b5b-a4c6-3ef609508ef4",
+            "submitted": "2026-09-30T08:57:40+00:00",
             "credits": 7.5
           }
         ],
-        "job_id": "d30b7ae3-a0a8-4e8c-910f-c7ad674daa9d",
-        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_070009_d30b7ae3-a0a8-4e8c-910f-c7ad674daa9d.mp4",
-        "finished": "2026-09-30T07:04:34+00:00"
+        "history": [
+          {
+            "status": "done",
+            "attempts": [
+              {
+                "job_id": "d30b7ae3-a0a8-4e8c-910f-c7ad674daa9d",
+                "submitted": "2026-09-30T07:00:16+00:00",
+                "credits": 7.5
+              }
+            ],
+            "job_id": "d30b7ae3-a0a8-4e8c-910f-c7ad674daa9d",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_070009_d30b7ae3-a0a8-4e8c-910f-c7ad674daa9d.mp4",
+            "finished": "2026-09-30T07:04:34+00:00",
+            "redo_reason": "tarih hatası / tutarlılık düzeltmesi",
+            "redo_at": "2026-09-30T08:55:24+00:00"
+          }
+        ],
+        "job_id": "688b8f89-a474-4b5b-a4c6-3ef609508ef4",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_085733_688b8f89-a474-4b5b-a4c6-3ef609508ef4.mp4",
+        "finished": "2026-09-30T09:00:45+00:00"
       },
       "beat": "BİTİŞ EKRANI (son 20 sn)",
       "refs": [
@@ -1629,6 +1819,18 @@
         "job_id": "9adf21e9-10de-4f42-b778-0cf6c63a7458",
         "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260929_211549_9adf21e9-10de-4f42-b778-0cf6c63a7458.png"
       }
+    },
+    "cow": {
+      "n": "cow",
+      "kind": "character",
+      "generate": false,
+      "prompt": "brown cow — scene 17 start frame",
+      "image": {
+        "status": "done",
+        "attempts": [],
+        "job_id": "a8ca5914-975e-4cc7-9b11-b9c2028af822",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_065507_a8ca5914-975e-4cc7-9b11-b9c2028af822.png"
+      }
     }
   },
   "music": [
@@ -1683,5 +1885,7 @@
     }
   ],
   "music_credit": "Music by Kevin MacLeod (incompetech.com), licensed under Creative Commons: By Attribution 4.0 — \"Echoes of Time\", \"Village Consort\", \"Darkest Child\", \"Achaidh Cheide\", \"Master of the Feast\", \"Dark Times\", \"Eternal Hope\"",
-  "next_episode_tease": "Vikings: storing food for a seven-month winter"
+  "next_episode_tease": "Vikings: storing food for a seven-month winter",
+  "max_credits": 360,
+  "max_credits_note": "İlk bölüm istisnası: kanal sahibi 'hatalı olmasın, gerekirse yeniden üret' dedi (2026-09-30)"
 }
