@@ -819,6 +819,16 @@
       "job_id": "688b8f89-a474-4b5b-a4c6-3ef609508ef4",
       "credits": 7.5,
       "event": "submit"
+    },
+    {
+      "ts": "2026-09-30T09:02:09+00:00",
+      "month": "2026-09",
+      "episode": "ep001",
+      "scene": "thumbnail",
+      "kind": "image",
+      "job_id": "44ac237b+a025dd90",
+      "credits": 2.0,
+      "event": "submit"
     }
   ]
 }
