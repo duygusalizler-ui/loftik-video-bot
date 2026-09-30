@@ -1659,6 +1659,26 @@
       "job_id": "39e6e9ce-7d8c-413e-b4cf-4cddf3be25e2",
       "credits": 7.5,
       "event": "submit"
+    },
+    {
+      "ts": "2026-09-30T16:47:42+00:00",
+      "month": "2026-09",
+      "episode": "ep002",
+      "scene": 11,
+      "kind": "clip",
+      "job_id": "1db3dc0d-1e27-4287-8c31-5a7d1cac10d8",
+      "credits": 7.5,
+      "event": "submit"
+    },
+    {
+      "ts": "2026-09-30T16:50:20+00:00",
+      "month": "2026-09",
+      "episode": "ep002",
+      "scene": "thumbnail",
+      "kind": "image",
+      "job_id": "51684f74-e451-45a4-89fd-7f403664dd64",
+      "credits": 1.0,
+      "event": "submit"
     }
   ]
 }

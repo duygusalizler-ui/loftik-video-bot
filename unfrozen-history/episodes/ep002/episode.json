@@ -364,12 +364,20 @@
         "finished": "2026-09-30T12:43:05+00:00",
         "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_123952_f366f930-8b1c-4a40-a9ed-09f0def5ea87.mp4"
       },
-      "clip_range": [
-        0,
-        10.6
-      ],
-      "min_speed": 0.55,
-      "note": "3. açıda (inek) camlı pencere → kesildi; tam üretimde 22. sahnenin inek açısıyla composite yapılacak"
+      "min_speed": 0.6,
+      "note": "cam pencereli inek açısı yerine sahne 22'nin inek açısı",
+      "clip_composite": [
+        [
+          "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_123952_f366f930-8b1c-4a40-a9ed-09f0def5ea87.mp4",
+          0,
+          10.6
+        ],
+        [
+          "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_164458_3e2112b8-ef56-410c-87f7-fb30a26098cb.mp4",
+          0.5,
+          5.0
+        ]
+      ]
     },
     {
       "n": 2,
@@ -517,7 +525,7 @@
         "finished": "2026-09-30T16:39:18+00:00"
       },
       "clip": {
-        "status": "running",
+        "status": "done",
         "attempts": [
           {
             "job_id": "3ab1de17-7b56-446d-b060-00ac5b300458",
@@ -525,8 +533,24 @@
             "credits": 7.5
           }
         ],
-        "job_id": "3ab1de17-7b56-446d-b060-00ac5b300458"
-      }
+        "job_id": "3ab1de17-7b56-446d-b060-00ac5b300458",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_164033_3ab1de17-7b56-446d-b060-00ac5b300458.mp4",
+        "finished": "2026-09-30T16:46:01+00:00"
+      },
+      "clip_composite": [
+        [
+          "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_164033_3ab1de17-7b56-446d-b060-00ac5b300458.mp4",
+          0,
+          9.3
+        ],
+        [
+          "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_164033_20154d7f-8d89-4c68-8363-6938d2895363.mp4",
+          12.0,
+          15.0
+        ]
+      ],
+      "min_speed": 0.6,
+      "note": "9.5sn sonrası camlı pencere → kesildi; sona sahne 9'un ocak/şiş açısı"
     },
     {
       "n": 5,
@@ -559,7 +583,7 @@
         "finished": "2026-09-30T16:39:18+00:00"
       },
       "clip": {
-        "status": "running",
+        "status": "done",
         "attempts": [
           {
             "job_id": "1103885e-54c5-48d1-a44e-1bc2e17c58d8",
@@ -567,7 +591,9 @@
             "credits": 7.5
           }
         ],
-        "job_id": "1103885e-54c5-48d1-a44e-1bc2e17c58d8"
+        "job_id": "1103885e-54c5-48d1-a44e-1bc2e17c58d8",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_164033_1103885e-54c5-48d1-a44e-1bc2e17c58d8.mp4",
+        "finished": "2026-09-30T16:46:01+00:00"
       }
     },
     {
@@ -602,7 +628,7 @@
         "finished": "2026-09-30T16:39:18+00:00"
       },
       "clip": {
-        "status": "running",
+        "status": "done",
         "attempts": [
           {
             "job_id": "ec3bf9f0-6316-4e98-a314-09ee6f176e23",
@@ -610,9 +636,24 @@
             "credits": 7.5
           }
         ],
-        "job_id": "ec3bf9f0-6316-4e98-a314-09ee6f176e23"
+        "job_id": "ec3bf9f0-6316-4e98-a314-09ee6f176e23",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_164033_ec3bf9f0-6316-4e98-a314-09ee6f176e23.mp4",
+        "finished": "2026-09-30T16:46:01+00:00"
       },
-      "min_speed": 0.55
+      "min_speed": 0.55,
+      "clip_composite": [
+        [
+          "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_164033_1103885e-54c5-48d1-a44e-1bc2e17c58d8.mp4",
+          6.5,
+          10.0
+        ],
+        [
+          "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_164033_ec3bf9f0-6316-4e98-a314-09ee6f176e23.mp4",
+          4.6,
+          15.0
+        ]
+      ],
+      "note": "ilk 4.5sn duvar şöminesi → kesildi; başa sahne 5'ten Ulf samanı ölçüyor"
     },
     {
       "n": 7,
@@ -646,7 +687,7 @@
         "finished": "2026-09-30T16:39:18+00:00"
       },
       "clip": {
-        "status": "running",
+        "status": "done",
         "attempts": [
           {
             "job_id": "d6a6bc3b-a0e7-43e0-86db-d2eebd63d221",
@@ -654,7 +695,9 @@
             "credits": 7.5
           }
         ],
-        "job_id": "d6a6bc3b-a0e7-43e0-86db-d2eebd63d221"
+        "job_id": "d6a6bc3b-a0e7-43e0-86db-d2eebd63d221",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_164033_d6a6bc3b-a0e7-43e0-86db-d2eebd63d221.mp4",
+        "finished": "2026-09-30T16:46:01+00:00"
       }
     },
     {
@@ -689,7 +732,7 @@
         "finished": "2026-09-30T16:39:18+00:00"
       },
       "clip": {
-        "status": "running",
+        "status": "done",
         "attempts": [
           {
             "job_id": "9b7e4731-5612-4b2b-be64-942b3c9d8f46",
@@ -697,8 +740,16 @@
             "credits": 7.5
           }
         ],
-        "job_id": "9b7e4731-5612-4b2b-be64-942b3c9d8f46"
-      }
+        "job_id": "9b7e4731-5612-4b2b-be64-942b3c9d8f46",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_164033_9b7e4731-5612-4b2b-be64-942b3c9d8f46.mp4",
+        "finished": "2026-09-30T16:46:02+00:00"
+      },
+      "clip_range": [
+        0,
+        10.8
+      ],
+      "min_speed": 0.52,
+      "note": "11sn sonrası duvar şöminesi → kesildi"
     },
     {
       "n": 9,
@@ -735,7 +786,7 @@
         "finished": "2026-09-30T16:39:18+00:00"
       },
       "clip": {
-        "status": "running",
+        "status": "done",
         "attempts": [
           {
             "job_id": "20154d7f-8d89-4c68-8363-6938d2895363",
@@ -743,7 +794,9 @@
             "credits": 7.5
           }
         ],
-        "job_id": "20154d7f-8d89-4c68-8363-6938d2895363"
+        "job_id": "20154d7f-8d89-4c68-8363-6938d2895363",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_164033_20154d7f-8d89-4c68-8363-6938d2895363.mp4",
+        "finished": "2026-09-30T16:46:02+00:00"
       }
     },
     {
@@ -775,7 +828,7 @@
         "finished": "2026-09-30T16:39:18+00:00"
       },
       "clip": {
-        "status": "running",
+        "status": "done",
         "attempts": [
           {
             "job_id": "d88ef470-8a26-4a3c-a4ea-5616f843872b",
@@ -783,7 +836,9 @@
             "credits": 7.5
           }
         ],
-        "job_id": "d88ef470-8a26-4a3c-a4ea-5616f843872b"
+        "job_id": "d88ef470-8a26-4a3c-a4ea-5616f843872b",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_164033_d88ef470-8a26-4a3c-a4ea-5616f843872b.mp4",
+        "finished": "2026-09-30T16:46:02+00:00"
       }
     },
     {
@@ -794,9 +849,9 @@
       "narration_voiced": "Our storehouse is dark and cool, and kept dry. Inside: stockfish tied in bundles, barley in sacks, tubs of butter, dried mutton, cheese, and berries dried in the sun. Every evening, I walk through it... and I count. Then I count it again. It must be enough. It HAS to be.",
       "image_prompt": "Inside a small dark Viking storehouse lit by a single small oil lamp: bundles of stockfish hanging from beams, sacks of barley, wooden tubs of butter, round cheeses, dried meat, baskets of dried berries",
       "shots": [
-        "the narrator's hand holds up a small lamp; light moves across bundles of dried fish",
-        "the hand touches sacks of barley and wooden butter tubs one by one, counting",
-        "the lamp is lowered; shadows swallow the shelves"
+        "the narrator's hand holds up a small stone oil lamp in a pitch-dark windowless storeroom with solid log walls; lamplight moves across bundles of dried fish hanging from the beams",
+        "close-up: the hand touches sacks of barley and wooden butter tubs one by one, counting, only lamplight, darkness all around",
+        "the lamp is lowered; shadows swallow the shelves until only a tiny flame remains"
       ],
       "sound": "wooden door creaking, a lamp flame flickering, quiet footsteps",
       "refs": [],
@@ -815,15 +870,34 @@
         "finished": "2026-09-30T16:39:18+00:00"
       },
       "clip": {
-        "status": "running",
+        "status": "done",
         "attempts": [
           {
-            "job_id": "13453dfa-8628-4262-922d-87486e06f928",
-            "submitted": "2026-09-30T16:40:45+00:00",
+            "job_id": "1db3dc0d-1e27-4287-8c31-5a7d1cac10d8",
+            "submitted": "2026-09-30T16:47:42+00:00",
             "credits": 7.5
           }
         ],
-        "job_id": "13453dfa-8628-4262-922d-87486e06f928"
+        "history": [
+          {
+            "status": "done",
+            "attempts": [
+              {
+                "job_id": "13453dfa-8628-4262-922d-87486e06f928",
+                "submitted": "2026-09-30T16:40:45+00:00",
+                "credits": 7.5
+              }
+            ],
+            "job_id": "13453dfa-8628-4262-922d-87486e06f928",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_164034_13453dfa-8628-4262-922d-87486e06f928.mp4",
+            "finished": "2026-09-30T16:46:02+00:00",
+            "redo_reason": "her açıda camlı pencere",
+            "redo_at": "2026-09-30T16:47:21+00:00"
+          }
+        ],
+        "job_id": "1db3dc0d-1e27-4287-8c31-5a7d1cac10d8",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_164731_1db3dc0d-1e27-4287-8c31-5a7d1cac10d8.mp4",
+        "finished": "2026-09-30T16:50:46+00:00"
       }
     },
     {
@@ -858,7 +932,7 @@
         "finished": "2026-09-30T16:39:18+00:00"
       },
       "clip": {
-        "status": "running",
+        "status": "done",
         "attempts": [
           {
             "job_id": "27da8d5f-0866-439f-962b-af3a505dd984",
@@ -866,8 +940,16 @@
             "credits": 7.5
           }
         ],
-        "job_id": "27da8d5f-0866-439f-962b-af3a505dd984"
-      }
+        "job_id": "27da8d5f-0866-439f-962b-af3a505dd984",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_164033_27da8d5f-0866-439f-962b-af3a505dd984.mp4",
+        "finished": "2026-09-30T16:46:02+00:00"
+      },
+      "clip_range": [
+        0,
+        10.8
+      ],
+      "min_speed": 0.52,
+      "note": "11sn sonrası duvar şöminesi → kesildi"
     },
     {
       "n": 13,
@@ -901,7 +983,7 @@
         "finished": "2026-09-30T16:39:18+00:00"
       },
       "clip": {
-        "status": "running",
+        "status": "done",
         "attempts": [
           {
             "job_id": "9b42c041-8844-486e-8722-a9f7fa59bc96",
@@ -909,8 +991,24 @@
             "credits": 7.5
           }
         ],
-        "job_id": "9b42c041-8844-486e-8722-a9f7fa59bc96"
-      }
+        "job_id": "9b42c041-8844-486e-8722-a9f7fa59bc96",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_164033_9b42c041-8844-486e-8722-a9f7fa59bc96.mp4",
+        "finished": "2026-09-30T16:46:02+00:00"
+      },
+      "clip_composite": [
+        [
+          "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_164033_9b42c041-8844-486e-8722-a9f7fa59bc96.mp4",
+          0,
+          2.5
+        ],
+        [
+          "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_164033_9b42c041-8844-486e-8722-a9f7fa59bc96.mp4",
+          7.5,
+          15.0
+        ]
+      ],
+      "min_speed": 0.45,
+      "note": "2.5–7.5sn camlı pencere ışığı → kesildi"
     },
     {
       "n": 14,
@@ -944,7 +1042,7 @@
         "finished": "2026-09-30T16:39:19+00:00"
       },
       "clip": {
-        "status": "running",
+        "status": "done",
         "attempts": [
           {
             "job_id": "90a752cd-1307-42b3-b411-6c82f084f2ee",
@@ -952,7 +1050,9 @@
             "credits": 7.5
           }
         ],
-        "job_id": "90a752cd-1307-42b3-b411-6c82f084f2ee"
+        "job_id": "90a752cd-1307-42b3-b411-6c82f084f2ee",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_164034_90a752cd-1307-42b3-b411-6c82f084f2ee.mp4",
+        "finished": "2026-09-30T16:46:02+00:00"
       }
     },
     {
@@ -987,7 +1087,7 @@
         "finished": "2026-09-30T16:39:19+00:00"
       },
       "clip": {
-        "status": "running",
+        "status": "done",
         "attempts": [
           {
             "job_id": "1d34b169-3060-49e7-824c-79975d1641e1",
@@ -995,7 +1095,9 @@
             "credits": 7.5
           }
         ],
-        "job_id": "1d34b169-3060-49e7-824c-79975d1641e1"
+        "job_id": "1d34b169-3060-49e7-824c-79975d1641e1",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_164033_1d34b169-3060-49e7-824c-79975d1641e1.mp4",
+        "finished": "2026-09-30T16:46:02+00:00"
       }
     },
     {
@@ -1033,7 +1135,7 @@
         "finished": "2026-09-30T16:41:16+00:00"
       },
       "clip": {
-        "status": "running",
+        "status": "done",
         "attempts": [
           {
             "job_id": "5eb34ed7-5aca-4a8c-aaf2-4834d620d213",
@@ -1041,7 +1143,9 @@
             "credits": 21.0
           }
         ],
-        "job_id": "5eb34ed7-5aca-4a8c-aaf2-4834d620d213"
+        "job_id": "5eb34ed7-5aca-4a8c-aaf2-4834d620d213",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_164336_5eb34ed7-5aca-4a8c-aaf2-4834d620d213.mp4",
+        "finished": "2026-09-30T16:48:12+00:00"
       }
     },
     {
@@ -1079,7 +1183,7 @@
       },
       "min_speed": 0.55,
       "clip": {
-        "status": "running",
+        "status": "done",
         "attempts": [
           {
             "job_id": "abce9576-0b79-42f3-9f90-1ab988090d1e",
@@ -1087,7 +1191,9 @@
             "credits": 7.5
           }
         ],
-        "job_id": "abce9576-0b79-42f3-9f90-1ab988090d1e"
+        "job_id": "abce9576-0b79-42f3-9f90-1ab988090d1e",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_164500_abce9576-0b79-42f3-9f90-1ab988090d1e.mp4",
+        "finished": "2026-09-30T16:48:12+00:00"
       }
     },
     {
@@ -1121,7 +1227,7 @@
         "finished": "2026-09-30T16:41:16+00:00"
       },
       "clip": {
-        "status": "running",
+        "status": "done",
         "attempts": [
           {
             "job_id": "215d149d-d592-4cc5-a3a8-d4872a60fdd5",
@@ -1129,8 +1235,29 @@
             "credits": 7.5
           }
         ],
-        "job_id": "215d149d-d592-4cc5-a3a8-d4872a60fdd5"
-      }
+        "job_id": "215d149d-d592-4cc5-a3a8-d4872a60fdd5",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_164500_215d149d-d592-4cc5-a3a8-d4872a60fdd5.mp4",
+        "finished": "2026-09-30T16:49:08+00:00"
+      },
+      "clip_composite": [
+        [
+          "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_164500_215d149d-d592-4cc5-a3a8-d4872a60fdd5.mp4",
+          0,
+          6.8
+        ],
+        [
+          "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_164033_9b42c041-8844-486e-8722-a9f7fa59bc96.mp4",
+          7.6,
+          11.0
+        ],
+        [
+          "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_164500_abce9576-0b79-42f3-9f90-1ab988090d1e.mp4",
+          10.0,
+          14.5
+        ]
+      ],
+      "min_speed": 0.55,
+      "note": "7sn sonrası camlı pencereler → kesildi; lamba başında dokuma açıları eklendi"
     },
     {
       "n": 19,
@@ -1169,7 +1296,7 @@
       },
       "min_speed": 0.55,
       "clip": {
-        "status": "running",
+        "status": "done",
         "attempts": [
           {
             "job_id": "6511ac86-8627-49d2-bae5-a6d6ca0885b1",
@@ -1177,8 +1304,28 @@
             "credits": 7.5
           }
         ],
-        "job_id": "6511ac86-8627-49d2-bae5-a6d6ca0885b1"
-      }
+        "job_id": "6511ac86-8627-49d2-bae5-a6d6ca0885b1",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_164458_6511ac86-8627-49d2-bae5-a6d6ca0885b1.mp4",
+        "finished": "2026-09-30T16:48:12+00:00"
+      },
+      "clip_composite": [
+        [
+          "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_164458_6511ac86-8627-49d2-bae5-a6d6ca0885b1.mp4",
+          0,
+          6.9
+        ],
+        [
+          "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_164033_20154d7f-8d89-4c68-8363-6938d2895363.mp4",
+          5.5,
+          9.5
+        ],
+        [
+          "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_164458_6511ac86-8627-49d2-bae5-a6d6ca0885b1.mp4",
+          11.0,
+          15.0
+        ]
+      ],
+      "note": "7–11sn arka planda camlı pencere → kesildi; sahne 9 ziyafet açısı eklendi"
     },
     {
       "n": 20,
@@ -1212,7 +1359,7 @@
         "finished": "2026-09-30T16:41:17+00:00"
       },
       "clip": {
-        "status": "running",
+        "status": "done",
         "attempts": [
           {
             "job_id": "d09ce08a-932b-4206-b201-1f3b3f3dde5e",
@@ -1220,7 +1367,9 @@
             "credits": 7.5
           }
         ],
-        "job_id": "d09ce08a-932b-4206-b201-1f3b3f3dde5e"
+        "job_id": "d09ce08a-932b-4206-b201-1f3b3f3dde5e",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_164458_d09ce08a-932b-4206-b201-1f3b3f3dde5e.mp4",
+        "finished": "2026-09-30T16:48:12+00:00"
       }
     },
     {
@@ -1255,7 +1404,7 @@
         "finished": "2026-09-30T16:41:17+00:00"
       },
       "clip": {
-        "status": "running",
+        "status": "done",
         "attempts": [
           {
             "job_id": "91f3827b-5a0d-49a9-9001-c0117d7bd5fb",
@@ -1263,8 +1412,24 @@
             "credits": 7.5
           }
         ],
-        "job_id": "91f3827b-5a0d-49a9-9001-c0117d7bd5fb"
-      }
+        "job_id": "91f3827b-5a0d-49a9-9001-c0117d7bd5fb",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_164501_91f3827b-5a0d-49a9-9001-c0117d7bd5fb.mp4",
+        "finished": "2026-09-30T16:49:09+00:00"
+      },
+      "clip_composite": [
+        [
+          "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_164501_91f3827b-5a0d-49a9-9001-c0117d7bd5fb.mp4",
+          0,
+          9.8
+        ],
+        [
+          "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_123952_f366f930-8b1c-4a40-a9ed-09f0def5ea87.mp4",
+          0,
+          5.0
+        ]
+      ],
+      "min_speed": 0.6,
+      "note": "son açıda duvar şöminesi+pencere → kesildi; son fıçı için sahne 1 açısı"
     },
     {
       "n": 22,
@@ -1298,7 +1463,7 @@
         "finished": "2026-09-30T16:41:17+00:00"
       },
       "clip": {
-        "status": "running",
+        "status": "done",
         "attempts": [
           {
             "job_id": "3e2112b8-ef56-410c-87f7-fb30a26098cb",
@@ -1306,8 +1471,16 @@
             "credits": 7.5
           }
         ],
-        "job_id": "3e2112b8-ef56-410c-87f7-fb30a26098cb"
-      }
+        "job_id": "3e2112b8-ef56-410c-87f7-fb30a26098cb",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_164458_3e2112b8-ef56-410c-87f7-fb30a26098cb.mp4",
+        "finished": "2026-09-30T16:48:12+00:00"
+      },
+      "clip_range": [
+        0,
+        10.0
+      ],
+      "min_speed": 0.5,
+      "note": "10sn sonrası pencere ışığı → kesildi"
     },
     {
       "n": 23,
@@ -1344,7 +1517,7 @@
         "finished": "2026-09-30T16:41:17+00:00"
       },
       "clip": {
-        "status": "running",
+        "status": "done",
         "attempts": [
           {
             "job_id": "75c2ee2e-4a03-4dfb-af72-b8b77fa438a5",
@@ -1352,8 +1525,24 @@
             "credits": 7.5
           }
         ],
-        "job_id": "75c2ee2e-4a03-4dfb-af72-b8b77fa438a5"
-      }
+        "job_id": "75c2ee2e-4a03-4dfb-af72-b8b77fa438a5",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_164457_75c2ee2e-4a03-4dfb-af72-b8b77fa438a5.mp4",
+        "finished": "2026-09-30T16:50:46+00:00"
+      },
+      "clip_composite": [
+        [
+          "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_164457_75c2ee2e-4a03-4dfb-af72-b8b77fa438a5.mp4",
+          0,
+          3.9
+        ],
+        [
+          "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_164457_75c2ee2e-4a03-4dfb-af72-b8b77fa438a5.mp4",
+          10.0,
+          15.0
+        ]
+      ],
+      "min_speed": 0.5,
+      "note": "4–10sn camlı pencereler → kesildi"
     },
     {
       "n": 24,
@@ -1388,7 +1577,7 @@
         "finished": "2026-09-30T16:41:17+00:00"
       },
       "clip": {
-        "status": "running",
+        "status": "done",
         "attempts": [
           {
             "job_id": "b0dee25b-b16b-4c49-9cf0-e71545277282",
@@ -1396,7 +1585,9 @@
             "credits": 7.5
           }
         ],
-        "job_id": "b0dee25b-b16b-4c49-9cf0-e71545277282"
+        "job_id": "b0dee25b-b16b-4c49-9cf0-e71545277282",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_164459_b0dee25b-b16b-4c49-9cf0-e71545277282.mp4",
+        "finished": "2026-09-30T16:48:12+00:00"
       }
     },
     {
@@ -1434,7 +1625,7 @@
       },
       "min_speed": 0.55,
       "clip": {
-        "status": "running",
+        "status": "done",
         "attempts": [
           {
             "job_id": "1f781898-129a-4e68-8451-e9ebe6dd005e",
@@ -1442,7 +1633,9 @@
             "credits": 7.5
           }
         ],
-        "job_id": "1f781898-129a-4e68-8451-e9ebe6dd005e"
+        "job_id": "1f781898-129a-4e68-8451-e9ebe6dd005e",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_164459_1f781898-129a-4e68-8451-e9ebe6dd005e.mp4",
+        "finished": "2026-09-30T16:48:12+00:00"
       }
     },
     {
@@ -1481,7 +1674,7 @@
         "finished": "2026-09-30T16:41:17+00:00"
       },
       "clip": {
-        "status": "running",
+        "status": "done",
         "attempts": [
           {
             "job_id": "916b1115-46a7-4d7b-8139-6ab1a82f92fe",
@@ -1489,8 +1682,16 @@
             "credits": 7.5
           }
         ],
-        "job_id": "916b1115-46a7-4d7b-8139-6ab1a82f92fe"
-      }
+        "job_id": "916b1115-46a7-4d7b-8139-6ab1a82f92fe",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_164500_916b1115-46a7-4d7b-8139-6ab1a82f92fe.mp4",
+        "finished": "2026-09-30T16:49:09+00:00"
+      },
+      "clip_range": [
+        0,
+        9.8
+      ],
+      "min_speed": 0.52,
+      "note": "10sn sonrası camlı pencere → kesildi"
     },
     {
       "n": 27,
@@ -1526,7 +1727,7 @@
         "finished": "2026-09-30T16:41:17+00:00"
       },
       "clip": {
-        "status": "running",
+        "status": "done",
         "attempts": [
           {
             "job_id": "e4a8b6e3-ed55-4f91-ab28-df0ac14efeed",
@@ -1534,7 +1735,9 @@
             "credits": 7.5
           }
         ],
-        "job_id": "e4a8b6e3-ed55-4f91-ab28-df0ac14efeed"
+        "job_id": "e4a8b6e3-ed55-4f91-ab28-df0ac14efeed",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_164500_e4a8b6e3-ed55-4f91-ab28-df0ac14efeed.mp4",
+        "finished": "2026-09-30T16:49:09+00:00"
       }
     },
     {
@@ -1570,7 +1773,7 @@
         "finished": "2026-09-30T16:41:17+00:00"
       },
       "clip": {
-        "status": "running",
+        "status": "done",
         "attempts": [
           {
             "job_id": "26c8041c-64e3-4a61-99b2-7f109292a417",
@@ -1578,7 +1781,9 @@
             "credits": 21.0
           }
         ],
-        "job_id": "26c8041c-64e3-4a61-99b2-7f109292a417"
+        "job_id": "26c8041c-64e3-4a61-99b2-7f109292a417",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_164337_26c8041c-64e3-4a61-99b2-7f109292a417.mp4",
+        "finished": "2026-09-30T16:48:12+00:00"
       }
     },
     {
@@ -1616,7 +1821,7 @@
         "finished": "2026-09-30T16:41:17+00:00"
       },
       "clip": {
-        "status": "running",
+        "status": "done",
         "attempts": [
           {
             "job_id": "8dfc2865-6833-4a8d-b92f-ac543f1cdd69",
@@ -1624,7 +1829,9 @@
             "credits": 7.5
           }
         ],
-        "job_id": "8dfc2865-6833-4a8d-b92f-ac543f1cdd69"
+        "job_id": "8dfc2865-6833-4a8d-b92f-ac543f1cdd69",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_164458_8dfc2865-6833-4a8d-b92f-ac543f1cdd69.mp4",
+        "finished": "2026-09-30T16:49:09+00:00"
       }
     },
     {
@@ -1659,7 +1866,7 @@
         "finished": "2026-09-30T16:41:17+00:00"
       },
       "clip": {
-        "status": "running",
+        "status": "done",
         "attempts": [
           {
             "job_id": "39e6e9ce-7d8c-413e-b4cf-4cddf3be25e2",
@@ -1667,7 +1874,9 @@
             "credits": 7.5
           }
         ],
-        "job_id": "39e6e9ce-7d8c-413e-b4cf-4cddf3be25e2"
+        "job_id": "39e6e9ce-7d8c-413e-b4cf-4cddf3be25e2",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_164524_39e6e9ce-7d8c-413e-b4cf-4cddf3be25e2.mp4",
+        "finished": "2026-09-30T16:49:09+00:00"
       }
     }
   ],
