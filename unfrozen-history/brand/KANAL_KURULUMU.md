@@ -36,7 +36,7 @@ Characters are fictional, built from historical research; sources are listed und
 🇹🇷 **Türkçe anlamı:**
 > Tarih, içeriden yaşanmış haliyle.
 >
-> Sıradan insanlar geçmişin en zor mevsimlerini — donmuş kışları, kavurucu yazları, uzun karanlık geceleri — nasıl atlattı? Her bölümü o dönemi bizzat yaşamış sıradan bir insan anlatıyor: ortaçağ köylüsü, Viking çiftçisi, Romalı bir köle, öncü bir aile.
+> Sıradan insanlar geçmişin en sert kışlarını — öldüren donları, bitmeyen karı, sadece bir ateşle geçen uzun karanlık geceleri — nasıl atlattı? Her bölümü o dönemi bizzat yaşamış sıradan bir insan anlatıyor: Orta Çağ köylüsü, Viking çiftçisi, bir asker, öncü bir aile.
 >
 > Kral yok. Savaş yok. Sadece insanları hayatta tutan gerçek, günlük yöntemler — hissedebileceğin bir hikâye olarak.
 >
