@@ -31,17 +31,26 @@ def download(url: str, out: Path) -> Path:
     return out
 
 
-def plan_speed(target: float) -> tuple[float, float]:
-    """(hız, donma_süresi). Klip 15 sn; hedef uzunsa yavaşlat, yetmezse son kareyi tut."""
-    if target <= C.CLIP_SECONDS:
+def plan_speed(target: float, length: float = C.CLIP_SECONDS) -> tuple[float, float]:
+    """(hız, donma_süresi). Klip `length` sn; hedef uzunsa yavaşlat, yetmezse son kareyi tut."""
+    if target <= length:
         return 1.0, 0.0
-    speed = max(C.CLIP_SECONDS / target, C.MIN_SPEED)
-    hold = max(0.0, target - C.CLIP_SECONDS / speed)
+    speed = max(length / target, C.MIN_SPEED)
+    hold = max(0.0, target - length / speed)
     return speed, hold
 
 
-def render_segment(src: Path, out: Path, target: float) -> dict:
-    speed, hold = plan_speed(target)
+def _range_args(rng) -> tuple[list[str], float]:
+    """Sahnenin `clip_range` alanı: klibin sadece [başla, bitir] aralığı kullanılır."""
+    if not rng:
+        return [], C.CLIP_SECONDS
+    a, b = rng
+    return ["-ss", f"{a:.3f}", "-to", f"{b:.3f}"], b - a
+
+
+def render_segment(src: Path, out: Path, target: float, rng=None) -> dict:
+    cut, length = _range_args(rng)
+    speed, hold = plan_speed(target, length)
     vf = []
     if speed < 1.0:
         vf += [f"setpts=PTS/{speed:.4f}", f"minterpolate=fps={C.OUT_FPS}:mi_mode=mci:mc_mode=aobmc:vsbmc=1"]
@@ -54,7 +63,7 @@ def render_segment(src: Path, out: Path, target: float) -> dict:
     if hold > 0:
         vf.append(f"tpad=stop_mode=clone:stop_duration={hold + 0.1:.2f}")
     vf.append(f"trim=duration={target:.3f},setpts=PTS-STARTPTS")
-    _run(["ffmpeg", "-y", "-i", str(src), "-an", "-vf", ",".join(vf),
+    _run(["ffmpeg", "-y", *cut, "-i", str(src), "-an", "-vf", ",".join(vf),
           "-c:v", "libx264", "-preset", "medium", "-crf", "16", str(out)])
     return {"speed": round(speed, 3), "hold": round(hold, 2)}
 
@@ -66,13 +75,14 @@ def has_audio(path: Path) -> bool:
     return bool(out)
 
 
-def render_ambience(src: Path, out: Path, beat: float) -> None:
+def render_ambience(src: Path, out: Path, beat: float, rng=None) -> None:
     """Klibin ortam sesini (ASMR katmanı) sahne süresine uydurur; sesi yoksa sessizlik."""
-    speed, _ = plan_speed(beat)
+    cut, length = _range_args(rng)
+    speed, _ = plan_speed(beat, length)
     fade = f"afade=t=in:d=0.3,afade=t=out:st={max(beat - 0.4, 0):.2f}:d=0.4"
     if has_audio(src):
         af = f"aresample=48000,atempo={speed:.4f},apad,atrim=0:{beat:.3f},{fade}"
-        cmd = ["ffmpeg", "-y", "-i", str(src), "-vn", "-af", af, "-ac", "2", str(out)]
+        cmd = ["ffmpeg", "-y", *cut, "-i", str(src), "-vn", "-af", af, "-ac", "2", str(out)]
     else:
         cmd = ["ffmpeg", "-y", "-f", "lavfi", "-i", "anullsrc=r=48000:cl=stereo",
                "-t", f"{beat:.3f}", str(out)]
@@ -98,10 +108,10 @@ def assemble(ep: dict, scenes: list[int] | None = None, music: Path | None = Non
         seg = work / "segments" / f"{s['n']:03d}.mp4"
         seg.parent.mkdir(parents=True, exist_ok=True)
         # geçiş örtüşmesi kadar fazladan video; ses zamanlaması değişmez
-        info = render_segment(src, seg, beat + (0 if last else XFADE))
+        info = render_segment(src, seg, beat + (0 if last else XFADE), s.get("clip_range"))
         amb = work / "ambience" / f"{s['n']:03d}.wav"
         amb.parent.mkdir(parents=True, exist_ok=True)
-        render_ambience(src, amb, beat)
+        render_ambience(src, amb, beat, s.get("clip_range"))
         ambs.append(amb)
         segs.append(seg)
         beats.append((mp3, beat))

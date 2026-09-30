@@ -118,7 +118,12 @@
         "job_id": "b11e5c06-f638-4398-be0c-5da35c66fddb",
         "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260929_211727_b11e5c06-f638-4398-be0c-5da35c66fddb.mp4",
         "finished": "2026-09-29T21:20:17+00:00"
-      }
+      },
+      "clip_range": [
+        0.0,
+        9.95
+      ],
+      "note": "3. açı (pembe gün doğumu köyü) sahne 3'teki gri köyle çelişiyor; kesildi"
     },
     {
       "n": 3,
@@ -305,7 +310,8 @@
       },
       "beat": "⚡ KIRILMA 1 (2:47): Biri odun çalıyor",
       "refs": [
-        "house_outside"
+        "house_outside",
+        "village"
       ]
     },
     {
@@ -574,7 +580,8 @@
         "attempts": []
       },
       "refs": [
-        "walter"
+        "walter",
+        "village"
       ]
     },
     {
@@ -599,7 +606,8 @@
       },
       "refs": [
         "tom",
-        "alice"
+        "alice",
+        "village"
       ]
     },
     {
@@ -621,7 +629,10 @@
       "clip": {
         "status": "pending",
         "attempts": []
-      }
+      },
+      "refs": [
+        "village"
+      ]
     },
     {
       "n": 23,
@@ -877,7 +888,8 @@
       },
       "beat": "BİTİŞ EKRANI (son 20 sn)",
       "refs": [
-        "house_outside"
+        "house_outside",
+        "village"
       ]
     }
   ],
@@ -1049,6 +1061,18 @@
       },
       "prompt": "Location reference, three-quarter exterior view of one small medieval English peasant cottage in winter: wattle-and-daub walls on a cruck timber frame, very thick snow-covered thatched roof with smoke seeping through the thatch, no chimney, one small unglazed window opening with a wooden shutter, a low wooden door, a woodpile of brushwood bundles stacked under the eaves, a woven wattle fence, snowy yard, no people",
       "n": "house_outside"
+    },
+    "village": {
+      "n": "village",
+      "kind": "location",
+      "generate": false,
+      "prompt": "Ashcombe village wide view (grey overcast winter, church tower, manor) — reused from scene 3 start frame",
+      "image": {
+        "status": "done",
+        "attempts": [],
+        "job_id": "9adf21e9-10de-4f42-b778-0cf6c63a7458",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260929_211549_9adf21e9-10de-4f42-b778-0cf6c63a7458.png"
+      }
     }
   }
 }
