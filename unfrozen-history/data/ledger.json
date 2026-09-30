@@ -1109,6 +1109,406 @@
       "job_id": "d7790b46,03f34639,1b5016c3,81e0c09e,4df4c395,4105a362,c9c8cd78,e964c406,7562d8d2,c1f26760",
       "credits": 9.0,
       "event": "submit"
+    },
+    {
+      "ts": "2026-09-30T16:35:57+00:00",
+      "month": "2026-09",
+      "episode": "ep002",
+      "scene": 4,
+      "kind": "image",
+      "job_id": "dbfabfb5-fffe-46f5-9190-069da74f81c4",
+      "credits": 1.0,
+      "event": "submit"
+    },
+    {
+      "ts": "2026-09-30T16:35:57+00:00",
+      "month": "2026-09",
+      "episode": "ep002",
+      "scene": 5,
+      "kind": "image",
+      "job_id": "8a298675-89cf-441a-be8d-4829b66efaca",
+      "credits": 1.0,
+      "event": "submit"
+    },
+    {
+      "ts": "2026-09-30T16:35:57+00:00",
+      "month": "2026-09",
+      "episode": "ep002",
+      "scene": 6,
+      "kind": "image",
+      "job_id": "436ed421-e405-40c9-a620-86f99cad762e",
+      "credits": 1.0,
+      "event": "submit"
+    },
+    {
+      "ts": "2026-09-30T16:35:57+00:00",
+      "month": "2026-09",
+      "episode": "ep002",
+      "scene": 7,
+      "kind": "image",
+      "job_id": "e0d872f6-0368-4014-9df6-beed834d9a4a",
+      "credits": 1.0,
+      "event": "submit"
+    },
+    {
+      "ts": "2026-09-30T16:35:57+00:00",
+      "month": "2026-09",
+      "episode": "ep002",
+      "scene": 8,
+      "kind": "image",
+      "job_id": "8c614a6f-993b-4dc6-aa3c-6fd2023061da",
+      "credits": 1.0,
+      "event": "submit"
+    },
+    {
+      "ts": "2026-09-30T16:35:57+00:00",
+      "month": "2026-09",
+      "episode": "ep002",
+      "scene": 9,
+      "kind": "image",
+      "job_id": "77f940be-b8a0-48ec-bb16-6ee5a1dd26f0",
+      "credits": 1.0,
+      "event": "submit"
+    },
+    {
+      "ts": "2026-09-30T16:35:57+00:00",
+      "month": "2026-09",
+      "episode": "ep002",
+      "scene": 10,
+      "kind": "image",
+      "job_id": "acbd669e-891e-4553-9c1c-90d72854b5ee",
+      "credits": 1.0,
+      "event": "submit"
+    },
+    {
+      "ts": "2026-09-30T16:35:57+00:00",
+      "month": "2026-09",
+      "episode": "ep002",
+      "scene": 11,
+      "kind": "image",
+      "job_id": "63087f75-7d82-4e93-8bdb-48eac040a9e9",
+      "credits": 1.0,
+      "event": "submit"
+    },
+    {
+      "ts": "2026-09-30T16:35:57+00:00",
+      "month": "2026-09",
+      "episode": "ep002",
+      "scene": 12,
+      "kind": "image",
+      "job_id": "f9c4bb46-1482-494c-bfa9-c00e762e2dc5",
+      "credits": 1.0,
+      "event": "submit"
+    },
+    {
+      "ts": "2026-09-30T16:35:57+00:00",
+      "month": "2026-09",
+      "episode": "ep002",
+      "scene": 13,
+      "kind": "image",
+      "job_id": "50472fa8-5454-486d-80c1-4878f4c84ce8",
+      "credits": 1.0,
+      "event": "submit"
+    },
+    {
+      "ts": "2026-09-30T16:35:57+00:00",
+      "month": "2026-09",
+      "episode": "ep002",
+      "scene": 14,
+      "kind": "image",
+      "job_id": "2667658e-e782-4683-92da-7fc26a177cfd",
+      "credits": 1.0,
+      "event": "submit"
+    },
+    {
+      "ts": "2026-09-30T16:35:57+00:00",
+      "month": "2026-09",
+      "episode": "ep002",
+      "scene": 15,
+      "kind": "image",
+      "job_id": "eb08d756-7d2d-4bd4-a7f6-1858d059190e",
+      "credits": 1.0,
+      "event": "submit"
+    },
+    {
+      "ts": "2026-09-30T16:37:03+00:00",
+      "month": "2026-09",
+      "episode": "ep002",
+      "scene": "narration_elevenlabs_4-30",
+      "kind": "voice",
+      "job_id": "build/ep002/tts_jobs.txt (27 jobs)",
+      "credits": 24.3,
+      "event": "submit"
+    },
+    {
+      "ts": "2026-09-30T16:38:26+00:00",
+      "month": "2026-09",
+      "episode": "ep002",
+      "scene": 16,
+      "kind": "image",
+      "job_id": "4e8fbbeb-d419-4920-a675-106375599782",
+      "credits": 1.0,
+      "event": "submit"
+    },
+    {
+      "ts": "2026-09-30T16:38:26+00:00",
+      "month": "2026-09",
+      "episode": "ep002",
+      "scene": 17,
+      "kind": "image",
+      "job_id": "ad32ba3e-16f9-4439-8cf7-9d28fd1da3d4",
+      "credits": 1.0,
+      "event": "submit"
+    },
+    {
+      "ts": "2026-09-30T16:38:26+00:00",
+      "month": "2026-09",
+      "episode": "ep002",
+      "scene": 18,
+      "kind": "image",
+      "job_id": "b912ed12-4757-4d71-9c84-c58d2b89d5af",
+      "credits": 1.0,
+      "event": "submit"
+    },
+    {
+      "ts": "2026-09-30T16:38:26+00:00",
+      "month": "2026-09",
+      "episode": "ep002",
+      "scene": 19,
+      "kind": "image",
+      "job_id": "42a1afaf-520b-42d5-9f60-90a0f2630819",
+      "credits": 1.0,
+      "event": "submit"
+    },
+    {
+      "ts": "2026-09-30T16:38:26+00:00",
+      "month": "2026-09",
+      "episode": "ep002",
+      "scene": 20,
+      "kind": "image",
+      "job_id": "45c90e77-1310-4f60-8347-51040b8893e2",
+      "credits": 1.0,
+      "event": "submit"
+    },
+    {
+      "ts": "2026-09-30T16:38:26+00:00",
+      "month": "2026-09",
+      "episode": "ep002",
+      "scene": 21,
+      "kind": "image",
+      "job_id": "8a91ecb4-084a-4393-aabf-0dc37c39b8a2",
+      "credits": 1.0,
+      "event": "submit"
+    },
+    {
+      "ts": "2026-09-30T16:38:26+00:00",
+      "month": "2026-09",
+      "episode": "ep002",
+      "scene": 22,
+      "kind": "image",
+      "job_id": "a1963a7b-8216-4ed6-a3d8-dc174ad974ba",
+      "credits": 1.0,
+      "event": "submit"
+    },
+    {
+      "ts": "2026-09-30T16:38:26+00:00",
+      "month": "2026-09",
+      "episode": "ep002",
+      "scene": 23,
+      "kind": "image",
+      "job_id": "4eb0f1c2-bf43-4a58-aea7-60c796589abe",
+      "credits": 1.0,
+      "event": "submit"
+    },
+    {
+      "ts": "2026-09-30T16:38:26+00:00",
+      "month": "2026-09",
+      "episode": "ep002",
+      "scene": 24,
+      "kind": "image",
+      "job_id": "da03b210-3f1e-4a5b-a2fc-ea6e25d1cbd9",
+      "credits": 1.0,
+      "event": "submit"
+    },
+    {
+      "ts": "2026-09-30T16:38:26+00:00",
+      "month": "2026-09",
+      "episode": "ep002",
+      "scene": 25,
+      "kind": "image",
+      "job_id": "60a9cc74-e2ba-4fdb-b354-619dea248d02",
+      "credits": 1.0,
+      "event": "submit"
+    },
+    {
+      "ts": "2026-09-30T16:38:26+00:00",
+      "month": "2026-09",
+      "episode": "ep002",
+      "scene": 26,
+      "kind": "image",
+      "job_id": "f00536ab-0538-40fb-9eb4-56869bbe0e90",
+      "credits": 1.0,
+      "event": "submit"
+    },
+    {
+      "ts": "2026-09-30T16:38:26+00:00",
+      "month": "2026-09",
+      "episode": "ep002",
+      "scene": 27,
+      "kind": "image",
+      "job_id": "5e1b4bc8-6afd-4565-a841-b2f5d4d05e56",
+      "credits": 1.0,
+      "event": "submit"
+    },
+    {
+      "ts": "2026-09-30T16:38:55+00:00",
+      "month": "2026-09",
+      "episode": "ep002",
+      "scene": 28,
+      "kind": "image",
+      "job_id": "d0fe05a9-3807-4c6b-ac7d-4a535bf8cc59",
+      "credits": 1.0,
+      "event": "submit"
+    },
+    {
+      "ts": "2026-09-30T16:38:55+00:00",
+      "month": "2026-09",
+      "episode": "ep002",
+      "scene": 29,
+      "kind": "image",
+      "job_id": "84e34045-7035-4ec4-9232-e263450f6df9",
+      "credits": 1.0,
+      "event": "submit"
+    },
+    {
+      "ts": "2026-09-30T16:38:55+00:00",
+      "month": "2026-09",
+      "episode": "ep002",
+      "scene": 30,
+      "kind": "image",
+      "job_id": "45bfdb6a-1e21-43c1-86e8-5ee6210f1fe7",
+      "credits": 1.0,
+      "event": "submit"
+    },
+    {
+      "ts": "2026-09-30T16:40:45+00:00",
+      "month": "2026-09",
+      "episode": "ep002",
+      "scene": 4,
+      "kind": "clip",
+      "job_id": "3ab1de17-7b56-446d-b060-00ac5b300458",
+      "credits": 7.5,
+      "event": "submit"
+    },
+    {
+      "ts": "2026-09-30T16:40:45+00:00",
+      "month": "2026-09",
+      "episode": "ep002",
+      "scene": 5,
+      "kind": "clip",
+      "job_id": "1103885e-54c5-48d1-a44e-1bc2e17c58d8",
+      "credits": 7.5,
+      "event": "submit"
+    },
+    {
+      "ts": "2026-09-30T16:40:45+00:00",
+      "month": "2026-09",
+      "episode": "ep002",
+      "scene": 6,
+      "kind": "clip",
+      "job_id": "ec3bf9f0-6316-4e98-a314-09ee6f176e23",
+      "credits": 7.5,
+      "event": "submit"
+    },
+    {
+      "ts": "2026-09-30T16:40:45+00:00",
+      "month": "2026-09",
+      "episode": "ep002",
+      "scene": 7,
+      "kind": "clip",
+      "job_id": "d6a6bc3b-a0e7-43e0-86db-d2eebd63d221",
+      "credits": 7.5,
+      "event": "submit"
+    },
+    {
+      "ts": "2026-09-30T16:40:45+00:00",
+      "month": "2026-09",
+      "episode": "ep002",
+      "scene": 8,
+      "kind": "clip",
+      "job_id": "9b7e4731-5612-4b2b-be64-942b3c9d8f46",
+      "credits": 7.5,
+      "event": "submit"
+    },
+    {
+      "ts": "2026-09-30T16:40:45+00:00",
+      "month": "2026-09",
+      "episode": "ep002",
+      "scene": 9,
+      "kind": "clip",
+      "job_id": "20154d7f-8d89-4c68-8363-6938d2895363",
+      "credits": 7.5,
+      "event": "submit"
+    },
+    {
+      "ts": "2026-09-30T16:40:45+00:00",
+      "month": "2026-09",
+      "episode": "ep002",
+      "scene": 10,
+      "kind": "clip",
+      "job_id": "d88ef470-8a26-4a3c-a4ea-5616f843872b",
+      "credits": 7.5,
+      "event": "submit"
+    },
+    {
+      "ts": "2026-09-30T16:40:45+00:00",
+      "month": "2026-09",
+      "episode": "ep002",
+      "scene": 11,
+      "kind": "clip",
+      "job_id": "13453dfa-8628-4262-922d-87486e06f928",
+      "credits": 7.5,
+      "event": "submit"
+    },
+    {
+      "ts": "2026-09-30T16:40:45+00:00",
+      "month": "2026-09",
+      "episode": "ep002",
+      "scene": 12,
+      "kind": "clip",
+      "job_id": "27da8d5f-0866-439f-962b-af3a505dd984",
+      "credits": 7.5,
+      "event": "submit"
+    },
+    {
+      "ts": "2026-09-30T16:40:46+00:00",
+      "month": "2026-09",
+      "episode": "ep002",
+      "scene": 13,
+      "kind": "clip",
+      "job_id": "9b42c041-8844-486e-8722-a9f7fa59bc96",
+      "credits": 7.5,
+      "event": "submit"
+    },
+    {
+      "ts": "2026-09-30T16:40:46+00:00",
+      "month": "2026-09",
+      "episode": "ep002",
+      "scene": 14,
+      "kind": "clip",
+      "job_id": "90a752cd-1307-42b3-b411-6c82f084f2ee",
+      "credits": 7.5,
+      "event": "submit"
+    },
+    {
+      "ts": "2026-09-30T16:40:46+00:00",
+      "month": "2026-09",
+      "episode": "ep002",
+      "scene": 15,
+      "kind": "clip",
+      "job_id": "1d34b169-3060-49e7-824c-79975d1641e1",
+      "credits": 7.5,
+      "event": "submit"
     }
   ]
 }

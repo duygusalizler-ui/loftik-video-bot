@@ -1,9 +1,9 @@
 {
   "id": "ep002",
   "version": 1,
-  "title": "How Vikings Survived a 7-Month Winter",
-  "thumbnail": "Painterly close-up of Ketil's frost-covered face in blue polar-night darkness, lit from below by a small stone oil lamp, holding one hard dried cod; text: 'ONE MISTAKE' (A/B test against a no-text version)",
-  "hook_description": "How did Vikings survive seven months of winter — no fresh food, weeks without sunlight, and not enough hay for the animals? Ketil, a Norse farmer in the far north of Norway, tells you how his family made it to spring in the winter of 872.",
+  "title": "You're a Viking Farmer. Winter Lasts 7 Months.",
+  "thumbnail": "Painterly close-up of Ketil's frost-covered face in blue polar-night darkness, lit from below by a stone oil lamp, one hand on an empty barrel; text: 'LAST BARREL' (A/B test against a no-text version)",
+  "hook_description": "You're a Viking farmer in the far north of Norway. Winter will last seven months — no fresh food, weeks without sunlight, and not enough hay for the animals. Ketil tells you how his family made it to spring in the winter of 872.",
   "character": "Ketil of Steinvik, a fictional Norse farmer on a coastal farm in Hålogaland (northern Norway), winter of 872 to 873",
   "setting": "A lonely fictional farm called Steinvik on the coast of Hålogaland in northern Norway, Viking Age, around the year 872",
   "style": "Hand-painted gouache and watercolor storybook illustration, visible brush texture, warm amber firelight against cold blue arctic light, cinematic composition, historically accurate Viking Age Norwegian farm life around 870 AD: longhouses with stone-and-turf walls and grass turf roofs, a smoke hole in the roof instead of a chimney, a long open hearth in the middle of the floor, no glass windows, no horned helmets, soft painterly detail, no text, no letters, no watermark",
@@ -25,7 +25,8 @@
     3
   ],
   "gates": {
-    "script": "2026-09-30T12:29:29+00:00"
+    "script": "2026-09-30T12:29:29+00:00",
+    "preview": "2026-09-30T16:33:47+00:00"
   },
   "sources": [
     "Else Roesdahl — The Vikings (Penguin, 3rd ed., 2016)",
@@ -305,7 +306,7 @@
       "mood": "ödül: morinalar, bahar, final"
     }
   ],
-  "next_episode_tease": "Roman soldiers on Hadrian's Wall: surviving a British winter far from home",
+  "next_episode_tease": "You're a soldier in Napoleon's army. Winter is coming. (Retreat from Moscow, 1812)",
   "voice_engine": {
     "model": "text2speech_v2",
     "variant": "elevenlabs",
@@ -501,7 +502,31 @@
       "refs": [
         "longhouse_inside"
       ],
-      "voice_mood": "warm"
+      "voice_mood": "warm",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "dbfabfb5-fffe-46f5-9190-069da74f81c4",
+            "submitted": "2026-09-30T16:35:57+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "dbfabfb5-fffe-46f5-9190-069da74f81c4",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_163545_dbfabfb5-fffe-46f5-9190-069da74f81c4.png",
+        "finished": "2026-09-30T16:39:18+00:00"
+      },
+      "clip": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "3ab1de17-7b56-446d-b060-00ac5b300458",
+            "submitted": "2026-09-30T16:40:45+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "3ab1de17-7b56-446d-b060-00ac5b300458"
+      }
     },
     {
       "n": 5,
@@ -519,7 +544,31 @@
       "refs": [
         "ulf"
       ],
-      "voice_mood": "intrigue"
+      "voice_mood": "intrigue",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "8a298675-89cf-441a-be8d-4829b66efaca",
+            "submitted": "2026-09-30T16:35:57+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "8a298675-89cf-441a-be8d-4829b66efaca",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_163545_8a298675-89cf-441a-be8d-4829b66efaca.png",
+        "finished": "2026-09-30T16:39:18+00:00"
+      },
+      "clip": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "1103885e-54c5-48d1-a44e-1bc2e17c58d8",
+            "submitted": "2026-09-30T16:40:45+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "1103885e-54c5-48d1-a44e-1bc2e17c58d8"
+      }
     },
     {
       "n": 6,
@@ -538,7 +587,31 @@
         "ulf"
       ],
       "voice_mood": "tense",
-      "beat": "⚡ KIRILMA 1 (~2:00): Saman yetmiyor"
+      "beat": "⚡ KIRILMA 1 (~2:00): Saman yetmiyor",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "436ed421-e405-40c9-a620-86f99cad762e",
+            "submitted": "2026-09-30T16:35:57+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "436ed421-e405-40c9-a620-86f99cad762e",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_163545_436ed421-e405-40c9-a620-86f99cad762e.png",
+        "finished": "2026-09-30T16:39:18+00:00"
+      },
+      "clip": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "ec3bf9f0-6316-4e98-a314-09ee6f176e23",
+            "submitted": "2026-09-30T16:40:45+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "ec3bf9f0-6316-4e98-a314-09ee6f176e23"
+      }
     },
     {
       "n": 7,
@@ -546,7 +619,7 @@
       "pov": true,
       "narration": "So we do what every farm in the north must do. We choose. Two cows, the old ram, and most of the pigs will not see the spring. It is hard. Tora cries for the little brown calf. But an animal that starves in March gives us nothing. An animal killed now, gives us meat for the whole winter.",
       "narration_voiced": "So we do what every farm in the north must do. We choose. Two cows, the old ram, and most of the pigs... will not see the spring. It is hard. Tora cries for the little brown calf. But an animal that starves in March gives us nothing. An animal killed now — gives us meat for the whole winter.",
-      "image_prompt": "The narrator's rough hand resting on the neck of a brown cow in a dim byre, Tora (little Norse girl about 6, blond braids, green wool dress) hugging a small brown calf nearby with tears on her cheeks",
+      "image_prompt": "The narrator's rough hand resting on the neck of a brown cow in a dim windowless byre with walls of dark timber and turf, Tora (little Norse girl about 6, blond braids, green wool dress) hugging a small brown calf nearby with tears on her cheeks",
       "shots": [
         "the narrator's hand strokes the neck of a brown cow in the windowless byre with walls of dark timber and turf",
         "Tora (little Norse girl about 6, blond braids, green wool dress) hugs a little brown calf and cries",
@@ -557,7 +630,31 @@
         "tora",
         "ragnhild"
       ],
-      "voice_mood": "tense"
+      "voice_mood": "tense",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "e0d872f6-0368-4014-9df6-beed834d9a4a",
+            "submitted": "2026-09-30T16:35:57+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "e0d872f6-0368-4014-9df6-beed834d9a4a",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_163546_e0d872f6-0368-4014-9df6-beed834d9a4a.png",
+        "finished": "2026-09-30T16:39:18+00:00"
+      },
+      "clip": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "d6a6bc3b-a0e7-43e0-86db-d2eebd63d221",
+            "submitted": "2026-09-30T16:40:45+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "d6a6bc3b-a0e7-43e0-86db-d2eebd63d221"
+      }
     },
     {
       "n": 8,
@@ -576,7 +673,31 @@
         "ragnhild",
         "longhouse_inside"
       ],
-      "voice_mood": "intrigue"
+      "voice_mood": "intrigue",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "8c614a6f-993b-4dc6-aa3c-6fd2023061da",
+            "submitted": "2026-09-30T16:35:57+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "8c614a6f-993b-4dc6-aa3c-6fd2023061da",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_163545_8c614a6f-993b-4dc6-aa3c-6fd2023061da.png",
+        "finished": "2026-09-30T16:39:18+00:00"
+      },
+      "clip": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "9b7e4731-5612-4b2b-be64-942b3c9d8f46",
+            "submitted": "2026-09-30T16:40:45+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "9b7e4731-5612-4b2b-be64-942b3c9d8f46"
+      }
     },
     {
       "n": 9,
@@ -598,7 +719,31 @@
         "tora",
         "longhouse_inside"
       ],
-      "voice_mood": "festive"
+      "voice_mood": "festive",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "77f940be-b8a0-48ec-bb16-6ee5a1dd26f0",
+            "submitted": "2026-09-30T16:35:57+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "77f940be-b8a0-48ec-bb16-6ee5a1dd26f0",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_163545_77f940be-b8a0-48ec-bb16-6ee5a1dd26f0.png",
+        "finished": "2026-09-30T16:39:18+00:00"
+      },
+      "clip": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "20154d7f-8d89-4c68-8363-6938d2895363",
+            "submitted": "2026-09-30T16:40:45+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "20154d7f-8d89-4c68-8363-6938d2895363"
+      }
     },
     {
       "n": 10,
@@ -614,7 +759,31 @@
       ],
       "sound": "sea wind whistling through racks, hard knocking, stone hammer thuds",
       "refs": [],
-      "voice_mood": "intrigue"
+      "voice_mood": "intrigue",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "acbd669e-891e-4553-9c1c-90d72854b5ee",
+            "submitted": "2026-09-30T16:35:57+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "acbd669e-891e-4553-9c1c-90d72854b5ee",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_163545_acbd669e-891e-4553-9c1c-90d72854b5ee.png",
+        "finished": "2026-09-30T16:39:18+00:00"
+      },
+      "clip": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "d88ef470-8a26-4a3c-a4ea-5616f843872b",
+            "submitted": "2026-09-30T16:40:45+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "d88ef470-8a26-4a3c-a4ea-5616f843872b"
+      }
     },
     {
       "n": 11,
@@ -630,7 +799,31 @@
       ],
       "sound": "wooden door creaking, a lamp flame flickering, quiet footsteps",
       "refs": [],
-      "voice_mood": "warm"
+      "voice_mood": "warm",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "63087f75-7d82-4e93-8bdb-48eac040a9e9",
+            "submitted": "2026-09-30T16:35:57+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "63087f75-7d82-4e93-8bdb-48eac040a9e9",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_163545_63087f75-7d82-4e93-8bdb-48eac040a9e9.png",
+        "finished": "2026-09-30T16:39:18+00:00"
+      },
+      "clip": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "13453dfa-8628-4262-922d-87486e06f928",
+            "submitted": "2026-09-30T16:40:45+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "13453dfa-8628-4262-922d-87486e06f928"
+      }
     },
     {
       "n": 12,
@@ -649,7 +842,31 @@
         "eyvind",
         "cow"
       ],
-      "voice_mood": "intrigue"
+      "voice_mood": "intrigue",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "f9c4bb46-1482-494c-bfa9-c00e762e2dc5",
+            "submitted": "2026-09-30T16:35:57+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "f9c4bb46-1482-494c-bfa9-c00e762e2dc5",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_163546_f9c4bb46-1482-494c-bfa9-c00e762e2dc5.png",
+        "finished": "2026-09-30T16:39:18+00:00"
+      },
+      "clip": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "27da8d5f-0866-439f-962b-af3a505dd984",
+            "submitted": "2026-09-30T16:40:45+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "27da8d5f-0866-439f-962b-af3a505dd984"
+      }
     },
     {
       "n": 13,
@@ -668,7 +885,31 @@
         "ragnhild",
         "longhouse_inside"
       ],
-      "voice_mood": "warm"
+      "voice_mood": "warm",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "50472fa8-5454-486d-80c1-4878f4c84ce8",
+            "submitted": "2026-09-30T16:35:57+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "50472fa8-5454-486d-80c1-4878f4c84ce8",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_163545_50472fa8-5454-486d-80c1-4878f4c84ce8.png",
+        "finished": "2026-09-30T16:39:18+00:00"
+      },
+      "clip": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "9b42c041-8844-486e-8722-a9f7fa59bc96",
+            "submitted": "2026-09-30T16:40:46+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "9b42c041-8844-486e-8722-a9f7fa59bc96"
+      }
     },
     {
       "n": 14,
@@ -687,7 +928,31 @@
         "eyvind"
       ],
       "voice_mood": "tense",
-      "beat": "⚡ KIRILMA 2 (~4:40): Komşunun evi yanıyor"
+      "beat": "⚡ KIRILMA 2 (~4:40): Komşunun evi yanıyor",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "2667658e-e782-4683-92da-7fc26a177cfd",
+            "submitted": "2026-09-30T16:35:57+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "2667658e-e782-4683-92da-7fc26a177cfd",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_163545_2667658e-e782-4683-92da-7fc26a177cfd.png",
+        "finished": "2026-09-30T16:39:19+00:00"
+      },
+      "clip": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "90a752cd-1307-42b3-b411-6c82f084f2ee",
+            "submitted": "2026-09-30T16:40:46+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "90a752cd-1307-42b3-b411-6c82f084f2ee"
+      }
     },
     {
       "n": 15,
@@ -706,29 +971,64 @@
         "grim",
         "asa"
       ],
-      "voice_mood": "tense"
+      "voice_mood": "tense",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "eb08d756-7d2d-4bd4-a7f6-1858d059190e",
+            "submitted": "2026-09-30T16:35:57+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "eb08d756-7d2d-4bd4-a7f6-1858d059190e",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_163545_eb08d756-7d2d-4bd4-a7f6-1858d059190e.png",
+        "finished": "2026-09-30T16:39:19+00:00"
+      },
+      "clip": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "1d34b169-3060-49e7-824c-79975d1641e1",
+            "submitted": "2026-09-30T16:40:46+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "1d34b169-3060-49e7-824c-79975d1641e1"
+      }
     },
     {
       "n": 16,
       "title": "The law of the guest",
       "pov": false,
-      "narration": "There is an old saying among us: 'Fire is needed by the one who comes in with frozen knees.' No one turns a guest away in winter. Not ever. So I bring them home. That night there are eight people around my hearth instead of five. My father looks at me, and I know exactly what he is thinking. Eight mouths. Same food.",
-      "narration_voiced": "There is an old saying among us: 'Fire is needed by the one who comes in... with frozen knees.' No one turns a guest away in winter. NOT ever. So I bring them home. That night there are eight people around my hearth instead of five. My father looks at me — and I know exactly what he is thinking. Eight mouths. Same food.",
-      "image_prompt": "Inside the longhouse by the long hearth: Grim (Norse man about 30, dark hair and short dark beard, soot-stained grey tunic) and Asa (young Norse woman about 25, dark braided hair, blue-grey wool dress, carrying a swaddled baby) with the baby sit wrapped in blankets, Ragnhild (Norse woman about 35, fair hair in a braid, dark red wool apron dress with two oval bronze brooches) hands them bowls of hot soup, Ulf (very old Norse man, long white beard, grey wool cloak) watches from his bench with a serious face",
+      "narration": "An old saying among us: 'Fire is needed by the one who comes in with frozen knees.' No one turns a guest away in winter. Not ever. So now we are eight. Eight mouths, same food.",
+      "narration_voiced": "An old saying among us: 'Fire is needed by the one who comes in... with frozen knees.' No one turns a guest away in winter. NOT ever. So now we are eight. Eight mouths... same food.",
+      "image_prompt": "Medium close-up of Ketil (Norse farmer about 40, weathered face, red-brown beard, blue-grey wool hood) sitting on a fur-covered bench beside the long hearth inside the Viking longhouse, looking straight into the camera as if talking to the viewer, warm firelight on his face, the burned-out neighbours Grim and Asa with her baby wrapped in blankets softly out of focus behind him",
       "shots": [
-        "Ragnhild (Norse woman about 35, fair hair in a braid, dark red wool apron dress with two oval bronze brooches) gives a steaming bowl to Asa (young Norse woman about 25, dark braided hair, blue-grey wool dress, carrying a swaddled baby), who holds her baby",
-        "Grim (Norse man about 30, dark hair and short dark beard, soot-stained grey tunic) warms his frozen hands at the long fire",
-        "Ulf (very old Norse man, long white beard, grey wool cloak) looks at the fire with a serious, thoughtful face"
+        "Ketil looks straight into the camera and speaks to the viewer"
       ],
       "sound": "fire crackling, a spoon on a wooden bowl, a baby cooing",
       "refs": [
+        "ketil",
         "grim",
         "asa",
-        "ragnhild",
-        "ulf",
         "longhouse_inside"
       ],
-      "voice_mood": "warm"
+      "voice_mood": "warm",
+      "lipsync": true,
+      "min_speed": 1.0,
+      "no_ambience": true,
+      "image": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "4e8fbbeb-d419-4920-a675-106375599782",
+            "submitted": "2026-09-30T16:38:26+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "4e8fbbeb-d419-4920-a675-106375599782"
+      }
     },
     {
       "n": 17,
@@ -749,7 +1049,18 @@
         "asa",
         "longhouse_inside"
       ],
-      "voice_mood": "intrigue"
+      "voice_mood": "intrigue",
+      "image": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "ad32ba3e-16f9-4439-8cf7-9d28fd1da3d4",
+            "submitted": "2026-09-30T16:38:26+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "ad32ba3e-16f9-4439-8cf7-9d28fd1da3d4"
+      }
     },
     {
       "n": 18,
@@ -765,13 +1076,20 @@
       ],
       "sound": "deep silence, faint wind, pieces clicking on a board, an old voice murmuring",
       "refs": [
-        "longhouse_outside",
-        "eyvind",
-        "grim",
-        "ulf",
-        "tora"
+        "longhouse_outside"
       ],
-      "voice_mood": "intrigue"
+      "voice_mood": "intrigue",
+      "image": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "b912ed12-4757-4d71-9c84-c58d2b89d5af",
+            "submitted": "2026-09-30T16:38:26+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "b912ed12-4757-4d71-9c84-c58d2b89d5af"
+      }
     },
     {
       "n": 19,
@@ -794,7 +1112,18 @@
         "eyvind",
         "longhouse_inside"
       ],
-      "voice_mood": "festive"
+      "voice_mood": "festive",
+      "image": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "42a1afaf-520b-42d5-9f60-90a0f2630819",
+            "submitted": "2026-09-30T16:38:26+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "42a1afaf-520b-42d5-9f60-90a0f2630819"
+      }
     },
     {
       "n": 20,
@@ -813,7 +1142,18 @@
         "tora",
         "ulf"
       ],
-      "voice_mood": "relief"
+      "voice_mood": "relief",
+      "image": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "45c90e77-1310-4f60-8347-51040b8893e2",
+            "submitted": "2026-09-30T16:38:26+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "45c90e77-1310-4f60-8347-51040b8893e2"
+      }
     },
     {
       "n": 21,
@@ -832,7 +1172,18 @@
         "boat"
       ],
       "voice_mood": "tense",
-      "beat": "⚡ KIRILMA 3 (~7:20): Fırtına, son fıçı"
+      "beat": "⚡ KIRILMA 3 (~7:20): Fırtına, son fıçı",
+      "image": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "8a91ecb4-084a-4393-aabf-0dc37c39b8a2",
+            "submitted": "2026-09-30T16:38:26+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "8a91ecb4-084a-4393-aabf-0dc37c39b8a2"
+      }
     },
     {
       "n": 22,
@@ -840,7 +1191,7 @@
       "pov": false,
       "narration": "The hay is gone too. The cows eat leaves, seaweed, fish soup, and it is not enough. Huppa, our best milking cow, can hardly stand anymore. If she dies, we lose our milk, our butter, our cheese for the whole next year. Every morning I go into the byre, afraid of what I will find.",
       "narration_voiced": "The hay is gone too. The cows eat leaves, seaweed, fish soup — and it is not enough. Huppa, our best milking cow, can hardly stand anymore. If she dies, we lose our milk, our butter, our cheese... for the whole next year. Every morning I go into the byre — afraid of what I will find.",
-      "image_prompt": "Huppa (red-brown cow with a white blaze on her face), very thin, lying on straw in the dim byre, Ketil (Norse farmer about 40, weathered face, red-brown beard, blue-grey wool hood) crouching beside her with his hand on her neck, worried",
+      "image_prompt": "Huppa (red-brown cow with a white blaze on her face), very thin, lying on straw in the dim windowless byre with walls of dark timber and turf, Ketil (Norse farmer about 40, weathered face, red-brown beard, blue-grey wool hood) crouching beside her with his hand on her neck, worried",
       "shots": [
         "Huppa (red-brown cow with a white blaze on her face) tries to stand on shaking legs and sinks back down",
         "Ketil (Norse farmer about 40, weathered face, red-brown beard, blue-grey wool hood) strokes her neck, his face full of worry",
@@ -851,7 +1202,18 @@
         "cow",
         "ketil"
       ],
-      "voice_mood": "tense"
+      "voice_mood": "tense",
+      "image": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "a1963a7b-8216-4ed6-a3d8-dc174ad974ba",
+            "submitted": "2026-09-30T16:38:26+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "a1963a7b-8216-4ed6-a3d8-dc174ad974ba"
+      }
     },
     {
       "n": 23,
@@ -873,7 +1235,18 @@
         "ulf",
         "longhouse_inside"
       ],
-      "voice_mood": "tense"
+      "voice_mood": "tense",
+      "image": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "4eb0f1c2-bf43-4a58-aea7-60c796589abe",
+            "submitted": "2026-09-30T16:38:26+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "4eb0f1c2-bf43-4a58-aea7-60c796589abe"
+      }
     },
     {
       "n": 24,
@@ -893,7 +1266,18 @@
         "eyvind",
         "boat"
       ],
-      "voice_mood": "tense"
+      "voice_mood": "tense",
+      "image": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "da03b210-3f1e-4a5b-a2fc-ea6e25d1cbd9",
+            "submitted": "2026-09-30T16:38:26+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "da03b210-3f1e-4a5b-a2fc-ea6e25d1cbd9"
+      }
     },
     {
       "n": 25,
@@ -914,7 +1298,18 @@
         "boat"
       ],
       "voice_mood": "festive",
-      "beat": "ÖDÜL (~8:50): Morinalar geldi"
+      "beat": "ÖDÜL (~8:50): Morinalar geldi",
+      "image": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "60a9cc74-e2ba-4fdb-b354-619dea248d02",
+            "submitted": "2026-09-30T16:38:26+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "60a9cc74-e2ba-4fdb-b354-619dea248d02"
+      }
     },
     {
       "n": 26,
@@ -937,7 +1332,18 @@
         "cow",
         "boat"
       ],
-      "voice_mood": "relief"
+      "voice_mood": "relief",
+      "image": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "f00536ab-0538-40fb-9eb4-56869bbe0e90",
+            "submitted": "2026-09-30T16:38:26+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "f00536ab-0538-40fb-9eb4-56869bbe0e90"
+      }
     },
     {
       "n": 27,
@@ -958,25 +1364,49 @@
         "eyvind",
         "cow"
       ],
-      "voice_mood": "warm"
+      "voice_mood": "warm",
+      "image": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "5e1b4bc8-6afd-4565-a841-b2f5d4d05e56",
+            "submitted": "2026-09-30T16:38:26+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "5e1b4bc8-6afd-4565-a841-b2f5d4d05e56"
+      }
     },
     {
       "n": 28,
       "title": "How we survived",
-      "pov": true,
-      "narration": "So how did we survive seven months of winter? We counted the hay, and killed what we could not feed. We dried, smoked and soured everything. We fed our cows leaves, seaweed and fish. We burned cod oil for light. We shared our fire. And when the time came we took our chances with the sea.",
-      "narration_voiced": "So how did we survive seven months of winter? We counted the hay — and killed what we could not feed. We dried, smoked and soured everything. We fed our cows leaves, seaweed and fish. We burned cod oil for light. We shared our fire. And when the time came... we took our chances with the sea.",
-      "image_prompt": "The narrator's hands resting on a railing, looking out over the green spring fjord farm: drying racks full of cod, sheep on the hills, smoke rising from the longhouse roof",
+      "pov": false,
+      "narration": "So how did we survive seven months of winter? We counted the hay. Dried and smoked everything. Fed our cows fish! Burned cod oil for light shared our fire. And when it mattered, we took our chances with the sea.",
+      "narration_voiced": "So how did we survive seven months of winter? We counted the hay. Dried and smoked everything. Fed our cows fish! Burned cod oil for light... shared our fire. And when it mattered — we took our chances with the sea.",
+      "image_prompt": "Medium close-up of Ketil (Norse farmer about 40, weathered face, red-brown beard, blue-grey wool hood) standing outdoors on the green spring shore of the fjord, looking straight into the camera as if talking to the viewer, drying racks full of cod and the turf-roofed longhouse softly out of focus behind him, soft spring daylight",
       "shots": [
-        "cod hanging on drying racks in spring sunshine",
-        "sheep and lambs on green hillsides above the fjord",
-        "smoke rises gently from the hole in the longhouse roof"
+        "Ketil looks straight into the camera and speaks to the viewer"
       ],
       "sound": "gentle wind, sea birds, lambs bleating",
       "refs": [
+        "ketil",
         "longhouse_outside"
       ],
-      "voice_mood": "warm"
+      "voice_mood": "warm",
+      "lipsync": true,
+      "min_speed": 1.0,
+      "no_ambience": true,
+      "image": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "d0fe05a9-3807-4c6b-ac7d-4a535bf8cc59",
+            "submitted": "2026-09-30T16:38:55+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "d0fe05a9-3807-4c6b-ac7d-4a535bf8cc59"
+      }
     },
     {
       "n": 29,
@@ -998,14 +1428,25 @@
         "ragnhild",
         "eyvind"
       ],
-      "voice_mood": "outro"
+      "voice_mood": "outro",
+      "image": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "84e34045-7035-4ec4-9232-e263450f6df9",
+            "submitted": "2026-09-30T16:38:55+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "84e34045-7035-4ec4-9232-e263450f6df9"
+      }
     },
     {
       "n": 30,
       "title": "What comes next",
       "pov": false,
-      "narration": "Seven hundred years before me, at the edge of the Roman Empire, a soldier stands on a stone wall at the end of the world, Hadrian's Wall, in the frozen north of Britain. He is far from home, and winter is coming. How did he survive? That story is next. And here the fire is still burning.",
-      "narration_voiced": "Seven hundred years before me, at the edge of the Roman Empire, a soldier stands on a stone wall at the end of the world — Hadrian's Wall, in the frozen north of Britain. He is far from home, and winter is coming. How did HE survive? That story is next. And here... the fire is still burning.",
+      "narration": "Almost a thousand years after me, a young soldier marches toward Moscow with Napoleon's army, six hundred thousand men. Winter is coming. Very few of them will ever come home. How did he survive? That story is next. And here, the fire is still burning.",
+      "narration_voiced": "Almost a thousand years after me, a young soldier marches toward Moscow with Napoleon's army — six hundred thousand men. Winter is coming. Very few of them will ever come home. How did HE survive? That story is next. And here... the fire is still burning.",
       "image_prompt": "Peaceful ending: the Viking longhouse on the fjord shore at a calm spring dusk, a warm glow in the doorway, smoke rising, the long hearth fire visible through the open door",
       "shots": [
         "slow push toward the open longhouse door and the warm fire inside",
@@ -1017,8 +1458,23 @@
         "longhouse_outside"
       ],
       "voice_mood": "outro",
-      "beat": "BİTİŞ EKRANI (son 20 sn)"
+      "beat": "BİTİŞ EKRANI (son 20 sn)",
+      "image": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "45bfdb6a-1e21-43c1-86e8-5ee6210f1fe7",
+            "submitted": "2026-09-30T16:38:55+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "45bfdb6a-1e21-43c1-86e8-5ee6210f1fe7"
+      }
     }
   ],
-  "music_credit": "Music by Kevin MacLeod (incompetech.com), licensed under Creative Commons: By Attribution 4.0 — \"Frozen Star\", \"Lost Frontier\", \"Ossuary 6 - Air\", \"Master of the Feast\", \"Crossing the Chasm\", \"Darkest Child\", \"Winter Reflections\", \"Dark Times\", \"Dreams Become Real\""
+  "music_credit": "Music by Kevin MacLeod (incompetech.com), licensed under Creative Commons: By Attribution 4.0 — \"Frozen Star\", \"Lost Frontier\", \"Ossuary 6 - Air\", \"Master of the Feast\", \"Crossing the Chasm\", \"Darkest Child\", \"Winter Reflections\", \"Dark Times\", \"Dreams Become Real\"",
+  "title_alt": "How Vikings Survived a 7-Month Winter",
+  "max_credits": 330,
+  "max_credits_note": "Yeni strateji: 2 sahnede kameraya konuşan Ketil (Wan 2.7 dudak senkronu, 21 kredi/klip) — kanal sahibi 'bu strateji ile başla' dedi (2026-09-30)",
+  "gates_note": "Önizleme onayı: kanal sahibi 'Başla bakalım bu strateji ile' (2026-09-30); önizlemeyi ayrıca izleyip kontrol edecek"
 }

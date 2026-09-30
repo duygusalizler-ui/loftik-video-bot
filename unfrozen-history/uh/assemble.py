@@ -114,6 +114,9 @@ def has_audio(path: Path) -> bool:
 def render_ambience(src: Path, out: Path, beat: float, rng=None,
                     min_speed: float = C.MIN_SPEED) -> None:
     """Klibin ortam sesini (ASMR katmanı) sahne süresine uydurur; sesi yoksa sessizlik."""
+    if src is None:
+        _run(["ffmpeg", "-y", "-f", "lavfi", "-i", "anullsrc=r=48000:cl=stereo", "-t", f"{beat:.3f}", str(out)])
+        return
     cut, length = _src_len(src, rng)
     speed, _ = plan_speed(beat, length, max(min_speed, 0.5))
     fade = f"afade=t=in:d=0.3,afade=t=out:st={max(beat - 0.4, 0):.2f}:d=0.4"
@@ -185,7 +188,8 @@ def assemble(ep: dict, scenes: list[int] | None = None, music: Path | None = Non
         info = render_segment(src, seg, beat + (0 if last else XFADE), s.get("clip_range"), ms)
         amb = work / "ambience" / f"{s['n']:03d}.wav"
         amb.parent.mkdir(parents=True, exist_ok=True)
-        render_ambience(src, amb, beat, s.get("clip_range"), ms)
+        # dudak senkronlu klibin sesi konuşma içerir → ortam katmanına alınmaz
+        render_ambience(src if not s.get("no_ambience") else None, amb, beat, s.get("clip_range"), ms)
         return seg, (mp3, beat), amb, {"n": s["n"], "beat": round(beat, 2), **info}
 
     with ThreadPoolExecutor(max_workers=C.RENDER_WORKERS) as pool:
