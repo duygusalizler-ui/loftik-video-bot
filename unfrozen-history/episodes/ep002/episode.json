@@ -8,7 +8,7 @@
   "setting": "A lonely fictional farm called Steinvik on the coast of Hålogaland in northern Norway, Viking Age, around the year 872",
   "style": "Hand-painted gouache and watercolor storybook illustration, visible brush texture, warm amber firelight against cold blue arctic light, cinematic composition, historically accurate Viking Age Norwegian farm life around 870 AD: longhouses with stone-and-turf walls and grass turf roofs, a smoke hole in the roof instead of a chimney, a long open hearth in the middle of the floor, no glass windows, no horned helmets, soft painterly detail, no text, no letters, no watermark",
   "ref_style": "Hand-painted gouache and watercolor storybook character reference sheet, same painterly look as the episode, even neutral lighting, plain warm parchment background, historically accurate Viking Age Norse clothing (wool and linen, no horned helmets), original fictional person, no text, no labels, no watermark",
-  "motion_suffix": "Gentle natural motion, soft cuts between shots, painterly style and characters stay consistent across shots, no text; historically accurate Viking Age Norwegian farm: the only indoor fire is the long open hearth in the middle of the floor, no fireplaces in walls, no chimneys, no glass windows, no horned helmets",
+  "motion_suffix": "Gentle natural motion, soft cuts between shots, painterly style and characters stay consistent across shots, no text; historically accurate Viking Age Norwegian farm: the only indoor fire is the long open hearth in the middle of the floor, no fireplaces in walls, no chimneys, no windows with glass panes anywhere (buildings are windowless), no horned helmets",
   "cast": {
     "Ketil": "Ketil (Norse farmer about 40, weathered face, red-brown beard, blue-grey wool hood)",
     "Ragnhild": "Ragnhild (Norse woman about 35, fair hair in a braid, dark red wool apron dress with two oval bronze brooches)",
@@ -24,7 +24,9 @@
     2,
     3
   ],
-  "gates": {},
+  "gates": {
+    "script": "2026-09-30T12:29:29+00:00"
+  },
   "sources": [
     "Else Roesdahl — The Vikings (Penguin, 3rd ed., 2016)",
     "Neil Price — Children of Ash and Elm: A History of the Vikings (2020)",
@@ -40,57 +42,202 @@
     "ketil": {
       "kind": "character",
       "prompt": "Character reference sheet: on the left a full-body view standing upright facing the viewer, head to toe, on the right a chest-up portrait of the same person; identical original character in both views, single character only, no other people, no props except those described. Ketil, Norse farmer about 40, weathered face, red-brown beard, grey-blue eyes, blue-grey wool hood, knee-length brown wool tunic with a leather belt and a small knife, wool trousers with leg wraps, leather shoes",
-      "n": "ketil"
+      "n": "ketil",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "914ef464-449e-4687-88ee-fa82599d0c2d",
+            "submitted": "2026-09-30T12:30:30+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "914ef464-449e-4687-88ee-fa82599d0c2d",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_123019_914ef464-449e-4687-88ee-fa82599d0c2d.png",
+        "finished": "2026-09-30T12:32:10+00:00"
+      }
     },
     "ragnhild": {
       "kind": "character",
       "prompt": "Character reference sheet: on the left a full-body view standing upright facing the viewer, head to toe, on the right a chest-up portrait of the same person; identical original character in both views, single character only, no other people, no props except those described. Ragnhild, Norse woman about 35, fair hair in a long braid, calm blue eyes, long linen underdress with a dark red wool apron dress held by two oval bronze brooches, a string of a few glass beads, leather shoes",
-      "n": "ragnhild"
+      "n": "ragnhild",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "1fd853fe-8798-4271-98ac-68241c645c5d",
+            "submitted": "2026-09-30T12:30:30+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "1fd853fe-8798-4271-98ac-68241c645c5d",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_123019_1fd853fe-8798-4271-98ac-68241c645c5d.png",
+        "finished": "2026-09-30T12:32:10+00:00"
+      }
     },
     "eyvind": {
       "kind": "character",
       "prompt": "Character reference sheet: on the left a full-body view standing upright facing the viewer, head to toe, on the right a chest-up portrait of the same person; identical original character in both views, single character only, no other people, no props except those described. Eyvind, Norse boy about 13, straight blond hair, lean, brown wool tunic with a belt, grey wool trousers, leg wraps, leather shoes",
-      "n": "eyvind"
+      "n": "eyvind",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "d952bbf6-53b6-438f-85ce-8a36d0b1f740",
+            "submitted": "2026-09-30T12:30:30+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "d952bbf6-53b6-438f-85ce-8a36d0b1f740",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_123020_d952bbf6-53b6-438f-85ce-8a36d0b1f740.png",
+        "finished": "2026-09-30T12:32:10+00:00"
+      }
     },
     "tora": {
       "kind": "character",
       "prompt": "Character reference sheet: on the left a full-body view standing upright facing the viewer, head to toe, on the right a chest-up portrait of the same person; identical original character in both views, single character only, no other people, no props except those described. Tora, little Norse girl about 6, blond braids, round rosy face, green wool dress over a linen underdress, small leather shoes",
-      "n": "tora"
+      "n": "tora",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "a2db408e-e0df-4235-a8d9-fa54623c588b",
+            "submitted": "2026-09-30T12:30:30+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "a2db408e-e0df-4235-a8d9-fa54623c588b",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_123019_a2db408e-e0df-4235-a8d9-fa54623c588b.png",
+        "finished": "2026-09-30T12:32:10+00:00"
+      }
     },
     "ulf": {
       "kind": "character",
       "prompt": "Character reference sheet: on the left a full-body view standing upright facing the viewer, head to toe, on the right a chest-up portrait of the same person; identical original character in both views, single character only, no other people, no props except those described. Ulf, very old Norse man about 75, long white beard, deeply lined face, thin white hair, grey wool cloak pinned at the shoulder, long brown tunic, a wooden staff",
-      "n": "ulf"
+      "n": "ulf",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "42be49d4-9611-423d-a1f2-c7986a72d722",
+            "submitted": "2026-09-30T12:30:30+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "42be49d4-9611-423d-a1f2-c7986a72d722",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_123020_42be49d4-9611-423d-a1f2-c7986a72d722.png",
+        "finished": "2026-09-30T12:32:10+00:00"
+      }
     },
     "grim": {
       "kind": "character",
       "prompt": "Character reference sheet: on the left a full-body view standing upright facing the viewer, head to toe, on the right a chest-up portrait of the same person; identical original character in both views, single character only, no other people, no props except those described. Grim, Norse man about 30, dark hair and short dark beard, strong build, soot-stained grey wool tunic, dark trousers, leg wraps",
-      "n": "grim"
+      "n": "grim",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "b6988803-a02c-4362-a856-dba04a7775aa",
+            "submitted": "2026-09-30T12:30:30+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "b6988803-a02c-4362-a856-dba04a7775aa",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_123019_b6988803-a02c-4362-a856-dba04a7775aa.png",
+        "finished": "2026-09-30T12:32:10+00:00"
+      }
     },
     "asa": {
       "kind": "character",
       "prompt": "Character reference sheet: on the left a full-body view standing upright facing the viewer, head to toe, on the right a chest-up portrait of the same person; identical original character in both views, single character only, no other people, no props except those described. Asa, young Norse woman about 25, dark braided hair, blue-grey wool dress with a simple apron dress and small bronze brooches, carrying a baby swaddled in undyed wool",
-      "n": "asa"
+      "n": "asa",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "fc54318c-ff8c-4cde-83ec-96f753146145",
+            "submitted": "2026-09-30T12:30:31+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "fc54318c-ff8c-4cde-83ec-96f753146145",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_123019_fc54318c-ff8c-4cde-83ec-96f753146145.png",
+        "finished": "2026-09-30T12:32:10+00:00"
+      }
     },
     "cow": {
       "kind": "character",
       "prompt": "Animal reference sheet: side view and front view of the same small old Norse breed cow, red-brown coat with a white blaze on her face, short horns, standing on straw, single animal only",
-      "n": "cow"
+      "n": "cow",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "610e7910-b217-4c73-baa7-383ae827281c",
+            "submitted": "2026-09-30T12:30:31+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "610e7910-b217-4c73-baa7-383ae827281c",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_123020_610e7910-b217-4c73-baa7-383ae827281c.png",
+        "finished": "2026-09-30T12:32:10+00:00",
+        "media_id": "862701e2-be2e-4724-a968-ecaa39c46a2f",
+        "note": "orijinal kartta fazladan insan figürleri vardı; sadece inekler kırpılıp yüklendi"
+      }
     },
     "longhouse_inside": {
       "kind": "location",
       "prompt": "Location reference, wide establishing view of the interior of one Viking Age Norwegian longhouse: a long stone-lined open hearth running down the middle of the earth floor, wide raised earth benches along both long walls covered with furs and blankets, two rows of heavy wooden roof posts, smoke-blackened rafters, a smoke hole in the turf roof, walls of timber lined inside with wooden planks, an upright warp-weighted loom, a wooden partition at the far end with a byre behind it, no windows, no chimney, no fireplace in the walls, no furniture chairs",
-      "n": "longhouse_inside"
+      "n": "longhouse_inside",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "75145f16-4212-4088-a782-f1846013c78b",
+            "submitted": "2026-09-30T12:30:31+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "75145f16-4212-4088-a782-f1846013c78b",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_123021_75145f16-4212-4088-a782-f1846013c78b.png",
+        "finished": "2026-09-30T12:32:10+00:00"
+      }
     },
     "longhouse_outside": {
       "kind": "location",
       "prompt": "Location reference, wide establishing view of one lonely Viking Age farm on the shore of a northern Norwegian fjord: one long low longhouse with thick stone-and-turf walls and a grass turf roof with a smoke hole, a small byre, a boathouse by the water, drying racks for fish, steep dark mountains behind, late autumn with first snow on the peaks, no chimney, no glass windows",
-      "n": "longhouse_outside"
+      "n": "longhouse_outside",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "0a9f15c6-0234-41db-bb7f-a3dc97196dd6",
+            "submitted": "2026-09-30T12:30:31+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "0a9f15c6-0234-41db-bb7f-a3dc97196dd6",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_123019_0a9f15c6-0234-41db-bb7f-a3dc97196dd6.png",
+        "finished": "2026-09-30T12:32:10+00:00"
+      }
     },
     "boat": {
       "kind": "location",
       "prompt": "Reference, a small Viking Age Norwegian clinker-built wooden rowing boat for four oars (a faering), pointed at both ends, pulled up on a rocky northern shore, grey sea and snowy mountains behind, no sail, no dragon head",
-      "n": "boat"
+      "n": "boat",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "045f266f-2098-48fc-b021-06176c50ada2",
+            "submitted": "2026-09-30T12:30:31+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "045f266f-2098-48fc-b021-06176c50ada2",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_123020_045f266f-2098-48fc-b021-06176c50ada2.png",
+        "finished": "2026-09-30T12:32:10+00:00"
+      }
     }
   },
   "music": [
@@ -176,7 +323,7 @@
       "shots": [
         "the hands lift the last small pieces of dried fish out of the empty barrel by firelight",
         "huge grey storm waves crash against black rocks on a snowy northern shore under a dark sky",
-        "Huppa (red-brown cow with a white blaze on her face) lies thin and weak on straw in a dim wooden byre, breathing slowly, her breath steaming"
+        "Huppa (red-brown cow with a white blaze on her face) lies thin and weak on straw in a dim wooden windowless byre with walls of dark timber and turf, breathing slowly, her breath steaming"
       ],
       "sound": "howling storm wind, waves crashing in the distance, wood scraping in an empty barrel",
       "refs": [
@@ -184,7 +331,44 @@
         "cow"
       ],
       "voice_mood": "tense",
-      "beat": "SOĞUK AÇILIŞ + FRAGMAN (0:00)"
+      "beat": "SOĞUK AÇILIŞ + FRAGMAN (0:00)",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "8ebe4d26-61d1-4c33-a305-b8908f278212",
+            "submitted": "2026-09-30T12:33:28+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "8ebe4d26-61d1-4c33-a305-b8908f278212",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_123322_8ebe4d26-61d1-4c33-a305-b8908f278212.png",
+        "finished": "2026-09-30T12:36:42+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "20732a63-d516-401c-8b67-6ee41d76b9c6",
+            "submitted": "2026-09-30T12:37:25+00:00",
+            "credits": 7.5
+          },
+          {
+            "job_id": "f366f930-8b1c-4a40-a9ed-09f0def5ea87",
+            "submitted": "2026-09-30T12:40:02+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "f366f930-8b1c-4a40-a9ed-09f0def5ea87",
+        "finished": "2026-09-30T12:43:05+00:00",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_123952_f366f930-8b1c-4a40-a9ed-09f0def5ea87.mp4"
+      },
+      "clip_range": [
+        0,
+        10.6
+      ],
+      "min_speed": 0.55,
+      "note": "3. açıda (inek) camlı pencere → kesildi; tam üretimde 22. sahnenin inek açısıyla composite yapılacak"
     },
     {
       "n": 2,
@@ -202,7 +386,39 @@
       "refs": [
         "longhouse_outside"
       ],
-      "voice_mood": "intrigue"
+      "voice_mood": "intrigue",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "d1d50b04-cea8-4fb7-b770-8ffa1d4ce7c9",
+            "submitted": "2026-09-30T12:33:28+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "d1d50b04-cea8-4fb7-b770-8ffa1d4ce7c9",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_123322_d1d50b04-cea8-4fb7-b770-8ffa1d4ce7c9.png",
+        "finished": "2026-09-30T12:36:42+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "387f29b1-32b1-4e3b-b298-870f3ce73b8e",
+            "submitted": "2026-09-30T12:37:25+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "387f29b1-32b1-4e3b-b298-870f3ce73b8e",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_123719_387f29b1-32b1-4e3b-b298-870f3ce73b8e.mp4",
+        "finished": "2026-09-30T12:40:32+00:00"
+      },
+      "clip_range": [
+        0,
+        11.6
+      ],
+      "min_speed": 0.5,
+      "note": "son açıda çatıda baca benzeri kutu → kesildi"
     },
     {
       "n": 3,
@@ -210,7 +426,7 @@
       "pov": false,
       "narration": "This is my farm, Steinvik. One longhouse of stone, timber and turf, a byre, a boathouse by the shore and the mountains behind us like a wall. We are five: my wife Ragnhild, my son Eyvind, my little Tora, and my old father Ulf, who has seen more winters than anyone on this island. And our animals. They matter more than you think.",
       "narration_voiced": "This is my farm, Steinvik. One longhouse of stone, timber and turf, a byre, a boathouse by the shore... and the mountains behind us like a wall. We are five: my wife Ragnhild, my son Eyvind, my little Tora, and my old father Ulf — who has seen more winters than anyone on this island. And our animals. They matter more than you think.",
-      "image_prompt": "Ragnhild (Norse woman about 35, fair hair in a braid, dark red wool apron dress with two oval bronze brooches), Eyvind (Norse boy about 13, straight blond hair, brown wool tunic), Tora (little Norse girl about 6, blond braids, green wool dress) and Ulf (very old Norse man, long white beard, grey wool cloak) standing together outside the door of a turf-roofed Viking longhouse on a fjord shore in late autumn, sheep and a red-brown cow grazing nearby",
+      "image_prompt": "Ragnhild (Norse woman about 35, fair hair in a braid, dark red wool apron dress with two oval bronze brooches), Eyvind (Norse boy about 13, straight blond hair, brown wool tunic), Tora (little Norse girl about 6, blond braids, green wool dress) and Ulf (very old Norse man, long white beard, grey wool cloak) standing together outside the door of a turf-roofed Viking longhouse on a fjord shore in late autumn, sheep and a red-brown cow grazing nearby, the grass turf roof is smooth and unbroken with no chimney, no stone stack and no pipe on it, only a small open smoke hole",
       "shots": [
         "Ragnhild (Norse woman about 35, fair hair in a braid, dark red wool apron dress with two oval bronze brooches) smiles and holds Tora (little Norse girl about 6, blond braids, green wool dress) by the hand in front of the longhouse door",
         "Eyvind (Norse boy about 13, straight blond hair, brown wool tunic) carries firewood past, Ulf (very old Norse man, long white beard, grey wool cloak) leans on a staff and watches the fjord",
@@ -224,7 +440,48 @@
         "ulf",
         "longhouse_outside"
       ],
-      "voice_mood": "warm"
+      "voice_mood": "warm",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "8c7dda14-cc52-4911-907a-7666c418d9a4",
+            "submitted": "2026-09-30T12:41:22+00:00",
+            "credits": 1.0
+          }
+        ],
+        "history": [
+          {
+            "status": "done",
+            "attempts": [
+              {
+                "job_id": "dac2bd97-cb87-42b5-8f61-c115974fa31f",
+                "submitted": "2026-09-30T12:33:28+00:00",
+                "credits": 1.0
+              }
+            ],
+            "job_id": "dac2bd97-cb87-42b5-8f61-c115974fa31f",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_123321_dac2bd97-cb87-42b5-8f61-c115974fa31f.png",
+            "finished": "2026-09-30T12:40:32+00:00",
+            "redo_reason": "çatıda taş baca benzeri yapı",
+            "redo_at": "2026-09-30T12:41:01+00:00"
+          }
+        ],
+        "job_id": "8c7dda14-cc52-4911-907a-7666c418d9a4",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_124116_8c7dda14-cc52-4911-907a-7666c418d9a4.png",
+        "finished": "2026-09-30T12:46:09+00:00"
+      },
+      "clip": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "81d08981-1501-4c11-8221-a5ba91ad7172",
+            "submitted": "2026-09-30T12:46:34+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "81d08981-1501-4c11-8221-a5ba91ad7172"
+      }
     },
     {
       "n": 4,
@@ -289,7 +546,7 @@
       "narration_voiced": "So we do what every farm in the north must do. We choose. Two cows, the old ram, and most of the pigs... will not see the spring. It is hard. Tora cries for the little brown calf. But an animal that starves in March gives us nothing. An animal killed now — gives us meat for the whole winter.",
       "image_prompt": "The narrator's rough hand resting on the neck of a brown cow in a dim byre, Tora (little Norse girl about 6, blond braids, green wool dress) hugging a small brown calf nearby with tears on her cheeks",
       "shots": [
-        "the narrator's hand strokes the neck of a brown cow in the byre",
+        "the narrator's hand strokes the neck of a brown cow in the windowless byre with walls of dark timber and turf",
         "Tora (little Norse girl about 6, blond braids, green wool dress) hugs a little brown calf and cries",
         "Ragnhild (Norse woman about 35, fair hair in a braid, dark red wool apron dress with two oval bronze brooches) kneels and puts her arm around Tora (little Norse girl about 6, blond braids, green wool dress)"
       ],
@@ -383,7 +640,7 @@
       "shots": [
         "Eyvind (Norse boy about 13, straight blond hair, brown wool tunic) ties leafy birch branches into bundles and hangs them to dry",
         "sheep pick their way over wet rocks and eat seaweed at low tide",
-        "Huppa (red-brown cow with a white blaze on her face) drinks steaming fish soup from a wooden bucket in the byre"
+        "Huppa (red-brown cow with a white blaze on her face) drinks steaming fish soup from a wooden bucket in the windowless byre with walls of dark timber and turf"
       ],
       "sound": "branches rustling, sheep bleating, waves on rocks, a cow slurping",
       "refs": [
@@ -585,7 +842,7 @@
       "shots": [
         "Huppa (red-brown cow with a white blaze on her face) tries to stand on shaking legs and sinks back down",
         "Ketil (Norse farmer about 40, weathered face, red-brown beard, blue-grey wool hood) strokes her neck, his face full of worry",
-        "an empty wooden hay rack in the dim byre"
+        "an empty wooden hay rack in the dim windowless byre with walls of dark timber and turf"
       ],
       "sound": "a cow's weak lowing, heavy breathing, wind through the walls",
       "refs": [
@@ -667,7 +924,7 @@
       "shots": [
         "Ragnhild (Norse woman about 35, fair hair in a braid, dark red wool apron dress with two oval bronze brooches) runs into the shallow water to meet the boat",
         "the whole family eats fish from steaming bowls around the long hearth",
-        "Huppa (red-brown cow with a white blaze on her face) stands up in the morning light of the byre"
+        "Huppa (red-brown cow with a white blaze on her face) stands up in the morning light of the windowless byre with walls of dark timber and turf"
       ],
       "sound": "waves, happy shouts, fire crackling, a cow lowing",
       "refs": [

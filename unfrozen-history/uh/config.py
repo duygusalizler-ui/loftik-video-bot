@@ -10,7 +10,7 @@ BUILD_DIR = ROOT / "build"  # gitignore'da; indirilen klipler, ses, render
 
 # --- Bütçe (kredi) — kod seviyesinde sert sınırlar ---
 MAX_CREDITS_PER_VIDEO = 300
-MAX_CREDITS_PER_MONTH = 1200
+MAX_CREDITS_PER_MONTH = 2600  # haftada 2 bölüm (~293 x 8,7) — kanal sahibinin onayıyla 2026-09-30
 MIN_BALANCE_RESERVE = 500  # Sunny için ayrılan rezerv; altına inilirse başlama
 MAX_RETRIES_PER_ASSET = 1
 

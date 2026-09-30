@@ -40,7 +40,9 @@ def ref_media(ep: dict, keys: list[str], role: str) -> list[dict]:
     out = []
     for k in keys:
         a = S.asset(S.scene(ep, k), "image")
-        out.append({"role": role, "value": a.get("media_id") or a["job_id"]})
+        # yüklenmiş (kırpılmış) medya sadece görsel üretiminde; Seedance klibi media_input referansla başarısız oldu (ep002 s1)
+        v = a["job_id"] if role == "image_references" else (a.get("media_id") or a["job_id"])
+        out.append({"role": role, "value": v})
     return out
 
 
