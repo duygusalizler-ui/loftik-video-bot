@@ -31,3 +31,14 @@ Kaynak: kanal sahibinin verdiği strateji şablonu + Operatör Oyun Kitabı. Her
 - Senaryo yazılırken bir sonraki bölüm de belli olur.
 - Final, izleyicinin önüne **yeni bir soru** koyar ve somut sonraki bölümü tanıtır (`next_episode_tease`).
 - Bitiş ekranı son 20 sn'deki sakin sahneye konur; o sonraki bölüme bağlanır.
+
+## 6. Niş kuralı: sadece KIŞ — ama "ünlü kışlar" (2026-09-30 analiz)
+Viral tarih videolarının ortak noktası: herkesin bildiği bir olay + "sen oradasın" hissi.
+Biz nişten çıkmıyoruz; **tarihin ünlü kışlarını**, orada yaşayan sıradan birinin gözünden anlatıyoruz.
+- Konu havuzu (öncelik sırası): Napolyon'un Moskova'dan geri çekilişi 1812 (asker) · Donner Party 1846–47 (göçmen aile) ·
+  Büyük Don 1709 (Avrupa köylüsü) · Valley Forge 1777–78 (asker) · Leningrad kuşatması kışı 1941–42 (sivil çocuk) ·
+  Shackleton / Endurance 1915 (denizci) · Büyük Kar Fırtınası 1888 (New York) · Thames buz fuarı 1683–84 ·
+  1816 "Yazsız Yıl" ve ardından gelen kış · Kara Veba kışı 1348–49
+- Başlık: POV / ikinci şahıs + ünlü olay + kış tehdidi. Örn: "You're a Soldier in Napoleon's Army. Winter Is Coming."
+- Anlatımda 2–3 kez karakter kameraya bakıp konuşur (vlog hissi), hikâye yine birinci ağızdan.
+- Kapak: karakterin yüzü + 2–3 kelime tehdit ("-40°C", "NO FOOD", "DAY 1").
