@@ -1079,6 +1079,36 @@
       "job_id": "81d08981-1501-4c11-8221-a5ba91ad7172",
       "credits": 7.5,
       "event": "submit"
+    },
+    {
+      "ts": "2026-09-30T12:51:24+00:00",
+      "month": "2026-09",
+      "episode": "channel",
+      "scene": "community_welcome",
+      "kind": "image",
+      "job_id": "61de3db4-c79f-4f1d-b61c-b6109ef21066",
+      "credits": 1.0,
+      "event": "submit"
+    },
+    {
+      "ts": "2026-09-30T12:55:57+00:00",
+      "month": "2026-09",
+      "episode": "ep001",
+      "scene": "narration_es_elevenlabs",
+      "kind": "voice",
+      "job_id": "text2speech_v2 x32 (build/ep001/es_jobs.txt)",
+      "credits": 28.8,
+      "event": "submit"
+    },
+    {
+      "ts": "2026-09-30T12:58:33+00:00",
+      "month": "2026-09",
+      "episode": "ep001",
+      "scene": "narration_es_fit_x10",
+      "kind": "voice",
+      "job_id": "d7790b46,03f34639,1b5016c3,81e0c09e,4df4c395,4105a362,c9c8cd78,e964c406,7562d8d2,c1f26760",
+      "credits": 9.0,
+      "event": "submit"
     }
   ]
 }

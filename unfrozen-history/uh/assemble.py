@@ -92,8 +92,8 @@ def render_segment(src: Path, out: Path, target: float, rng=None,
         f"fps={C.OUT_FPS}",
         "format=yuv420p",
     ]
-    if hold > 0:
-        vf.append(f"tpad=stop_mode=clone:stop_duration={hold + 0.1:.2f}")
+    # son kareyi her zaman biraz uzat: kaynak videonun görüntüsü, format süresinden (ses dahil) kısa olabilir
+    vf.append(f"tpad=stop_mode=clone:stop_duration={hold + 0.4:.2f}")
     vf.append(f"trim=duration={target:.3f},setpts=PTS-STARTPTS")
     _run(["ffmpeg", "-y", *cut, "-i", str(src), "-an", "-vf", ",".join(vf),
           "-c:v", "libx264", "-preset", "medium", "-crf", "16", str(out)])
