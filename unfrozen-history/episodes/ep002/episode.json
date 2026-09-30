@@ -594,7 +594,13 @@
         "job_id": "1103885e-54c5-48d1-a44e-1bc2e17c58d8",
         "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_164033_1103885e-54c5-48d1-a44e-1bc2e17c58d8.mp4",
         "finished": "2026-09-30T16:46:01+00:00"
-      }
+      },
+      "clip_range": [
+        0,
+        11.8
+      ],
+      "min_speed": 0.6,
+      "note": "12sn sonrası camlı pencere → kesildi"
     },
     {
       "n": 6,
@@ -1098,7 +1104,26 @@
         "job_id": "1d34b169-3060-49e7-824c-79975d1641e1",
         "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_164033_1d34b169-3060-49e7-824c-79975d1641e1.mp4",
         "finished": "2026-09-30T16:46:02+00:00"
-      }
+      },
+      "clip_composite": [
+        [
+          "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_164033_1d34b169-3060-49e7-824c-79975d1641e1.mp4",
+          0,
+          4.8
+        ],
+        [
+          "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_164034_90a752cd-1307-42b3-b411-6c82f084f2ee.mp4",
+          5.2,
+          10.0
+        ],
+        [
+          "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_164033_1d34b169-3060-49e7-824c-79975d1641e1.mp4",
+          10.0,
+          15.0
+        ]
+      ],
+      "min_speed": 0.6,
+      "note": "yanan çatıda baca → o açı yerine sahne 14 uzak yangın"
     },
     {
       "n": 16,
@@ -1877,7 +1902,21 @@
         "job_id": "39e6e9ce-7d8c-413e-b4cf-4cddf3be25e2",
         "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_164524_39e6e9ce-7d8c-413e-b4cf-4cddf3be25e2.mp4",
         "finished": "2026-09-30T16:49:09+00:00"
-      }
+      },
+      "clip_composite": [
+        [
+          "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_164524_39e6e9ce-7d8c-413e-b4cf-4cddf3be25e2.mp4",
+          0,
+          4.9
+        ],
+        [
+          "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20260930_164524_39e6e9ce-7d8c-413e-b4cf-4cddf3be25e2.mp4",
+          10.1,
+          15.0
+        ]
+      ],
+      "min_speed": 0.5,
+      "note": "2. açıda çatıda baca → kesildi"
     }
   ],
   "music_credit": "Music by Kevin MacLeod (incompetech.com), licensed under Creative Commons: By Attribution 4.0 — \"Frozen Star\", \"Lost Frontier\", \"Ossuary 6 - Air\", \"Master of the Feast\", \"Crossing the Chasm\", \"Darkest Child\", \"Winter Reflections\", \"Dark Times\", \"Dreams Become Real\"",
