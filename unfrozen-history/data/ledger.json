@@ -849,6 +849,26 @@
       "job_id": "text2speech_v2 x31",
       "credits": 27.9,
       "event": "submit"
+    },
+    {
+      "ts": "2026-09-30T09:44:33+00:00",
+      "month": "2026-09",
+      "episode": "channel",
+      "scene": "branding",
+      "kind": "image",
+      "job_id": "49dc80be+dc00d091",
+      "credits": 2.0,
+      "event": "submit"
+    },
+    {
+      "ts": "2026-09-30T09:44:39+00:00",
+      "month": "2026-09",
+      "episode": "channel",
+      "scene": "branding",
+      "kind": "image",
+      "job_id": "49dc80be+dc00d091",
+      "credits": 2.0,
+      "event": "submit"
     }
   ]
 }
