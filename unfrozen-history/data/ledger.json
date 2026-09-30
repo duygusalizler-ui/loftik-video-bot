@@ -829,6 +829,16 @@
       "job_id": "44ac237b+a025dd90",
       "credits": 2.0,
       "event": "submit"
+    },
+    {
+      "ts": "2026-09-30T09:14:30+00:00",
+      "month": "2026-09",
+      "episode": "ep001",
+      "scene": "voice_test",
+      "kind": "voice",
+      "job_id": "b51e0070 elevenlabs punctuation",
+      "credits": 0.9,
+      "event": "submit"
     }
   ]
 }
