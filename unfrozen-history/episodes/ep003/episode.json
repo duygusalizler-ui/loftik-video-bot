@@ -22,7 +22,8 @@
     3
   ],
   "gates": {
-    "script": "2026-10-01T10:54:35+00:00"
+    "script": "2026-10-01T10:54:35+00:00",
+    "preview": "2026-10-01T11:50:40+00:00"
   },
   "sources": [
     "Adam Zamoyski — 1812: Napoleon's Fatal March on Moscow (HarperCollins, 2004)",
@@ -295,7 +296,6 @@
       ],
       "sound": "howling wind, crackling fire, boots crunching on frozen snow",
       "refs": [
-        "luc",
         "bivouac"
       ],
       "voice_mood": "tense",
@@ -401,7 +401,6 @@
       ],
       "sound": "marching feet, cart wheels creaking, laughter, a horse snorting",
       "refs": [
-        "luc",
         "antoine",
         "morel",
         "therese",
@@ -475,7 +474,18 @@
         "morel",
         "summer_road"
       ],
-      "voice_mood": "intrigue"
+      "voice_mood": "intrigue",
+      "image": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "569fe017-91e3-45bc-8782-cd9830c1a302",
+            "submitted": "2026-10-01T11:52:06+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "569fe017-91e3-45bc-8782-cd9830c1a302"
+      }
     },
     {
       "n": 5,
@@ -500,7 +510,18 @@
       ],
       "must_not": [
         "other people facing the camera"
-      ]
+      ],
+      "image": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "ff7c0486-d293-4d2c-9a5b-33c36483ef5f",
+            "submitted": "2026-10-01T11:52:06+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "ff7c0486-d293-4d2c-9a5b-33c36483ef5f"
+      }
     },
     {
       "n": 6,
@@ -526,7 +547,18 @@
       "must_not": [
         "fire, smoke",
         "Russian civilians in the streets"
-      ]
+      ],
+      "image": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "eecf3670-ea3d-48a2-b186-3e5488c75fd3",
+            "submitted": "2026-10-01T11:52:06+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "eecf3670-ea3d-48a2-b186-3e5488c75fd3"
+      }
     },
     {
       "n": 7,
@@ -551,7 +583,18 @@
       ],
       "must_not": [
         "daylight, snow"
-      ]
+      ],
+      "image": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "7287a216-d6d4-4d2d-b3e1-f7034298b7bd",
+            "submitted": "2026-10-01T11:52:07+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "7287a216-d6d4-4d2d-b3e1-f7034298b7bd"
+      }
     },
     {
       "n": 8,
@@ -568,10 +611,20 @@
       "sound": "clinking silver, laughter, distant fire crackling",
       "refs": [
         "antoine",
-        "morel",
-        "luc"
+        "morel"
       ],
-      "voice_mood": "intrigue"
+      "voice_mood": "intrigue",
+      "image": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "7fd7dea3-3e40-43ae-9c6b-d7cfe7a7f362",
+            "submitted": "2026-10-01T11:52:07+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "7fd7dea3-3e40-43ae-9c6b-d7cfe7a7f362"
+      }
     },
     {
       "n": 9,
@@ -595,7 +648,18 @@
       ],
       "must_not": [
         "snow on the ground"
-      ]
+      ],
+      "image": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "8ff0c667-b619-4e14-a244-95beeb85ed02",
+            "submitted": "2026-10-01T11:52:07+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "8ff0c667-b619-4e14-a244-95beeb85ed02"
+      }
     },
     {
       "n": 10,
@@ -614,7 +678,18 @@
         "morel",
         "cart"
       ],
-      "voice_mood": "tense"
+      "voice_mood": "tense",
+      "image": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "d9d627a0-03ba-492c-8338-b07e308dd79a",
+            "submitted": "2026-10-01T11:52:07+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "d9d627a0-03ba-492c-8338-b07e308dd79a"
+      }
     },
     {
       "n": 11,
@@ -639,7 +714,18 @@
       ],
       "must_not": [
         "summer green leaves"
-      ]
+      ],
+      "image": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "25108bdf-4fa0-43ed-916b-ff08f583aafe",
+            "submitted": "2026-10-01T11:52:07+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "25108bdf-4fa0-43ed-916b-ff08f583aafe"
+      }
     },
     {
       "n": 12,
@@ -658,7 +744,18 @@
         "antoine",
         "bivouac"
       ],
-      "voice_mood": "tense"
+      "voice_mood": "tense",
+      "image": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "057907dd-65d9-4d01-9f40-d5ef0286dc82",
+            "submitted": "2026-10-01T11:52:07+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "057907dd-65d9-4d01-9f40-d5ef0286dc82"
+      }
     },
     {
       "n": 13,
@@ -675,11 +772,21 @@
       "sound": "fire crackling, meat sizzling, wind, a soldier coughing",
       "refs": [
         "morel",
-        "luc",
         "antoine",
         "bivouac"
       ],
-      "voice_mood": "intrigue"
+      "voice_mood": "intrigue",
+      "image": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "42471194-1a5f-4119-9e27-d031f0f16559",
+            "submitted": "2026-10-01T11:53:24+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "42471194-1a5f-4119-9e27-d031f0f16559"
+      }
     },
     {
       "n": 14,
@@ -705,7 +812,18 @@
       ],
       "must_not": [
         "other people facing the camera"
-      ]
+      ],
+      "image": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "96d3ec8a-e727-4852-8142-2c60f179917b",
+            "submitted": "2026-10-01T11:53:24+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "96d3ec8a-e727-4852-8142-2c60f179917b"
+      }
     },
     {
       "n": 15,
@@ -726,7 +844,18 @@
         "therese",
         "bivouac"
       ],
-      "voice_mood": "intrigue"
+      "voice_mood": "intrigue",
+      "image": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "dc60696f-b67b-44b1-aaa6-d5a0de57c67a",
+            "submitted": "2026-10-01T11:53:24+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "dc60696f-b67b-44b1-aaa6-d5a0de57c67a"
+      }
     },
     {
       "n": 16,
@@ -743,10 +872,20 @@
       "sound": "shouting, wood splintering, wind, coins clinking",
       "refs": [
         "therese",
-        "luc",
         "antoine"
       ],
-      "voice_mood": "intrigue"
+      "voice_mood": "intrigue",
+      "image": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "172af77e-0cf1-48ce-8f03-0a604d02832f",
+            "submitted": "2026-10-01T11:53:24+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "172af77e-0cf1-48ce-8f03-0a604d02832f"
+      }
     },
     {
       "n": 17,
@@ -764,7 +903,18 @@
       "refs": [
         "bivouac"
       ],
-      "voice_mood": "intrigue"
+      "voice_mood": "intrigue",
+      "image": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "04219493-b0b1-4039-8d55-ed10778d2784",
+            "submitted": "2026-10-01T11:53:24+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "04219493-b0b1-4039-8d55-ed10778d2784"
+      }
     },
     {
       "n": 18,
@@ -781,11 +931,21 @@
       "sound": "fire crackling and popping, wind, a woman muttering",
       "refs": [
         "therese",
-        "luc",
         "antoine",
         "bivouac"
       ],
-      "voice_mood": "intrigue"
+      "voice_mood": "intrigue",
+      "image": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "39696711-9101-4494-b0ad-588a6cf21925",
+            "submitted": "2026-10-01T11:53:24+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "39696711-9101-4494-b0ad-588a6cf21925"
+      }
     },
     {
       "n": 19,
@@ -802,12 +962,22 @@
       "sound": "wind, a weak cough, a fire dying out",
       "refs": [
         "antoine",
-        "luc",
         "morel",
         "bivouac"
       ],
       "voice_mood": "tense",
-      "beat": "⚡ KIRILMA 3 (~6:20): Antoine"
+      "beat": "⚡ KIRILMA 3 (~6:20): Antoine",
+      "image": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "56e81ad1-80c5-4feb-ab0f-4c2cebfee3fb",
+            "submitted": "2026-10-01T11:53:24+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "56e81ad1-80c5-4feb-ab0f-4c2cebfee3fb"
+      }
     },
     {
       "n": 20,
@@ -826,7 +996,18 @@
         "morel",
         "bivouac"
       ],
-      "voice_mood": "tense"
+      "voice_mood": "tense",
+      "image": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "783f7de3-80cd-4a7c-9098-517ba79f5ede",
+            "submitted": "2026-10-01T11:53:24+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "783f7de3-80cd-4a7c-9098-517ba79f5ede"
+      }
     },
     {
       "n": 21,
@@ -844,7 +1025,18 @@
       "refs": [
         "bivouac"
       ],
-      "voice_mood": "tense"
+      "voice_mood": "tense",
+      "image": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "951614a2-a6f1-4876-a25f-9a207d9d9c63",
+            "submitted": "2026-10-01T11:53:24+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "951614a2-a6f1-4876-a25f-9a207d9d9c63"
+      }
     },
     {
       "n": 22,
@@ -869,7 +1061,18 @@
       ],
       "must_not": [
         "stone or iron bridges, boats with engines"
-      ]
+      ],
+      "image": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "a0629038-09fd-49ef-8455-7389c2d8ee3e",
+            "submitted": "2026-10-01T11:54:33+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "a0629038-09fd-49ef-8455-7389c2d8ee3e"
+      }
     },
     {
       "n": 23,
@@ -887,7 +1090,18 @@
       "refs": [
         "berezina"
       ],
-      "voice_mood": "tense"
+      "voice_mood": "tense",
+      "image": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "6257639d-597f-49d3-9048-80342fa99da3",
+            "submitted": "2026-10-01T11:54:33+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "6257639d-597f-49d3-9048-80342fa99da3"
+      }
     },
     {
       "n": 24,
@@ -907,7 +1121,18 @@
         "therese",
         "berezina"
       ],
-      "voice_mood": "tense"
+      "voice_mood": "tense",
+      "image": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "f04b01f3-bd3f-4ec9-8249-cfece6c0e6d7",
+            "submitted": "2026-10-01T11:54:33+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "f04b01f3-bd3f-4ec9-8249-cfece6c0e6d7"
+      }
     },
     {
       "n": 25,
@@ -923,10 +1148,20 @@
       ],
       "sound": "deep silent cold, snow creaking underfoot, faint wind",
       "refs": [
-        "luc",
         "bivouac"
       ],
-      "voice_mood": "tense"
+      "voice_mood": "tense",
+      "image": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "fa9b040a-546f-4314-9fac-babae0f16d27",
+            "submitted": "2026-10-01T11:54:33+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "fa9b040a-546f-4314-9fac-babae0f16d27"
+      }
     },
     {
       "n": 26,
@@ -948,7 +1183,18 @@
       ],
       "must_not": [
         "any visible face in the sleigh"
-      ]
+      ],
+      "image": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "67dea932-0e47-4187-b446-074c16ef14d2",
+            "submitted": "2026-10-01T11:54:33+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "67dea932-0e47-4187-b446-074c16ef14d2"
+      }
     },
     {
       "n": 27,
@@ -965,10 +1211,20 @@
       "sound": "ice creaking, wind, slow footsteps",
       "refs": [
         "morel",
-        "therese",
-        "luc"
+        "therese"
       ],
-      "voice_mood": "relief"
+      "voice_mood": "relief",
+      "image": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "6c975002-e361-4a83-93ec-03d6924d11e2",
+            "submitted": "2026-10-01T11:54:33+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "6c975002-e361-4a83-93ec-03d6924d11e2"
+      }
     },
     {
       "n": 28,
@@ -994,7 +1250,18 @@
       ],
       "must_not": [
         "other people facing the camera"
-      ]
+      ],
+      "image": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "cf8670a9-919e-4739-bc57-170b3185d764",
+            "submitted": "2026-10-01T11:54:34+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "cf8670a9-919e-4739-bc57-170b3185d764"
+      }
     },
     {
       "n": 29,
@@ -1010,7 +1277,6 @@
       ],
       "sound": "birdsong, a gentle breeze, a door creaking",
       "refs": [
-        "luc",
         "auvergne"
       ],
       "voice_mood": "outro",
@@ -1019,7 +1285,18 @@
       ],
       "must_not": [
         "snow"
-      ]
+      ],
+      "image": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "accfcf37-02c6-43e4-bd96-669ae9b0c04a",
+            "submitted": "2026-10-01T11:54:34+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "accfcf37-02c6-43e4-bd96-669ae9b0c04a"
+      }
     },
     {
       "n": 30,
@@ -1036,7 +1313,25 @@
       "sound": "wind in pine trees, wagon wheels creaking, a gentle fire",
       "refs": [],
       "voice_mood": "outro",
-      "beat": "BİTİŞ EKRANI (son 20 sn)"
+      "beat": "BİTİŞ EKRANI (son 20 sn)",
+      "image": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "be195c90-7f91-4351-ae84-e1496857b099",
+            "submitted": "2026-10-01T11:54:34+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "be195c90-7f91-4351-ae84-e1496857b099"
+      },
+      "own_rules": true,
+      "must": [
+        "oxen-drawn covered wagons, pine forests, snowy granite peaks, first snow falling"
+      ],
+      "must_not": [
+        "soldiers, military uniforms, shakos"
+      ]
     }
   ],
   "max_credits": 330,

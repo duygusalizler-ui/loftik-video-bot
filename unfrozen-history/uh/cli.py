@@ -63,8 +63,9 @@ def full_prompt(ep: dict, s: dict, kind: str) -> str:
 
 def rules(ep: dict, s: dict) -> str:
     """Bölüm + sahne düzeyinde açık kurallar: olması gerekenler / kesinlikle olmaması gerekenler."""
-    must = ep.get("must", []) + s.get("must", [])
-    must_not = ep.get("must_not", []) + s.get("must_not", [])
+    base = not s.get("own_rules")  # dönem dışı sahne (ör. sonraki bölüm tanıtımı) bölüm kurallarını almaz
+    must = (ep.get("must", []) if base else []) + s.get("must", [])
+    must_not = (ep.get("must_not", []) if base else ["any text, letters, numbers, logos or watermark", "modern objects", "extra fingers, deformed hands, duplicated faces"]) + s.get("must_not", [])
     out = ""
     if must:
         out += " MUST SHOW: " + "; ".join(must) + "."
