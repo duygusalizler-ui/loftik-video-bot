@@ -323,7 +323,15 @@
           }
         ],
         "job_id": "77a5ff9c-7b75-4ac3-b742-dd329c4f1839"
-      }
+      },
+      "must": [
+        "night, deep snow, small campfires",
+        "the narrator's own rag-wrapped hands in the foreground"
+      ],
+      "must_not": [
+        "the narrator's face (first-person view)",
+        "tents, houses with lit windows"
+      ]
     },
     {
       "n": 2,
@@ -367,7 +375,15 @@
         "job_id": "96d4e942-06dd-4c8d-b087-61ebe9cd17cd",
         "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_110120_96d4e942-06dd-4c8d-b087-61ebe9cd17cd.mp4",
         "finished": "2026-10-01T11:04:13+00:00"
-      }
+      },
+      "must": [
+        "hot summer sun, green fields, dust",
+        "pontoon bridge of boats and planks"
+      ],
+      "must_not": [
+        "snow or ice",
+        "the narrator's face (first-person view)"
+      ]
     },
     {
       "n": 3,
@@ -414,7 +430,15 @@
           }
         ],
         "job_id": "2e5c4247-b37e-4cb5-bfd9-adc17bf24e8c"
-      }
+      },
+      "must": [
+        "summer dusty road",
+        "Antoine with red hair and freckles; Morel with grey moustache; Thérèse in a red headscarf"
+      ],
+      "must_not": [
+        "snow",
+        "the narrator's face (first-person view)"
+      ]
     },
     {
       "n": 4,
@@ -452,7 +476,13 @@
       "voice_mood": "intrigue",
       "lipsync": true,
       "min_speed": 1.0,
-      "no_ambience": true
+      "no_ambience": true,
+      "must": [
+        "Luc looking straight into the camera, mouth free to speak"
+      ],
+      "must_not": [
+        "other people facing the camera"
+      ]
     },
     {
       "n": 6,
@@ -471,7 +501,14 @@
         "moscow",
         "antoine"
       ],
-      "voice_mood": "intrigue"
+      "voice_mood": "intrigue",
+      "must": [
+        "calm sunny empty city, golden onion domes"
+      ],
+      "must_not": [
+        "fire, smoke",
+        "Russian civilians in the streets"
+      ]
     },
     {
       "n": 7,
@@ -490,7 +527,13 @@
         "moscow"
       ],
       "voice_mood": "tense",
-      "beat": "⚡ KIRILMA 1 (~1:50): Moskova yanıyor"
+      "beat": "⚡ KIRILMA 1 (~1:50): Moskova yanıyor",
+      "must": [
+        "night, fire, red sky"
+      ],
+      "must_not": [
+        "daylight, snow"
+      ]
     },
     {
       "n": 8,
@@ -528,7 +571,13 @@
       "refs": [
         "moscow"
       ],
-      "voice_mood": "intrigue"
+      "voice_mood": "intrigue",
+      "must": [
+        "golden autumn light, burned ruins"
+      ],
+      "must_not": [
+        "snow on the ground"
+      ]
     },
     {
       "n": 10,
@@ -566,7 +615,13 @@
         "bivouac"
       ],
       "voice_mood": "tense",
-      "beat": "⚡ KIRILMA 2 (~3:40): İlk kar, buzda atlar"
+      "beat": "⚡ KIRILMA 2 (~3:40): İlk kar, buzda atlar",
+      "must": [
+        "first snow and icy road"
+      ],
+      "must_not": [
+        "summer green leaves"
+      ]
     },
     {
       "n": 12,
@@ -626,7 +681,13 @@
       "voice_mood": "tense",
       "lipsync": true,
       "min_speed": 1.0,
-      "no_ambience": true
+      "no_ambience": true,
+      "must": [
+        "Luc looking straight into the camera in falling snow"
+      ],
+      "must_not": [
+        "other people facing the camera"
+      ]
     },
     {
       "n": 15,
@@ -784,7 +845,13 @@
         "berezina"
       ],
       "voice_mood": "tense",
-      "beat": "⚡ KIRILMA 4 (~7:30): Berezina"
+      "beat": "⚡ KIRILMA 4 (~7:30): Berezina",
+      "must": [
+        "engineers chest-deep in icy water building wooden trestle bridges"
+      ],
+      "must_not": [
+        "stone or iron bridges, boats with engines"
+      ]
     },
     {
       "n": 23,
@@ -857,7 +924,13 @@
       ],
       "sound": "sleigh bells fading, wind, a crowd murmuring",
       "refs": [],
-      "voice_mood": "tense"
+      "voice_mood": "tense",
+      "must": [
+        "a sleigh seen from far away at night"
+      ],
+      "must_not": [
+        "any visible face in the sleigh"
+      ]
     },
     {
       "n": 27,
@@ -897,7 +970,13 @@
       "voice_mood": "warm",
       "lipsync": true,
       "min_speed": 1.0,
-      "no_ambience": true
+      "no_ambience": true,
+      "must": [
+        "Luc looking straight into the camera by a small fire"
+      ],
+      "must_not": [
+        "other people facing the camera"
+      ]
     },
     {
       "n": 29,
@@ -916,7 +995,13 @@
         "luc",
         "auvergne"
       ],
-      "voice_mood": "outro"
+      "voice_mood": "outro",
+      "must": [
+        "spring, green hills, stone farmhouse"
+      ],
+      "must_not": [
+        "snow"
+      ]
     },
     {
       "n": 30,
@@ -937,5 +1022,20 @@
     }
   ],
   "max_credits": 330,
-  "music_credit": "Music by Kevin MacLeod (incompetech.com), licensed under Creative Commons: By Attribution 4.0 — \"Frozen Star\", \"Lost Frontier\", \"Darkest Child\", \"Ossuary 6 - Air\", \"Dark Times\", \"Crossing the Chasm\", \"Winter Reflections\", \"Long Note Four\", \"Dreams Become Real\""
+  "music_credit": "Music by Kevin MacLeod (incompetech.com), licensed under Creative Commons: By Attribution 4.0 — \"Frozen Star\", \"Lost Frontier\", \"Darkest Child\", \"Ossuary 6 - Air\", \"Dark Times\", \"Crossing the Chasm\", \"Winter Reflections\", \"Long Note Four\", \"Dreams Become Real\"",
+  "must": [
+    "historically accurate 1812 details only",
+    "French line infantry: dark blue coat with white lapels and white crossbelts, grey-brown greatcoat, black shako, flintlock musket with bayonet",
+    "the same faces, hair and clothes as in the reference images for every named character",
+    "painterly gouache look in every frame"
+  ],
+  "must_not": [
+    "any text, letters, numbers, captions, logos or watermark",
+    "modern objects: zippers, plastic, rubber boots, sunglasses, modern rifles, helmets, backpacks with straps and buckles of modern design",
+    "cars, trains, engines, electric lights, power lines, paved asphalt roads",
+    "Napoleon's face or a close-up of Napoleon",
+    "horned helmets, armour, knights, swords on infantrymen",
+    "gore, open wounds, blood pools, corpses in close-up",
+    "extra fingers, deformed hands, duplicated faces"
+  ]
 }

@@ -55,10 +55,22 @@ def full_prompt(ep: dict, s: dict, kind: str) -> str:
     if kind == "image":
         pov = f" {ep.get('pov_hint', C.POV_HINT)}." if s.get("pov") else ""
         lead = C.REF_LEAD + " " if s.get("refs") else ""
-        return f"{lead}{s['image_prompt']}.{pov} {ep['setting']}. Style: {style}."
+        return f"{lead}{s['image_prompt']}.{pov} {ep['setting']}. Style: {style}.{rules(ep, s)}"
     shots = " ".join(f"Shot {i}: {t}." for i, t in enumerate(s["shots"], 1))
     return (f"Multi-shot sequence, about 5 seconds per shot. {shots} {ep.get('motion_suffix', C.MOTION_SUFFIX)}. "
-            f"Sound: {s['sound']}. {C.SOUND_SUFFIX}.")
+            f"Sound: {s['sound']}. {C.SOUND_SUFFIX}.{rules(ep, s)}")
+
+
+def rules(ep: dict, s: dict) -> str:
+    """Bölüm + sahne düzeyinde açık kurallar: olması gerekenler / kesinlikle olmaması gerekenler."""
+    must = ep.get("must", []) + s.get("must", [])
+    must_not = ep.get("must_not", []) + s.get("must_not", [])
+    out = ""
+    if must:
+        out += " MUST SHOW: " + "; ".join(must) + "."
+    if must_not:
+        out += " MUST NOT SHOW (strictly forbidden): " + "; ".join(must_not) + "."
+    return out
 
 
 def cmd_status(a):
