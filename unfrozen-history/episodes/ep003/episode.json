@@ -504,8 +504,8 @@
       "n": 5,
       "title": "Morel's rules",
       "pov": false,
-      "narration": "Let me tell you about Sergeant Morel. He has rules. A rule for everything. Sleep with your boots under your head. Never drink water you haven't boiled. And the most important one. I didn't understand it in the summer. But I will. Soon.",
-      "narration_voiced": "Let me tell you about Sergeant Morel. He has rules. A rule for EVERYTHING. Sleep with your boots under your head. Never drink water you haven't boiled. And the most important one... I didn't understand it in the summer. But I will. Soon.",
+      "narration": "Sergeant Morel has rules. A rule for everything. Sleep with your boots under your head. Boil your water. And the most important one: I didn't understand it in the summer. I will. Soon.",
+      "narration_voiced": "Sergeant Morel has rules. A rule for EVERYTHING. Sleep with your boots under your head. Boil your water. And the most important one... I didn't understand it in the summer. I will. Soon.",
       "image_prompt": "Medium close-up of Luc (French conscript soldier about 20, thin young face, dark curly hair, light stubble, dark blue French line infantry coat with white lapels under a worn grey-brown greatcoat, black shako with a brass plate) sitting on a wooden crate at a summer army camp at dusk, looking straight into the camera as if talking to the viewer, a campfire glowing beside him, tents and soldiers softly out of focus behind",
       "shots": [
         "Luc looks straight into the camera and speaks to the viewer"
@@ -536,6 +536,18 @@
         "job_id": "ff7c0486-d293-4d2c-9a5b-33c36483ef5f",
         "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_115154_ff7c0486-d293-4d2c-9a5b-33c36483ef5f.png",
         "finished": "2026-10-01T11:55:28+00:00"
+      },
+      "note": "lip-sync: wan2_7 sınırı ~13 sn, metin kısaltıldı",
+      "clip": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "fdbbe6bc-59de-493f-802c-9f9bf7c537b1",
+            "submitted": "2026-10-01T12:06:51+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "fdbbe6bc-59de-493f-802c-9f9bf7c537b1"
       }
     },
     {
@@ -991,8 +1003,8 @@
       "n": 14,
       "title": "Rule number one",
       "pov": false,
-      "narration": "And here it is. Morel's first rule. Never. Sit. Down. When you are this tired and this cold, the snow feels soft. Even warm. You sit down for one minute, just to rest and you fall asleep. And you never wake up. Walk. Always walk.",
-      "narration_voiced": "And here it is. Morel's first rule. Never. Sit. Down. When you are this tired and this cold, the snow feels soft. Even warm. You sit down for one minute, just to rest... and you fall asleep. And you never wake up. Walk. Always walk.",
+      "narration": "Morel's first rule. Never. Sit. Down. The snow feels soft. Even warm. You sit down for one minute and you never wake up. Walk. Always walk.",
+      "narration_voiced": "Morel's first rule. Never. Sit. Down. The snow feels soft. Even warm. You sit down for one minute... and you never wake up. Walk. Always walk.",
       "image_prompt": "Medium close-up of Luc (French conscript soldier about 20, thin frostbitten young face, dark curly hair, frost in his stubble, wrapped in a worn grey-brown greatcoat with a lady's dark fur-lined cloak over his shoulders, a wool scarf tied over his shako and ears) standing on a snowy road in grey daylight, looking straight into the camera as if talking to the viewer, snow falling, the retreating column passing softly out of focus behind him",
       "shots": [
         "Luc looks straight into the camera and speaks to the viewer"
@@ -1024,6 +1036,18 @@
         "job_id": "96d3ec8a-e727-4852-8142-2c60f179917b",
         "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_115312_96d3ec8a-e727-4852-8142-2c60f179917b.png",
         "finished": "2026-10-01T11:57:16+00:00"
+      },
+      "note": "lip-sync: wan2_7 sınırı ~13 sn, metin kısaltıldı",
+      "clip": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "76ee322b-bc5c-4c57-bae9-4ad616ffa0d3",
+            "submitted": "2026-10-01T12:06:51+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "76ee322b-bc5c-4c57-bae9-4ad616ffa0d3"
       }
     },
     {
@@ -1618,8 +1642,8 @@
       "n": 28,
       "title": "How I survived",
       "pov": false,
-      "narration": "So how did I survive the Russian winter? I took furs, not silver. I never sat down. I warmed my frozen hands slowly. I shook the lice into the fire. I ate horse with gunpowder. And I never, ever walked alone.",
-      "narration_voiced": "So how did I survive the Russian winter? I took furs, not silver. I never sat down. I warmed my frozen hands slowly. I shook the lice into the fire. I ate horse... with gunpowder. And I never, ever walked alone.",
+      "narration": "So how did I survive? I took furs, not silver. I never sat down. I warmed my hands slowly. I ate horse with gunpowder. And I never walked alone.",
+      "narration_voiced": "So how did I survive? I took furs, not silver. I never sat down. I warmed my hands slowly. I ate horse... with gunpowder. And I never walked alone.",
       "image_prompt": "Medium close-up of Luc (French conscript soldier about 20, thin frostbitten young face, dark curly hair, frost in his stubble, wrapped in a worn grey-brown greatcoat with a lady's dark fur-lined cloak over his shoulders, a wool scarf tied over his shako and ears) sitting by a small fire in a quiet snowy forest at dusk, looking straight into the camera as if talking to the viewer, warm firelight on his tired face",
       "shots": [
         "Luc looks straight into the camera and speaks to the viewer"
@@ -1651,6 +1675,18 @@
         "job_id": "cf8670a9-919e-4739-bc57-170b3185d764",
         "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_115420_cf8670a9-919e-4739-bc57-170b3185d764.png",
         "finished": "2026-10-01T11:57:34+00:00"
+      },
+      "note": "lip-sync: wan2_7 sınırı ~13 sn, metin kısaltıldı",
+      "clip": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "ac21fd3d-248d-4245-9f29-9eb3e21f51c0",
+            "submitted": "2026-10-01T12:06:51+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "ac21fd3d-248d-4245-9f29-9eb3e21f51c0"
       }
     },
     {
