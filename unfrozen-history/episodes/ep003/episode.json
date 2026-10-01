@@ -1801,7 +1801,20 @@
         "finished": "2026-10-01T12:09:03+00:00"
       },
       "cta": true,
-      "note": "anlatım sonuna kapanış çağrısı eklendi (audio_eleven/029.mp3 = hikâye + 1 sn + çağrı); ikinci klip: Luc köyde gün batımı"
+      "note": "anlatım sonuna kapanış çağrısı eklendi (audio_eleven/029.mp3 = hikâye + 1 sn + çağrı); ikinci klip: Luc köyde gün batımı",
+      "clip_composite": [
+        [
+          "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_120255_71ad32f3-9341-41e7-9209-ec37e5dce276.mp4",
+          0,
+          15.0
+        ],
+        [
+          "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_170309_68de6347-5e00-478e-b58c-619e115a3664.mp4",
+          0,
+          15.0
+        ]
+      ],
+      "min_speed": 0.5
     },
     {
       "n": 30,
