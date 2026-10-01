@@ -487,6 +487,17 @@
         "job_id": "569fe017-91e3-45bc-8782-cd9830c1a302",
         "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_115154_569fe017-91e3-45bc-8782-cd9830c1a302.png",
         "finished": "2026-10-01T11:55:28+00:00"
+      },
+      "clip": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "9a8991af-2337-4909-a505-6b763e632396",
+            "submitted": "2026-10-01T12:01:02+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "9a8991af-2337-4909-a505-6b763e632396"
       }
     },
     {
@@ -582,6 +593,17 @@
         "job_id": "6e2065dc-56d9-47ba-8474-4b01357b3a21",
         "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_115650_6e2065dc-56d9-47ba-8474-4b01357b3a21.png",
         "finished": "2026-10-01T11:58:20+00:00"
+      },
+      "clip": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "5b76315a-a7ff-425f-bc34-9ab7900a27a5",
+            "submitted": "2026-10-01T12:01:02+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "5b76315a-a7ff-425f-bc34-9ab7900a27a5"
       }
     },
     {
@@ -620,6 +642,17 @@
         "job_id": "7287a216-d6d4-4d2d-b3e1-f7034298b7bd",
         "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_115154_7287a216-d6d4-4d2d-b3e1-f7034298b7bd.png",
         "finished": "2026-10-01T11:55:28+00:00"
+      },
+      "clip": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "0c7518a9-f6c0-474b-8a75-437a99b33727",
+            "submitted": "2026-10-01T12:01:02+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "0c7518a9-f6c0-474b-8a75-437a99b33727"
       }
     },
     {
@@ -672,7 +705,18 @@
       },
       "must_not": [
         "snow or winter visible through windows (it is September)"
-      ]
+      ],
+      "clip": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "cecaa0ab-16a2-4c4e-afab-3baec0ceaac3",
+            "submitted": "2026-10-01T12:01:02+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "cecaa0ab-16a2-4c4e-afab-3baec0ceaac3"
+      }
     },
     {
       "n": 9,
@@ -709,6 +753,17 @@
         "job_id": "8ff0c667-b619-4e14-a244-95beeb85ed02",
         "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_115155_8ff0c667-b619-4e14-a244-95beeb85ed02.png",
         "finished": "2026-10-01T11:55:29+00:00"
+      },
+      "clip": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "594b1b72-8176-4d31-9841-1bdf45c442f4",
+            "submitted": "2026-10-01T12:01:02+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "594b1b72-8176-4d31-9841-1bdf45c442f4"
       }
     },
     {
@@ -765,7 +820,18 @@
       "must_not": [
         "a second man who looks like Morel",
         "snow on the ground (mud and bare trees only)"
-      ]
+      ],
+      "clip": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "1985f8c7-2c49-4d52-a0b6-7de0c855a406",
+            "submitted": "2026-10-01T12:01:02+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "1985f8c7-2c49-4d52-a0b6-7de0c855a406"
+      }
     },
     {
       "n": 11,
@@ -821,6 +887,17 @@
         "job_id": "23a4637a-6e9e-400a-b350-46df5cc27093",
         "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_115650_23a4637a-6e9e-400a-b350-46df5cc27093.png",
         "finished": "2026-10-01T11:58:24+00:00"
+      },
+      "clip": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "702f8d7d-2658-4348-9dd4-36473eec3ac8",
+            "submitted": "2026-10-01T12:01:02+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "702f8d7d-2658-4348-9dd4-36473eec3ac8"
       }
     },
     {
@@ -853,6 +930,17 @@
         "job_id": "057907dd-65d9-4d01-9f40-d5ef0286dc82",
         "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_115156_057907dd-65d9-4d01-9f40-d5ef0286dc82.png",
         "finished": "2026-10-01T11:55:29+00:00"
+      },
+      "clip": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "14e371c3-f0c1-493c-b102-3e8854d5c7bc",
+            "submitted": "2026-10-01T12:01:02+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "14e371c3-f0c1-493c-b102-3e8854d5c7bc"
       }
     },
     {
@@ -886,6 +974,17 @@
         "job_id": "42471194-1a5f-4119-9e27-d031f0f16559",
         "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_115312_42471194-1a5f-4119-9e27-d031f0f16559.png",
         "finished": "2026-10-01T11:57:15+00:00"
+      },
+      "clip": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "7a97746d-546a-4f71-a5d1-9e2668f436db",
+            "submitted": "2026-10-01T12:01:02+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "7a97746d-546a-4f71-a5d1-9e2668f436db"
       }
     },
     {
@@ -959,6 +1058,17 @@
         "job_id": "dc60696f-b67b-44b1-aaa6-d5a0de57c67a",
         "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_115312_dc60696f-b67b-44b1-aaa6-d5a0de57c67a.png",
         "finished": "2026-10-01T11:57:18+00:00"
+      },
+      "clip": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "7f7a90cf-c559-4418-9a6b-22e851fb9aea",
+            "submitted": "2026-10-01T12:01:03+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "7f7a90cf-c559-4418-9a6b-22e851fb9aea"
       }
     },
     {
@@ -991,6 +1101,17 @@
         "job_id": "172af77e-0cf1-48ce-8f03-0a604d02832f",
         "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_115312_172af77e-0cf1-48ce-8f03-0a604d02832f.png",
         "finished": "2026-10-01T11:57:19+00:00"
+      },
+      "clip": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "0c4f89fc-9a12-4135-adc6-63129167c0bb",
+            "submitted": "2026-10-01T12:01:03+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "0c4f89fc-9a12-4135-adc6-63129167c0bb"
       }
     },
     {
@@ -1022,6 +1143,17 @@
         "job_id": "04219493-b0b1-4039-8d55-ed10778d2784",
         "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_115312_04219493-b0b1-4039-8d55-ed10778d2784.png",
         "finished": "2026-10-01T11:57:19+00:00"
+      },
+      "clip": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "725895c1-2d63-421b-b5e1-6978ddc40f49",
+            "submitted": "2026-10-01T12:01:03+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "725895c1-2d63-421b-b5e1-6978ddc40f49"
       }
     },
     {
@@ -1055,6 +1187,17 @@
         "job_id": "39696711-9101-4494-b0ad-588a6cf21925",
         "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_115312_39696711-9101-4494-b0ad-588a6cf21925.png",
         "finished": "2026-10-01T11:57:21+00:00"
+      },
+      "clip": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "f8011a3e-9c8f-4521-a711-00d11d7800cc",
+            "submitted": "2026-10-01T12:03:11+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "f8011a3e-9c8f-4521-a711-00d11d7800cc"
       }
     },
     {
@@ -1089,6 +1232,17 @@
         "job_id": "56e81ad1-80c5-4feb-ab0f-4c2cebfee3fb",
         "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_115312_56e81ad1-80c5-4feb-ab0f-4c2cebfee3fb.png",
         "finished": "2026-10-01T11:57:22+00:00"
+      },
+      "clip": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "196ef815-b28e-4a6d-9105-b65556f2cd4b",
+            "submitted": "2026-10-01T12:03:11+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "196ef815-b28e-4a6d-9105-b65556f2cd4b"
       }
     },
     {
@@ -1121,6 +1275,17 @@
         "job_id": "783f7de3-80cd-4a7c-9098-517ba79f5ede",
         "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_115312_783f7de3-80cd-4a7c-9098-517ba79f5ede.png",
         "finished": "2026-10-01T11:57:23+00:00"
+      },
+      "clip": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "2e9a208a-cc69-4ab2-89da-3936a79ca621",
+            "submitted": "2026-10-01T12:03:11+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "2e9a208a-cc69-4ab2-89da-3936a79ca621"
       }
     },
     {
@@ -1152,6 +1317,17 @@
         "job_id": "951614a2-a6f1-4876-a25f-9a207d9d9c63",
         "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_115312_951614a2-a6f1-4876-a25f-9a207d9d9c63.png",
         "finished": "2026-10-01T11:57:25+00:00"
+      },
+      "clip": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "a4325128-122a-49d6-95ea-78abfebc62ef",
+            "submitted": "2026-10-01T12:03:11+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "a4325128-122a-49d6-95ea-78abfebc62ef"
       }
     },
     {
@@ -1190,6 +1366,17 @@
         "job_id": "a0629038-09fd-49ef-8455-7389c2d8ee3e",
         "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_115420_a0629038-09fd-49ef-8455-7389c2d8ee3e.png",
         "finished": "2026-10-01T11:57:26+00:00"
+      },
+      "clip": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "a94f6fa2-15a1-49fd-9ab9-22dc8b0bbfa7",
+            "submitted": "2026-10-01T12:03:11+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "a94f6fa2-15a1-49fd-9ab9-22dc8b0bbfa7"
       }
     },
     {
@@ -1221,6 +1408,17 @@
         "job_id": "6257639d-597f-49d3-9048-80342fa99da3",
         "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_115420_6257639d-597f-49d3-9048-80342fa99da3.png",
         "finished": "2026-10-01T11:57:27+00:00"
+      },
+      "clip": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "50e6db6b-94d8-412d-8099-fafcd9921ccb",
+            "submitted": "2026-10-01T12:03:11+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "50e6db6b-94d8-412d-8099-fafcd9921ccb"
       }
     },
     {
@@ -1254,6 +1452,17 @@
         "job_id": "f04b01f3-bd3f-4ec9-8249-cfece6c0e6d7",
         "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_115420_f04b01f3-bd3f-4ec9-8249-cfece6c0e6d7.png",
         "finished": "2026-10-01T11:57:28+00:00"
+      },
+      "clip": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "7d8218f6-5f8a-4c37-9b0a-c9154e4b885d",
+            "submitted": "2026-10-01T12:03:11+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "7d8218f6-5f8a-4c37-9b0a-c9154e4b885d"
       }
     },
     {
@@ -1285,6 +1494,17 @@
         "job_id": "fa9b040a-546f-4314-9fac-babae0f16d27",
         "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_115419_fa9b040a-546f-4314-9fac-babae0f16d27.png",
         "finished": "2026-10-01T11:57:30+00:00"
+      },
+      "clip": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "a0fd2f97-4830-4ac9-bd1f-875c9a6bba9b",
+            "submitted": "2026-10-01T12:03:12+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "a0fd2f97-4830-4ac9-bd1f-875c9a6bba9b"
       }
     },
     {
@@ -1338,6 +1558,17 @@
         "job_id": "2cbff0db-3638-49f3-9c93-81fe1669ed90",
         "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_115809_2cbff0db-3638-49f3-9c93-81fe1669ed90.png",
         "finished": "2026-10-01T11:59:08+00:00"
+      },
+      "clip": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "0230d960-a66f-46e0-b80d-c4b774515385",
+            "submitted": "2026-10-01T12:03:12+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "0230d960-a66f-46e0-b80d-c4b774515385"
       }
     },
     {
@@ -1370,6 +1601,17 @@
         "job_id": "6c975002-e361-4a83-93ec-03d6924d11e2",
         "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_115420_6c975002-e361-4a83-93ec-03d6924d11e2.png",
         "finished": "2026-10-01T11:57:32+00:00"
+      },
+      "clip": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "b542234b-0c16-40a3-bcdb-f6b2cca1b45a",
+            "submitted": "2026-10-01T12:03:12+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "b542234b-0c16-40a3-bcdb-f6b2cca1b45a"
       }
     },
     {
@@ -1446,6 +1688,17 @@
         "job_id": "accfcf37-02c6-43e4-bd96-669ae9b0c04a",
         "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_115420_accfcf37-02c6-43e4-bd96-669ae9b0c04a.png",
         "finished": "2026-10-01T11:57:35+00:00"
+      },
+      "clip": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "71ad32f3-9341-41e7-9209-ec37e5dce276",
+            "submitted": "2026-10-01T12:03:12+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "71ad32f3-9341-41e7-9209-ec37e5dce276"
       }
     },
     {
@@ -1483,7 +1736,18 @@
       ],
       "must_not": [
         "soldiers, military uniforms, shakos"
-      ]
+      ],
+      "clip": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "b1363330-de38-4598-b9fa-5948edd2ab5a",
+            "submitted": "2026-10-01T12:03:12+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "b1363330-de38-4598-b9fa-5948edd2ab5a"
+      }
     }
   ],
   "max_credits": 330,
