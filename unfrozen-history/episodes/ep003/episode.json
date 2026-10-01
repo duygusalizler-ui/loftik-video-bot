@@ -1243,7 +1243,7 @@
         "finished": "2026-10-01T11:57:21+00:00"
       },
       "clip": {
-        "status": "running",
+        "status": "done",
         "attempts": [
           {
             "job_id": "f8011a3e-9c8f-4521-a711-00d11d7800cc",
@@ -1251,7 +1251,9 @@
             "credits": 7.5
           }
         ],
-        "job_id": "f8011a3e-9c8f-4521-a711-00d11d7800cc"
+        "job_id": "f8011a3e-9c8f-4521-a711-00d11d7800cc",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_120255_f8011a3e-9c8f-4521-a711-00d11d7800cc.mp4",
+        "finished": "2026-10-01T12:08:43+00:00"
       }
     },
     {
@@ -1288,7 +1290,7 @@
         "finished": "2026-10-01T11:57:22+00:00"
       },
       "clip": {
-        "status": "running",
+        "status": "done",
         "attempts": [
           {
             "job_id": "196ef815-b28e-4a6d-9105-b65556f2cd4b",
@@ -1296,7 +1298,9 @@
             "credits": 7.5
           }
         ],
-        "job_id": "196ef815-b28e-4a6d-9105-b65556f2cd4b"
+        "job_id": "196ef815-b28e-4a6d-9105-b65556f2cd4b",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_120255_196ef815-b28e-4a6d-9105-b65556f2cd4b.mp4",
+        "finished": "2026-10-01T12:08:45+00:00"
       }
     },
     {
@@ -1331,7 +1335,7 @@
         "finished": "2026-10-01T11:57:23+00:00"
       },
       "clip": {
-        "status": "running",
+        "status": "done",
         "attempts": [
           {
             "job_id": "2e9a208a-cc69-4ab2-89da-3936a79ca621",
@@ -1339,7 +1343,9 @@
             "credits": 7.5
           }
         ],
-        "job_id": "2e9a208a-cc69-4ab2-89da-3936a79ca621"
+        "job_id": "2e9a208a-cc69-4ab2-89da-3936a79ca621",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_120255_2e9a208a-cc69-4ab2-89da-3936a79ca621.mp4",
+        "finished": "2026-10-01T12:08:47+00:00"
       }
     },
     {
@@ -1373,7 +1379,7 @@
         "finished": "2026-10-01T11:57:25+00:00"
       },
       "clip": {
-        "status": "running",
+        "status": "done",
         "attempts": [
           {
             "job_id": "a4325128-122a-49d6-95ea-78abfebc62ef",
@@ -1381,8 +1387,16 @@
             "credits": 7.5
           }
         ],
-        "job_id": "a4325128-122a-49d6-95ea-78abfebc62ef"
-      }
+        "job_id": "a4325128-122a-49d6-95ea-78abfebc62ef",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_120255_a4325128-122a-49d6-95ea-78abfebc62ef.mp4",
+        "finished": "2026-10-01T12:08:48+00:00"
+      },
+      "clip_range": [
+        0,
+        12.25
+      ],
+      "min_speed": 0.55,
+      "note": "12.375 sn sonrası aynı yüzlü asker duvarı (klon) — kesildi"
     },
     {
       "n": 22,
@@ -1422,7 +1436,7 @@
         "finished": "2026-10-01T11:57:26+00:00"
       },
       "clip": {
-        "status": "running",
+        "status": "done",
         "attempts": [
           {
             "job_id": "a94f6fa2-15a1-49fd-9ab9-22dc8b0bbfa7",
@@ -1430,7 +1444,9 @@
             "credits": 7.5
           }
         ],
-        "job_id": "a94f6fa2-15a1-49fd-9ab9-22dc8b0bbfa7"
+        "job_id": "a94f6fa2-15a1-49fd-9ab9-22dc8b0bbfa7",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_120255_a94f6fa2-15a1-49fd-9ab9-22dc8b0bbfa7.mp4",
+        "finished": "2026-10-01T12:08:50+00:00"
       }
     },
     {
@@ -1464,7 +1480,7 @@
         "finished": "2026-10-01T11:57:27+00:00"
       },
       "clip": {
-        "status": "running",
+        "status": "done",
         "attempts": [
           {
             "job_id": "50e6db6b-94d8-412d-8099-fafcd9921ccb",
@@ -1472,7 +1488,9 @@
             "credits": 7.5
           }
         ],
-        "job_id": "50e6db6b-94d8-412d-8099-fafcd9921ccb"
+        "job_id": "50e6db6b-94d8-412d-8099-fafcd9921ccb",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_120257_50e6db6b-94d8-412d-8099-fafcd9921ccb.mp4",
+        "finished": "2026-10-01T12:08:53+00:00"
       }
     },
     {
@@ -1508,7 +1526,7 @@
         "finished": "2026-10-01T11:57:28+00:00"
       },
       "clip": {
-        "status": "running",
+        "status": "done",
         "attempts": [
           {
             "job_id": "7d8218f6-5f8a-4c37-9b0a-c9154e4b885d",
@@ -1516,7 +1534,9 @@
             "credits": 7.5
           }
         ],
-        "job_id": "7d8218f6-5f8a-4c37-9b0a-c9154e4b885d"
+        "job_id": "7d8218f6-5f8a-4c37-9b0a-c9154e4b885d",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_120255_7d8218f6-5f8a-4c37-9b0a-c9154e4b885d.mp4",
+        "finished": "2026-10-01T12:08:55+00:00"
       }
     },
     {
@@ -1550,7 +1570,7 @@
         "finished": "2026-10-01T11:57:30+00:00"
       },
       "clip": {
-        "status": "running",
+        "status": "done",
         "attempts": [
           {
             "job_id": "a0fd2f97-4830-4ac9-bd1f-875c9a6bba9b",
@@ -1558,7 +1578,9 @@
             "credits": 7.5
           }
         ],
-        "job_id": "a0fd2f97-4830-4ac9-bd1f-875c9a6bba9b"
+        "job_id": "a0fd2f97-4830-4ac9-bd1f-875c9a6bba9b",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_120255_a0fd2f97-4830-4ac9-bd1f-875c9a6bba9b.mp4",
+        "finished": "2026-10-01T12:08:57+00:00"
       }
     },
     {
@@ -1614,7 +1636,7 @@
         "finished": "2026-10-01T11:59:08+00:00"
       },
       "clip": {
-        "status": "running",
+        "status": "done",
         "attempts": [
           {
             "job_id": "0230d960-a66f-46e0-b80d-c4b774515385",
@@ -1622,7 +1644,9 @@
             "credits": 7.5
           }
         ],
-        "job_id": "0230d960-a66f-46e0-b80d-c4b774515385"
+        "job_id": "0230d960-a66f-46e0-b80d-c4b774515385",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_120255_0230d960-a66f-46e0-b80d-c4b774515385.mp4",
+        "finished": "2026-10-01T12:08:59+00:00"
       }
     },
     {
@@ -1657,7 +1681,7 @@
         "finished": "2026-10-01T11:57:32+00:00"
       },
       "clip": {
-        "status": "running",
+        "status": "done",
         "attempts": [
           {
             "job_id": "b542234b-0c16-40a3-bcdb-f6b2cca1b45a",
@@ -1665,7 +1689,9 @@
             "credits": 7.5
           }
         ],
-        "job_id": "b542234b-0c16-40a3-bcdb-f6b2cca1b45a"
+        "job_id": "b542234b-0c16-40a3-bcdb-f6b2cca1b45a",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_120255_b542234b-0c16-40a3-bcdb-f6b2cca1b45a.mp4",
+        "finished": "2026-10-01T12:09:01+00:00"
       }
     },
     {
@@ -1756,7 +1782,7 @@
         "finished": "2026-10-01T11:57:35+00:00"
       },
       "clip": {
-        "status": "running",
+        "status": "done",
         "attempts": [
           {
             "job_id": "71ad32f3-9341-41e7-9209-ec37e5dce276",
@@ -1764,7 +1790,9 @@
             "credits": 7.5
           }
         ],
-        "job_id": "71ad32f3-9341-41e7-9209-ec37e5dce276"
+        "job_id": "71ad32f3-9341-41e7-9209-ec37e5dce276",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_120255_71ad32f3-9341-41e7-9209-ec37e5dce276.mp4",
+        "finished": "2026-10-01T12:09:03+00:00"
       }
     },
     {
@@ -1804,7 +1832,7 @@
         "soldiers, military uniforms, shakos"
       ],
       "clip": {
-        "status": "running",
+        "status": "done",
         "attempts": [
           {
             "job_id": "b1363330-de38-4598-b9fa-5948edd2ab5a",
@@ -1812,7 +1840,9 @@
             "credits": 7.5
           }
         ],
-        "job_id": "b1363330-de38-4598-b9fa-5948edd2ab5a"
+        "job_id": "b1363330-de38-4598-b9fa-5948edd2ab5a",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_120255_b1363330-de38-4598-b9fa-5948edd2ab5a.mp4",
+        "finished": "2026-10-01T12:09:05+00:00"
       }
     }
   ],
