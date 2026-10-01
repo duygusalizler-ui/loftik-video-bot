@@ -1755,8 +1755,8 @@
       "n": 29,
       "title": "Home",
       "pov": true,
-      "narration": "In the spring of 1813, I come home to my village in the Auvergne. I've lost two toes and my youth. The first thing I do is climb the hill to Antoine's mother, and give her the little golden icon. My name is Luc Bastien, and I survived the winter of 1812. But mine was not the only hard winter in history.",
-      "narration_voiced": "In the spring of 1813, I come home to my village in the Auvergne. I've lost two toes... and my youth. The first thing I do is climb the hill to Antoine's mother, and give her the little golden icon. My name is Luc Bastien, and I survived the winter of 1812. But mine was not the only hard winter in history.",
+      "narration": "In the spring of 1813, I come home to my village in the Auvergne. I've lost two toes and my youth. The first thing I do is climb the hill to Antoine's mother, and give her the little golden icon. My name is Luc Bastien, and I survived the winter of 1812. But mine was not the only hard winter in history. If you've stayed with me this far, I think this story stayed with you too. If it did, leave a like and subscribe. That's how I know you want more stories like this one, and it helps them reach more people.",
+      "narration_voiced": "In the spring of 1813, I come home to my village in the Auvergne. I've lost two toes... and my youth. The first thing I do is climb the hill to Antoine's mother, and give her the little golden icon. My name is Luc Bastien, and I survived the winter of 1812. But mine was not the only hard winter in history. If you've stayed with me this far, I think this story stayed with you too. If it did... leave a like, and subscribe. That's how I know you want more stories like this one, and it helps them reach more people.",
       "image_prompt": "POV in spring 1813 at the door of a stone farmhouse in a green Auvergne mountain village: an old woman in a black shawl in the doorway, the narrator's hand holding out a small golden icon to her",
       "shots": [
         "POV walking up a green hill path toward a stone farmhouse",
@@ -1799,7 +1799,9 @@
         "job_id": "71ad32f3-9341-41e7-9209-ec37e5dce276",
         "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_120255_71ad32f3-9341-41e7-9209-ec37e5dce276.mp4",
         "finished": "2026-10-01T12:09:03+00:00"
-      }
+      },
+      "cta": true,
+      "note": "anlatım sonuna kapanış çağrısı eklendi (audio_eleven/029.mp3 = hikâye + 1 sn + çağrı); ikinci klip: Luc köyde gün batımı"
     },
     {
       "n": 30,
