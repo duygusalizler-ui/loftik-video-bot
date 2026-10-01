@@ -314,7 +314,7 @@
         "finished": "2026-10-01T11:00:46+00:00"
       },
       "clip": {
-        "status": "running",
+        "status": "done",
         "attempts": [
           {
             "job_id": "77a5ff9c-7b75-4ac3-b742-dd329c4f1839",
@@ -322,7 +322,9 @@
             "credits": 7.5
           }
         ],
-        "job_id": "77a5ff9c-7b75-4ac3-b742-dd329c4f1839"
+        "job_id": "77a5ff9c-7b75-4ac3-b742-dd329c4f1839",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_110119_77a5ff9c-7b75-4ac3-b742-dd329c4f1839.mp4",
+        "finished": "2026-10-01T11:07:17+00:00"
       },
       "must": [
         "night, deep snow, small campfires",
@@ -421,7 +423,7 @@
         "finished": "2026-10-01T11:00:46+00:00"
       },
       "clip": {
-        "status": "running",
+        "status": "done",
         "attempts": [
           {
             "job_id": "2e5c4247-b37e-4cb5-bfd9-adc17bf24e8c",
@@ -429,7 +431,9 @@
             "credits": 7.5
           }
         ],
-        "job_id": "2e5c4247-b37e-4cb5-bfd9-adc17bf24e8c"
+        "job_id": "2e5c4247-b37e-4cb5-bfd9-adc17bf24e8c",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_110120_2e5c4247-b37e-4cb5-bfd9-adc17bf24e8c.mp4",
+        "finished": "2026-10-01T11:07:17+00:00"
       },
       "must": [
         "summer dusty road",
