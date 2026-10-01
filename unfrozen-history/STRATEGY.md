@@ -46,4 +46,5 @@ Biz nişten çıkmıyoruz; **tarihin ünlü kışlarını**, orada yaşayan sır
 ## 7. Mevsim planı
 - Kış dönemi (şimdi → yaklaşık Mart): yalnızca kış bölümleri ("ünlü kışlar" serisi).
 - Yaz dönemi: aynı format, sert yazlar (kuraklık, sıcak dalgası, çöl/sefer yazları). Kanal açıklaması "hardest seasons … frozen winters, scorching summers" bu yüzden iki mevsimi de kapsıyor; değiştirilmeyecek.
+- Deneme: 6. veya 7. bölüm bir yaz videosu (ör. 1816 Yazsız Yıl). Kış kadar izlenirse dönüşümlü yayına geçilir. (2026-10-01, kullanıcıyla anlaşıldı: şimdilik kış devam.)
 - Geçiş kademeli: yaz serisi kendi oynatma listesiyle ("Summer: How They Survived") açılır, kış listesi kanalda kalır.

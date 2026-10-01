@@ -128,20 +128,20 @@
     },
     "moscow": {
       "kind": "location",
-      "prompt": "Location reference, wide establishing view of Moscow in September 1812: golden and blue onion domes, white stone churches, grand houses and many wooden houses, wide streets, the Kremlin walls in the distance, no people, no modern buildings",
+      "prompt": "Location reference, wide establishing view of Moscow on a calm sunny September day in 1812, seen from a street: golden and blue onion domes, white stone churches, grand houses with closed shutters and many wooden houses, wide empty streets, the red Kremlin walls in the distance, completely empty city, no people, no soldiers, no fire, no smoke, no modern buildings",
       "n": "moscow",
       "image": {
         "status": "done",
         "attempts": [
           {
-            "job_id": "fbe32d36-c7d1-46bc-9557-ff8ef84f8070",
-            "submitted": "2026-10-01T10:55:22+00:00",
+            "job_id": "e5934b6a-5737-45c7-a01d-10d85178250a",
+            "submitted": "2026-10-01T11:00:46+00:00",
             "credits": 1.0
           }
         ],
-        "job_id": "fbe32d36-c7d1-46bc-9557-ff8ef84f8070",
-        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_105515_fbe32d36-c7d1-46bc-9557-ff8ef84f8070.png",
-        "finished": "2026-10-01T10:56:12+00:00"
+        "job_id": "e5934b6a-5737-45c7-a01d-10d85178250a",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_110035_e5934b6a-5737-45c7-a01d-10d85178250a.png",
+        "finished": "2026-10-01T11:02:11+00:00"
       }
     },
     "bivouac": {
@@ -160,6 +160,60 @@
         "job_id": "08d74439-c0d7-4a34-b84f-69d3ae0dac4b",
         "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_105515_08d74439-c0d7-4a34-b84f-69d3ae0dac4b.png",
         "finished": "2026-10-01T10:56:12+00:00"
+      }
+    },
+    "summer_road": {
+      "n": "summer_road",
+      "kind": "location",
+      "prompt": "Location reference, wide establishing view of a dusty dirt road through flat green fields and birch groves in Lithuania and western Russia in hot summer 1812, a small empty wooden log village with thatched roofs by the road, hazy sun, no people, no modern objects",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "2528824d-f071-402b-a83d-b30e0062687b",
+            "submitted": "2026-10-01T11:00:46+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "2528824d-f071-402b-a83d-b30e0062687b",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_110034_2528824d-f071-402b-a83d-b30e0062687b.png",
+        "finished": "2026-10-01T11:02:11+00:00"
+      }
+    },
+    "berezina": {
+      "n": "berezina",
+      "kind": "location",
+      "prompt": "Location reference, wide establishing view of the Berezina river near Studianka in late November 1812: a wide dark river with floating ice between low snowy banks, marshy ground, dark pine forest, two simple wooden trestle bridges built on posts in the water, grey winter sky, no people, no modern objects",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "c060aa9f-05d4-42c1-9fa5-5d5f10ece1e0",
+            "submitted": "2026-10-01T11:00:46+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "c060aa9f-05d4-42c1-9fa5-5d5f10ece1e0",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_110034_c060aa9f-05d4-42c1-9fa5-5d5f10ece1e0.png",
+        "finished": "2026-10-01T11:02:11+00:00"
+      }
+    },
+    "auvergne": {
+      "n": "auvergne",
+      "kind": "location",
+      "prompt": "Location reference, wide establishing view of a small farming village in the Auvergne mountains of France in spring 1813: grey stone farmhouses with steep roofs, a small stone church, green volcanic hills and pastures, spring flowers, a dirt path up a hill, no people, no modern objects",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "78c7599c-91c3-4585-a4e2-f1911db2ceaa",
+            "submitted": "2026-10-01T11:00:46+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "78c7599c-91c3-4585-a4e2-f1911db2ceaa",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_110035_78c7599c-91c3-4585-a4e2-f1911db2ceaa.png",
+        "finished": "2026-10-01T11:02:11+00:00"
       }
     }
   },
@@ -247,7 +301,7 @@
       "voice_mood": "tense",
       "beat": "SOĞUK AÇILIŞ + FRAGMAN (0:00)",
       "image": {
-        "status": "running",
+        "status": "done",
         "attempts": [
           {
             "job_id": "4e97cdcd-eaeb-4993-a466-665fee8b5810",
@@ -255,7 +309,20 @@
             "credits": 1.0
           }
         ],
-        "job_id": "4e97cdcd-eaeb-4993-a466-665fee8b5810"
+        "job_id": "4e97cdcd-eaeb-4993-a466-665fee8b5810",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_105655_4e97cdcd-eaeb-4993-a466-665fee8b5810.png",
+        "finished": "2026-10-01T11:00:46+00:00"
+      },
+      "clip": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "77a5ff9c-7b75-4ac3-b742-dd329c4f1839",
+            "submitted": "2026-10-01T11:01:26+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "77a5ff9c-7b75-4ac3-b742-dd329c4f1839"
       }
     },
     {
@@ -271,10 +338,12 @@
         "ahead, the column disappears east into green fields and dust"
       ],
       "sound": "drums, thousands of marching feet, horses, distant cheering",
-      "refs": [],
+      "refs": [
+        "summer_road"
+      ],
       "voice_mood": "intrigue",
       "image": {
-        "status": "running",
+        "status": "done",
         "attempts": [
           {
             "job_id": "55d18dd6-08fc-4dea-b3f5-d1f7cbd84f38",
@@ -282,7 +351,20 @@
             "credits": 1.0
           }
         ],
-        "job_id": "55d18dd6-08fc-4dea-b3f5-d1f7cbd84f38"
+        "job_id": "55d18dd6-08fc-4dea-b3f5-d1f7cbd84f38",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_105655_55d18dd6-08fc-4dea-b3f5-d1f7cbd84f38.png",
+        "finished": "2026-10-01T11:00:46+00:00"
+      },
+      "clip": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "96d4e942-06dd-4c8d-b087-61ebe9cd17cd",
+            "submitted": "2026-10-01T11:01:26+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "96d4e942-06dd-4c8d-b087-61ebe9cd17cd"
       }
     },
     {
@@ -303,11 +385,12 @@
         "antoine",
         "morel",
         "therese",
-        "cart"
+        "cart",
+        "summer_road"
       ],
       "voice_mood": "warm",
       "image": {
-        "status": "running",
+        "status": "done",
         "attempts": [
           {
             "job_id": "7ea34c93-2ccb-4fb0-8b7b-c396aba3f22d",
@@ -315,7 +398,20 @@
             "credits": 1.0
           }
         ],
-        "job_id": "7ea34c93-2ccb-4fb0-8b7b-c396aba3f22d"
+        "job_id": "7ea34c93-2ccb-4fb0-8b7b-c396aba3f22d",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_105656_7ea34c93-2ccb-4fb0-8b7b-c396aba3f22d.png",
+        "finished": "2026-10-01T11:00:46+00:00"
+      },
+      "clip": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "2e5c4247-b37e-4cb5-bfd9-adc17bf24e8c",
+            "submitted": "2026-10-01T11:01:26+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "2e5c4247-b37e-4cb5-bfd9-adc17bf24e8c"
       }
     },
     {
@@ -332,7 +428,8 @@
       ],
       "sound": "cicadas, distant smoke crackling, flies buzzing, tired footsteps",
       "refs": [
-        "morel"
+        "morel",
+        "summer_road"
       ],
       "voice_mood": "intrigue"
     },
@@ -681,7 +778,9 @@
         "men hammer wooden trestles in the freezing water"
       ],
       "sound": "water lapping against ice, hammering, wind, men gasping from cold",
-      "refs": [],
+      "refs": [
+        "berezina"
+      ],
       "voice_mood": "tense",
       "beat": "⚡ KIRILMA 4 (~7:30): Berezina"
     },
@@ -698,7 +797,9 @@
         "the finished wooden bridge stretches across the icy river"
       ],
       "sound": "dripping water, teeth chattering, fire crackling",
-      "refs": [],
+      "refs": [
+        "berezina"
+      ],
       "voice_mood": "tense"
     },
     {
@@ -716,7 +817,8 @@
       "sound": "crowd shouting, distant cannon fire, wood creaking, fire",
       "refs": [
         "morel",
-        "therese"
+        "therese",
+        "berezina"
       ],
       "voice_mood": "tense"
     },
@@ -809,7 +911,8 @@
       ],
       "sound": "birdsong, a gentle breeze, a door creaking",
       "refs": [
-        "luc"
+        "luc",
+        "auvergne"
       ],
       "voice_mood": "outro"
     },

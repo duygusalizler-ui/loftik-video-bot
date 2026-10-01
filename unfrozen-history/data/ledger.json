@@ -1779,6 +1779,76 @@
       "job_id": "7ea34c93-2ccb-4fb0-8b7b-c396aba3f22d",
       "credits": 1.0,
       "event": "submit"
+    },
+    {
+      "ts": "2026-10-01T11:00:46+00:00",
+      "month": "2026-10",
+      "episode": "ep003",
+      "scene": "moscow",
+      "kind": "image",
+      "job_id": "e5934b6a-5737-45c7-a01d-10d85178250a",
+      "credits": 1.0,
+      "event": "submit"
+    },
+    {
+      "ts": "2026-10-01T11:00:46+00:00",
+      "month": "2026-10",
+      "episode": "ep003",
+      "scene": "summer_road",
+      "kind": "image",
+      "job_id": "2528824d-f071-402b-a83d-b30e0062687b",
+      "credits": 1.0,
+      "event": "submit"
+    },
+    {
+      "ts": "2026-10-01T11:00:46+00:00",
+      "month": "2026-10",
+      "episode": "ep003",
+      "scene": "berezina",
+      "kind": "image",
+      "job_id": "c060aa9f-05d4-42c1-9fa5-5d5f10ece1e0",
+      "credits": 1.0,
+      "event": "submit"
+    },
+    {
+      "ts": "2026-10-01T11:00:46+00:00",
+      "month": "2026-10",
+      "episode": "ep003",
+      "scene": "auvergne",
+      "kind": "image",
+      "job_id": "78c7599c-91c3-4585-a4e2-f1911db2ceaa",
+      "credits": 1.0,
+      "event": "submit"
+    },
+    {
+      "ts": "2026-10-01T11:01:26+00:00",
+      "month": "2026-10",
+      "episode": "ep003",
+      "scene": 1,
+      "kind": "clip",
+      "job_id": "77a5ff9c-7b75-4ac3-b742-dd329c4f1839",
+      "credits": 7.5,
+      "event": "submit"
+    },
+    {
+      "ts": "2026-10-01T11:01:26+00:00",
+      "month": "2026-10",
+      "episode": "ep003",
+      "scene": 2,
+      "kind": "clip",
+      "job_id": "96d4e942-06dd-4c8d-b087-61ebe9cd17cd",
+      "credits": 7.5,
+      "event": "submit"
+    },
+    {
+      "ts": "2026-10-01T11:01:26+00:00",
+      "month": "2026-10",
+      "episode": "ep003",
+      "scene": 3,
+      "kind": "clip",
+      "job_id": "2e5c4247-b37e-4cb5-bfd9-adc17bf24e8c",
+      "credits": 7.5,
+      "event": "submit"
     }
   ]
 }
