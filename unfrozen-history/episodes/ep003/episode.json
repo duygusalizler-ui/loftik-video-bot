@@ -21,7 +21,9 @@
     2,
     3
   ],
-  "gates": {},
+  "gates": {
+    "script": "2026-10-01T10:54:35+00:00"
+  },
   "sources": [
     "Adam Zamoyski — 1812: Napoleon's Fatal March on Moscow (HarperCollins, 2004)",
     "Dominic Lieven — Russia Against Napoleon (Allen Lane, 2009)",
@@ -37,37 +39,128 @@
     "luc": {
       "kind": "character",
       "prompt": "Character reference sheet: on the left a full-body view standing upright facing the viewer, head to toe, on the right a chest-up portrait of the same person; identical original character in both views, single character only, no other people, no props except those described. Luc, French conscript soldier of 1812 about 20, thin young face, dark curly hair, light stubble, brown eyes, dark blue French line infantry coat (habit-veste) with white lapels and red cuffs, white crossbelts, grey-brown greatcoat open over it, white trousers with black gaiters, black shako with a brass plate, musket on his shoulder",
-      "n": "luc"
+      "n": "luc",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "7b0d555c-a7dd-469b-8cc5-097775831747",
+            "submitted": "2026-10-01T10:55:22+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "7b0d555c-a7dd-469b-8cc5-097775831747",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_105515_7b0d555c-a7dd-469b-8cc5-097775831747.png",
+        "finished": "2026-10-01T10:56:11+00:00"
+      }
     },
     "morel": {
       "kind": "character",
       "prompt": "Character reference sheet: on the left a full-body view standing upright facing the viewer, head to toe, on the right a chest-up portrait of the same person; identical original character in both views, single character only, no other people, no props except those described. Sergeant Morel, French veteran infantry sergeant of 1812 about 50, thick grey moustache, scarred weathered face, grey-brown greatcoat with sergeant's stripes on the sleeves, black shako, white crossbelts, musket",
-      "n": "morel"
+      "n": "morel",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "c8f82c78-bcb3-40b3-b9e4-646e38b4f7ca",
+            "submitted": "2026-10-01T10:55:22+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "c8f82c78-bcb3-40b3-b9e4-646e38b4f7ca",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_105515_c8f82c78-bcb3-40b3-b9e4-646e38b4f7ca.png",
+        "finished": "2026-10-01T10:56:11+00:00"
+      }
     },
     "antoine": {
       "kind": "character",
       "prompt": "Character reference sheet: on the left a full-body view standing upright facing the viewer, head to toe, on the right a chest-up portrait of the same person; identical original character in both views, single character only, no other people, no props except those described. Antoine, French conscript soldier of 1812 about 19, freckled boyish face, short red hair, dark blue French line infantry coat with white lapels, white crossbelts, grey-brown greatcoat, black shako",
-      "n": "antoine"
+      "n": "antoine",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "1c4a657b-c616-49dd-8590-324023d98199",
+            "submitted": "2026-10-01T10:55:22+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "1c4a657b-c616-49dd-8590-324023d98199",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_105515_1c4a657b-c616-49dd-8590-324023d98199.png",
+        "finished": "2026-10-01T10:56:11+00:00"
+      }
     },
     "therese": {
       "kind": "character",
       "prompt": "Character reference sheet: on the left a full-body view standing upright facing the viewer, head to toe, on the right a chest-up portrait of the same person; identical original character in both views, single character only, no other people, no props except those described. Thérèse, French army cantinière of 1812 about 35, strong friendly face, dark hair under a red headscarf, short blue military-style jacket, striped wool skirt to mid-calf, boots, a small painted brandy keg on a leather strap",
-      "n": "therese"
+      "n": "therese",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "6d3a2738-6c9c-4a0c-a0ca-965bc3b5358d",
+            "submitted": "2026-10-01T10:55:22+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "6d3a2738-6c9c-4a0c-a0ca-965bc3b5358d",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_105515_6d3a2738-6c9c-4a0c-a0ca-965bc3b5358d.png",
+        "finished": "2026-10-01T10:56:12+00:00"
+      }
     },
     "cart": {
       "kind": "location",
       "prompt": "Reference, a small canvas-covered two-wheeled cantinière's cart of the Napoleonic army pulled by one brown horse, barrels and bundles tied on the back, on a dirt road",
-      "n": "cart"
+      "n": "cart",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "04f3b488-45f6-4559-bb0f-2f7805aa66ba",
+            "submitted": "2026-10-01T10:55:22+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "04f3b488-45f6-4559-bb0f-2f7805aa66ba",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_105515_04f3b488-45f6-4559-bb0f-2f7805aa66ba.png",
+        "finished": "2026-10-01T10:56:12+00:00"
+      }
     },
     "moscow": {
       "kind": "location",
       "prompt": "Location reference, wide establishing view of Moscow in September 1812: golden and blue onion domes, white stone churches, grand houses and many wooden houses, wide streets, the Kremlin walls in the distance, no people, no modern buildings",
-      "n": "moscow"
+      "n": "moscow",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "fbe32d36-c7d1-46bc-9557-ff8ef84f8070",
+            "submitted": "2026-10-01T10:55:22+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "fbe32d36-c7d1-46bc-9557-ff8ef84f8070",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_105515_fbe32d36-c7d1-46bc-9557-ff8ef84f8070.png",
+        "finished": "2026-10-01T10:56:12+00:00"
+      }
     },
     "bivouac": {
       "kind": "location",
       "prompt": "Location reference, wide establishing view of a snowy Russian road in November 1812: a flat white plain with dark birch and pine forest, the road trampled by an army, small campfires in the snow, abandoned wagons half-buried in snow, grey winter sky, no modern objects",
-      "n": "bivouac"
+      "n": "bivouac",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "08d74439-c0d7-4a34-b84f-69d3ae0dac4b",
+            "submitted": "2026-10-01T10:55:22+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "08d74439-c0d7-4a34-b84f-69d3ae0dac4b",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_105515_08d74439-c0d7-4a34-b84f-69d3ae0dac4b.png",
+        "finished": "2026-10-01T10:56:12+00:00"
+      }
     }
   },
   "music": [
@@ -152,7 +245,18 @@
         "bivouac"
       ],
       "voice_mood": "tense",
-      "beat": "SOĞUK AÇILIŞ + FRAGMAN (0:00)"
+      "beat": "SOĞUK AÇILIŞ + FRAGMAN (0:00)",
+      "image": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "4e97cdcd-eaeb-4993-a466-665fee8b5810",
+            "submitted": "2026-10-01T10:57:01+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "4e97cdcd-eaeb-4993-a466-665fee8b5810"
+      }
     },
     {
       "n": 2,
@@ -168,7 +272,18 @@
       ],
       "sound": "drums, thousands of marching feet, horses, distant cheering",
       "refs": [],
-      "voice_mood": "intrigue"
+      "voice_mood": "intrigue",
+      "image": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "55d18dd6-08fc-4dea-b3f5-d1f7cbd84f38",
+            "submitted": "2026-10-01T10:57:01+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "55d18dd6-08fc-4dea-b3f5-d1f7cbd84f38"
+      }
     },
     {
       "n": 3,
@@ -190,7 +305,18 @@
         "therese",
         "cart"
       ],
-      "voice_mood": "warm"
+      "voice_mood": "warm",
+      "image": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "7ea34c93-2ccb-4fb0-8b7b-c396aba3f22d",
+            "submitted": "2026-10-01T10:57:01+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "7ea34c93-2ccb-4fb0-8b7b-c396aba3f22d"
+      }
     },
     {
       "n": 4,
