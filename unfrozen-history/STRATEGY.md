@@ -48,3 +48,10 @@ Biz nişten çıkmıyoruz; **tarihin ünlü kışlarını**, orada yaşayan sır
 - Yaz dönemi: aynı format, sert yazlar (kuraklık, sıcak dalgası, çöl/sefer yazları). Kanal açıklaması "hardest seasons … frozen winters, scorching summers" bu yüzden iki mevsimi de kapsıyor; değiştirilmeyecek.
 - Deneme: 6. veya 7. bölüm bir yaz videosu (ör. 1816 Yazsız Yıl). Kış kadar izlenirse dönüşümlü yayına geçilir. (2026-10-01, kullanıcıyla anlaşıldı: şimdilik kış devam.)
 - Geçiş kademeli: yaz serisi kendi oynatma listesiyle ("Summer: How They Survived") açılır, kış listesi kanalda kalır.
+
+## 8. Sabit kapanış çağrısı (her bölüm, 2026-10-01 kullanıcı kararı)
+Son sahneden (sonraki bölüm tanıtımı) hemen önce, anlatıcının kendi sesiyle, kanal adı vermeden:
+> "If you've stayed with me this far, I think this story stayed with you too. If it did, leave a like and subscribe. That's how I know you want more stories like this one — and it helps them reach more people."
+- Görsel: karakter kameraya bakar ya da sakin bir mekân çekimi (lip-sync gerekmez).
+- Uzunluk ~10 sn; videonun başında ya da ortasında ASLA çağrı yok.
+- Kanal adı söylenmez; "subscribe" + "like" tek cümlede, yalvarmadan.
