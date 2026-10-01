@@ -59,3 +59,7 @@ Son sahneden (sonraki bölüm tanıtımı) hemen önce, anlatıcının kendi ses
 ## 9. Yayın takvimi
 - Haftada 2 video: **Çarşamba ve Cumartesi, 18:10 (Türkiye saati)**. Video 1 (30 Eylül) bu saatte yayınlandı; izleyici alışkanlığı için saat sabit kalır.
 - Yükleme akışı: Gizli/Liste dışı yükle → kontrol → Planla (gün + 18:10).
+
+## 10. Değerlendirme eşiği: 10. video
+- Kullanıcı kararı: kanalın tutup tutmadığına **10. videodan sonra** bakılır (haftada 2 → ~31 Ekim 2026).
+- O zamana kadar: her Pazar analiz → bir sonraki bölümde tek bir şeyi iyileştir (başlık/kapak, ilk 30 sn, tempo).
