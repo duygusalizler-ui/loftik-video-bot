@@ -489,7 +489,7 @@
         "finished": "2026-10-01T11:55:28+00:00"
       },
       "clip": {
-        "status": "running",
+        "status": "done",
         "attempts": [
           {
             "job_id": "9a8991af-2337-4909-a505-6b763e632396",
@@ -497,7 +497,9 @@
             "credits": 7.5
           }
         ],
-        "job_id": "9a8991af-2337-4909-a505-6b763e632396"
+        "job_id": "9a8991af-2337-4909-a505-6b763e632396",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_120047_9a8991af-2337-4909-a505-6b763e632396.mp4",
+        "finished": "2026-10-01T12:07:13+00:00"
       }
     },
     {
@@ -607,7 +609,7 @@
         "finished": "2026-10-01T11:58:20+00:00"
       },
       "clip": {
-        "status": "running",
+        "status": "done",
         "attempts": [
           {
             "job_id": "5b76315a-a7ff-425f-bc34-9ab7900a27a5",
@@ -615,7 +617,9 @@
             "credits": 7.5
           }
         ],
-        "job_id": "5b76315a-a7ff-425f-bc34-9ab7900a27a5"
+        "job_id": "5b76315a-a7ff-425f-bc34-9ab7900a27a5",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_120046_5b76315a-a7ff-425f-bc34-9ab7900a27a5.mp4",
+        "finished": "2026-10-01T12:07:15+00:00"
       }
     },
     {
@@ -656,7 +660,7 @@
         "finished": "2026-10-01T11:55:28+00:00"
       },
       "clip": {
-        "status": "running",
+        "status": "done",
         "attempts": [
           {
             "job_id": "0c7518a9-f6c0-474b-8a75-437a99b33727",
@@ -664,8 +668,16 @@
             "credits": 7.5
           }
         ],
-        "job_id": "0c7518a9-f6c0-474b-8a75-437a99b33727"
-      }
+        "job_id": "0c7518a9-f6c0-474b-8a75-437a99b33727",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_120046_0c7518a9-f6c0-474b-8a75-437a99b33727.mp4",
+        "finished": "2026-10-01T12:07:18+00:00"
+      },
+      "clip_range": [
+        0,
+        8.9
+      ],
+      "min_speed": 0.5,
+      "note": "9.04 sn sonrası iki köşeli şapkalı (Napolyon benzeri) figürler — kesildi"
     },
     {
       "n": 8,
@@ -719,7 +731,7 @@
         "snow or winter visible through windows (it is September)"
       ],
       "clip": {
-        "status": "running",
+        "status": "done",
         "attempts": [
           {
             "job_id": "cecaa0ab-16a2-4c4e-afab-3baec0ceaac3",
@@ -727,7 +739,9 @@
             "credits": 7.5
           }
         ],
-        "job_id": "cecaa0ab-16a2-4c4e-afab-3baec0ceaac3"
+        "job_id": "cecaa0ab-16a2-4c4e-afab-3baec0ceaac3",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_120046_cecaa0ab-16a2-4c4e-afab-3baec0ceaac3.mp4",
+        "finished": "2026-10-01T12:07:20+00:00"
       }
     },
     {
@@ -767,7 +781,7 @@
         "finished": "2026-10-01T11:55:29+00:00"
       },
       "clip": {
-        "status": "running",
+        "status": "done",
         "attempts": [
           {
             "job_id": "594b1b72-8176-4d31-9841-1bdf45c442f4",
@@ -775,7 +789,9 @@
             "credits": 7.5
           }
         ],
-        "job_id": "594b1b72-8176-4d31-9841-1bdf45c442f4"
+        "job_id": "594b1b72-8176-4d31-9841-1bdf45c442f4",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_120047_594b1b72-8176-4d31-9841-1bdf45c442f4.mp4",
+        "finished": "2026-10-01T12:07:22+00:00"
       }
     },
     {
@@ -834,7 +850,7 @@
         "snow on the ground (mud and bare trees only)"
       ],
       "clip": {
-        "status": "running",
+        "status": "done",
         "attempts": [
           {
             "job_id": "1985f8c7-2c49-4d52-a0b6-7de0c855a406",
@@ -842,7 +858,9 @@
             "credits": 7.5
           }
         ],
-        "job_id": "1985f8c7-2c49-4d52-a0b6-7de0c855a406"
+        "job_id": "1985f8c7-2c49-4d52-a0b6-7de0c855a406",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_120046_1985f8c7-2c49-4d52-a0b6-7de0c855a406.mp4",
+        "finished": "2026-10-01T12:07:23+00:00"
       }
     },
     {
@@ -901,7 +919,7 @@
         "finished": "2026-10-01T11:58:24+00:00"
       },
       "clip": {
-        "status": "running",
+        "status": "done",
         "attempts": [
           {
             "job_id": "702f8d7d-2658-4348-9dd4-36473eec3ac8",
@@ -909,7 +927,9 @@
             "credits": 7.5
           }
         ],
-        "job_id": "702f8d7d-2658-4348-9dd4-36473eec3ac8"
+        "job_id": "702f8d7d-2658-4348-9dd4-36473eec3ac8",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_120046_702f8d7d-2658-4348-9dd4-36473eec3ac8.mp4",
+        "finished": "2026-10-01T12:07:25+00:00"
       }
     },
     {
@@ -944,7 +964,7 @@
         "finished": "2026-10-01T11:55:29+00:00"
       },
       "clip": {
-        "status": "running",
+        "status": "done",
         "attempts": [
           {
             "job_id": "14e371c3-f0c1-493c-b102-3e8854d5c7bc",
@@ -952,7 +972,9 @@
             "credits": 7.5
           }
         ],
-        "job_id": "14e371c3-f0c1-493c-b102-3e8854d5c7bc"
+        "job_id": "14e371c3-f0c1-493c-b102-3e8854d5c7bc",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_120046_14e371c3-f0c1-493c-b102-3e8854d5c7bc.mp4",
+        "finished": "2026-10-01T12:07:27+00:00"
       }
     },
     {
@@ -988,7 +1010,7 @@
         "finished": "2026-10-01T11:57:15+00:00"
       },
       "clip": {
-        "status": "running",
+        "status": "done",
         "attempts": [
           {
             "job_id": "7a97746d-546a-4f71-a5d1-9e2668f436db",
@@ -996,7 +1018,9 @@
             "credits": 7.5
           }
         ],
-        "job_id": "7a97746d-546a-4f71-a5d1-9e2668f436db"
+        "job_id": "7a97746d-546a-4f71-a5d1-9e2668f436db",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_120046_7a97746d-546a-4f71-a5d1-9e2668f436db.mp4",
+        "finished": "2026-10-01T12:07:28+00:00"
       }
     },
     {
@@ -1084,7 +1108,7 @@
         "finished": "2026-10-01T11:57:18+00:00"
       },
       "clip": {
-        "status": "running",
+        "status": "done",
         "attempts": [
           {
             "job_id": "7f7a90cf-c559-4418-9a6b-22e851fb9aea",
@@ -1092,7 +1116,9 @@
             "credits": 7.5
           }
         ],
-        "job_id": "7f7a90cf-c559-4418-9a6b-22e851fb9aea"
+        "job_id": "7f7a90cf-c559-4418-9a6b-22e851fb9aea",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_120046_7f7a90cf-c559-4418-9a6b-22e851fb9aea.mp4",
+        "finished": "2026-10-01T12:07:29+00:00"
       }
     },
     {
@@ -1127,7 +1153,7 @@
         "finished": "2026-10-01T11:57:19+00:00"
       },
       "clip": {
-        "status": "running",
+        "status": "done",
         "attempts": [
           {
             "job_id": "0c4f89fc-9a12-4135-adc6-63129167c0bb",
@@ -1135,7 +1161,9 @@
             "credits": 7.5
           }
         ],
-        "job_id": "0c4f89fc-9a12-4135-adc6-63129167c0bb"
+        "job_id": "0c4f89fc-9a12-4135-adc6-63129167c0bb",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_120048_0c4f89fc-9a12-4135-adc6-63129167c0bb.mp4",
+        "finished": "2026-10-01T12:07:31+00:00"
       }
     },
     {
@@ -1169,7 +1197,7 @@
         "finished": "2026-10-01T11:57:19+00:00"
       },
       "clip": {
-        "status": "running",
+        "status": "done",
         "attempts": [
           {
             "job_id": "725895c1-2d63-421b-b5e1-6978ddc40f49",
@@ -1177,7 +1205,9 @@
             "credits": 7.5
           }
         ],
-        "job_id": "725895c1-2d63-421b-b5e1-6978ddc40f49"
+        "job_id": "725895c1-2d63-421b-b5e1-6978ddc40f49",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_120046_725895c1-2d63-421b-b5e1-6978ddc40f49.mp4",
+        "finished": "2026-10-01T12:07:33+00:00"
       }
     },
     {
