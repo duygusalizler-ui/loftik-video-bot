@@ -157,14 +157,14 @@
     {
       "n": 2,
       "title": "June 1812",
-      "pov": false,
+      "pov": true,
       "narration": "Six months earlier. June 1812. The biggest army the world has ever seen crosses the river Niemen into Russia. More than four hundred thousand men: French, Poles, Germans, Italians, Dutch. Nobody thinks about winter. It is so hot that men faint on the road. 'We'll be home before the leaves fall,' everyone says.",
       "narration_voiced": "Six months earlier. June 1812. The biggest army the world has ever seen crosses the river Niemen into Russia. More than four hundred thousand men: French, Poles, Germans, Italians, Dutch. Nobody thinks about winter. It is so HOT that men faint on the road. 'We'll be home before the leaves fall,' everyone says.",
-      "image_prompt": "Summer 1812: endless columns of Napoleonic infantry in dark blue coats and white trousers, cavalry and wagons crossing pontoon bridges over a wide river under a hot hazy sky, dust rising, flags and drums, green fields beyond",
+      "image_prompt": "POV from the middle of a pontoon bridge over a wide river in hot summer 1812: the narrator's hands on the strap of his musket, the backs of marching infantry in dark blue coats and shakos ahead, flags and dust, green fields on the far bank",
       "shots": [
-        "long columns of soldiers march across pontoon bridges over a wide river",
-        "drummers beat drums, regimental flags wave in the hot wind",
-        "dust rises from the road as the army marches east into green fields"
+        "POV marching across a pontoon bridge among thousands of soldiers",
+        "the narrator wipes sweat from his face with his sleeve, the sun blazing",
+        "ahead, the column disappears east into green fields and dust"
       ],
       "sound": "drums, thousands of marching feet, horses, distant cheering",
       "refs": [],
@@ -173,14 +173,14 @@
     {
       "n": 3,
       "title": "My company",
-      "pov": false,
+      "pov": true,
       "narration": "I am a fusilier from a little village in the Auvergne mountains. Next to me marches Antoine, my friend since we were children. Our sergeant is Morel. He fought in Egypt, and he complains about everything. And behind us rolls the cart of Thérèse, our cantinière. She sells brandy, sews buttons and knows everything.",
       "narration_voiced": "I am a fusilier from a little village in the Auvergne mountains. Next to me marches Antoine, my friend since we were children. Our sergeant is Morel. He fought in Egypt, and he complains about everything. And behind us rolls the cart of Thérèse, our cantinière. She sells brandy, sews buttons... and knows everything.",
-      "image_prompt": "On a dusty summer road in Lithuania: Luc (French conscript soldier about 20, thin young face, dark curly hair, light stubble, dark blue French line infantry coat with white lapels under a worn grey-brown greatcoat, black shako with a brass plate) and Antoine (French conscript about 19, freckled face, short red hair, dark blue line infantry coat, grey-brown greatcoat, black shako) marching side by side and laughing, Sergeant Morel (French veteran sergeant about 50, thick grey moustache, scarred weathered face, grey-brown greatcoat with sergeant's stripes on the sleeve, black shako, later a shaggy sheepskin coat) walking ahead with a grumpy face, Thérèse (French army cantinière about 35, strong face, dark hair under a red headscarf, short blue jacket, striped wool skirt, a small brandy keg on a leather strap) driving a small covered cart pulled by a brown horse behind them",
+      "image_prompt": "POV marching on a dusty summer road: Antoine (French conscript about 19, freckled face, short red hair, dark blue line infantry coat, black shako) walking right beside the camera and grinning at it, Sergeant Morel (veteran about 50, thick grey moustache, grey-brown greatcoat, black shako) ahead looking back grumpily, Thérèse (cantinière about 35, red headscarf, blue jacket) on her small covered cart behind",
       "shots": [
-        "Luc (French conscript soldier about 20, thin young face, dark curly hair, light stubble, dark blue French line infantry coat with white lapels under a worn grey-brown greatcoat, black shako with a brass plate) and Antoine (French conscript about 19, freckled face, short red hair, dark blue line infantry coat, grey-brown greatcoat, black shako) march side by side, laughing at a joke",
-        "Sergeant Morel (French veteran sergeant about 50, thick grey moustache, scarred weathered face, grey-brown greatcoat with sergeant's stripes on the sleeve, black shako, later a shaggy sheepskin coat) turns around and grumbles at them",
-        "Thérèse (French army cantinière about 35, strong face, dark hair under a red headscarf, short blue jacket, striped wool skirt, a small brandy keg on a leather strap) drives her small covered cart and waves"
+        "Antoine walks beside the camera and grins at it",
+        "Sergeant Morel turns around and grumbles at the camera",
+        "Thérèse waves from her small covered cart"
       ],
       "sound": "marching feet, cart wheels creaking, laughter, a horse snorting",
       "refs": [
@@ -196,8 +196,8 @@
       "n": 4,
       "title": "An empty land",
       "pov": true,
-      "narration": "But Russia does not fight us. Russia just goes away. Every village we reach is empty, the barns burned, the food gone. We march hundreds of kilometres in the heat and the dust. The horses die first, thousands of them, from bad fodder and storms. Morel looks at them and says: 'Remember this, boy. The horses always tell you what's coming.'",
-      "narration_voiced": "But Russia does not fight us. Russia just... goes away. Every village we reach is empty, the barns burned, the food gone. We march hundreds of kilometres in the heat and the dust. The horses die first, thousands of them, from bad fodder and storms. Morel looks at them and says: 'Remember this, boy. The horses always tell you what's coming.'",
+      "narration": "Picture it: you march for weeks, and the enemy never stands still to fight. Russia just goes away. Every village we reach is empty, the barns burned, the food gone. We march hundreds of kilometres in the heat and the dust. The horses die first, thousands of them, from bad fodder and storms. Morel looks at them and says: 'Remember this, boy. The horses always tell you what's coming.'",
+      "narration_voiced": "Picture it: you march for weeks, and the enemy never stands still to fight. Russia just... goes away. Every village we reach is empty, the barns burned, the food gone. We march hundreds of kilometres in the heat and the dust. The horses die first, thousands of them, from bad fodder and storms. Morel looks at them and says: 'Remember this, boy. The horses always tell you what's coming.'",
       "image_prompt": "POV marching into an abandoned Russian village in summer 1812: empty wooden log houses, a burned barn still smoking, dead horses at the roadside, soldiers in blue coats looking around, hot dusty light",
       "shots": [
         "the column passes empty wooden log houses with open doors",
@@ -232,14 +232,14 @@
     {
       "n": 6,
       "title": "Moscow",
-      "pov": false,
+      "pov": true,
       "narration": "In September, after one terrible battle near a village called Borodino, the road to Moscow is open. On the fourteenth of September we march into the city and it is empty. Golden domes, palaces, streets full of shops, and almost no people. We think the war is over. We think we have won.",
       "narration_voiced": "In September, after one terrible battle near a village called Borodino, the road to Moscow is open. On the fourteenth of September we march into the city... and it is EMPTY. Golden domes, palaces, streets full of shops, and almost no people. We think the war is over. We think we have won.",
-      "image_prompt": "September 1812: French infantry columns marching into an empty Moscow street, golden onion domes and white churches, grand houses with closed shutters, no residents, soldiers looking around in wonder",
+      "image_prompt": "POV marching into an empty Moscow street in September 1812: golden onion domes and white churches above grand houses with closed shutters, the shoulders and shakos of soldiers ahead, Antoine beside the camera staring up in wonder",
       "shots": [
-        "golden onion domes shine above an empty street",
-        "French soldiers march between grand houses with closed shutters",
-        "Antoine (French conscript about 19, freckled face, short red hair, dark blue line infantry coat, grey-brown greatcoat, black shako) stares up at the domes with his mouth open"
+        "POV looking up at golden onion domes shining above an empty street",
+        "the camera passes grand houses with closed shutters",
+        "Antoine beside the camera stares up with his mouth open"
       ],
       "sound": "echoing footsteps in an empty street, church bells silent, wind",
       "refs": [
@@ -270,14 +270,14 @@
     {
       "n": 8,
       "title": "Furs, not silver",
-      "pov": false,
+      "pov": true,
       "narration": "Antoine fills his pack with silver spoons and a little golden icon. Others take paintings, silk, wine. Morel takes something strange: a heavy, ugly sheepskin coat. We laugh at him. It is September, the sun is warm. He just says: 'Take furs, boys. Silver won't keep you warm.' So I go back and find a lady's fur-lined cloak. Antoine laughs at me all night.",
       "narration_voiced": "Antoine fills his pack with silver spoons and a little golden icon. Others take paintings, silk, wine. Morel takes something strange: a heavy, ugly sheepskin coat. We laugh at him. It is September, the sun is warm. He just says: 'Take furs, boys. Silver won't keep you warm.' So I go back... and find a lady's fur-lined cloak. Antoine laughs at me all night.",
-      "image_prompt": "Inside a half-burned Moscow mansion: Antoine (French conscript about 19, freckled face, short red hair, dark blue line infantry coat, grey-brown greatcoat, black shako) stuffing silver spoons into his pack, Sergeant Morel (French veteran sergeant about 50, thick grey moustache, scarred weathered face, grey-brown greatcoat with sergeant's stripes on the sleeve, black shako, later a shaggy sheepskin coat) holding up a shaggy sheepskin coat, Luc (French conscript soldier about 20, thin young face, dark curly hair, light stubble, dark blue French line infantry coat with white lapels under a worn grey-brown greatcoat, black shako with a brass plate) holding a lady's dark fur-lined cloak and looking embarrassed",
+      "image_prompt": "POV inside a half-burned Moscow mansion: the narrator's hands holding up a lady's dark fur-lined cloak, Antoine laughing and pointing at it with silver spoons sticking out of his pack, Sergeant Morel in a shaggy sheepskin coat nodding approval",
       "shots": [
-        "Antoine (French conscript about 19, freckled face, short red hair, dark blue line infantry coat, grey-brown greatcoat, black shako) stuffs silver spoons and a small golden icon into his pack",
-        "Sergeant Morel (French veteran sergeant about 50, thick grey moustache, scarred weathered face, grey-brown greatcoat with sergeant's stripes on the sleeve, black shako, later a shaggy sheepskin coat) holds up a shaggy sheepskin coat with a serious face",
-        "Antoine (French conscript about 19, freckled face, short red hair, dark blue line infantry coat, grey-brown greatcoat, black shako) laughs and points at Luc (French conscript soldier about 20, thin young face, dark curly hair, light stubble, dark blue French line infantry coat with white lapels under a worn grey-brown greatcoat, black shako with a brass plate), who holds a lady's fur-lined cloak"
+        "Antoine stuffs silver spoons and a small golden icon into his pack",
+        "Sergeant Morel holds up a shaggy sheepskin coat with a serious face",
+        "the narrator's hands lift a lady's fur-lined cloak; Antoine bursts out laughing"
       ],
       "sound": "clinking silver, laughter, distant fire crackling",
       "refs": [
@@ -327,14 +327,14 @@
     {
       "n": 11,
       "title": "First snow",
-      "pov": false,
+      "pov": true,
       "narration": "At the beginning of November the first snow. At first, it is almost beautiful. The next day, the road is ice. Our horses' shoes have no spikes for ice. They slip, they fall, and they cannot get up. In one day, I see more dead horses than in my whole life.",
       "narration_voiced": "At the beginning of November... the first snow. At first, it is almost beautiful. The next day, the road is ICE. Our horses' shoes have no spikes for ice. They slip, they fall, and they cannot get up. In one day, I see more dead horses than in my whole life.",
-      "image_prompt": "Early November 1812: heavy snow falling on a Russian road, horses slipping and falling on the icy road, soldiers trying to pull them up, overturned carts, grey white sky",
+      "image_prompt": "POV on an icy Russian road in early November 1812, heavy snow falling: a horse slipping and crashing down right in front of the camera, soldiers trying to pull it up, overturned carts beyond",
       "shots": [
-        "the first snowflakes fall on the marching column",
-        "a horse slips on the ice and crashes down, soldiers try to lift it",
-        "dead horses and overturned carts line the white road"
+        "snowflakes start falling on the marching column ahead",
+        "a horse right in front slips on the ice and crashes down",
+        "dead horses and overturned carts line the white road ahead"
       ],
       "sound": "wind with snow, a horse neighing in panic, hooves sliding on ice",
       "refs": [
@@ -365,14 +365,14 @@
     {
       "n": 13,
       "title": "Horse meat",
-      "pov": false,
+      "pov": true,
       "narration": "Now the horses become our food. When one falls, men run to it with knives. We roast the meat over the fire, black outside, raw inside. We have no salt, so some men sprinkle gunpowder on it. I tried it once. It tastes like a battle.",
       "narration_voiced": "Now the horses become our food. When one falls, men run to it with knives. We roast the meat over the fire, black outside, raw inside. We have no salt, so some men sprinkle gunpowder on it. I tried it once. It tastes like... a battle.",
-      "image_prompt": "Evening bivouac in the snow: Sergeant Morel (French veteran sergeant about 50, thick grey moustache, scarred weathered face, grey-brown greatcoat with sergeant's stripes on the sleeve, black shako, later a shaggy sheepskin coat) roasting pieces of meat on a bayonet over a small fire, Luc (French conscript soldier about 20, thin young face, dark curly hair, light stubble, dark blue French line infantry coat with white lapels under a worn grey-brown greatcoat, black shako with a brass plate) and Antoine (French conscript about 19, freckled face, short red hair, dark blue line infantry coat, grey-brown greatcoat, black shako) watching hungrily, a powder horn beside them",
+      "image_prompt": "POV at an evening bivouac in the snow: the narrator's hand holding a piece of roasted meat on a bayonet over a small fire, Sergeant Morel sprinkling a pinch of black gunpowder on it from a powder horn, Antoine watching hungrily",
       "shots": [
-        "Sergeant Morel (French veteran sergeant about 50, thick grey moustache, scarred weathered face, grey-brown greatcoat with sergeant's stripes on the sleeve, black shako, later a shaggy sheepskin coat) holds a piece of meat on a bayonet over the flames",
-        "a pinch of black gunpowder is sprinkled over the roasting meat",
-        "Luc (French conscript soldier about 20, thin young face, dark curly hair, light stubble, dark blue French line infantry coat with white lapels under a worn grey-brown greatcoat, black shako with a brass plate) bites the meat and makes a face"
+        "the narrator holds a piece of meat on a bayonet over the flames",
+        "Morel sprinkles a pinch of black gunpowder over the meat",
+        "Antoine grins and waits for his turn"
       ],
       "sound": "fire crackling, meat sizzling, wind, a soldier coughing",
       "refs": [
@@ -407,8 +407,8 @@
       "n": 15,
       "title": "Nights in the open",
       "pov": true,
-      "narration": "At night, we sleep around fires in the open. No tents, no houses. Men fight for a place near the flames. The ones in front burn their coats, the ones behind freeze. Morel makes us lie close together, back to back, under one blanket, feet toward the fire. In the morning we count who is still alive.",
-      "narration_voiced": "At night, we sleep around fires in the open. No tents, no houses. Men fight for a place near the flames. The ones in front burn their coats, the ones behind freeze. Morel makes us lie close together, back to back, under one blanket, feet toward the fire. In the morning... we count who is still alive.",
+      "narration": "Now imagine your night. We sleep around fires in the open. No tents, no houses. Men fight for a place near the flames. The ones in front burn their coats, the ones behind freeze. Morel makes us lie close together, back to back, under one blanket, feet toward the fire. In the morning we count who is still alive.",
+      "narration_voiced": "Now imagine your night. We sleep around fires in the open. No tents, no houses. Men fight for a place near the flames. The ones in front burn their coats, the ones behind freeze. Morel makes us lie close together, back to back, under one blanket, feet toward the fire. In the morning... we count who is still alive.",
       "image_prompt": "Night bivouac in deep snow: Sergeant Morel (French veteran sergeant about 50, thick grey moustache, scarred weathered face, grey-brown greatcoat with sergeant's stripes on the sleeve, black shako, later a shaggy sheepskin coat), Antoine (French conscript about 19, freckled face, short red hair, dark blue line infantry coat, grey-brown greatcoat, black shako), Thérèse (French army cantinière about 35, strong face, dark hair under a red headscarf, short blue jacket, striped wool skirt, a small brandy keg on a leather strap) and the narrator lying back to back under one blanket with their feet toward a fire, other soldiers crowding around fires in the darkness",
       "shots": [
         "soldiers push and shove for a place near the fire",
@@ -427,14 +427,14 @@
     {
       "n": 16,
       "title": "Smolensk",
-      "pov": false,
+      "pov": true,
       "narration": "Everyone dreams of Smolensk. There are warehouses there, they say: flour, biscuits, brandy, enough for the whole army. When we arrive, the first soldiers have already broken in. Men fight over sacks in the street. Thérèse trades her last keg of brandy for half a sack of flour. That half sack keeps four people alive for ten days.",
       "narration_voiced": "Everyone dreams of Smolensk. There are warehouses there, they say: flour, biscuits, brandy, enough for the whole army. When we arrive, the first soldiers have already broken in. Men fight over sacks in the street. Thérèse trades her last keg of brandy for half a sack of flour. That half sack keeps four people alive for ten days.",
-      "image_prompt": "November 1812, a snowy street of Smolensk below old fortress walls: starving soldiers fighting over flour sacks outside a broken warehouse door, Thérèse (French army cantinière about 35, strong face, dark hair under a red headscarf, short blue jacket, striped wool skirt, a small brandy keg on a leather strap) handing over a small brandy keg for half a sack of flour",
+      "image_prompt": "POV in a snowy street of Smolensk in November 1812: starving soldiers fighting over flour sacks outside a broken warehouse door, Thérèse (cantinière, red headscarf) beside the camera hugging half a sack of flour",
       "shots": [
         "soldiers break down a warehouse door and fight over sacks",
-        "Thérèse (French army cantinière about 35, strong face, dark hair under a red headscarf, short blue jacket, striped wool skirt, a small brandy keg on a leather strap) hands over her small brandy keg",
-        "Thérèse (French army cantinière about 35, strong face, dark hair under a red headscarf, short blue jacket, striped wool skirt, a small brandy keg on a leather strap) hugs half a sack of flour, Luc (French conscript soldier about 20, thin young face, dark curly hair, light stubble, dark blue French line infantry coat with white lapels under a worn grey-brown greatcoat, black shako with a brass plate) and Antoine (French conscript about 19, freckled face, short red hair, dark blue line infantry coat, grey-brown greatcoat, black shako) beside her"
+        "Thérèse hands over her small brandy keg",
+        "Thérèse hugs half a sack of flour and nods at the camera"
       ],
       "sound": "shouting, wood splintering, wind, coins clinking",
       "refs": [
@@ -465,14 +465,14 @@
     {
       "n": 18,
       "title": "Lice",
-      "pov": false,
+      "pov": true,
       "narration": "And there is another enemy. A tiny one. Lice. We haven't washed in months. They live in our coats, our hair, our beards. With them comes the fever: typhus. It kills more men than all the Russian armies. Every evening, Thérèse makes us shake our shirts over the fire. They crackle like grains of salt.",
       "narration_voiced": "And there is another enemy. A tiny one. Lice. We haven't washed in months. They live in our coats, our hair, our beards. With them comes the fever: typhus. It kills more men than all the Russian armies. Every evening, Thérèse makes us shake our shirts over the fire. They crackle... like grains of salt.",
-      "image_prompt": "Evening by a fire in the snow: Thérèse (French army cantinière about 35, strong face, dark hair under a red headscarf, short blue jacket, striped wool skirt, a small brandy keg on a leather strap) holding a shirt over the flames and shaking it, Luc (French conscript soldier about 20, thin young face, dark curly hair, light stubble, dark blue French line infantry coat with white lapels under a worn grey-brown greatcoat, black shako with a brass plate) and Antoine (French conscript about 19, freckled face, short red hair, dark blue line infantry coat, grey-brown greatcoat, black shako) scratching their heads, sparks rising",
+      "image_prompt": "POV by a fire in the snow at evening: Thérèse (cantinière, red headscarf) holding a shirt over the flames and shaking it toward the camera, Antoine scratching his head, sparks rising",
       "shots": [
-        "Thérèse (French army cantinière about 35, strong face, dark hair under a red headscarf, short blue jacket, striped wool skirt, a small brandy keg on a leather strap) shakes a shirt over the fire, tiny sparks crackling",
-        "Antoine (French conscript about 19, freckled face, short red hair, dark blue line infantry coat, grey-brown greatcoat, black shako) scratches his head and neck",
-        "Thérèse (French army cantinière about 35, strong face, dark hair under a red headscarf, short blue jacket, striped wool skirt, a small brandy keg on a leather strap) hands the shirt back with a firm look"
+        "Thérèse shakes a shirt over the fire, tiny sparks crackling",
+        "Antoine scratches his head and neck",
+        "Thérèse hands the shirt to the camera with a firm look"
       ],
       "sound": "fire crackling and popping, wind, a woman muttering",
       "refs": [
@@ -486,14 +486,14 @@
     {
       "n": 19,
       "title": "Antoine",
-      "pov": false,
+      "pov": true,
       "narration": "In the middle of November, Antoine gets the fever. He shivers, then burns, then shivers again. Morel and I carry him between us for two days. On the third night, he gives me his little golden icon. 'Take it home to my mother.' Then he sits down by the fire and in the morning, he doesn't wake up.",
       "narration_voiced": "In the middle of November, Antoine gets the fever. He shivers, then burns, then shivers again. Morel and I carry him between us for two days. On the third night, he gives me his little golden icon. 'Take it home to my mother.' Then he sits down by the fire... and in the morning, he doesn't wake up.",
-      "image_prompt": "Night by a fire in the snow: pale feverish Antoine (French conscript about 19, freckled face, short red hair, dark blue line infantry coat, grey-brown greatcoat, black shako) wrapped in a blanket, pressing a small golden icon into Luc (French conscript soldier about 20, thin young face, dark curly hair, light stubble, dark blue French line infantry coat with white lapels under a worn grey-brown greatcoat, black shako with a brass plate)'s hand, Sergeant Morel (French veteran sergeant about 50, thick grey moustache, scarred weathered face, grey-brown greatcoat with sergeant's stripes on the sleeve, black shako, later a shaggy sheepskin coat) watching in silence",
+      "image_prompt": "POV at night by a fire in the snow: pale feverish Antoine (freckled, red hair) wrapped in a blanket, pressing a small golden icon into the narrator's open hand, Sergeant Morel watching in silence",
       "shots": [
-        "Luc (French conscript soldier about 20, thin young face, dark curly hair, light stubble, dark blue French line infantry coat with white lapels under a worn grey-brown greatcoat, black shako with a brass plate) and Sergeant Morel (French veteran sergeant about 50, thick grey moustache, scarred weathered face, grey-brown greatcoat with sergeant's stripes on the sleeve, black shako, later a shaggy sheepskin coat) carry Antoine (French conscript about 19, freckled face, short red hair, dark blue line infantry coat, grey-brown greatcoat, black shako) between them along the snowy road",
-        "Antoine (French conscript about 19, freckled face, short red hair, dark blue line infantry coat, grey-brown greatcoat, black shako) presses a small golden icon into Luc (French conscript soldier about 20, thin young face, dark curly hair, light stubble, dark blue French line infantry coat with white lapels under a worn grey-brown greatcoat, black shako with a brass plate)'s hand by the fire",
-        "in grey dawn light, snow lies untouched on a blanket by a cold fire"
+        "the narrator and Morel carry Antoine between them along the snowy road",
+        "Antoine presses a small golden icon into the narrator's hand by the fire",
+        "in grey dawn light, snow lies on an empty blanket by a cold fire"
       ],
       "sound": "wind, a weak cough, a fire dying out",
       "refs": [
@@ -527,14 +527,14 @@
     {
       "n": 21,
       "title": "Cossacks",
-      "pov": false,
+      "pov": true,
       "narration": "We are never alone. Cossacks ride beside the column, like wolves following a herd. Anyone who falls behind, anyone who wanders off to find firewood disappears. So we march in a group, muskets ready. Alone, you are dead. Together, you might live.",
       "narration_voiced": "We are never alone. Cossacks ride beside the column, like wolves following a herd. Anyone who falls behind, anyone who wanders off to find firewood... disappears. So we march in a group, muskets ready. Alone, you are dead. Together, you might live.",
-      "image_prompt": "A snowy plain at dusk: a small group of Cossack horsemen with long lances watching from the edge of a birch forest as the ragged French column marches past, soldiers in a tight group with muskets ready",
+      "image_prompt": "POV from inside a tight group of ragged French soldiers on a snowy plain at dusk: muskets raised, a few Cossack horsemen with long lances watching from the edge of a birch forest",
       "shots": [
         "Cossack riders with long lances watch from the edge of the forest",
-        "a straggler alone in the snow looks over his shoulder",
-        "soldiers close ranks with muskets raised"
+        "a straggler alone in the snow looks over his shoulder at the camera",
+        "soldiers around the camera close ranks with muskets raised"
       ],
       "sound": "wind, distant hoofbeats, muskets clicking",
       "refs": [
@@ -545,12 +545,12 @@
     {
       "n": 22,
       "title": "The Berezina",
-      "pov": false,
+      "pov": true,
       "narration": "At the end of November we reach the river Berezina. The bridge is burned, and Russian armies are closing in from every side. We are trapped. Then the engineers do something impossible. They walk into the freezing river, up to their chests in water full of ice, and build two bridges.",
       "narration_voiced": "At the end of November we reach the river Berezina. The bridge is burned, and Russian armies are closing in from every side. We are trapped. Then the engineers do something impossible. They walk into the freezing river, up to their chests in water full of ice, and build two bridges.",
-      "image_prompt": "November 1812, the Berezina river: engineers standing chest-deep in icy black water among floating ice, hammering wooden trestles for a bridge, crowds of soldiers waiting on the snowy bank, grey sky",
+      "image_prompt": "POV from the crowded snowy bank of the Berezina river in November 1812: engineers wading chest-deep into icy black water among floating ice, hammering wooden trestles for a bridge",
       "shots": [
-        "ice floats on the black water of a wide river",
+        "POV looking over a crowd at ice floating on the black river",
         "engineers wade into the river up to their chests carrying beams",
         "men hammer wooden trestles in the freezing water"
       ],
@@ -597,14 +597,14 @@
     {
       "n": 25,
       "title": "Minus thirty",
-      "pov": false,
-      "narration": "December. The worst cold anyone can remember. Thirty below zero. Birds fall frozen from the sky. Our breath freezes in our beards. I wear everything I have: my greatcoat, the lady's fur cloak from Moscow and pieces of blanket wrapped around my feet, because my boots have fallen apart.",
-      "narration_voiced": "December. The worst cold anyone can remember. Thirty below zero. Birds fall frozen from the sky. Our breath freezes in our beards. I wear everything I have: my greatcoat, the lady's fur cloak from Moscow... and pieces of blanket wrapped around my feet, because my boots have fallen apart.",
-      "image_prompt": "December 1812, a frozen white landscape: Luc (French conscript soldier about 20, thin frostbitten young face, dark curly hair, frost in his stubble, wrapped in a worn grey-brown greatcoat with a lady's dark fur-lined cloak over his shoulders, a wool scarf tied over his shako and ears) trudging through deep snow, his feet wrapped in rags and blanket strips, frost on his eyebrows and stubble, a small frozen bird on the snow",
+      "pov": true,
+      "narration": "December. Put your hand outside on the coldest day of your life. Now make it colder. The worst cold anyone can remember. Thirty below zero. Birds fall frozen from the sky. Our breath freezes in our beards. I wear everything I have: my greatcoat, the lady's fur cloak from Moscow and pieces of blanket wrapped around my feet, because my boots have fallen apart.",
+      "narration_voiced": "December. Put your hand outside on the coldest day of your life. Now make it colder. The worst cold anyone can remember. Thirty below zero. Birds fall frozen from the sky. Our breath freezes in our beards. I wear everything I have: my greatcoat, the lady's fur cloak from Moscow... and pieces of blanket wrapped around my feet, because my boots have fallen apart.",
+      "image_prompt": "POV looking down at the narrator's own feet wrapped in rags and blanket strips sinking into deep snow, December 1812, a small frozen bird lying on the snow ahead, the ragged column stretching away into a white haze",
       "shots": [
         "a small frozen bird lies on the white snow",
-        "Luc (French conscript soldier about 20, thin frostbitten young face, dark curly hair, frost in his stubble, wrapped in a worn grey-brown greatcoat with a lady's dark fur-lined cloak over his shoulders, a wool scarf tied over his shako and ears) trudges forward, frost on his eyebrows",
-        "his rag-wrapped feet sink into deep snow"
+        "the narrator's rag-wrapped feet sink into deep snow, step after step",
+        "the narrator's frosted breath clouds in front of the camera"
       ],
       "sound": "deep silent cold, snow creaking underfoot, faint wind",
       "refs": [
@@ -632,14 +632,14 @@
     {
       "n": 27,
       "title": "The Niemen again",
-      "pov": false,
+      "pov": true,
       "narration": "In the middle of December, I cross the river Niemen again: the same river we crossed in June with music and flags. In June, I was one of more than four hundred thousand. Now, I can count the men around me. Morel limps beside me. Thérèse walks behind us. We are three. But we are alive.",
       "narration_voiced": "In the middle of December, I cross the river Niemen again: the same river we crossed in June with music and flags. In June, I was one of more than four hundred thousand. Now, I can count the men around me. Morel limps beside me. Thérèse walks behind us. We are three. But we are ALIVE.",
-      "image_prompt": "December 1812, the frozen Niemen river: a handful of ragged survivors crossing the ice in the grey dawn, Sergeant Morel (French veteran sergeant about 50, thick grey moustache, scarred weathered face, grey-brown greatcoat with sergeant's stripes on the sleeve, black shako, later a shaggy sheepskin coat) limping, Thérèse (French army cantinière about 35, strong face, dark hair under a red headscarf, short blue jacket, striped wool skirt, a small brandy keg on a leather strap) wrapped in a shawl, Luc (French conscript soldier about 20, thin frostbitten young face, dark curly hair, frost in his stubble, wrapped in a worn grey-brown greatcoat with a lady's dark fur-lined cloak over his shoulders, a wool scarf tied over his shako and ears) between them",
+      "image_prompt": "POV crossing the frozen Niemen river at a grey dawn in December 1812: Sergeant Morel limping ahead leaning on a musket, Thérèse wrapped in a shawl beside the camera, a handful of ragged survivors on the ice",
       "shots": [
         "a handful of ragged survivors cross the frozen river at dawn",
-        "Sergeant Morel (French veteran sergeant about 50, thick grey moustache, scarred weathered face, grey-brown greatcoat with sergeant's stripes on the sleeve, black shako, later a shaggy sheepskin coat) limps forward leaning on a musket",
-        "Thérèse (French army cantinière about 35, strong face, dark hair under a red headscarf, short blue jacket, striped wool skirt, a small brandy keg on a leather strap) puts a hand on Luc (French conscript soldier about 20, thin young face, dark curly hair, light stubble, dark blue French line infantry coat with white lapels under a worn grey-brown greatcoat, black shako with a brass plate)'s shoulder"
+        "Morel limps forward ahead, leaning on a musket",
+        "Thérèse puts a hand on the camera's shoulder and smiles weakly"
       ],
       "sound": "ice creaking, wind, slow footsteps",
       "refs": [
@@ -672,14 +672,14 @@
     {
       "n": 29,
       "title": "Home",
-      "pov": false,
+      "pov": true,
       "narration": "In the spring of 1813, I come home to my village in the Auvergne. I've lost two toes and my youth. The first thing I do is climb the hill to Antoine's mother, and give her the little golden icon. My name is Luc Bastien, and I survived the winter of 1812. But mine was not the only hard winter in history.",
       "narration_voiced": "In the spring of 1813, I come home to my village in the Auvergne. I've lost two toes... and my youth. The first thing I do is climb the hill to Antoine's mother, and give her the little golden icon. My name is Luc Bastien, and I survived the winter of 1812. But mine was not the only hard winter in history.",
-      "image_prompt": "Spring 1813 in a green mountain village of the Auvergne: thin Luc (French conscript soldier about 20, thin young face, dark curly hair, light stubble, dark blue French line infantry coat with white lapels under a worn grey-brown greatcoat, black shako with a brass plate) in a worn greatcoat handing a small golden icon to an old woman in a black shawl at the door of a stone farmhouse, spring flowers",
+      "image_prompt": "POV in spring 1813 at the door of a stone farmhouse in a green Auvergne mountain village: an old woman in a black shawl in the doorway, the narrator's hand holding out a small golden icon to her",
       "shots": [
-        "Luc (French conscript soldier about 20, thin young face, dark curly hair, light stubble, dark blue French line infantry coat with white lapels under a worn grey-brown greatcoat, black shako with a brass plate) walks up a green hill path toward a stone farmhouse",
+        "POV walking up a green hill path toward a stone farmhouse",
         "an old woman in a black shawl opens the door",
-        "the small golden icon passes from his hand into hers"
+        "the narrator's hand places the small golden icon into hers"
       ],
       "sound": "birdsong, a gentle breeze, a door creaking",
       "refs": [
