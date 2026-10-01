@@ -55,3 +55,7 @@ Son sahneden (sonraki bölüm tanıtımı) hemen önce, anlatıcının kendi ses
 - Görsel: karakter kameraya bakar ya da sakin bir mekân çekimi (lip-sync gerekmez).
 - Uzunluk ~10 sn; videonun başında ya da ortasında ASLA çağrı yok.
 - Kanal adı söylenmez; "subscribe" + "like" tek cümlede, yalvarmadan.
+
+## 9. Yayın takvimi
+- Haftada 2 video: **Çarşamba ve Cumartesi, 18:10 (Türkiye saati)**. Video 1 (30 Eylül) bu saatte yayınlandı; izleyici alışkanlığı için saat sabit kalır.
+- Yükleme akışı: Gizli/Liste dışı yükle → kontrol → Planla (gün + 18:10).
