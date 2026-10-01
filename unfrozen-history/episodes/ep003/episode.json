@@ -442,7 +442,21 @@
       "must_not": [
         "snow",
         "the narrator's face (first-person view)"
-      ]
+      ],
+      "clip_composite": [
+        [
+          "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_110120_2e5c4247-b37e-4cb5-bfd9-adc17bf24e8c.mp4",
+          0,
+          10.9
+        ],
+        [
+          "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_110120_2e5c4247-b37e-4cb5-bfd9-adc17bf24e8c.mp4",
+          12.1,
+          15.0
+        ]
+      ],
+      "min_speed": 0.6,
+      "note": "11.0-12.0 sn: Morel ikizi (klon) — kesildi"
     },
     {
       "n": 4,
@@ -1040,6 +1054,7 @@
     "Napoleon's face or a close-up of Napoleon",
     "horned helmets, armour, knights, swords on infantrymen",
     "gore, open wounds, blood pools, corpses in close-up",
-    "extra fingers, deformed hands, duplicated faces"
+    "extra fingers, deformed hands, duplicated faces",
+    "the same person appearing twice in one frame (clones, twins, duplicated characters)"
   ]
 }
