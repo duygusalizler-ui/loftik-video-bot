@@ -12,11 +12,14 @@ Beklenen üslup: karakterler 3D animasyon, arka plan gerçekçi fotoğraf, ürü
 Kontrol et:
 1. Ürün görünüyorsa referansla aynı mı (şekil, renk, taban/detaylar)? Animasyon/plastik mi duruyor (kötü)?
 2. Anatomi hatası: fazla ayak/el/bacak, havada duran fazladan ürün, eriyen şekiller.
-3. Uydurma logo, marka, okunur yazı var mı (olmamalı)?
+3. Uydurma logo, marka, NET okunur yazı, sayı, sayaç, konuşma balonu var mı (olmamalı)? Uzakta bulanık,
+   okunmayan dükkân tabelası hata DEĞİLDİR.
 4. Karakter önceki sahneyle tutarlı mı (verildiyse)?
 5. Görüntü bozulması, garip yüz, mantıksız arka plan.
 
-Sadece JSON: {{"urun_uyumu": 0-10, "anatomi": 0-10, "logo_yazi_yok": 0-10, "tutarlilik": 0-10, "hatalar": ["kısa Türkçe"], "puan": 0-10}}
+Sadece JSON: {{"urun_uyumu": 0-10, "urun_plastik_mi": true/false, "anatomi": 0-10, "logo_yazi_yok": 0-10, "tutarlilik": 0-10, "hatalar": ["kısa Türkçe"], "puan": 0-10}}
+"urun_plastik_mi": ürün görünüyor ama gerçek ürün fotoğrafı yerine animasyon/3D/plastik duruyorsa true.
+Ürün görünmesi gerekmiyorsa ürün yokluğundan puan KIRMA.
 "puan" = en kritik sorunun belirlediği genel puan. Fazla uzuv / fazladan ürün / logo varsa puan en fazla 4."""
 
 
@@ -46,7 +49,8 @@ Beklenen üslup: karakterler 3D animasyon, arka plan gerçekçi fotoğraf, ürü
 
 Her kareyi tek tek kontrol et: fazla ayak/kol/ayakkabı (ör. karakter ayakkabı giymişken yerde de bir çift durması),
 karakterlerin birbirine karışması/eriyen yüz, bulanıklıkta kaybolan yüz, ürünün animasyona dönmesi veya değişmesi,
-karakterin yüzünün/tipinin başlangıç karesine göre değişmesi, arka planda anlamsız harfli tabela/yazı, uydurma logo.
+karakterin yüzünün/tipinin başlangıç karesine göre değişmesi, nesnenin aniden belirmesi/kaybolması/şekil değiştirmesi,
+NET okunur anlamsız yazı, uydurma logo (uzakta bulanık tabela hata değil).
 Kısa hareket bulanıklığı tek başına hata değildir.
 
 Ayrıca son karelerde ana karakterin yüzü ekranın neresinde: "ust", "orta" veya "alt" (yüz görünmüyorsa "yok").

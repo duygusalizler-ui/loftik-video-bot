@@ -95,6 +95,7 @@ def image(prompt: str, refs: list[str], out_png: str) -> str:
         for part in resp.candidates[0].content.parts:
             data = getattr(getattr(part, "inline_data", None), "data", None)
             if data:
+                print(f"    (görsel modeli: {model})")
                 Path(out_png).write_bytes(data)
                 return _vertical(out_png)
         last = RuntimeError(f"{model} görsel döndürmedi")

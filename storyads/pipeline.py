@@ -19,6 +19,11 @@ NO_TEXT = " No text, no letters, no logos, no brand names anywhere. Vertical 9:1
 MOTION_RULE = (" Normal real-time speed, NO slow motion, one continuous shot, slight handheld camera. "
                "Keep characters, background and product identical to the first frame. Product stays a real "
                "photorealistic product in every frame.")
+PRODUCT_FIX = ("Edit the FIRST image. Keep EVERYTHING identical (characters, poses, background, light, composition). "
+               "Change ONLY the product: replace it with the EXACT real product from the other reference photos, "
+               "100% photorealistic real product photography (real material texture, stitching, natural creases, "
+               "correct sole), NOT cartoon, NOT 3D, NOT plastic. Same position, size and perspective, matching "
+               "shadows. Remove any numbers, text, counters or speech bubbles if present.")
 NEGATIVE = "speech, talking, dialogue, narration, voice, singing, music, slow motion, text, subtitles, logo, watermark"
 
 
@@ -43,17 +48,35 @@ def _scene_image(i: int, scene: dict, plan: dict, prod, prev_img: str | None, wo
     prompt += NO_TEXT
     refs = prod.gorseller[:2] + ([prev_img] if prev_img else [])
     best = (None, -1)
+    feedback = ""
+    urun = scene.get("urun_gorunur", True)
     for t in range(1, settings.IMAGE_TRIES + 1):
         try:
-            img = genai.image(prompt, refs, os.path.join(work, f"sahne{i}_{t}.png"))
+            img = genai.image(prompt + feedback, refs, os.path.join(work, f"sahne{i}_{t}.png"))
         except genai.QuotaError:
             raise
         except Exception as exc:  # noqa: BLE001
             print(f"  sahne {i + 1} görsel hatası: {exc}")
             continue
-        r = qa.score(prod.gorseller, [img], scene.get("urun_gorunur", True), prev_img)
+        r = qa.score(prod.gorseller, [img], urun, prev_img)
         log.append({"asama": f"sahne{i + 1}_gorsel", "deneme": t, **r})
         print(f"  sahne {i + 1} görsel {t}: {r['puan']}/10 {r.get('hatalar') or ''}")
+        # Urun plastik/animasyon gibi durduysa: sahneyi bozmadan sadece urunu duzelten ikinci gecis
+        if urun and not r["gecti"] and (r.get("urun_plastik_mi") or int(r.get("urun_uyumu", 10)) < 7):
+            try:
+                fixed = genai.image(PRODUCT_FIX, [img] + prod.gorseller[:2], os.path.join(work, f"sahne{i}_{t}_duz.png"))
+                r2 = qa.score(prod.gorseller, [fixed], urun, prev_img)
+                log.append({"asama": f"sahne{i + 1}_gorsel_duzeltme", "deneme": t, **r2})
+                print(f"  sahne {i + 1} ürün düzeltme {t}: {r2['puan']}/10 {r2.get('hatalar') or ''}")
+                if r2["puan"] >= r["puan"]:
+                    img, r = fixed, r2
+            except genai.QuotaError:
+                raise
+            except Exception as exc:  # noqa: BLE001
+                print(f"  ürün düzeltme hatası: {exc}")
+        # bir sonraki denemeye hatalari geri bildir
+        if r.get("hatalar"):
+            feedback = " AVOID these problems seen in the previous attempt: " + "; ".join(map(str, r["hatalar"]))
         if r["puan"] > best[1]:
             best = (img, r["puan"])
         if r["gecti"]:
@@ -62,7 +85,7 @@ def _scene_image(i: int, scene: dict, plan: dict, prod, prev_img: str | None, wo
 
 
 def _scene_clip(i: int, scene: dict, img: str, prod, work: str, log: list) -> tuple | None:
-    prompt = scene["hareket_prompt"] + MOTION_RULE + f" SOUND: {scene.get('ses_efekti', 'natural ambience')}. " \
+    prompt = scene["hareket_prompt"] + MOTION_RULE + " Objects never appear, disappear or change shape." + f" SOUND: {scene.get('ses_efekti', 'natural ambience')}. " \
              "Sound effects and ambience only: no speech, no voices, no music."
     for t in range(1, settings.CLIP_TRIES + 1):
         out = os.path.join(work, f"klip{i}_{t}.mp4")

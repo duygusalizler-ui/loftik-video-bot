@@ -34,7 +34,11 @@ KURALLAR (hepsi zorunlu):
    - Zıplama, koşma, dans, hızlı dönüş YOK; sakin ve tek bir hareket (yürür, uzatır, bakar, oturur).
    - Ayakkabı/ürün giyme-çıkarma, el değiştirme YOK; ürün sahnede tek bir yerde dursun (ya ayakta ya elde).
    - Ürün her sahnede aynı sayıda: bir çift ayakkabı = 2 ayakkabı, fazlası yok.
-   - Okunabilir yazı, tabela, ekran, logo içeren arka plan YOK.
+   - Okunabilir yazı, tabela, ekran, logo içeren arka plan YOK. "gorsel_prompt" ve "hareket_prompt" içinde
+     sayı, saat, sayaç, yazı, konuşma balonu, arayüz ASLA geçmesin (bunlar sadece ekran yazısında olur).
+   - Kutu/paket açma, nesnenin aniden belirmesi/kaybolması YOK; ürün zaten sahnededir.
+   - Ürün sadece "oneri", "urun" ve "sonuc" sahnelerinde görünür ("urun_gorunur": true); kanca ve sorun
+     sahnelerinde ürün yoktur (karakter eski/kötü ayakkabıyla olabilir).
    - Ana karakterin yüzü kadrajın üst yarısında olsun (alt kısım altyazıya ayrılır).
 11. Asla: {yasak}
 
@@ -109,6 +113,9 @@ def make_plan(brand: Brand, product: Product, fmt: str, karakter: str) -> dict:
     if len(sahneler) < 3:
         raise RuntimeError(f"Plan eksik geldi: {plan}")
     plan["sahneler"] = sahneler[: settings.SCENES]
+    for sc in plan["sahneler"]:
+        if sc.get("rol") in ("kanca", "sorun"):
+            sc["urun_gorunur"] = False
     plan["format"], plan["karakter"] = fmt, karakter
     tags = list(dict.fromkeys((plan.get("hashtagler") or []) + brand.hashtagler))
     plan["hashtagler"] = tags[:8]
