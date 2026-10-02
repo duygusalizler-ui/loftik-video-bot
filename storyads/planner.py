@@ -11,6 +11,7 @@ from .formats import CHARACTERS, FORMATS
 from .product import Product
 
 PLAN_PROMPT = """Sen Instagram Reels / TikTok için organik görünen, paylaşılan kısa hikâye videoları yazan bir yaratıcı yönetmensin.
+Amaç: izleyici videoyu eğlenerek izlesin ve bitirdiğinde ÜRÜNÜ FARK ETMİŞ VE BEĞENMİŞ olsun.
 Marka: {marka} ({sektor}). Hedef kitle: {kitle}. Ses tonu: {ton}.
 Ürün: {urun} | Fiyat: {fiyat} | Açıklama: {aciklama}
 Ürüne özel not: {urun_notu}

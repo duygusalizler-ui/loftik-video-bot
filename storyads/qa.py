@@ -16,9 +16,12 @@ Kontrol et:
    okunmayan dükkân tabelası hata DEĞİLDİR.
 4. Karakter önceki sahneyle tutarlı mı (verildiyse)?
 5. Görüntü bozulması, garip yüz, mantıksız arka plan.
+6. (Ürün görünmesi gerekiyorsa) Ürün göze çarpıyor mu ve ÇEKİCİ mi? Kadrajda net, iyi ışıklı, sahnenin dikkat
+   çeken öğesi mi; izleyici bu ürünü beğenir mi? Ürün küçük/karanlık/bulanık/kirli ise puan en fazla 6.
 
-Sadece JSON: {{"urun_uyumu": 0-10, "urun_plastik_mi": true/false, "anatomi": 0-10, "logo_yazi_yok": 0-10, "tutarlilik": 0-10, "hatalar": ["kısa Türkçe"], "puan": 0-10}}
-"urun_plastik_mi": ürün görünüyor ama gerçek ürün fotoğrafı yerine animasyon/3D/plastik duruyorsa true.
+Sadece JSON: {{"urun_uyumu": 0-10, "urun_cekiciligi": 0-10, "urun_plastik_mi": true/false, "anatomi": 0-10, "logo_yazi_yok": 0-10, "tutarlilik": 0-10, "hatalar": ["kısa Türkçe"], "puan": 0-10}}
+"urun_plastik_mi": ürün görünüyor ama gerçek ürün fotoğrafı yerine animasyon/3D/plastik duruyorsa true
+(true ise puan en fazla 4: ürün ASLA animasyon görünmez).
 Ürün görünmesi gerekmiyorsa ürün yokluğundan puan KIRMA.
 "puan" = en kritik sorunun belirlediği genel puan. Fazla uzuv / fazladan ürün / logo varsa puan en fazla 4."""
 
@@ -53,6 +56,7 @@ Her kareyi tek tek kontrol et: fazla ayak/kol/ayakkabı (ör. karakter ayakkabı
 karakterlerin birbirine karışması/eriyen yüz, bulanıklıkta kaybolan yüz, ürünün animasyona dönmesi veya değişmesi,
 karakterin yüzünün/tipinin başlangıç karesine göre değişmesi, nesnenin aniden belirmesi/kaybolması/şekil değiştirmesi,
 NET okunur anlamsız yazı, uydurma logo (uzakta bulanık tabela hata değil).
+Ürün görünmesi gerekiyorsa: ürün herhangi bir karede animasyon/3D/plastik görünüyorsa o kare hatalıdır.
 Kısa hareket bulanıklığı tek başına hata değildir.
 
 Ayrıca son karelerde ana karakterin yüzü ekranın neresinde: "ust", "orta" veya "alt" (yüz görünmüyorsa "yok").
