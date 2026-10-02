@@ -93,6 +93,37 @@ def remember(brand: Brand, fmt: str, karakter: str) -> None:
         json.dump(h, f, ensure_ascii=False, indent=1)
 
 
+def next_product(brand: Brand) -> str:
+    """Seri uretim: urun listesinden henuz kullanilmamis ilk urun (liste bitince basa doner)."""
+    from .brand import BRANDS_DIR
+
+    path = BRANDS_DIR / f"{brand.kod}_urunler.txt"
+    urls = [ln.strip() for ln in path.read_text(encoding="utf-8").splitlines() if ln.strip() and not ln.startswith("#")]
+    if not urls:
+        raise SystemExit(f"Ürün listesi boş: {path}")
+    used = set(_history().get(brand.kod, {}).get("urunler", []))
+    fresh = [u for u in urls if u not in used]
+    if not fresh:  # tur tamamlandi, bastan
+        h = _history()
+        h.setdefault(brand.kod, {})["urunler"] = []
+        _save(h)
+        fresh = urls
+    return fresh[0]
+
+
+def remember_product(brand: Brand, url: str) -> None:
+    h = _history()
+    b = h.setdefault(brand.kod, {"formatlar": [], "karakterler": []})
+    b["urunler"] = b.get("urunler", []) + [url]
+    _save(h)
+
+
+def _save(h: dict) -> None:
+    os.makedirs(os.path.dirname(settings.HISTORY_FILE) or ".", exist_ok=True)
+    with open(settings.HISTORY_FILE, "w", encoding="utf-8") as f:
+        json.dump(h, f, ensure_ascii=False, indent=1)
+
+
 def choose(brand: Brand, fmt: str | None = None, karakter: str | None = None) -> tuple[str, str]:
     """Son kullanilanlari tekrar etmeyen format + karakter."""
     h = _history().get(brand.kod, {})
