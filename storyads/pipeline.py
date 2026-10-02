@@ -61,7 +61,7 @@ def _scene_image(i: int, scene: dict, plan: dict, prod, prev_img: str | None, wo
     return best[0] if best[1] >= settings.QA_MIN else None
 
 
-def _scene_clip(i: int, scene: dict, img: str, prod, work: str, log: list) -> tuple[str, tuple] | None:
+def _scene_clip(i: int, scene: dict, img: str, prod, work: str, log: list) -> tuple | None:
     prompt = scene["hareket_prompt"] + MOTION_RULE + f" SOUND: {scene.get('ses_efekti', 'natural ambience')}. " \
              "Sound effects and ambience only: no speech, no voices, no music."
     for t in range(1, settings.CLIP_TRIES + 1):
@@ -82,11 +82,11 @@ def _scene_clip(i: int, scene: dict, img: str, prod, work: str, log: list) -> tu
             fp = os.path.join(work, f"kare{i}_{t}_{k}.jpg")
             editor.run(["-ss", f"{ts:.2f}", "-i", out, "-frames:v", "1", "-vf", "scale=540:-2", fp])
             frames.append(fp)
-        r = qa.score_clip(prod.gorseller, frames, times, T)
+        r = qa.score_clip(prod.gorseller, frames, times, T, start_image=img)
         log.append({"asama": f"sahne{i + 1}_klip", "deneme": t, **r})
         print(f"  sahne {i + 1} klip {t}: {r['puan']}/10 temiz aralık={r.get('aralik')} {r.get('hatali_kareler') or ''}")
         if r["gecti"]:
-            return out, r["aralik"]
+            return out, r["aralik"], r.get("son_yuz_konumu")
     return None
 
 
@@ -115,9 +115,9 @@ def run(brand: Brand, product_url: str, out_dir: str, fmt: str | None = None,
         prev = prev or img  # karakter referansi: ilk gecen sahne
         got = _scene_clip(i, sc, img, prod, work, log)
         if got:
-            clip, (bas, son) = got
+            clip, (bas, son), yuz = got
             scenes.append({"clip": clip, "bas": bas, "son": son, "text": sc.get("ekran_yazisi") or None,
-                           "rol": sc.get("rol")})
+                           "rol": sc.get("rol"), "yuz": yuz})
     if len(scenes) < 3:
         print("Yeterli sahne yok, video üretilmedi.")
         return Result(None, plan, qa_log=log)
@@ -125,9 +125,15 @@ def run(brand: Brand, product_url: str, out_dir: str, fmt: str | None = None,
     print("[4/5] Kurgu")
     scenes[0]["hook"], scenes[0]["text"] = plan.get("kanca"), None
     scenes[-1]["final"], scenes[-1]["text"] = plan.get("final_yazi"), None
+    # final yazisi karakterin yuzunu kapatmasin: yuz ustteyse yazi ortaya iner
+    if scenes[-1].get("yuz") == "ust":
+        scenes[-1]["final_y"] = 900
     track, credit = music.pick(plan.get("muzik_modu") or brand.muzik_modu)
     video = os.path.join(out_dir, "video.mp4")
-    editor.compose(scenes, video, os.path.join(work, "kurgu"), music=track, music_volume=settings.MUSIC_VOLUME)
+    total = editor.compose(scenes, video, os.path.join(work, "kurgu"), music=track, music_volume=settings.MUSIC_VOLUME)
+    if total < 15:
+        log.append({"asama": "sure", "deneme": 1, "gecti": False, "puan": 0,
+                    "hatalar": [f"video {total:.1f} sn (hedef 15-30); hatalı anlar kesildiği için kısaldı"]})
     editor.contact_sheet(video, os.path.join(out_dir, "kareler.jpg"))
 
     print("[5/5] Açıklama")

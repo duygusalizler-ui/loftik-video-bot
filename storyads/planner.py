@@ -29,7 +29,14 @@ KURALLAR (hepsi zorunlu):
 7. Hareketler gerçek zamanlı hızda, AĞIR ÇEKİM YOK. Her sahne tek kesintisiz çekim (~5-6 sn).
 8. Görsel/hareket/ses promptları İNGİLİZCE, ekran yazıları ve açıklama TÜRKÇE.
 9. Açıklama (caption): hikâyenin devamı gibi 1-2 kısa satır + paylaşım çağrısı (arkadaşını etiketle/gönder) + "{bio_cta}". Ürün adını sadece sabit yorumda geç.
-10. Asla: {yasak}
+10. HATA ÖNLEME (yapay zekâ videosunda en çok bozulan şeyler, bunlardan kaçın):
+   - Bir sahnede en fazla 2 karakter; karakterler birbirinin önünden geçmesin, iç içe girmesin.
+   - Zıplama, koşma, dans, hızlı dönüş YOK; sakin ve tek bir hareket (yürür, uzatır, bakar, oturur).
+   - Ayakkabı/ürün giyme-çıkarma, el değiştirme YOK; ürün sahnede tek bir yerde dursun (ya ayakta ya elde).
+   - Ürün her sahnede aynı sayıda: bir çift ayakkabı = 2 ayakkabı, fazlası yok.
+   - Okunabilir yazı, tabela, ekran, logo içeren arka plan YOK.
+   - Ana karakterin yüzü kadrajın üst yarısında olsun (alt kısım altyazıya ayrılır).
+11. Asla: {yasak}
 
 Sadece şu JSON'u döndür:
 {{

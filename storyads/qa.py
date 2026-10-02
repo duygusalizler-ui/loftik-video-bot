@@ -39,15 +39,18 @@ def score(product_refs: list[str], candidates: list[str], urun_gorunur: bool = T
 
 
 CLIP_PROMPT = """Sen kısa video reklamları için katı bir kalite kontrolcüsün.
-İlk {n_ref} görsel: ürünün GERÇEK fotoğrafı (referans). Sonraki {n} görsel: aynı video klibinden sırayla alınmış kareler,
+İlk {n_ref} görsel: ürünün GERÇEK fotoğrafı (referans). Sonraki görsel: klibin başlangıç karesi (karakter referansı).
+Sonraki {n} görsel: aynı video klibinden sırayla alınmış kareler,
 zamanları (sn): {zamanlar}.
 Beklenen üslup: karakterler 3D animasyon, arka plan gerçekçi fotoğraf, ürün %100 gerçek ürün gibi.
 
 Her kareyi tek tek kontrol et: fazla ayak/kol/ayakkabı (ör. karakter ayakkabı giymişken yerde de bir çift durması),
 karakterlerin birbirine karışması/eriyen yüz, bulanıklıkta kaybolan yüz, ürünün animasyona dönmesi veya değişmesi,
-uydurma logo/okunur yazı. Kısa hareket bulanıklığı tek başına hata değildir.
+karakterin yüzünün/tipinin başlangıç karesine göre değişmesi, arka planda anlamsız harfli tabela/yazı, uydurma logo.
+Kısa hareket bulanıklığı tek başına hata değildir.
 
-Sadece JSON: {{"hatali_kareler": [{{"sn": 0.0, "sorun": "kısa Türkçe"}}], "urun_uyumu": 0-10, "puan": 0-10, "hatalar": ["kısa Türkçe"]}}
+Ayrıca son karelerde ana karakterin yüzü ekranın neresinde: "ust", "orta" veya "alt" (yüz görünmüyorsa "yok").
+Sadece JSON: {{"hatali_kareler": [{{"sn": 0.0, "sorun": "kısa Türkçe"}}], "urun_uyumu": 0-10, "puan": 0-10, "hatalar": ["kısa Türkçe"], "son_yuz_konumu": "ust|orta|alt|yok"}}
 "puan" = klibin TEMİZ kısmı reklamda kullanılabilir mi (hatalı anlar kesilecek)."""
 
 
@@ -64,10 +67,11 @@ def clean_range(times: list[float], bad: list[float], total: float, min_len: flo
     return best
 
 
-def score_clip(product_refs: list[str], frames: list[str], times: list[float], total: float) -> dict:
+def score_clip(product_refs: list[str], frames: list[str], times: list[float], total: float,
+               start_image: str | None = None) -> dict:
     prompt = CLIP_PROMPT.format(n_ref=len(product_refs[:2]), n=len(frames), zamanlar=", ".join(f"{t:.1f}" for t in times))
     try:
-        r = genai.text_json(prompt, list(product_refs[:2]) + frames)
+        r = genai.text_json(prompt, list(product_refs[:2]) + ([start_image] if start_image else []) + frames)
         r["puan"] = int(r.get("puan", 0))
     except genai.QuotaError:
         raise
