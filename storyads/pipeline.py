@@ -19,7 +19,7 @@ NO_TEXT = (" No text, no letters, no logos, no brand names anywhere. Vertical 9:
            "as calm background (sky or wall) with the character's head below it.")
 NO_PRODUCT = (" The character does NOT have the product yet: wears old, worn-out, cheap, unsuitable shoes/items, clearly "
               "different from the product. Do not show the product anywhere.")
-MOTION_RULE = (" Normal real-time speed, NO slow motion, one continuous shot, slight handheld camera. "
+MOTION_RULE = (" Normal real-time speed, NO slow motion, slight handheld camera. "
                "Keep characters, background and product identical to the first frame. Product stays a real "
                "photorealistic product in every frame.")
 PRODUCT_FIX = ("Edit the FIRST image. Keep EVERYTHING identical (characters, poses, background, light, composition). "
@@ -91,7 +91,7 @@ def _scene_image(i: int, scene: dict, plan: dict, prod, prev_img: str | None, wo
 
 
 def _scene_clip(i: int, scene: dict, img: str, prod, work: str, log: list) -> tuple | None:
-    prompt = (scene["hareket_prompt"] + MOTION_RULE
+    prompt = ("Multi-shot sequence with quick cuts (~2 s per shot). " + scene["hareket_prompt"] + MOTION_RULE
               + " Objects never appear, disappear or change shape. Only the shoes already on the character's feet:"
               " no extra or spare shoes anywhere, nothing new on the ground."
               + f" SOUND: {scene.get('ses_efekti', 'natural ambience')}. "
@@ -165,7 +165,15 @@ def run(brand: Brand, product_url: str, out_dir: str, fmt: str | None = None,
         return Result(None, plan, qa_log=log)
 
     print("[4/5] Kurgu")
-    scenes[0]["hook"], scenes[0]["text"] = plan.get("kanca"), None
+    # Acilis: urun sahnesinin ilk 1,5 sn'si en basa (urun ilk saniyede gorunsun), kanca yazisi onun ustunde;
+    # ardindan "3 gun once..." ile hikaye baslar.
+    urun_sc = next((s for s in scenes if s.get("rol") == "urun"), None)
+    if urun_sc and scenes[0].get("rol") != "urun":
+        scenes[0]["text"] = plan.get("geri_sarma_yazisi") or "Birkaç gün önce..."
+        scenes.insert(0, {"clip": urun_sc["clip"], "bas": urun_sc["bas"], "son": urun_sc["bas"] + 1.6,
+                          "hook": plan.get("kanca"), "yuz": urun_sc.get("yuz")})
+    else:
+        scenes[0]["hook"], scenes[0]["text"] = plan.get("kanca"), None
     if scenes[0].get("yuz") == "ust":  # kanca yazisi yuzu kapatmasin
         scenes[0]["hook_y"] = 1450
     scenes[-1]["final"], scenes[-1]["text"] = plan.get("final_yazi"), None

@@ -16,7 +16,7 @@ import subprocess
 from PIL import Image, ImageDraw, ImageFont
 
 W, H, FPS = 1080, 1920, 30
-XFADE = 0.45  # gecis suresi (sn)
+XFADE = 0.2  # gecis suresi (sn): kisa tutulur, akici/hizli kurgu (rakip reklamlardaki gibi)
 FONT_PATHS = (
     "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
     "/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf",
