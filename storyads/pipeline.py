@@ -27,7 +27,7 @@ PRODUCT_FIX = ("Edit the FIRST image. Keep EVERYTHING identical (characters, pos
                "100% photorealistic real product photography (real material texture, stitching, natural creases, "
                "correct sole), NOT cartoon, NOT 3D, NOT plastic. Same position, size and perspective, matching "
                "shadows. Remove any numbers, text, counters or speech bubbles if present.")
-NEGATIVE = "speech, talking, dialogue, narration, voice, singing, music, slow motion, text, subtitles, logo, watermark"
+NEGATIVE = "extra shoes, duplicate shoes, shoes on the ground, spare boots, speech, talking, dialogue, narration, voice, singing, music, slow motion, text, subtitles, logo, watermark"
 
 
 @dataclass
@@ -91,8 +91,11 @@ def _scene_image(i: int, scene: dict, plan: dict, prod, prev_img: str | None, wo
 
 
 def _scene_clip(i: int, scene: dict, img: str, prod, work: str, log: list) -> tuple | None:
-    prompt = scene["hareket_prompt"] + MOTION_RULE + " Objects never appear, disappear or change shape." + f" SOUND: {scene.get('ses_efekti', 'natural ambience')}. " \
-             "Sound effects and ambience only: no speech, no voices, no music."
+    prompt = (scene["hareket_prompt"] + MOTION_RULE
+              + " Objects never appear, disappear or change shape. Only the shoes already on the character's feet:"
+              " no extra or spare shoes anywhere, nothing new on the ground."
+              + f" SOUND: {scene.get('ses_efekti', 'natural ambience')}. "
+              "Sound effects and ambience only: no speech, no voices, no music.")
     for t in range(1, settings.CLIP_TRIES + 1):
         out = os.path.join(work, f"klip{i}_{t}.mp4")
         try:
@@ -111,7 +114,8 @@ def _scene_clip(i: int, scene: dict, img: str, prod, work: str, log: list) -> tu
             fp = os.path.join(work, f"kare{i}_{t}_{k}.jpg")
             editor.run(["-ss", f"{ts:.2f}", "-i", out, "-frames:v", "1", "-vf", "scale=540:-2", fp])
             frames.append(fp)
-        r = qa.score_clip(prod.gorseller, frames, times, T, start_image=img)
+        r = qa.score_clip(prod.gorseller, frames, times, T, start_image=img,
+                          urun_gorunur=scene.get("urun_gorunur", True))
         log.append({"asama": f"sahne{i + 1}_klip", "deneme": t, **r})
         print(f"  sahne {i + 1} klip {t}: {r['puan']}/10 temiz aralık={r.get('aralik')} {r.get('hatali_kareler') or ''}")
         if r["gecti"]:

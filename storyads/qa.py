@@ -46,6 +46,8 @@ CLIP_PROMPT = """Sen kısa video reklamları için katı bir kalite kontrolcüs�
 Sonraki {n} görsel: aynı video klibinden sırayla alınmış kareler,
 zamanları (sn): {zamanlar}.
 Beklenen üslup: karakterler 3D animasyon, arka plan gerçekçi fotoğraf, ürün %100 gerçek ürün gibi.
+Bu sahnede ürün görünmeli mi: {urun_gorunur}. Görünmemesi gerekiyorsa karakterin eski/başka ayakkabı giymesi
+DOĞRUDUR, bundan puan kırma; sadece başlangıç karesiyle tutarlılığa ve bozulmalara bak.
 
 Her kareyi tek tek kontrol et: fazla ayak/kol/ayakkabı (ör. karakter ayakkabı giymişken yerde de bir çift durması),
 karakterlerin birbirine karışması/eriyen yüz, bulanıklıkta kaybolan yüz, ürünün animasyona dönmesi veya değişmesi,
@@ -72,8 +74,9 @@ def clean_range(times: list[float], bad: list[float], total: float, min_len: flo
 
 
 def score_clip(product_refs: list[str], frames: list[str], times: list[float], total: float,
-               start_image: str | None = None) -> dict:
-    prompt = CLIP_PROMPT.format(n_ref=len(product_refs[:2]), n=len(frames), zamanlar=", ".join(f"{t:.1f}" for t in times))
+               start_image: str | None = None, urun_gorunur: bool = True) -> dict:
+    prompt = CLIP_PROMPT.format(n_ref=len(product_refs[:2]), n=len(frames), zamanlar=", ".join(f"{t:.1f}" for t in times),
+                                urun_gorunur="evet" if urun_gorunur else "HAYIR")
     try:
         r = genai.text_json(prompt, list(product_refs[:2]) + ([start_image] if start_image else []) + frames)
         r["puan"] = int(r.get("puan", 0))
