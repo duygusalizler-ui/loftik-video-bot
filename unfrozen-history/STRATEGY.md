@@ -63,3 +63,12 @@ Son sahneden (sonraki bölüm tanıtımı) hemen önce, anlatıcının kendi ses
 ## 10. Değerlendirme eşiği: 10. video
 - Kullanıcı kararı: kanalın tutup tutmadığına **10. videodan sonra** bakılır (haftada 2 → ~31 Ekim 2026).
 - O zamana kadar: her Pazar analiz → bir sonraki bölümde tek bir şeyi iyileştir (başlık/kapak, ilk 30 sn, tempo).
+
+## 11. Paketleme deneyi: "Actually" soru başlığı + parlak kapak (2026-10-02 kullanıcı kararı)
+- İlham: Ink Explainer (@Inkexplainer96) — Nisan 2026 açıldı, 16 video, 109B abone; tek video
+  "What Did Ancient Humans Actually Do All Day?" 10M izlenme. Basit evrensel soru + "Actually" + sarı 1–2 kelime parlak kapak.
+- Deney: ep004'ten itibaren (ilk fırsatta) başlık soru formatında, örn.
+  "What Did Vikings Actually Do All Winter?", "What Did Medieval Peasants Actually Eat in Winter?",
+  "What Did People Actually Do During the Longest Night of the Year?"
+- Kapak: açık/parlak zemin, kocaman 1–2 kelime (sarı), tek fikir; koyu-kasvetli kapakla A/B karşılaştır.
+- Konsept (1. şahıs anlatıcı, kış) aynı kalır — sadece paketleme değişir. Sonucu CTR + izlenme ile ölç.
