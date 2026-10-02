@@ -187,3 +187,8 @@ python -m src.main
   ekleyebilirsin.
 - **Tekrar paylaşmama mantığı**: `data/posted.json`, her çalışmadan sonra
   GitHub Actions tarafından otomatik commit'lenir. Bu dosyayı elle silme.
+
+## Hikâyeli reklam motoru (storyads)
+Animasyon karakterli, gerçekçi arka planlı, seslendirmesiz kısa hikâye videoları üretir (kanca → sorun → öneri → ürün → sonuç).
+Markadan bağımsızdır; Loftik ilk marka. Ayrıntılar: [storyads/README.md](storyads/README.md).
+Çalıştırmak için: **Actions → "Hikâye videosu" → Run workflow** (ürün linkini gir, sonuç Telegram'a gelir).

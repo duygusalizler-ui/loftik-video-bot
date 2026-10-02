@@ -1,0 +1,64 @@
+name: Hikâye videosu
+
+on:
+  workflow_dispatch:
+    inputs:
+      marka:
+        description: "Marka kodu (storyads/brands/<kod>.json)"
+        default: "loftik"
+        required: true
+      urun:
+        description: "Ürün sayfası linki"
+        required: true
+      format:
+        description: "Format (boş = otomatik): rovans, saat, sirri_ne, pov, beklenti_gercek, kucuk_kahraman, sayac"
+        required: false
+      karakter:
+        description: "Ana karakter (boş = otomatik), ör. ayı, aslan, panda"
+        required: false
+
+permissions:
+  contents: write
+
+jobs:
+  uret:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -r requirements.txt
+      - name: Video üret
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          MARKA: ${{ inputs.marka }}
+          URUN: ${{ inputs.urun }}
+          FORMAT: ${{ inputs.format }}
+          KARAKTER: ${{ inputs.karakter }}
+        run: |
+          args=(--marka "$MARKA" --urun "$URUN" --telegram)
+          [ -n "$FORMAT" ] && args+=(--format "$FORMAT")
+          [ -n "$KARAKTER" ] && args+=(--karakter "$KARAKTER")
+          python -m storyads "${args[@]}"
+      - name: Çıktıyı sakla
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: hikaye-videosu
+          path: |
+            cikti/**/video.mp4
+            cikti/**/*.txt
+            cikti/**/*.json
+            cikti/**/kareler.jpg
+          if-no-files-found: ignore
+      - name: Format/karakter geçmişini kaydet
+        if: success()
+        run: |
+          git config user.name "storyads-bot"
+          git config user.email "storyads-bot@users.noreply.github.com"
+          git add data/storyads_gecmis.json || true
+          git diff --cached --quiet || (git commit -m "chore: storyads geçmişi [skip ci]" && git push)
