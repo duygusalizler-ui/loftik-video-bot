@@ -1,10 +1,12 @@
 {
  "loftik": {
   "formatlar": [
-   "kucuk_kahraman"
+   "kucuk_kahraman",
+   "rovans"
   ],
   "karakterler": [
-   "aslan"
+   "aslan",
+   "kaplan"
   ]
  }
 }
