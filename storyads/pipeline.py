@@ -153,6 +153,9 @@ def run(brand: Brand, product_url: str, out_dir: str, fmt: str | None = None,
             continue
         prev = prev or img  # karakter referansi: ilk gecen sahne
         got = _scene_clip(i, sc, img, prod, work, log)
+        if not got and sc.get("rol") in ("oneri", "urun"):
+            print(f"Kritik sahnenin ({sc.get('rol')}) klibi tutmadı; eksik hikâye gönderilmez.")
+            return Result(None, plan, qa_log=log)
         if got:
             clip, (bas, son), yuz = got
             scenes.append({"clip": clip, "bas": bas, "son": son, "text": sc.get("ekran_yazisi") or None,
