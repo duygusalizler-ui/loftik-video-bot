@@ -34,11 +34,13 @@ KURALLAR (hepsi zorunlu):
 8. Görsel/hareket/ses promptları İNGİLİZCE, ekran yazıları ve açıklama TÜRKÇE.
 9. Açıklama (caption): hikâyenin devamı gibi 1-2 kısa satır + paylaşım çağrısı (arkadaşını etiketle/gönder) + "{bio_cta}". Ürün adını sadece sabit yorumda geç.
    Site adresi: {site} (başka adres UYDURMA).
-10. AKICILIK (rakiplerin kazanan kalıbı): Video ürünün en çarpıcı anıyla AÇILIR (ilk 1,5 sn "ürün" sahnesinden
-   otomatik alınır), sonra "geri_sarma_yazisi" ile ("3 gün önce...", "Dün sabah...") hikâye başlar.
-   Her sahnenin "hareket_prompt"u 2-3 hızlı çekimden oluşsun ve şöyle yazılsın: "Shot 1: ... Shot 2: ... Shot 3: ...",
-   her çekim ~2 sn; Shot 1 HER ZAMAN ayaklara/ayakkabıya yakın plandır (kanca ve sorun sahnelerinde eski ayakkabı,
-   sonrasında ürün). Sahneler arası akış kesintisiz: bir sahnenin sonu bir sonrakinin başına bağlansın.
+10. AKICILIK: Video DOĞRUDAN hikâyeyle başlar; başa ürün ön gösterimi/özet çekimi KOYMA (kesin kural).
+   İlk sahne hareketli ve çarpıcı olsun, hareketsiz duran karakter yok. Her sahnenin "hareket_prompt"u 2-3 hızlı
+   çekimden oluşsun: "Shot 1: ... Shot 2: ... Shot 3: ...", her çekim ~2 sn. Sahneler arası akış kesintisiz.
+   ÜRÜN BİLİNÇALTI (kesin kural): Ürün her sahnede göze çarpsın ama "reklam" gibi itilmesin: ürünü taşıyan
+   karakter (ya da sahnedeki başka biri) ürünü doğal biçimde kadrajda taşır, kamera ürüne sık sık ama kısa
+   (≤1 sn) değer, ürün sahnenin en canlı/aydınlık rengi olur. Kanca ve sorun sahnelerinde bile ürün arka planda
+   biri tarafından giyilmiş olarak kısa görünebilir (izleyici fark etmeden aklında kalır).
 11. ÜRÜN GERÇEKLİĞİ (KESİN KURAL): Ürün asla animasyon/3D/plastik görünmez. "urun" sahnesi ve ürünün yakın
    göründüğü her çekim KARAKTERSİZ olur: sadece pantolon paçası + ürün, %100 gerçek fotoğraf/telefon çekimi gibi
    ("Real smartphone footage, photorealistic, not CGI"). Karakter bu sahnede ya hiç görünmez ya da uzakta bulanık kalır.
@@ -69,7 +71,6 @@ Sadece şu JSON'u döndür:
      "ses_efekti": "İngilizce: duyulacak sesler",
      "urun_gorunur": true}}
  ],
- "geri_sarma_yazisi": "açılıştan sonra hikâyeyi başlatan kısa yazı (ör. '3 gün önce...')",
  "final_yazi": "son sahnede ekranın ortasında çıkacak vurucu cümle",
  "aciklama": "Instagram açıklaması",
  "sabit_yorum": "markanın kendi yorumu: ürün adı + nereden alınır",

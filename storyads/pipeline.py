@@ -169,15 +169,8 @@ def run(brand: Brand, product_url: str, out_dir: str, fmt: str | None = None,
         return Result(None, plan, qa_log=log)
 
     print("[4/5] Kurgu")
-    # Acilis: urun sahnesinin ilk 1,5 sn'si en basa (urun ilk saniyede gorunsun), kanca yazisi onun ustunde;
-    # ardindan "3 gun once..." ile hikaye baslar.
-    urun_sc = next((s for s in scenes if s.get("rol") == "urun"), None)
-    if urun_sc and scenes[0].get("rol") != "urun":
-        scenes[0]["text"] = plan.get("geri_sarma_yazisi") or "Birkaç gün önce..."
-        scenes.insert(0, {"clip": urun_sc["clip"], "bas": urun_sc["bas"], "son": urun_sc["bas"] + 1.6,
-                          "hook": plan.get("kanca"), "yuz": urun_sc.get("yuz")})
-    else:
-        scenes[0]["hook"], scenes[0]["text"] = plan.get("kanca"), None
+    # KESIN KURAL: basa urun "on gosterimi" (cold open) EKLENMEZ; video dogrudan hikayeyle baslar.
+    scenes[0]["hook"], scenes[0]["text"] = plan.get("kanca"), None
     if scenes[0].get("yuz") == "ust":  # kanca yazisi yuzu kapatmasin
         scenes[0]["hook_y"] = 1450
     scenes[-1]["final"], scenes[-1]["text"] = plan.get("final_yazi"), None
