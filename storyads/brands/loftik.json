@@ -5,9 +5,16 @@
   "hedef_kitle": "Türkiye'de 18-40 yaş, şehirde yaşayan, rahatlık ve uygun fiyat arayan kadın ve erkekler",
   "ses_tonu": "samimi, esprili, günlük Türkçe; kaba değil",
   "bio_cta": "Ayakkabı merak edenler: link bio'da 👟",
-  "hashtagler": ["#loftikayakkabi", "#ayakkabı", "#kombin"],
+  "hashtagler": [
+    "#loftikayakkabi",
+    "#ayakkabı",
+    "#kombin"
+  ],
   "karakterler": [],
   "yasak": [
+    "KESİN KURAL: ayakkabı ASLA animasyon/3D/plastik görünmez; ayakkabının göründüğü her yakın çekim karaktersiz, %100 fotoğraf gerçekliğinde (gerçek ürün fotoğrafından) ayrı üretilir",
+    "Ürün her sahnede göze çarpsın ama reklam gibi itilmesin (bilinçaltı yerleştirme)",
+    "KESİN KURAL: videonun başına ürün ön gösterimi/özet çekimi konmaz, video doğrudan hikâyeyle başlar",
     "ürüne 'hakiki deri' deme (ürünler vegan deri)",
     "rakip marka adı kullanma",
     "ağır çekim",
