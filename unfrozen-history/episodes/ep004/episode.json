@@ -21,7 +21,9 @@
     2,
     3
   ],
-  "gates": {},
+  "gates": {
+    "script": "2026-10-02T08:10:04+00:00"
+  },
   "must": [
     "historically accurate 1846–47 American emigrant details only",
     "1840s clothing: wool coats, homespun shirts, bonnets, shawls, felt hats; covered wagons with white canvas and oxen",
@@ -36,7 +38,8 @@
     "gore, blood, corpses, human remains, bones of humans, anything suggesting cannibalism",
     "cowboy clichés: revolvers in holsters, cowboy boots with spurs, Native American war paint or feathered headdresses",
     "extra fingers, deformed hands, duplicated faces",
-    "the same person appearing twice in one frame (clones, twins, duplicated characters)"
+    "the same person appearing twice in one frame (clones, twins, duplicated characters)",
+    "collage, multiple panels, split screen, several pictures in one image: it must be ONE single continuous scene"
   ],
   "sources": [
     "Patrick Breen — Diary of Patrick Breen, One of the Donner Party (Nov 1846–Mar 1847; ed. Frederick J. Teggart, 1910)",
@@ -53,27 +56,126 @@
     "peggy": {
       "kind": "character",
       "prompt": "Character reference sheet: on the left a full-body front view standing, on the right a chest-up portrait of the same person; identical original character in both views, single character only, no other people, no props except those described. Peggy, Irish-American pioneer mother of 1846 about 40, strong tired face, dark hair pinned up under a faded dark blue cotton bonnet, dark brown wool dress to the ankles, grey knitted wool shawl, worn leather boots",
-      "n": "peggy"
+      "n": "peggy",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "2bad6629-a080-4058-8919-2fb45dc5c421",
+            "submitted": "2026-10-02T08:10:52+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "2bad6629-a080-4058-8919-2fb45dc5c421",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_081044_2bad6629-a080-4058-8919-2fb45dc5c421.png",
+        "finished": "2026-10-02T08:11:32+00:00"
+      }
     },
     "boys": {
       "kind": "character",
       "prompt": "Group reference: six pioneer brothers of 1846 standing in a row from oldest to youngest (about 14, 13, 11, 9, 7 and 4 years old), plain homespun linen shirts, brown wool trousers with suspenders, patched wool coats, wool caps, same family resemblance, freckles, brown hair, full body, plain parchment background",
-      "n": "boys"
+      "n": "boys",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "f68cedad-7811-4820-863b-0cef0fde732e",
+            "submitted": "2026-10-02T08:10:52+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "f68cedad-7811-4820-863b-0cef0fde732e",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_081044_f68cedad-7811-4820-863b-0cef0fde732e.png",
+        "finished": "2026-10-02T08:11:34+00:00"
+      }
     },
     "wagon": {
       "kind": "location",
-      "prompt": "Reference, an 1846 emigrant covered wagon (prairie schooner): wooden wagon box painted blue, white canvas cover over hoops, large wooden wheels with iron tires, pulled by a team of four oxen in wooden yokes, on a dirt trail",
-      "n": "wagon"
+      "prompt": "Single image, one scene only (not a collage, no panels): reference of ONE 1846 emigrant covered wagon (prairie schooner) seen from the side on an empty dirt trail on the summer prairie: wooden wagon box painted blue, white canvas cover over hoops, large wooden wheels with iron tires, a team of four oxen in wooden yokes, NO people, no cabins, no campfire",
+      "n": "wagon",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "3cd2a47b-ec37-4c38-8ce7-c0077e9142b4",
+            "submitted": "2026-10-02T08:12:25+00:00",
+            "credits": 1.0
+          }
+        ],
+        "history": [
+          {
+            "status": "done",
+            "attempts": [
+              {
+                "job_id": "4bb82e0a-83a3-4d48-91d0-a09ef1581340",
+                "submitted": "2026-10-02T08:10:52+00:00",
+                "credits": 1.0
+              }
+            ],
+            "job_id": "4bb82e0a-83a3-4d48-91d0-a09ef1581340",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_081044_4bb82e0a-83a3-4d48-91d0-a09ef1581340.png",
+            "finished": "2026-10-02T08:11:35+00:00",
+            "redo_reason": "kalabalik sahne",
+            "redo_at": "2026-10-02T08:12:08+00:00"
+          }
+        ],
+        "job_id": "3cd2a47b-ec37-4c38-8ce7-c0077e9142b4",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_081218_3cd2a47b-ec37-4c38-8ce7-c0077e9142b4.png",
+        "finished": "2026-10-02T08:13:00+00:00"
+      }
     },
     "lake": {
       "kind": "location",
       "prompt": "Location reference, wide establishing view of a cold mountain lake in the Sierra Nevada in winter 1846: dark pine forest, granite peaks and a high notch-like pass above, deep snow, three small rough log cabins half-buried in snow near the shore, no people, no modern buildings",
-      "n": "lake"
+      "n": "lake",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "a317b52c-e380-4dff-abd2-760679415e22",
+            "submitted": "2026-10-02T08:10:53+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "a317b52c-e380-4dff-abd2-760679415e22",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_081044_a317b52c-e380-4dff-abd2-760679415e22.png",
+        "finished": "2026-10-02T08:11:36+00:00"
+      }
     },
     "cabin_in": {
       "kind": "location",
-      "prompt": "Location reference, interior of a small rough log cabin of 1846: dirt floor, walls of unpeeled logs chinked with mud, a stone fireplace, low roof of poles patched with ox hides and pine branches, a rough wooden table and bench, blankets on the floor, one tiny window, no people",
-      "n": "cabin_in"
+      "prompt": "Single image, one scene only (not a collage, no panels, no split screen): interior of ONE small rough log cabin of 1846 seen from inside: dirt floor, walls of unpeeled logs chinked with mud, a stone fireplace with a small fire, low roof of poles patched with ox hides and pine branches, a rough wooden table and bench, blankets on the floor, one tiny window, NO people",
+      "n": "cabin_in",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "111ea3b6-79cf-4a66-b29f-7bd18c190192",
+            "submitted": "2026-10-02T08:12:25+00:00",
+            "credits": 1.0
+          }
+        ],
+        "history": [
+          {
+            "status": "done",
+            "attempts": [
+              {
+                "job_id": "45f6837e-df1e-4da2-ac2e-083c3c4f8d3d",
+                "submitted": "2026-10-02T08:10:53+00:00",
+                "credits": 1.0
+              }
+            ],
+            "job_id": "45f6837e-df1e-4da2-ac2e-083c3c4f8d3d",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_081044_45f6837e-df1e-4da2-ac2e-083c3c4f8d3d.png",
+            "finished": "2026-10-02T08:11:37+00:00",
+            "redo_reason": "kolaj",
+            "redo_at": "2026-10-02T08:12:08+00:00"
+          }
+        ],
+        "job_id": "111ea3b6-79cf-4a66-b29f-7bd18c190192",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_081218_111ea3b6-79cf-4a66-b29f-7bd18c190192.png",
+        "finished": "2026-10-02T08:13:01+00:00"
+      }
     }
   },
   "music": [
@@ -137,7 +239,7 @@
     "model": "text2speech_v2",
     "variant": "elevenlabs",
     "voice_id": "07112420-b262-46e4-8698-6d2a177958f4",
-    "post": "atempo=1.06,highpass=f=70,equalizer=f=250:t=q:w=1.2:g=-2,equalizer=f=3200:t=q:w=1.0:g=3.5,treble=g=2:f=8000,acompressor=threshold=-20dB:ratio=3:attack=5:release=120:makeup=3,loudnorm=I=-16:TP=-1.5"
+    "post": "silenceremove=stop_periods=-1:stop_duration=0.55:stop_threshold=-45dB:stop_silence=0.45,atempo=1.06,highpass=f=70,equalizer=f=250:t=q:w=1.2:g=-2,equalizer=f=3200:t=q:w=1.0:g=3.5,treble=g=2:f=8000,acompressor=threshold=-20dB:ratio=3:attack=5:release=120:makeup=3,loudnorm=I=-16:TP=-1.5"
   },
   "scenes": [
     {
@@ -164,7 +266,33 @@
       "must_not": [
         "a dog's body or blood",
         "the narrator's face"
-      ]
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "ae674d65-6614-4299-85bb-f8ad5c9f0529",
+            "submitted": "2026-10-02T08:13:47+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "ae674d65-6614-4299-85bb-f8ad5c9f0529",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_081340_ae674d65-6614-4299-85bb-f8ad5c9f0529.png",
+        "finished": "2026-10-02T08:14:27+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "51a9c387-d801-4a4f-8743-eaa4f4fb996c",
+            "submitted": "2026-10-02T08:17:58+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "51a9c387-d801-4a4f-8743-eaa4f4fb996c",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_081747_51a9c387-d801-4a4f-8743-eaa4f4fb996c.mp4",
+        "finished": "2026-10-02T08:20:57+00:00"
+      }
     },
     {
       "n": 2,
@@ -182,7 +310,50 @@
       "refs": [
         "wagon"
       ],
-      "voice_mood": "intrigue"
+      "voice_mood": "intrigue",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "fd2c08e2-9a4a-43d9-8c24-1a88738b7d7d",
+            "submitted": "2026-10-02T08:15:15+00:00",
+            "credits": 1.0
+          }
+        ],
+        "history": [
+          {
+            "status": "done",
+            "attempts": [
+              {
+                "job_id": "959d4188-2ab6-49b0-9303-547fdb87a4d6",
+                "submitted": "2026-10-02T08:13:47+00:00",
+                "credits": 1.0
+              }
+            ],
+            "job_id": "959d4188-2ab6-49b0-9303-547fdb87a4d6",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_081340_959d4188-2ab6-49b0-9303-547fdb87a4d6.png",
+            "finished": "2026-10-02T08:14:29+00:00",
+            "redo_reason": "kolaj",
+            "redo_at": "2026-10-02T08:14:45+00:00"
+          }
+        ],
+        "job_id": "fd2c08e2-9a4a-43d9-8c24-1a88738b7d7d",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_081509_fd2c08e2-9a4a-43d9-8c24-1a88738b7d7d.png",
+        "finished": "2026-10-02T08:15:52+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "a588fc20-beec-4a22-aa34-664d9e1c7579",
+            "submitted": "2026-10-02T08:17:58+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "a588fc20-beec-4a22-aa34-664d9e1c7579",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_081747_a588fc20-beec-4a22-aa34-664d9e1c7579.mp4",
+        "finished": "2026-10-02T08:20:59+00:00"
+      }
     },
     {
       "n": 3,
@@ -190,7 +361,7 @@
       "pov": true,
       "narration": "My wife, Peggy. Forty years old, and the strongest person I have ever known. Our boys: John, Edward, Patrick, Simon, James and little Peter. And Isabella, not even a year old, in her mother's arms. Every night on the trail, we pray the rosary together. I did not know yet how much we would need it.",
       "narration_voiced": "My wife, Peggy. Forty years old, and the strongest person I have ever known. Our boys: John, Edward, Patrick, Simon, James and little Peter. And Isabella, not even a year old, in her mother's arms. Every night on the trail, we pray the rosary together. I did not know yet how much we would need it.",
-      "image_prompt": "POV at an evening campfire beside a covered wagon on the prairie, summer 1846: Peggy (Irish pioneer mother about 40, strong tired face, dark hair pinned under a faded dark blue bonnet or wool shawl, dark brown wool dress, grey knitted shawl) holding baby Isabella (an infant under one year old wrapped in a grey wool blanket), the Breen boys (six pioneer boys of different ages from about 4 to 14, plain homespun shirts, wool trousers, patched coats, wool caps) sitting around the fire, a wooden rosary in the narrator's hands in the foreground, sunset sky",
+      "image_prompt": "POV at an evening campfire beside a covered wagon on the prairie, summer 1846. Composition: on the LEFT side of the fire sits Peggy (Irish pioneer mother about 40, dark blue bonnet, grey knitted shawl, dark brown wool dress) holding baby Isabella wrapped in a grey wool blanket, and beside her THREE boys: a tall boy of 14, a boy of 13 and a boy of 11; on the RIGHT side of the fire sit THREE smaller boys: a boy of 9, a boy of 7 and a little boy of 4 leaning sleepily on his brother. Six boys in total, homespun shirts, patched wool coats, wool caps. A wooden rosary in the narrator's hands in the foreground, sunset sky",
       "shots": [
         "Peggy rocks the baby gently by the campfire and smiles",
         "the boys sit around the fire, the youngest leans sleepily on an older brother",
@@ -204,12 +375,70 @@
       ],
       "voice_mood": "warm",
       "must": [
-        "exactly six boys and one baby",
+        "SIX boys in total: three on the left of the fire and three on the right, clearly different ages and heights, plus one baby in the mother's arms",
         "the narrator is never seen, only his hands"
       ],
       "must_not": [
         "the narrator's face"
-      ]
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "90d05ded-bca2-42b0-a4e1-b12603f1ccf4",
+            "submitted": "2026-10-02T08:16:28+00:00",
+            "credits": 1.0
+          }
+        ],
+        "history": [
+          {
+            "status": "done",
+            "attempts": [
+              {
+                "job_id": "7efe689a-dcf8-4f7e-9857-a7990e4e9dd6",
+                "submitted": "2026-10-02T08:13:47+00:00",
+                "credits": 1.0
+              }
+            ],
+            "job_id": "7efe689a-dcf8-4f7e-9857-a7990e4e9dd6",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_081340_7efe689a-dcf8-4f7e-9857-a7990e4e9dd6.png",
+            "finished": "2026-10-02T08:14:29+00:00",
+            "redo_reason": "5 cocuk",
+            "redo_at": "2026-10-02T08:14:45+00:00"
+          },
+          {
+            "status": "done",
+            "attempts": [
+              {
+                "job_id": "2407619a-fc3d-4c6d-9c64-9032c9d6464d",
+                "submitted": "2026-10-02T08:15:15+00:00",
+                "credits": 1.0
+              }
+            ],
+            "job_id": "2407619a-fc3d-4c6d-9c64-9032c9d6464d",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_081509_2407619a-fc3d-4c6d-9c64-9032c9d6464d.png",
+            "finished": "2026-10-02T08:15:53+00:00",
+            "redo_reason": "yine 5 cocuk",
+            "redo_at": "2026-10-02T08:16:08+00:00"
+          }
+        ],
+        "job_id": "90d05ded-bca2-42b0-a4e1-b12603f1ccf4",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_081622_90d05ded-bca2-42b0-a4e1-b12603f1ccf4.png",
+        "finished": "2026-10-02T08:17:04+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "0d1a9b9d-6198-4978-bd87-bd52291ef96d",
+            "submitted": "2026-10-02T08:17:58+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "0d1a9b9d-6198-4978-bd87-bd52291ef96d",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_081748_0d1a9b9d-6198-4978-bd87-bd52291ef96d.mp4",
+        "finished": "2026-10-02T08:22:16+00:00"
+      }
     },
     {
       "n": 4,
