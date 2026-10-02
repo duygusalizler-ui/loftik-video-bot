@@ -8,9 +8,9 @@
   "hook_description": "In the winter of 1846, eighty-one emigrants were trapped by snow in the Sierra Nevada. Patrick Breen kept a diary through all of it, and his whole family walked out alive. This is their story, told in his words.",
   "character": "Patrick Breen (born 1795), a real Irish-born emigrant and member of the Donner Party; dramatized first-person narration based on his diary. His face is never shown.",
   "setting": "The Donner Party: from Iowa in spring 1846 to the snowbound camp at Truckee (now Donner) Lake, winter 1846–47",
-  "style": "Hand-painted gouache and watercolor storybook illustration, visible brush texture, warm amber firelight against cold blue winter light, cinematic composition, historically accurate American emigrants of 1846: white canvas covered wagons with oxen, wool coats, homespun shirts, bonnets and shawls, wide-brimmed felt hats, rough log cabins, Sierra Nevada granite peaks and pine forest, no modern objects, soft painterly detail, no text, no letters, no watermark",
+  "style": "Hand-painted gouache and watercolor storybook illustration, visible brush texture, warm amber firelight against cold blue winter light, cinematic composition, historically accurate American emigrants of 1846: wool coats, homespun shirts, bonnets and shawls, wide-brimmed felt hats, rough log cabins, Sierra Nevada granite peaks and pine forest, no modern objects, soft painterly detail, no text, no letters, no watermark",
   "ref_style": "Hand-painted gouache and watercolor storybook character reference sheet, same painterly look as the episode, even neutral lighting, plain warm parchment background, historically accurate 1846 American pioneer clothing, original person, no text, no labels, no watermark",
-  "motion_suffix": "Gentle natural motion, soft cuts between shots, painterly style and characters stay consistent across shots, no text; historically accurate 1846–47: covered wagons, oxen, log cabins, wool and homespun clothing, no modern objects, no vehicles with engines, no electric lights",
+  "motion_suffix": "Gentle natural motion, soft cuts between shots, painterly style and characters stay consistent across shots, no text; historically accurate 1846–47: log cabins, wool and homespun clothing, no modern objects, no vehicles with engines, no electric lights",
   "cast": {
     "Peggy": "Peggy (Irish pioneer mother about 40, strong tired face, dark hair pinned under a faded dark blue bonnet or wool shawl, dark brown wool dress, grey knitted shawl)",
     "Boys": "the Breen boys (six pioneer boys of different ages from about 4 to 14, plain homespun shirts, wool trousers, patched coats, wool caps)",
@@ -22,13 +22,14 @@
     3
   ],
   "gates": {
-    "script": "2026-10-02T08:10:04+00:00"
+    "script": "2026-10-02T08:10:04+00:00",
+    "preview": "2026-10-02T08:55:35+00:00"
   },
   "must": [
     "historically accurate 1846–47 American emigrant details only",
-    "1840s clothing: wool coats, homespun shirts, bonnets, shawls, felt hats; covered wagons with white canvas and oxen",
     "the same faces, hair and clothes as in the reference images for every named character",
-    "painterly gouache look in every frame"
+    "painterly gouache look in every frame",
+    "1840s clothing: wool coats, homespun shirts, bonnets, shawls, felt hats"
   ],
   "must_not": [
     "any text, letters, numbers, captions, logos or watermark",
@@ -354,7 +355,10 @@
         "job_id": "a588fc20-beec-4a22-aa34-664d9e1c7579",
         "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_081747_a588fc20-beec-4a22-aa34-664d9e1c7579.mp4",
         "finished": "2026-10-02T08:20:59+00:00"
-      }
+      },
+      "must": [
+        "covered wagons with white canvas and oxen where wagons appear"
+      ]
     },
     {
       "n": 3,
@@ -377,7 +381,8 @@
       "voice_mood": "warm",
       "must": [
         "SIX boys in total: three on the left of the fire and three on the right, clearly different ages and heights, plus one baby in the mother's arms",
-        "the narrator is never seen, only his hands"
+        "the narrator is never seen, only his hands",
+        "covered wagons with white canvas and oxen where wagons appear"
       ],
       "must_not": [
         "the narrator's face"
@@ -457,7 +462,34 @@
       "refs": [
         "wagon"
       ],
-      "voice_mood": "intrigue"
+      "voice_mood": "intrigue",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "0c82d5af-eab7-491f-ad1d-d5ca472f06ef",
+            "submitted": "2026-10-02T08:57:31+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "0c82d5af-eab7-491f-ad1d-d5ca472f06ef",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_085717_0c82d5af-eab7-491f-ad1d-d5ca472f06ef.png",
+        "finished": "2026-10-02T09:00:19+00:00"
+      },
+      "must": [
+        "covered wagons with white canvas and oxen where wagons appear"
+      ],
+      "clip": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "1eeede13-e878-4a32-a973-31ea39e8d45b",
+            "submitted": "2026-10-02T09:06:52+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "1eeede13-e878-4a32-a973-31ea39e8d45b"
+      }
     },
     {
       "n": 5,
@@ -465,7 +497,7 @@
       "pov": true,
       "narration": "The shortcut is a lie. In the Wasatch Mountains there is no road at all. For weeks, our men cut one themselves, with axes, through forest and boulders. Some days we move one mile. Then comes the salt desert: eighty miles of white crust, with no water and no grass. Our oxen fall and do not get up.",
       "narration_voiced": "The shortcut is a lie. In the Wasatch Mountains there is no road at all. For weeks, our men cut one themselves, with axes, through forest and boulders. Some days we move one mile. Then comes the salt desert: eighty miles of white crust, with no water and no grass. Our oxen fall... and do not get up.",
-      "image_prompt": "POV in August 1846: emigrant men chopping trees with axes in a steep rocky canyon to clear a path for covered wagons; then a vast blinding white salt flat with exhausted oxen and stranded wagons under a burning sun",
+      "image_prompt": "POV in August 1846 in a steep rocky canyon of the Wasatch Mountains: emigrant men swinging axes at trees and boulders to clear a path, covered wagons with oxen waiting behind them on the rough slope, dust and hot sunlight",
       "shots": [
         "men swing axes at trees blocking a steep canyon, wagons waiting behind",
         "covered wagons crawl across a blinding white salt flat",
@@ -479,7 +511,34 @@
       "must_not": [
         "blood",
         "dead animals in close-up"
-      ]
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "a1722067-f27f-4b07-86e2-064935c888e8",
+            "submitted": "2026-10-02T08:57:31+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "a1722067-f27f-4b07-86e2-064935c888e8",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_085717_a1722067-f27f-4b07-86e2-064935c888e8.png",
+        "finished": "2026-10-02T09:00:20+00:00"
+      },
+      "must": [
+        "covered wagons with white canvas and oxen where wagons appear"
+      ],
+      "clip": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "eb3b0cd9-cc2f-4ca6-bfbc-13d63c6f3141",
+            "submitted": "2026-10-02T09:06:52+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "eb3b0cd9-cc2f-4ca6-bfbc-13d63c6f3141"
+      }
     },
     {
       "n": 6,
@@ -499,13 +558,38 @@
       ],
       "voice_mood": "tense",
       "must": [
-        "the rider is seen only from behind or far away"
+        "the rider is seen only from behind or far away",
+        "covered wagons with white canvas and oxen where wagons appear"
       ],
       "must_not": [
         "weapons being used",
         "blood",
         "a fight"
-      ]
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "93093990-f3e8-4794-b280-e7b0b1a2490e",
+            "submitted": "2026-10-02T08:57:31+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "93093990-f3e8-4794-b280-e7b0b1a2490e",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_085717_93093990-f3e8-4794-b280-e7b0b1a2490e.png",
+        "finished": "2026-10-02T09:00:22+00:00"
+      },
+      "clip": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "4bf4421f-efb8-40b8-86e1-9f1cd638a29d",
+            "submitted": "2026-10-02T09:06:53+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "4bf4421f-efb8-40b8-86e1-9f1cd638a29d"
+      }
     },
     {
       "n": 7,
@@ -513,7 +597,7 @@
       "pov": true,
       "narration": "On the last day of October, we reach a lake below the pass, the final wall of mountains before California. We can see the gap at the top. One more climb, and we are through. That night it starts to snow.",
       "narration_voiced": "On the last day of October, we reach a lake below the pass, the final wall of mountains before California. We can SEE the gap at the top. One more climb, and we are through. That night... it starts to snow.",
-      "image_prompt": "POV at dusk on 31 October 1846: a cold mountain lake surrounded by dark pine forest and granite peaks, a high notch in the granite ridge above, covered wagons and oxen camped at the lakeshore, the first snowflakes falling",
+      "image_prompt": "POV at dusk on 31 October 1846: a cold mountain lake surrounded by dark pine forest and granite peaks, a high notch-like pass in the granite ridge above, covered wagons and oxen just arriving at the empty lakeshore, the first snowflakes falling; the only building is ONE small old abandoned log cabin among the trees",
       "shots": [
         "the narrator looks up at a high gap in the granite ridge above the lake",
         "covered wagons camp at the shore of the cold dark lake",
@@ -525,7 +609,52 @@
         "wagon"
       ],
       "voice_mood": "intrigue",
-      "beat": "⚡ KIRILMA 1: göl ve geçit"
+      "beat": "⚡ KIRILMA 1: göl ve geçit",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "aaa23203-d684-4a84-9a87-315114447580",
+            "submitted": "2026-10-02T09:01:28+00:00",
+            "credits": 1.0
+          }
+        ],
+        "history": [
+          {
+            "status": "done",
+            "attempts": [
+              {
+                "job_id": "370c894e-a84c-4faf-ba4b-50925241ffbd",
+                "submitted": "2026-10-02T08:57:31+00:00",
+                "credits": 1.0
+              }
+            ],
+            "job_id": "370c894e-a84c-4faf-ba4b-50925241ffbd",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_085717_370c894e-a84c-4faf-ba4b-50925241ffbd.png",
+            "finished": "2026-10-02T09:00:23+00:00",
+            "redo_reason": "fazla kulube",
+            "redo_at": "2026-10-02T09:00:50+00:00"
+          }
+        ],
+        "job_id": "aaa23203-d684-4a84-9a87-315114447580",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_090105_aaa23203-d684-4a84-9a87-315114447580.png",
+        "finished": "2026-10-02T09:04:00+00:00"
+      },
+      "must": [
+        "only ONE small abandoned log cabin, no other buildings, no campfire village",
+        "covered wagons with white canvas and oxen where wagons appear"
+      ],
+      "clip": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "6fdc4360-b6ff-41ff-8c0f-6fa46aea55bb",
+            "submitted": "2026-10-02T09:06:53+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "6fdc4360-b6ff-41ff-8c0f-6fa46aea55bb"
+      }
     },
     {
       "n": 8,
@@ -543,7 +672,34 @@
       "refs": [
         "lake"
       ],
-      "voice_mood": "tense"
+      "voice_mood": "tense",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "9c49cb43-4a07-45f4-aff6-1f8a083d7cb9",
+            "submitted": "2026-10-02T08:57:31+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "9c49cb43-4a07-45f4-aff6-1f8a083d7cb9",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_085717_9c49cb43-4a07-45f4-aff6-1f8a083d7cb9.png",
+        "finished": "2026-10-02T09:00:24+00:00"
+      },
+      "must": [
+        "covered wagons with white canvas and oxen where wagons appear"
+      ],
+      "clip": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "07cfc857-efd2-41a7-a5c6-c289fa9d8c2a",
+            "submitted": "2026-10-02T09:06:53+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "07cfc857-efd2-41a7-a5c6-c289fa9d8c2a"
+      }
     },
     {
       "n": 9,
@@ -562,7 +718,34 @@
         "lake",
         "wagon"
       ],
-      "voice_mood": "tense"
+      "voice_mood": "tense",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "e63e11f5-0d3e-4f9d-82db-72e596541fb0",
+            "submitted": "2026-10-02T08:57:31+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "e63e11f5-0d3e-4f9d-82db-72e596541fb0",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_085717_e63e11f5-0d3e-4f9d-82db-72e596541fb0.png",
+        "finished": "2026-10-02T09:00:25+00:00"
+      },
+      "must": [
+        "covered wagons with white canvas and oxen where wagons appear"
+      ],
+      "clip": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "28e8cb14-8989-48c5-a169-3558419420d3",
+            "submitted": "2026-10-02T09:06:53+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "28e8cb14-8989-48c5-a169-3558419420d3"
+      }
     },
     {
       "n": 10,
@@ -582,7 +765,31 @@
         "peggy",
         "boys"
       ],
-      "voice_mood": "intrigue"
+      "voice_mood": "intrigue",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "1a870903-e224-4f51-9a5a-7edc9554a9cb",
+            "submitted": "2026-10-02T08:57:31+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "1a870903-e224-4f51-9a5a-7edc9554a9cb",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_085718_1a870903-e224-4f51-9a5a-7edc9554a9cb.png",
+        "finished": "2026-10-02T09:00:26+00:00"
+      },
+      "clip": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "feb1383a-f370-45b7-9505-77e3cf00c4e0",
+            "submitted": "2026-10-02T09:06:53+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "feb1383a-f370-45b7-9505-77e3cf00c4e0"
+      }
     },
     {
       "n": 11,
@@ -603,7 +810,31 @@
         "boys"
       ],
       "voice_mood": "intrigue",
-      "beat": "Hayatta kalma kuralı 1"
+      "beat": "Hayatta kalma kuralı 1",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "8bfcf712-49b7-4ab5-a3c8-c3a6ba59a1f4",
+            "submitted": "2026-10-02T08:57:31+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "8bfcf712-49b7-4ab5-a3c8-c3a6ba59a1f4",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_085718_8bfcf712-49b7-4ab5-a3c8-c3a6ba59a1f4.png",
+        "finished": "2026-10-02T09:00:28+00:00"
+      },
+      "clip": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "dfdda4b8-dfde-4076-bfd4-b05852e6631b",
+            "submitted": "2026-10-02T09:06:53+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "dfdda4b8-dfde-4076-bfd4-b05852e6631b"
+      }
     },
     {
       "n": 12,
@@ -625,7 +856,31 @@
       "must_not": [
         "dead animals",
         "blood"
-      ]
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "87a43c88-2236-4136-af9f-c9dd08460675",
+            "submitted": "2026-10-02T08:57:31+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "87a43c88-2236-4136-af9f-c9dd08460675",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_085718_87a43c88-2236-4136-af9f-c9dd08460675.png",
+        "finished": "2026-10-02T09:00:29+00:00"
+      },
+      "clip": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "3526aa9b-2a4b-4469-8a4a-7cf7140c9c8c",
+            "submitted": "2026-10-02T09:06:53+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "3526aa9b-2a4b-4469-8a4a-7cf7140c9c8c"
+      }
     },
     {
       "n": 13,
@@ -633,7 +888,7 @@
       "pov": true,
       "narration": "I keep my diary every day. The weather, the wind, who is sick. 'Snow about three feet deep.' Then, 'six feet.' Then, 'eight feet on the level.' And in January: 'must be thirteen feet deep.' We dig steps up from our door just to reach the daylight.",
       "narration_voiced": "I keep my diary every day. The weather, the wind, who is sick. 'Snow about three feet deep.' Then, 'six feet.' Then, 'eight feet on the level.' And in January: 'must be thirteen feet deep.' We dig steps up from our door just to reach the daylight.",
-      "image_prompt": "POV of the narrator's weathered hands of a 51-year-old Irish farmer in frayed brown wool coat sleeves writing in a small handmade notebook by firelight; then a view up a steep staircase cut into packed snow leading from a cabin door up to a small square of daylight far above",
+      "image_prompt": "POV from inside the dark doorway of a buried log cabin looking up a steep staircase cut into packed snow walls, leading up to a small bright square of daylight far above; in the foreground the narrator's weathered hand holds a small handmade notebook",
       "shots": [
         "the narrator's hand writes a line in the small notebook",
         "steps cut in packed snow climb from the cabin door toward daylight",
@@ -643,7 +898,31 @@
       "refs": [
         "cabin_in"
       ],
-      "voice_mood": "intrigue"
+      "voice_mood": "intrigue",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "fe7d8fa0-76a9-4ba7-9a94-8b946dc0ca82",
+            "submitted": "2026-10-02T08:57:31+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "fe7d8fa0-76a9-4ba7-9a94-8b946dc0ca82",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_085718_fe7d8fa0-76a9-4ba7-9a94-8b946dc0ca82.png",
+        "finished": "2026-10-02T09:00:31+00:00"
+      },
+      "clip": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "ca23df6e-d8cb-4662-84ca-1a1bb72f00c2",
+            "submitted": "2026-10-02T09:06:53+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "ca23df6e-d8cb-4662-84ca-1a1bb72f00c2"
+      }
     },
     {
       "n": 14,
@@ -662,7 +941,31 @@
         "lake"
       ],
       "voice_mood": "tense",
-      "beat": "⚡ KIRILMA 2: Forlorn Hope"
+      "beat": "⚡ KIRILMA 2: Forlorn Hope",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "6b25c181-de14-4deb-aaa5-7656938cf0f7",
+            "submitted": "2026-10-02T08:57:31+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "6b25c181-de14-4deb-aaa5-7656938cf0f7",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_085717_6b25c181-de14-4deb-aaa5-7656938cf0f7.png",
+        "finished": "2026-10-02T09:00:32+00:00"
+      },
+      "clip": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "89d8a745-8b9d-491c-8483-90e660b595e5",
+            "submitted": "2026-10-02T09:06:53+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "89d8a745-8b9d-491c-8483-90e660b595e5"
+      }
     },
     {
       "n": 15,
@@ -682,7 +985,31 @@
         "peggy",
         "boys"
       ],
-      "voice_mood": "sad"
+      "voice_mood": "sad",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "45509053-7f93-46a7-abfc-b649405e993b",
+            "submitted": "2026-10-02T08:57:31+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "45509053-7f93-46a7-abfc-b649405e993b",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_085718_45509053-7f93-46a7-abfc-b649405e993b.png",
+        "finished": "2026-10-02T09:00:32+00:00"
+      },
+      "clip": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "152b8efd-a8f6-4411-a441-7d81702cad1a",
+            "submitted": "2026-10-02T09:06:53+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "152b8efd-a8f6-4411-a441-7d81702cad1a"
+      }
     },
     {
       "n": 16,
@@ -690,7 +1017,7 @@
       "pov": false,
       "narration": "By January, the meat is gone. So we eat the hides. Peggy cuts the ox hides into strips, singes off the hair, and boils them for hours, until they turn into a thick, grey glue. It tastes of nothing. I write: 'Hides are the only article we depend on. May God send us help.'",
       "narration_voiced": "By January, the meat is gone. So we eat the hides. Peggy cuts the ox hides into strips, singes off the hair, and boils them for hours, until they turn into a thick, grey glue. It tastes of nothing. I write: 'Hides are the only article we depend on. May God send us help.'",
-      "image_prompt": "Inside the cabin: Peggy (Irish pioneer mother about 40, strong tired face, dark hair pinned under a faded dark blue bonnet or wool shawl, dark brown wool dress, grey knitted shawl) holding a strip of ox hide over the fire to singe off the hair, then stirring a pot of thick grey boiling glue, steam rising, hungry children watching",
+      "image_prompt": "Inside the dim log cabin by firelight: Peggy (Irish pioneer mother about 40, dark blue bonnet, grey knitted shawl, dark brown wool dress) stirring an iron pot of thick grey boiling glue made from ox hide over the fire, steam rising, a strip of singed ox hide in her other hand, two hungry boys watching from the shadows",
       "shots": [
         "Peggy holds a strip of ox hide over the flames to burn off the hair",
         "she stirs a pot of thick grey glue as steam rises",
@@ -703,7 +1030,51 @@
         "boys"
       ],
       "voice_mood": "tense",
-      "beat": "Hayatta kalma kuralı 2"
+      "beat": "Hayatta kalma kuralı 2",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "f10094f7-8e9e-4fbd-a030-508b7428dc45",
+            "submitted": "2026-10-02T09:03:47+00:00",
+            "credits": 1.0
+          }
+        ],
+        "history": [
+          {
+            "status": "done",
+            "attempts": [
+              {
+                "job_id": "fdd3cfb6-569d-4a53-908f-4966c32ed316",
+                "submitted": "2026-10-02T08:59:27+00:00",
+                "credits": 1.0
+              }
+            ],
+            "job_id": "fdd3cfb6-569d-4a53-908f-4966c32ed316",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_085915_fdd3cfb6-569d-4a53-908f-4966c32ed316.png",
+            "finished": "2026-10-02T09:01:28+00:00",
+            "redo_reason": "kis sahnesinde okuz/vagon",
+            "redo_at": "2026-10-02T09:01:59+00:00"
+          }
+        ],
+        "job_id": "f10094f7-8e9e-4fbd-a030-508b7428dc45",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_090336_f10094f7-8e9e-4fbd-a030-508b7428dc45.png",
+        "finished": "2026-10-02T09:04:28+00:00"
+      },
+      "must_not": [
+        "covered wagons, oxen, cattle, cows, horses or any living farm animals (by this time all the animals had died or been eaten)"
+      ],
+      "clip": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "7262e903-56c5-48cb-b723-48a8d06cd810",
+            "submitted": "2026-10-02T09:11:20+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "7262e903-56c5-48cb-b723-48a8d06cd810"
+      }
     },
     {
       "n": 17,
@@ -725,8 +1096,50 @@
       "voice_mood": "tense",
       "must_not": [
         "human bones",
-        "skulls"
-      ]
+        "skulls",
+        "covered wagons, oxen, cattle, cows, horses or any living farm animals (by this time all the animals had died or been eaten)"
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "1a3c58f6-6fe9-4806-b540-6e39407552b9",
+            "submitted": "2026-10-02T09:03:47+00:00",
+            "credits": 1.0
+          }
+        ],
+        "history": [
+          {
+            "status": "done",
+            "attempts": [
+              {
+                "job_id": "2fa05387-5044-4337-bf47-0f951791fc43",
+                "submitted": "2026-10-02T08:59:27+00:00",
+                "credits": 1.0
+              }
+            ],
+            "job_id": "2fa05387-5044-4337-bf47-0f951791fc43",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_085916_2fa05387-5044-4337-bf47-0f951791fc43.png",
+            "finished": "2026-10-02T09:01:29+00:00",
+            "redo_reason": "kis sahnesinde okuz/vagon",
+            "redo_at": "2026-10-02T09:01:59+00:00"
+          }
+        ],
+        "job_id": "1a3c58f6-6fe9-4806-b540-6e39407552b9",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_090336_1a3c58f6-6fe9-4806-b540-6e39407552b9.png",
+        "finished": "2026-10-02T09:04:30+00:00"
+      },
+      "clip": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "67176c6b-59a1-44cc-91b0-913fd108dc6e",
+            "submitted": "2026-10-02T09:11:20+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "67176c6b-59a1-44cc-91b0-913fd108dc6e"
+      }
     },
     {
       "n": 18,
@@ -741,9 +1154,7 @@
         "snow falls softly on a small mound beside the cabins"
       ],
       "sound": "wind, slow footsteps in snow, a quiet sob",
-      "refs": [
-        "lake"
-      ],
+      "refs": [],
       "voice_mood": "sad",
       "must": [
         "the body is fully wrapped in a blanket, nothing visible"
@@ -751,8 +1162,50 @@
       "must_not": [
         "visible corpse, face or limbs of the dead",
         "blood",
-        "gore"
-      ]
+        "gore",
+        "covered wagons, oxen, cattle, cows, horses or any living farm animals (by this time all the animals had died or been eaten)"
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "058f7da9-c77a-4e76-9656-26c380c95a6f",
+            "submitted": "2026-10-02T09:03:47+00:00",
+            "credits": 1.0
+          }
+        ],
+        "history": [
+          {
+            "status": "done",
+            "attempts": [
+              {
+                "job_id": "bbbb40e5-3bb0-4df3-9b60-b3c8ef8476e3",
+                "submitted": "2026-10-02T08:59:27+00:00",
+                "credits": 1.0
+              }
+            ],
+            "job_id": "bbbb40e5-3bb0-4df3-9b60-b3c8ef8476e3",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_085916_bbbb40e5-3bb0-4df3-9b60-b3c8ef8476e3.png",
+            "finished": "2026-10-02T09:01:31+00:00",
+            "redo_reason": "kis sahnesinde okuz/vagon",
+            "redo_at": "2026-10-02T09:01:59+00:00"
+          }
+        ],
+        "job_id": "058f7da9-c77a-4e76-9656-26c380c95a6f",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_090336_058f7da9-c77a-4e76-9656-26c380c95a6f.png",
+        "finished": "2026-10-02T09:04:31+00:00"
+      },
+      "clip": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "6538b4a1-7212-4018-8e0d-d9cc3bc82e6a",
+            "submitted": "2026-10-02T09:11:20+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "6538b4a1-7212-4018-8e0d-d9cc3bc82e6a"
+      }
     },
     {
       "n": 19,
@@ -772,7 +1225,34 @@
         "peggy",
         "boys"
       ],
-      "voice_mood": "sad"
+      "voice_mood": "sad",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "560c6855-28e4-4b34-8fff-3f75162e1421",
+            "submitted": "2026-10-02T08:59:27+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "560c6855-28e4-4b34-8fff-3f75162e1421",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_085916_560c6855-28e4-4b34-8fff-3f75162e1421.png",
+        "finished": "2026-10-02T09:01:32+00:00"
+      },
+      "must_not": [
+        "covered wagons, oxen, cattle, cows, horses or any living farm animals (by this time all the animals had died or been eaten)"
+      ],
+      "clip": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "d9af42ac-b0c3-4514-ac53-5b29d62878b3",
+            "submitted": "2026-10-02T09:11:20+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "d9af42ac-b0c3-4514-ac53-5b29d62878b3"
+      }
     },
     {
       "n": 20,
@@ -787,11 +1267,53 @@
         "a rescuer hands out small pieces of dried beef"
       ],
       "sound": "distant shouts, crunching snow, a woman crying with joy",
-      "refs": [
-        "lake"
-      ],
+      "refs": [],
       "voice_mood": "hopeful",
-      "beat": "⚡ KIRILMA 3: ilk kurtarma"
+      "beat": "⚡ KIRILMA 3: ilk kurtarma",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "b81dda02-bb58-440e-a15b-ec4233f018f9",
+            "submitted": "2026-10-02T09:03:47+00:00",
+            "credits": 1.0
+          }
+        ],
+        "history": [
+          {
+            "status": "done",
+            "attempts": [
+              {
+                "job_id": "84f4c33e-1b2f-4e07-a4ce-9f142c45f123",
+                "submitted": "2026-10-02T08:59:27+00:00",
+                "credits": 1.0
+              }
+            ],
+            "job_id": "84f4c33e-1b2f-4e07-a4ce-9f142c45f123",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_085916_84f4c33e-1b2f-4e07-a4ce-9f142c45f123.png",
+            "finished": "2026-10-02T09:01:33+00:00",
+            "redo_reason": "kis sahnesinde okuz/vagon",
+            "redo_at": "2026-10-02T09:01:59+00:00"
+          }
+        ],
+        "job_id": "b81dda02-bb58-440e-a15b-ec4233f018f9",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_090336_b81dda02-bb58-440e-a15b-ec4233f018f9.png",
+        "finished": "2026-10-02T09:04:33+00:00"
+      },
+      "must_not": [
+        "covered wagons, oxen, cattle, cows, horses or any living farm animals (by this time all the animals had died or been eaten)"
+      ],
+      "clip": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "d7de1e9c-6325-4072-9f24-e7fa1f6718a2",
+            "submitted": "2026-10-02T09:11:20+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "d7de1e9c-6325-4072-9f24-e7fa1f6718a2"
+      }
     },
     {
       "n": 21,
@@ -808,10 +1330,53 @@
       "sound": "wind, footsteps in snow, a quiet goodbye",
       "refs": [
         "peggy",
-        "boys",
-        "lake"
+        "boys"
       ],
-      "voice_mood": "sad"
+      "voice_mood": "sad",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "0e2effb5-0746-47a0-be85-1c756f5ba5b0",
+            "submitted": "2026-10-02T09:03:47+00:00",
+            "credits": 1.0
+          }
+        ],
+        "history": [
+          {
+            "status": "done",
+            "attempts": [
+              {
+                "job_id": "e8cbac94-82c9-4cf7-8602-a1c3ab00d9e9",
+                "submitted": "2026-10-02T08:59:27+00:00",
+                "credits": 1.0
+              }
+            ],
+            "job_id": "e8cbac94-82c9-4cf7-8602-a1c3ab00d9e9",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_085916_e8cbac94-82c9-4cf7-8602-a1c3ab00d9e9.png",
+            "finished": "2026-10-02T09:01:34+00:00",
+            "redo_reason": "kis sahnesinde okuz/vagon",
+            "redo_at": "2026-10-02T09:01:59+00:00"
+          }
+        ],
+        "job_id": "0e2effb5-0746-47a0-be85-1c756f5ba5b0",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_090336_0e2effb5-0746-47a0-be85-1c756f5ba5b0.png",
+        "finished": "2026-10-02T09:04:34+00:00"
+      },
+      "must_not": [
+        "covered wagons, oxen, cattle, cows, horses or any living farm animals (by this time all the animals had died or been eaten)"
+      ],
+      "clip": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "90f74837-4788-47e2-a66b-1f56310a4d55",
+            "submitted": "2026-10-02T09:11:20+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "90f74837-4788-47e2-a66b-1f56310a4d55"
+      }
     },
     {
       "n": 22,
@@ -823,7 +1388,7 @@
       "shots": [
         "an old leather dog collar hangs on a nail by the door",
         "a thin woman in a shawl stands at the door and asks for meat",
-        "the narrator slowly shakes his head"
+        "the narrator's hand slowly closes the wooden door on the cold"
       ],
       "sound": "wind, a quiet voice asking, a door creaking",
       "refs": [
@@ -833,8 +1398,50 @@
       "must_not": [
         "the dog's body",
         "blood",
-        "meat of an animal being butchered"
-      ]
+        "meat of an animal being butchered",
+        "covered wagons, oxen, cattle, cows, horses or any living farm animals (by this time all the animals had died or been eaten)"
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "cdb40d11-b2b4-4e08-a641-847951b62ffe",
+            "submitted": "2026-10-02T09:03:47+00:00",
+            "credits": 1.0
+          }
+        ],
+        "history": [
+          {
+            "status": "done",
+            "attempts": [
+              {
+                "job_id": "e13f9cfc-7ce1-4818-89d4-74b43e74e962",
+                "submitted": "2026-10-02T08:59:27+00:00",
+                "credits": 1.0
+              }
+            ],
+            "job_id": "e13f9cfc-7ce1-4818-89d4-74b43e74e962",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_085916_e13f9cfc-7ce1-4818-89d4-74b43e74e962.png",
+            "finished": "2026-10-02T09:01:36+00:00",
+            "redo_reason": "kis sahnesinde okuz/vagon",
+            "redo_at": "2026-10-02T09:02:00+00:00"
+          }
+        ],
+        "job_id": "cdb40d11-b2b4-4e08-a641-847951b62ffe",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_090336_cdb40d11-b2b4-4e08-a641-847951b62ffe.png",
+        "finished": "2026-10-02T09:04:35+00:00"
+      },
+      "clip": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "95186bde-3096-4d70-bb4a-4ac8d0db8f7f",
+            "submitted": "2026-10-02T09:11:20+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "95186bde-3096-4d70-bb4a-4ac8d0db8f7f"
+      }
     },
     {
       "n": 23,
@@ -849,17 +1456,57 @@
         "a lone figure stands in the snow and turns away"
       ],
       "sound": "dead silence, faint wind, a distant door closing",
-      "refs": [
-        "lake"
-      ],
+      "refs": [],
       "voice_mood": "sad",
       "must_not": [
         "bodies",
         "human remains",
         "blood",
         "cooking pots with meat",
-        "anything gory"
-      ]
+        "anything gory",
+        "covered wagons, oxen, cattle, cows, horses or any living farm animals (by this time all the animals had died or been eaten)"
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "6f866663-c850-40f3-abb4-f745254a9694",
+            "submitted": "2026-10-02T09:03:47+00:00",
+            "credits": 1.0
+          }
+        ],
+        "history": [
+          {
+            "status": "done",
+            "attempts": [
+              {
+                "job_id": "0a86f64d-e29a-4e87-93cd-32771904c40f",
+                "submitted": "2026-10-02T08:59:27+00:00",
+                "credits": 1.0
+              }
+            ],
+            "job_id": "0a86f64d-e29a-4e87-93cd-32771904c40f",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_085916_0a86f64d-e29a-4e87-93cd-32771904c40f.png",
+            "finished": "2026-10-02T09:01:37+00:00",
+            "redo_reason": "kis sahnesinde okuz/vagon",
+            "redo_at": "2026-10-02T09:02:00+00:00"
+          }
+        ],
+        "job_id": "6f866663-c850-40f3-abb4-f745254a9694",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_090336_6f866663-c850-40f3-abb4-f745254a9694.png",
+        "finished": "2026-10-02T09:04:36+00:00"
+      },
+      "clip": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "bf2122cc-5f2c-475b-b641-4997f47a49b7",
+            "submitted": "2026-10-02T09:11:20+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "bf2122cc-5f2c-475b-b641-4997f47a49b7"
+      }
     },
     {
       "n": 24,
@@ -874,14 +1521,56 @@
         "the narrator's hand writes a final line and closes the notebook"
       ],
       "sound": "shouts of joy, crunching snow, wind",
-      "refs": [
-        "lake"
-      ],
+      "refs": [],
       "voice_mood": "hopeful",
       "beat": "⚡ KIRILMA 4: Reed geri dönüyor",
       "must": [
         "the leading man is seen only from a distance or from behind"
-      ]
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "d8234151-0056-4f22-b301-90b8abe80091",
+            "submitted": "2026-10-02T09:03:47+00:00",
+            "credits": 1.0
+          }
+        ],
+        "history": [
+          {
+            "status": "done",
+            "attempts": [
+              {
+                "job_id": "131973a5-2004-4b51-b8bb-b71ed2fedb3b",
+                "submitted": "2026-10-02T08:59:27+00:00",
+                "credits": 1.0
+              }
+            ],
+            "job_id": "131973a5-2004-4b51-b8bb-b71ed2fedb3b",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_085916_131973a5-2004-4b51-b8bb-b71ed2fedb3b.png",
+            "finished": "2026-10-02T09:01:38+00:00",
+            "redo_reason": "kis sahnesinde okuz/vagon",
+            "redo_at": "2026-10-02T09:02:00+00:00"
+          }
+        ],
+        "job_id": "d8234151-0056-4f22-b301-90b8abe80091",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_090336_d8234151-0056-4f22-b301-90b8abe80091.png",
+        "finished": "2026-10-02T09:04:37+00:00"
+      },
+      "must_not": [
+        "covered wagons, oxen, cattle, cows, horses or any living farm animals (by this time all the animals had died or been eaten)"
+      ],
+      "clip": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "aa0ceb36-4c51-42ba-a2b8-785974b0264f",
+            "submitted": "2026-10-02T09:11:20+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "aa0ceb36-4c51-42ba-a2b8-785974b0264f"
+      }
     },
     {
       "n": 25,
@@ -901,7 +1590,51 @@
         "boys"
       ],
       "voice_mood": "tense",
-      "beat": "⚡ KIRILMA 5: Starved Camp"
+      "beat": "⚡ KIRILMA 5: Starved Camp",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "2a50d36d-c0a1-4f9f-b308-416bac63c956",
+            "submitted": "2026-10-02T09:03:47+00:00",
+            "credits": 1.0
+          }
+        ],
+        "history": [
+          {
+            "status": "done",
+            "attempts": [
+              {
+                "job_id": "f912875e-b697-4603-aaaf-2b4b2a9315b8",
+                "submitted": "2026-10-02T08:59:27+00:00",
+                "credits": 1.0
+              }
+            ],
+            "job_id": "f912875e-b697-4603-aaaf-2b4b2a9315b8",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_085916_f912875e-b697-4603-aaaf-2b4b2a9315b8.png",
+            "finished": "2026-10-02T09:01:39+00:00",
+            "redo_reason": "kis sahnesinde okuz/vagon",
+            "redo_at": "2026-10-02T09:02:00+00:00"
+          }
+        ],
+        "job_id": "2a50d36d-c0a1-4f9f-b308-416bac63c956",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_090336_2a50d36d-c0a1-4f9f-b308-416bac63c956.png",
+        "finished": "2026-10-02T09:04:37+00:00"
+      },
+      "must_not": [
+        "covered wagons, oxen, cattle, cows, horses or any living farm animals (by this time all the animals had died or been eaten)"
+      ],
+      "clip": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "e4378cd1-d2db-41f4-8085-79d07aa71ee1",
+            "submitted": "2026-10-02T09:11:21+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "e4378cd1-d2db-41f4-8085-79d07aa71ee1"
+      }
     },
     {
       "n": 26,
@@ -923,8 +1656,50 @@
       "must_not": [
         "bodies",
         "human remains",
-        "blood"
-      ]
+        "blood",
+        "covered wagons, oxen, cattle, cows, horses or any living farm animals (by this time all the animals had died or been eaten)"
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "e51cad25-e282-4f3f-8ef5-83a8ad698cdc",
+            "submitted": "2026-10-02T09:03:47+00:00",
+            "credits": 1.0
+          }
+        ],
+        "history": [
+          {
+            "status": "done",
+            "attempts": [
+              {
+                "job_id": "604c6cce-8439-4fe1-afc7-acce03865c0d",
+                "submitted": "2026-10-02T08:59:27+00:00",
+                "credits": 1.0
+              }
+            ],
+            "job_id": "604c6cce-8439-4fe1-afc7-acce03865c0d",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_085916_604c6cce-8439-4fe1-afc7-acce03865c0d.png",
+            "finished": "2026-10-02T09:01:41+00:00",
+            "redo_reason": "kis sahnesinde okuz/vagon",
+            "redo_at": "2026-10-02T09:02:00+00:00"
+          }
+        ],
+        "job_id": "e51cad25-e282-4f3f-8ef5-83a8ad698cdc",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_090336_e51cad25-e282-4f3f-8ef5-83a8ad698cdc.png",
+        "finished": "2026-10-02T09:04:38+00:00"
+      },
+      "clip": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "94406932-d35a-41e0-8384-7b8ca8a443af",
+            "submitted": "2026-10-02T09:11:21+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "94406932-d35a-41e0-8384-7b8ca8a443af"
+      }
     },
     {
       "n": 27,
@@ -934,7 +1709,7 @@
       "narration_voiced": "After about a week, men come up through the snow: the third rescue. One of them, a big man named John Stark, refuses to leave anyone behind. He carries the little ones on his back, two at a time, all the way down the mountain.",
       "image_prompt": "Bright clear morning in the snowy Sierra Nevada in March 1847: a big broad-shouldered rescuer in a fur cap and wool coat walking down a snowy mountain slope carrying two small children on his back, seen from behind, other rescuers helping thin adults behind him, pine trees and blue sky",
       "shots": [
-        "a big man lifts two small children onto his back",
+        "seen from behind, a big man crouches in the snow as two small children climb onto his back",
         "he walks down the snowy slope with them, seen from behind",
         "other rescuers help the thin survivors walk behind him"
       ],
@@ -946,7 +1721,51 @@
       "beat": "Kurtuluş",
       "must": [
         "the big rescuer is seen from behind or far away"
-      ]
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "ea7f2628-4eb7-476b-aeda-d8ca05a9ab9e",
+            "submitted": "2026-10-02T09:03:47+00:00",
+            "credits": 1.0
+          }
+        ],
+        "history": [
+          {
+            "status": "done",
+            "attempts": [
+              {
+                "job_id": "28bbdcc9-d92e-4e2f-8cab-d38b86b33a6e",
+                "submitted": "2026-10-02T08:59:27+00:00",
+                "credits": 1.0
+              }
+            ],
+            "job_id": "28bbdcc9-d92e-4e2f-8cab-d38b86b33a6e",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_085916_28bbdcc9-d92e-4e2f-8cab-d38b86b33a6e.png",
+            "finished": "2026-10-02T09:01:42+00:00",
+            "redo_reason": "kis sahnesinde okuz/vagon",
+            "redo_at": "2026-10-02T09:02:00+00:00"
+          }
+        ],
+        "job_id": "ea7f2628-4eb7-476b-aeda-d8ca05a9ab9e",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_090336_ea7f2628-4eb7-476b-aeda-d8ca05a9ab9e.png",
+        "finished": "2026-10-02T09:04:39+00:00"
+      },
+      "must_not": [
+        "covered wagons, oxen, cattle, cows, horses or any living farm animals (by this time all the animals had died or been eaten)"
+      ],
+      "clip": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "370dc6ad-0a44-4036-bae4-d05c6f51c8a8",
+            "submitted": "2026-10-02T09:11:21+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "370dc6ad-0a44-4036-bae4-d05c6f51c8a8"
+      }
     },
     {
       "n": 28,
@@ -968,7 +1787,34 @@
       "voice_mood": "warm",
       "must": [
         "exactly six boys and one baby"
-      ]
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "fb3c26c6-068e-46c3-aff5-ad028db95a00",
+            "submitted": "2026-10-02T09:00:02+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "fb3c26c6-068e-46c3-aff5-ad028db95a00",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_085951_fb3c26c6-068e-46c3-aff5-ad028db95a00.png",
+        "finished": "2026-10-02T09:04:02+00:00"
+      },
+      "must_not": [
+        "covered wagons, oxen, cattle, cows, horses or any living farm animals (by this time all the animals had died or been eaten)"
+      ],
+      "clip": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "ff75e76f-e03b-46b8-af29-612be6564d2b",
+            "submitted": "2026-10-02T09:12:02+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "ff75e76f-e03b-46b8-af29-612be6564d2b"
+      }
     },
     {
       "n": 29,
@@ -984,7 +1830,31 @@
       ],
       "sound": "horses, a stagecoach rolling in, church bell in the distance",
       "refs": [],
-      "voice_mood": "warm"
+      "voice_mood": "warm",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "6dc6b7c4-e759-479e-8406-669f3e3df576",
+            "submitted": "2026-10-02T09:00:02+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "6dc6b7c4-e759-479e-8406-669f3e3df576",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_085950_6dc6b7c4-e759-479e-8406-669f3e3df576.png",
+        "finished": "2026-10-02T09:04:03+00:00"
+      },
+      "clip": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "745f8161-6e44-49dd-8ae7-02c36956e6ac",
+            "submitted": "2026-10-02T09:12:02+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "745f8161-6e44-49dd-8ae7-02c36956e6ac"
+      }
     },
     {
       "n": 30,
@@ -1009,7 +1879,31 @@
         "1840s American pioneers, covered wagons",
         "modern objects"
       ],
-      "own_rules": true
+      "own_rules": true,
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "b3925e30-c9ed-47de-89dd-cfa825c17975",
+            "submitted": "2026-10-02T09:00:02+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "b3925e30-c9ed-47de-89dd-cfa825c17975",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_085950_b3925e30-c9ed-47de-89dd-cfa825c17975.png",
+        "finished": "2026-10-02T09:04:04+00:00"
+      },
+      "clip": {
+        "status": "running",
+        "attempts": [
+          {
+            "job_id": "ecc1df23-6e66-4d0a-a88c-0eab68495dd0",
+            "submitted": "2026-10-02T09:12:02+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "ecc1df23-6e66-4d0a-a88c-0eab68495dd0"
+      }
     }
   ],
   "max_credits": 330,
