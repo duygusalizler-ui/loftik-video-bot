@@ -72,3 +72,8 @@ Son sahneden (sonraki bölüm tanıtımı) hemen önce, anlatıcının kendi ses
   "What Did People Actually Do During the Longest Night of the Year?"
 - Kapak: açık/parlak zemin, kocaman 1–2 kelime (sarı), tek fikir; koyu-kasvetli kapakla A/B karşılaştır.
 - Konsept (1. şahıs anlatıcı, kış) aynı kalır — sadece paketleme değişir. Sonucu CTR + izlenme ile ölç.
+- ÖZGÜNLÜK KURALI (kullanıcı): kopya yok, şablon tekrarı yok. Ink Explainer'dan alınan şey *ilke*
+  (herkesin merak ettiği basit soru + tek fikirli net kapak), kalıp değil. "Actually" en fazla arada bir.
+  Her bölümde başlık kalıbı değişir (soru / meydan okuma / sayı / tezat / ikinci şahıs); kapak bizim
+  guaj-resim stilimizde kalır, sadece daha aydınlık ve tek kelimelik. YouTube'un "tekrarlayan/seri üretim
+  içerik" politikası açısından da her bölümün yapısı, açılışı ve görsel dili farklılaşmalı.
