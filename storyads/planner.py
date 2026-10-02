@@ -39,7 +39,10 @@ KURALLAR (hepsi zorunlu):
    Her sahnenin "hareket_prompt"u 2-3 hızlı çekimden oluşsun ve şöyle yazılsın: "Shot 1: ... Shot 2: ... Shot 3: ...",
    her çekim ~2 sn; Shot 1 HER ZAMAN ayaklara/ayakkabıya yakın plandır (kanca ve sorun sahnelerinde eski ayakkabı,
    sonrasında ürün). Sahneler arası akış kesintisiz: bir sahnenin sonu bir sonrakinin başına bağlansın.
-11. HATA ÖNLEME (yapay zekâ videosunda en çok bozulan şeyler, bunlardan kaçın):
+11. ÜRÜN GERÇEKLİĞİ (KESİN KURAL): Ürün asla animasyon/3D/plastik görünmez. "urun" sahnesi ve ürünün yakın
+   göründüğü her çekim KARAKTERSİZ olur: sadece pantolon paçası + ürün, %100 gerçek fotoğraf/telefon çekimi gibi
+   ("Real smartphone footage, photorealistic, not CGI"). Karakter bu sahnede ya hiç görünmez ya da uzakta bulanık kalır.
+12. HATA ÖNLEME (yapay zekâ videosunda en çok bozulan şeyler, bunlardan kaçın):
    - Bir sahnede en fazla 2 karakter; karakterler birbirinin önünden geçmesin, iç içe girmesin.
    - Zıplama, koşma, dans, hızlı dönüş YOK; sakin ve tek bir hareket (yürür, uzatır, bakar, oturur).
    - Ayakkabı/ürün giyme-çıkarma, el değiştirme YOK; ürün sahnede tek bir yerde dursun (ya ayakta ya elde).
@@ -51,7 +54,7 @@ KURALLAR (hepsi zorunlu):
      sahnelerinde ürün yoktur (karakter eski/kötü ayakkabıyla olabilir).
    - Kadrajın üst %20'si sakin arka plan olsun (gökyüzü/duvar), karakterin başı bunun ALTINDA; en alt %20 de
      yazıya ayrılır. Bunu her "gorsel_prompt"a yaz.
-12. Asla: {yasak}
+13. Asla: {yasak}
 
 Sadece şu JSON'u döndür:
 {{

@@ -41,17 +41,21 @@ class Result:
 
 def _scene_image(i: int, scene: dict, plan: dict, prod, prev_img: str | None, work: str, log: list,
                  tries: int = settings.IMAGE_TRIES) -> str | None:
-    prompt = STYLE + f"Main character: {plan.get('karakter_tarifi', '')}. "
+    if scene.get("rol") == "urun":  # KESIN KURAL: urun yakin cekimi karaktersiz ve %100 fotografik
+        prompt = ("Real smartphone photo, 100% photorealistic, NOT CGI, NOT 3D, NOT cartoon. Only legs below the knee "
+                  "and the product visible, no animated character. ")
+    else:
+        prompt = STYLE + f"Main character: {plan.get('karakter_tarifi', '')}. "
     if plan.get("yan_karakterler"):
         prompt += "Other characters: " + "; ".join(plan["yan_karakterler"]) + ". "
-    if prev_img:
+    if prev_img and scene.get("rol") != "urun":
         prompt += "Keep the characters EXACTLY as in the last reference image (same design, clothes). "
     prompt += scene["gorsel_prompt"]
     urun = scene.get("urun_gorunur", True)
     prompt += PRODUCT_RULE if urun else NO_PRODUCT
     prompt += NO_TEXT
     # urunun olmamasi gereken sahnede urun fotografi referans verilmez (yoksa model urunu giydiriyor)
-    refs = (prod.gorseller[:2] if urun else []) + ([prev_img] if prev_img else [])
+    refs = (prod.gorseller[:2] if urun else []) + ([prev_img] if prev_img and scene.get("rol") != "urun" else [])
     best = (None, -1)
     feedback = ""
     for t in range(1, tries + 1):
