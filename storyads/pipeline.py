@@ -61,7 +61,7 @@ def _scene_image(i: int, scene: dict, plan: dict, prod, prev_img: str | None, wo
     return best[0] if best[1] >= settings.QA_MIN else None
 
 
-def _scene_clip(i: int, scene: dict, img: str, prod, work: str, log: list) -> str | None:
+def _scene_clip(i: int, scene: dict, img: str, prod, work: str, log: list) -> tuple[str, tuple] | None:
     prompt = scene["hareket_prompt"] + MOTION_RULE + f" SOUND: {scene.get('ses_efekti', 'natural ambience')}. " \
              "Sound effects and ambience only: no speech, no voices, no music."
     for t in range(1, settings.CLIP_TRIES + 1):
@@ -73,17 +73,20 @@ def _scene_clip(i: int, scene: dict, img: str, prod, work: str, log: list) -> st
         except Exception as exc:  # noqa: BLE001
             print(f"  sahne {i + 1} klip hatası: {exc}")
             continue
-        frames = []
+        # kare kare kontrol: ~0.6 sn arayla kareler, hatali anlar kesilir
         T = editor.duration(out)
-        for k in range(3):
+        n = max(6, int(T / 0.6))
+        times = [round(T * (k + 0.5) / n, 2) for k in range(n)]
+        frames = []
+        for k, ts in enumerate(times):
             fp = os.path.join(work, f"kare{i}_{t}_{k}.jpg")
-            editor.run(["-ss", f"{T * (k + 0.5) / 3:.2f}", "-i", out, "-frames:v", "1", "-vf", "scale=720:-2", fp])
+            editor.run(["-ss", f"{ts:.2f}", "-i", out, "-frames:v", "1", "-vf", "scale=540:-2", fp])
             frames.append(fp)
-        r = qa.score(prod.gorseller, frames, scene.get("urun_gorunur", True), img)
+        r = qa.score_clip(prod.gorseller, frames, times, T)
         log.append({"asama": f"sahne{i + 1}_klip", "deneme": t, **r})
-        print(f"  sahne {i + 1} klip {t}: {r['puan']}/10 {r.get('hatalar') or ''}")
+        print(f"  sahne {i + 1} klip {t}: {r['puan']}/10 temiz aralık={r.get('aralik')} {r.get('hatali_kareler') or ''}")
         if r["gecti"]:
-            return out
+            return out, r["aralik"]
     return None
 
 
@@ -110,9 +113,11 @@ def run(brand: Brand, product_url: str, out_dir: str, fmt: str | None = None,
             print(f"  sahne {i + 1} atlandı (kalite kontrolünden geçen görsel yok)")
             continue
         prev = prev or img  # karakter referansi: ilk gecen sahne
-        clip = _scene_clip(i, sc, img, prod, work, log)
-        if clip:
-            scenes.append({"clip": clip, "text": sc.get("ekran_yazisi") or None, "rol": sc.get("rol")})
+        got = _scene_clip(i, sc, img, prod, work, log)
+        if got:
+            clip, (bas, son) = got
+            scenes.append({"clip": clip, "bas": bas, "son": son, "text": sc.get("ekran_yazisi") or None,
+                           "rol": sc.get("rol")})
     if len(scenes) < 3:
         print("Yeterli sahne yok, video üretilmedi.")
         return Result(None, plan, qa_log=log)

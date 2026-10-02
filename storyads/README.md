@@ -20,8 +20,9 @@ Markadan bağımsızdır: Loftik ilk marka, yeni müşteri = `brands/` altına y
 3. `pipeline.py` her sahne için şunları yapar:
    - Gemini görsel üretir.
    - Kalite kontrolü yapılır: ürün aynı mı, fazla uzuv/logo var mı, karakter tutarlı mı. Geçemeyen görsel yeniden üretilir.
-   - Veo ile ses efektli klip üretilir ve klip de aynı kalite kontrolünden geçer.
-4. `editor.py` kurguyu yapar: xfade geçişleri, ekran yazıları, müzik ve ses seviyesi dengesi.
+   - Veo ile ses efektli klip üretilir.
+   - Klip **kare kare** kontrol edilir (~0,6 sn arayla): fazladan ayakkabı, karışan yüzler ya da bulanıkta kaybolan yüz gibi hatalı anlar bulunur. Kurguda yalnızca klibin temiz aralığı kullanılır.
+4. `editor.py` kurguyu yapar: xfade geçişleri, ekran yazıları, müzik ve ses seviyesi dengesi. Sahne başına klip aralığı (`bas`/`son`), final yazısının konumu ve zamanlaması (`final_y`/`final_bas`) ayarlanabilir.
 5. `music.py` hikâyenin moduna göre `music/` klasöründen parça seçer. Kredi gerekiyorsa açıklamaya otomatik eklenir.
 
 ## Çalıştırma

@@ -75,7 +75,7 @@ def _wrap(d, text, font, max_w):
     return lines + ([cur] if cur else [])
 
 
-def text_png(path: str, text: str, style: str) -> str:
+def text_png(path: str, text: str, style: str, y: int | None = None) -> str:
     """style: kanca (beyaz kutu, siyah yazi, ust) | altyazi (konturlu, alt) | final (buyuk, orta)."""
     text = _EMOJI.sub("", text or "").strip()
     im = Image.new("RGBA", (W, H), (0, 0, 0, 0))
@@ -83,7 +83,9 @@ def text_png(path: str, text: str, style: str) -> str:
         im.save(path)
         return path
     d = ImageDraw.Draw(im)
-    size, cy = {"kanca": (66, 360), "altyazi": (60, 1450), "final": (92, 860)}[style]
+    # final ustte: karakterlerin yuzu genelde ekranin ortasinda kaliyor
+    size, cy = {"kanca": (66, 360), "altyazi": (60, 1450), "final": (88, 330)}[style]
+    cy = y or cy
     f = _font(size)
     lines = _wrap(d, text, f, W - 200)
     boxes = [d.textbbox((0, 0), ln, font=f, stroke_width=6) for ln in lines]
@@ -105,10 +107,13 @@ def text_png(path: str, text: str, style: str) -> str:
 
 
 def _scene_part(work: str, i: int, clip: str, text: str | None, hook: str | None,
-                final: str | None, speed: float, trim_start: float) -> tuple[str, float]:
-    """Klibi dikey 1080x1920'ye getirir, yazilari bindirir. Ses (efektler) korunur."""
-    L = (duration(clip) - trim_start) / speed
-    ins = ["-ss", f"{trim_start}", "-i", clip]
+                final: str | None, speed: float, start: float, end: float | None,
+                final_y: int | None = None, final_at: float | None = None) -> tuple[str, float]:
+    """Klibi dikey 1080x1920'ye getirir, yazilari bindirir. Ses (efektler) korunur.
+    start/end: klibin kullanilacak araligi (hatali anlari kesmek icin)."""
+    end = min(end or 1e9, duration(clip))
+    L = (end - start) / speed
+    ins = ["-ss", f"{start}", "-i", clip]
     if not has_audio(clip):
         ins += ["-f", "lavfi", "-t", f"{L + 1:.2f}", "-i", "anullsrc=r=44100:cl=stereo"]
         a_src = "[1:a]"
@@ -125,7 +130,8 @@ def _scene_part(work: str, i: int, clip: str, text: str | None, hook: str | None
     if text:
         layers.append((text_png(os.path.join(work, f"yazi_{i}.png"), text, "altyazi"), XFADE + 0.1, L - XFADE))
     if final:
-        layers.append((text_png(os.path.join(work, f"final_{i}.png"), final, "final"), max(L * 0.45, XFADE + 0.3), L + 1))
+        t0 = final_at if final_at is not None else max(min(L * 0.35, 1.6), XFADE + 0.3)
+        layers.append((text_png(os.path.join(work, f"final_{i}.png"), final, "final", final_y), t0, L + 1))
     for n, (png, t0, t1) in enumerate(layers):
         ins += ["-i", png]
         fc += f";{last}[{k}:v]overlay=0:0:enable='between(t,{t0:.2f},{t1:.2f})'[l{n}]"
@@ -143,11 +149,15 @@ def compose(scenes: list[dict], output: str, work: str, music: str | None = None
             music_volume: float = 0.22, sfx_volume: float = 1.0, speed: float = 1.0,
             trim_start: float = 0.15, transitions: list[str] | None = None) -> float:
     """
-    scenes: [{"clip": path, "text": altyazi, "hook": kanca (ilk sahne), "final": son cumle (son sahne)}]
+    scenes: [{"clip": path, "text": altyazi, "hook": kanca (ilk sahne), "final": son cumle (son sahne),
+              "bas": sn, "son": sn, "final_y": piksel, "final_bas": sn}]
+    bas/son: klibin kullanilacak araligi; final_y/final_bas: final yazisinin yuksekligi ve
+    sahnede ne zaman cikacagi (karakterin yuzunu kapatmasin diye). Hepsi opsiyonel.
     Doner: video suresi (sn).
     """
     os.makedirs(work, exist_ok=True)
-    parts = [_scene_part(work, i, s["clip"], s.get("text"), s.get("hook"), s.get("final"), speed, trim_start)
+    parts = [_scene_part(work, i, s["clip"], s.get("text"), s.get("hook"), s.get("final"), speed,
+                         s.get("bas", trim_start), s.get("son"), s.get("final_y"), s.get("final_bas"))
              for i, s in enumerate(scenes)]
     trans = (transitions or [])[: len(parts) - 1]
     trans += ["fade"] * (len(parts) - 1 - len(trans))

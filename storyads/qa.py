@@ -36,3 +36,44 @@ def score(product_refs: list[str], candidates: list[str], urun_gorunur: bool = T
         r = {"puan": 0, "hatalar": [f"kalite kontrolü çalışmadı: {exc}"]}
     r["gecti"] = r["puan"] >= settings.QA_MIN
     return r
+
+
+CLIP_PROMPT = """Sen kısa video reklamları için katı bir kalite kontrolcüsün.
+İlk {n_ref} görsel: ürünün GERÇEK fotoğrafı (referans). Sonraki {n} görsel: aynı video klibinden sırayla alınmış kareler,
+zamanları (sn): {zamanlar}.
+Beklenen üslup: karakterler 3D animasyon, arka plan gerçekçi fotoğraf, ürün %100 gerçek ürün gibi.
+
+Her kareyi tek tek kontrol et: fazla ayak/kol/ayakkabı (ör. karakter ayakkabı giymişken yerde de bir çift durması),
+karakterlerin birbirine karışması/eriyen yüz, bulanıklıkta kaybolan yüz, ürünün animasyona dönmesi veya değişmesi,
+uydurma logo/okunur yazı. Kısa hareket bulanıklığı tek başına hata değildir.
+
+Sadece JSON: {{"hatali_kareler": [{{"sn": 0.0, "sorun": "kısa Türkçe"}}], "urun_uyumu": 0-10, "puan": 0-10, "hatalar": ["kısa Türkçe"]}}
+"puan" = klibin TEMİZ kısmı reklamda kullanılabilir mi (hatalı anlar kesilecek)."""
+
+
+def clean_range(times: list[float], bad: list[float], total: float, min_len: float = 2.4) -> tuple[float, float] | None:
+    """Hatali karelerin etrafini kesip en uzun temiz araligi dondurur."""
+    step = (times[1] - times[0]) if len(times) > 1 else total
+    cuts = sorted(bad)
+    edges = [0.15] + [x for b in cuts for x in (b - step * 0.75, b + step * 0.75)] + [total]
+    best = None
+    for a, b in zip(edges[::2], edges[1::2]):
+        a, b = max(a, 0.15), min(b, total)
+        if b - a >= min_len and (best is None or b - a > best[1] - best[0]):
+            best = (round(a, 2), round(b, 2))
+    return best
+
+
+def score_clip(product_refs: list[str], frames: list[str], times: list[float], total: float) -> dict:
+    prompt = CLIP_PROMPT.format(n_ref=len(product_refs[:2]), n=len(frames), zamanlar=", ".join(f"{t:.1f}" for t in times))
+    try:
+        r = genai.text_json(prompt, list(product_refs[:2]) + frames)
+        r["puan"] = int(r.get("puan", 0))
+    except genai.QuotaError:
+        raise
+    except Exception as exc:  # noqa: BLE001
+        return {"puan": 0, "gecti": False, "hatalar": [f"kalite kontrolü çalışmadı: {exc}"]}
+    bad = [float(h.get("sn", 0)) for h in r.get("hatali_kareler") or [] if isinstance(h, dict)]
+    r["aralik"] = clean_range(times, bad, total)
+    r["gecti"] = r["puan"] >= settings.QA_MIN and r["aralik"] is not None
+    return r
