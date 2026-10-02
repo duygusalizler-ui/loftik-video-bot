@@ -21,6 +21,10 @@ ANA KARAKTER: {karakter} (3D animasyon film karakteri gibi, insan gibi giyinmiş
 
 KURALLAR (hepsi zorunlu):
 1. Tam {n} sahne, sırasıyla rolleri: kanca (ilk 2 saniyede dikkat çeken komik/çarpıcı an) -> sorun -> öneri -> ürün -> sonuç (mutluluk, gerekirse küçük komik ters köşe).
+   HİKÂYE TUTARLI OLMALI: kanca ve sorun sahnelerinde karakter ürünü KULLANMIYOR (eski/kötü/uygunsuz bir şeyle
+   başı dertte); ürün ilk kez "oneri" sahnesinde ortaya çıkar; sonrasında karakter ürünü kullanır.
+   Kanca örnekleri (bu kalitede yaz, kopyalama): "Kışın en kötü 3 saniyesi", "17:45 — ayaklarım istifa etti",
+   "POV: yağmur başladı ve sen beyaz ayakkabıdasın". Final örnekleri: "Kış: 0 — Ayı: 1", "17:45 — enerji hâlâ %100".
 2. Video SESSİZ izleyen birine bile hikâyeyi NET anlatmalı: her sahnenin "ekran_yazisi" en fazla 7 kelime, çarpıcı, günlük Türkçe. İlk sahnenin yazısı "kanca" alanıdır.
 3. Seslendirme ve konuşma YOK. Her sahneye gerçekçi ses efekti tarifi yaz (adım, su sıçraması, kapı, ofis uğultusu, komik 'ding' vb.). Müzik ayrıca eklenecek, klipte müzik olmayacak.
 4. Ürün tanıtımı klasik olmasın: "ürün" sahnesi farklı bir bakış açısı kullansın (yerden çekim, birinci şahıs, yan yana dizilim, rövanş anı...) ama hikâyeye bağlı olsun ve sonuca bağlansın.
@@ -29,6 +33,7 @@ KURALLAR (hepsi zorunlu):
 7. Hareketler gerçek zamanlı hızda, AĞIR ÇEKİM YOK. Her sahne tek kesintisiz çekim (~5-6 sn).
 8. Görsel/hareket/ses promptları İNGİLİZCE, ekran yazıları ve açıklama TÜRKÇE.
 9. Açıklama (caption): hikâyenin devamı gibi 1-2 kısa satır + paylaşım çağrısı (arkadaşını etiketle/gönder) + "{bio_cta}". Ürün adını sadece sabit yorumda geç.
+   Site adresi: {site} (başka adres UYDURMA).
 10. HATA ÖNLEME (yapay zekâ videosunda en çok bozulan şeyler, bunlardan kaçın):
    - Bir sahnede en fazla 2 karakter; karakterler birbirinin önünden geçmesin, iç içe girmesin.
    - Zıplama, koşma, dans, hızlı dönüş YOK; sakin ve tek bir hareket (yürür, uzatır, bakar, oturur).
@@ -39,7 +44,8 @@ KURALLAR (hepsi zorunlu):
    - Kutu/paket açma, nesnenin aniden belirmesi/kaybolması YOK; ürün zaten sahnededir.
    - Ürün sadece "oneri", "urun" ve "sonuc" sahnelerinde görünür ("urun_gorunur": true); kanca ve sorun
      sahnelerinde ürün yoktur (karakter eski/kötü ayakkabıyla olabilir).
-   - Ana karakterin yüzü kadrajın üst yarısında olsun (alt kısım altyazıya ayrılır).
+   - Kadrajın üst %20'si sakin arka plan olsun (gökyüzü/duvar), karakterin başı bunun ALTINDA; en alt %20 de
+     yazıya ayrılır. Bunu her "gorsel_prompt"a yaz.
 11. Asla: {yasak}
 
 Sadece şu JSON'u döndür:
@@ -105,7 +111,7 @@ def make_plan(brand: Brand, product: Product, fmt: str, karakter: str) -> dict:
         marka=brand.ad, sektor=brand.sektor, kitle=brand.hedef_kitle, ton=brand.ses_tonu,
         urun=product.ad, fiyat=product.fiyat or "-", aciklama=product.aciklama or "-",
         urun_notu=_urun_notu(brand, product), format_ad=f["ad"], format_fikir=f["fikir"],
-        karakter=karakter, n=settings.SCENES, bio_cta=brand.bio_cta,
+        karakter=karakter, n=settings.SCENES, bio_cta=brand.bio_cta, site=brand.site.replace("https://", "").replace("www.", ""),
         yasak="; ".join(brand.yasak) or "-",
     )
     plan = genai.text_json(prompt, product.gorseller[:2])
@@ -117,6 +123,11 @@ def make_plan(brand: Brand, product: Product, fmt: str, karakter: str) -> dict:
         if sc.get("rol") in ("kanca", "sorun"):
             sc["urun_gorunur"] = False
     plan["format"], plan["karakter"] = fmt, karakter
+    # uydurma site adresi olmasin: metindeki her alan adini markanin sitesiyle degistir
+    import re
+    site = brand.site.replace("https://", "").replace("www.", "").rstrip("/")
+    for k in ("aciklama", "sabit_yorum"):
+        plan[k] = re.sub(r"\b(?:www\.)?[\w-]+\.(?:com\.tr|com|net|shop|store)\b", site, plan.get(k) or "")
     tags = list(dict.fromkeys((plan.get("hashtagler") or []) + brand.hashtagler))
     plan["hashtagler"] = tags[:8]
     return plan

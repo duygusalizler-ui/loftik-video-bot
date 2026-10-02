@@ -15,7 +15,10 @@ PRODUCT_RULE = (" The product must be the EXACT real product from the reference 
                 "materials, sole, details) and must look 100% PHOTOREALISTIC like real product photography, "
                 "NOT cartoon, NOT stylized. Correct anatomy, exactly two feet if feet are visible, no extra "
                 "products floating around.")
-NO_TEXT = " No text, no letters, no logos, no brand names anywhere. Vertical 9:16."
+NO_TEXT = (" No text, no letters, no logos, no brand names anywhere. Vertical 9:16. Leave the top 20% of the frame "
+           "as calm background (sky or wall) with the character's head below it.")
+NO_PRODUCT = (" The character does NOT have the product yet: wears old, worn-out, cheap, unsuitable shoes/items, clearly "
+              "different from the product. Do not show the product anywhere.")
 MOTION_RULE = (" Normal real-time speed, NO slow motion, one continuous shot, slight handheld camera. "
                "Keep characters, background and product identical to the first frame. Product stays a real "
                "photorealistic product in every frame.")
@@ -36,21 +39,24 @@ class Result:
     qa_log: list = field(default_factory=list)
 
 
-def _scene_image(i: int, scene: dict, plan: dict, prod, prev_img: str | None, work: str, log: list) -> str | None:
+def _scene_image(i: int, scene: dict, plan: dict, prod, prev_img: str | None, work: str, log: list,
+                 tries: int = settings.IMAGE_TRIES) -> str | None:
     prompt = STYLE + f"Main character: {plan.get('karakter_tarifi', '')}. "
     if plan.get("yan_karakterler"):
         prompt += "Other characters: " + "; ".join(plan["yan_karakterler"]) + ". "
     if prev_img:
         prompt += "Keep the characters EXACTLY as in the last reference image (same design, clothes). "
     prompt += scene["gorsel_prompt"]
-    if scene.get("urun_gorunur", True):
-        prompt += PRODUCT_RULE
+    urun = scene.get("urun_gorunur", True)
+    prompt += PRODUCT_RULE if urun else NO_PRODUCT
     prompt += NO_TEXT
-    refs = prod.gorseller[:2] + ([prev_img] if prev_img else [])
+    # urunun olmamasi gereken sahnede urun fotografi referans verilmez (yoksa model urunu giydiriyor)
+    refs = (prod.gorseller[:2] if urun else []) + ([prev_img] if prev_img else [])
     best = (None, -1)
     feedback = ""
-    urun = scene.get("urun_gorunur", True)
-    for t in range(1, settings.IMAGE_TRIES + 1):
+    for t in range(1, tries + 1):
+        if t > settings.IMAGE_TRIES:  # ek tur: sahneyi sadelestir
+            feedback += " SIMPLIFY: fewer characters, simple calm pose, plain composition."
         try:
             img = genai.image(prompt + feedback, refs, os.path.join(work, f"sahne{i}_{t}.png"))
         except genai.QuotaError:
@@ -131,7 +137,13 @@ def run(brand: Brand, product_url: str, out_dir: str, fmt: str | None = None,
     log: list = []
     scenes, prev = [], None
     for i, sc in enumerate(plan["sahneler"]):
-        img = _scene_image(i, sc, plan, prod, prev, work, log)
+        # hikayenin bel kemigi olan sahnelere (kanca/oneri/urun) ek deneme hakki
+        kritik = sc.get("rol") in ("kanca", "oneri", "urun")
+        img = _scene_image(i, sc, plan, prod, prev, work, log,
+                           tries=settings.IMAGE_TRIES + (2 if kritik else 0))
+        if not img and kritik:
+            print(f"Kritik sahne ({sc.get('rol')}) üretilemedi; hikâye eksik kalacağı için video üretilmedi.")
+            return Result(None, plan, qa_log=log)
         if not img:
             print(f"  sahne {i + 1} atlandı (kalite kontrolünden geçen görsel yok)")
             continue
@@ -147,6 +159,8 @@ def run(brand: Brand, product_url: str, out_dir: str, fmt: str | None = None,
 
     print("[4/5] Kurgu")
     scenes[0]["hook"], scenes[0]["text"] = plan.get("kanca"), None
+    if scenes[0].get("yuz") == "ust":  # kanca yazisi yuzu kapatmasin
+        scenes[0]["hook_y"] = 1450
     scenes[-1]["final"], scenes[-1]["text"] = plan.get("final_yazi"), None
     # final yazisi karakterin yuzunu kapatmasin: yuz ustteyse yazi ortaya iner
     if scenes[-1].get("yuz") == "ust":

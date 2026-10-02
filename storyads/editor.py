@@ -108,7 +108,8 @@ def text_png(path: str, text: str, style: str, y: int | None = None) -> str:
 
 def _scene_part(work: str, i: int, clip: str, text: str | None, hook: str | None,
                 final: str | None, speed: float, start: float, end: float | None,
-                final_y: int | None = None, final_at: float | None = None) -> tuple[str, float]:
+                final_y: int | None = None, final_at: float | None = None,
+                hook_y: int | None = None) -> tuple[str, float]:
     """Klibi dikey 1080x1920'ye getirir, yazilari bindirir. Ses (efektler) korunur.
     start/end: klibin kullanilacak araligi (hatali anlari kesmek icin)."""
     end = min(end or 1e9, duration(clip))
@@ -126,7 +127,7 @@ def _scene_part(work: str, i: int, clip: str, text: str | None, hook: str | None
     last = "[v0]"
     layers = []
     if hook:
-        layers.append((text_png(os.path.join(work, f"kanca_{i}.png"), hook, "kanca"), 0.1, L - XFADE))
+        layers.append((text_png(os.path.join(work, f"kanca_{i}.png"), hook, "kanca", hook_y), 0.1, L - XFADE))
     if text:
         layers.append((text_png(os.path.join(work, f"yazi_{i}.png"), text, "altyazi"), XFADE + 0.1, L - XFADE))
     if final:
@@ -157,7 +158,8 @@ def compose(scenes: list[dict], output: str, work: str, music: str | None = None
     """
     os.makedirs(work, exist_ok=True)
     parts = [_scene_part(work, i, s["clip"], s.get("text"), s.get("hook"), s.get("final"), speed,
-                         s.get("bas", trim_start), s.get("son"), s.get("final_y"), s.get("final_bas"))
+                         s.get("bas", trim_start), s.get("son"), s.get("final_y"), s.get("final_bas"),
+                         s.get("hook_y"))
              for i, s in enumerate(scenes)]
     trans = (transitions or [])[: len(parts) - 1]
     trans += ["fade"] * (len(parts) - 1 - len(trans))
