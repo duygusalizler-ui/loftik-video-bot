@@ -174,6 +174,14 @@ def run(brand: Brand, product_url: str, out_dir: str, fmt: str | None = None,
     if scenes[0].get("yuz") == "ust":  # kanca yazisi yuzu kapatmasin
         scenes[0]["hook_y"] = 1450
     scenes[-1]["final"], scenes[-1]["text"] = plan.get("final_yazi"), None
+    # Komik ters kose + paylasim cagrisi: son klibin ikinci yarisi uzerine
+    son = scenes[-1]
+    if plan.get("ters_kose_yazisi") or plan.get("paylasim_yazisi"):
+        b, e = son.get("bas", 0.15), son.get("son") or editor.duration(son["clip"])
+        orta = b + (e - b) * 0.5
+        son["son"] = orta
+        scenes.append({"clip": son["clip"], "bas": orta, "son": e, "hook": plan.get("ters_kose_yazisi"),
+                       "final": plan.get("paylasim_yazisi"), "final_y": 900, "final_bas": 0.6})
     # final yazisi karakterin yuzunu kapatmasin: yuz ustteyse yazi ortaya iner
     if scenes[-1].get("yuz") == "ust":
         scenes[-1]["final_y"] = 900

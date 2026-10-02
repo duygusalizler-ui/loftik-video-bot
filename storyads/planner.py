@@ -42,6 +42,9 @@ KURALLAR (hepsi zorunlu):
    karakter (ya da sahnedeki başka biri) ürünü doğal biçimde kadrajda taşır, kamera ürüne sık sık ama kısa
    (≤1 sn) değer, ürün sahnenin en canlı/aydınlık rengi olur. Kanca ve sorun sahnelerinde bile ürün arka planda
    biri tarafından giyilmiş olarak kısa görünebilir (izleyici fark etmeden aklında kalır).
+10b. KOMEDİ + PAYLAŞIM (kesin kural): "sonuc" sahnesinden sonra herkesin yaşadığı, güldüren bir TERS KÖŞE gelir
+   ("ters_kose_yazisi", ör. 'Patron: "Madem enerjin var, mesaiye kal."'), video ekranda bir PAYLAŞIM/ETİKET
+   çağrısıyla biter ("paylasim_yazisi", ör. "Mesaiye kalan arkadaşına gönder"). Ürün bu sahnede de kadrajdadır.
 11. ÜRÜN GERÇEKLİĞİ (KESİN KURAL): Ürün asla animasyon/3D/plastik görünmez. "urun" sahnesi ve ürünün yakın
    göründüğü her çekim KARAKTERSİZ olur: sadece pantolon paçası + ürün, %100 gerçek fotoğraf/telefon çekimi gibi
    ("Real smartphone footage, photorealistic, not CGI"). Karakter bu sahnede ya hiç görünmez ya da uzakta bulanık kalır.
@@ -72,7 +75,9 @@ Sadece şu JSON'u döndür:
      "ses_efekti": "İngilizce: duyulacak sesler",
      "urun_gorunur": true}}
  ],
- "final_yazi": "son sahnede ekranın ortasında çıkacak vurucu cümle",
+ "final_yazi": "sonuç sahnesinde çıkacak vurucu cümle",
+ "ters_kose_yazisi": "sonuçtan sonra gelen komik ters köşe (kısa)",
+ "paylasim_yazisi": "videonun en sonunda ekranda: arkadaşına gönder/etiketle çağrısı (kısa)",
  "aciklama": "Instagram açıklaması",
  "sabit_yorum": "markanın kendi yorumu: ürün adı + nereden alınır",
  "hashtagler": ["#..."],

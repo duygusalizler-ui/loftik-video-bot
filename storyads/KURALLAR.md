@@ -15,3 +15,6 @@ Kurallar 3 yerde uygulanır: senaryo (planner.py), üretim (pipeline.py), kalite
    kare kare kontrolde yakalanır ve kesilir/yeniden üretilir.
 6. **Seslendirme yok;** sahnenin kendi ses efektleri + kısık müzik. Ağır çekim yok, gerçek zamanlı hız.
 7. **Sonda fiyat/ürün kartı yok;** video vurucu bir cümleyle biter. Satış açıklama + sabit yorum + DM ile gelir.
+8. **Komik ters köşe + paylaşım çağrısı videonun İÇİNDE.** Son sahnede herkesin yaşadığı, güldüren bir ters köşe
+   (ör. "Patron: Madem enerjin var, mesaiye kal."), ardından ekranda paylaşım/etiket çağrısı
+   ("Mesaiye kalan arkadaşına gönder"). Ürün bu son sahnede de kadrajda kalır. Açıklama satış çağrısında kalır.
