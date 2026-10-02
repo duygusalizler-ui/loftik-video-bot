@@ -66,7 +66,8 @@ def srt(rows: list[dict], texts: dict, out: Path, max_chars: int = 84) -> None:
 def build(ep: dict, lang: str, texts: dict) -> Path:
     work = C.BUILD_DIR / ep["id"]
     rows = plan(ep, lang)
-    post = ep["voice_engine"]["post"].split(",", 1)[1]  # baştaki atempo'yu sahne bazlı değiştir
+    # zincirdeki atempo'yu çıkar, sahne bazlı tempo ile değiştir (atempo her zaman başta olmayabilir)
+    post = ",".join(f for f in ep["voice_engine"]["post"].split(",") if not f.startswith("atempo="))
     proc = work / f"audio_{lang}"
     proc.mkdir(exist_ok=True)
     ins, fc = [], []
