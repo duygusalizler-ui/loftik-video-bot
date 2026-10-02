@@ -8,7 +8,13 @@ Ana akış:
 5. Chekich.com.tr'de en yakın eşleşen ürünü bulup gerçek malzeme/astar/topuk
    bilgisini çek (bulamazsa uydurmadan atlar), açıklama + hashtag oluştur
 
-CONTENT_MODE = "remotion" (varsayılan) ise:
+CONTENT_MODE = "reklam" (VARSAYILAN) ise:
+6r. Rakip reklam analizi (Meta Ad Library) -> brief -> sahne görselleri ->
+    Veo klipleri -> otomatik kalite kontrolü -> Türkçe yazılı kurgu.
+    Kalite kontrolünden geçen klip yoksa gerçek fotoğraflar kaydırmalı
+    gönderi olarak yollanır (hatalı video asla gönderilmez).
+
+CONTENT_MODE = "remotion" ise:
 6a. Bacak/ayak kaldırılır (AI, ama SADECE bu tek iş için -- ürünü yeniden
     çizmiyor, sadece etrafındaki bacağı siliyor; en fazla 3 deneme)
 6b. Arka plan kaldırılır (rembg -- AI DEĞİL, sadece segmentasyon/kesme)
@@ -32,13 +38,14 @@ CONTENT_MODE = "video" ise (eski akış):
 import sys
 import tempfile
 
+from . import ad_pipeline, competitor_ads
 from . import caption as caption_mod
 from . import chekich, config, remotion_video, scraper, state
 from . import wiro_video
 from .gemini_video import QuotaExceededError, clean_product_shot
 from .gemini_video import generate_product_video as generate_product_video_gemini
 from .story_image import build_story_image
-from .telegram_post import send_media_group, send_photo, send_video
+from .telegram_post import send_media_group, send_message, send_photo, send_video
 
 CLEANUP_MAX_ATTEMPTS = 3
 
@@ -59,10 +66,48 @@ def _download_gallery(product, raw_image_path: str, tmp: str) -> list:
     return local_paths
 
 
+def _run_ad_mode(product, candidate, raw_image_path: str, base_caption: str, tmp: str) -> None:
+    video_path = f"{tmp}/reklam.mp4"
+    gallery = _download_gallery(product, raw_image_path, tmp)
+    result = ad_pipeline.build_ad(
+        product, raw_image_path, bool(candidate.get("is_boot")), f"{tmp}/reklam_is", video_path,
+        extra_refs=gallery[1:3],
+    )
+    brief = result.brief
+
+    caption = base_caption
+    if brief.get("paylasim_metni"):
+        caption = f"{brief['paylasim_metni']}\n\n{product.url}"
+
+    send_message(competitor_ads.telegram_summary(brief))
+    if result.video_path:
+        send_video(result.video_path, caption[:1000])
+        send_message(
+            ad_pipeline.qa_summary(result)
+            + f"\n\n📝 Önerilen açıklama:\n{caption}"
+        )
+    else:
+        print("Kalite kontrolünden geçen klip yok -- gerçek fotoğraflar gönderiliyor.")
+        local_paths = gallery
+        send_message(
+            "⚠️ Bu ürün için kalite kontrolünden geçen video çıkmadı, hatalı video "
+            "göndermek yerine gerçek fotoğrafları yolluyorum.\n\n" + ad_pipeline.qa_summary(result)
+        )
+        if len(local_paths) >= 2:
+            send_media_group(local_paths, caption[:1000])
+        else:
+            send_photo(local_paths[0], caption[:1000])
+
+
 def run() -> None:
+    done_today = state.posts_today()
+    if done_today >= config.MAX_POSTS_PER_DAY and not config.IGNORE_DAILY_LIMIT:
+        print(f"Bugün zaten {done_today} içerik üretildi (limit {config.MAX_POSTS_PER_DAY}), çıkılıyor.")
+        return
+
     print("Katalog taranıyor...")
     catalog = scraper.list_light_catalog()
-    print(f"{len(catalog)} ürün bulundu (BOT kategorisi hariç).")
+    print(f"{len(catalog)} ürün bulundu (botlar {'dahil' if config.boots_enabled() else 'hariç -- sezon dışı'}).")
 
     candidate = state.pick_candidate(catalog)
     if not candidate:
@@ -92,6 +137,12 @@ def run() -> None:
             print(f"UYARI: Chekich eşleştirme başarısız ({exc}), özellik satırı olmadan devam ediliyor.")
 
         text = caption_mod.build_caption(product.title, product.brand, product.category_slug, spec_line)
+
+        if config.CONTENT_MODE == "reklam":
+            _run_ad_mode(product, candidate, raw_image_path, text, tmp)
+            state.mark_posted(product.url, product.title, {"mod": "reklam"})
+            print("Tamamlandı, data/posted.json güncellendi.")
+            return
 
         if config.CONTENT_MODE in ("remotion", "post"):
             local_paths = _download_gallery(product, raw_image_path, tmp)

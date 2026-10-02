@@ -140,9 +140,11 @@ def read_visible_text(image_path: str) -> str:
         client = _client()
         image_bytes = Path(image_path).read_bytes()
         mime = "image/png" if image_path.lower().endswith(".png") else "image/jpeg"
-        response = client.models.generate_content(
-            model="gemini-2.5-flash",
-            contents=[
+        from . import gemini_util
+
+        response = gemini_util.generate_content(
+            client,
+            [
                 types.Part.from_bytes(data=image_bytes, mime_type=mime),
                 "Bu bir ayakkabı fotoğrafı. Ayakkabının üzerinde (etiket, "
                 "tab, logo, taban vb.) net şekilde okunabilen bir yazı "

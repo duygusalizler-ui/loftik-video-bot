@@ -1,0 +1,14 @@
+{
+  "_aciklama": "Yeni müşteri: bu dosyayı brands/<kod>.json olarak kopyala ve doldur. Çalıştır: python -m storyads --marka <kod> --urun <ürün linki>",
+  "ad": "Örnek Kahve",
+  "site": "https://www.ornekkahve.com",
+  "sektor": "kahve çekirdeği ve ekipman e-ticaret",
+  "hedef_kitle": "evde kahve yapan 22-45 yaş kahve meraklıları",
+  "ses_tonu": "sıcak, esprili, samimi",
+  "bio_cta": "Link bio'da ☕",
+  "hashtagler": ["#kahve", "#evdekahve"],
+  "karakterler": ["baykuş", "rakun", "kedi"],
+  "yasak": ["sağlık iddiası", "rakip marka adı"],
+  "urun_notlari": {},
+  "muzik_modu": "neseli"
+}

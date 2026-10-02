@@ -1,0 +1,22 @@
+{
+  "ad": "Loftik Ayakkabı",
+  "site": "https://www.loftikayakkabi.com",
+  "sektor": "ayakkabı e-ticaret (erkek/kadın spor ayakkabı, bot, günlük ayakkabı)",
+  "hedef_kitle": "Türkiye'de 18-40 yaş, şehirde yaşayan, rahatlık ve uygun fiyat arayan kadın ve erkekler",
+  "ses_tonu": "samimi, esprili, günlük Türkçe; kaba değil",
+  "bio_cta": "Ayakkabı merak edenler: link bio'da 👟",
+  "hashtagler": ["#loftikayakkabi", "#ayakkabı", "#kombin"],
+  "karakterler": [],
+  "yasak": [
+    "ürüne 'hakiki deri' deme (ürünler vegan deri)",
+    "rakip marka adı kullanma",
+    "ağır çekim",
+    "su sıçraması ağır çekimi"
+  ],
+  "urun_notlari": {
+    "chelsea": "Chelsea bot: BAĞCIK YOK, yanlarda elastik bant, arkada çekme kulpu.",
+    "bot": "Bot: kalın tırtıklı taban; kış/kar/yağmur hikâyeleri uygun.",
+    "spor": "Spor ayakkabı: gün boyu rahatlık, ofis/şehir/yürüyüş hikâyeleri uygun."
+  },
+  "muzik_modu": "komik"
+}

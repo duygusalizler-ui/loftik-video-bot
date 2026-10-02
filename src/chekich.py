@@ -93,16 +93,68 @@ def _extract_specs_from_text(text: str) -> ChekichSpecs:
     m = re.search(r"Ürün Malzemesi\s*:\s*(.*?)İç Astar\s*:", text)
     if m:
         material = m.group(1).strip(" .")
-    m = re.search(r"İç Astar\s*:\s*(.*?)Topuk Uzunluğu\s*:", text)
+    m = re.search(r"İç Astar\s*:\s*(.*?)\s*Topuk (?:Uzunluğu|Boyu)\s*:", text)
     if m:
         lining = m.group(1).strip(" .")
-    m = re.search(r"Topuk Uzunluğu\s*:\s*([\d,.]+\s*CM)", text, re.IGNORECASE)
+    m = re.search(r"Topuk (?:Uzunluğu|Boyu)\s*:\s*([\d,.]+\s*CM)", text, re.IGNORECASE)
     if m:
         heel = m.group(1).strip()
     return ChekichSpecs(material=material, lining=lining, heel_height=heel)
 
 
+_CATALOG = None
+
+
+def _catalog():
+    """Chekich'in tum urunleri (Shopify products.json) -- bir kez cekilir."""
+    global _CATALOG
+    if _CATALOG is None:
+        _CATALOG = []
+        for page in range(1, 20):
+            try:
+                items = _request(f"{CHEKICH_BASE}/products.json?limit=250&page={page}").json().get("products", [])
+            except Exception:  # noqa: BLE001
+                break
+            if not items:
+                break
+            _CATALOG.extend(items)
+    return _CATALOG
+
+
+def _exact_code_match(loftik_title: str) -> Optional[ChekichSpecs]:
+    """Loftik MNxxx kodu = Chekich CHxxx kodu (ör. MN223 Alaska = CH223 Alaska).
+    Ayni numara + ayni stil kodu + ayni renk varsa kesin eslesme sayilir."""
+    m = re.match(r"\s*MN\s*(\d+)", loftik_title, re.IGNORECASE)
+    if not m:
+        return None
+    num = m.group(1)
+    style, color = _extract_style_and_color(loftik_title)
+    candidates = [p for p in _catalog() if re.match(rf"\s*CH\s*{num}\b", p.get("title", ""), re.IGNORECASE)]
+    if not candidates:
+        return None
+    candidates.sort(key=lambda p: _score(p["title"], style, color), reverse=True)
+    best = candidates[0]
+    text = re.sub(r"<[^>]+>", " ", best.get("body_html") or "")
+    text = re.sub(r"\s+", " ", text)
+    specs = _extract_specs_from_text(text)
+    if not any([specs.material, specs.lining, specs.heel_height]):
+        return None
+    specs.source_url = f"{CHEKICH_BASE}/products/{best.get('handle')}"
+    specs.matched_title = best["title"]
+    return specs
+
+
 def find_matching_specs(loftik_title: str) -> Optional[ChekichSpecs]:
+    try:
+        exact = _exact_code_match(loftik_title)
+        if exact:
+            return exact
+    except Exception as exc:  # noqa: BLE001
+        print(f"UYARI: Chekich kod eşleştirmesi başarısız ({exc}), aramaya geçiliyor.")
+    if re.match(r"\s*MN\s*\d+", loftik_title, re.IGNORECASE):
+        # MN kodlu urunun Chekich'te ayni numarasi yoksa baska bir modelle
+        # eslestirip yanlis malzeme yazmaktansa bilgi eklemiyoruz.
+        return None
     style, color = _extract_style_and_color(loftik_title)
     query = " ".join(filter(None, [style, "erkek ayakkabı", color])) or "erkek ayakkabı"
 

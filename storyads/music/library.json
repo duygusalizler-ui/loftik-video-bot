@@ -1,0 +1,10 @@
+{
+  "_aciklama": "Arka plan müzik kütüphanesi. Kevin MacLeod parçaları CC BY 4.0: ticari kullanım serbest, açıklamaya 'kredi' satırı otomatik eklenir. Kendi lisanslı/telifsiz parçanı eklemek için mp3'ü bu klasöre koy ve buraya bir satır ekle (kredi gerekmiyorsa boş bırak).",
+  "parcalar": [
+    {"dosya": "monkeys_spinning_monkeys.mp3", "mod": ["komik", "neseli"], "kredi": "\"Monkeys Spinning Monkeys\" Kevin MacLeod (incompetech.com) CC BY 4.0"},
+    {"dosya": "fluffing_a_duck.mp3", "mod": ["komik"], "kredi": "\"Fluffing a Duck\" Kevin MacLeod (incompetech.com) CC BY 4.0"},
+    {"dosya": "wallpaper.mp3", "mod": ["enerjik", "neseli"], "kredi": "\"Wallpaper\" Kevin MacLeod (incompetech.com) CC BY 4.0"},
+    {"dosya": "carefree.mp3", "mod": ["neseli", "duygusal"], "kredi": "\"Carefree\" Kevin MacLeod (incompetech.com) CC BY 4.0"},
+    {"dosya": "investigations.mp3", "mod": ["komik", "gerilim"], "kredi": "\"Investigations\" Kevin MacLeod (incompetech.com) CC BY 4.0"}
+  ]
+}

@@ -32,6 +32,16 @@ def send_video(video_path: str, caption: str) -> dict:
     return resp.json()
 
 
+def send_message(text: str) -> dict:
+    resp = requests.post(
+        _url("sendMessage"),
+        data={"chat_id": _chat_id(), "text": text[:4000], "disable_web_page_preview": True},
+        timeout=60,
+    )
+    resp.raise_for_status()
+    return resp.json()
+
+
 def send_photo(photo_path: str, caption: str = "") -> dict:
     with open(photo_path, "rb") as f:
         resp = requests.post(
