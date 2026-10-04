@@ -57,8 +57,13 @@ Son sahneden (sonraki bölüm tanıtımı) hemen önce, anlatıcının kendi ses
 - Kanal adı söylenmez; "subscribe" + "like" tek cümlede, yalvarmadan.
 
 ## 9. Yayın takvimi
-- Haftada 2 video: **Çarşamba ve Cumartesi, 18:10 (Türkiye saati)**. Video 1 (30 Eylül) bu saatte yayınlandı; izleyici alışkanlığı için saat sabit kalır.
-- Yükleme akışı: Gizli/Liste dışı yükle → kontrol → Planla (gün + 18:10).
+- Haftada 2 video, saatler hedef kitleye (ABD + İspanyolca konuşan izleyici) göre (4 Ekim kararı):
+  - **Çarşamba 21:10 (Türkiye)** = ABD doğu 14:10 · ABD batı 11:10 · Meksika 12:10 · İspanya 20:10 · Arjantin 15:10. Akşam yoğunluğundan 3–4 saat önce yayında olur, YouTube'un dağıtmaya zamanı kalır.
+  - **Cumartesi 20:10 (Türkiye)** = ABD doğu 13:10 · ABD batı 10:10 · Meksika 11:10 · İspanya 19:10 · Arjantin 14:10. Hafta sonu izleme öğleden önce/öğlen başlar.
+- Video 1 ve 2 eski saatte (18:10) yayınlandı; video 3'ten itibaren yeni saatler.
+- Saat değişimi: İspanya 25 Ekim'de, ABD 1 Kasım'da kışa geçer, Türkiye geçmez. 1 Kasım'dan sonra aynı yerel saati korumak için Türkiye saati 1 saat ileri alınır (Çarşamba 22:10, Cumartesi 21:10).
+- Değerlendirme: Cumartesi videolarının ilk 24 saat gösterim/izlenme sayıları karşılaştırılır; gerekirse saat tek değişkenle oynanır.
+- Yükleme akışı: Gizli/Liste dışı yükle → kontrol → Planla (gün + yukarıdaki saat).
 
 ## 10. Değerlendirme eşiği: 10. video
 - Kullanıcı kararı: kanalın tutup tutmadığına **10. videodan sonra** bakılır (haftada 2 → ~31 Ekim 2026).
