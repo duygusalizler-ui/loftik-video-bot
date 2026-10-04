@@ -18,3 +18,6 @@ Kurallar 3 yerde uygulanır: senaryo (planner.py), üretim (pipeline.py), kalite
 8. **Komik ters köşe + paylaşım çağrısı videonun İÇİNDE.** Son sahnede herkesin yaşadığı, güldüren bir ters köşe
    (ör. "Patron: Madem enerjin var, mesaiye kal."), ardından ekranda paylaşım/etiket çağrısı
    ("Mesaiye kalan arkadaşına gönder"). Ürün bu son sahnede de kadrajda kalır. Açıklama satış çağrısında kalır.
+9. **Yorum taktiği.** Açıklamanın 1. satırı herkesin tek emojiyle cevaplayabileceği bir soru; satış çağrısı
+   (KELİME yaz, DM'den link) 2. satırda. Sabit yorum "sıradaki bölümü siz seçin" sorusu. Her videonun kendi
+   DM kelimesi ve hazır DM mesajı üretilir.

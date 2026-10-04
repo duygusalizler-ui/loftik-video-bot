@@ -33,7 +33,11 @@ KURALLAR (hepsi zorunlu):
 6. Görsel üslup: karakterler animasyon, ARKA PLAN TAMAMEN GERÇEKÇİ fotoğraf (gerçek Türkiye mekânı), ÜRÜN %100 GERÇEK ürün fotoğrafı gibi (animasyon değil), ekteki fotoğraftaki ürünün birebir aynısı.
 7. Hareketler gerçek zamanlı hızda, AĞIR ÇEKİM YOK. Her sahne tek kesintisiz çekim (~5-6 sn).
 8. Görsel/hareket/ses promptları İNGİLİZCE, ekran yazıları ve açıklama TÜRKÇE.
-9. Açıklama (caption): hikâyenin devamı gibi 1-2 kısa satır + paylaşım çağrısı (arkadaşını etiketle/gönder) + "{bio_cta}". Ürün adını sadece sabit yorumda geç.
+9. Açıklama (caption) — YORUM TAKTİĞİ (kesin kural): izleyicilerin çoğu markayı tanımayan yabancılardır.
+   1. satır: herkesin 1 saniyede cevaplayabileceği soru (tercihen emoji seçmeli: "Sen hangisisin? 😩 Dünkü X / 😎 Bugünkü X").
+   2. satır: satış çağrısı ("Ürünü isteyen <KELİME> yazsın, linki DM'den atalım").
+   "sabit_yorum": markanın kendi yorumu olarak "Sıradaki bölümde <karakter> nereye gitsin? 👇" + 3 emojili seçenek
+   (izleyici bir sonraki bölümü seçer, seri takibi getirir). Ürün adı ve link DM'de verilir.
    Site adresi: {site} (başka adres UYDURMA).
 10. AKICILIK: Video DOĞRUDAN hikâyeyle başlar; başa ürün ön gösterimi/özet çekimi KOYMA (kesin kural).
    İlk sahne hareketli ve çarpıcı olsun, hareketsiz duran karakter yok. Her sahnenin "hareket_prompt"u 2-3 hızlı
@@ -79,7 +83,9 @@ Sadece şu JSON'u döndür:
  "ters_kose_yazisi": "sonuçtan sonra gelen komik ters köşe (kısa)",
  "paylasim_yazisi": "videonun en sonunda ekranda: arkadaşına gönder/etiketle çağrısı (kısa)",
  "aciklama": "Instagram açıklaması",
- "sabit_yorum": "markanın kendi yorumu: ürün adı + nereden alınır",
+ "sabit_yorum": "Sıradaki bölüm sorusu + 3 emojili seçenek",
+ "dm_kelimesi": "yorumda/DM'de istenecek tek kelime, büyük harf (ör. KIŞ, ENERJİ)",
+ "dm_mesaji": "DM'de gönderilecek hazır mesaj: selam + ürün adı + {site} ürün linki + beden/kargo sorusu daveti",
  "hashtagler": ["#..."],
  "muzik_modu": "komik|enerjik|neseli|duygusal"
 }}"""
