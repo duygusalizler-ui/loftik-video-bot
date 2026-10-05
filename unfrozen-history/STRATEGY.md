@@ -90,3 +90,11 @@ Karar: şimdilik mevcut formatla devam. 10. video değerlendirmesinde (≈31 Eki
 2. Kapak = karakterin yakın yüzü + güçlü duygu + tek büyük nesne, çok az yazı (parlak kapak testinin sonucu da dikkate alınır).
 3. Uzun bölüm denemesi: 15–20 dk tek hikâye.
 4. Tutan bölüme hızlı devam ("Part 2") ile ivmeyi yakalamak.
+
+## 13. vidIQ anahtar kelime notları (5 Ekim)
+- vidIQ hesabı şu an başka bir kanala bağlı (Sunny Nest Studios); Unfrozen History bağlanınca kendi analizlerimiz (bırakma noktası, ülke, trafik) çekilecek.
+- "great frost 1709": ~5.150 arama/ay, rekabet 18,9/100 (çok düşük) → ep005 için iyi; başlık/açıklama/etikette mutlaka geçsin.
+- "coldest winter in history": ~4.430/ay, rekabet 24,8 → ep005 B başlığına uygun.
+- Büyük fırsat: "history for sleep" ~815K/ay, rekabet 36 (en iyi skor 78,5); "boring history for sleep" 482K. Sakin anlatımlı bölümlerimiz bu kitleye uyar.
+  Fikir (10. video sonrası değerlendirilecek): kendi bölümlerimizden 1–2 saatlik "Winter Survival Stories for Sleep" derlemesi (müzik/efekt kısık, kapanış CTA'ları çıkarılmış). Sadece kendi içeriğimiz → yeniden kullanılmış içerik sorunu yok.
+- "history explained" son 30 günde +%41 büyüme.
