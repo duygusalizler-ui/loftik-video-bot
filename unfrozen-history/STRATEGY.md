@@ -82,3 +82,11 @@ Son sahneden (sonraki bölüm tanıtımı) hemen önce, anlatıcının kendi ses
   Her bölümde başlık kalıbı değişir (soru / meydan okuma / sayı / tezat / ikinci şahıs); kapak bizim
   guaj-resim stilimizde kalır, sadece daha aydınlık ve tek kelimelik. YouTube'un "tekrarlayan/seri üretim
   içerik" politikası açısından da her bölümün yapısı, açılışı ve görsel dili farklılaşmalı.
+
+## 12. Yedek plan: tutmazsa uygulanacaklar (5 Ekim notu)
+Kaynak: MYTHRA (@mythrafilms) — 3 videoyla ~2 haftada 64 Mn görüntüleme. Konusu fantastik kurgu; biz sadece paketlemeyi örnek alırız, tarih doğruluğu kuralı aynen kalır.
+Karar: şimdilik mevcut formatla devam. 10. video değerlendirmesinde (≈31 Ekim) tutmuyorsa sırayla denenir:
+1. Başlık = tek cümlelik şaşırtıcı olay (konuyu değil olayı söyle). Ör. ep005: "The Winter the Wine Froze in the Barrels", "He Had the Only Bread in a Starving Village".
+2. Kapak = karakterin yakın yüzü + güçlü duygu + tek büyük nesne, çok az yazı (parlak kapak testinin sonucu da dikkate alınır).
+3. Uzun bölüm denemesi: 15–20 dk tek hikâye.
+4. Tutan bölüme hızlı devam ("Part 2") ile ivmeyi yakalamak.
