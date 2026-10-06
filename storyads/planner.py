@@ -187,7 +187,7 @@ def make_plan(brand: Brand, product: Product, fmt: str, karakter: str) -> dict:
 
 
 def caption_text(brand: Brand, plan: dict, music_credit: str | None) -> str:
-    parts = [plan.get("aciklama", "").strip(), " ".join(plan["hashtagler"])]
+    parts = [plan.get("aciklama", "").strip(), brand.guven_satiri, " ".join(plan["hashtagler"])]
     if music_credit:
         parts.append(f"Müzik: {music_credit}")
     return "\n\n".join(p for p in parts if p)
