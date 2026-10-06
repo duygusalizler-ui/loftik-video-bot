@@ -86,7 +86,7 @@ Sadece şu JSON'u döndür:
  "sabit_yorum": "Sıradaki bölüm sorusu + 3 emojili seçenek",
  "dm_kelimesi": "yorumda/DM'de istenecek tek kelime, büyük harf (ör. KIŞ, ENERJİ)",
  "dm_mesaji": "DM'de gönderilecek hazır mesaj: selam + ürün adı + {site} ürün linki + beden/kargo sorusu daveti",
- "hashtagler": ["#..."],
+ "hashtagler": ["#...", "(tam 5 adet)"],
  "muzik_modu": "komik|enerjik|neseli|duygusal"
 }}"""
 
@@ -182,7 +182,7 @@ def make_plan(brand: Brand, product: Product, fmt: str, karakter: str) -> dict:
     for k in ("aciklama", "sabit_yorum"):
         plan[k] = re.sub(r"\b(?:www\.)?[\w-]+\.(?:com\.tr|com|net|shop|store)\b", site, plan.get(k) or "")
     tags = list(dict.fromkeys((plan.get("hashtagler") or []) + brand.hashtagler))
-    plan["hashtagler"] = tags[:8]
+    plan["hashtagler"] = tags[:5]
     return plan
 
 
