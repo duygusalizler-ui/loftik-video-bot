@@ -15,11 +15,19 @@ PRODUCT_RULE = (" The product must be the EXACT real product from the reference 
                 "materials, sole, details) and must look 100% PHOTOREALISTIC like real product photography, "
                 "NOT cartoon, NOT stylized. Correct anatomy, exactly two feet if feet are visible, no extra "
                 "products floating around.")
-NO_TEXT = " No text, no letters, no logos, no brand names anywhere. Vertical 9:16."
-MOTION_RULE = (" Normal real-time speed, NO slow motion, one continuous shot, slight handheld camera. "
+NO_TEXT = (" No text, no letters, no logos, no brand names anywhere. Vertical 9:16. Leave the top 20% of the frame "
+           "as calm background (sky or wall) with the character's head below it.")
+NO_PRODUCT = (" The character does NOT have the product yet: wears old, worn-out, cheap, unsuitable shoes/items, clearly "
+              "different from the product. Do not show the product anywhere.")
+MOTION_RULE = (" Normal real-time speed, NO slow motion, slight handheld camera. "
                "Keep characters, background and product identical to the first frame. Product stays a real "
                "photorealistic product in every frame.")
-NEGATIVE = "speech, talking, dialogue, narration, voice, singing, music, slow motion, text, subtitles, logo, watermark"
+PRODUCT_FIX = ("Edit the FIRST image. Keep EVERYTHING identical (characters, poses, background, light, composition). "
+               "Change ONLY the product: replace it with the EXACT real product from the other reference photos, "
+               "100% photorealistic real product photography (real material texture, stitching, natural creases, "
+               "correct sole), NOT cartoon, NOT 3D, NOT plastic. Same position, size and perspective, matching "
+               "shadows. Remove any numbers, text, counters or speech bubbles if present.")
+NEGATIVE = "extra shoes, duplicate shoes, shoes on the ground, spare boots, speech, talking, dialogue, narration, voice, singing, music, slow motion, text, subtitles, logo, watermark"
 
 
 @dataclass
@@ -31,29 +39,54 @@ class Result:
     qa_log: list = field(default_factory=list)
 
 
-def _scene_image(i: int, scene: dict, plan: dict, prod, prev_img: str | None, work: str, log: list) -> str | None:
-    prompt = STYLE + f"Main character: {plan.get('karakter_tarifi', '')}. "
+def _scene_image(i: int, scene: dict, plan: dict, prod, prev_img: str | None, work: str, log: list,
+                 tries: int = settings.IMAGE_TRIES) -> str | None:
+    if scene.get("rol") == "urun":  # KESIN KURAL: urun yakin cekimi karaktersiz ve %100 fotografik
+        prompt = ("Real smartphone photo, 100% photorealistic, NOT CGI, NOT 3D, NOT cartoon. Only legs below the knee "
+                  "and the product visible, no animated character. ")
+    else:
+        prompt = STYLE + f"Main character: {plan.get('karakter_tarifi', '')}. "
     if plan.get("yan_karakterler"):
         prompt += "Other characters: " + "; ".join(plan["yan_karakterler"]) + ". "
-    if prev_img:
+    if prev_img and scene.get("rol") != "urun":
         prompt += "Keep the characters EXACTLY as in the last reference image (same design, clothes). "
     prompt += scene["gorsel_prompt"]
-    if scene.get("urun_gorunur", True):
-        prompt += PRODUCT_RULE
+    urun = scene.get("urun_gorunur", True)
+    prompt += PRODUCT_RULE if urun else NO_PRODUCT
     prompt += NO_TEXT
-    refs = prod.gorseller[:2] + ([prev_img] if prev_img else [])
+    # urunun olmamasi gereken sahnede urun fotografi referans verilmez (yoksa model urunu giydiriyor)
+    refs = (prod.gorseller[:2] if urun else []) + ([prev_img] if prev_img and scene.get("rol") != "urun" else [])
     best = (None, -1)
-    for t in range(1, settings.IMAGE_TRIES + 1):
+    feedback = ""
+    for t in range(1, tries + 1):
+        if t > settings.IMAGE_TRIES:  # ek tur: sahneyi sadelestir
+            feedback += " SIMPLIFY: fewer characters, simple calm pose, plain composition."
         try:
-            img = genai.image(prompt, refs, os.path.join(work, f"sahne{i}_{t}.png"))
+            img = genai.image(prompt + feedback, refs, os.path.join(work, f"sahne{i}_{t}.png"))
         except genai.QuotaError:
             raise
         except Exception as exc:  # noqa: BLE001
             print(f"  sahne {i + 1} görsel hatası: {exc}")
             continue
-        r = qa.score(prod.gorseller, [img], scene.get("urun_gorunur", True), prev_img)
+        r = qa.score(prod.gorseller, [img], urun, prev_img)
         log.append({"asama": f"sahne{i + 1}_gorsel", "deneme": t, **r})
         print(f"  sahne {i + 1} görsel {t}: {r['puan']}/10 {r.get('hatalar') or ''}")
+        # Urun plastik/animasyon gibi durduysa: sahneyi bozmadan sadece urunu duzelten ikinci gecis
+        if urun and not r["gecti"] and (r.get("urun_plastik_mi") or int(r.get("urun_uyumu", 10)) < 7):
+            try:
+                fixed = genai.image(PRODUCT_FIX, [img] + prod.gorseller[:2], os.path.join(work, f"sahne{i}_{t}_duz.png"))
+                r2 = qa.score(prod.gorseller, [fixed], urun, prev_img)
+                log.append({"asama": f"sahne{i + 1}_gorsel_duzeltme", "deneme": t, **r2})
+                print(f"  sahne {i + 1} ürün düzeltme {t}: {r2['puan']}/10 {r2.get('hatalar') or ''}")
+                if r2["puan"] >= r["puan"]:
+                    img, r = fixed, r2
+            except genai.QuotaError:
+                raise
+            except Exception as exc:  # noqa: BLE001
+                print(f"  ürün düzeltme hatası: {exc}")
+        # bir sonraki denemeye hatalari geri bildir
+        if r.get("hatalar"):
+            feedback = " AVOID these problems seen in the previous attempt: " + "; ".join(map(str, r["hatalar"]))
         if r["puan"] > best[1]:
             best = (img, r["puan"])
         if r["gecti"]:
@@ -62,8 +95,11 @@ def _scene_image(i: int, scene: dict, plan: dict, prod, prev_img: str | None, wo
 
 
 def _scene_clip(i: int, scene: dict, img: str, prod, work: str, log: list) -> tuple | None:
-    prompt = scene["hareket_prompt"] + MOTION_RULE + f" SOUND: {scene.get('ses_efekti', 'natural ambience')}. " \
-             "Sound effects and ambience only: no speech, no voices, no music."
+    prompt = ("Multi-shot sequence with quick cuts (~2 s per shot). " + scene["hareket_prompt"] + MOTION_RULE
+              + " Objects never appear, disappear or change shape. Only the shoes already on the character's feet:"
+              " no extra or spare shoes anywhere, nothing new on the ground."
+              + f" SOUND: {scene.get('ses_efekti', 'natural ambience')}. "
+              "Sound effects and ambience only: no speech, no voices, no music.")
     for t in range(1, settings.CLIP_TRIES + 1):
         out = os.path.join(work, f"klip{i}_{t}.mp4")
         try:
@@ -82,7 +118,8 @@ def _scene_clip(i: int, scene: dict, img: str, prod, work: str, log: list) -> tu
             fp = os.path.join(work, f"kare{i}_{t}_{k}.jpg")
             editor.run(["-ss", f"{ts:.2f}", "-i", out, "-frames:v", "1", "-vf", "scale=540:-2", fp])
             frames.append(fp)
-        r = qa.score_clip(prod.gorseller, frames, times, T, start_image=img)
+        r = qa.score_clip(prod.gorseller, frames, times, T, start_image=img,
+                          urun_gorunur=scene.get("urun_gorunur", True))
         log.append({"asama": f"sahne{i + 1}_klip", "deneme": t, **r})
         print(f"  sahne {i + 1} klip {t}: {r['puan']}/10 temiz aralık={r.get('aralik')} {r.get('hatali_kareler') or ''}")
         if r["gecti"]:
@@ -108,12 +145,21 @@ def run(brand: Brand, product_url: str, out_dir: str, fmt: str | None = None,
     log: list = []
     scenes, prev = [], None
     for i, sc in enumerate(plan["sahneler"]):
-        img = _scene_image(i, sc, plan, prod, prev, work, log)
+        # hikayenin bel kemigi olan sahnelere (kanca/oneri/urun) ek deneme hakki
+        kritik = sc.get("rol") in ("kanca", "oneri", "urun")
+        img = _scene_image(i, sc, plan, prod, prev, work, log,
+                           tries=settings.IMAGE_TRIES + (2 if kritik else 0))
+        if not img and kritik:
+            print(f"Kritik sahne ({sc.get('rol')}) üretilemedi; hikâye eksik kalacağı için video üretilmedi.")
+            return Result(None, plan, qa_log=log)
         if not img:
             print(f"  sahne {i + 1} atlandı (kalite kontrolünden geçen görsel yok)")
             continue
         prev = prev or img  # karakter referansi: ilk gecen sahne
         got = _scene_clip(i, sc, img, prod, work, log)
+        if not got and sc.get("rol") in ("oneri", "urun"):
+            print(f"Kritik sahnenin ({sc.get('rol')}) klibi tutmadı; eksik hikâye gönderilmez.")
+            return Result(None, plan, qa_log=log)
         if got:
             clip, (bas, son), yuz = got
             scenes.append({"clip": clip, "bas": bas, "son": son, "text": sc.get("ekran_yazisi") or None,
@@ -123,8 +169,19 @@ def run(brand: Brand, product_url: str, out_dir: str, fmt: str | None = None,
         return Result(None, plan, qa_log=log)
 
     print("[4/5] Kurgu")
+    # KESIN KURAL: basa urun "on gosterimi" (cold open) EKLENMEZ; video dogrudan hikayeyle baslar.
     scenes[0]["hook"], scenes[0]["text"] = plan.get("kanca"), None
+    if scenes[0].get("yuz") == "ust":  # kanca yazisi yuzu kapatmasin
+        scenes[0]["hook_y"] = 1450
     scenes[-1]["final"], scenes[-1]["text"] = plan.get("final_yazi"), None
+    # Komik ters kose + paylasim cagrisi: son klibin ikinci yarisi uzerine
+    son = scenes[-1]
+    if plan.get("ters_kose_yazisi") or plan.get("paylasim_yazisi"):
+        b, e = son.get("bas", 0.15), son.get("son") or editor.duration(son["clip"])
+        orta = b + (e - b) * 0.5
+        son["son"] = orta
+        scenes.append({"clip": son["clip"], "bas": orta, "son": e, "hook": plan.get("ters_kose_yazisi"),
+                       "final": plan.get("paylasim_yazisi"), "final_y": 900, "final_bas": 0.6})
     # final yazisi karakterin yuzunu kapatmasin: yuz ustteyse yazi ortaya iner
     if scenes[-1].get("yuz") == "ust":
         scenes[-1]["final_y"] = 900

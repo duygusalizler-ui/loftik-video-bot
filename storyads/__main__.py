@@ -18,6 +18,8 @@ def main() -> None:
     ap = argparse.ArgumentParser(prog="storyads")
     ap.add_argument("--marka")
     ap.add_argument("--urun", help="ürün sayfası linki")
+    ap.add_argument("--siradaki", action="store_true",
+                    help="ürünü brands/<marka>_urunler.txt listesinden sırayla seç (seri üretim)")
     ap.add_argument("--format", choices=list(FORMATS))
     ap.add_argument("--karakter")
     ap.add_argument("--gorsel", action="append", help="ek ürün fotoğrafı linki (birden çok verilebilir)")
@@ -29,12 +31,21 @@ def main() -> None:
         for k, v in FORMATS.items():
             print(f"{k:16} {v['ad']}: {v['fikir']}")
         return
-    if not (a.marka and a.urun):
-        ap.error("--marka ve --urun gerekli")
+    if not a.marka:
+        ap.error("--marka gerekli")
     b = brand_mod.load(a.marka)
+    if not a.urun and a.siradaki:
+        from .planner import next_product
+        a.urun = next_product(b)
+        print(f"Sıradaki ürün: {a.urun}")
+    if not a.urun:
+        ap.error("--urun ya da --siradaki gerekli")
     out = os.path.join(a.cikti, b.kod, datetime.now().strftime("%Y%m%d-%H%M%S"))
     os.makedirs(out, exist_ok=True)
     res = pipeline.run(b, a.urun, out, a.format, a.karakter, a.gorsel)
+    if a.siradaki:
+        from .planner import remember_product
+        remember_product(b, a.urun)  # basarisiz da olsa ayni urunde takilip kalmasin
     print(f"\nÇıktı klasörü: {out}")
     if res.video:
         print(f"Video: {res.video}\n--- Açıklama ---\n{res.caption}\n--- Sabit yorum ---\n{res.pinned_comment}")
