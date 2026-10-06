@@ -23,7 +23,7 @@
     3
   ],
   "gates": {
-    "script": "2026-10-06T08:56:42+00:00"
+    "script": "2026-10-06T08:56:53+00:00"
   },
   "must": [
     "historically accurate France in 1709 only",
@@ -52,32 +52,110 @@
     "etienne": {
       "kind": "character",
       "prompt": "Character reference sheet: on the left a full-body front view standing, on the right a chest-up portrait of the same person; identical original character in both views, single character only, no other people. Étienne (French village baker about 38, lean, short dark beard, flour on his hands and forearms, brown knitted wool cap, off-white linen shirt with rolled sleeves, brown wool waistcoat, long linen apron, wool breeches, grey stockings, wooden clogs)",
-      "n": "etienne"
+      "n": "etienne",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "d1ec600f-518a-4182-8558-9787dd6409cb",
+            "submitted": "2026-10-06T08:57:54+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "d1ec600f-518a-4182-8558-9787dd6409cb",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261006_085745_d1ec600f-518a-4182-8558-9787dd6409cb.png",
+        "finished": "2026-10-06T08:58:34+00:00"
+      }
     },
     "jeanne": {
       "kind": "character",
       "prompt": "Character reference sheet: on the left a full-body front view standing, on the right a chest-up portrait of the same person; identical original character in both views, single character only, no other people. Jeanne (his wife about 34, warm tired face, brown hair under a white linen coif, grey wool bodice and skirt, faded blue apron, red wool shawl)",
-      "n": "jeanne"
+      "n": "jeanne",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "319f72fa-20db-4d26-800e-feac8dc0f338",
+            "submitted": "2026-10-06T08:57:54+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "319f72fa-20db-4d26-800e-feac8dc0f338",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261006_085745_319f72fa-20db-4d26-800e-feac8dc0f338.png",
+        "finished": "2026-10-06T08:58:34+00:00"
+      }
     },
     "pierre": {
       "kind": "character",
       "prompt": "Character reference sheet: on the left a full-body front view standing, on the right a chest-up portrait of the same person; identical original character in both views, single character only, no other people. Pierre (their son, 12, thin, curly brown hair, small brown knitted cap, linen shirt, short apron, wool breeches, wooden clogs)",
-      "n": "pierre"
+      "n": "pierre",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "9a9d7849-9fbc-483e-9285-53908f33605e",
+            "submitted": "2026-10-06T08:57:54+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "9a9d7849-9fbc-483e-9285-53908f33605e",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261006_085746_9a9d7849-9fbc-483e-9285-53908f33605e.png",
+        "finished": "2026-10-06T08:58:36+00:00"
+      }
     },
     "margot": {
       "kind": "character",
       "prompt": "Character reference sheet: on the left a full-body front view standing, on the right a chest-up portrait of the same person; identical original character in both views, single character only, no other people. Margot (their daughter, 6, round face, light brown braids under a small white linen cap, little grey wool dress, brown shawl)",
-      "n": "margot"
+      "n": "margot",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "2c7951b3-4196-45d1-abcc-274c670254b7",
+            "submitted": "2026-10-06T08:57:54+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "2c7951b3-4196-45d1-abcc-274c670254b7",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261006_085746_2c7951b3-4196-45d1-abcc-274c670254b7.png",
+        "finished": "2026-10-06T08:58:37+00:00"
+      }
     },
     "bakery_in": {
       "kind": "location",
       "prompt": "Location reference, single image, NO people: interior of a small French village bakery of 1709: a large old domed bread oven of brick and stone built into the back wall with an arched mouth, a long wooden kneading trough, wooden shelves of round loaves, a long wooden peel, bundles of firewood, a heavy wooden counter, small window with wooden shutters, stone floor, beamed ceiling",
-      "n": "bakery_in"
+      "n": "bakery_in",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "872930a9-f647-43d8-a4d8-bf628550a17e",
+            "submitted": "2026-10-06T08:57:54+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "872930a9-f647-43d8-a4d8-bf628550a17e",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261006_085745_872930a9-f647-43d8-a4d8-bf628550a17e.png",
+        "finished": "2026-10-06T08:58:37+00:00"
+      }
     },
     "town": {
       "kind": "location",
       "prompt": "Location reference, single image, NO people: wide view of a small French market town in the Beauce around 1709 in winter: stone houses with steep slate and tile roofs, a stone church with a bell tower, a small stone bakery with an oven chimney, a narrow frozen river with a stone bridge, flat snowy fields around",
-      "n": "town"
+      "n": "town",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "192cecf7-ee27-4306-bcf4-0e73a1685c98",
+            "submitted": "2026-10-06T08:57:54+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "192cecf7-ee27-4306-bcf4-0e73a1685c98",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261006_085746_192cecf7-ee27-4306-bcf4-0e73a1685c98.png",
+        "finished": "2026-10-06T08:58:38+00:00"
+      }
     }
   },
   "music": [
@@ -153,7 +231,7 @@
     {
       "n": 1,
       "title": "Frozen bread",
-      "pov": true,
+      "pov": false,
       "narration": "January, 1709. The wine is freezing in the barrels. The bread on my shelves is frozen so hard. I have to cut it with an axe. And outside my bakery, the whole town is waiting. My name is Étienne. I am a baker. And this is how my family survived the coldest winter in five hundred years.",
       "narration_voiced": "January, 1709. The wine is freezing in the barrels. The bread on my shelves is frozen so hard... I have to cut it with an AXE. And outside my bakery, the whole town is waiting. My name is Étienne. I am a baker. And this is how my family survived the coldest winter in five hundred years.",
       "image_prompt": "Inside a small French village bakery in January 1709, cold blue morning light: Étienne (French village baker about 38, lean, short dark beard, flour on his hands and forearms, brown knitted wool cap, off-white linen shirt with rolled sleeves, brown wool waistcoat, long linen apron, wool breeches, grey stockings, wooden clogs) raises a small hatchet over a round dark loaf frozen solid on a wooden counter, frost on the shelves of round loaves, through the small window a line of townspeople in winter clothes waits in the snow",
@@ -171,7 +249,33 @@
       "beat": "SOĞUK AÇILIŞ (0:00) — ilk 15 sn en çarpıcı an",
       "must_not": [
         "modern bread shapes like baguettes or sliced bread"
-      ]
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "46eb5a06-561a-4f01-abdb-4b750d494ae2",
+            "submitted": "2026-10-06T08:59:58+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "46eb5a06-561a-4f01-abdb-4b750d494ae2",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261006_085951_46eb5a06-561a-4f01-abdb-4b750d494ae2.png",
+        "finished": "2026-10-06T09:00:55+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "2a077132-50b5-4616-ad6b-92ee5e38a62c",
+            "submitted": "2026-10-06T09:01:47+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "2a077132-50b5-4616-ad6b-92ee5e38a62c",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261006_090137_2a077132-50b5-4616-ad6b-92ee5e38a62c.mp4",
+        "finished": "2026-10-06T09:05:19+00:00"
+      }
     },
     {
       "n": 2,
@@ -192,7 +296,33 @@
       "voice_mood": "warm",
       "must": [
         "the cathedral is small and far away on the horizon"
-      ]
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "83926ad2-99ac-4ace-87f1-22d7a615d179",
+            "submitted": "2026-10-06T08:59:58+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "83926ad2-99ac-4ace-87f1-22d7a615d179",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261006_085950_83926ad2-99ac-4ace-87f1-22d7a615d179.png",
+        "finished": "2026-10-06T09:00:56+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "722fd948-6788-4448-9943-1b32b4a8442a",
+            "submitted": "2026-10-06T09:01:47+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "722fd948-6788-4448-9943-1b32b4a8442a",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261006_090137_722fd948-6788-4448-9943-1b32b4a8442a.mp4",
+        "finished": "2026-10-06T09:05:21+00:00"
+      }
     },
     {
       "n": 3,
@@ -216,12 +346,38 @@
       "voice_mood": "warm",
       "must": [
         "exactly one woman, one boy and one girl"
-      ]
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "3a91a86b-ff9c-4691-acc9-70670967a192",
+            "submitted": "2026-10-06T08:59:58+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "3a91a86b-ff9c-4691-acc9-70670967a192",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261006_085950_3a91a86b-ff9c-4691-acc9-70670967a192.png",
+        "finished": "2026-10-06T09:00:57+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "e564d905-88a1-437e-b777-62f66637043b",
+            "submitted": "2026-10-06T09:01:47+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "e564d905-88a1-437e-b777-62f66637043b",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261006_090136_e564d905-88a1-437e-b777-62f66637043b.mp4",
+        "finished": "2026-10-06T09:05:23+00:00"
+      }
     },
     {
       "n": 4,
       "title": "The oven",
-      "pov": true,
+      "pov": false,
       "narration": "Everything in my life turns around one thing: the oven. A dome of brick and stone, as old as the house. Once it is hot, it holds the heat for hours. It feeds the town and in winter, it keeps us warm.",
       "narration_voiced": "Everything in my life turns around one thing: the oven. A dome of brick and stone, as old as the house. Once it is hot, it holds the heat for hours. It feeds the town... and in winter, it keeps us warm.",
       "image_prompt": "The heart of the bakehouse: a large old domed bread oven of brick and stone built into the wall, its arched mouth glowing orange, Étienne (French village baker about 38, lean, short dark beard, flour on his hands and forearms, brown knitted wool cap, off-white linen shirt with rolled sleeves, brown wool waistcoat, long linen apron, wool breeches, grey stockings, wooden clogs) sliding round loaves in with a long wooden peel, bundles of firewood stacked beside it",
@@ -299,7 +455,7 @@
     {
       "n": 8,
       "title": "Rule one: the fire never dies",
-      "pov": true,
+      "pov": false,
       "narration": "So I make my first rule: the oven never goes out. Not for one night. If it dies, the dough will not rise, the water will not melt and my family freezes. Pierre and I take turns. Every two hours, one of us gets up and feeds the fire.",
       "narration_voiced": "So I make my first rule: the oven never goes out. Not for one night. If it dies, the dough will not rise, the water will not melt... and my family freezes. Pierre and I take turns. Every two hours, one of us gets up and feeds the fire.",
       "image_prompt": "Night in the dark bakehouse, January 1709: Pierre (their son, 12, thin, curly brown hair, small brown knitted cap, linen shirt, short apron, wool breeches, wooden clogs) in a blanket kneeling in front of the glowing arched mouth of the brick oven, pushing a bundle of sticks inside, sleepy eyes, everything else in deep blue shadow",
@@ -320,7 +476,7 @@
     {
       "n": 9,
       "title": "Fighting the cold",
-      "pov": true,
+      "pov": false,
       "narration": "Baking in this cold is a fight. Every bucket of water has to be melted over the fire. The dough goes stiff and refuses to rise. So we knead it right beside the oven mouth, and cover it with blankets like a sleeping child.",
       "narration_voiced": "Baking in this cold is a fight. Every bucket of water has to be melted over the fire. The dough goes stiff and refuses to rise. So we knead it right beside the oven mouth, and cover it with blankets... like a sleeping child.",
       "image_prompt": "POV in the bakehouse: Étienne (French village baker about 38, lean, short dark beard, flour on his hands and forearms, brown knitted wool cap, off-white linen shirt with rolled sleeves, brown wool waistcoat, long linen apron, wool breeches, grey stockings, wooden clogs) tucking a wool blanket over a long wooden kneading trough full of dough placed right next to the warm oven, an iron pot of melting ice hanging over the fire",
@@ -418,7 +574,7 @@
     {
       "n": 14,
       "title": "Hide it or sell it?",
-      "pov": true,
+      "pov": false,
       "narration": "That is when I understand what is really coming. Not just cold. Hunger. Next summer, there will be no harvest. Every sack of flour in this town is now worth gold and everyone knows the baker has flour. So tell me honestly, in the comments: if you were me would you hide it, or sell it?",
       "narration_voiced": "That is when I understand what is really coming. Not just cold. Hunger. Next summer, there will be no harvest. Every sack of flour in this town is now worth gold... and everyone knows the baker has flour. So tell me honestly, in the comments: if you were me... would you hide it, or sell it?",
       "image_prompt": "Dim storeroom behind the bakery, February 1709: Étienne (French village baker about 38, lean, short dark beard, flour on his hands and forearms, brown knitted wool cap, off-white linen shirt with rolled sleeves, brown wool waistcoat, long linen apron, wool breeches, grey stockings, wooden clogs) standing between a few remaining sacks of flour, holding a candle, looking toward the door where shadows of townspeople fall across the floor",
@@ -455,7 +611,7 @@
     {
       "n": 16,
       "title": "Rule two: no white bread",
-      "pov": true,
+      "pov": false,
       "narration": "So Jeanne and I make a second rule: no white bread. We mix the wheat with barley, oats, ground beans even the bran we used to give to the pigs. The bread is heavy and grey. But one sack of flour now feeds three times more people.",
       "narration_voiced": "So Jeanne and I make a second rule: no white bread. We mix the wheat with barley, oats, ground beans... even the bran we used to give to the pigs. The bread is heavy and grey. But one sack of flour now feeds three times more people.",
       "image_prompt": "POV over a wooden kneading trough: Jeanne (his wife about 34, warm tired face, brown hair under a white linen coif, grey wool bodice and skirt, faded blue apron, red wool shawl) pouring coarse barley and oat flour and bran into wheat flour, Étienne (French village baker about 38, lean, short dark beard, flour on his hands and forearms, brown knitted wool cap, off-white linen shirt with rolled sleeves, brown wool waistcoat, long linen apron, wool breeches, grey stockings, wooden clogs)'s floury hands mixing a heavy grey dough, small sacks of different grains around them",
@@ -476,7 +632,7 @@
     {
       "n": 17,
       "title": "Rule three: never close the shutters",
-      "pov": true,
+      "pov": false,
       "narration": "In Paris, hungry crowds break into bakeries. In our town, too, angry faces gather at my door. Jeanne is afraid. But I make my third rule: I sell at a fair price, I sell to everyone, and I never close the shutters. A baker who hides his flour does not survive the spring.",
       "narration_voiced": "In Paris, hungry crowds break into bakeries. In our town, too, angry faces gather at my door. Jeanne is afraid. But I make my third rule: I sell at a fair price, I sell to everyone, and I never close the shutters. A baker who hides his flour... does not survive the spring.",
       "image_prompt": "The street in front of the bakery in spring 1709: a tense crowd of hungry townspeople gathered at the open bakery window, Étienne (French village baker about 38, lean, short dark beard, flour on his hands and forearms, brown knitted wool cap, off-white linen shirt with rolled sleeves, brown wool waistcoat, long linen apron, wool breeches, grey stockings, wooden clogs) standing in the open doorway handing out dark loaves, Jeanne (his wife about 34, warm tired face, brown hair under a white linen coif, grey wool bodice and skirt, faded blue apron, red wool shawl) anxious behind him",
@@ -547,7 +703,7 @@
     {
       "n": 20,
       "title": "The fever breaks",
-      "pov": true,
+      "pov": false,
       "narration": "On the ninth morning, the fever breaks. Margot opens her eyes and asks for a warm crust. I give her the best one in the oven. Not every family is so lucky. Our church bell rings for funerals almost every day.",
       "narration_voiced": "On the ninth morning, the fever breaks. Margot opens her eyes... and asks for a warm crust. I give her the best one in the oven. Not every family is so lucky. Our church bell rings for funerals almost every day.",
       "image_prompt": "Morning light in the bakehouse: Margot (their daughter, 6, round face, light brown braids under a small white linen cap, little grey wool dress, brown shawl) sitting up in blankets, smiling weakly, holding a warm golden crust in both hands, Étienne (French village baker about 38, lean, short dark beard, flour on his hands and forearms, brown knitted wool cap, off-white linen shirt with rolled sleeves, brown wool waistcoat, long linen apron, wool breeches, grey stockings, wooden clogs) kneeling beside her; through the window, the small church bell tower in grey light",
@@ -567,7 +723,7 @@
     {
       "n": 21,
       "title": "Dead fields",
-      "pov": true,
+      "pov": false,
       "narration": "In April, the snow is gone. I walk into the fields with an old farmer named Gilles. Where green wheat should be rising there is nothing. Only black, dead earth, as far as the eye can see. He kneels down and cries.",
       "narration_voiced": "In April, the snow is gone. I walk into the fields with an old farmer named Gilles. Where green wheat should be rising... there is nothing. Only black, dead earth, as far as the eye can see. He kneels down... and cries.",
       "image_prompt": "April 1709 in the flat Beauce plain: Étienne (French village baker about 38, lean, short dark beard, flour on his hands and forearms, brown knitted wool cap, off-white linen shirt with rolled sleeves, brown wool waistcoat, long linen apron, wool breeches, grey stockings, wooden clogs) standing beside an old farmer with white hair, a wide-brimmed felt hat and a worn brown coat kneeling in a field of bare black earth with no green shoots at all, endless empty fields, pale spring sky",
@@ -605,7 +761,7 @@
     {
       "n": 23,
       "title": "The hungry months",
-      "pov": true,
+      "pov": false,
       "narration": "Spring and early summer are the hardest months. There is almost no old grain left, and the new harvest is not ready. People eat nettles, roots, acorns. Pierre and I bake through the night with whatever flour the farmers bring us. Nothing is wasted.",
       "narration_voiced": "Spring and early summer are the hardest months. There is almost no old grain left, and the new harvest is not ready. People eat nettles, roots, acorns. Pierre and I bake through the night with whatever flour the farmers bring us. Nothing is wasted.",
       "image_prompt": "Early summer 1709: thin villagers gathering nettles and roots at the edge of a forest; then night in the bakehouse where Étienne (French village baker about 38, lean, short dark beard, flour on his hands and forearms, brown knitted wool cap, off-white linen shirt with rolled sleeves, brown wool waistcoat, long linen apron, wool breeches, grey stockings, wooden clogs) and Pierre (their son, 12, thin, curly brown hair, small brown knitted cap, linen shirt, short apron, wool breeches, wooden clogs) bake small dark loaves by the glowing oven",
@@ -625,7 +781,7 @@
     {
       "n": 24,
       "title": "The barley harvest",
-      "pov": true,
+      "pov": false,
       "narration": "Then, in July, the barley comes in. It is not much. But it is enough. The first barley loaf comes out of my oven, dark and rough and the whole street lines up for it. I think it is the most beautiful bread I have ever baked.",
       "narration_voiced": "Then, in July, the barley comes in. It is not much. But it is enough. The first barley loaf comes out of my oven, dark and rough... and the whole street lines up for it. I think it is the most beautiful bread I have ever baked.",
       "image_prompt": "July 1709: golden barley being cut with sickles in the sunny Beauce fields; then Étienne (French village baker about 38, lean, short dark beard, flour on his hands and forearms, brown knitted wool cap, off-white linen shirt with rolled sleeves, brown wool waistcoat, long linen apron, wool breeches, grey stockings, wooden clogs) lifting a dark round barley loaf out of the oven on a wooden peel, smiling, a line of townspeople at the bakery door",
@@ -666,7 +822,7 @@
     {
       "n": 26,
       "title": "How we survived",
-      "pov": true,
+      "pov": false,
       "narration": "So how did my family survive? We never let the fire die. We stretched every handful of flour. We shared our warmth, and we sold fairly, so the town stood with us instead of against us. And we listened to an old farmer who knew about barley.",
       "narration_voiced": "So how did my family survive? We never let the fire die. We stretched every handful of flour. We shared our warmth, and we sold fairly, so the town stood with us instead of against us. And we listened to an old farmer who knew about barley.",
       "image_prompt": "Warm evening in the bakehouse, late summer 1709: Étienne (French village baker about 38, lean, short dark beard, flour on his hands and forearms, brown knitted wool cap, off-white linen shirt with rolled sleeves, brown wool waistcoat, long linen apron, wool breeches, grey stockings, wooden clogs), Jeanne (his wife about 34, warm tired face, brown hair under a white linen coif, grey wool bodice and skirt, faded blue apron, red wool shawl), Pierre (their son, 12, thin, curly brown hair, small brown knitted cap, linen shirt, short apron, wool breeches, wooden clogs) and Margot (their daughter, 6, round face, light brown braids under a small white linen cap, little grey wool dress, brown shawl) sitting together at a wooden table by the glowing oven, sharing a dark round loaf, tired but smiling",
@@ -692,7 +848,7 @@
     {
       "n": 27,
       "title": "Every January",
-      "pov": true,
+      "pov": false,
       "narration": "The next winter is mild. The bakery is still ours. Pierre will be a master baker one day, and Margot still steals the warm crusts. And every January, on the night of the Kings, I keep the oven burning all night. Just in case.",
       "narration_voiced": "The next winter is mild. The bakery is still ours. Pierre will be a master baker one day, and Margot... still steals the warm crusts. And every January, on the night of the Kings, I keep the oven burning all night. Just in case.",
       "image_prompt": "A calm snowy January night some years later: the small stone bakery with a warm glowing window and smoke rising from the oven chimney, Étienne (French village baker about 38, lean, short dark beard, flour on his hands and forearms, brown knitted wool cap, off-white linen shirt with rolled sleeves, brown wool waistcoat, long linen apron, wool breeches, grey stockings, wooden clogs) silhouetted in the doorway, light snow falling",
@@ -712,8 +868,8 @@
       "n": 28,
       "title": "Subscribe",
       "pov": true,
-      "narration": "If you've stayed with me until the last loaf thank you. Every week, I bring you one more winter that pushed ordinary people to their limit, told by the people who lived through it. If you want the next one, subscribe. And tell me: what would you have saved first?",
-      "narration_voiced": "If you've stayed with me until the last loaf... thank you. Every week, I bring you one more winter that pushed ordinary people to their limit, told by the people who lived through it. If you want the next one, subscribe. And tell me: what would you have saved first?",
+      "narration": "If you've stayed with me until the last loaf, thank you. Every week, I bring you one more winter that pushed ordinary people to their limit, told by the people who lived through it. If you want the next one, subscribe. And tell me: what would you have saved first?",
+      "narration_voiced": "If you've stayed with me until the last loaf, thank you. Every week, I bring you one more winter that pushed ordinary people to their limit, told by the people who lived through it. If you want the next one, subscribe. And tell me: what would you have saved first?",
       "image_prompt": "Close, warm painterly view of Étienne (French village baker about 38, lean, short dark beard, flour on his hands and forearms, brown knitted wool cap, off-white linen shirt with rolled sleeves, brown wool waistcoat, long linen apron, wool breeches, grey stockings, wooden clogs)'s floury hands placing a single round loaf on a wooden table beside a candle, the oven glowing softly in the background",
       "shots": [
         "floury hands set a round loaf down beside a candle",

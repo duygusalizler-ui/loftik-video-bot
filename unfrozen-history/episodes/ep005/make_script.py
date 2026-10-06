@@ -238,7 +238,7 @@ scenes = [
   sound="soft snowfall, a crackling oven, a distant church bell",
   refs=["town", "etienne"]),
  dict(title="Subscribe", pov=True, beat="CTA + abone vaadi (kanal adı yok)", mood="warm",
-  v="If you've stayed with me until the last loaf... thank you. Every week, I bring you one more winter that pushed ordinary people to their limit, told by the people who lived through it. If you want the next one, subscribe. And tell me: what would you have saved first?",
+  v="If you've stayed with me until the last loaf, thank you. Every week, I bring you one more winter that pushed ordinary people to their limit, told by the people who lived through it. If you want the next one, subscribe. And tell me: what would you have saved first?",
   img=f"Close, warm painterly view of {ET}'s floury hands placing a single round loaf on a wooden table beside a candle, the oven glowing softly in the background",
   shots=["floury hands set a round loaf down beside a candle",
          "the candle flame flickers warmly",
@@ -331,6 +331,8 @@ ep = {
  "voice_engine": None,
  "scenes": [],
 }
+for s in scenes:
+    if "etienne" in s["refs"]: s["pov"] = False  # anlatıcı görünüyorsa POV ifadesi çelişir
 for i, s in enumerate(scenes, 1):
     sc = {"n": i, "title": s["title"], "pov": s["pov"], "narration": plain(s["v"]), "narration_voiced": s["v"],
           "image_prompt": s["img"], "shots": s["shots"], "sound": s["sound"], "refs": s["refs"], "voice_mood": s["mood"]}
