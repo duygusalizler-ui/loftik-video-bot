@@ -22,7 +22,9 @@
     2,
     3
   ],
-  "gates": {},
+  "gates": {
+    "script": "2026-10-06T08:56:42+00:00"
+  },
   "must": [
     "historically accurate France in 1709 only",
     "the same faces, hair and clothes as in the reference images for every named character",
@@ -710,8 +712,8 @@
       "n": 28,
       "title": "Subscribe",
       "pov": true,
-      "narration": "If you've stayed with me until the last loaf thank you. Every week, I bring you one more winter that tried to kill someone, told by the people who lived through it. If you want the next one, subscribe. And tell me: what would you have saved first?",
-      "narration_voiced": "If you've stayed with me until the last loaf... thank you. Every week, I bring you one more winter that tried to kill someone, told by the people who lived through it. If you want the next one, subscribe. And tell me: what would you have saved first?",
+      "narration": "If you've stayed with me until the last loaf thank you. Every week, I bring you one more winter that pushed ordinary people to their limit, told by the people who lived through it. If you want the next one, subscribe. And tell me: what would you have saved first?",
+      "narration_voiced": "If you've stayed with me until the last loaf... thank you. Every week, I bring you one more winter that pushed ordinary people to their limit, told by the people who lived through it. If you want the next one, subscribe. And tell me: what would you have saved first?",
       "image_prompt": "Close, warm painterly view of Étienne (French village baker about 38, lean, short dark beard, flour on his hands and forearms, brown knitted wool cap, off-white linen shirt with rolled sleeves, brown wool waistcoat, long linen apron, wool breeches, grey stockings, wooden clogs)'s floury hands placing a single round loaf on a wooden table beside a candle, the oven glowing softly in the background",
       "shots": [
         "floury hands set a round loaf down beside a candle",
