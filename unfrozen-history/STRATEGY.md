@@ -98,3 +98,20 @@ Karar: şimdilik mevcut formatla devam. 10. video değerlendirmesinde (≈31 Eki
 - Büyük fırsat: "history for sleep" ~815K/ay, rekabet 36 (en iyi skor 78,5); "boring history for sleep" 482K. Sakin anlatımlı bölümlerimiz bu kitleye uyar.
   Fikir (10. video sonrası değerlendirilecek): kendi bölümlerimizden 1–2 saatlik "Winter Survival Stories for Sleep" derlemesi (müzik/efekt kısık, kapanış CTA'ları çıkarılmış). Sadece kendi içeriğimiz → yeniden kullanılmış içerik sorunu yok.
 - "history explained" son 30 günde +%41 büyüme.
+
+## 14. vidIQ outlier taraması — kış/hayatta kalma nişi (6 Ekim)
+Son 6 ay, <100K abone, uzun video. Kanal ortalamasının çok üstünde izlenenler:
+| Video | Kanal (abone) | İzlenme | Kat | Süre |
+|---|---|---|---|---|
+| How Did Medieval Villages Survive Winter Without Heating? | Every Life Explained (5,8K) | 292K | 150x | 33 dk |
+| The Darkest Things Ancient Humans Did To Survive The Cold | Primal HQ (1,8K) | 157K | 616x | 15 dk |
+| How Mongols Survived −50°C Winters on the Open Steppe | The Last Hearth (84) | 19K | 76x | 20 dk |
+| How Native Americans Stayed Warm on the Frozen Plains | Dark Origins (4,2K) | 66K | 51x | 23 dk |
+| Why Inuit Igloos Stayed Warm in –50°C Brutal Arctic Winters | Smart Axen (4K) | 9K | 12x | 14 dk |
+| How Vikings Build Winter Camps That Survived -50°C | Flint (891) | 14K | 16x | 13 dk |
+| The Brutal Truth About Surviving a Victorian Winter | D-HistoryT (659) | 16K | 4x | 26 dk |
+Çıkarımlar:
+- Kazanan başlık kalıbı: "How [halk/grup] Survived / Stayed Warm [aşırı sayı, ör. −50°C] [yer]". Bizim ep001 ("How Medieval Peasants Survived Winter Without Heating") bu kalıpta → TO %5,4; ep002 "You're a Viking Farmer…" → %1,7. Veri aynı yönü gösteriyor.
+- Karar: ana başlık (A) bundan sonra "How … Survived …" kalıbında; "You're a…" POV başlığı B/C'ye iner. Anlatım POV olarak kalır (fark yaratan dokunuşumuz).
+- Süreler 13–33 dk; bizimkiler 8–9 dk. 10. video sonrası 15 dk'lık bölüm testi.
+- Konu havuzu (henüz yapmadıklarımız): Moğollar (steppe, −50°C), Inuit (iglo), Plains yerlileri (bufalo postu), Viktorya dönemi Londra kışı, Buz Çağı insanları, 1709 Büyük Don (ep005).
