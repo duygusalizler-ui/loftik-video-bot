@@ -115,3 +115,11 @@ Son 6 ay, <100K abone, uzun video. Kanal ortalamasının çok üstünde izlenenl
 - Karar: ana başlık (A) bundan sonra "How … Survived …" kalıbında; "You're a…" POV başlığı B/C'ye iner. Anlatım POV olarak kalır (fark yaratan dokunuşumuz).
 - Süreler 13–33 dk; bizimkiler 8–9 dk. 10. video sonrası 15 dk'lık bölüm testi.
 - Konu havuzu (henüz yapmadıklarımız): Moğollar (steppe, −50°C), Inuit (iglo), Plains yerlileri (bufalo postu), Viktorya dönemi Londra kışı, Buz Çağı insanları, 1709 Büyük Don (ep005).
+
+## 15. Görsel QA — fiziksel mantık taraması (6 Ekim, ep005 dersi)
+Kullanıcı 5:08'de pulluğu önden süren adamı yakaladı; küçük döşeme sayfalarında kaçmıştı.
+- Son render'da **saniyede 1 kare, 400 px döşeme, zaman damgalı** tam tarama (60 sn'lik sayfalar).
+- Her kişi/hayvan/alet için sor: doğru yönde mi, doğru aleti mi tutuyor (orak/çapa/pulluk), insan–hayvan–alet sırası fiziksel olarak doğru mu?
+- Aynı karede iki benzer yüz → yakınlaştır, klon mu kontrol et.
+- Mevsim/tarım: kışın olgun başak yok, yazın kar yok.
+- Şüpheli her kare 800 px'e yakınlaştırılır; hatalı çekim `clip_range`/`clip_composite` ile kesilir.

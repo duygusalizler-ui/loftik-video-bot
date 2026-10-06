@@ -1315,7 +1315,12 @@
     "job_id": "007bef17-412e-4073-8f7b-53eec7a20e6a",
     "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261006_102212_007bef17-412e-4073-8f7b-53eec7a20e6a.mp4",
     "finished": "2026-10-06T10:56:01+00:00"
-   }
+   },
+   "clip_range": [
+    4.95,
+    15.0
+   ],
+   "min_speed": 0.7
   },
   {
    "n": 23,
@@ -1475,7 +1480,20 @@
     "job_id": "b332f5d7-647e-4897-934a-af019c61ef69",
     "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261006_102212_b332f5d7-647e-4897-934a-af019c61ef69.mp4",
     "finished": "2026-10-06T10:27:43+00:00"
-   }
+   },
+   "clip_composite": [
+    [
+     "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261006_102212_b332f5d7-647e-4897-934a-af019c61ef69.mp4",
+     0,
+     4.3
+    ],
+    [
+     "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261006_102212_b332f5d7-647e-4897-934a-af019c61ef69.mp4",
+     9.55,
+     15.0
+    ]
+   ],
+   "min_speed": 0.75
   },
   {
    "n": 26,
