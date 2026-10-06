@@ -123,3 +123,11 @@ Kullanıcı 5:08'de pulluğu önden süren adamı yakaladı; küçük döşeme s
 - Aynı karede iki benzer yüz → yakınlaştır, klon mu kontrol et.
 - Mevsim/tarım: kışın olgun başak yok, yazın kar yok.
 - Şüpheli her kare 800 px'e yakınlaştırılır; hatalı çekim `clip_range`/`clip_composite` ile kesilir.
+
+## 16. Analytics notu (6 Ekim, 28 gün)
+- 153 görüntüleme · 3,9 saat · +2 abone · 863 gösterim · TO %2,8 · ort. izleme 4:54.
+- Viking: 103 izlenme, 4:18 (%43), ilk 3 gün TO %1,8; 0:30'da %61 kalıyor, sonra grafik DÜZ (orta kısımda kayıp yok).
+- Medieval: 49 izlenme, 5:28 (%57,6) — çok iyi elde tutma.
+- Trafik: Göz atma %70, kanal sayfası %11, önerilen %8,5, arama %6 → YouTube bizi ana sayfada deniyor.
+- Sonuç: içerik/elde tutma GÜÇLÜ; darboğaz TIKLAMA (paketleme) + ilk 30 sn'deki %39 kayıp.
+  → Kapak/başlık A/B testleri sürsün; her bölümde ilk 30 sn'ye en güçlü görüntü + soru; parlak yüz kapak.
