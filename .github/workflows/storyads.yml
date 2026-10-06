@@ -6,6 +6,10 @@ on:
     - cron: "7 9 * * *"
   workflow_dispatch:
     inputs:
+      mod:
+        description: "video = hikâye videosu, rakip = Meta reklam kütüphanesi taraması"
+        default: "video"
+        required: false
       marka:
         description: "Marka kodu (storyads/brands/<kod>.json)"
         default: "loftik"
@@ -33,7 +37,14 @@ jobs:
         with:
           python-version: "3.11"
       - run: pip install -r requirements.txt
+      - name: Rakip reklam taraması
+        if: inputs.mod == 'rakip'
+        env:
+          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python scripts/rakip_tara.py
       - name: Video üret
+        if: inputs.mod != 'rakip'
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           FAL_KEY: ${{ secrets.FAL_KEY }}
@@ -62,6 +73,7 @@ jobs:
             cikti/**/*.txt
             cikti/**/*.json
             cikti/**/kareler.jpg
+            cikti/rakip/**
           if-no-files-found: ignore
       - name: Format/karakter/ürün geçmişini kaydet
         if: always()
