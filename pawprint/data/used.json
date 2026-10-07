@@ -2,10 +2,13 @@
   "pexels_ids": [
     35605530,
     18787339,
-    35374347
+    35374347,
+    26871287,
+    36460556
   ],
   "themes": [
-    "senior_dog"
+    "senior_dog",
+    "owner_love"
   ],
   "runs": [
     {
@@ -15,6 +18,14 @@
         "https://www.pexels.com/video/golden-retriever-sitting-outdoors-on-cloudy-day-35605530/",
         "https://www.pexels.com/video/a-large-white-dog-laying-on-the-ground-18787339/",
         "https://www.pexels.com/video/peaceful-dog-relaxing-on-a-sunny-day-35374347/"
+      ]
+    },
+    {
+      "at": "20261007_171235",
+      "theme": "owner_love",
+      "stock": [
+        "https://www.pexels.com/video/a-dog-laying-on-a-couch-with-a-blanket-over-it-26871287/",
+        "https://www.pexels.com/video/man-and-dog-sitting-together-at-sunset-36460556/"
       ]
     }
   ]
