@@ -16,3 +16,11 @@ Aynı kanala en fazla haftada 1 yorum. İlk 1-2 saatte yorum yapmak en iyisi (yo
 Yedek: @EveryLifeExplainedofc (5K abone ama 246K izlenmeli kış videosu), @Secretstatefiles-i5s (45K, "Before Central Heating").
 
 Öncelikli (5 Ekim): **@Cabin8-YT (Cabin 8)** — 4,95K abone, yapay zekâ ile dağ adamı / kış barınağı videoları (18–25 dk). YouTube Viking videomuzu onların "How Mountain Men Built Hidden Heat Tunnels…" videosunun yanında önerdi → kitle örtüşüyor. Yorum o videoya yapıldı.
+
+## Yeni keşif (7 Ekim) — YouTube'un bizi önerdiği videolar
+Viking videomuzu öneren içerikler: kendi Medieval videomuz (%40 — kanal içi zincir çalışıyor), Cabin 8, ve **homestead/bushcraft** kanalları. Kitlemiz hayatta kalma/çiftlik izleyicisiyle örtüşüyor.
+| Öncelik | Kanal | Abone | Video |
+|---|---|---|---|
+| 1 | Every Life Explained | 5,8K | "How Did Medieval Villages Survive Winter Without Heating?" (292K izlenme, 39 yorum) — yorum metni hazır |
+| 2 | Holdfast Alaska (@holdfastalaska) | 284K | "Alone Running Our Remote Alaskan Homestead" (3 Eki) — odun, lahana turşusu, −50° kış hazırlığı |
+| 3 | David Canterbury | 911K | "Gray Squirrel from Field to Table \| Appalachian Camp Cooking" — bushcraft, büyük kitle |
