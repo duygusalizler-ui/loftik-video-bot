@@ -4,9 +4,9 @@
     {
       "id": "senior_dog",
       "queries": [
-        "senior golden retriever",
-        "old golden retriever sleeping",
-        "old dog resting"
+        "golden retriever sleeping on bed",
+        "senior golden retriever indoor",
+        "golden retriever resting on couch"
       ],
       "product": "press_reveal",
       "hook_en": "He's getting older. I wanted to keep a piece of him forever.",
@@ -15,9 +15,9 @@
     {
       "id": "owner_love",
       "queries": [
-        "woman hugging golden retriever",
-        "hugging dog",
-        "dog owner cuddle"
+        "petting golden retriever",
+        "golden retriever cuddle",
+        "golden retriever with owner home"
       ],
       "product": "press_reveal",
       "hook_en": "Do this before it's too late.",
@@ -26,9 +26,9 @@
     {
       "id": "paws",
       "queries": [
-        "dog paw close up",
-        "holding dog paw",
-        "golden retriever paws"
+        "golden retriever paw",
+        "golden retriever lying on blanket",
+        "holding dog paw"
       ],
       "product": "full",
       "hook_en": "Their paws won't always be here. Their print can be.",
@@ -37,9 +37,9 @@
     {
       "id": "puppy_to_senior",
       "queries": [
-        "golden retriever puppy",
-        "puppy playing",
-        "old golden retriever"
+        "golden retriever puppy sleeping",
+        "golden retriever puppy home",
+        "old golden retriever sleeping"
       ],
       "product": "press_reveal",
       "hook_en": "From the first day to the last, you were my best friend.",
@@ -48,8 +48,8 @@
     {
       "id": "everyday_moments",
       "queries": [
-        "golden retriever looking",
-        "dog waiting by window",
+        "golden retriever looking at camera home",
+        "golden retriever by window",
         "golden retriever lying on bed"
       ],
       "product": "globe",
@@ -59,9 +59,9 @@
     {
       "id": "walks",
       "queries": [
-        "golden retriever walking sunset",
-        "dog in field golden hour",
-        "golden retriever running"
+        "golden retriever sunset",
+        "golden retriever golden hour",
+        "golden retriever field sunset"
       ],
       "product": "press_reveal",
       "hook_en": "One day the walks will stop. Keep the memory.",

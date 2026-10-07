@@ -38,8 +38,8 @@ TG_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "")
 TG_CHAT = os.environ.get("PAWPRINT_TELEGRAM_CHAT_ID") or os.environ.get("TELEGRAM_CHAT_ID", "")
 
 W, H, FPS = 1080, 1920, 24
-STOCK_CLIPS = 3
-STOCK_SECONDS = 2.4
+STOCK_CLIPS = 2
+STOCK_SECONDS = 3.0
 FADE = 0.35
 FONT = "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
 
@@ -85,6 +85,44 @@ def pick_theme(state: dict, forced: str | None) -> dict:
     return random.choice(pool)
 
 
+
+# ----------------------------------------------------------------- görsel kontrol
+VISION_PROMPT = (
+    "This is a frame from a stock video. Answer strictly as JSON with booleans: "
+    '{"golden_retriever": is the main dog clearly a golden retriever (golden/cream long coat)?, '
+    '"warm_cozy": warm soft light, cozy indoor or golden-hour mood (not harsh midday sun, not grey)?, '
+    '"text_or_logo": any visible text, watermark or logo?, '
+    '"face_visible": is a human face clearly visible?, '
+    '"other_animals": are there other animals besides one dog?}'
+)
+
+
+def vision_ok(image_url: str) -> bool:
+    key = os.environ.get("GEMINI_API_KEY")
+    if not key:
+        return True
+    try:
+        from google import genai
+        from google.genai import types
+        sys.path.insert(0, str(ROOT.parent))
+        from src.gemini_util import generate_content
+
+        img = requests.get(image_url, timeout=30).content
+        client = genai.Client(api_key=key)
+        resp = generate_content(
+            client,
+            [types.Part.from_bytes(data=img, mime_type="image/jpeg"), VISION_PROMPT],
+            types.GenerateContentConfig(response_mime_type="application/json", temperature=0),
+        )
+        d = json.loads(resp.text)
+        ok = (d.get("golden_retriever") and d.get("warm_cozy") and not d.get("text_or_logo")
+              and not d.get("face_visible") and not d.get("other_animals"))
+        print(f"  görsel kontrol {image_url[-40:]}: {d} -> {'OK' if ok else 'ret'}")
+        return bool(ok)
+    except Exception as exc:  # noqa: BLE001
+        print(f"UYARI: görsel kontrol yapılamadı ({exc}); klip reddedildi")
+        return False
+
 # ----------------------------------------------------------------- Pexels
 def pexels_search(query: str) -> list[dict]:
     if not PEXELS_KEY:
@@ -129,7 +167,16 @@ def fetch_stock(theme: dict, state: dict, workdir: Path) -> list[dict]:
                 candidates.append((v, f))
         if not candidates:
             continue
-        v, f = random.choice(candidates[:12])
+        random.shuffle(candidates)
+        pick = None
+        for v, f in candidates[:8]:
+            thumb = (v.get("video_pictures") or [{}])[len(v.get("video_pictures") or [{}]) // 2].get("picture") or v.get("image")
+            if thumb and vision_ok(thumb):
+                pick = (v, f)
+                break
+        if not pick:
+            continue
+        v, f = pick
         path = workdir / f"stock_{v['id']}.mp4"
         with requests.get(f["link"], stream=True, timeout=180) as resp:
             resp.raise_for_status()
@@ -138,7 +185,7 @@ def fetch_stock(theme: dict, state: dict, workdir: Path) -> list[dict]:
                     fh.write(chunk)
         chosen.append({"id": v["id"], "path": path, "query": q, "url": v.get("url"), "dur": v.get("duration", 0)})
         print(f"Stok: {q!r} -> {v['id']} ({f['width']}x{f['height']})")
-    if len(chosen) < 2:
+    if len(chosen) < 1:
         raise RuntimeError("Yeterli stok klip bulunamadı.")
     return chosen
 
@@ -153,7 +200,7 @@ def build_video(stock: list[dict], theme: dict, with_text: bool, out: Path) -> N
     inputs += ["-i", str(product)]
     n = len(stock)
     seg_len = STOCK_SECONDS + FADE
-    grade = "eq=saturation=0.95:contrast=1.03,colorbalance=rs=0.04:gs=0.01:bs=-0.04:rm=0.03:bm=-0.03"
+    grade = "eq=saturation=0.9:contrast=1.02:brightness=0.02,colorbalance=rs=0.08:gs=0.02:bs=-0.07:rm=0.05:gm=0.01:bm=-0.05,vignette=PI/5"
 
     parts = []
     for i in range(n):
