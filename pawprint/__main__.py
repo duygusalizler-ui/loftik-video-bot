@@ -32,7 +32,7 @@ STATE_FILE = ROOT / "data" / "used.json"
 OUT_DIR = ROOT / "cikti"
 THEMES = json.loads((ROOT / "themes.json").read_text(encoding="utf-8"))["themes"]
 
-STORE_URL = os.environ.get("PAWPRINT_STORE_URL", "https://pawprintglobe.wed2c.com")
+STORE_URL = os.environ.get("PAWPRINT_STORE_URL", "https://pawprintglobe.com")
 PEXELS_KEY = os.environ.get("PEXELS_API_KEY", "")
 TG_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "")
 TG_CHAT = os.environ.get("PAWPRINT_TELEGRAM_CHAT_ID") or os.environ.get("TELEGRAM_CHAT_ID", "")
