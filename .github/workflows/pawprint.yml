@@ -1,0 +1,80 @@
+name: PawPrint Globe Reel
+
+# Loftik'ten bağımsız: sadece pawprint/ klasörünü kullanır.
+# Stok (Pexels) duygusal açılış + PawPrint ürün sahnesi -> Telegram.
+on:
+  workflow_dispatch:
+    inputs:
+      adet:
+        description: "Kaç video üretilsin"
+        default: "1"
+        required: true
+      tema:
+        description: "Tema (boş = otomatik): senior_dog, owner_love, paws, puppy_to_senior, everyday_moments, walks"
+        required: false
+      yazi:
+        description: "Açılışa kanca yazısı ekle"
+        type: boolean
+        default: false
+  # TR 10:20 ve 18:20 (07:20 / 15:20 UTC)
+  schedule:
+    - cron: "20 7,15 * * *"
+
+concurrency:
+  group: pawprint-reel
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  reel:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: ffmpeg ve font kur
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fonts-dejavu-core
+
+      - name: Bağımlılıklar
+        run: pip install requests google-genai
+
+      - name: Reel üret ve Telegram'a gönder
+        env:
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.PAWPRINT_TELEGRAM_BOT_TOKEN || secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          PAWPRINT_TELEGRAM_CHAT_ID: ${{ secrets.PAWPRINT_TELEGRAM_CHAT_ID }}
+          ADET: ${{ inputs.adet || '1' }}
+          TEMA: ${{ inputs.tema }}
+          YAZI: ${{ inputs.yazi && 'true' || '' }}
+        run: |
+          args=(--adet "$ADET")
+          [ -n "$TEMA" ] && args+=(--tema "$TEMA")
+          [ -n "$YAZI" ] && args+=(--yazi)
+          python -m pawprint "${args[@]}"
+
+      - name: Videoları sakla (Telegram'a gelmezse buradan indir)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pawprint-reels
+          path: |
+            pawprint/cikti/**/reel.mp4
+            pawprint/cikti/**/*.txt
+            pawprint/cikti/**/kareler.jpg
+          if-no-files-found: ignore
+
+      - name: Kullanılan stok kayıtlarını kaydet
+        if: success()
+        run: |
+          git config user.name "pawprint-bot"
+          git config user.email "actions@github.com"
+          git add pawprint/data/used.json
+          git diff --cached --quiet || (git commit -m "chore: pawprint kullanılan stoklar [skip ci]" && git pull --rebase && git push)
