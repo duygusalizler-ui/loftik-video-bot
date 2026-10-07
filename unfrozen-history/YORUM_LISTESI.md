@@ -24,3 +24,12 @@ Viking videomuzu öneren içerikler: kendi Medieval videomuz (%40 — kanal içi
 | 1 | Every Life Explained | 5,8K | "How Did Medieval Villages Survive Winter Without Heating?" (292K izlenme, 39 yorum) — yorum metni hazır |
 | 2 | Holdfast Alaska (@holdfastalaska) | 284K | "Alone Running Our Remote Alaskan Homestead" (3 Eki) — odun, lahana turşusu, −50° kış hazırlığı |
 | 3 | David Canterbury | 911K | "Gray Squirrel from Field to Table \| Appalachian Camp Cooking" — bushcraft, büyük kitle |
+
+## Takip: yorum yaptığımız kanalların seyri
+**HistoryInPaint (@HistoryInPaint-h9e, eski adı @aleksasimovic)** — Paris videosuna 1 Ekim'de yorum attık.
+| Tarih | Abone | Medieval Paris | Diğer |
+|---|---|---|---|
+| 1 Eki | 79 | 3.638 | — |
+| 7 Eki | 1.300 | 74 bin | Stuart London 19 bin (4 günde), Medieval London 8,5 bin, Viking Age 2,8 bin |
+Yorumumuz ("The moment Philippe dreams of the scholar's robe…") 14 beğeni, üst sırada. Ders: küçük ama yükselen kanallara ERKEN yorum → video patlayınca yorum en üstte kalır.
+Kural: her yorumda kanalın o günkü abone + video izlenmesini buraya not et.
