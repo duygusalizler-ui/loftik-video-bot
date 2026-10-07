@@ -1,1 +1,21 @@
-{"pexels_ids": [], "themes": [], "runs": []}
+{
+  "pexels_ids": [
+    35605530,
+    18787339,
+    35374347
+  ],
+  "themes": [
+    "senior_dog"
+  ],
+  "runs": [
+    {
+      "at": "20261007_170446",
+      "theme": "senior_dog",
+      "stock": [
+        "https://www.pexels.com/video/golden-retriever-sitting-outdoors-on-cloudy-day-35605530/",
+        "https://www.pexels.com/video/a-large-white-dog-laying-on-the-ground-18787339/",
+        "https://www.pexels.com/video/peaceful-dog-relaxing-on-a-sunny-day-35374347/"
+      ]
+    }
+  ]
+}
