@@ -131,3 +131,13 @@ Kullanıcı 5:08'de pulluğu önden süren adamı yakaladı; küçük döşeme s
 - Trafik: Göz atma %70, kanal sayfası %11, önerilen %8,5, arama %6 → YouTube bizi ana sayfada deniyor.
 - Sonuç: içerik/elde tutma GÜÇLÜ; darboğaz TIKLAMA (paketleme) + ilk 30 sn'deki %39 kayıp.
   → Kapak/başlık A/B testleri sürsün; her bölümde ilk 30 sn'ye en güçlü görüntü + soru; parlak yüz kapak.
+
+## 17. ANA HEDEF (8 Ekim, kullanıcı kararı): "arşiv kanalı"
+Tek seferlik viral değil; **her gün 100–300 izlenme alan, yıllarca çalışan videolar**. Hedef: 100 video, bunların 10–20'si düzenli kazanan.
+- Hesap: 15 video × 200/gün ≈ 3.000/gün ≈ 90K/ay. (Para kazanma açıldığında RPM $3–6 → ayda ~$270–540; kitle masaüstü/yaşlı ABD ağırlıklıysa üst uca yakın.)
+- Kaldıraçlar:
+  1. **Aranan konu**: her bölüm konusu vidIQ arama hacmiyle seçilir (ör. "great frost 1709" ~5K/ay, düşük rekabet). Başlıkta aranan anahtar kelime + merak.
+  2. **Açıklamanın ilk 2 satırı** hem kanca hem anahtar kelime; bölümler (chapters) her zaman.
+  3. **Oynatma listeleri / seriler**: izleyici bir videodan diğerine geçsin (oturum süresi).
+  4. **Eski videoları yeniden paketleme**: 30. ve 90. günde TO düşükse kapak/başlık güncelle.
+  5. **İstikrar**: haftada 2 video → ~1 yılda 100.
