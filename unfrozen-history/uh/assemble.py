@@ -50,6 +50,47 @@ def build_composite(parts: list, out: Path) -> Path:
     return out
 
 
+STILL_XFADE = 0.6  # aynı sahnedeki görseller arası geçiş (sn)
+# hareket kalıpları sırayla döner: yakınlaş, sağa kaydır, uzaklaş, sola kaydır
+_MOVES = [
+    ("min(1+0.00045*on,1.10)", "iw/2-(iw/zoom/2)", "ih/2-(ih/zoom/2)"),
+    ("1.10", "(iw-iw/zoom)*on/{f}", "ih/2-(ih/zoom/2)"),
+    ("max(1.10-0.00045*on,1.0)", "iw/2-(iw/zoom/2)", "ih/2-(ih/zoom/2)"),
+    ("1.10", "(iw-iw/zoom)*(1-on/{f})", "ih/2-(ih/zoom/2)"),
+]
+
+
+def build_stills(paths: list[Path], out: Path, total: float, seed: int = 0) -> Path:
+    """Klipsiz sahne: görselleri yavaş yakınlaştırma/kaydırma (Ken Burns) ile canlandırır,
+    aralarında yumuşak geçiş yapar. Çıktı tam `total` sn, OUT_W x OUT_H."""
+    sig = "|".join(f"{p.name}:{p.stat().st_size}" for p in paths) + f"|{total:.3f}|{seed}"
+    side = out.with_suffix(".json")
+    if out.exists() and side.exists() and side.read_text() == sig:
+        return out
+    k = len(paths)
+    each = (total + (k - 1) * STILL_XFADE) / k
+    frames = int(round(each * C.OUT_FPS)) + 2
+    ins, fc = [], []
+    for i, p in enumerate(paths):
+        z, x, y = _MOVES[(seed + i) % len(_MOVES)]
+        ins += ["-loop", "1", "-t", f"{each + 0.2:.3f}", "-i", str(p)]
+        fc.append(f"[{i}:v]scale=3840:2160:force_original_aspect_ratio=increase,crop=3840:2160,"
+                  f"zoompan=z='{z}':x='{x.format(f=frames)}':y='{y.format(f=frames)}':d={frames}:"
+                  f"s={C.OUT_W}x{C.OUT_H}:fps={C.OUT_FPS},trim=duration={each:.3f},setpts=PTS-STARTPTS,"
+                  f"format=yuv420p[v{i}]")
+    prev, off = "[v0]", 0.0
+    for i in range(1, k):
+        off += each - STILL_XFADE
+        fc.append(f"{prev}[v{i}]xfade=transition=fade:duration={STILL_XFADE}:offset={off:.3f}[x{i}]")
+        prev = f"[x{i}]"
+    fc.append(f"{prev}trim=duration={total:.3f},setpts=PTS-STARTPTS[out]")
+    out.parent.mkdir(parents=True, exist_ok=True)
+    _run(["ffmpeg", "-y", *ins, "-filter_complex", ";".join(fc), "-map", "[out]",
+          "-c:v", "libx264", "-preset", "medium", "-crf", "16", "-r", str(C.OUT_FPS), str(out)])
+    side.write_text(sig)
+    return out
+
+
 def plan_speed(target: float, length: float = C.CLIP_SECONDS,
                min_speed: float = C.MIN_SPEED) -> tuple[float, float]:
     """(hız, donma_süresi). Klip `length` sn; hedef uzunsa yavaşlat, yetmezse son kareyi tut."""
@@ -169,25 +210,37 @@ def assemble(ep: dict, scenes: list[int] | None = None, music: Path | None = Non
     if not chosen:
         raise ValueError("Sahne seçilmedi")
 
-    def one(i_s):
-        i, s = i_s
+    by_n = {s["n"]: s for s in ep["scenes"]}
+
+    def clip_src(s: dict) -> Path:
         clip = asset(s, "clip")
         if clip["status"] != "done" or not clip.get("url"):
             raise RuntimeError(f"Sahne {s['n']} klibi hazır değil")
         if s.get("clip_composite"):
-            src = build_composite(s["clip_composite"], work / "clips" / f"{s['n']:03d}_composite.mp4")
-        else:
-            src = download(clip["url"], work / "clips" / f"{s['n']:03d}.mp4")
+            return build_composite(s["clip_composite"], work / "clips" / f"{s['n']:03d}_composite.mp4")
+        return download(clip["url"], work / "clips" / f"{s['n']:03d}.mp4")
+
+    def one(i_s):
+        i, s = i_s
         mp3 = work / f"audio_{lang}" / f"{s['n']:03d}.mp3"
         beat = duration(mp3) + C.BEAT_PAD
         last = i == len(chosen) - 1
+        target = beat + (0 if last else XFADE)  # geçiş örtüşmesi kadar fazladan video
         seg = work / "segments" / f"{s['n']:03d}.mp4"
         seg.parent.mkdir(parents=True, exist_ok=True)
-        # geçiş örtüşmesi kadar fazladan video; ses zamanlaması değişmez
         ms = s.get("min_speed", C.MIN_SPEED)
-        info = render_segment(src, seg, beat + (0 if last else XFADE), s.get("clip_range"), ms)
         amb = work / "ambience" / f"{s['n']:03d}.wav"
         amb.parent.mkdir(parents=True, exist_ok=True)
+        if s.get("stills"):
+            # klipsiz sahne: hareketli görseller; ortam sesi başka bir sahnenin klibinden ödünç
+            paths = [work / p for p in s["stills"]]
+            src = build_stills(paths, work / "clips" / f"{s['n']:03d}_stills.mp4", target, seed=s["n"])
+            info = render_segment(src, seg, target, None, ms)
+            donor = by_n.get(s.get("ambience_from"))
+            render_ambience(clip_src(donor) if donor else None, amb, beat, donor.get("clip_range") if donor else None, ms)
+            return seg, (mp3, beat), amb, {"n": s["n"], "beat": round(beat, 2), "stills": len(paths), **info}
+        src = clip_src(s)
+        info = render_segment(src, seg, target, s.get("clip_range"), ms)
         # dudak senkronlu klibin sesi konuşma içerir → ortam katmanına alınmaz
         render_ambience(src if not s.get("no_ambience") else None, amb, beat, s.get("clip_range"), ms)
         return seg, (mp3, beat), amb, {"n": s["n"], "beat": round(beat, 2), **info}
