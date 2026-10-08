@@ -141,3 +141,12 @@ Tek seferlik viral değil; **her gün 100–300 izlenme alan, yıllarca çalış
   3. **Oynatma listeleri / seriler**: izleyici bir videodan diğerine geçsin (oturum süresi).
   4. **Eski videoları yeniden paketleme**: 30. ve 90. günde TO düşükse kapak/başlık güncelle.
   5. **İstikrar**: haftada 2 video → ~1 yılda 100.
+
+## 18. Dış analiz notları (8 Ekim, kullanıcının paylaştığı vidIQ raporu)
+- "how did medieval villages survive winter without heating" → ~47,6K/ay, rekabet 15 (çok düşük). Ep001 başlığı neredeyse birebir. A/B testi bitince soru formuna çevirmeyi değerlendir: "How Did Medieval Peasants Survive Winter Without Heating?"
+- "viking winter" ~5,3K/ay (rekabet 30); "medieval peasant life" ~11,6K/ay.
+- Outlier'lar (2–7K aboneli kanallar): Runic "How Did Humans Survive −40° Nights Inside a Massive Medieval Castle?" 301K; Every Life Explained 314K; "How Medieval Villages Survived Deadly Winters Without Heating in 1315?" 270K → soru formatı + somut sayı.
+- "History for Sleep" hattı: mevcut bölümlerden uzun derleme = 0 kredi. Denenecek.
+- Kanal ana sayfası: öne çıkan video + seri oynatma listesi kur.
+- DÜZELTME: rapordaki "SUBSCRIBER 128" trafik satırı 3 aboneyle mümkün değil; Studio'da bu trafik "Göz atma özellikleri". Ayrıca yayın durmadı: Donner 10 Eki, ep005 14 Eki planlı.
+- Ep006 Moğolistan olmak ZORUNDA: ep005'in son sahnesi "That story is next" diyerek Moğol bozkırını vaat ediyor. Kale/−40° konusu ep007 adayı.
