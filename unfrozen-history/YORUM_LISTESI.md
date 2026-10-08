@@ -40,3 +40,4 @@ Kural: her yorumda kanalın o günkü abone + video izlenmesini buraya not et.
 | **Archibald History** | 8,3K | "How Americans Drilled 20,000 Trees to Carry a City's Water" (2 Eki) — 35,8K izlenme, saatte ~495, 16 yorum | YÜKSELEN küçük kanal → öncelikli (HistoryInPaint örneği) |
 | British Bastion | 16,4K | "Why German U-Boat Captains Couldn't Grasp…" — 57K | (aynı başlıkla Legacy of Empires'in küçük kopyası da var) |
 Viking kitlesi = homestead/hayatta kalma; Napolyon kitlesi = askerî ve mühendislik tarihi → iki ayrı izleyici havuzu.
+- 8 Eki 12:50 — **Archibald History** yorumu atıldı ("fire plug…"). O gün: 8,3K abone, video 35,8K izlenme, 16 yorum.
