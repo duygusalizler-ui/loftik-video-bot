@@ -4,11 +4,13 @@
     18787339,
     35374347,
     26871287,
-    36460556
+    36460556,
+    39995023
   ],
   "themes": [
     "senior_dog",
-    "owner_love"
+    "owner_love",
+    "everyday_moments"
   ],
   "runs": [
     {
@@ -26,6 +28,13 @@
       "stock": [
         "https://www.pexels.com/video/a-dog-laying-on-a-couch-with-a-blanket-over-it-26871287/",
         "https://www.pexels.com/video/man-and-dog-sitting-together-at-sunset-36460556/"
+      ]
+    },
+    {
+      "at": "20261008_144059",
+      "theme": "everyday_moments",
+      "stock": [
+        "https://www.pexels.com/video/cute-puppy-playing-with-toy-on-rug-39995023/"
       ]
     }
   ]
