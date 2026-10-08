@@ -5,12 +5,14 @@
     35374347,
     26871287,
     36460556,
-    39995023
+    39995023,
+    18227692
   ],
   "themes": [
     "senior_dog",
     "owner_love",
-    "everyday_moments"
+    "everyday_moments",
+    "walks"
   ],
   "runs": [
     {
@@ -35,6 +37,13 @@
       "theme": "everyday_moments",
       "stock": [
         "https://www.pexels.com/video/cute-puppy-playing-with-toy-on-rug-39995023/"
+      ]
+    },
+    {
+      "at": "20261008_204351",
+      "theme": "walks",
+      "stock": [
+        "https://www.pexels.com/video/a-golden-retriever-laying-on-the-beach-at-sunset-18227692/"
       ]
     }
   ]
