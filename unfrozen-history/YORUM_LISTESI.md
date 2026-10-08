@@ -33,3 +33,10 @@ Viking videomuzu öneren içerikler: kendi Medieval videomuz (%40 — kanal içi
 | 7 Eki | 1.300 | 74 bin | Stuart London 19 bin (4 günde), Medieval London 8,5 bin, Viking Age 2,8 bin |
 Yorumumuz ("The moment Philippe dreams of the scholar's robe…") 14 beğeni, üst sırada. Ders: küçük ama yükselen kanallara ERKEN yorum → video patlayınca yorum en üstte kalır.
 Kural: her yorumda kanalın o günkü abone + video izlenmesini buraya not et.
+
+## Napolyon'un önerildiği videolar (8 Eki) — askerî/mühendislik tarihi kitlesi
+| Kanal | Abone | Video | Not |
+|---|---|---|---|
+| **Archibald History** | 8,3K | "How Americans Drilled 20,000 Trees to Carry a City's Water" (2 Eki) — 35,8K izlenme, saatte ~495, 16 yorum | YÜKSELEN küçük kanal → öncelikli (HistoryInPaint örneği) |
+| British Bastion | 16,4K | "Why German U-Boat Captains Couldn't Grasp…" — 57K | (aynı başlıkla Legacy of Empires'in küçük kopyası da var) |
+Viking kitlesi = homestead/hayatta kalma; Napolyon kitlesi = askerî ve mühendislik tarihi → iki ayrı izleyici havuzu.
