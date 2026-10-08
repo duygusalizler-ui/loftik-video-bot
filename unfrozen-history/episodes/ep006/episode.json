@@ -22,7 +22,9 @@
     2,
     3
   ],
-  "gates": {},
+  "gates": {
+    "script": "2026-10-08T22:43:03+00:00"
+  },
   "hybrid": {
     "still_resolution": "2k",
     "still_quality": "medium",
