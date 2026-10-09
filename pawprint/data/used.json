@@ -6,13 +6,15 @@
     26871287,
     36460556,
     39995023,
-    18227692
+    18227692,
+    35459385
   ],
   "themes": [
     "senior_dog",
     "owner_love",
     "everyday_moments",
-    "walks"
+    "walks",
+    "paws"
   ],
   "runs": [
     {
@@ -44,6 +46,13 @@
       "theme": "walks",
       "stock": [
         "https://www.pexels.com/video/a-golden-retriever-laying-on-the-beach-at-sunset-18227692/"
+      ]
+    },
+    {
+      "at": "20261009_142633",
+      "theme": "paws",
+      "stock": [
+        "https://www.pexels.com/video/golden-retriever-walking-along-sunny-lakeside-35459385/"
       ]
     }
   ]
