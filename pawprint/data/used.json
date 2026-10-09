@@ -7,14 +7,17 @@
     36460556,
     39995023,
     18227692,
-    35459385
+    35459385,
+    5228670,
+    29477854
   ],
   "themes": [
     "senior_dog",
     "owner_love",
     "everyday_moments",
     "walks",
-    "paws"
+    "paws",
+    "puppy_to_senior"
   ],
   "runs": [
     {
@@ -53,6 +56,14 @@
       "theme": "paws",
       "stock": [
         "https://www.pexels.com/video/golden-retriever-walking-along-sunny-lakeside-35459385/"
+      ]
+    },
+    {
+      "at": "20261009_200947",
+      "theme": "puppy_to_senior",
+      "stock": [
+        "https://www.pexels.com/video/a-person-petting-a-dog-5228670/",
+        "https://www.pexels.com/video/cheerful-golden-retriever-in-cozy-room-29477854/"
       ]
     }
   ]
