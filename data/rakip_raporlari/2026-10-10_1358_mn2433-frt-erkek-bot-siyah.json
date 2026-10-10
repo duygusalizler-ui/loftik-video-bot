@@ -1,0 +1,41 @@
+{
+  "tarih": "2026-10-10T13:58:10.008882+00:00",
+  "urun": "MN2433 - FRT Erkek Bot SIYAH",
+  "urun_url": "https://www.loftikayakkabi.com/urun/mn2433-frt-erkek-bot-siyah",
+  "anahtar_kelimeler": [
+    "erkek bot",
+    "deri bot"
+  ],
+  "kaynak": "google_arama",
+  "reklam_sayisi": 0,
+  "en_uzun_yayindaki_reklamlar": [],
+  "brief": {
+    "ozet": "Yerli ayakkabı markalarının ve Instagram butiklerinin en çok etkileşim alan bot reklamlarında; stüdyo çekimlerinden ziyade sokakta, günlük pantolon kombinleriyle çekilmiş doğal telefon videoları öne çıkıyor. Kullanıcılar yapay ve aşırı iddialı 'su geçirmezlik testleri' yerine, botun ayakta nasıl durduğunu ve günlük giyimde nasıl kombinlendiğini gösteren samimi içerikleri birbirine DM yoluyla gönderiyor.",
+    "kazanan_kaliplar": [
+      "Aşırı prodüksiyon içermeyen, doğal gün ışığında telefon kamerasıyla çekilmiş samimi sokak açıları",
+      "DM paylaşımını ve kaydetmeyi tetikleyen 'arkadaşına gönder / kış kombini önerisi' kancaları",
+      "Ayakkabıyı ve taban detayını net gösteren, karmaşık olmayan sakin yürüme ve duruş planları",
+      "Gereksiz konuşma olmadan sadece ürün estetiğini ve net fiyatı veren minimalist ekran yazıları"
+    ],
+    "rakiplerin_zayif_yonleri": [
+      "Aşırı filtreli, yapay zekâ veya stüdyo kokan, gerçekte ayakta nasıl durduğu anlaşılmayan sahneler kullanmaları",
+      "Kaydetme ve arkadaşa DM atma motivasyonu yaratmayan, sadece agresif 'hemen al / şok indirim' baskısı kurmaları",
+      "Göz yoran hızlı kurgular, abartılı su sıçratma efektleri ve gereksiz yakın el çekimleriyle ürünün zarafetini gölgelemeleri"
+    ],
+    "bizim_acimiz": "Sonbahar sokak stilinde botun kalıbını ve şıklığını abartısız bir doğallıkla sergileyerek izleyicide doğrudan 'bunu arkadaşıma atmalıyım' hissi uyandırmak.",
+    "kanca_metni": "Bunu bot arayan arkadaşına gönder",
+    "urun_satiri": "MN2433 Siyah Erkek Bot 2.541 TL",
+    "cta": "loftikayakkabi.com'da incele",
+    "paylasim_metni": "Kış gelmeden kaliteli ve şık bir bot arayan arkadaşına bu videoyu gönder.\nHer kombine uyum sağlayan MN2433 Siyah Erkek Bot şimdi yayında.\n#erkekbot #deribot #kombinönerisi #loftikayakkabı #erkekstili",
+    "sahneler": [
+      {
+        "gorsel_prompt": "A realistic vertical 9:16 smartphone video still of a man's lower body walking calmly down an urban cobblestone sidewalk on a cool October autumn day. He is wearing the Loftik MN2433 men's black leather ankle boots, featuring premium matte black leather, sturdy black rubber lug soles, round toe shape, and tidy black laces. Paired with straight-cut dark charcoal trousers slightly resting above the boot collar. No face visible, camera framed from knees down. Soft overcast autumn daylight, natural street depth of field, authentic UGC aesthetic without cinematic artificial grading.",
+        "hareket_prompt": "Calm tracking shot from a low handheld angle following the subject's feet taking slow, steady walking steps along the sidewalk. The camera glides smoothly forward at foot level, keeping the black boots in sharp focus and large in frame throughout the 8 seconds with very subtle, natural handheld sway."
+      },
+      {
+        "gorsel_prompt": "A realistic vertical 9:16 smartphone still shot of the same man standing calmly by a warm cafe exterior or textured stone step, one foot resting on a slightly raised stone edge to showcase the profile of the MN2433 black boot. The boot is prominent in the lower foreground, showing clean matte black finish, durable thick black sole tread, and minimal stitching. Natural ambient daylight, autumn city atmosphere, face completely out of frame, looking authentic and unedited like an organic social media clip.",
+        "hareket_prompt": "Static to gentle slow panning camera movement, starting with a clean focus on the profile of the black boot as the person slightly shifts their weight naturally. The camera holds a calm, steady gaze on the footwear for 8 seconds, letting the viewer clearly inspect the leather texture and sole thickness."
+      }
+    ]
+  }
+}
