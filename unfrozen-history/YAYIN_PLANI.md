@@ -24,3 +24,9 @@ Sonuç: niş kalabalık ama çoğu ya **liste/bilgi** ya da **düşük kaliteli 
 - Bölüm maliyeti ≈ 290–300 kredi → ayda ~8,7 bölüm ≈ **2.550 kredi/ay**
 - Mevcut kurallar: ayda en fazla **1.200**, bakiye **500** altına inmez. Bugünkü bakiye 2.362.
 - Haftada 2 için bu kuralların sahibin onayıyla değişmesi ya da bölüm maliyetinin düşmesi gerekir (bkz. sohbet: seçenekler).
+
+## Kanal düzeni (11 Eki gece)
+- Bitiş ekranları: Ortaçağ→Viking, Viking→Napolyon, Napolyon→Donner, Donner→Napolyon; hepsinde + oynatma listesi "Winter: How They Survived" + abone ol.
+- Kanal fragmanı + geri dönen aboneler: Napolyon. Ana sayfa: Size özel → Oynatma listeleri → Gönderiler → Videolar.
+- Donner A/B (başlık+kapak): HIS DIARY / 4 MONTHS ("Can You Survive 4 Months Trapped With the Donner Party?") / FROZEN HELL ("How One Family Survived the Donner Party Winter").
+- YAPILACAK 14 Eki (ep005 yayını sonrası): Donner bitiş ekranı video kutusu → ep005; ep005'i oynatma listesinin sonuna ekle; ep005 bitiş ekranı → Donner + liste + abone.
