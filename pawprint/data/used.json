@@ -9,7 +9,8 @@
     18227692,
     35459385,
     5228670,
-    29477854
+    29477854,
+    39995025
   ],
   "themes": [
     "senior_dog",
@@ -17,7 +18,8 @@
     "everyday_moments",
     "walks",
     "paws",
-    "puppy_to_senior"
+    "puppy_to_senior",
+    "senior_dog"
   ],
   "runs": [
     {
@@ -64,6 +66,13 @@
       "stock": [
         "https://www.pexels.com/video/a-person-petting-a-dog-5228670/",
         "https://www.pexels.com/video/cheerful-golden-retriever-in-cozy-room-29477854/"
+      ]
+    },
+    {
+      "at": "20261010_192128",
+      "theme": "senior_dog",
+      "stock": [
+        "https://www.pexels.com/video/adorable-golden-retriever-puppy-indoors-39995025/"
       ]
     }
   ]
