@@ -1,0 +1,42 @@
+{
+  "tarih": "2026-10-10T19:29:44.871921+00:00",
+  "urun": "MN223 - SRT Alaska Süet Erkek Bot TABA",
+  "urun_url": "https://www.loftikayakkabi.com/urun/mn223-srt-alaska-suet-erkek-bot-taba",
+  "anahtar_kelimeler": [
+    "chelsea bot",
+    "erkek bot",
+    "deri bot"
+  ],
+  "kaynak": "google_arama",
+  "reklam_sayisi": 0,
+  "en_uzun_yayindaki_reklamlar": [],
+  "brief": {
+    "ozet": "Rakipler çoğunlukla stüdyoda ayakkabıyı bükerek esneklik gösterme veya agresif 'Büyük İndirim' sloganları kullanıyor. Ancak organik etkileşim ve DM paylaşımı alan uzun ömürlü reklamların, sonbahar sokak stilini yansıtan samimi kombin videoları ve arkadaşa gönderme kancaları olduğu görülüyor.",
+    "kazanan_kaliplar": [
+      "Diz altı veya bel altı odaklı, yüz göstermeyen doğal sokak çekimleri",
+      "İzleyiciyi doğrudan bir arkadaşını etiketlemeye veya DM ile göndermeye iten kancalar",
+      "Göz yormayan, telefon kamerası hissi veren gün ışığı ve sonbahar renk paleti",
+      "Konuşmasız, sadece temiz ürün estetiği ve sade ekranda kalan fiyat/model bilgisi"
+    ],
+    "rakiplerin_zayif_yonleri": [
+      "Aşırı yapay stüdyo ışıkları ve göze batan sahte indirim baskıları kullanmaları",
+      "Ürünün günlük hayatta ve gerçek bir pantolonla nasıl durduğunu hissettirememeleri",
+      "Hızlı ve karmaşık geçişlerle ayakkabının detaylarının seçilmesini zorlaştırmaları"
+    ],
+    "bizim_acimiz": "Abartısız bir sonbahar şehir estetiğinde, taba süetin premium dokusunu telefon doğallığında gösterip doğrudan kombin arayan arkadaşa paylaşma refleksini tetikliyoruz.",
+    "kanca_metni": "Bunu bot arayan arkadaşına gönder",
+    "urun_satiri": "Alaska Süet Taba Bot • 2.299 TL",
+    "cta": "Hemen profildeki linkten incele",
+    "paylasim_metni": "Bunu hâlâ bu mevsime uygun bot bulamayan arkadaşına gönder.\nSonbaharın en rahat taba süet kombin tamamlayıcısı stoklarda.\nSınırlı adetle loftikayakkabi.com'da.\n\n#erkekbot #süetbot #erkekkombin #tababot #loftikayakkabi",
+    "sahneler": [
+      {
+        "gorsel_prompt": "A realistic vertical 9:16 smartphone street photography shot taken on an overcast October afternoon in an urban setting. Waist-down low angle focusing squarely on a man's feet wearing premium tobacco tan suede ankle boots with sturdy welted dark lug soles and matching tan laces. He is wearing relaxed-fit charcoal wool trousers neatly draping over the upper collar of the boots. He is stepping slowly down wide, clean stone steps outside a modern city cafe. Scattered dry autumn leaves lie on the pavement. The velvety matte texture of the tan suede is sharply detailed, completely realistic, no face visible.",
+        "hareket_prompt": "Calm and subtle handheld phone camera tracking motion. The camera smoothly follows the man's feet as he takes one deliberate, natural step down onto the stone sidewalk and pauses. Steady, authentic movement with gentle ambient depth, showcasing the shoe's silhouette and rich suede material without sudden jerks or speed ramping."
+      },
+      {
+        "gorsel_prompt": "A vertical 9:16 photorealistic close-up street style shot taken at ankle level on an autumn sidewalk. The shot prominently features both feet wearing tobacco tan suede men's boots with round toes and durable treaded soles, paired with straight-cut dark navy raw denim rolled neatly at the hem. The subject is casually leaning against a textured warm brick cafe exterior wall. Warm soft diffused October daylight highlights the rich suede nap and clean stitching. The boots fill the lower two-thirds of the frame, completely lifelike and unedited.",
+        "hareket_prompt": "Calm, slow-paced handheld camera with a very subtle 8-second slow push-in towards the boots. The subject casually shifts weight from one foot to the other in a natural, relaxed motion, letting the light gently catch the matte suede texture. No fast cuts, no filters, peaceful everyday street rhythm."
+      }
+    ]
+  }
+}
