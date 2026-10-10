@@ -41,3 +41,14 @@ Kural: her yorumda kanalın o günkü abone + video izlenmesini buraya not et.
 | British Bastion | 16,4K | "Why German U-Boat Captains Couldn't Grasp…" — 57K | (aynı başlıkla Legacy of Empires'in küçük kopyası da var) |
 Viking kitlesi = homestead/hayatta kalma; Napolyon kitlesi = askerî ve mühendislik tarihi → iki ayrı izleyici havuzu.
 - 8 Eki 12:50 — **Archibald History** yorumu atıldı ("fire plug…"). O gün: 8,3K abone, video 35,8K izlenme, 16 yorum.
+
+## Bildirim kontrolü (11 Eki 01:44)
+| Yorum | Kanal / video | Beğeni |
+|---|---|---|
+| "The moment Philippe dreams of the scholar's robe…" | HistoryInPaint — Medieval Paris | 17 |
+| "The moment London Bridge shut for the night got me…" | London Inn 1387 | 13 (2 saatte) |
+| "I had no idea "fire plug" came from firemen…" | Archibald History | 4 |
+| @alokinale2074'e cevap | London Inn 1387 | 3 |
+| "Loved this. I'm curious: how did a family like this get thr…" | Life in the Viking Age | 2 |
+| Kendi sabit yorumlarımız (Viking "7 MONTHS", Ortaçağ "LAST LOG") | kendi kanalımız | 1'er |
+Ders: "The moment X got me" kalıbı (videodaki belirli bir ana atıf) en çok beğeni alan yorum tipi → standart yorum kalıbımız bu.
