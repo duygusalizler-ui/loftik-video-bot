@@ -150,3 +150,8 @@ Tek seferlik viral değil; **her gün 100–300 izlenme alan, yıllarca çalış
 - Kanal ana sayfası: öne çıkan video + seri oynatma listesi kur.
 - DÜZELTME: rapordaki "SUBSCRIBER 128" trafik satırı 3 aboneyle mümkün değil; Studio'da bu trafik "Göz atma özellikleri". Ayrıca yayın durmadı: Donner 10 Eki, ep005 14 Eki planlı.
 - Ep006 Moğolistan olmak ZORUNDA: ep005'in son sahnesi "That story is next" diyerek Moğol bozkırını vaat ediyor. Kale/−40° konusu ep007 adayı.
+
+## §19 İlk tutan video (12 Eki 2026)
+Napolyon (ep003) 4. günde 1.300 izlenme, 5,1K gösterim, TO %3,1, trafiğin %98'i göz atma; son saatlerde 35–48/sa (3. dalga). 4 videodan 1'i "her gün izlenen" oldu (hedef: 100 videoda 10–20).
+Neden tuttu (hipotez): büyük, bilinen tarihî olay + net sayı/acı ("−30°C Nightmare") + yakın plan insan yüzü + kısa güçlü kapak yazısı ("NEVER SLEEP"); askerî tarih kitlesi.
+Ders: sonraki konular "bilinen olay + sayı" kalıbına yaslansın; kapakta hayalî karakterin yüzü (gerçek kişi değilse) kullanılsın.
