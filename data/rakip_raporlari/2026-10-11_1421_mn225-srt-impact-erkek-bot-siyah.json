@@ -1,0 +1,40 @@
+{
+  "tarih": "2026-10-11T14:20:51.184567+00:00",
+  "urun": "MN225 - SRT Impact Erkek Bot SIYAH",
+  "urun_url": "https://www.loftikayakkabi.com/urun/mn225-srt-impact-erkek-bot-siyah",
+  "anahtar_kelimeler": [
+    "erkek bot",
+    "deri bot"
+  ],
+  "kaynak": "google_arama",
+  "reklam_sayisi": 0,
+  "en_uzun_yayindaki_reklamlar": [],
+  "brief": {
+    "ozet": "Rakipler çoğunlukla stüdyo ortamında döner tabla çekimleri, abartılı su sıçratmalı doğa testleri veya agresif 'büyük indirim' duyuruları kullanıyor. Günlük sokak giyiminde botun gerçekte nasıl durduğunu gösteren ve arkadaşa DM ile göndermeyi tetikleyen samimi, doğal telefon çekimlerini ise büyük oranda göz ardı ediyorlar.",
+    "kazanan_kaliplar": [
+      "Sokakta telefonla çekilmiş hissi veren doğal (UGC) dikey video formatları",
+      "Videonun ilk 2 saniyesinde doğrudan paylaşım ve etiketleme tetikleyen sade ekran yazıları",
+      "Kombin uyumunu ve taban detayını ön plana çıkaran sakin yürüyüş ve duruş kadrajları",
+      "Konuşmasız, sadece arka planda ritmik kısık ses ve temiz ürün metinleri"
+    ],
+    "rakiplerin_zayif_yonleri": [
+      "Aşırı yapay stüdyo ışığı ve katalog formatı yüzünden botun sokaktaki gerçek stilini hissettirememeleri",
+      "İzleyicide kaydetme veya arkadaşına gönderme refleksi uyandırmayan tekdüze 'satın al' baskısı"
+    ],
+    "bizim_acimiz": "Ekim ayının serin şehir havasında botun günlük kıyafetlerle uyumunu gösterip izleyiciye 'bunu bot arayan arkadaşına gönder' dedirten sakin ve gerçekçi bir sokak anı sunuyoruz.",
+    "kanca_metni": "Hala bot bulamayan o arkadaşına gönder",
+    "urun_satiri": "SRT Impact Siyah Bot: 2.299 TL",
+    "cta": "loftikayakkabi.com’dan hemen keşfet",
+    "paylasim_metni": "Bunu hala sezonluk bot bulamayan arkadaşına gönder 👀\nSonbahar ve kış kombinlerinin en rahat tamamlayıcısı MN225 SRT Impact Siyah Bot loftikayakkabi.com'da seni bekliyor.\nDetaylı incelemek için profildeki bağlantıya tıkla.\n\n#erkekbot #loftikayakkabi #siyahbot #erkekgiyim #sokakstili",
+    "sahneler": [
+      {
+        "gorsel_prompt": "Shot on smartphone, realistic vertical 9:16 aspect ratio, candid street style video still. Waist-down low-angle perspective of a man standing calmly on a paved city sidewalk in autumn. He wears relaxed-fit dark charcoal cargo pants that fall cleanly over the boots. Prominently in the center foreground are the MN225 SRT Impact men's black boots: matte black leather upper, thick rugged black lug rubber sole, all-black laces, sleek tactical streetwear silhouette. Natural soft overcast daylight of October, scattered dry autumn leaves on the pavement, completely headless shot with no face visible, authentic lifestyle aesthetic.",
+        "hareket_prompt": "Calm camera movement for 8 seconds starting at low angle. The subject takes two slow, natural steps forward along the cafe sidewalk and pauses comfortably, shifting one foot slightly to show the profile and rugged sole of the black boot. Slow steady movement, no quick panning, no stunts."
+      },
+      {
+        "gorsel_prompt": "Smartphone camera capture, vertical 9:16 framing, authentic UGC aesthetic. Medium-low angle shot from the knees down of a man sitting relaxed on outdoor concrete steps outside a modern coffee shop. He wears slim black denim cuffed just above the ankle. The MN225 SRT Impact black boots are centered and large in frame: detailed deep-tread black sole, smooth black matte leather finish, black eyelets and clean black laces. Cool diffuse autumn afternoon ambient lighting, minimal architecture in the blurred background, no face visible, ultra-realistic.",
+        "hareket_prompt": "Smooth and very slow 8 second camera push-in towards the boots on the steps. The subject calmly adjusts his posture, moving his foot forward a couple of centimeters so the natural light catches the matte texture and chunky sole. Stable and serene camera motion throughout."
+      }
+    ]
+  }
+}
