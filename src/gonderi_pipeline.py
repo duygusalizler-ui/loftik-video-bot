@@ -56,6 +56,9 @@ RULES = (
     " The shoes MUST be EXACTLY the product in the reference photos: same model and shape, same "
     "upper color and material (leather vs suede vs fabric), same sole color and thickness, same "
     "laces / buckles / zips / fur lining / stitching, same shaft height. Do not redesign anything. "
+    "Keep the EXACT color of the reference under the studio light: black stays a true deep black "
+    "(never charcoal, grey or brown), white stays clean white, beige/sand keeps its exact tone -- "
+    "the warm daylight must not shift the product color. "
     "Do NOT invent parts that are not clearly visible in the reference photos: no extra pull tabs, "
     "loops, rings, straps, buckles, logos or seams -- where a part is not visible in the references "
     "(e.g. the back of the heel), keep it plain and simple. "
@@ -87,6 +90,8 @@ Sadece şu JSON'u döndür:
 Yazı/logo varsa veya ayak/insan varsa puan en fazla 4.
 Malzeme açıkça farklı bir malzemeye dönüşmüşse (ör. süet belirgin şekilde örgü/kanvas kumaş gibiyse) veya ürünün üstüne düşen
 gölgeler rengini/dokusunu gizliyorsa puan en fazla 6.
+Renk tonu kaymışsa (ör. siyah ürün kahverengi/füme/gri görünüyorsa, bej daha soluk ya da daha koyuysa)
+puan en fazla 6.
 """
 
 
