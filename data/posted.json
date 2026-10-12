@@ -268,10 +268,11 @@
     {
       "url": "https://www.loftikayakkabi.com/urun/mn2433-sst-erkek-bot-taba",
       "title": "MN2433 - SST Erkek Bot TABA",
-      "posted_at": "2026-10-12T16:22:38.866052+00:00",
+      "posted_at": "2026-10-13T06:00:00+00:00",
       "mod": "gonderi",
       "kare": 4,
-      "bot": true
+      "bot": true,
+      "not": "12 Eki üretildi, 13 Eki 12:30 için planlandı"
     }
   ]
 }
