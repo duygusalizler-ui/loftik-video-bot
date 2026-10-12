@@ -122,13 +122,15 @@ def _run_post_mode(product, candidate, raw_image_path: str, caption: str, tmp: s
         summary = (f"⚠️ Bu üründe tüm denemelere rağmen {len(images)} kare çıktı (hedef en az "
                    f"{config.MIN_POST_IMAGES}); istersen başka kareyle tamamla ya da bekletebilirsin.\n\n" + summary)
     print(f"{len(images)} karelik kaydırmalı gönderi Telegram'a yollanıyor...")
+    # Sade akış (kullanıcı isteği): 1) görseller TEK sefer, orijinal kalite
+    # 2) bilgi/kalite mesajı 3) SADECE açıklama -- uzun basıp tek seferde kopyalanabilsin.
+    label = f"🆕 {product.title}\n📎 {len(images)} kare, Instagram'a bu sırayla yükle"
     if len(images) >= 2:
-        send_media_group(images, caption[:1000])
-        send_media_group(images, "📎 Instagram için orijinal kalite (sırasıyla yükle)", as_documents=True)
+        send_media_group(images, label, as_documents=True)
     else:
-        send_photo(images[0], caption[:1000])
-        send_document(images[0], "📎 Instagram için orijinal kalite")
-    send_message(summary + f"\n\n📝 Önerilen açıklama:\n{caption}")
+        send_document(images[0], label)
+    send_message("ℹ️ Bilgi (paylaşma, sadece kontrol için)\n\n" + summary)
+    send_message(caption)
     return info
 
 
