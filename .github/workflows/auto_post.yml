@@ -19,9 +19,14 @@ on:
   # Yedek zamanlama: cron-job.org calismazsa diye GitHub'in kendi cron'u da
   # acik. Iki tetikleyici ayni gun ust uste calissa bile MAX_POSTS_PER_DAY
   # (varsayilan 2) asilmaz -- fazla calisma sessizce cikar.
-  # 07:40 ve 15:40 UTC = TR 10:40 ve 18:40
+  # GitHub cron'u bu repoda 4-6 saat GECIKMELI calisiyor (Ekim 2026 kayitlari:
+  # 07:40 UTC tetigi ~14:00, 15:40 tetigi ~20:00 UTC'de ates aldi). Bu yuzden
+  # erken ve yogun olmayan dakikalarda birden fazla tetik var; gunluk limit (2)
+  # ve "2. icerik TR 14:00'dan once uretilmez" kurali fazlasini sessizce eler.
+  # UTC 03:17,05:17 = TR 06:17,08:17 (ogle paylasimi icin)
+  # UTC 11:17,13:17 = TR 14:17,16:17 (aksam paylasimi icin)
   schedule:
-    - cron: "40 7,15 * * *"
+    - cron: "17 3,5,11,13 * * *"
 
 concurrency:
   group: loftik-video-bot

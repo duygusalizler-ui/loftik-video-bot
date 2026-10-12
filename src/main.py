@@ -51,7 +51,7 @@ from . import wiro_video
 from .gemini_video import QuotaExceededError, clean_product_shot
 from .gemini_video import generate_product_video as generate_product_video_gemini
 from .story_image import build_story_image
-from .telegram_post import send_media_group, send_message, send_photo, send_video
+from .telegram_post import send_document, send_media_group, send_message, send_photo, send_video
 
 CLEANUP_MAX_ATTEMPTS = 3
 
@@ -115,10 +115,13 @@ def _run_post_mode(product, candidate, raw_image_path: str, caption: str, tmp: s
     if len(images) >= 2:
         print(f"{len(images)} karelik kaydırmalı gönderi Telegram'a yollanıyor...")
         send_media_group(images, caption[:1000])
+        # Telegram fotograflari sikistirir; Instagram'a yuklemek icin orijinal kalite
+        send_media_group(images, "📎 Instagram için orijinal kalite (sırasıyla yükle)", as_documents=True)
         send_message(summary + f"\n\n📝 Önerilen açıklama:\n{caption}")
     elif images:
         print("Tek kare geçti, tek görselli gönderi yollanıyor...")
         send_photo(images[0], caption[:1000])
+        send_document(images[0], "📎 Instagram için orijinal kalite")
         send_message(summary + f"\n\n📝 Önerilen açıklama:\n{caption}")
     else:
         print("Hiçbir kare kalite kontrolünden geçmedi -- gönderi yollanmıyor.")
@@ -126,7 +129,7 @@ def _run_post_mode(product, candidate, raw_image_path: str, caption: str, tmp: s
             f"⚠️ {product.title} için kalite kontrolünden geçen görsel çıkmadı; hatalı görsel "
             "göndermemek için bu ürün atlandı.\n\n" + summary
         )
-    return {"mod": "gonderi", "kare": len(images)}
+    return {"mod": "gonderi", "kare": len(images), "bot": bool(candidate.get("is_boot"))}
 
 
 def run() -> None:
@@ -134,6 +137,14 @@ def run() -> None:
     if done_today >= config.MAX_POSTS_PER_DAY and not config.IGNORE_DAILY_LIMIT:
         print(f"Bugün zaten {done_today} içerik üretildi (limit {config.MAX_POSTS_PER_DAY}), çıkılıyor.")
         return
+
+    if done_today >= 1 and not config.IGNORE_DAILY_LIMIT:
+        from datetime import datetime, timedelta, timezone
+
+        tr_hour = datetime.now(timezone(timedelta(hours=3))).hour
+        if tr_hour < config.SECOND_POST_AFTER_HOUR:
+            print(f"Sabah içeriği zaten üretildi; akşam içeriği TR {config.SECOND_POST_AFTER_HOUR}:00'dan sonra üretilecek.")
+            return
 
     print("Katalog taranıyor...")
     catalog = scraper.list_light_catalog()

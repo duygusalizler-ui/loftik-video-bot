@@ -113,6 +113,9 @@ CLIP_ATTEMPTS = int(os.environ.get("CLIP_ATTEMPTS", "2"))
 # Gunde en fazla kac icerik uretilsin (hem cron-job.org hem GitHub
 # schedule tetiklese bile bu sayi asilmaz).
 MAX_POSTS_PER_DAY = int(os.environ.get("MAX_POSTS_PER_DAY") or "2")
+# Gunun 2. icerigi en erken TR saatiyle bu saatte uretilir (sabah tetikleyicileri
+# iki hakki birden harcamasin; aksam paylasimi icin taze icerik kalsin).
+SECOND_POST_AFTER_HOUR = int(os.environ.get("SECOND_POST_AFTER_HOUR") or "14")
 # Elle deneme calistirmalarinda gunluk limiti atlamak icin (workflow input'u)
 IGNORE_DAILY_LIMIT = (os.environ.get("IGNORE_DAILY_LIMIT") or "").lower() in ("1", "true", "evet")
 
