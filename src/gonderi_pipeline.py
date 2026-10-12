@@ -90,8 +90,10 @@ SONRAKİ görsel: yapay zekâyla üretilmiş stüdyo ürün fotoğrafı (Instagr
 4. Ayak, bacak, el veya insan var mı? Karede TAM OLARAK bir çift (iki ayakkabı: bir sol, bir sağ) var mı?
 5. Yapay zekâ hatası var mı (eriyen/bozuk şekiller, çift ya da havada duran nesneler, saçma detaylar)?
 Stüdyo ışığı ve temiz/şık sahne BURADA HATA DEĞİL, istenen şey budur.
-Referansta görünmeyen bir bölgeyi (ör. topuk arkası) sade göstermek hata değildir; ama referansta
-olmayan belirgin bir parça (çekme kulpu, halka, toka, logo) eklenmişse bu hatadır.
+Referans fotoğraflarda GÖRÜNMEYEN bölgeler (ör. topuk arkası) doğrulanamaz: oraya ürün tipine uygun,
+sade bir detay (ör. botun arkasında küçük bir çekme kulpu) eklenmişse bu en fazla 1 puan düşürür,
+kareyi tek başına eletmez. Ama referansta GÖRÜNEN bölgelerde (burun, yan, bağcık bölgesi, taban)
+olmayan bir parça (toka, fermuar, logo, desen) eklenmişse bu ciddi hatadır.
 
 Sadece şu JSON'u döndür:
 {"urun_benzerligi": 0-10, "gercekcilik": 0-10, "hatalar": ["kısa Türkçe madde"], "puan": 0-10}
