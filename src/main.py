@@ -8,7 +8,13 @@ Ana akış:
 5. Chekich.com.tr'de en yakın eşleşen ürünü bulup gerçek malzeme/astar/topuk
    bilgisini çek (bulamazsa uydurmadan atlar), açıklama + hashtag oluştur
 
-CONTENT_MODE = "reklam" (VARSAYILAN) ise:
+CONTENT_MODE = "gonderi" (VARSAYILAN) ise:
+6g. VIDEO YOK. Gerçek ürün fotoğraflarını referans alarak Gemini ile aynı
+    şık stüdyo sahnesinde 4 açıdan (kapak, yan, arka, detay) 4:5 görsel
+    üretilir; her kare gerçek fotoğrafla kalite kontrolünden geçer. Geçenler
+    Telegram'a kaydırmalı gönderi olarak gider. Bot sezonunda kışlık sahne.
+
+CONTENT_MODE = "reklam" ise:
 6r. Rakip reklam analizi (Meta Ad Library) -> brief -> sahne görselleri ->
     Veo klipleri -> otomatik kalite kontrolü -> Türkçe yazılı kurgu.
     Kalite kontrolünden geçen klip yoksa gerçek fotoğraflar kaydırmalı
@@ -38,7 +44,7 @@ CONTENT_MODE = "video" ise (eski akış):
 import sys
 import tempfile
 
-from . import ad_pipeline, competitor_ads
+from . import ad_pipeline, competitor_ads, gonderi_pipeline
 from . import caption as caption_mod
 from . import chekich, config, remotion_video, scraper, state
 from . import wiro_video
@@ -99,6 +105,30 @@ def _run_ad_mode(product, candidate, raw_image_path: str, base_caption: str, tmp
             send_photo(local_paths[0], caption[:1000])
 
 
+def _run_post_mode(product, candidate, raw_image_path: str, caption: str, tmp: str) -> dict:
+    gallery = _download_gallery(product, raw_image_path, tmp)
+    winter = bool(candidate.get("is_boot")) or config.boots_enabled()
+    images, qa_log = gonderi_pipeline.build_post(
+        product, raw_image_path, gallery[1:3], winter, f"{tmp}/gonderi_is"
+    )
+    summary = gonderi_pipeline.qa_summary(images, qa_log)
+    if len(images) >= 2:
+        print(f"{len(images)} karelik kaydırmalı gönderi Telegram'a yollanıyor...")
+        send_media_group(images, caption[:1000])
+        send_message(summary + f"\n\n📝 Önerilen açıklama:\n{caption}")
+    elif images:
+        print("Tek kare geçti, tek görselli gönderi yollanıyor...")
+        send_photo(images[0], caption[:1000])
+        send_message(summary + f"\n\n📝 Önerilen açıklama:\n{caption}")
+    else:
+        print("Hiçbir kare kalite kontrolünden geçmedi -- gönderi yollanmıyor.")
+        send_message(
+            f"⚠️ {product.title} için kalite kontrolünden geçen görsel çıkmadı; hatalı görsel "
+            "göndermemek için bu ürün atlandı.\n\n" + summary
+        )
+    return {"mod": "gonderi", "kare": len(images)}
+
+
 def run() -> None:
     done_today = state.posts_today()
     if done_today >= config.MAX_POSTS_PER_DAY and not config.IGNORE_DAILY_LIMIT:
@@ -137,6 +167,12 @@ def run() -> None:
             print(f"UYARI: Chekich eşleştirme başarısız ({exc}), özellik satırı olmadan devam ediliyor.")
 
         text = caption_mod.build_caption(product.title, product.brand, product.category_slug, spec_line)
+
+        if config.CONTENT_MODE == "gonderi":
+            info = _run_post_mode(product, candidate, raw_image_path, text, tmp)
+            state.mark_posted(product.url, product.title, info)
+            print("Tamamlandı, data/posted.json güncellendi.")
+            return
 
         if config.CONTENT_MODE == "reklam":
             _run_ad_mode(product, candidate, raw_image_path, text, tmp)

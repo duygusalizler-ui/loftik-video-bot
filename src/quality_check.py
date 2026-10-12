@@ -40,12 +40,12 @@ def _mime(path: str) -> str:
     return "image/png" if path.lower().endswith(".png") else "image/jpeg"
 
 
-def score_images(reference_path: str, candidate_paths: list[str]) -> dict:
+def score_images(reference_path: str, candidate_paths: list[str], prompt: str = QA_PROMPT) -> dict:
     from google import genai
     from google.genai import types
 
     client = genai.Client(api_key=config.GEMINI_API_KEY)
-    parts = [QA_PROMPT, types.Part.from_bytes(data=Path(reference_path).read_bytes(), mime_type=_mime(reference_path))]
+    parts = [prompt, types.Part.from_bytes(data=Path(reference_path).read_bytes(), mime_type=_mime(reference_path))]
     for p in candidate_paths:
         parts.append(types.Part.from_bytes(data=Path(p).read_bytes(), mime_type=_mime(p)))
     resp = gemini_util.generate_content(
@@ -61,11 +61,11 @@ def score_images(reference_path: str, candidate_paths: list[str]) -> dict:
     return result
 
 
-def safe_score(reference_path: str, candidate_paths: list[str]) -> dict:
+def safe_score(reference_path: str, candidate_paths: list[str], prompt: str = QA_PROMPT) -> dict:
     """QA'nin kendisi hata verirse (kota vb.) ureteni gecirmek yerine
     temkinli davranir: puan 0, gecmedi."""
     try:
-        return score_images(reference_path, candidate_paths)
+        return score_images(reference_path, candidate_paths, prompt)
     except Exception as exc:  # noqa: BLE001
         print(f"UYARI: kalite kontrolü çalışmadı ({exc})")
         return {"puan": 0, "gecti": False, "hatalar": [f"kalite kontrolü çalışmadı: {exc}"]}

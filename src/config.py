@@ -56,9 +56,16 @@ VIDEO_PROVIDER = os.environ.get("VIDEO_PROVIDER", "wiro")
 #               riski sifir ama daha "reklam gibi" durur.
 # "post"     -> AI YOK, gercek fotograflari oldugu gibi kaydirmali gonderi
 #               olarak yollar (video render'a gerek yoksa)
-# "reklam"   -> (VARSAYILAN) rakip reklam analizi + sahne gorseli + AI video
+# "gonderi"  -> (VARSAYILAN) VIDEO YOK: gercek urun fotograflarindan Gemini ile
+#               ayni sik studyo sahnesinde farkli acilardan 4:5 gorseller
+#               uretir, kalite kontrolunden gecenleri kaydirmali gonderi
+#               olarak yollar. Bkz. src/gonderi_pipeline.py
+# "reklam"   -> rakip reklam analizi + sahne gorseli + AI video
 #               + otomatik kalite kontrolu + Turkce yazili kurgu. Bkz. src/ad_pipeline.py
-CONTENT_MODE = (os.environ.get("CONTENT_MODE") or "reklam").strip().lower()
+CONTENT_MODE = (os.environ.get("CONTENT_MODE") or "gonderi").strip().lower()
+
+# "gonderi" modunda kac aci/kare uretilsin (en fazla 4: kapak, yan, arka, detay)
+POST_ANGLES = max(1, min(4, int(os.environ.get("POST_ANGLES") or "4")))
 
 # Bu API anahtari icin ListModels ile dogrulandi: sadece Veo 3.1 preview
 # modelleri destekleniyor (veo-2.0 / veo-3.0 bu anahtarda YOK). "fast" varyanti

@@ -56,6 +56,7 @@ jobs:
           APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
           COMPETITOR_PAGES: ${{ vars.COMPETITOR_PAGES }}
           CONTENT_MODE: ${{ vars.CONTENT_MODE }}
+          POST_ANGLES: ${{ vars.POST_ANGLES }}
           IGNORE_DAILY_LIMIT: ${{ inputs.limit_yok && 'true' || '' }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
