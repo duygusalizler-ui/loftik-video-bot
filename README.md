@@ -7,14 +7,14 @@ Video yerine trendnora tarzı **kaydırmalı Instagram gönderisi** üretir:
 1. Ürünü seçer (Eylül–Mart arası %70 bot önceliği aynen devam).
 2. Sitedeki gerçek fotoğrafları **referans** alarak Gemini ile aynı şık stüdyo
    sahnesinde (mermer masa, gün ışığı, yaprak gölgeleri; kışın atkı/kozalak)
-   4 açıdan 4:5 görsel üretir: kapak (çift, 3/4), yan profil, önden çift, yakın detay.
+   6 açıdan 4:5 görsel üretir: kapak (çift, 3/4), yan profil, önden çift, diğer yandan 3/4, geniş sahne, yakın detay. Gönderide en az 3, en fazla 6 kare olur; 3 kareye ulaşamayan ürün atlanır ve aynı çalışmada başka ürün denenir (en fazla 3 ürün).
 3. Her kareyi gerçek fotoğrafla karşılaştırır (model, renk, taban, logo/yazı,
    ayak/insan). 7/10 altı yeniden üretilir; yine geçmezse o kare atlanır.
 4. Geçen kareleri Telegram'a kaydırmalı gönderi + hazır açıklama olarak yollar.
    Hiç kare geçmezse hatalı görsel göndermez, sadece uyarı mesajı atar.
 
 Günde en fazla `MAX_POSTS_PER_DAY` (varsayılan 2). Ayarlar: `CONTENT_MODE`
-(repo Variable, boşsa `gonderi`), `POST_ANGLES` (1–4, varsayılan 4).
+(repo Variable, boşsa `gonderi`), `POST_ANGLES` (1–6, varsayılan 6), `MIN_POST_IMAGES` (varsayılan 3).
 Eski video moduna dönmek için `CONTENT_MODE=reklam`.
 
 ---

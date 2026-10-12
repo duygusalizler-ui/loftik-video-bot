@@ -48,6 +48,11 @@ ANGLES = [
             "side and the sole edge fully visible, centered and large in the frame."),
     ("on", "A PAIR of the shoes standing side by side, seen straight from the front at a slightly "
            "low eye-level angle, toes pointing toward the camera, both fully visible and large."),
+    ("capraz", "ONE single shoe at a three-quarter front angle from the other side, pointing right, "
+               "the toe, the side and the sole clearly visible, large in the frame."),
+    ("genis", "A PAIR of the shoes placed a little further from the camera in a wider shot that shows "
+              "more of the styled studio scene, both shoes at a three-quarter front angle, still the clear "
+              "main subject."),
     ("detay", "A close-up detail shot of ONE shoe at a low front angle: the material texture, "
               "stitching and the sole are clearly visible and sharp, the shoe fills the frame."),
 ]
@@ -160,28 +165,55 @@ def generate_post_image(refs: list, prompt: str, out_path: str, product_title: s
     raise RuntimeError("Gemini ürün görseli döndürmedi.")
 
 
+def _try_angle(refs, reference_path, name, angle, winter, work, tag, attempts, product_title, qa_log):
+    prompt = scene_prompt(angle, winter)
+    for attempt in range(1, attempts + 1):
+        try:
+            print(f"Gönderi karesi '{name}': görsel üretiliyor (deneme {tag}{attempt})...")
+            img = generate_post_image(refs, prompt, os.path.join(work, f"{name}_{tag}{attempt}.png"), product_title)
+        except QuotaExceededError:
+            raise
+        except Exception as exc:  # noqa: BLE001
+            print(f"UYARI: kare üretilemedi: {exc}")
+            continue
+        qa = quality_check.safe_score(reference_path, [img], QA_PROMPT_STUDIO)
+        qa_log.append({"asama": name, "deneme": f"{tag}{attempt}", **qa})
+        print(f"  kalite puanı: {qa['puan']}/10 {qa.get('hatalar') or ''}")
+        if qa["gecti"]:
+            return img
+    return None
+
+
 def build_post(product, reference_path: str, extra_refs: list, winter: bool, work: str) -> tuple[list, list]:
-    """Kalite kontrolunden gecen gorsellerin yollari + qa kaydi dondurur."""
+    """Kalite kontrolunden gecen gorsellerin yollari + qa kaydi dondurur.
+
+    Once her aci bir kez (SCENE_IMAGE_ATTEMPTS denemeyle) uretilir; en az
+    MIN_POST_IMAGES kareye ulasilamazsa basarisiz acilara POST_EXTRA_ATTEMPTS
+    kadar ek deneme verilir. Kare sirasi her zaman ANGLES sirasidir (kapak once).
+    """
     os.makedirs(work, exist_ok=True)
     refs = [reference_path] + list(extra_refs or [])[:3]
-    images, qa_log = [], []
-    for name, angle in ANGLES[: config.POST_ANGLES]:
-        prompt = scene_prompt(angle, winter)
-        for attempt in range(1, config.SCENE_IMAGE_ATTEMPTS + 1):
-            try:
-                print(f"Gönderi karesi '{name}': görsel üretiliyor (deneme {attempt})...")
-                img = generate_post_image(refs, prompt, os.path.join(work, f"{name}_{attempt}.png"), product.title)
-            except QuotaExceededError:
-                raise
-            except Exception as exc:  # noqa: BLE001
-                print(f"UYARI: kare üretilemedi: {exc}")
-                continue
-            qa = quality_check.safe_score(reference_path, [img], QA_PROMPT_STUDIO)
-            qa_log.append({"asama": name, "deneme": attempt, **qa})
-            print(f"  kalite puanı: {qa['puan']}/10 {qa.get('hatalar') or ''}")
-            if qa["gecti"]:
-                images.append(img)
+    angles = ANGLES[: config.POST_ANGLES]
+    passed: dict = {}
+    qa_log: list = []
+    for name, angle in angles:
+        img = _try_angle(refs, reference_path, name, angle, winter, work, "", config.POST_ANGLE_ATTEMPTS,
+                         product.title, qa_log)
+        if img:
+            passed[name] = img
+    extra_left = config.POST_EXTRA_ATTEMPTS
+    while len(passed) < config.MIN_POST_IMAGES and extra_left > 0:
+        missing = [(n, a) for n, a in angles if n not in passed]
+        if not missing:
+            break
+        for name, angle in missing:
+            if extra_left <= 0 or len(passed) >= config.MIN_POST_IMAGES:
                 break
+            extra_left -= 1
+            img = _try_angle(refs, reference_path, name, angle, winter, work, "ek", 1, product.title, qa_log)
+            if img:
+                passed[name] = img
+    images = [passed[n] for n, _ in angles if n in passed]
     return images, qa_log
 
 
