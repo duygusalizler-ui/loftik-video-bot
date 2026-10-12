@@ -273,6 +273,14 @@
       "kare": 4,
       "bot": true,
       "not": "12 Eki üretildi, 13 Eki 12:30 için planlandı"
+    },
+    {
+      "url": "https://www.loftikayakkabi.com/urun/mn611-cbt-erkek-ayakkabi-siyah",
+      "title": "MN611 - CBT Erkek Ayakkabı SIYAH",
+      "posted_at": "2026-10-12T18:16:30.378669+00:00",
+      "mod": "gonderi",
+      "kare": 4,
+      "bot": false
     }
   ]
 }
