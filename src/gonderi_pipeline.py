@@ -30,8 +30,10 @@ POST_SIZE = (1080, 1350)  # Instagram 4:5
 BASE_SET = (
     "Bright, clean product photo for an Instagram shoe store, shot in a real photo studio: "
     "white Carrara marble tabletop, soft natural daylight from a window on the left with gentle "
-    "palm-leaf shadows falling across the scene, light neutral background wall, crisp focus on "
-    "the shoes, realistic soft contact shadows under the soles."
+    "palm-leaf shadows falling on the back wall and the tabletop only -- NO leaf shadows across "
+    "the shoes themselves, the shoes are evenly and clearly lit so their true color and material "
+    "are easy to see. Light neutral background wall, crisp focus on the shoes, realistic soft "
+    "contact shadows under the soles."
 )
 WINTER_PROPS = (
     " Cozy winter mood: a folded chunky cream knit scarf and two pine cones placed beside the "
@@ -54,6 +56,8 @@ RULES = (
     " The shoes MUST be EXACTLY the product in the reference photos: same model and shape, same "
     "upper color and material (leather vs suede vs fabric), same sole color and thickness, same "
     "laces / buckles / zips / fur lining / stitching, same shaft height. Do not redesign anything. "
+    "Material texture must be true to life: suede looks soft, matte and slightly napped with visible "
+    "fibers (never smooth canvas or fabric); leather shows natural grain and a gentle sheen. "
     "NO feet, NO legs, NO people, NO hands. NO text, NO letters, NO logos, NO brand names, NO price "
     "tags anywhere (also not on boxes, books or props). Exactly the number of shoes described. "
     "Vertical 4:5 composition. Photorealistic, like a real professional e-commerce photo: no "
@@ -76,6 +80,8 @@ Sadece şu JSON'u döndür:
 {"urun_benzerligi": 0-10, "gercekcilik": 0-10, "hatalar": ["kısa Türkçe madde"], "puan": 0-10}
 "puan" = en düşük kritik değer. Taban rengi, ana renk veya model farklıysa puan en fazla 4.
 Yazı/logo varsa veya ayak/insan varsa puan en fazla 4.
+Malzeme dokusu farklıysa (ör. süet, kumaş/kanvas gibi pürüzsüz duruyorsa) veya ürünün üstüne düşen
+gölgeler rengini/dokusunu gizliyorsa puan en fazla 6.
 """
 
 
