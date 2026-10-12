@@ -137,9 +137,14 @@ def build_story_caption(title: str, category_slug=None, spec_line: str | None = 
         print("UYARI: Üretilen açıklama kurallara uymadı, standart açıklama kullanılacak.")
         return None
     text = "\n".join(line for line in text.splitlines() if not line.strip().startswith("#")).strip()
+    # Müşteri beğendiği modeli sitede adıyla aratabilsin diye model adı + gerçek özellikler sabit eklenir.
+    model_block = f"👟 Model: {title}"
+    if spec_line:
+        model_block += f"\n{spec_line}"
+    model_block += "\n🔎 loftikayakkabi.com'da model adıyla aratabilirsin."
     tags = _hashtags_for(title, category_slug)
     tags.append(config.BRAND_HASHTAG)
-    return f"{text}\n\n{' '.join(tags)}"
+    return f"{text}\n\n{model_block}\n\n{' '.join(tags)}"
 
 
 def build_caption(title: str, brand, category_slug=None, spec_line: str | None = None) -> str:
