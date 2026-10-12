@@ -163,3 +163,10 @@ Ders: sonraki konular "bilinen olay + sayı" kalıbına yaslansın; kapakta haya
 - KURAL (her yeni bölüm): (1) ilk 3 sn başlığın vaadini birebir söyle (sayı/derece); (2) ilk kare en çarpıcı, hareketli tehlike anı — durağan manzara değil; (3) "My name is…" tanıtımı ≥10. sn'den sonra.
 - Hedef: 0:30 tutmayı %49 → %55–60; böylece ortalama izlenme %30 → %35+.
 - Ep005 açılışı kurala uyuyor (balta + donmuş ekmek, isim ~10. sn). Ep006 sahne 1'in ilk çekimi daha hareketli yapıldı (rüzgâr buz kristallerini yüze savuruyor).
+
+## §21 Napolyon dalgası durdu + A/B sonucu (12 Eki)
+- 12 Eki ~09:00 TR'de izlenme ani olarak ~0'a düştü; gösterimler 6,2K'da düz çizgi → YouTube göz atma (öneri) testini bitirdi. Kısıtlama yok, video herkese açık. Aynı sabah A/B testi bitti.
+- A/B kazananı ORİJİNAL paket: "The −30°C Nightmare…" + "NEVER SLEEP" (%38) > "SURVIVE" (%30) > "RULE #1" (%31). Kalıp doğrulandı: yakın plan (hayalî) yüz + 2 kelime sert yazı + başlıkta sayı/acı.
+- Toplam: 4,5 günde ~1.690 izlenme, TO %3,3, ortalama izlenme %29,8.
+- Aksiyon: videoya DOKUNMA; yeni yükleme (ep005, 14 Eki) eski videoya ikinci dalga getirebilir — 3–7 gün izle.
+- Donner: 48 sa'te 43 gösterim, TO %0 → A/B durdurulup tek kapakla ("4 MONTHS") devam önerildi.
