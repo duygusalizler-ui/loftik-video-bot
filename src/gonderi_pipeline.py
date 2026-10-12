@@ -46,8 +46,8 @@ ANGLES = [
               "shoe slightly behind and turned the other way, both fully visible, filling most of the frame."),
     ("yan", "ONE single shoe shown in a clean side profile view, pointing left, the full outer "
             "side and the sole edge fully visible, centered and large in the frame."),
-    ("arka", "A PAIR of the shoes seen from a high three-quarter back angle, showing the heels, "
-             "the back of the shoes and the inside lining, side by side."),
+    ("on", "A PAIR of the shoes standing side by side, seen straight from the front at a slightly "
+           "low eye-level angle, toes pointing toward the camera, both fully visible and large."),
     ("detay", "A close-up detail shot of ONE shoe at a low front angle: the material texture, "
               "stitching and the sole are clearly visible and sharp, the shoe fills the frame."),
 ]
@@ -56,6 +56,9 @@ RULES = (
     " The shoes MUST be EXACTLY the product in the reference photos: same model and shape, same "
     "upper color and material (leather vs suede vs fabric), same sole color and thickness, same "
     "laces / buckles / zips / fur lining / stitching, same shaft height. Do not redesign anything. "
+    "Do NOT invent parts that are not clearly visible in the reference photos: no extra pull tabs, "
+    "loops, rings, straps, buckles, logos or seams -- where a part is not visible in the references "
+    "(e.g. the back of the heel), keep it plain and simple. "
     "Material texture must be true to life: suede looks soft, matte and slightly napped with visible "
     "fibers (never smooth canvas or fabric); leather shows natural grain and a gentle sheen. "
     "NO feet, NO legs, NO people, NO hands. NO text, NO letters, NO logos, NO brand names, NO price "
@@ -75,12 +78,14 @@ SONRAKİ görsel: yapay zekâyla üretilmiş stüdyo ürün fotoğrafı (Instagr
 4. Ayak, bacak, el veya insan var mı? Ayakkabı sayısı mantıklı mı (tek ya da bir çift)?
 5. Yapay zekâ hatası var mı (eriyen/bozuk şekiller, çift ya da havada duran nesneler, saçma detaylar)?
 Stüdyo ışığı ve temiz/şık sahne BURADA HATA DEĞİL, istenen şey budur.
+Referansta görünmeyen bir bölgeyi (ör. topuk arkası) sade göstermek hata değildir; ama referansta
+olmayan belirgin bir parça (çekme kulpu, halka, toka, logo) eklenmişse bu hatadır.
 
 Sadece şu JSON'u döndür:
 {"urun_benzerligi": 0-10, "gercekcilik": 0-10, "hatalar": ["kısa Türkçe madde"], "puan": 0-10}
 "puan" = en düşük kritik değer. Taban rengi, ana renk veya model farklıysa puan en fazla 4.
 Yazı/logo varsa veya ayak/insan varsa puan en fazla 4.
-Malzeme dokusu farklıysa (ör. süet, kumaş/kanvas gibi pürüzsüz duruyorsa) veya ürünün üstüne düşen
+Malzeme açıkça farklı bir malzemeye dönüşmüşse (ör. süet belirgin şekilde örgü/kanvas kumaş gibiyse) veya ürünün üstüne düşen
 gölgeler rengini/dokusunu gizliyorsa puan en fazla 6.
 """
 
@@ -151,7 +156,7 @@ def generate_post_image(refs: list, prompt: str, out_path: str, product_title: s
 def build_post(product, reference_path: str, extra_refs: list, winter: bool, work: str) -> tuple[list, list]:
     """Kalite kontrolunden gecen gorsellerin yollari + qa kaydi dondurur."""
     os.makedirs(work, exist_ok=True)
-    refs = [reference_path] + list(extra_refs or [])[:2]
+    refs = [reference_path] + list(extra_refs or [])[:3]
     images, qa_log = [], []
     for name, angle in ANGLES[: config.POST_ANGLES]:
         prompt = scene_prompt(angle, winter)

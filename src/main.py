@@ -109,7 +109,7 @@ def _run_post_mode(product, candidate, raw_image_path: str, caption: str, tmp: s
     gallery = _download_gallery(product, raw_image_path, tmp)
     winter = bool(candidate.get("is_boot")) or config.boots_enabled()
     images, qa_log = gonderi_pipeline.build_post(
-        product, raw_image_path, gallery[1:3], winter, f"{tmp}/gonderi_is"
+        product, raw_image_path, gallery[1:4], winter, f"{tmp}/gonderi_is"
     )
     summary = gonderi_pipeline.qa_summary(images, qa_log)
     if len(images) >= 2:
