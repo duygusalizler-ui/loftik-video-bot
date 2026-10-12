@@ -87,6 +87,61 @@ def _hashtags_for(title: str, category_slug) -> list:
     return tags
 
 
+STORY_PROMPT = """Loftik adlı Türk ayakkabı markasının Instagram hesabı için bir gönderi açıklaması yaz.
+
+Ürün: {title}
+Kategori: {category}
+Bilinen gerçek özellikler (sadece bunları kullan, yenisini UYDURMA): {specs}
+Mevsim havası: {season}
+
+Amaç SATIŞ DEĞİL, MARKAYI TANITMAK. Ton: biraz duygusal, biraz otoriter; kendinden emin,
+sakin, kaliteli bir marka sesi. Marka mottosu: "Şıklık ve konfor bir arada."
+
+Kurallar:
+- Türkçe, 900-1300 karakter, 5-7 kısa paragraf.
+- İlk satır tek cümlelik, merak uyandıran, duygusal bir giriş olsun (ürün adını ilk satıra yazma).
+- Günlük hayattan bir an anlat (sabah çıkış, yağmurlu kaldırım, uzun gün sonu gibi), sonra
+  "Loftik olarak..." diye markanın bakış açısını anlat (özen, kalite, kalıcılık, hızlı tüketilen moda değil).
+- Ürünü bu hikâyenin İÇİNE yerleştir: rengi ve görünen tasarımı anlat, nasıl kombinlenebileceğini söyle.
+- Malzeme, astar, taban hakkında sadece yukarıda verilen bilgileri kullan; "hakiki deri", "su geçirmez",
+  "ortopedik" gibi verilmemiş iddialar YAZMA.
+- KESİNLİKLE YOK: fiyat, indirim, kampanya, "satın al", "sipariş", "hemen", "link", "bio", "stok", "kargo".
+- Sonda markanın duruşunu özetleyen kısa, akılda kalan bir kapanış cümlesi ve en fazla 1 emoji.
+- Hashtag YAZMA (ayrıca eklenecek). Başlık, tırnak, açıklama notu ekleme; sadece metni ver."""
+
+_BANNED = ("fiyat", "indirim", "kampanya", "satın al", "sipariş", "link", "bio", "stok", "kargo", "₺", " tl")
+
+
+def build_story_caption(title: str, category_slug=None, spec_line: str | None = None,
+                        winter: bool = False) -> str | None:
+    """Marka tanıtımı odaklı, uzun ve duygusal açıklama (Gemini). Olmazsa None döner."""
+    try:
+        from google import genai
+        from . import gemini_util
+
+        if not config.GEMINI_API_KEY:
+            return None
+        client = genai.Client(api_key=config.GEMINI_API_KEY)
+        prompt = STORY_PROMPT.format(
+            title=title,
+            category=CATEGORY_LABELS.get(category_slug) or "Ayakkabı",
+            specs=spec_line or "verilmedi (malzeme hakkında hiçbir şey yazma)",
+            season="kış, serin ve yağmurlu günler" if winter else "mevsim geçişi, günlük şehir hayatı",
+        )
+        text = (gemini_util.generate_content(client, prompt).text or "").strip().strip('"')
+    except Exception as exc:  # noqa: BLE001
+        print(f"UYARI: Marka hikâyesi açıklaması üretilemedi ({exc}), standart açıklama kullanılacak.")
+        return None
+    low = f" {text.lower()} "
+    if len(text) < 500 or any(b in low for b in _BANNED):
+        print("UYARI: Üretilen açıklama kurallara uymadı, standart açıklama kullanılacak.")
+        return None
+    text = "\n".join(line for line in text.splitlines() if not line.strip().startswith("#")).strip()
+    tags = _hashtags_for(title, category_slug)
+    tags.append(config.BRAND_HASHTAG)
+    return f"{text}\n\n{' '.join(tags)}"
+
+
 def build_caption(title: str, brand, category_slug=None, spec_line: str | None = None) -> str:
     lines = [f"✨ {title}"]
     if brand:

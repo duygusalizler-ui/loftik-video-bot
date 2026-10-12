@@ -132,6 +132,22 @@ def _run_post_mode(product, candidate, raw_image_path: str, caption: str, tmp: s
     return info
 
 
+def _build_story_text(product, candidate) -> str:
+    """Gönderi modu: marka tanıtımı odaklı uzun açıklama; olmazsa standart açıklama."""
+    spec_line = None
+    try:
+        specs = chekich.find_matching_specs(product.title)
+        if specs:
+            spec_line = caption_mod.build_spec_line(specs)
+    except Exception as exc:  # noqa: BLE001
+        print(f"UYARI: Chekich eşleştirme başarısız ({exc}).")
+    winter = bool(candidate.get("is_boot")) or config.boots_enabled()
+    story = caption_mod.build_story_caption(product.title, product.category_slug, spec_line, winter)
+    if story:
+        return story
+    return caption_mod.build_caption(product.title, product.brand, product.category_slug, spec_line)
+
+
 def _build_text(product) -> str:
     spec_line = None
     try:
@@ -166,7 +182,7 @@ def _run_post_with_retries(catalog: list) -> None:
             continue
         with tempfile.TemporaryDirectory() as tmp:
             raw_image_path = scraper.download_binary(product.main_image, f"{tmp}/product_raw.jpg")
-            info = _run_post_mode(product, candidate, raw_image_path, _build_text(product), tmp)
+            info = _run_post_mode(product, candidate, raw_image_path, _build_story_text(product, candidate), tmp)
         state.mark_posted(product.url, product.title, info)
         if not info.get("atlandi"):
             print("Tamamlandı, data/posted.json güncellendi.")
