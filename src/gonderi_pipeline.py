@@ -44,17 +44,19 @@ SEASON_PROPS = " A small potted green plant softly out of focus in the backgroun
 ANGLES = [
     ("kapak", "A PAIR of the shoes: one shoe in front at a three-quarter front angle, the second "
               "shoe slightly behind and turned the other way, both fully visible, filling most of the frame."),
-    ("yan", "ONE single shoe shown in a clean side profile view, pointing left, the full outer "
-            "side and the sole edge fully visible, centered and large in the frame."),
+    ("yan", "A PAIR of the shoes in a clean side profile view: one shoe in front pointing left showing "
+            "its full outer side and sole edge, the second shoe right behind it, slightly offset, also "
+            "pointing left, both clearly visible and large in the frame."),
     ("on", "A PAIR of the shoes standing side by side, seen straight from the front at a slightly "
            "low eye-level angle, toes pointing toward the camera, both fully visible and large."),
-    ("capraz", "ONE single shoe at a three-quarter front angle from the other side, pointing right, "
-               "the toe, the side and the sole clearly visible, large in the frame."),
+    ("capraz", "A PAIR of the shoes at a three-quarter front angle from the other side, both pointing "
+               "right, one slightly in front of the other, toes, sides and soles clearly visible."),
     ("genis", "A PAIR of the shoes placed a little further from the camera in a wider shot that shows "
               "more of the styled studio scene, both shoes at a three-quarter front angle, still the clear "
               "main subject."),
-    ("detay", "A close-up detail shot of ONE shoe at a low front angle: the material texture, "
-              "stitching and the sole are clearly visible and sharp, the shoe fills the frame."),
+    ("detay", "A closer shot of a PAIR of the shoes at a low front angle: one shoe sharp in the "
+              "foreground showing material texture, stitching and sole, the second shoe right beside "
+              "it slightly softer; both shoes visible in the frame."),
 ]
 
 RULES = (
@@ -72,7 +74,7 @@ RULES = (
     "NO feet, NO legs, NO people, NO hands. NO text, NO letters, NO logos, NO brand names, NO price "
     "tags anywhere in the scene (also not on boxes, books or props). If the product itself has its "
     "own small logo, number or print in the reference, keep it in the same place, same size and "
-    "color, simple and clean -- never erase it and never add a new one. Exactly the number of shoes described. "
+    "color, simple and clean -- never erase it and never add a new one. ALWAYS show exactly TWO shoes (one pair, a left and a right shoe) -- never a single shoe, never more than two. "
     "Vertical 4:5 composition. Photorealistic, like a real professional e-commerce photo: no "
     "surreal elements, no melting shapes, no duplicated or floating objects."
 )
@@ -85,7 +87,7 @@ SONRAKİ görsel: yapay zekâyla üretilmiş stüdyo ürün fotoğrafı (Instagr
 1. Model/şekil aynı mı (burun, bilek/konç yüksekliği, bağcık/toka/fermuar/lastik, topuk)?
 2. Renkler ve malzeme aynı mı (üst malzeme, süet/deri farkı, astar/kürk, TABAN rengi ve kalınlığı)?
 3. Uydurma logo, yazı, desen, fiyat etiketi eklenmiş mi (ürünün üstünde veya sahnede)?
-4. Ayak, bacak, el veya insan var mı? Ayakkabı sayısı mantıklı mı (tek ya da bir çift)?
+4. Ayak, bacak, el veya insan var mı? Karede TAM OLARAK bir çift (iki ayakkabı: bir sol, bir sağ) var mı?
 5. Yapay zekâ hatası var mı (eriyen/bozuk şekiller, çift ya da havada duran nesneler, saçma detaylar)?
 Stüdyo ışığı ve temiz/şık sahne BURADA HATA DEĞİL, istenen şey budur.
 Referansta görünmeyen bir bölgeyi (ör. topuk arkası) sade göstermek hata değildir; ama referansta
@@ -95,6 +97,7 @@ Sadece şu JSON'u döndür:
 {"urun_benzerligi": 0-10, "gercekcilik": 0-10, "hatalar": ["kısa Türkçe madde"], "puan": 0-10}
 "puan" = en düşük kritik değer. Taban rengi, ana renk veya model farklıysa puan en fazla 4.
 Yazı/logo varsa veya ayak/insan varsa puan en fazla 4.
+Karede tek ayakkabı varsa, ikiden fazla ayakkabı varsa ya da iki ayakkabı da aynı ayağa aitse puan en fazla 4.
 Malzeme açıkça farklı bir malzemeye dönüşmüşse (ör. süet belirgin şekilde örgü/kanvas kumaş gibiyse) veya ürünün üstüne düşen
 gölgeler rengini/dokusunu gizliyorsa puan en fazla 6.
 Renk tonu kaymışsa (ör. siyah ürün kahverengi/füme/gri görünüyorsa, bej daha soluk ya da daha koyuysa)
