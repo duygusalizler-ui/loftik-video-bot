@@ -65,7 +65,9 @@ RULES = (
     "Material texture must be true to life: suede looks soft, matte and slightly napped with visible "
     "fibers (never smooth canvas or fabric); leather shows natural grain and a gentle sheen. "
     "NO feet, NO legs, NO people, NO hands. NO text, NO letters, NO logos, NO brand names, NO price "
-    "tags anywhere (also not on boxes, books or props). Exactly the number of shoes described. "
+    "tags anywhere in the scene (also not on boxes, books or props). If the product itself has its "
+    "own small logo, number or print in the reference, keep it in the same place, same size and "
+    "color, simple and clean -- never erase it and never add a new one. Exactly the number of shoes described. "
     "Vertical 4:5 composition. Photorealistic, like a real professional e-commerce photo: no "
     "surreal elements, no melting shapes, no duplicated or floating objects."
 )
