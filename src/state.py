@@ -53,7 +53,7 @@ def posts_today() -> int:
             when = datetime.fromisoformat(entry["posted_at"]).astimezone(TR_TZ).date()
         except (KeyError, ValueError):
             continue
-        if when == today:
+        if when == today and not entry.get("atlandi"):
             count += 1
     return count
 
@@ -66,7 +66,7 @@ def boot_posted_today() -> bool:
             when = datetime.fromisoformat(entry["posted_at"]).astimezone(TR_TZ).date()
         except (KeyError, ValueError):
             continue
-        if when == today and entry.get("bot"):
+        if when == today and entry.get("bot") and not entry.get("atlandi"):
             return True
     return False
 

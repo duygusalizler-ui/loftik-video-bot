@@ -53,15 +53,38 @@ def _detect_gender(title: str, category_slug) -> str:
     return "neutral"
 
 
-def _hashtags_for(title: str, category_slug) -> list:
+# Instagram artik gonderi basina en fazla 5 hashtag kabul ediyor (marka etiketi dahil).
+MAX_HASHTAGS = 5
+
+
+def _product_tags(title: str, category_slug) -> list:
+    """Urunun turune ozel, en cok aranan etiketler (en spesifik once)."""
+    t = f"{title} {category_slug or ''}".lower()
     gender = _detect_gender(title, category_slug)
+    tags = []
+    if "bot" in t.split() or category_slug == "bot" or " bot " in f" {t} ":
+        tags.append({"male": "#erkekbot", "female": "#kadınbot"}.get(gender, "#bot"))
+        tags.append("#kışlıkbot")
+    elif "spor" in t or "sneaker" in t:
+        tags += ["#sporayakkabı", "#sneaker"]
+    elif "deri" in t or category_slug == "deri-ayakkabi":
+        tags.append("#deriayakkabı")
     if gender == "male":
-        pool = NEUTRAL_HASHTAGS + MALE_HASHTAGS
+        tags.append("#erkekayakkabı")
     elif gender == "female":
-        pool = NEUTRAL_HASHTAGS + FEMALE_HASHTAGS
-    else:
-        pool = NEUTRAL_HASHTAGS
-    return random.sample(pool, k=min(4, len(pool)))
+        tags.append("#kadınayakkabı")
+    return tags
+
+
+def _hashtags_for(title: str, category_slug) -> list:
+    """Marka etiketi haric en fazla MAX_HASHTAGS-1 etiket: once urune ozel, kalan genel."""
+    slots = MAX_HASHTAGS - 1
+    tags = list(dict.fromkeys(_product_tags(title, category_slug)))[:slots]
+    gender = _detect_gender(title, category_slug)
+    pool = NEUTRAL_HASHTAGS + (MALE_HASHTAGS if gender == "male" else FEMALE_HASHTAGS if gender == "female" else [])
+    pool = [p for p in pool if p not in tags]
+    tags += random.sample(pool, k=max(0, min(slots - len(tags), len(pool))))
+    return tags
 
 
 def build_caption(title: str, brand, category_slug=None, spec_line: str | None = None) -> str:

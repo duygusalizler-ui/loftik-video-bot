@@ -44,12 +44,19 @@ SEASON_PROPS = " A small potted green plant softly out of focus in the backgroun
 ANGLES = [
     ("kapak", "A PAIR of the shoes: one shoe in front at a three-quarter front angle, the second "
               "shoe slightly behind and turned the other way, both fully visible, filling most of the frame."),
-    ("yan", "ONE single shoe shown in a clean side profile view, pointing left, the full outer "
-            "side and the sole edge fully visible, centered and large in the frame."),
+    ("yan", "A PAIR of the shoes in a clean side profile view: one shoe in front pointing left showing "
+            "its full outer side and sole edge, the second shoe right behind it, slightly offset, also "
+            "pointing left, both clearly visible and large in the frame."),
     ("on", "A PAIR of the shoes standing side by side, seen straight from the front at a slightly "
            "low eye-level angle, toes pointing toward the camera, both fully visible and large."),
-    ("detay", "A close-up detail shot of ONE shoe at a low front angle: the material texture, "
-              "stitching and the sole are clearly visible and sharp, the shoe fills the frame."),
+    ("capraz", "A PAIR of the shoes at a three-quarter front angle from the other side, both pointing "
+               "right, one slightly in front of the other, toes, sides and soles clearly visible."),
+    ("genis", "A PAIR of the shoes placed a little further from the camera in a wider shot that shows "
+              "more of the styled studio scene, both shoes at a three-quarter front angle, still the clear "
+              "main subject."),
+    ("detay", "A closer shot of a PAIR of the shoes at a low front angle: one shoe sharp in the "
+              "foreground showing material texture, stitching and sole, the second shoe right beside "
+              "it slightly softer; both shoes visible in the frame."),
 ]
 
 RULES = (
@@ -67,7 +74,7 @@ RULES = (
     "NO feet, NO legs, NO people, NO hands. NO text, NO letters, NO logos, NO brand names, NO price "
     "tags anywhere in the scene (also not on boxes, books or props). If the product itself has its "
     "own small logo, number or print in the reference, keep it in the same place, same size and "
-    "color, simple and clean -- never erase it and never add a new one. Exactly the number of shoes described. "
+    "color, simple and clean -- never erase it and never add a new one. ALWAYS show exactly TWO shoes (one pair, a left and a right shoe) -- never a single shoe, never more than two. "
     "Vertical 4:5 composition. Photorealistic, like a real professional e-commerce photo: no "
     "surreal elements, no melting shapes, no duplicated or floating objects."
 )
@@ -80,16 +87,19 @@ SONRAKİ görsel: yapay zekâyla üretilmiş stüdyo ürün fotoğrafı (Instagr
 1. Model/şekil aynı mı (burun, bilek/konç yüksekliği, bağcık/toka/fermuar/lastik, topuk)?
 2. Renkler ve malzeme aynı mı (üst malzeme, süet/deri farkı, astar/kürk, TABAN rengi ve kalınlığı)?
 3. Uydurma logo, yazı, desen, fiyat etiketi eklenmiş mi (ürünün üstünde veya sahnede)?
-4. Ayak, bacak, el veya insan var mı? Ayakkabı sayısı mantıklı mı (tek ya da bir çift)?
+4. Ayak, bacak, el veya insan var mı? Karede TAM OLARAK bir çift (iki ayakkabı: bir sol, bir sağ) var mı?
 5. Yapay zekâ hatası var mı (eriyen/bozuk şekiller, çift ya da havada duran nesneler, saçma detaylar)?
 Stüdyo ışığı ve temiz/şık sahne BURADA HATA DEĞİL, istenen şey budur.
-Referansta görünmeyen bir bölgeyi (ör. topuk arkası) sade göstermek hata değildir; ama referansta
-olmayan belirgin bir parça (çekme kulpu, halka, toka, logo) eklenmişse bu hatadır.
+Referans fotoğraflarda GÖRÜNMEYEN bölgeler (ör. topuk arkası) doğrulanamaz: oraya ürün tipine uygun,
+sade bir detay (ör. botun arkasında küçük bir çekme kulpu) eklenmişse bu en fazla 1 puan düşürür,
+kareyi tek başına eletmez. Ama referansta GÖRÜNEN bölgelerde (burun, yan, bağcık bölgesi, taban)
+olmayan bir parça (toka, fermuar, logo, desen) eklenmişse bu ciddi hatadır.
 
 Sadece şu JSON'u döndür:
 {"urun_benzerligi": 0-10, "gercekcilik": 0-10, "hatalar": ["kısa Türkçe madde"], "puan": 0-10}
 "puan" = en düşük kritik değer. Taban rengi, ana renk veya model farklıysa puan en fazla 4.
 Yazı/logo varsa veya ayak/insan varsa puan en fazla 4.
+Karede tek ayakkabı varsa, ikiden fazla ayakkabı varsa ya da iki ayakkabı da aynı ayağa aitse puan en fazla 4.
 Malzeme açıkça farklı bir malzemeye dönüşmüşse (ör. süet belirgin şekilde örgü/kanvas kumaş gibiyse) veya ürünün üstüne düşen
 gölgeler rengini/dokusunu gizliyorsa puan en fazla 6.
 Renk tonu kaymışsa (ör. siyah ürün kahverengi/füme/gri görünüyorsa, bej daha soluk ya da daha koyuysa)
@@ -160,35 +170,71 @@ def generate_post_image(refs: list, prompt: str, out_path: str, product_title: s
     raise RuntimeError("Gemini ürün görseli döndürmedi.")
 
 
+def _try_angle(refs, reference_path, name, angle, winter, work, tag, attempts, product_title, qa_log):
+    prompt = scene_prompt(angle, winter)
+    for attempt in range(1, attempts + 1):
+        try:
+            print(f"Gönderi karesi '{name}': görsel üretiliyor (deneme {tag}{attempt})...")
+            img = generate_post_image(refs, prompt, os.path.join(work, f"{name}_{tag}{attempt}.png"), product_title)
+        except QuotaExceededError:
+            raise
+        except Exception as exc:  # noqa: BLE001
+            print(f"UYARI: kare üretilemedi: {exc}")
+            continue
+        qa = quality_check.safe_score(reference_path, [img], QA_PROMPT_STUDIO)
+        qa_log.append({"asama": name, "deneme": f"{tag}{attempt}", **qa})
+        print(f"  kalite puanı: {qa['puan']}/10 {qa.get('hatalar') or ''}")
+        if qa["gecti"]:
+            return img
+    return None
+
+
 def build_post(product, reference_path: str, extra_refs: list, winter: bool, work: str) -> tuple[list, list]:
-    """Kalite kontrolunden gecen gorsellerin yollari + qa kaydi dondurur."""
+    """Kalite kontrolunden gecen gorsellerin yollari + qa kaydi dondurur.
+
+    Acilar sirayla denenir; TARGET_POST_IMAGES (varsayilan 4) kare gecince durulur,
+    sonraki acilar sadece yedektir. Once her aci bir kez (SCENE_IMAGE_ATTEMPTS denemeyle) uretilir; en az
+    MIN_POST_IMAGES kareye ulasilamazsa basarisiz acilara POST_EXTRA_ATTEMPTS
+    kadar ek deneme verilir. Kare sirasi her zaman ANGLES sirasidir (kapak once).
+    """
     os.makedirs(work, exist_ok=True)
     refs = [reference_path] + list(extra_refs or [])[:3]
-    images, qa_log = [], []
-    for name, angle in ANGLES[: config.POST_ANGLES]:
-        prompt = scene_prompt(angle, winter)
-        for attempt in range(1, config.SCENE_IMAGE_ATTEMPTS + 1):
-            try:
-                print(f"Gönderi karesi '{name}': görsel üretiliyor (deneme {attempt})...")
-                img = generate_post_image(refs, prompt, os.path.join(work, f"{name}_{attempt}.png"), product.title)
-            except QuotaExceededError:
-                raise
-            except Exception as exc:  # noqa: BLE001
-                print(f"UYARI: kare üretilemedi: {exc}")
-                continue
-            qa = quality_check.safe_score(reference_path, [img], QA_PROMPT_STUDIO)
-            qa_log.append({"asama": name, "deneme": attempt, **qa})
-            print(f"  kalite puanı: {qa['puan']}/10 {qa.get('hatalar') or ''}")
-            if qa["gecti"]:
-                images.append(img)
+    angles = ANGLES[: config.POST_ANGLES]
+    passed: dict = {}
+    qa_log: list = []
+    target = max(config.MIN_POST_IMAGES, min(config.TARGET_POST_IMAGES, len(angles)))
+    for name, angle in angles:
+        if len(passed) >= target:
+            break  # hedefe ulasildi; kalan acilar sadece yedekti
+        img = _try_angle(refs, reference_path, name, angle, winter, work, "", config.POST_ANGLE_ATTEMPTS,
+                         product.title, qa_log)
+        if img:
+            passed[name] = img
+    # En az MIN_POST_IMAGES kareye tamamla: once gecemeyen acilar tekrar denenir,
+    # sonra bu urunde ise yarayan acilarin farkli bir varyanti uretilir (urun ATILMAZ).
+    extra_left = config.POST_EXTRA_ATTEMPTS
+    variant = 0
+    while len(passed) < config.MIN_POST_IMAGES and extra_left > 0:
+        missing = [(n, a) for n, a in angles if n not in passed]
+        working = [(n, a) for n, a in angles if n in passed and not n.endswith("_v")]
+        pool = missing + [(f"{n}_v{variant}", a) for n, a in working]
+        variant += 1
+        for name, angle in pool:
+            if extra_left <= 0 or len(passed) >= config.MIN_POST_IMAGES:
                 break
+            extra_left -= 1
+            img = _try_angle(refs, reference_path, name, angle, winter, work, "ek", 1, product.title, qa_log)
+            if img:
+                passed[name] = img
+    order = [n for n, _ in angles]
+    images = [passed[n] for n in sorted(passed, key=lambda k: (order.index(k.split("_v")[0]), k))]
     return images, qa_log
 
 
 def qa_summary(images: list, qa_log: list) -> str:
     failed = [q for q in qa_log if not q.get("gecti")]
     lines = [
-        f"✅ {len(images)}/{config.POST_ANGLES} kare kalite kontrolünden geçti "
+        f"✅ {len(images)} kare kalite kontrolünden geçti "
         f"(eşik {config.QA_MIN_SCORE}/10, {len(failed)} deneme elendi)"
     ]
     for q in failed[:4]:

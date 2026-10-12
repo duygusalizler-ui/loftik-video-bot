@@ -64,8 +64,16 @@ VIDEO_PROVIDER = os.environ.get("VIDEO_PROVIDER", "wiro")
 #               + otomatik kalite kontrolu + Turkce yazili kurgu. Bkz. src/ad_pipeline.py
 CONTENT_MODE = (os.environ.get("CONTENT_MODE") or "gonderi").strip().lower()
 
-# "gonderi" modunda kac aci/kare uretilsin (en fazla 4: kapak, yan, arka, detay)
-POST_ANGLES = max(1, min(4, int(os.environ.get("POST_ANGLES") or "4")))
+# "gonderi" modunda kac aci/kare uretilsin (en fazla 6) ve gonderide en az kac kare olmali.
+POST_ANGLES = max(1, min(6, int(os.environ.get("POST_ANGLES") or "6")))
+# Hedef kare sayisi: bu kadar kare gecince uretim durur (kalan acilar sadece yedek).
+TARGET_POST_IMAGES = int(os.environ.get("TARGET_POST_IMAGES") or "4")
+MIN_POST_IMAGES = max(1, min(POST_ANGLES, int(os.environ.get("MIN_POST_IMAGES") or "3")))
+# Her aci icin ilk turdaki deneme sayisi (6 aci x 2 = 12 gorsel; sure ve maliyet sinirli kalsin)
+POST_ANGLE_ATTEMPTS = int(os.environ.get("POST_ANGLE_ATTEMPTS") or "2")
+# En az kare sayisina ulasmak icin basarisiz acilara verilecek ek deneme hakki
+POST_EXTRA_ATTEMPTS = int(os.environ.get("POST_EXTRA_ATTEMPTS") or "12")
+
 
 # Bu API anahtari icin ListModels ile dogrulandi: sadece Veo 3.1 preview
 # modelleri destekleniyor (veo-2.0 / veo-3.0 bu anahtarda YOK). "fast" varyanti

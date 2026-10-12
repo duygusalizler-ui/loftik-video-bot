@@ -257,13 +257,22 @@
       "mod": "reklam"
     },
     {
-      "url": "https://www.loftikayakkabi.com/urun/mn2407-cbt-star-x-erkek-spor-ayakkabi-beyaz-turuncu",
-      "title": "MN2407 - CBT Star-X Erkek Spor Ayakkabı Beyaz/Turuncu",
-      "posted_at": "2026-10-12T15:55:00+00:00",
+      "url": "https://www.loftikayakkabi.com/urun/mn2407-cbt-star-x-erkek-spor-ayakkabi-beyaz-yesil",
+      "title": "MN2407 - CBT Star-X Erkek Spor Ayakkabı BEYAZ/YESIL",
+      "posted_at": "2026-10-12T16:06:02+00:00",
       "mod": "gonderi",
-      "kare": 2,
+      "kare": 4,
       "bot": false,
-      "not": "test gönderisi, 12 Eki akşam elle paylaşıldı"
+      "not": "12 Eki akşam elle paylaşıldı"
+    },
+    {
+      "url": "https://www.loftikayakkabi.com/urun/mn2433-sst-erkek-bot-taba",
+      "title": "MN2433 - SST Erkek Bot TABA",
+      "posted_at": "2026-10-13T06:00:00+00:00",
+      "mod": "gonderi",
+      "kare": 4,
+      "bot": true,
+      "not": "12 Eki üretildi, 13 Eki 12:30 için planlandı"
     }
   ]
 }
