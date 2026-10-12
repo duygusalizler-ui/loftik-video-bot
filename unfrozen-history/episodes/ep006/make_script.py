@@ -30,7 +30,7 @@ scenes = [
  dict(title="Fifty below", mode="clip", pov=True, beat="SOĞUK AÇILIŞ (0:00) — kanca ilk 5 sn", mood="tense",
   v="Fifty degrees below zero. My eyelashes freeze together when I blink. And the only thing between my children and this cold... is a tent made of FELT. Out here, there are no walls, no forests, no cellars. Just my family, two hundred animals... and a winter that wants all of us.",
   img=f"The open Mongolian steppe at dawn in deep winter, about 1900, extreme cold, ice fog glittering in the air: {DO} stands beside his shaggy horse, frost white on his eyelashes, moustache and fur hat, his breath a cloud; behind him a single round white felt ger with smoke rising from its roof ring, a herd of sheep and goats huddled in a stone pen",
-  shots=["frost-white eyelashes and moustache, the herder blinks slowly in the icy dawn",
+  shots=["a gust of wind blasts ice crystals across the herder's frost-white face, he squints and blinks hard",
          "a shaggy horse's muzzle and mane hung with frost, breath steaming",
          "a lone white felt ger on the endless snowy plain, smoke rising from its roof ring"],
   sound="howling steppe wind, a horse snorting, ice crystals crackling",

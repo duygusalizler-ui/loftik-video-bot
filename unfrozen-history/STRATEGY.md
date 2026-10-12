@@ -155,3 +155,11 @@ Tek seferlik viral değil; **her gün 100–300 izlenme alan, yıllarca çalış
 Napolyon (ep003) 4. günde 1.300 izlenme, 5,1K gösterim, TO %3,1, trafiğin %98'i göz atma; son saatlerde 35–48/sa (3. dalga). 4 videodan 1'i "her gün izlenen" oldu (hedef: 100 videoda 10–20).
 Neden tuttu (hipotez): büyük, bilinen tarihî olay + net sayı/acı ("−30°C Nightmare") + yakın plan insan yüzü + kısa güçlü kapak yazısı ("NEVER SLEEP"); askerî tarih kitlesi.
 Ders: sonraki konular "bilinen olay + sayı" kalıbına yaslansın; kapakta hayalî karakterin yüzü (gerçek kişi değilse) kullanılsın.
+
+## §20 İzleyici tutma dersi — Napolyon grafiği (12 Eki)
+- 0:30'da %49 kalıyor (YouTube: "standart"); kaybın çoğu ilk 10–15 sn'de.
+- 2:00–8:30 arası neredeyse düz, ~%25–30 sonuna kadar izliyor → içerik/hikâye sağlam; ~5–6. dk'da küçük tekrar izleme tepesi.
+- Son ~20 sn (tanıtım + bitiş ekranı) sert düşüş — normal.
+- KURAL (her yeni bölüm): (1) ilk 3 sn başlığın vaadini birebir söyle (sayı/derece); (2) ilk kare en çarpıcı, hareketli tehlike anı — durağan manzara değil; (3) "My name is…" tanıtımı ≥10. sn'den sonra.
+- Hedef: 0:30 tutmayı %49 → %55–60; böylece ortalama izlenme %30 → %35+.
+- Ep005 açılışı kurala uyuyor (balta + donmuş ekmek, isim ~10. sn). Ep006 sahne 1'in ilk çekimi daha hareketli yapıldı (rüzgâr buz kristallerini yüze savuruyor).
