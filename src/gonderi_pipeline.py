@@ -187,7 +187,8 @@ def _try_angle(refs, reference_path, name, angle, winter, work, tag, attempts, p
 def build_post(product, reference_path: str, extra_refs: list, winter: bool, work: str) -> tuple[list, list]:
     """Kalite kontrolunden gecen gorsellerin yollari + qa kaydi dondurur.
 
-    Once her aci bir kez (SCENE_IMAGE_ATTEMPTS denemeyle) uretilir; en az
+    Acilar sirayla denenir; TARGET_POST_IMAGES (varsayilan 4) kare gecince durulur,
+    sonraki acilar sadece yedektir. Once her aci bir kez (SCENE_IMAGE_ATTEMPTS denemeyle) uretilir; en az
     MIN_POST_IMAGES kareye ulasilamazsa basarisiz acilara POST_EXTRA_ATTEMPTS
     kadar ek deneme verilir. Kare sirasi her zaman ANGLES sirasidir (kapak once).
     """
@@ -196,7 +197,10 @@ def build_post(product, reference_path: str, extra_refs: list, winter: bool, wor
     angles = ANGLES[: config.POST_ANGLES]
     passed: dict = {}
     qa_log: list = []
+    target = max(config.MIN_POST_IMAGES, min(config.TARGET_POST_IMAGES, len(angles)))
     for name, angle in angles:
+        if len(passed) >= target:
+            break  # hedefe ulasildi; kalan acilar sadece yedekti
         img = _try_angle(refs, reference_path, name, angle, winter, work, "", config.POST_ANGLE_ATTEMPTS,
                          product.title, qa_log)
         if img:
@@ -220,7 +224,7 @@ def build_post(product, reference_path: str, extra_refs: list, winter: bool, wor
 def qa_summary(images: list, qa_log: list) -> str:
     failed = [q for q in qa_log if not q.get("gecti")]
     lines = [
-        f"✅ {len(images)}/{config.POST_ANGLES} kare kalite kontrolünden geçti "
+        f"✅ {len(images)} kare kalite kontrolünden geçti "
         f"(eşik {config.QA_MIN_SCORE}/10, {len(failed)} deneme elendi)"
     ]
     for q in failed[:4]:
