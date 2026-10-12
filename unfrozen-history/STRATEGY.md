@@ -170,3 +170,8 @@ Ders: sonraki konular "bilinen olay + sayı" kalıbına yaslansın; kapakta haya
 - Toplam: 4,5 günde ~1.690 izlenme, TO %3,3, ortalama izlenme %29,8.
 - Aksiyon: videoya DOKUNMA; yeni yükleme (ep005, 14 Eki) eski videoya ikinci dalga getirebilir — 3–7 gün izle.
 - Donner: 48 sa'te 43 gösterim, TO %0 → A/B durdurulup tek kapakla ("4 MONTHS") devam önerildi.
+
+## 22. Kapak marka kuralı (12 Eki)
+- Kanal kapakları KARANLIK + SICAK ışık kaynağı (mum/ateş/fırın) + insan/el odaklı + krem/beyaz kalın yazı (NEVER SLEEP, HIS DIARY, FROZEN).
+- Parlak mavi gökyüzü / güneşli sahne kullanma (Donner "4 MONTHS" bu yüzden elendi; ayrıca fırtınalı tarihe de ters).
+- Ep005 A/B: FROZEN (yüz) vs FROZEN SOLID (balta, YouTube AI) vs WINE FROZE (fıçı, YouTube AI) — hangi konsept türünün kazandığını not et.
