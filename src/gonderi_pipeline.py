@@ -1,0 +1,197 @@
+"""
+"gonderi" modu -- trendnora tarzi kaydirmali (carousel) Instagram gonderisi.
+
+Video uretmez. Sitedeki gercek urun fotograflarini REFERANS alarak Gemini ile
+ayni sik studyo sahnesinde, farkli acilardan 4:5 urun gorselleri uretir:
+
+  1. Cift ayakkabi, 3/4 on aci (kapak karesi)
+  2. Tek ayakkabi, yandan profil
+  3. Arkadan / ustten aci
+  4. Yakin detay (malzeme, dikis, taban)
+
+Her kare sitedeki gercek fotografla karsilastirilir (quality_check, studyo
+icin ayri kriterlerle). Gecemeyen kare yeniden uretilir; yine gecemezse
+atlanir. Urunu degistiren (renk, taban, toka, logo) kare ASLA gonderilmez.
+
+Bot sezonunda (config.boots_enabled) sahneye kislik aksesuarlar eklenir.
+"""
+from __future__ import annotations
+
+import os
+from pathlib import Path
+
+from PIL import Image, ImageOps
+
+from . import config, quality_check
+from .gemini_video import QuotaExceededError
+
+POST_SIZE = (1080, 1350)  # Instagram 4:5
+
+BASE_SET = (
+    "Bright, clean product photo for an Instagram shoe store, shot in a real photo studio: "
+    "white Carrara marble tabletop, soft natural daylight from a window on the left with gentle "
+    "palm-leaf shadows falling on the back wall and the tabletop only -- NO leaf shadows across "
+    "the shoes themselves, the shoes are evenly and clearly lit so their true color and material "
+    "are easy to see. Light neutral background wall, crisp focus on the shoes, realistic soft "
+    "contact shadows under the soles."
+)
+WINTER_PROPS = (
+    " Cozy winter mood: a folded chunky cream knit scarf and two pine cones placed beside the "
+    "shoes, a few tiny sprigs of fir; warm but still bright and airy light."
+)
+SEASON_PROPS = " A small potted green plant softly out of focus in the background."
+
+ANGLES = [
+    ("kapak", "A PAIR of the shoes: one shoe in front at a three-quarter front angle, the second "
+              "shoe slightly behind and turned the other way, both fully visible, filling most of the frame."),
+    ("yan", "ONE single shoe shown in a clean side profile view, pointing left, the full outer "
+            "side and the sole edge fully visible, centered and large in the frame."),
+    ("on", "A PAIR of the shoes standing side by side, seen straight from the front at a slightly "
+           "low eye-level angle, toes pointing toward the camera, both fully visible and large."),
+    ("detay", "A close-up detail shot of ONE shoe at a low front angle: the material texture, "
+              "stitching and the sole are clearly visible and sharp, the shoe fills the frame."),
+]
+
+RULES = (
+    " The shoes MUST be EXACTLY the product in the reference photos: same model and shape, same "
+    "upper color and material (leather vs suede vs fabric), same sole color and thickness, same "
+    "laces / buckles / zips / fur lining / stitching, same shaft height. Do not redesign anything. "
+    "Keep the EXACT color of the reference under the studio light: black stays a true deep black "
+    "(never charcoal, grey or brown), white stays clean white, beige/sand keeps its exact tone -- "
+    "the warm daylight must not shift the product color. "
+    "Do NOT invent parts that are not clearly visible in the reference photos: no extra pull tabs, "
+    "loops, rings, straps, buckles, logos or seams -- where a part is not visible in the references "
+    "(e.g. the back of the heel), keep it plain and simple. "
+    "Material texture must be true to life: suede looks soft, matte and slightly napped with visible "
+    "fibers (never smooth canvas or fabric); leather shows natural grain and a gentle sheen. "
+    "NO feet, NO legs, NO people, NO hands. NO text, NO letters, NO logos, NO brand names, NO price "
+    "tags anywhere in the scene (also not on boxes, books or props). If the product itself has its "
+    "own small logo, number or print in the reference, keep it in the same place, same size and "
+    "color, simple and clean -- never erase it and never add a new one. Exactly the number of shoes described. "
+    "Vertical 4:5 composition. Photorealistic, like a real professional e-commerce photo: no "
+    "surreal elements, no melting shapes, no duplicated or floating objects."
+)
+
+QA_PROMPT_STUDIO = """Sen bir e-ticaret ürün fotoğrafı kalite kontrolcüsüsün.
+İLK görsel: sitedeki GERÇEK ürün fotoğrafı (referans).
+SONRAKİ görsel: yapay zekâyla üretilmiş stüdyo ürün fotoğrafı (Instagram gönderisi için).
+
+Üretilen görseldeki ayakkabıyı referansla karşılaştır:
+1. Model/şekil aynı mı (burun, bilek/konç yüksekliği, bağcık/toka/fermuar/lastik, topuk)?
+2. Renkler ve malzeme aynı mı (üst malzeme, süet/deri farkı, astar/kürk, TABAN rengi ve kalınlığı)?
+3. Uydurma logo, yazı, desen, fiyat etiketi eklenmiş mi (ürünün üstünde veya sahnede)?
+4. Ayak, bacak, el veya insan var mı? Ayakkabı sayısı mantıklı mı (tek ya da bir çift)?
+5. Yapay zekâ hatası var mı (eriyen/bozuk şekiller, çift ya da havada duran nesneler, saçma detaylar)?
+Stüdyo ışığı ve temiz/şık sahne BURADA HATA DEĞİL, istenen şey budur.
+Referansta görünmeyen bir bölgeyi (ör. topuk arkası) sade göstermek hata değildir; ama referansta
+olmayan belirgin bir parça (çekme kulpu, halka, toka, logo) eklenmişse bu hatadır.
+
+Sadece şu JSON'u döndür:
+{"urun_benzerligi": 0-10, "gercekcilik": 0-10, "hatalar": ["kısa Türkçe madde"], "puan": 0-10}
+"puan" = en düşük kritik değer. Taban rengi, ana renk veya model farklıysa puan en fazla 4.
+Yazı/logo varsa veya ayak/insan varsa puan en fazla 4.
+Malzeme açıkça farklı bir malzemeye dönüşmüşse (ör. süet belirgin şekilde örgü/kanvas kumaş gibiyse) veya ürünün üstüne düşen
+gölgeler rengini/dokusunu gizliyorsa puan en fazla 6.
+Renk tonu kaymışsa (ör. siyah ürün kahverengi/füme/gri görünüyorsa, bej daha soluk ya da daha koyuysa)
+puan en fazla 6.
+"""
+
+
+def _client():
+    from google import genai
+
+    if not config.GEMINI_API_KEY:
+        raise RuntimeError("GEMINI_API_KEY tanımlı değil (GitHub Secrets'a eklemeyi unutma).")
+    return genai.Client(api_key=config.GEMINI_API_KEY)
+
+
+def _mime(path: str) -> str:
+    return "image/png" if path.lower().endswith(".png") else "image/jpeg"
+
+
+def _to_post(path: str) -> str:
+    img = Image.open(path).convert("RGB")
+    img = ImageOps.fit(img, POST_SIZE, method=Image.LANCZOS, centering=(0.5, 0.55))
+    out = str(Path(path).with_suffix(".4x5.jpg"))
+    img.save(out, quality=93)
+    return out
+
+
+def scene_prompt(angle_prompt: str, winter: bool) -> str:
+    return BASE_SET + (WINTER_PROPS if winter else SEASON_PROPS) + " " + angle_prompt
+
+
+def generate_post_image(refs: list, prompt: str, out_path: str, product_title: str = "") -> str:
+    from google.genai import types
+
+    client = _client()
+    parts = [types.Part.from_bytes(data=Path(r).read_bytes(), mime_type=_mime(r)) for r in refs]
+    if product_title:
+        parts.append(
+            f"The product is: {product_title}. The {len(refs)} reference photo(s) show this SAME exact "
+            "product (sometimes worn on a foot) -- copy the shoe itself exactly, never the foot. "
+        )
+    parts.append(prompt + RULES)
+    cfg_kwargs = {"response_modalities": ["TEXT", "IMAGE"]}
+    try:
+        cfg = types.GenerateContentConfig(**cfg_kwargs, image_config=types.ImageConfig(aspect_ratio="4:5"))
+    except Exception:  # noqa: BLE001 -- eski SDK'da image_config yoksa
+        cfg = types.GenerateContentConfig(**cfg_kwargs)
+    resp = None
+    for model in dict.fromkeys([config.GEMINI_IMAGE_MODEL, "gemini-3-pro-image", "gemini-2.5-flash-image"]):
+        try:
+            resp = client.models.generate_content(model=model, contents=parts, config=cfg)
+            break
+        except Exception as exc:  # noqa: BLE001
+            msg = str(exc)
+            if "429" in msg or "RESOURCE_EXHAUSTED" in msg:
+                raise QuotaExceededError(f"Gemini görsel kotası doldu: {exc}") from exc
+            if "404" in msg or "NOT_FOUND" in msg:
+                print(f"UYARI: görsel modeli '{model}' kullanılamıyor, sıradaki deneniyor.")
+                continue
+            raise
+    if resp is None:
+        raise RuntimeError("Kullanılabilir Gemini görsel modeli bulunamadı.")
+    for part in resp.candidates[0].content.parts:
+        inline = getattr(part, "inline_data", None)
+        if inline is not None and getattr(inline, "data", None):
+            Path(out_path).write_bytes(inline.data)
+            return _to_post(out_path)
+    raise RuntimeError("Gemini ürün görseli döndürmedi.")
+
+
+def build_post(product, reference_path: str, extra_refs: list, winter: bool, work: str) -> tuple[list, list]:
+    """Kalite kontrolunden gecen gorsellerin yollari + qa kaydi dondurur."""
+    os.makedirs(work, exist_ok=True)
+    refs = [reference_path] + list(extra_refs or [])[:3]
+    images, qa_log = [], []
+    for name, angle in ANGLES[: config.POST_ANGLES]:
+        prompt = scene_prompt(angle, winter)
+        for attempt in range(1, config.SCENE_IMAGE_ATTEMPTS + 1):
+            try:
+                print(f"Gönderi karesi '{name}': görsel üretiliyor (deneme {attempt})...")
+                img = generate_post_image(refs, prompt, os.path.join(work, f"{name}_{attempt}.png"), product.title)
+            except QuotaExceededError:
+                raise
+            except Exception as exc:  # noqa: BLE001
+                print(f"UYARI: kare üretilemedi: {exc}")
+                continue
+            qa = quality_check.safe_score(reference_path, [img], QA_PROMPT_STUDIO)
+            qa_log.append({"asama": name, "deneme": attempt, **qa})
+            print(f"  kalite puanı: {qa['puan']}/10 {qa.get('hatalar') or ''}")
+            if qa["gecti"]:
+                images.append(img)
+                break
+    return images, qa_log
+
+
+def qa_summary(images: list, qa_log: list) -> str:
+    failed = [q for q in qa_log if not q.get("gecti")]
+    lines = [
+        f"✅ {len(images)}/{config.POST_ANGLES} kare kalite kontrolünden geçti "
+        f"(eşik {config.QA_MIN_SCORE}/10, {len(failed)} deneme elendi)"
+    ]
+    for q in failed[:4]:
+        err = "; ".join(q.get("hatalar") or [])[:120]
+        lines.append(f"• {q['asama']} deneme {q['deneme']}: {q['puan']}/10 {err}")
+    return "\n".join(lines)

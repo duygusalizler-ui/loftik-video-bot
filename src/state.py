@@ -58,6 +58,19 @@ def posts_today() -> int:
     return count
 
 
+def boot_posted_today() -> bool:
+    """TR saatine gore bugun bot paylasildi mi (gunun 2. paylasimi cesit olsun diye)."""
+    today = datetime.now(TR_TZ).date()
+    for entry in _load()["posted"]:
+        try:
+            when = datetime.fromisoformat(entry["posted_at"]).astimezone(TR_TZ).date()
+        except (KeyError, ValueError):
+            continue
+        if when == today and entry.get("bot"):
+            return True
+    return False
+
+
 def pick_candidate(catalog: list):
     """
     Daha önce paylaşılmamış rastgele bir ürün seçer.
@@ -73,6 +86,10 @@ def pick_candidate(catalog: list):
         # Bot sezonunda botlara oncelik ver (sezonun urunu en cok satar).
         boots = [p for p in fresh if p.get("is_boot")]
         others = [p for p in fresh if not p.get("is_boot")]
+        # Gun icinde cesitlilik: bugun zaten bot paylasildiysa ikinci paylasim
+        # bot disindan secilir (akista iki bot ust uste gelmesin).
+        if others and boot_posted_today():
+            return random.choice(others)
         if boots and config.boots_enabled() and (
             not others or random.random() < config.BOT_PRIORITY_IN_SEASON
         ):

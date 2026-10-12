@@ -54,7 +54,7 @@ def send_photo(photo_path: str, caption: str = "") -> dict:
     return resp.json()
 
 
-def send_media_group(photo_paths: list, caption: str = "") -> dict:
+def send_media_group(photo_paths: list, caption: str = "", as_documents: bool = False) -> dict:
     """
     Birden fazla fotoğrafı TEK bir "kaydırmalı" (carousel) gönderi olarak
     yollar -- Instagram'daki çoklu-görsel gönderiye karşılık gelir.
@@ -69,7 +69,7 @@ def send_media_group(photo_paths: list, caption: str = "") -> dict:
     try:
         for i, path in enumerate(photo_paths):
             key = f"photo{i}"
-            item = {"type": "photo", "media": f"attach://{key}"}
+            item = {"type": "document" if as_documents else "photo", "media": f"attach://{key}"}
             if i == 0 and caption:
                 item["caption"] = caption
             media.append(item)
@@ -88,3 +88,16 @@ def send_media_group(photo_paths: list, caption: str = "") -> dict:
     finally:
         for f in open_files:
             f.close()
+
+
+def send_document(path: str, caption: str = "") -> dict:
+    """Dosyayi sikistirmadan (orijinal kalite) yollar."""
+    with open(path, "rb") as f:
+        resp = requests.post(
+            _url("sendDocument"),
+            data={"chat_id": _chat_id(), "caption": caption},
+            files={"document": f},
+            timeout=120,
+        )
+    resp.raise_for_status()
+    return resp.json()
