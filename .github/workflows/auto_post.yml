@@ -12,6 +12,10 @@ on:
         description: "Deneme: günlük içerik limitini atla"
         type: boolean
         default: false
+      mod:
+        description: "Deneme: içerik modu (boş = repo ayarı; gonderi / reklam)"
+        type: string
+        default: ""
   # Yedek zamanlama: cron-job.org calismazsa diye GitHub'in kendi cron'u da
   # acik. Iki tetikleyici ayni gun ust uste calissa bile MAX_POSTS_PER_DAY
   # (varsayilan 2) asilmaz -- fazla calisma sessizce cikar.
@@ -55,7 +59,7 @@ jobs:
           WIRO_API_KEY: ${{ secrets.WIRO_API_KEY }}
           APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
           COMPETITOR_PAGES: ${{ vars.COMPETITOR_PAGES }}
-          CONTENT_MODE: ${{ vars.CONTENT_MODE }}
+          CONTENT_MODE: ${{ inputs.mod || vars.CONTENT_MODE }}
           POST_ANGLES: ${{ vars.POST_ANGLES }}
           IGNORE_DAILY_LIMIT: ${{ inputs.limit_yok && 'true' || '' }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
