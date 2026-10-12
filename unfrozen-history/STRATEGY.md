@@ -175,3 +175,4 @@ Ders: sonraki konular "bilinen olay + sayı" kalıbına yaslansın; kapakta haya
 - Kanal kapakları KARANLIK + SICAK ışık kaynağı (mum/ateş/fırın) + insan/el odaklı + krem/beyaz kalın yazı (NEVER SLEEP, HIS DIARY, FROZEN).
 - Parlak mavi gökyüzü / güneşli sahne kullanma (Donner "4 MONTHS" bu yüzden elendi; ayrıca fırtınalı tarihe de ters).
 - Ep005 A/B: FROZEN (yüz) vs FROZEN SOLID (balta, YouTube AI) vs WINE FROZE (fıçı, YouTube AI) — hangi konsept türünün kazandığını not et.
+- Donner (12 Eki): başlık → "The Donner Party: Trapped in the Snow for 4 Months"; kapak → karanlık "4 MONTHS" (ep004 kare 013: gömülü kulübe + kar merdiveni + günlük, 0 kredi). Eski parlak 4 MONTHS kullanılmadı.
