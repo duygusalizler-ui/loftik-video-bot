@@ -72,9 +72,8 @@ MIN_POST_IMAGES = max(1, min(POST_ANGLES, int(os.environ.get("MIN_POST_IMAGES") 
 # Her aci icin ilk turdaki deneme sayisi (6 aci x 2 = 12 gorsel; sure ve maliyet sinirli kalsin)
 POST_ANGLE_ATTEMPTS = int(os.environ.get("POST_ANGLE_ATTEMPTS") or "2")
 # En az kare sayisina ulasmak icin basarisiz acilara verilecek ek deneme hakki
-POST_EXTRA_ATTEMPTS = int(os.environ.get("POST_EXTRA_ATTEMPTS") or "4")
-# Bir urun yeterli kare cikaramazsa ayni calismada kac farkli urun denensin
-POST_PRODUCT_TRIES = int(os.environ.get("POST_PRODUCT_TRIES") or "3")
+POST_EXTRA_ATTEMPTS = int(os.environ.get("POST_EXTRA_ATTEMPTS") or "12")
+
 
 # Bu API anahtari icin ListModels ile dogrulandi: sadece Veo 3.1 preview
 # modelleri destekleniyor (veo-2.0 / veo-3.0 bu anahtarda YOK). "fast" varyanti

@@ -113,14 +113,21 @@ def _run_post_mode(product, candidate, raw_image_path: str, caption: str, tmp: s
     )
     summary = gonderi_pipeline.qa_summary(images, qa_log)
     info = {"mod": "gonderi", "kare": len(images), "bot": bool(candidate.get("is_boot"))}
-    if len(images) < config.MIN_POST_IMAGES:
-        print(f"Sadece {len(images)} kare geçti (en az {config.MIN_POST_IMAGES} gerekli) -- bu ürün atlanıyor.")
+    if not images:
+        print("Hiçbir kare kalite kontrolünden geçmedi -- bu ürün atlanıyor.")
         info["atlandi"] = True
         return info
+    if len(images) < config.MIN_POST_IMAGES:
+        print(f"Uyarı: tüm denemelere rağmen {len(images)} kare geçti, yine de gönderiliyor.")
+        summary = (f"⚠️ Bu üründe tüm denemelere rağmen {len(images)} kare çıktı (hedef en az "
+                   f"{config.MIN_POST_IMAGES}); istersen başka kareyle tamamla ya da bekletebilirsin.\n\n" + summary)
     print(f"{len(images)} karelik kaydırmalı gönderi Telegram'a yollanıyor...")
-    send_media_group(images, caption[:1000])
-    # Telegram fotograflari sikistirir; Instagram'a yuklemek icin orijinal kalite
-    send_media_group(images, "📎 Instagram için orijinal kalite (sırasıyla yükle)", as_documents=True)
+    if len(images) >= 2:
+        send_media_group(images, caption[:1000])
+        send_media_group(images, "📎 Instagram için orijinal kalite (sırasıyla yükle)", as_documents=True)
+    else:
+        send_photo(images[0], caption[:1000])
+        send_document(images[0], "📎 Instagram için orijinal kalite")
     send_message(summary + f"\n\n📝 Önerilen açıklama:\n{caption}")
     return info
 
@@ -140,15 +147,18 @@ def _build_text(product) -> str:
     return caption_mod.build_caption(product.title, product.brand, product.category_slug, spec_line)
 
 
+POST_PRODUCT_TRIES = 2  # sadece urun HIC kare cikaramazsa (gorsel yok vb.) ikinci urun denenir
+
+
 def _run_post_with_retries(catalog: list) -> None:
-    """Bir urun en az MIN_POST_IMAGES kare cikaramazsa sirayla baska urun dener."""
+    """Urun hic kare cikaramazsa (ya da gorseli yoksa) baska bir urun dener."""
     skipped = []
-    for attempt in range(1, config.POST_PRODUCT_TRIES + 1):
+    for attempt in range(1, POST_PRODUCT_TRIES + 1):
         candidate = state.pick_candidate(catalog)
         if not candidate:
             print("Uygun ürün bulunamadı, çıkılıyor.")
             return
-        print(f"Seçilen ürün ({attempt}/{config.POST_PRODUCT_TRIES}): {candidate['title']} -> {candidate['url']}")
+        print(f"Seçilen ürün ({attempt}/{POST_PRODUCT_TRIES}): {candidate['title']} -> {candidate['url']}")
         product = scraper.fetch_product(candidate["url"], category_slug=candidate.get("category_slug"))
         if not product.main_image:
             print("Ana görsel bulunamadı, bu ürün atlanıyor.")
@@ -163,8 +173,8 @@ def _run_post_with_retries(catalog: list) -> None:
             return
         skipped.append(f"• {product.title}: {info['kare']} kare")
     send_message(
-        f"⚠️ Bu çalışmada {config.POST_PRODUCT_TRIES} ürün denendi ama hiçbiri en az "
-        f"{config.MIN_POST_IMAGES} kaliteli kare çıkaramadı; hatalı gönderi yollanmadı.\n" + "\n".join(skipped)
+        f"⚠️ Bu çalışmada {POST_PRODUCT_TRIES} ürün denendi ama hiç kaliteli kare çıkmadı; "
+        "hatalı gönderi yollanmadı.\n" + "\n".join(skipped)
     )
 
 

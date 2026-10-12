@@ -205,19 +205,24 @@ def build_post(product, reference_path: str, extra_refs: list, winter: bool, wor
                          product.title, qa_log)
         if img:
             passed[name] = img
+    # En az MIN_POST_IMAGES kareye tamamla: once gecemeyen acilar tekrar denenir,
+    # sonra bu urunde ise yarayan acilarin farkli bir varyanti uretilir (urun ATILMAZ).
     extra_left = config.POST_EXTRA_ATTEMPTS
+    variant = 0
     while len(passed) < config.MIN_POST_IMAGES and extra_left > 0:
         missing = [(n, a) for n, a in angles if n not in passed]
-        if not missing:
-            break
-        for name, angle in missing:
+        working = [(n, a) for n, a in angles if n in passed and not n.endswith("_v")]
+        pool = missing + [(f"{n}_v{variant}", a) for n, a in working]
+        variant += 1
+        for name, angle in pool:
             if extra_left <= 0 or len(passed) >= config.MIN_POST_IMAGES:
                 break
             extra_left -= 1
             img = _try_angle(refs, reference_path, name, angle, winter, work, "ek", 1, product.title, qa_log)
             if img:
                 passed[name] = img
-    images = [passed[n] for n, _ in angles if n in passed]
+    order = [n for n, _ in angles]
+    images = [passed[n] for n in sorted(passed, key=lambda k: (order.index(k.split("_v")[0]), k))]
     return images, qa_log
 
 
