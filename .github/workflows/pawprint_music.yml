@@ -1,0 +1,36 @@
+name: PawPrint müzik ekle
+
+# Bir müzik linkini (wav/mp3) pawprint/assets/music/ altına kaydeder.
+on:
+  workflow_dispatch:
+    inputs:
+      url:
+        description: "Müzik linki (https)"
+        required: true
+      name:
+        description: "Dosya adı (ör. piano.wav)"
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  save:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: İndir
+        env:
+          URL: ${{ inputs.url }}
+          NAME: ${{ inputs.name }}
+        run: |
+          set -euo pipefail
+          mkdir -p pawprint/assets/music
+          curl -fsSL "$URL" -o "pawprint/assets/music/$NAME"
+          [ "$(stat -c %s "pawprint/assets/music/$NAME")" -gt 100000 ]
+      - name: Kaydet
+        run: |
+          git config user.name "pawprint-bot"
+          git config user.email "actions@github.com"
+          git add pawprint/assets/music
+          git diff --cached --quiet || (git commit -m "pawprint: müzik eklendi [skip ci]" && git pull --rebase && git push)
