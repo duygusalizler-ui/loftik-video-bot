@@ -10,7 +10,9 @@
     35459385,
     5228670,
     29477854,
-    39995025
+    39995025,
+    7515867,
+    39309262
   ],
   "themes": [
     "senior_dog",
@@ -19,7 +21,8 @@
     "walks",
     "paws",
     "puppy_to_senior",
-    "senior_dog"
+    "senior_dog",
+    "owner_love"
   ],
   "runs": [
     {
@@ -73,6 +76,14 @@
       "theme": "senior_dog",
       "stock": [
         "https://www.pexels.com/video/adorable-golden-retriever-puppy-indoors-39995025/"
+      ]
+    },
+    {
+      "at": "20261013_150841",
+      "theme": "owner_love",
+      "stock": [
+        "https://www.pexels.com/video/a-woman-training-her-dog-in-the-park-7515867/",
+        "https://www.pexels.com/video/golden-retriever-swimming-in-pool-on-cloudy-day-39309262/"
       ]
     }
   ]
