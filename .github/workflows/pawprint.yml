@@ -71,6 +71,21 @@ jobs:
             pawprint/cikti/**/kareler.jpg
           if-no-files-found: ignore
 
+      - name: Videoları herkese açık sürüme yükle (zamanlama için link)
+        if: success()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release view pawprint-reels >/dev/null 2>&1 || gh release create pawprint-reels --title "PawPrint reels" --notes "Bot çıktıları (otomatik)" --latest=false
+          for d in pawprint/cikti/*/; do
+            [ -f "$d/reel.mp4" ] || continue
+            name=$(basename "$d")
+            cp "$d/reel.mp4" "/tmp/${name}.mp4"
+            cp "$d/aciklama_en.txt" "/tmp/${name}_en.txt" 2>/dev/null || true
+            gh release upload pawprint-reels "/tmp/${name}.mp4" --clobber
+            [ -f "/tmp/${name}_en.txt" ] && gh release upload pawprint-reels "/tmp/${name}_en.txt" --clobber || true
+          done
+
       - name: Kullanılan stok kayıtlarını kaydet
         if: success()
         run: |
