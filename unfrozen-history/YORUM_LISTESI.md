@@ -51,5 +51,5 @@ Viking kitlesi = homestead/hayatta kalma; Napolyon kitlesi = askerî ve mühendi
 | @alokinale2074'e cevap | Medieval London Inn (1387) | 3 |
 | "Loved this. I'm curious: how did a family like this get thr…" | Life in the Viking Age | 2 |
 | Kendi sabit yorumlarımız (Viking "7 MONTHS", Ortaçağ "LAST LOG") | kendi kanalımız | 1'er |
-Not: bildirim zamanı ≠ yorum zamanı (yeni beğeni gelince bildirim düşer). 13 Eki: @mlam3988 London Inn'de "Knives" cevabı yazdı (16 sa önce) — hangi yoruma, bağlamı kontrol et. Napolyon'da @johnrieley1404'e verdiğimiz cevap 1 beğeni. Donner sabit yorumu atıldı + kalp (10 Eki ~20:45).
+Not: bildirim zamanı ≠ yorum zamanı (yeni beğeni gelince bildirim düşer). 13 Eki: @mlam3988 London Inn'de "Knives" cevabı yazdı (16 sa önce) → bizim London yorumuna (kese sorusu). 13 Eki 00:58 cevap verdik: "Ha, fair enough! Almost every man carried a knife back then anyway…". Napolyon'da @johnrieley1404'e verdiğimiz cevap 1 beğeni. Donner sabit yorumu atıldı + kalp (10 Eki ~20:45).
 Ders: "The moment X got me" kalıbı (videodaki belirli bir ana atıf) en çok beğeni alan yorum tipi → standart yorum kalıbımız bu.
