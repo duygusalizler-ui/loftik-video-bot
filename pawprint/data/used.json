@@ -12,7 +12,11 @@
     29477854,
     39995025,
     7515867,
-    39309262
+    39309262,
+    7131682,
+    17029738,
+    5353255,
+    8746927
   ],
   "themes": [
     "senior_dog",
@@ -22,7 +26,9 @@
     "paws",
     "puppy_to_senior",
     "senior_dog",
-    "owner_love"
+    "owner_love",
+    "senior_dog",
+    "senior_dog"
   ],
   "runs": [
     {
@@ -84,6 +90,22 @@
       "stock": [
         "https://www.pexels.com/video/a-woman-training-her-dog-in-the-park-7515867/",
         "https://www.pexels.com/video/golden-retriever-swimming-in-pool-on-cloudy-day-39309262/"
+      ]
+    },
+    {
+      "at": "20261013_173820",
+      "theme": "senior_dog",
+      "stock": [
+        "https://www.pexels.com/video/white-cat-lying-down-on-bed-7131682/",
+        "https://www.pexels.com/video/a-yellow-dog-sitting-on-the-floor-with-its-mouth-open-17029738/"
+      ]
+    },
+    {
+      "at": "20261013_174105",
+      "theme": "senior_dog",
+      "stock": [
+        "https://www.pexels.com/video/woman-sleeping-in-a-bed-5353255/",
+        "https://www.pexels.com/video/dog-inside-the-house-8746927/"
       ]
     }
   ]
