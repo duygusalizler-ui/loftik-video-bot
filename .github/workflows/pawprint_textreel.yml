@@ -1,0 +1,42 @@
+name: PawPrint 4 aşamalı yazılı Reel
+
+# Kazanan açılış (full.mp4) + 4 yazı katmanı: kanca / köprü / çözüm / çağrı.
+# Katmanlar pawprint/assets/hooks/<set>/ içinde: h<N>.png b<N>.png s<N>.png cta.png
+on:
+  workflow_dispatch:
+    inputs:
+      set:
+        description: "Katman klasörü (ör. A)"
+        default: "A"
+        required: true
+      ids:
+        description: "Numara listesi, boşlukla (ör. 1 2 3)"
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: ffmpeg
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+      - name: Üret ve yükle
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SET: ${{ inputs.set }}
+          IDS: ${{ inputs.ids }}
+        run: |
+          set -euo pipefail
+          F=pawprint/assets/product/full.mp4
+          D=pawprint/assets/hooks/$SET
+          gh release view pawprint-reels >/dev/null 2>&1 || gh release create pawprint-reels --title "PawPrint reels" --notes "Bot çıktıları (otomatik)" --latest=false
+          for i in $IDS; do
+            out="PawPrint_${SET}${i}.mp4"
+            ffmpeg -loglevel error -y -i $F -i $D/h$i.png -i $D/b$i.png -i $D/s$i.png -i $D/cta.png -filter_complex \
+              "[0:v]scale=1080:1920,setsar=1,tpad=stop_mode=clone:stop_duration=1.6[v0];[1:v]scale=1080:1920[t1];[2:v]scale=1080:1920[t2];[3:v]scale=1080:1920[t3];[4:v]scale=1080:1920[t4];[v0][t1]overlay=0:0:enable='between(t,0.15,4.6)'[v1];[v1][t2]overlay=0:0:enable='between(t,5.0,8.6)'[v2];[v2][t3]overlay=0:0:enable='between(t,8.8,11.4)'[v3];[v3][t4]overlay=0:0:enable='gte(t,11.5)',format=yuv420p[v];[0:a]apad=pad_dur=1.6,afade=t=out:st=13.6:d=0.9[a]" \
+              -map "[v]" -map "[a]" -t 14.55 -c:v libx264 -crf 19 -preset medium -c:a aac -b:a 160k -movflags +faststart "$out"
+            gh release upload pawprint-reels "$out" --clobber
+          done
