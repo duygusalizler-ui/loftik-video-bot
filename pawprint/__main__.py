@@ -97,7 +97,9 @@ VISION_PROMPT = (
 )
 
 
-def vision_ok(image_url: str) -> bool:
+def vision_ok(image_url: str, relaxed: bool = False) -> bool:
+    """relaxed=True: golden/sıcak ışık şartı aranmaz, sadece yazı/yüz/başka hayvan olmasın.
+    Gemini hata verirse (kota vb.) relaxed modda klip kabul edilir ki iş tamamen durmasın."""
     key = os.environ.get("GEMINI_API_KEY")
     if not key:
         return True
@@ -115,13 +117,13 @@ def vision_ok(image_url: str) -> bool:
             types.GenerateContentConfig(response_mime_type="application/json", temperature=0),
         )
         d = json.loads(resp.text)
-        ok = (d.get("golden_retriever") and d.get("warm_cozy") and not d.get("text_or_logo")
-              and not d.get("face_visible") and not d.get("other_animals"))
+        clean = not d.get("text_or_logo") and not d.get("face_visible") and not d.get("other_animals")
+        ok = clean if relaxed else (d.get("golden_retriever") and d.get("warm_cozy") and clean)
         print(f"  görsel kontrol {image_url[-40:]}: {d} -> {'OK' if ok else 'ret'}")
         return bool(ok)
     except Exception as exc:  # noqa: BLE001
-        print(f"UYARI: görsel kontrol yapılamadı ({exc}); klip reddedildi")
-        return False
+        print(f"UYARI: görsel kontrol yapılamadı ({exc}); klip {'kabul' if relaxed else 'reddedildi'}")
+        return relaxed
 
 # ----------------------------------------------------------------- Pexels
 def pexels_search(query: str) -> list[dict]:
@@ -153,38 +155,56 @@ def fetch_stock(theme: dict, state: dict, workdir: Path) -> list[dict]:
     used = set(state["pexels_ids"])
     chosen: list[dict] = []
     queries = list(theme["queries"])
-    for q in queries * 2:  # her sorgudan önce 1, yetmezse 2. tur
+    # 1. tur: sıkı filtre (golden + sıcak ışık). 2. tur: gevşek filtre (herhangi tek köpek).
+    # 3. tur: daha önce kullanılmış klipler de serbest (stok tükenince bot tamamen durmasın).
+    passes = [(False, False), (True, False), (True, True)]
+    search_cache: dict[str, list[dict]] = {}
+    for relaxed, allow_used in passes:
+        for q in queries:
+            if len(chosen) >= STOCK_CLIPS:
+                break
+            if q not in search_cache:
+                try:
+                    search_cache[q] = pexels_search(q)
+                except requests.RequestException as exc:
+                    print(f"UYARI: Pexels araması başarısız ({q!r}): {exc}")
+                    search_cache[q] = []
+            candidates = []
+            for v in search_cache[q]:
+                if (v["id"] in used and not allow_used) or any(c["id"] == v["id"] for c in chosen):
+                    continue
+                if v.get("duration", 0) < STOCK_SECONDS + 1.5:
+                    continue
+                f = best_file(v)
+                if f:
+                    candidates.append((v, f))
+            if not candidates:
+                continue
+            random.shuffle(candidates)
+            pick = None
+            for v, f in candidates[:8]:
+                pics = v.get("video_pictures") or [{}]
+                thumb = pics[len(pics) // 2].get("picture") or v.get("image")
+                if thumb and vision_ok(thumb, relaxed=relaxed):
+                    pick = (v, f)
+                    break
+            if not pick:
+                continue
+            v, f = pick
+            path = workdir / f"stock_{v['id']}.mp4"
+            try:
+                with requests.get(f["link"], stream=True, timeout=180) as resp:
+                    resp.raise_for_status()
+                    with open(path, "wb") as fh:
+                        for chunk in resp.iter_content(1 << 20):
+                            fh.write(chunk)
+            except requests.RequestException as exc:
+                print(f"UYARI: stok indirilemedi ({v['id']}): {exc}")
+                continue
+            chosen.append({"id": v["id"], "path": path, "query": q, "url": v.get("url"), "dur": v.get("duration", 0)})
+            print(f"Stok ({'gevşek' if relaxed else 'sıkı'}{', tekrar' if allow_used else ''}): {q!r} -> {v['id']} ({f['width']}x{f['height']})")
         if len(chosen) >= STOCK_CLIPS:
             break
-        candidates = []
-        for v in pexels_search(q):
-            if v["id"] in used or any(c["id"] == v["id"] for c in chosen):
-                continue
-            if v.get("duration", 0) < STOCK_SECONDS + 1.5:
-                continue
-            f = best_file(v)
-            if f:
-                candidates.append((v, f))
-        if not candidates:
-            continue
-        random.shuffle(candidates)
-        pick = None
-        for v, f in candidates[:8]:
-            thumb = (v.get("video_pictures") or [{}])[len(v.get("video_pictures") or [{}]) // 2].get("picture") or v.get("image")
-            if thumb and vision_ok(thumb):
-                pick = (v, f)
-                break
-        if not pick:
-            continue
-        v, f = pick
-        path = workdir / f"stock_{v['id']}.mp4"
-        with requests.get(f["link"], stream=True, timeout=180) as resp:
-            resp.raise_for_status()
-            with open(path, "wb") as fh:
-                for chunk in resp.iter_content(1 << 20):
-                    fh.write(chunk)
-        chosen.append({"id": v["id"], "path": path, "query": q, "url": v.get("url"), "dur": v.get("duration", 0)})
-        print(f"Stok: {q!r} -> {v['id']} ({f['width']}x{f['height']})")
     if len(chosen) < 1:
         raise RuntimeError("Yeterli stok klip bulunamadı.")
     return chosen

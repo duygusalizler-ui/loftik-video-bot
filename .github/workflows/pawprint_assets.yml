@@ -1,0 +1,56 @@
+name: PawPrint ürün sahnesi güncelle
+
+# Ürün sahnesi videolarını (pawprint/assets/product/*.mp4) bir zip linkinden günceller.
+# Zip içinde full.mp4 / press_reveal.mp4 / globe.mp4 (hepsi veya bir kısmı) olmalı.
+on:
+  workflow_dispatch:
+    inputs:
+      zip_url:
+        description: "Zip linki (https)"
+        required: true
+      sha256:
+        description: "Beklenen dosya özetleri: 'dosya=sha256' virgülle ayrılmış (boş = kontrol yok)"
+        required: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pawprint-reel
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: İndir, doğrula, değiştir
+        env:
+          ZIP_URL: ${{ inputs.zip_url }}
+          SHA: ${{ inputs.sha256 }}
+        run: |
+          set -euo pipefail
+          tmp=$(mktemp -d)
+          curl -fsSL "$ZIP_URL" -o "$tmp/p.zip"
+          unzip -q "$tmp/p.zip" -d "$tmp/x"
+          IFS=',' read -ra pairs <<< "${SHA:-}"
+          for p in "${pairs[@]}"; do
+            [ -z "$p" ] && continue
+            f="${p%%=*}"; h="${p##*=}"
+            echo "$h  $tmp/x/$f" | sha256sum -c -
+          done
+          for f in full press_reveal globe; do
+            if [ -f "$tmp/x/$f.mp4" ]; then
+              [ "$(stat -c %s "$tmp/x/$f.mp4")" -gt 200000 ]
+              cp "$tmp/x/$f.mp4" "pawprint/assets/product/$f.mp4"
+              echo "güncellendi: $f.mp4"
+            fi
+          done
+
+      - name: Kaydet
+        run: |
+          git config user.name "pawprint-bot"
+          git config user.email "actions@github.com"
+          git add pawprint/assets/product
+          git diff --cached --quiet || (git commit -m "pawprint: ürün sahnesi güncellendi [skip ci]" && git pull --rebase && git push)
