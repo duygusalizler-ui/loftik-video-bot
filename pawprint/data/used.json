@@ -16,7 +16,9 @@
     7131682,
     17029738,
     5353255,
-    8746927
+    8746927,
+    30637739,
+    36741562
   ],
   "themes": [
     "senior_dog",
@@ -28,7 +30,8 @@
     "senior_dog",
     "owner_love",
     "senior_dog",
-    "senior_dog"
+    "senior_dog",
+    "paws"
   ],
   "runs": [
     {
@@ -106,6 +109,14 @@
       "stock": [
         "https://www.pexels.com/video/woman-sleeping-in-a-bed-5353255/",
         "https://www.pexels.com/video/dog-inside-the-house-8746927/"
+      ]
+    },
+    {
+      "at": "20261013_204441",
+      "theme": "paws",
+      "stock": [
+        "https://www.pexels.com/video/golden-retriever-enjoys-ocean-view-30637739/",
+        "https://www.pexels.com/video/golden-retriever-relaxing-in-spring-garden-36741562/"
       ]
     }
   ]
