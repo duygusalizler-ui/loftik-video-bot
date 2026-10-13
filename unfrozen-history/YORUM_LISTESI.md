@@ -45,11 +45,11 @@ Viking kitlesi = homestead/hayatta kalma; Napolyon kitlesi = askerî ve mühendi
 ## Bildirim kontrolü (11 Eki 01:44)
 | Yorum | Kanal / video | Beğeni |
 |---|---|---|
-| "The moment Philippe dreams of the scholar's robe…" | HistoryInPaint — Medieval Paris | 17 |
-| "The moment London Bridge shut for the night got me…" (yorum 8 gün önce atıldı; bildirim 2 saat önce 13. beğeniyle geldi) | "Why You Wouldn't Survive a Night in a Medieval London Inn (1387)" — videonun ÖNE ÇIKAN yorumu | 13 |
-| "I had no idea "fire plug" came from firemen…" | Archibald History | 4 |
+| "The moment Philippe dreams of the scholar's robe…" | HistoryInPaint — Medieval Paris | 17 (13 Eki 00:46 hâlâ 17) |
+| "The moment London Bridge shut for the night got me…" (yorum 8 gün önce atıldı; bildirim 2 saat önce 13. beğeniyle geldi) | "Why You Wouldn't Survive a Night in a Medieval London Inn (1387)" — videonun ÖNE ÇIKAN yorumu | 13 → 16 (13 Eki 00:46) |
+| "I had no idea "fire plug" came from firemen…" | Archibald History | 4 → 5 |
 | @alokinale2074'e cevap | Medieval London Inn (1387) | 3 |
 | "Loved this. I'm curious: how did a family like this get thr…" | Life in the Viking Age | 2 |
 | Kendi sabit yorumlarımız (Viking "7 MONTHS", Ortaçağ "LAST LOG") | kendi kanalımız | 1'er |
-Not: bildirim zamanı ≠ yorum zamanı (yeni beğeni gelince bildirim düşer). Donner sabit yorumu atıldı + kalp (10 Eki ~20:45).
+Not: bildirim zamanı ≠ yorum zamanı (yeni beğeni gelince bildirim düşer). 13 Eki: @mlam3988 London Inn'de "Knives" cevabı yazdı (16 sa önce) — hangi yoruma, bağlamı kontrol et. Napolyon'da @johnrieley1404'e verdiğimiz cevap 1 beğeni. Donner sabit yorumu atıldı + kalp (10 Eki ~20:45).
 Ders: "The moment X got me" kalıbı (videodaki belirli bir ana atıf) en çok beğeni alan yorum tipi → standart yorum kalıbımız bu.
