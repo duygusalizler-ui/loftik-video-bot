@@ -1,0 +1,73 @@
+name: PawPrint kanca + küre Reel
+
+# Bir açılış (kanca) videosunu düzeltilmiş küre sahnesiyle birleştirir,
+# üstüne kanca yazısını koyar ve pawprint-reels sürümüne yükler.
+on:
+  workflow_dispatch:
+    inputs:
+      hook_url:
+        description: "Açılış videosu linki (https, mp4)"
+        required: true
+      text_png:
+        description: "Yazı katmanı (pawprint/assets/hooks/ içindeki png adı, boş = yazısız)"
+        required: false
+      name:
+        description: "Çıktı adı (ör. hook_door)"
+        required: true
+      hook_seconds:
+        description: "Açılıştan kullanılacak süre (sn)"
+        default: "3.9"
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: ffmpeg
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+
+      - name: Birleştir
+        env:
+          HOOK_URL: ${{ inputs.hook_url }}
+          TEXT_PNG: ${{ inputs.text_png }}
+          NAME: ${{ inputs.name }}
+          HS: ${{ inputs.hook_seconds }}
+        run: |
+          set -euo pipefail
+          curl -fsSL "$HOOK_URL" -o hook.mp4
+          P=pawprint/assets/product/press_reveal.mp4
+          V="scale=1088:1920:force_original_aspect_ratio=increase,crop=1088:1920,fps=24,setsar=1,format=yuv420p"
+          A="aresample=48000,aformat=channel_layouts=stereo"
+          OFF=$(python3 -c "print(round(float('$HS')-0.35,3))")
+          END=$(python3 -c "print(round(float('$HS')-0.3,3))")
+          if [ -n "$TEXT_PNG" ]; then
+            OV="[h]scale=1088:1920[hs];[2:v]scale=1088:1920[t];[hs][t]overlay=0:0:enable='between(t,0.15,$END)'[ht]"
+            INPUTS=(-i hook.mp4 -i "$P" -i "pawprint/assets/hooks/$TEXT_PNG")
+          else
+            OV="[h]copy[ht]"
+            INPUTS=(-i hook.mp4 -i "$P")
+          fi
+          HAS_A=$(ffprobe -v error -select_streams a -show_entries stream=index -of csv=p=0 hook.mp4 | head -1)
+          if [ -n "$HAS_A" ]; then
+            AF="[0:a]atrim=0:$HS,asetpts=PTS-STARTPTS,$A,volume=0.6[a0];[1:a]$A[a1];[a0][a1]acrossfade=d=0.35[a]"
+          else
+            AF="anullsrc=r=48000:cl=stereo,atrim=0:$HS[a0];[1:a]$A[a1];[a0][a1]acrossfade=d=0.35[a]"
+          fi
+          ffmpeg -loglevel error -y "${INPUTS[@]}" -filter_complex \
+            "[0:v]trim=0:$HS,setpts=PTS-STARTPTS,$V[h];$OV;[1:v]$V,setpts=PTS-STARTPTS[p];[ht][p]xfade=transition=fade:duration=0.35:offset=$OFF[v];$AF" \
+            -map "[v]" -map "[a]" -c:v libx264 -crf 18 -preset medium -pix_fmt yuv420p -c:a aac -b:a 160k -movflags +faststart "$NAME.mp4"
+          ffmpeg -loglevel error -y -i "$NAME.mp4" -vf "fps=1,scale=150:-1,tile=12x1" -frames:v 1 "${NAME}_sheet.jpg"
+          ffprobe -v error -show_entries format=duration -of csv=p=0 "$NAME.mp4"
+
+      - name: Sürüme yükle
+        env:
+          GH_TOKEN: ${{ github.token }}
+          NAME: ${{ inputs.name }}
+        run: |
+          gh release view pawprint-reels >/dev/null 2>&1 || gh release create pawprint-reels --title "PawPrint reels" --notes "Bot çıktıları (otomatik)" --latest=false
+          gh release upload pawprint-reels "$NAME.mp4" "${NAME}_sheet.jpg" --clobber
