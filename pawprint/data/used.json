@@ -18,7 +18,9 @@
     5353255,
     8746927,
     30637739,
-    36741562
+    36741562,
+    19087160,
+    8746929
   ],
   "themes": [
     "senior_dog",
@@ -31,7 +33,8 @@
     "owner_love",
     "senior_dog",
     "senior_dog",
-    "paws"
+    "paws",
+    "puppy_to_senior"
   ],
   "runs": [
     {
@@ -117,6 +120,14 @@
       "stock": [
         "https://www.pexels.com/video/golden-retriever-enjoys-ocean-view-30637739/",
         "https://www.pexels.com/video/golden-retriever-relaxing-in-spring-garden-36741562/"
+      ]
+    },
+    {
+      "at": "20261014_125615",
+      "theme": "puppy_to_senior",
+      "stock": [
+        "https://www.pexels.com/video/a-dog-is-walking-down-a-hallway-with-a-tennis-ball-19087160/",
+        "https://www.pexels.com/video/close-up-footage-of-a-labrador-retriever-8746929/"
       ]
     }
   ]
