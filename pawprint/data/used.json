@@ -20,7 +20,9 @@
     30637739,
     36741562,
     19087160,
-    8746929
+    8746929,
+    7199263,
+    37589223
   ],
   "themes": [
     "senior_dog",
@@ -34,7 +36,8 @@
     "senior_dog",
     "senior_dog",
     "paws",
-    "puppy_to_senior"
+    "puppy_to_senior",
+    "walks"
   ],
   "runs": [
     {
@@ -128,6 +131,14 @@
       "stock": [
         "https://www.pexels.com/video/a-dog-is-walking-down-a-hallway-with-a-tennis-ball-19087160/",
         "https://www.pexels.com/video/close-up-footage-of-a-labrador-retriever-8746929/"
+      ]
+    },
+    {
+      "at": "20261014_192903",
+      "theme": "walks",
+      "stock": [
+        "https://www.pexels.com/video/woman-petting-a-dog-7199263/",
+        "https://www.pexels.com/video/adorable-golden-retriever-puppy-exploring-outdoors-37589223/"
       ]
     }
   ]
