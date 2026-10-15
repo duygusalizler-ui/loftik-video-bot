@@ -181,3 +181,9 @@ Ders: sonraki konular "bilinen olay + sayı" kalıbına yaslansın; kapakta haya
 - 30 izlenme · TO %3,8 (Napolyon %3,3) · ort. izlenme 3:00 / 7:05 ≈ %42 (Napolyon %26,5). İlk 12 izlenmede %55.
 - A/B (FROZEN / FROZEN SOLID / WINE FROZE) çalışıyor. Kanal 28 gün: 1.923 izlenme, 16,3 sa, +5 abone.
 - Ders: tutma oranı kanalın en iyisi (§20 kuralları — ilk 3 sn vaat, hareketli ilk kare — işe yaradı). Gösterim düşük; dokunma, 72 saat bekle.
+
+## 24. HATA: Napolyon'da otomobil (15 Eki gece, derleme kontrolünde bulundu)
+- ep003 sahne 7, ikinci klip (yanan Moskova sokağı, video ~2:03–2:10): uzakta 1920'ler tipi otomobil görünüyor. Yayındaki Napolyon videosunda da var.
+- Derlemede düzeltildi: o 7,5 sn geniş Moskova karesinden yavaş yakınlaştırmayla değiştirildi (atlı fayton, dönem uygun).
+- Yayındaki video için öneri: Studio → Düzenleyici → Bulanıklaştır → Özel bulanıklaştırma ile 2:03–2:10 arası arabayı bulanıklaştır (izlenmeler sıfırlanmaz).
+- Ders: klip QA'sı küçük ölçekte yapılınca uzak arka plan nesneleri kaçıyor → her klipte 2–3 kareyi TAM çözünürlükte, arka plan dahil kontrol et ("araba/otomobil/elektrik direği/modern" taraması).
