@@ -30,3 +30,9 @@ Sonuç: niş kalabalık ama çoğu ya **liste/bilgi** ya da **düşük kaliteli 
 - Kanal fragmanı + geri dönen aboneler: Napolyon. Ana sayfa: Size özel → Oynatma listeleri → Gönderiler → Videolar.
 - Donner A/B (başlık+kapak): HIS DIARY / 4 MONTHS ("Can You Survive 4 Months Trapped With the Donner Party?") / FROZEN HELL ("How One Family Survived the Donner Party Winter").
 - YAPILACAK 14 Eki (ep005 yayını sonrası): Donner bitiş ekranı video kutusu → ep005; ep005'i oynatma listesinin sonuna ekle; ep005 bitiş ekranı → Donner + liste + abone.
+
+## Cumartesi 17 Eki 20:10 — "5 Winters | History for Sleep" (derleme, 0 kredi)
+- build/sleep01/teslim: 43:12 video, 5'li kapak (5 WINTERS), YouTube metni.
+- Ep001→ep005 yayın sırasıyla; bölüm sonu "next" köprüleri korunuyor. Kesilenler: ep003/ep004 like-subscribe CTA'sı, ep005 "yorumlara yaz" sorusu, ep005 kapanış CTA'sı + Moğolistan teaser'ı. Bitiş: 1709 fırın sahnesi.
+- Miks: ambiyans −22 dB, müzik −16 dB (ducking), −18 LUFS. Bölümler arası 2 sn siyah.
+- Bölümler: 0:00 / 9:31 / 19:30 / 28:24 / 36:49.
