@@ -176,3 +176,8 @@ Ders: sonraki konular "bilinen olay + sayı" kalıbına yaslansın; kapakta haya
 - Parlak mavi gökyüzü / güneşli sahne kullanma (Donner "4 MONTHS" bu yüzden elendi; ayrıca fırtınalı tarihe de ters).
 - Ep005 A/B: FROZEN (yüz) vs FROZEN SOLID (balta, YouTube AI) vs WINE FROZE (fıçı, YouTube AI) — hangi konsept türünün kazandığını not et.
 - Donner (12 Eki): başlık → "The Donner Party: Trapped in the Snow for 4 Months"; kapak → karanlık "4 MONTHS" (ep004 kare 013: gömülü kulübe + kar merdiveni + günlük, 0 kredi). Eski parlak 4 MONTHS kullanılmadı.
+
+## 23. Ep005 ilk 26 saat (15 Eki)
+- 30 izlenme · TO %3,8 (Napolyon %3,3) · ort. izlenme 3:00 / 7:05 ≈ %42 (Napolyon %26,5). İlk 12 izlenmede %55.
+- A/B (FROZEN / FROZEN SOLID / WINE FROZE) çalışıyor. Kanal 28 gün: 1.923 izlenme, 16,3 sa, +5 abone.
+- Ders: tutma oranı kanalın en iyisi (§20 kuralları — ilk 3 sn vaat, hareketli ilk kare — işe yaradı). Gösterim düşük; dokunma, 72 saat bekle.
