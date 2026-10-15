@@ -22,7 +22,9 @@
     19087160,
     8746929,
     7199263,
-    37589223
+    37589223,
+    33151129,
+    7572155
   ],
   "themes": [
     "senior_dog",
@@ -37,7 +39,8 @@
     "senior_dog",
     "paws",
     "puppy_to_senior",
-    "walks"
+    "walks",
+    "owner_love"
   ],
   "runs": [
     {
@@ -139,6 +142,14 @@
       "stock": [
         "https://www.pexels.com/video/woman-petting-a-dog-7199263/",
         "https://www.pexels.com/video/adorable-golden-retriever-puppy-exploring-outdoors-37589223/"
+      ]
+    },
+    {
+      "at": "20261015_124342",
+      "theme": "owner_love",
+      "stock": [
+        "https://www.pexels.com/video/playful-golden-retriever-in-scenic-field-33151129/",
+        "https://www.pexels.com/video/woman-hugging-a-dog-7572155/"
       ]
     }
   ]
