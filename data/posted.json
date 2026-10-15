@@ -321,6 +321,14 @@
       "mod": "gonderi",
       "kare": 4,
       "bot": false
+    },
+    {
+      "url": "https://www.loftikayakkabi.com/urun/mn258-cbt-roma-erkek-bot-beyaz",
+      "title": "MN258 - CBT Roma Erkek Bot BEYAZ",
+      "posted_at": "2026-10-15T15:41:23.632350+00:00",
+      "mod": "gonderi",
+      "kare": 4,
+      "bot": true
     }
   ]
 }
