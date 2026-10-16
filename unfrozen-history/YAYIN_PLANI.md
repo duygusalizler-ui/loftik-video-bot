@@ -32,6 +32,7 @@ Sonuç: niş kalabalık ama çoğu ya **liste/bilgi** ya da **düşük kaliteli 
 - YAPILACAK 14 Eki (ep005 yayını sonrası): Donner bitiş ekranı video kutusu → ep005; ep005'i oynatma listesinin sonuna ekle; ep005 bitiş ekranı → Donner + liste + abone.
 
 ## Cumartesi 17 Eki 20:10 — "5 Winters | History for Sleep" (derleme, 0 kredi)
+- İndirme (son, yamalı): https://d2ol7oe51mr4n9.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/aef6d674-13f4-40be-b2a7-b81d9d072036.mp4
 - build/sleep01/teslim: 43:12 video, 5'li kapak (5 WINTERS), YouTube metni.
 - Ep001→ep005 yayın sırasıyla; bölüm sonu "next" köprüleri korunuyor. Kesilenler: ep003/ep004 like-subscribe CTA'sı, ep005 "yorumlara yaz" sorusu, ep005 kapanış CTA'sı + Moğolistan teaser'ı. Bitiş: 1709 fırın sahnesi.
 - Miks: ambiyans −22 dB, müzik −16 dB (ducking), −18 LUFS. Bölümler arası 2 sn siyah.
