@@ -186,4 +186,6 @@ Ders: sonraki konular "bilinen olay + sayı" kalıbına yaslansın; kapakta haya
 - ep003 sahne 7, ikinci klip (yanan Moskova sokağı, video ~2:03–2:10): uzakta 1920'ler tipi otomobil görünüyor. Yayındaki Napolyon videosunda da var.
 - Derlemede düzeltildi: o 7,5 sn geniş Moskova karesinden yavaş yakınlaştırmayla değiştirildi (atlı fayton, dönem uygun).
 - Yayındaki video için öneri: Studio → Düzenleyici → Bulanıklaştır → Özel bulanıklaştırma ile 2:03–2:10 arası arabayı bulanıklaştır (izlenmeler sıfırlanmaz).
+- ep001 (Ortaçağ) aynı yaşlı kadın klibi 2 kez: 0:12–0:22 ve 6:31–6:39 → pencerede karla kaplı beyaz otomobil (kaynak görsel 023.png temiz; arabayı video modeli eklemiş). Derlemede temiz görselden yakınlaştırmayla değiştirildi. Yayındaki video: Studio bulanıklaştırma önerisi.
+- 5 bölüm YOLO taraması (2 kare/sn, 4'lü karo) yapıldı: başka net araç yok (vagon/fayton/at → yanlış alarm). Not: dedektör bu iki arabayı kaçırdı/zayıf buldu → tek başına yeterli değil.
 - Ders: klip QA'sı küçük ölçekte yapılınca uzak arka plan nesneleri kaçıyor → her klipte 2–3 kareyi TAM çözünürlükte, arka plan dahil kontrol et ("araba/otomobil/elektrik direği/modern" taraması).
