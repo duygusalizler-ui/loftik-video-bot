@@ -28,7 +28,9 @@
     37589235,
     35605512,
     17041569,
-    17029740
+    17029740,
+    10838973,
+    39401151
   ],
   "themes": [
     "senior_dog",
@@ -46,7 +48,8 @@
     "walks",
     "owner_love",
     "everyday_moments",
-    "senior_dog"
+    "senior_dog",
+    "paws"
   ],
   "runs": [
     {
@@ -172,6 +175,14 @@
       "stock": [
         "https://www.pexels.com/video/a-bed-with-a-white-comforter-and-pillows-17041569/",
         "https://www.pexels.com/video/a-black-dog-is-standing-on-a-wooden-deck-17029740/"
+      ]
+    },
+    {
+      "at": "20261016_185132",
+      "theme": "paws",
+      "stock": [
+        "https://www.pexels.com/video/dog-walking-on-road-10838973/",
+        "https://www.pexels.com/video/golden-retriever-relaxing-on-sandy-beach-39401151/"
       ]
     }
   ]
