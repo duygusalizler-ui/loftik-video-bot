@@ -32,7 +32,9 @@
     10838973,
     39401151,
     8746942,
-    17029747
+    17029747,
+    40175662,
+    18311102
   ],
   "themes": [
     "senior_dog",
@@ -52,7 +54,8 @@
     "everyday_moments",
     "senior_dog",
     "paws",
-    "puppy_to_senior"
+    "puppy_to_senior",
+    "walks"
   ],
   "runs": [
     {
@@ -194,6 +197,14 @@
       "stock": [
         "https://www.pexels.com/video/close-up-up-footage-of-a-labrador-retriever-8746942/",
         "https://www.pexels.com/video/a-dog-looking-up-at-the-ceiling-17029747/"
+      ]
+    },
+    {
+      "at": "20261017_175312",
+      "theme": "walks",
+      "stock": [
+        "https://www.pexels.com/video/golden-retriever-at-sunset-beach-40175662/",
+        "https://www.pexels.com/video/golden-retriever-fea-18311102/"
       ]
     }
   ]
