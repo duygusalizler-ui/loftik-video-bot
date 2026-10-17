@@ -30,7 +30,9 @@
     17041569,
     17029740,
     10838973,
-    39401151
+    39401151,
+    8746942,
+    17029747
   ],
   "themes": [
     "senior_dog",
@@ -49,7 +51,8 @@
     "owner_love",
     "everyday_moments",
     "senior_dog",
-    "paws"
+    "paws",
+    "puppy_to_senior"
   ],
   "runs": [
     {
@@ -183,6 +186,14 @@
       "stock": [
         "https://www.pexels.com/video/dog-walking-on-road-10838973/",
         "https://www.pexels.com/video/golden-retriever-relaxing-on-sandy-beach-39401151/"
+      ]
+    },
+    {
+      "at": "20261017_114110",
+      "theme": "puppy_to_senior",
+      "stock": [
+        "https://www.pexels.com/video/close-up-up-footage-of-a-labrador-retriever-8746942/",
+        "https://www.pexels.com/video/a-dog-looking-up-at-the-ceiling-17029747/"
       ]
     }
   ]
