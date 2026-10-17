@@ -22,7 +22,8 @@ def send(res, brand) -> None:
             with open(sheet, "rb") as f:
                 requests.post(_api("sendPhoto"), data={"chat_id": chat, "caption": "Hızlı kontrol: videodan 6 kare"},
                               files={"photo": f}, timeout=120)
-        text = f"📝 AÇIKLAMA (kopyala):\n\n{res.caption}\n\n📌 SABİT YORUM:\n{res.pinned_comment}"
+        text = (f"📝 AÇIKLAMA (kopyala):\n\n{res.caption}\n\n📌 SABİT YORUM:\n{res.pinned_comment}"
+                f"\n\n💬 DM KISAYOLU: {(plan.get('dm_kelimesi') or '').lower()}\n{plan.get('dm_mesaji') or ''}")
     else:
         text = head + "\n\n⚠️ Kalite kontrolünden yeterli sahne geçmedi, video gönderilmedi."
     gecen = sum(1 for q in res.qa_log if q.get("gecti"))

@@ -1,15 +1,22 @@
 name: Hikâye videosu
 
 on:
+  # Seri üretim: her gün TR 12:07'de sıradaki ürün için 1 video (sadece FAL_KEY tanımlıysa çalışır)
+  schedule:
+    - cron: "7 9 * * *"
   workflow_dispatch:
     inputs:
+      mod:
+        description: "video = hikâye videosu, rakip = Meta reklam kütüphanesi taraması"
+        default: "video"
+        required: false
       marka:
         description: "Marka kodu (storyads/brands/<kod>.json)"
         default: "loftik"
         required: true
       urun:
-        description: "Ürün sayfası linki"
-        required: true
+        description: "Ürün sayfası linki (boş = listeden sıradaki ürün)"
+        required: false
       format:
         description: "Format (boş = otomatik): rovans, saat, sirri_ne, pov, beklenti_gercek, kucuk_kahraman, sayac"
         required: false
@@ -30,17 +37,29 @@ jobs:
         with:
           python-version: "3.11"
       - run: pip install -r requirements.txt
+      - name: Rakip reklam taraması
+        if: inputs.mod == 'rakip'
+        env:
+          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python scripts/rakip_tara.py
       - name: Video üret
+        if: inputs.mod != 'rakip'
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          FAL_KEY: ${{ secrets.FAL_KEY }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-          MARKA: ${{ inputs.marka }}
+          MARKA: ${{ inputs.marka || 'loftik' }}
           URUN: ${{ inputs.urun }}
           FORMAT: ${{ inputs.format }}
           KARAKTER: ${{ inputs.karakter }}
         run: |
-          args=(--marka "$MARKA" --urun "$URUN" --telegram)
+          if [ "$GITHUB_EVENT_NAME" = "schedule" ] && [ -z "$FAL_KEY" ]; then
+            echo "FAL_KEY yok: otomatik günlük üretim kapalı (Veo kalitesi yetersiz). Atlandı."; exit 0
+          fi
+          if [ -n "$URUN" ]; then args=(--marka "$MARKA" --urun "$URUN" --telegram)
+          else args=(--marka "$MARKA" --siradaki --telegram); fi
           [ -n "$FORMAT" ] && args+=(--format "$FORMAT")
           [ -n "$KARAKTER" ] && args+=(--karakter "$KARAKTER")
           python -m storyads "${args[@]}"
@@ -54,9 +73,10 @@ jobs:
             cikti/**/*.txt
             cikti/**/*.json
             cikti/**/kareler.jpg
+            cikti/rakip/**
           if-no-files-found: ignore
-      - name: Format/karakter geçmişini kaydet
-        if: success()
+      - name: Format/karakter/ürün geçmişini kaydet
+        if: always()
         run: |
           git config user.name "storyads-bot"
           git config user.email "storyads-bot@users.noreply.github.com"

@@ -42,7 +42,8 @@ FORMATS = {
     },
     "sayac": {
         "ad": "Sayaç",
-        "fikir": "Ekranda bir sayaç: 'Islak çorap sayısı: 47'. Ürünle sayaç sıfırlanır.",
+        "fikir": "Ekran YAZISINDA bir sayaç ilerler ('Islak çorap: 47'); görüntünün içinde sayı/sayaç/yazı ASLA olmaz. "
+                 "Ürünle sayaç sıfırlanır.",
         "final_ornek": "Islak çorap: 0",
     },
 }

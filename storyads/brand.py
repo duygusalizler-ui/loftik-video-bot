@@ -22,6 +22,7 @@ class Brand:
     yasak: list = field(default_factory=list)  # asla yapilmayacaklar
     urun_notlari: dict = field(default_factory=dict)  # urun tipi -> gorsel ipucu
     muzik_modu: str = "komik"
+    guven_satiri: str = ""  # açıklamaya eklenen güven satırı (kapıda ödeme, kargo, değişim)
     dil: str = "tr"
 
 
