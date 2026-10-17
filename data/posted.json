@@ -345,6 +345,14 @@
       "mod": "gonderi",
       "kare": 3,
       "bot": false
+    },
+    {
+      "url": "https://www.loftikayakkabi.com/urun/mn213-cst-bryggen-erkek-bot-siyah",
+      "title": "MN213 - CST Bryggen Erkek Bot SIYAH",
+      "posted_at": "2026-10-17T07:56:09.007101+00:00",
+      "mod": "gonderi",
+      "kare": 4,
+      "bot": true
     }
   ]
 }
