@@ -36,10 +36,11 @@
     40175662,
     18311102,
     7516719,
-    38395126
+    38395126,
+    36040957,
+    39834680
   ],
   "themes": [
-    "senior_dog",
     "owner_love",
     "everyday_moments",
     "walks",
@@ -58,7 +59,8 @@
     "paws",
     "puppy_to_senior",
     "walks",
-    "owner_love"
+    "owner_love",
+    "everyday_moments"
   ],
   "runs": [
     {
@@ -216,6 +218,14 @@
       "stock": [
         "https://www.pexels.com/video/woman-playing-with-a-dog-7516719/",
         "https://www.pexels.com/video/golden-retriever-in-scenic-wheat-field-38395126/"
+      ]
+    },
+    {
+      "at": "20261018_181245",
+      "theme": "everyday_moments",
+      "stock": [
+        "https://www.pexels.com/video/golden-retriever-sitting-outdoors-in-sunny-weather-36040957/",
+        "https://www.pexels.com/video/border-collie-running-at-golden-hour-39834680/"
       ]
     }
   ]
