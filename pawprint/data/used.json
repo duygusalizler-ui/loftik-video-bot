@@ -34,7 +34,9 @@
     8746942,
     17029747,
     40175662,
-    18311102
+    18311102,
+    7516719,
+    38395126
   ],
   "themes": [
     "senior_dog",
@@ -55,7 +57,8 @@
     "senior_dog",
     "paws",
     "puppy_to_senior",
-    "walks"
+    "walks",
+    "owner_love"
   ],
   "runs": [
     {
@@ -205,6 +208,14 @@
       "stock": [
         "https://www.pexels.com/video/golden-retriever-at-sunset-beach-40175662/",
         "https://www.pexels.com/video/golden-retriever-fea-18311102/"
+      ]
+    },
+    {
+      "at": "20261018_120648",
+      "theme": "owner_love",
+      "stock": [
+        "https://www.pexels.com/video/woman-playing-with-a-dog-7516719/",
+        "https://www.pexels.com/video/golden-retriever-in-scenic-wheat-field-38395126/"
       ]
     }
   ]
