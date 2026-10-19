@@ -40,10 +40,11 @@
     36040957,
     39834680,
     9615483,
-    35475036
+    35475036,
+    31663527,
+    32309993
   ],
   "themes": [
-    "everyday_moments",
     "walks",
     "paws",
     "puppy_to_senior",
@@ -62,7 +63,8 @@
     "walks",
     "owner_love",
     "everyday_moments",
-    "senior_dog"
+    "senior_dog",
+    "paws"
   ],
   "runs": [
     {
@@ -236,6 +238,14 @@
       "stock": [
         "https://www.pexels.com/video/man-sleeping-on-bed-9615483/",
         "https://www.pexels.com/video/relaxed-dogs-resting-outside-rustic-shed-35475036/"
+      ]
+    },
+    {
+      "at": "20261019_203823",
+      "theme": "paws",
+      "stock": [
+        "https://www.pexels.com/video/golden-retriever-swimming-in-river-scene-31663527/",
+        "https://www.pexels.com/video/happy-dog-relaxing-in-sunny-park-daytime-32309993/"
       ]
     }
   ]
