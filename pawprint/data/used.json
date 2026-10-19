@@ -38,10 +38,11 @@
     7516719,
     38395126,
     36040957,
-    39834680
+    39834680,
+    9615483,
+    35475036
   ],
   "themes": [
-    "owner_love",
     "everyday_moments",
     "walks",
     "paws",
@@ -60,7 +61,8 @@
     "puppy_to_senior",
     "walks",
     "owner_love",
-    "everyday_moments"
+    "everyday_moments",
+    "senior_dog"
   ],
   "runs": [
     {
@@ -226,6 +228,14 @@
       "stock": [
         "https://www.pexels.com/video/golden-retriever-sitting-outdoors-in-sunny-weather-36040957/",
         "https://www.pexels.com/video/border-collie-running-at-golden-hour-39834680/"
+      ]
+    },
+    {
+      "at": "20261019_144558",
+      "theme": "senior_dog",
+      "stock": [
+        "https://www.pexels.com/video/man-sleeping-on-bed-9615483/",
+        "https://www.pexels.com/video/relaxed-dogs-resting-outside-rustic-shed-35475036/"
       ]
     }
   ]
