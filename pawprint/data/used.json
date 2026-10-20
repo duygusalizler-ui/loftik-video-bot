@@ -44,10 +44,11 @@
     31663527,
     32309993,
     11562575,
-    39564505
+    39564505,
+    39405689,
+    35481318
   ],
   "themes": [
-    "paws",
     "puppy_to_senior",
     "senior_dog",
     "owner_love",
@@ -66,7 +67,8 @@
     "everyday_moments",
     "senior_dog",
     "paws",
-    "puppy_to_senior"
+    "puppy_to_senior",
+    "walks"
   ],
   "runs": [
     {
@@ -256,6 +258,14 @@
       "stock": [
         "https://www.pexels.com/video/vertical-video-of-sleeping-puppy-11562575/",
         "https://www.pexels.com/video/golden-retriever-enjoying-a-toy-outdoors-39564505/"
+      ]
+    },
+    {
+      "at": "20261020_192250",
+      "theme": "walks",
+      "stock": [
+        "https://www.pexels.com/video/dog-enjoying-sunset-at-the-beach-39405689/",
+        "https://www.pexels.com/video/dog-walking-on-coastal-pathway-by-the-ocean-35481318/"
       ]
     }
   ]
