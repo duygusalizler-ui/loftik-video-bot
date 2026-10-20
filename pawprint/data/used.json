@@ -42,10 +42,11 @@
     9615483,
     35475036,
     31663527,
-    32309993
+    32309993,
+    11562575,
+    39564505
   ],
   "themes": [
-    "walks",
     "paws",
     "puppy_to_senior",
     "senior_dog",
@@ -64,7 +65,8 @@
     "owner_love",
     "everyday_moments",
     "senior_dog",
-    "paws"
+    "paws",
+    "puppy_to_senior"
   ],
   "runs": [
     {
@@ -246,6 +248,14 @@
       "stock": [
         "https://www.pexels.com/video/golden-retriever-swimming-in-river-scene-31663527/",
         "https://www.pexels.com/video/happy-dog-relaxing-in-sunny-park-daytime-32309993/"
+      ]
+    },
+    {
+      "at": "20261020_124813",
+      "theme": "puppy_to_senior",
+      "stock": [
+        "https://www.pexels.com/video/vertical-video-of-sleeping-puppy-11562575/",
+        "https://www.pexels.com/video/golden-retriever-enjoying-a-toy-outdoors-39564505/"
       ]
     }
   ]
