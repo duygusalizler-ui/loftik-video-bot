@@ -186,7 +186,7 @@ scenes = [
   sound="a stove ticking, men murmuring, wind outside canvas",
   refs=[], must=["1950 tent stove, no modern heaters"]),
  dict(title="The airstrip", mode="stills", ambience_from="Another direction", pov=False, mood="warm",
-  v="At Hagaru, our engineers had scraped an airstrip out of the frozen ground. Twin-engine transport planes landed on it, under fire, and carried out our wounded and frostbitten. Thousands of men flew out of that frozen field. The rest of us kept walking.",
+  v="Right there, our engineers had scraped an airstrip out of the frozen ground. Twin-engine transport planes landed on it, under fire, and carried out our wounded and frostbitten. Thousands of men flew out of that frozen field. The rest of us kept walking.",
   img="A small frozen airstrip in a mountain valley with a twin-engine transport plane",
   stills=["A rough frozen dirt airstrip in a snowy North Korean mountain valley, December 1950: an olive-drab twin-engine C-47 transport plane waits with its door open, wounded Marines on stretchers being carried toward it, tents and trucks nearby, NO legible markings",
           "A twin-engine C-47 transport plane lifting off from a short snowy airstrip between dark mountains, December 1950, snow blowing behind it"],
@@ -275,7 +275,7 @@ scenes = [
   sound="sea wind, waves against a hull, two men laughing softly",
   refs=["danny", "ray"], must=["exactly two people in front"]),
  dict(title="The Chosin Few", mode="stills", ambience_from="How I survived", pov=False, mood="warm",
-  v="The ships took us south. We spent Christmas of nineteen-fifty in a tent camp the Marines called the Bean Patch. Years later, the men who walked out of those mountains started calling ourselves the Chosin Few.",
+  v="The ships took us south. We spent Christmas of nineteen-fifty in a tent camp the Marines called the Bean Patch. Years later, those of us who walked out of those mountains started calling ourselves the Chosin Few.",
   img="A transport ship at sea at dusk, then a tent camp at Christmas",
   stills=["A grey transport ship at sea at dusk, December 1950, the snowy mountains of North Korea fading on the horizon behind it, calm water, a pale star in the sky",
           f"A muddy tent camp in a valley in South Korea, Christmas 1950, light frost, olive-drab squad tents, {MAR} without helmets gathered around a small pine tree decorated with scraps of red cloth and ration-tin lids, warm lamp light from a tent, tired smiles"],
@@ -324,11 +324,7 @@ ep = {
  "hook_description": "Korea, November 1950. Fifteen thousand US Marines are surrounded by more than a hundred thousand Chinese soldiers at the top of a frozen mountain, at thirty-five below. Danny, a 19-year-old private, tells how they survived the cold and fought their way down one narrow road to the sea.",
  "character": "Danny Moore, a fictional 19-year-old private in the 7th Marines, 1st Marine Division; his buddy Ray (BAR man)",
  "setting": "The Chosin Reservoir campaign, North Korea, from Thanksgiving to Christmas 1950: the mountain road from Yudam-ni and Hagaru-ri through Koto-ri and the Funchilin Pass down to the port of Hungnam",
- "style": ("Hand-painted gouache and watercolor storybook illustration, visible brush texture, warm amber firelight and flare light "
-           "against cold blue winter light, cinematic composition, historically accurate Korean War 1950: US Marines in long "
-           "olive-drab hooded parkas, pile caps with fur-lined ear flaps under plain M1 steel helmets, rubber-bottomed shoepac boots, "
-           "M1 Garand rifles, M1 carbines, Browning Automatic Rifles, jeeps and deuce-and-a-half trucks, M26 tanks, F4U Corsairs, "
-           "C-47 and C-119 transport planes; no modern objects, soft painterly detail, no text, no letters, no watermark"),
+ "style": ('Hand-painted gouache and watercolor storybook illustration, visible brush texture, warm amber firelight and flare light against cold blue winter light, cinematic composition, historically accurate Korean War 1950 US Marine winter gear (long olive-drab hooded parkas, pile caps with fur-lined ear flaps under plain M1 steel helmets, rubber-bottomed shoepac boots, M1 rifles); show ONLY what the scene description asks for, do not add extra vehicles, aircraft, tanks or ships; any vehicle shown is a 1950 model; no modern objects, soft painterly detail, no text, no letters, no watermark'),
  "ref_style": ("Hand-painted gouache and watercolor storybook character reference sheet, same painterly look as the episode, "
                "even neutral lighting, plain warm parchment background, historically accurate 1950 US Marine winter field uniform, "
                "original fictional person, no text, no labels, no badges with writing, no watermark"),
@@ -346,7 +342,7 @@ ep = {
           "painterly gouache look in every frame"],
  "must_not": ["any text, letters, numbers, captions, logos, unit patches, name tapes or watermark",
               "modern objects: modern cars, SUVs, pickup trucks, helicopters, drones, plastic, digital watches, phones, electric streetlights, power lines",
-              "modern military gear: camouflage patterns, body armor, plate carriers, night-vision goggles, modern helmets with covers or straps, modern rifles with optics, US flag patches",
+              "modern military gear: camouflage patterns, body armor, plate carriers, modern helmets with covers or straps, modern rifles with optics, US flag patches",
               "World War I or Vietnam-era uniforms, tropical uniforms, green jungle",
               "gore, blood, wounds, corpses, skeletons",
               "extra fingers, deformed hands, duplicated faces",
@@ -388,9 +384,10 @@ ep005 = S.load_episode("ep005")
 ep["voice_engine"] = ep005["voice_engine"]
 clips = [s for s in ep["scenes"] if s["mode"] == "clip"]
 stills = sum(len(s["still_prompts"]) for s in ep["scenes"] if s["mode"] == "stills")
-cost = len(clips) * (7.5 + 1) + stills * 2 + len(refs) * 1
-ep["max_credits"] = int(cost * 1.15) + 1
-S.save_episode(ep)
+cost = len(clips) * (15 + 2.75) + stills * 2.75 + len(refs) * 2.75  # GPT Image 2.5 high 2K + Seedance 720p
+ep["max_credits"] = 360  # kullanıcı onayı 20 Eki
+if __name__ == "__main__" and "--force" in sys.argv:
+    S.save_episode(ep)  # DİKKAT: kapıları ve üretilen varlıkları sıfırlar
 
 w = [len(s["narration"].split()) for s in ep["scenes"]]
 print(len(w), "sahne", sum(w), "kelime", min(w), max(w), "≈", round(sum(w)/2.81/1.06/60 + len(w)*0.6/60, 1), "dk")

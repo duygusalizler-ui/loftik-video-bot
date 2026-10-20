@@ -107,7 +107,7 @@ def cmd_check(a):
     elif S.is_ref(a.n):
         params["medias"] = [{"role": "image", "value": v} for v in s.get("from", [])]
     elif s.get("refs"):
-        params["medias"] = ref_media(ep, s["refs"], "image")
+        params["medias"] = [{"role": C.IMAGE_REF_ROLE, "value": m["value"]} for m in ref_media(ep, s["refs"], "image")]
     if not params.get("medias"):
         params.pop("medias", None)
     print(json.dumps({"ok": True, "cost": cost, "params": params}, ensure_ascii=False, indent=2))

@@ -9,25 +9,26 @@ USED_TOPICS_PATH = DATA_DIR / "used_topics.json"  # tekrar engeli
 BUILD_DIR = ROOT / "build"  # gitignore'da; indirilen klipler, ses, render
 
 # --- Bütçe (kredi) — kod seviyesinde sert sınırlar ---
-MAX_CREDITS_PER_VIDEO = 300
+MAX_CREDITS_PER_VIDEO = 360  # 20 Eki: yüksek kalite (GPT Image 2.5 high 2K + Seedance 720p), kullanıcı onayı
 MAX_CREDITS_PER_MONTH = 2600  # haftada 2 bölüm (~293 x 8,7) — kanal sahibinin onayıyla 2026-09-30
 MIN_BALANCE_RESERVE = 500  # Sunny için ayrılan rezerv; altına inilirse başlama
 MAX_RETRIES_PER_ASSET = 1
 
 # --- Higgsfield modelleri (maliyetler get_cost ile doğrulandı) ---
-IMAGE_MODEL = "gpt_image_2"
-IMAGE_PARAMS = {"quality": "medium", "resolution": "1k", "aspect_ratio": "16:9"}
-IMAGE_COST = 1.0
+IMAGE_MODEL = "gpt_image_2_5"  # 20 Eki'den itibaren (ep007+); önceki bölümler gpt_image_2 medium 1k
+IMAGE_PARAMS = {"quality": "high", "resolution": "2k", "aspect_ratio": "16:9"}
+IMAGE_REF_ROLE = "image_references"
+IMAGE_COST = 2.75
 
 VIDEO_MODEL = "seedance_2_0_mini"
 CLIP_SECONDS = 15
 VIDEO_PARAMS = {
     "duration": CLIP_SECONDS,
-    "resolution": "480p",
+    "resolution": "720p",
     "generate_audio": True,  # ortam sesi (ateş, rüzgâr, kar) — fiyat aynı, get_cost ile doğrulandı
     "aspect_ratio": "16:9",
 }
-CLIP_COST = 7.5  # 0.5 kredi/sn x 15 sn (sesli/sessiz aynı)
+CLIP_COST = 15.0  # 720p, 15 sn (get_cost ile doğrulandı 20 Eki)
 
 # --- Görsel stil (her sahne promptuna eklenir) ---
 STYLE = (

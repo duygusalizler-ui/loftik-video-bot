@@ -223,7 +223,7 @@ def assemble(ep: dict, scenes: list[int] | None = None, music: Path | None = Non
     def one(i_s):
         i, s = i_s
         mp3 = work / f"audio_{lang}" / f"{s['n']:03d}.mp3"
-        beat = duration(mp3) + C.BEAT_PAD
+        beat = duration(mp3) + s.get("pad", C.BEAT_PAD)  # bölüm geçişlerinde daha uzun nefes
         last = i == len(chosen) - 1
         target = beat + (0 if last else XFADE)  # geçiş örtüşmesi kadar fazladan video
         seg = work / "segments" / f"{s['n']:03d}.mp4"
