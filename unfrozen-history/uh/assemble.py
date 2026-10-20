@@ -126,7 +126,8 @@ def render_segment(src: Path, out: Path, target: float, rng=None,
         return {"speed": round(speed, 3), "hold": round(hold, 2), "cached": True}
     vf = []
     if speed < 1.0:
-        vf += [f"setpts=PTS/{speed:.4f}", f"minterpolate=fps={C.OUT_FPS}:mi_mode=mci:mc_mode=aobmc:vsbmc=1"]
+        # neredeyse 1.0 hızda (görsel sahneleri) ara kare üretimi fark yaratmaz, sadece çok yavaşlatır
+        vf += [f"setpts=PTS/{speed:.4f}"] + ([] if speed > 0.97 else [f"minterpolate=fps={C.OUT_FPS}:mi_mode=mci:mc_mode=aobmc:vsbmc=1"])
     vf += [
         f"scale={C.OUT_W}:{C.OUT_H}:flags=lanczos",
         "unsharp=5:5:0.8:3:3:0.4",
