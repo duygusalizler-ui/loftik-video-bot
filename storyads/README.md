@@ -1,5 +1,7 @@
 # storyads — Hikâyeli reklam motoru
 
+> **Değişmez kurallar: [KURALLAR.md](KURALLAR.md)** — tüm markalar ve tüm videolar için geçerlidir.
+
 Bir ürün linkinden **reklam gibi durmayan**, paylaşılan kısa hikâye videosu üretir.
 Markadan bağımsızdır: Loftik ilk marka, yeni müşteri = `brands/` altına yeni bir JSON dosyası.
 

@@ -95,14 +95,61 @@ def image(prompt: str, refs: list[str], out_png: str) -> str:
         for part in resp.candidates[0].content.parts:
             data = getattr(getattr(part, "inline_data", None), "data", None)
             if data:
+                print(f"    (görsel modeli: {model})")
                 Path(out_png).write_bytes(data)
                 return _vertical(out_png)
         last = RuntimeError(f"{model} görsel döndürmedi")
     raise last or RuntimeError("Görsel üretilemedi.")
 
 
+def _kling_fal(start_image: str, prompt: str, out_mp4: str, negative: str = "") -> str:
+    """fal.ai uzerinden Kling 3.0 Pro: baslangic karesinden ses efektli, cok cekimli klip."""
+    import base64
+
+    import requests
+
+    data_uri = f"data:{_mime(start_image)};base64," + base64.b64encode(Path(start_image).read_bytes()).decode()
+    body = {"start_image_url": data_uri, "prompt": prompt[:2500], "duration": str(settings.CLIP_SECONDS),
+            "generate_audio": True, "negative_prompt": negative or "blur, distort, and low quality"}
+    last = None
+    for scheme in ("Key", "Api-Key"):  # fal'in iki yetki basligi bicimi
+        headers = {"Authorization": f"{scheme} {settings.FAL_KEY}", "Content-Type": "application/json"}
+        r = requests.post(f"https://queue.fal.run/{settings.KLING_MODEL}", json=body, headers=headers, timeout=120)
+        if r.status_code in (401, 403):
+            last = r
+            continue
+        if r.status_code == 429 or "balance" in r.text.lower() or "exhausted" in r.text.lower():
+            raise QuotaError(f"fal.ai: {r.status_code} {r.text[:300]}")
+        r.raise_for_status()
+        sub = r.json()
+        status_url = sub.get("status_url") or f"https://queue.fal.run/{settings.KLING_MODEL}/requests/{sub['request_id']}/status"
+        result_url = sub.get("response_url") or f"https://queue.fal.run/{settings.KLING_MODEL}/requests/{sub['request_id']}"
+        waited = 0
+        while True:
+            s = requests.get(status_url, headers=headers, timeout=60).json()
+            if s.get("status") == "COMPLETED":
+                break
+            if s.get("status") in ("FAILED", "ERROR") or s.get("error"):
+                raise RuntimeError(f"Kling üretemedi: {s}")
+            time.sleep(10)
+            waited += 10
+            if waited > 900:
+                raise RuntimeError("Kling klibi 15 dakikada bitmedi.")
+        res = requests.get(result_url, headers=headers, timeout=60).json()
+        url = (res.get("video") or {}).get("url")
+        if not url:
+            raise RuntimeError(f"Kling sonucu video içermiyor: {str(res)[:300]}")
+        Path(out_mp4).write_bytes(requests.get(url, timeout=300).content)
+        return out_mp4
+    raise RuntimeError(f"fal.ai yetki hatası (FAL_KEY doğru mu?): {last.status_code} {last.text[:200]}")
+
+
 def video(start_image: str, prompt: str, out_mp4: str, negative: str = "") -> str:
-    """Veo: baslangic karesinden ses EFEKTLI klip (konusma/muzik yok)."""
+    """Baslangic karesinden ses EFEKTLI klip (konusma/muzik yok). Motor: settings.VIDEO_PROVIDER."""
+    if settings.VIDEO_PROVIDER == "kling":
+        if not settings.FAL_KEY:
+            raise SystemExit("Kling seçili ama FAL_KEY tanımlı değil.")
+        return _kling_fal(start_image, prompt, out_mp4, negative)
     from google.genai import types
 
     img = types.Image(image_bytes=Path(start_image).read_bytes(), mime_type=_mime(start_image))
