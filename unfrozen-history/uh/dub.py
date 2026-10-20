@@ -17,7 +17,8 @@ def plan(ep: dict, lang: str) -> list[dict]:
     t, end, rows = 0.0, 0.0, []
     for s in ep["scenes"]:
         n = s["n"]
-        beat = duration(work / "audio_eleven" / f"{n:03d}.mp3") + C.BEAT_PAD
+        src = work / "audio_eleven" if (work / "audio_eleven").exists() else work / "audio_en"
+        beat = duration(src / f"{n:03d}.mp3") + s.get("pad", C.BEAT_PAD)
         raw = work / f"audio_{lang}_raw" / f"{n:03d}.mp3"
         d = duration(raw)
         start = max(t, end + GAP)
