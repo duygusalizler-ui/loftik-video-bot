@@ -162,6 +162,27 @@
     },
     {
       "n": 4,
+      "title": "How we got here",
+      "mode": "stills",
+      "pov": false,
+      "narration": "Here's how we got there. In June of nineteen-fifty, North Korea invaded the South. By September, we Marines had landed at Inchon, behind their lines, and the whole North Korean army fell apart. We chased them north, all the way up the peninsula. It looked like the war was won.",
+      "narration_voiced": "Here's how we got there. In June of nineteen-fifty, North Korea invaded the South. By September, we Marines had landed at Inchon, behind their lines, and the whole North Korean army fell apart. We chased them north, all the way up the peninsula. It looked like the war was won.",
+      "image_prompt": "A painterly scene of landing craft approaching a harbour city",
+      "sound": "waves, boat engines, distant marching boots",
+      "refs": [],
+      "voice_mood": "intrigue",
+      "still_prompts": [
+        "Painterly view of US Navy landing craft full of Marines approaching a harbour sea wall at Inchon, Korea, September 1950, smoke over the city, grey sea, NO legible text",
+        "Autumn 1950: a long column of American Marines of 1950 in olive-drab field jackets and plain M1 steel helmets, rubber-bottomed shoepac boots, M1 rifles marching north along a dirt road between golden rice fields and low hills in Korea, NO text"
+      ],
+      "ambience_from": 2,
+      "must": [
+        "1950 equipment only",
+        "no snow in these two images"
+      ]
+    },
+    {
+      "n": 5,
       "title": "The road north",
       "mode": "stills",
       "pov": false,
@@ -183,7 +204,7 @@
       ]
     },
     {
-      "n": 5,
+      "n": 6,
       "title": "The Siberian wind",
       "mode": "stills",
       "pov": true,
@@ -206,7 +227,7 @@
       ]
     },
     {
-      "n": 6,
+      "n": 7,
       "title": "Feet that sweat",
       "mode": "stills",
       "pov": true,
@@ -226,7 +247,7 @@
       ]
     },
     {
-      "n": 7,
+      "n": 8,
       "title": "Rule one: the socks",
       "mode": "stills",
       "pov": true,
@@ -248,7 +269,29 @@
       ]
     },
     {
-      "n": 8,
+      "n": 9,
+      "title": "Never zip the bag",
+      "mode": "stills",
+      "pov": true,
+      "narration": "We had good sleeping bags, thick and warm. And that was the danger. Rule two: you never zipped yourself all the way in. If trouble came in the night, you had to be out of that bag and on your rifle in a second. So we slept half-in, boots on, rifle in our arms.",
+      "narration_voiced": "We had good sleeping bags, thick and warm. And that was the danger. Rule two: you never zipped yourself all the way in. If trouble came in the night, you had to be out of that bag and on your rifle in a second. So we slept half-in, boots on, rifle in our arms.",
+      "image_prompt": "A Marine sleeping half-out of a sleeping bag in a snowy foxhole with his rifle",
+      "sound": "wind, a man breathing slowly",
+      "refs": [
+        "ray"
+      ],
+      "voice_mood": "tense",
+      "still_prompts": [
+        "Night in a snowy foxhole, 1950: Ray (fictional American Marine private, 22, broad dark-haired, thick black eyebrows, dark stubble, same long olive-drab hooded parka, pile cap with ear flaps under a plain M1 steel helmet, a Browning Automatic Rifle slung on his shoulder) sleeps sitting half inside an open olive-drab mountain sleeping bag, boots on, his BAR held across his chest, frost on his eyebrows, moonlight on the snow",
+        "Close painterly view of an open olive-drab mountain sleeping bag in a snowy foxhole at night, its zipper left wide open, an M1 rifle lying on top of it, frost glittering, NO people"
+      ],
+      "ambience_from": 1,
+      "must": [
+        "the sleeping bag is open, not zipped"
+      ]
+    },
+    {
+      "n": 10,
       "title": "Frozen dinner",
       "mode": "stills",
       "pov": true,
@@ -268,7 +311,7 @@
       ]
     },
     {
-      "n": 9,
+      "n": 11,
       "title": "Guns that freeze",
       "mode": "clip",
       "pov": true,
@@ -291,7 +334,29 @@
       ]
     },
     {
-      "n": 10,
+      "n": 12,
+      "title": "Ground like iron",
+      "mode": "stills",
+      "pov": true,
+      "narration": "We tried to dig foxholes. The ground was frozen a foot deep, hard as iron. Our little shovels just bounced off it. So we chipped out what we could, and built up walls of rocks and packed snow around us. It wasn't much. But it was all we had between us and the wind.",
+      "narration_voiced": "We tried to dig foxholes. The ground was frozen a foot deep, hard as iron. Our little shovels just bounced off it. So we chipped out what we could, and built up walls of rocks and packed snow around us. It wasn't much. But it was all we had between us and the wind.",
+      "image_prompt": "Marines trying to dig into frozen rocky ground on a snowy ridge",
+      "sound": "shovels clanging on frozen ground, wind",
+      "refs": [
+        "ridge"
+      ],
+      "voice_mood": "intrigue",
+      "still_prompts": [
+        "A snowy ridge at dusk, November 1950: American Marines of 1950 in long olive-drab hooded parkas, pile caps with ear flaps under plain M1 steel helmets, rubber-bottomed shoepac boots, M1 rifles swing small entrenching shovels at frozen rocky ground, chips of ice flying, breath steaming, faces strained",
+        "First-person view: gloved hands stack rocks and blocks of packed snow into a low wall around a shallow foxhole on a snowy ridge at dusk, 1950"
+      ],
+      "ambience_from": 11,
+      "must": [
+        "small folding entrenching shovels"
+      ]
+    },
+    {
+      "n": 13,
       "title": "The bugles",
       "mode": "clip",
       "pov": true,
@@ -315,7 +380,7 @@
       ]
     },
     {
-      "n": 11,
+      "n": 14,
       "title": "Surrounded",
       "mode": "stills",
       "pov": false,
@@ -329,13 +394,13 @@
         "A wide painterly bird's-eye view at dawn of snowy North Korean mountains around a long frozen reservoir, 1950, a thin dark road winding along the valley, tiny clusters of tents and trucks at a few points along it, smoke rising, dark ridges all around, NO text, NO map labels",
         "Dawn on a snowy ridge, 1950: American Marines of 1950 in long olive-drab hooded parkas, pile caps with ear flaps under plain M1 steel helmets, rubber-bottomed shoepac boots, M1 rifles stand in a shallow trench line looking out at the endless white mountains around them, breath steaming, grim faces half-hidden by hoods"
       ],
-      "ambience_from": 10,
+      "ambience_from": 13,
       "must": [
         "no text, no map labels, no arrows"
       ]
     },
     {
-      "n": 12,
+      "n": 15,
       "title": "As cold as we were",
       "mode": "stills",
       "pov": false,
@@ -349,7 +414,7 @@
         "Dawn in the snowy North Korean mountains, 1950: a small group of Chinese soldiers of 1950 in thick padded cotton winter uniforms of faded mustard-khaki, padded caps with ear flaps, thin canvas shoes huddle together behind a rock in the snow, faces gaunt and frost-bitten, breath steaming, seen from a distance with respect, NO weapons pointed, NO blood",
         "Close painterly view of a pair of thin worn canvas shoes in deep snow, frost on the cloth, 1950"
       ],
-      "ambience_from": 10,
+      "ambience_from": 13,
       "must": [
         "respectful, non-violent depiction"
       ],
@@ -359,7 +424,7 @@
       ]
     },
     {
-      "n": 13,
+      "n": 16,
       "title": "Fox Hill",
       "mode": "stills",
       "pov": false,
@@ -379,7 +444,7 @@
       ]
     },
     {
-      "n": 14,
+      "n": 17,
       "title": "Morphine in our mouths",
       "mode": "stills",
       "pov": false,
@@ -393,7 +458,7 @@
         "A US Navy corpsman of 1950 in a hooded parka kneels in the snow beside a wounded Marine lying covered with a blanket, his hand on the man's shoulder, a canvas medical bag open beside him, night, NO blood visible",
         "Close painterly view of a canvas medical bag in the snow, 1950, a small glass bottle of plasma with ice crystals inside it, frost on the canvas, NO text"
       ],
-      "ambience_from": 8,
+      "ambience_from": 11,
       "beat": "ORTA SORU (~%45)",
       "must": [
         "no blood, no wounds visible",
@@ -401,7 +466,7 @@
       ]
     },
     {
-      "n": 15,
+      "n": 18,
       "title": "Another direction",
       "mode": "clip",
       "pov": false,
@@ -425,7 +490,7 @@
       ]
     },
     {
-      "n": 16,
+      "n": 19,
       "title": "Walking at night",
       "mode": "stills",
       "pov": true,
@@ -441,13 +506,54 @@
         "Daylight over the snowy mountains, December 1950: a dark-blue gull-winged F4U Corsair fighter plane flies low along a ridge above a long column of American Marines of 1950 in long olive-drab hooded parkas, pile caps with ear flaps under plain M1 steel helmets, rubber-bottomed shoepac boots, M1 rifles and trucks on the road, NO text or markings legible",
         "Night on the frozen mountain road, 1950: first-person view of the back of a Marine walking ahead in the dark column, snow falling, moonlight on the snow, a truck's dim blackout lights behind"
       ],
-      "ambience_from": 15,
+      "ambience_from": 18,
       "must": [
         "F4U Corsair with inverted gull wings"
       ]
     },
     {
-      "n": 17,
+      "n": 20,
+      "title": "Across the ice",
+      "mode": "stills",
+      "pov": false,
+      "narration": "On the other side of the reservoir, an Army task force had been cut off and torn apart. In the first days of December, their survivors came stumbling across the frozen lake toward Hagaru, a few at a time. Our men went out onto the ice with jeeps and sleds to bring them in. Hundreds of them made it.",
+      "narration_voiced": "On the other side of the reservoir, an Army task force had been cut off and torn apart. In the first days of December, their survivors came stumbling across the frozen lake toward Hagaru, a few at a time. Our men went out onto the ice with jeeps and sleds to bring them in. Hundreds of them made it.",
+      "image_prompt": "Soldiers walking across a vast frozen reservoir toward a camp",
+      "sound": "wind across ice, a jeep engine, crunching snow",
+      "refs": [],
+      "voice_mood": "sad",
+      "still_prompts": [
+        "A vast frozen reservoir in the North Korean mountains, early December 1950, grey light: small groups of exhausted American soldiers in parkas walk and help each other across the snowy ice toward a distant camp, NO blood",
+        "A jeep with a wooden sled behind it drives out across the frozen reservoir ice to pick up tired soldiers, two Marines in parkas helping a man onto the sled, 1950, NO blood"
+      ],
+      "ambience_from": 18,
+      "must": [
+        "frozen lake surface",
+        "no blood, no bodies"
+      ]
+    },
+    {
+      "n": 21,
+      "title": "The warming tent",
+      "mode": "stills",
+      "pov": true,
+      "narration": "At Hagaru, there were warming tents with little oil stoves inside. You got a few minutes, then the next man's turn. And here's a hard lesson: if your feet were frozen, the warmth made them swell up. Men took their boots off by the stove, and then couldn't get them back on.",
+      "narration_voiced": "At Hagaru, there were warming tents with little oil stoves inside. You got a few minutes, then the next man's turn. And here's a hard lesson: if your feet were frozen, the warmth made them swell up. Men took their boots off by the stove, and then couldn't get them back on.",
+      "image_prompt": "Marines crowded inside a canvas tent around a small oil stove",
+      "sound": "a stove ticking, men murmuring, wind outside canvas",
+      "refs": [],
+      "voice_mood": "warm",
+      "still_prompts": [
+        "Inside a crowded olive-drab canvas tent at Hagaru, December 1950: American Marines of 1950 in long olive-drab hooded parkas, pile caps with ear flaps under plain M1 steel helmets, rubber-bottomed shoepac boots, M1 rifles without helmets sit shoulder to shoulder around a small round oil stove glowing orange, steam rising from wet gloves and socks hung above it, tired faces",
+        "Close painterly view inside a warm tent: a pair of rubber-bottomed shoepac boots drying beside a small glowing oil stove, wool socks steaming on a line above, 1950"
+      ],
+      "ambience_from": 18,
+      "must": [
+        "1950 tent stove, no modern heaters"
+      ]
+    },
+    {
+      "n": 22,
       "title": "The airstrip",
       "mode": "stills",
       "pov": false,
@@ -461,13 +567,13 @@
         "A rough frozen dirt airstrip in a snowy North Korean mountain valley, December 1950: an olive-drab twin-engine C-47 transport plane waits with its door open, wounded Marines on stretchers being carried toward it, tents and trucks nearby, NO legible markings",
         "A twin-engine C-47 transport plane lifting off from a short snowy airstrip between dark mountains, December 1950, snow blowing behind it"
       ],
-      "ambience_from": 15,
+      "ambience_from": 18,
       "must": [
         "C-47 Skytrain twin-engine propeller plane"
       ]
     },
     {
-      "n": 18,
+      "n": 23,
       "title": "Tootsie Rolls",
       "mode": "clip",
       "pov": true,
@@ -489,7 +595,7 @@
       ]
     },
     {
-      "n": 19,
+      "n": 24,
       "title": "The blown bridge",
       "mode": "stills",
       "pov": false,
@@ -503,13 +609,13 @@
         "A narrow mountain road in the snowy Funchilin Pass, North Korea, December 1950, ending at a blown-up concrete bridge: a gap of empty air over a deep gorge, broken concrete hanging, sheer cliffs, snow falling, NO people",
         "American Marines of 1950 in long olive-drab hooded parkas, pile caps with ear flaps under plain M1 steel helmets, rubber-bottomed shoepac boots, M1 rifles and trucks stopped in a line on the snowy mountain road, looking at the broken bridge ahead, 1950, faces hidden by hoods"
       ],
-      "ambience_from": 19,
+      "ambience_from": 25,
       "must": [
         "no people on the bridge itself"
       ]
     },
     {
-      "n": 20,
+      "n": 25,
       "title": "A bridge from the sky",
       "mode": "clip",
       "pov": false,
@@ -532,7 +638,7 @@
       ]
     },
     {
-      "n": 21,
+      "n": 26,
       "title": "The star",
       "mode": "clip",
       "pov": false,
@@ -555,7 +661,7 @@
       ]
     },
     {
-      "n": 22,
+      "n": 27,
       "title": "Down the mountain",
       "mode": "stills",
       "pov": true,
@@ -571,13 +677,33 @@
         "Night in the Funchilin Pass, December 1950: an olive-drab truck crawls slowly across a narrow steel treadway bridge over a deep dark gorge, American Marines of 1950 in long olive-drab hooded parkas, pile caps with ear flaps under plain M1 steel helmets, rubber-bottomed shoepac boots, M1 rifles walking in single file beside it, snow on the cliffs, dim light",
         "Early dawn: a long line of American Marines of 1950 in long olive-drab hooded parkas, pile caps with ear flaps under plain M1 steel helmets, rubber-bottomed shoepac boots, M1 rifles and trucks winding down a snowy mountain road toward a distant grey coastal plain and the sea, 1950"
       ],
-      "ambience_from": 21,
+      "ambience_from": 25,
       "must": [
         "steel treadway bridge"
       ]
     },
     {
-      "n": 23,
+      "n": 28,
+      "title": "The road behind us",
+      "mode": "stills",
+      "pov": false,
+      "narration": "Behind our column came thousands of Korean families. Old men, mothers with babies on their backs, children carrying bundles bigger than they were. They walked the same frozen road, through the same cold, to get away from the war. Some of us gave them whatever food we had left.",
+      "narration_voiced": "Behind our column came thousands of Korean families. Old men, mothers with babies on their backs, children carrying bundles bigger than they were. They walked the same frozen road, through the same cold, to get away from the war. Some of us gave them whatever food we had left.",
+      "image_prompt": "Korean civilian refugees walking behind a military column on a snowy road",
+      "sound": "wind, many footsteps in snow, a baby crying softly",
+      "refs": [],
+      "voice_mood": "sad",
+      "still_prompts": [
+        "A snowy mountain road in North Korea, December 1950: a long line of Korean civilian refugees in white and grey padded winter clothes walk behind a military truck column, a mother with a baby tied on her back, children carrying bundles, respectful painterly depiction, NO text",
+        "A young Marine in a parka hands a small ration can to an elderly Korean man in a padded coat and black horsehair hat on a snowy roadside, 1950, warm respectful moment"
+      ],
+      "ambience_from": 25,
+      "must": [
+        "respectful depiction of Korean civilians"
+      ]
+    },
+    {
+      "n": 29,
       "title": "The sea",
       "mode": "stills",
       "pov": true,
@@ -591,13 +717,55 @@
         "The North Korean port of Hungnam in December 1950: grey navy transport ships anchored in the harbour, rows of tents and supply crates on the snowy shore, smoke from field kitchens, NO legible text",
         "First-person view: a young Marine's chapped, shaking hands wrap around a steaming tin cup of coffee, a field kitchen and other Marines blurred behind, 1950"
       ],
-      "ambience_from": 2,
+      "ambience_from": 33,
       "must": [
         "1950 ships and equipment"
       ]
     },
     {
-      "n": 24,
+      "n": 30,
+      "title": "Dear Mom",
+      "mode": "stills",
+      "pov": false,
+      "narration": "That night, I wrote my first letter home in three weeks. I didn't tell my mother about the bugles, or the bridge, or the cold. I wrote: Dear Mom, I'm okay. Ate a hot meal today. Please send socks. Lots of socks. She sent me twelve pairs, and I gave most of them away.",
+      "narration_voiced": "That night, I wrote my first letter home in three weeks. I didn't tell my mother about the bugles, or the bridge, or the cold. I wrote: Dear Mom, I'm okay. Ate a hot meal today. Please send socks. Lots of socks. She sent me twelve pairs, and I gave most of them away.",
+      "image_prompt": "A Marine writing a letter by lamplight in a tent",
+      "sound": "pencil scratching on paper, a lamp hissing, wind on canvas",
+      "refs": [
+        "danny"
+      ],
+      "voice_mood": "warm",
+      "still_prompts": [
+        "Night inside a canvas tent at Hungnam, December 1950: Danny (fictional American Marine private, 19, thin boyish face, light stubble, blue-grey eyes, red cheeks chapped by cold, wearing a long olive-drab hooded field parka with the hood down, an olive-drab pile cap with fur-lined ear flaps tied under the chin helmet off, olive wool gloves, rubber-bottomed shoepac boots) sits on a cot writing a letter with a pencil on a notepad on his knee, a small lamp glowing, other Marines asleep behind, NO readable writing",
+        "Close painterly view of a small cardboard parcel opened on a cot, full of rolled grey and brown wool socks, a folded letter on top, warm lamplight, 1950, NO readable text"
+      ],
+      "ambience_from": 33,
+      "must": [
+        "no readable writing on the paper"
+      ]
+    },
+    {
+      "n": 31,
+      "title": "The cold took more",
+      "mode": "stills",
+      "pov": false,
+      "narration": "When they counted us up, there was a number nobody expected. More of us were carried off that mountain by the cold than by bullets. Frostbite took fingers, toes, sometimes whole feet. For the rest of their lives, a lot of the men I served with couldn't stand being cold, not even for a minute.",
+      "narration_voiced": "When they counted us up, there was a number nobody expected. More of us were carried off that mountain by the cold than by bullets. Frostbite took fingers, toes, sometimes whole feet. For the rest of their lives, a lot of the men I served with couldn't stand being cold, not even for a minute.",
+      "image_prompt": "A field hospital tent with Marines having their frostbitten feet treated",
+      "sound": "quiet voices, a stove, wind outside",
+      "refs": [],
+      "voice_mood": "sad",
+      "still_prompts": [
+        "Inside a field hospital tent at Hungnam, December 1950: a Navy doctor and corpsman examine the bandaged feet of a seated Marine, rows of cots behind, warm lamplight, NO blood, NO graphic injuries",
+        "Close painterly view of a Marine's hands wrapped in white bandages, resting on a grey wool blanket, 1950, soft light"
+      ],
+      "ambience_from": 33,
+      "must": [
+        "no graphic injuries, no blood"
+      ]
+    },
+    {
+      "n": 32,
       "title": "Fourteen thousand",
       "mode": "stills",
       "pov": false,
@@ -611,13 +779,13 @@
         "The snowy shore of Hungnam harbour, December 1950: thousands of Korean civilian refugees in padded winter clothes, carrying bundles, waiting to board a large grey cargo ship, mothers holding children, NO modern objects, NO text",
         "A large grey cargo ship crowded with Korean refugees on every deck sailing out of a winter harbour at dusk, 1950, a low sun on the sea"
       ],
-      "ambience_from": 23,
+      "ambience_from": 33,
       "must": [
         "respectful depiction of Korean refugees"
       ]
     },
     {
-      "n": 25,
+      "n": 33,
       "title": "How I survived",
       "mode": "clip",
       "pov": false,
@@ -640,12 +808,12 @@
       ]
     },
     {
-      "n": 26,
+      "n": 34,
       "title": "The Chosin Few",
       "mode": "stills",
       "pov": false,
-      "narration": "The ships took us south. We spent Christmas of nineteen-fifty in a tent camp the Marines called the Bean Patch. Years later, the men who walked out of those mountains started calling ourselves the Chosin Few. My name is Danny Moore, and I was one of them.",
-      "narration_voiced": "The ships took us south. We spent Christmas of nineteen-fifty in a tent camp the Marines called the Bean Patch. Years later, the men who walked out of those mountains started calling ourselves the Chosin Few. My name is Danny Moore, and I was one of them.",
+      "narration": "The ships took us south. We spent Christmas of nineteen-fifty in a tent camp the Marines called the Bean Patch. Years later, the men who walked out of those mountains started calling ourselves the Chosin Few.",
+      "narration_voiced": "The ships took us south. We spent Christmas of nineteen-fifty in a tent camp the Marines called the Bean Patch. Years later, the men who walked out of those mountains started calling ourselves the Chosin Few.",
       "image_prompt": "A transport ship at sea at dusk, then a tent camp at Christmas",
       "sound": "waves, a low ship engine hum, a harmonica softly",
       "refs": [],
@@ -654,13 +822,34 @@
         "A grey transport ship at sea at dusk, December 1950, the snowy mountains of North Korea fading on the horizon behind it, calm water, a pale star in the sky",
         "A muddy tent camp in a valley in South Korea, Christmas 1950, light frost, olive-drab squad tents, American Marines of 1950 in long olive-drab hooded parkas, pile caps with ear flaps under plain M1 steel helmets, rubber-bottomed shoepac boots, M1 rifles without helmets gathered around a small pine tree decorated with scraps of red cloth and ration-tin lids, warm lamp light from a tent, tired smiles"
       ],
-      "ambience_from": 25,
+      "ambience_from": 33,
       "must": [
         "1950 tent camp, no snow-covered mountains close by"
       ]
     },
     {
-      "n": 27,
+      "n": 35,
+      "title": "Still here",
+      "mode": "stills",
+      "pov": false,
+      "narration": "For years, we didn't talk about it much. Then the reunions started. Old men in caps, swapping stories and a little bit of candy, because the Tootsie Roll company kept sending boxes to every reunion. Ray and I went to every one we could. My name is Danny Moore, and I was one of the Chosin Few.",
+      "narration_voiced": "For years, we didn't talk about it much. Then the reunions started. Old men in caps, swapping stories and a little bit of candy, because the Tootsie Roll company kept sending boxes to every reunion. Ray and I went to every one we could. My name is Danny Moore, and I was one of the Chosin Few.",
+      "image_prompt": "Elderly veterans at a reunion table with small candies",
+      "sound": "soft laughter, cups clinking, a clock ticking",
+      "refs": [],
+      "voice_mood": "warm",
+      "still_prompts": [
+        "A warm community hall in America, about 1985: a few elderly men in plain caps and windbreakers laugh together around a table with coffee cups and a bowl of small wrapped chewy candies, a framed photograph of snowy mountains on the wall, NO text, NO logos, NO real people",
+        "Two elderly American veterans about 1985, one thin with blue-grey eyes and one broad with thick grey eyebrows, sit side by side on a porch bench in winter, coffee cups in hand, smiling quietly at the snow"
+      ],
+      "ambience_from": 33,
+      "must": [
+        "no readable text, no logos",
+        "no real people"
+      ]
+    },
+    {
+      "n": 36,
       "title": "If you stayed",
       "mode": "stills",
       "pov": false,
@@ -673,14 +862,14 @@
       "still_prompts": [
         "The empty snowy mountain road in North Korea at sunrise, quiet and peaceful, the frozen reservoir glowing below, NO people, NO vehicles"
       ],
-      "ambience_from": 25,
+      "ambience_from": 33,
       "beat": "KAPANIŞ CTA (kill yok)",
       "must": [
         "no people"
       ]
     },
     {
-      "n": 28,
+      "n": 37,
       "title": "What comes next",
       "mode": "stills",
       "pov": false,
@@ -706,5 +895,5 @@
       "own_rules": true
     }
   ],
-  "max_credits": 182
+  "max_credits": 224
 }
