@@ -189,3 +189,9 @@ Ders: sonraki konular "bilinen olay + sayı" kalıbına yaslansın; kapakta haya
 - ep001 (Ortaçağ) aynı yaşlı kadın klibi 2 kez: 0:12–0:22 ve 6:31–6:39 → pencerede karla kaplı beyaz otomobil (kaynak görsel 023.png temiz; arabayı video modeli eklemiş). Derlemede temiz görselden yakınlaştırmayla değiştirildi. Yayındaki video: Studio bulanıklaştırma önerisi.
 - 5 bölüm YOLO taraması (2 kare/sn, 4'lü karo) yapıldı: başka net araç yok (vagon/fayton/at → yanlış alarm). Not: dedektör bu iki arabayı kaçırdı/zayıf buldu → tek başına yeterli değil.
 - Ders: klip QA'sı küçük ölçekte yapılınca uzak arka plan nesneleri kaçıyor → her klipte 2–3 kareyi TAM çözünürlükte, arka plan dahil kontrol et ("araba/otomobil/elektrik direği/modern" taraması).
+
+## 25. Kitle verisi (20 Eki, son 28 gün)
+- Yaş: 55–64 %49,9 · 65+ %50,1 (35 yaş altı ~0). Cinsiyet: erkek %100. Konum: ABD %22,4, İngiltere %4,5, Kanada %2,5.
+- Cihaz: telefon %61,8, bilgisayar %33,7, TV %3,7. Altyazı: İngilizce %49,1 açık (!), İspanyolca %4,2.
+- Not: örnek küçük (~2K izlenme, yaş/cinsiyet yalnız oturum açmış kullanıcılardan) ama sinyal net: klasik "yaşlı erkek tarih izleyicisi".
+- Sonuçlar: (1) askerî/sınır tarihi öne (Napolyon kırılımı tesadüf değil); ABD odaklı konular: Valley Forge 1777, Chosin 1950, Bulge 1944, 1888 Blizzard, Klondike 1897, Shackleton 1915. (2) Her videoya doğru EN altyazı ŞART (izleyicinin yarısı açıyor). (3) Kapak: büyük, yüksek kontrastlı 1–2 kelime; abartı clickbait yok. (4) Sakin, net anlatım; "History for Sleep" bu kitleye uygun.
