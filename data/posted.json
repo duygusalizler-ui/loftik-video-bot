@@ -401,6 +401,14 @@
       "mod": "gonderi",
       "kare": 4,
       "bot": false
+    },
+    {
+      "url": "https://www.loftikayakkabi.com/urun/mn213-srt-bryggen-erkek-bot-kum",
+      "title": "MN213 - SRT Bryggen Erkek Bot KUM",
+      "posted_at": "2026-10-20T15:43:31.917680+00:00",
+      "mod": "gonderi",
+      "kare": 4,
+      "bot": true
     }
   ]
 }
