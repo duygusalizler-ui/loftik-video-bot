@@ -46,10 +46,11 @@
     11562575,
     39564505,
     39405689,
-    35481318
+    35481318,
+    37013568,
+    36121834
   ],
   "themes": [
-    "puppy_to_senior",
     "senior_dog",
     "owner_love",
     "senior_dog",
@@ -68,7 +69,8 @@
     "senior_dog",
     "paws",
     "puppy_to_senior",
-    "walks"
+    "walks",
+    "owner_love"
   ],
   "runs": [
     {
@@ -266,6 +268,14 @@
       "stock": [
         "https://www.pexels.com/video/dog-enjoying-sunset-at-the-beach-39405689/",
         "https://www.pexels.com/video/dog-walking-on-coastal-pathway-by-the-ocean-35481318/"
+      ]
+    },
+    {
+      "at": "20261021_130059",
+      "theme": "owner_love",
+      "stock": [
+        "https://www.pexels.com/video/playful-dog-enjoys-belly-rubs-on-grass-37013568/",
+        "https://www.pexels.com/video/golden-retriever-relaxing-outdoors-on-a-sunny-day-36121834/"
       ]
     }
   ]
