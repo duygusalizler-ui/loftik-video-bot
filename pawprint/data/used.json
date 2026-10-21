@@ -48,10 +48,11 @@
     39405689,
     35481318,
     37013568,
-    36121834
+    36121834,
+    36040929,
+    8498464
   ],
   "themes": [
-    "senior_dog",
     "owner_love",
     "senior_dog",
     "senior_dog",
@@ -70,7 +71,8 @@
     "paws",
     "puppy_to_senior",
     "walks",
-    "owner_love"
+    "owner_love",
+    "everyday_moments"
   ],
   "runs": [
     {
@@ -276,6 +278,14 @@
       "stock": [
         "https://www.pexels.com/video/playful-dog-enjoys-belly-rubs-on-grass-37013568/",
         "https://www.pexels.com/video/golden-retriever-relaxing-outdoors-on-a-sunny-day-36121834/"
+      ]
+    },
+    {
+      "at": "20261021_192242",
+      "theme": "everyday_moments",
+      "stock": [
+        "https://www.pexels.com/video/golden-retriever-sitting-on-country-road-36040929/",
+        "https://www.pexels.com/video/person-playing-with-a-dog-8498464/"
       ]
     }
   ]
