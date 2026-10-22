@@ -50,10 +50,11 @@
     37013568,
     36121834,
     36040929,
-    8498464
+    8498464,
+    5895192,
+    7515875
   ],
   "themes": [
-    "owner_love",
     "senior_dog",
     "senior_dog",
     "paws",
@@ -72,7 +73,8 @@
     "puppy_to_senior",
     "walks",
     "owner_love",
-    "everyday_moments"
+    "everyday_moments",
+    "senior_dog"
   ],
   "runs": [
     {
@@ -286,6 +288,14 @@
       "stock": [
         "https://www.pexels.com/video/golden-retriever-sitting-on-country-road-36040929/",
         "https://www.pexels.com/video/person-playing-with-a-dog-8498464/"
+      ]
+    },
+    {
+      "at": "20261022_130248",
+      "theme": "senior_dog",
+      "stock": [
+        "https://www.pexels.com/video/a-girl-sleeping-5895192/",
+        "https://www.pexels.com/video/retriever-dog-is-sitting-on-the-grass-in-the-park-7515875/"
       ]
     }
   ]
