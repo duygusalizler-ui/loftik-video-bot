@@ -54,10 +54,11 @@
     5895192,
     7515875,
     35634364,
-    39564503
+    39564503,
+    30744141,
+    7515865
   ],
   "themes": [
-    "senior_dog",
     "paws",
     "puppy_to_senior",
     "walks",
@@ -76,7 +77,8 @@
     "owner_love",
     "everyday_moments",
     "senior_dog",
-    "paws"
+    "paws",
+    "puppy_to_senior"
   ],
   "runs": [
     {
@@ -306,6 +308,14 @@
       "stock": [
         "https://www.pexels.com/video/golden-retriever-enjoys-snowy-forest-adventure-35634364/",
         "https://www.pexels.com/video/golden-retriever-enjoying-outdoor-landscape-39564503/"
+      ]
+    },
+    {
+      "at": "20261023_192105",
+      "theme": "puppy_to_senior",
+      "stock": [
+        "https://www.pexels.com/video/dog-shakes-hands-through-fence-interaction-30744141/",
+        "https://www.pexels.com/video/beautiful-dog-laying-on-grass-7515865/"
       ]
     }
   ]
