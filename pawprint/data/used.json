@@ -52,11 +52,12 @@
     36040929,
     8498464,
     5895192,
-    7515875
+    7515875,
+    35634364,
+    39564503
   ],
   "themes": [
     "senior_dog",
-    "senior_dog",
     "paws",
     "puppy_to_senior",
     "walks",
@@ -74,7 +75,8 @@
     "walks",
     "owner_love",
     "everyday_moments",
-    "senior_dog"
+    "senior_dog",
+    "paws"
   ],
   "runs": [
     {
@@ -296,6 +298,14 @@
       "stock": [
         "https://www.pexels.com/video/a-girl-sleeping-5895192/",
         "https://www.pexels.com/video/retriever-dog-is-sitting-on-the-grass-in-the-park-7515875/"
+      ]
+    },
+    {
+      "at": "20261023_124128",
+      "theme": "paws",
+      "stock": [
+        "https://www.pexels.com/video/golden-retriever-enjoys-snowy-forest-adventure-35634364/",
+        "https://www.pexels.com/video/golden-retriever-enjoying-outdoor-landscape-39564503/"
       ]
     }
   ]
