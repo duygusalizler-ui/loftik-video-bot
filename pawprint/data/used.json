@@ -56,10 +56,11 @@
     35634364,
     39564503,
     30744141,
-    7515865
+    7515865,
+    39880714,
+    32544548
   ],
   "themes": [
-    "paws",
     "puppy_to_senior",
     "walks",
     "owner_love",
@@ -78,7 +79,8 @@
     "everyday_moments",
     "senior_dog",
     "paws",
-    "puppy_to_senior"
+    "puppy_to_senior",
+    "walks"
   ],
   "runs": [
     {
@@ -316,6 +318,14 @@
       "stock": [
         "https://www.pexels.com/video/dog-shakes-hands-through-fence-interaction-30744141/",
         "https://www.pexels.com/video/beautiful-dog-laying-on-grass-7515865/"
+      ]
+    },
+    {
+      "at": "20261024_120428",
+      "theme": "walks",
+      "stock": [
+        "https://www.pexels.com/video/golden-retriever-wading-in-forest-stream-39880714/",
+        "https://www.pexels.com/video/sunset-walk-in-the-countryside-with-dog-32544548/"
       ]
     }
   ]
