@@ -58,10 +58,11 @@
     30744141,
     7515865,
     39880714,
-    32544548
+    32544548,
+    20399672,
+    5540207
   ],
   "themes": [
-    "puppy_to_senior",
     "walks",
     "owner_love",
     "everyday_moments",
@@ -80,7 +81,8 @@
     "senior_dog",
     "paws",
     "puppy_to_senior",
-    "walks"
+    "walks",
+    "owner_love"
   ],
   "runs": [
     {
@@ -326,6 +328,14 @@
       "stock": [
         "https://www.pexels.com/video/golden-retriever-wading-in-forest-stream-39880714/",
         "https://www.pexels.com/video/sunset-walk-in-the-countryside-with-dog-32544548/"
+      ]
+    },
+    {
+      "at": "20261024_181424",
+      "theme": "owner_love",
+      "stock": [
+        "https://www.pexels.com/video/peaceful-golden-retriever-dog-on-overcast-day-20399672/",
+        "https://www.pexels.com/video/young-woman-and-dog-in-park-5540207/"
       ]
     }
   ]
