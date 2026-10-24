@@ -1,0 +1,1888 @@
+{
+  "id": "ep003",
+  "version": 1,
+  "title": "You're a Soldier in Napoleon's Army. It's −30°C.",
+  "title_alt": "How Napoleon's Soldiers Survived the Russian Winter of 1812",
+  "thumbnail": "Painterly close-up of Luc's young frost-covered face, ice in his eyebrows and stubble, wool scarf tied over his shako, night snow, lit from below by a small campfire; text: 'DON'T SIT DOWN' (A/B test against '−30°C')",
+  "hook_description": "How did anyone survive Napoleon's retreat from Moscow in 1812, with no food, no shelter and thirty degrees below zero? Luc, a twenty-year-old French conscript, tells you how he made it home.",
+  "character": "Luc Bastien, a fictional twenty-year-old French conscript (fusilier of the line) from the Auvergne, Russian campaign of 1812",
+  "setting": "Napoleon's invasion of Russia and the retreat from Moscow, June to December 1812",
+  "style": "Hand-painted gouache and watercolor storybook illustration, visible brush texture, warm amber firelight against cold blue winter light, cinematic composition, historically accurate Napoleonic Wars 1812: French line infantry in dark blue coats with white lapels, grey-brown greatcoats and black shakos, flintlock muskets, Russian wooden log villages and onion-domed churches, horse-drawn carts, no modern objects, soft painterly detail, no text, no letters, no watermark",
+  "ref_style": "Hand-painted gouache and watercolor storybook character reference sheet, same painterly look as the episode, even neutral lighting, plain warm parchment background, historically accurate 1812 Napoleonic military clothing, original fictional person, no text, no labels, no watermark",
+  "motion_suffix": "Gentle natural motion, soft cuts between shots, painterly style and characters stay consistent across shots, no text; historically accurate 1812: flintlock muskets, shakos, horse-drawn carts and sleighs, no modern objects, no vehicles with engines, no electric lights",
+  "cast": {
+    "Luc": "Luc (French conscript soldier about 20, thin young face, dark curly hair, light stubble, dark blue French line infantry coat with white lapels under a worn grey-brown greatcoat, black shako with a brass plate)",
+    "Morel": "Sergeant Morel (French veteran sergeant about 50, thick grey moustache, scarred weathered face, grey-brown greatcoat with sergeant's stripes on the sleeve, black shako, later a shaggy sheepskin coat)",
+    "Antoine": "Antoine (French conscript about 19, freckled face, short red hair, dark blue line infantry coat, grey-brown greatcoat, black shako)",
+    "Thérèse": "Thérèse (French army cantinière about 35, strong face, dark hair under a red headscarf, short blue jacket, striped wool skirt, a small brandy keg on a leather strap)"
+  },
+  "preview_scenes": [
+    1,
+    2,
+    3
+  ],
+  "gates": {
+    "script": "2026-10-01T10:54:35+00:00",
+    "preview": "2026-10-01T11:50:40+00:00"
+  },
+  "sources": [
+    "Adam Zamoyski — 1812: Napoleon's Fatal March on Moscow (HarperCollins, 2004)",
+    "Dominic Lieven — Russia Against Napoleon (Allen Lane, 2009)",
+    "Sergeant Adrien Bourgogne — Memoirs of Sergeant Bourgogne, 1812–1813 (first published 1898)",
+    "Jakob Walter — The Diary of a Napoleonic Foot Soldier (ed. Marc Raeff, 1991)",
+    "Armand de Caulaincourt — With Napoleon in Russia (memoirs, ed. 1933)",
+    "Dominique-Jean Larrey — Memoirs of Military Surgery (1812–1817)",
+    "Stephan Talty — The Illustrious Dead: The Terrifying Story of How Typhus Killed Napoleon's Greatest Army (2009)",
+    "Philippe-Paul de Ségur — History of the Expedition to Russia, 1812 (1824)"
+  ],
+  "disclosure": "Luc, Morel, Antoine and Thérèse are fictional characters, built from the memoirs of soldiers who survived the 1812 campaign and from historical research. Illustrations and animation were created with AI tools; narration uses a synthetic voice.",
+  "refs": {
+    "luc": {
+      "kind": "character",
+      "prompt": "Character reference sheet: on the left a full-body view standing upright facing the viewer, head to toe, on the right a chest-up portrait of the same person; identical original character in both views, single character only, no other people, no props except those described. Luc, French conscript soldier of 1812 about 20, thin young face, dark curly hair, light stubble, brown eyes, dark blue French line infantry coat (habit-veste) with white lapels and red cuffs, white crossbelts, grey-brown greatcoat open over it, white trousers with black gaiters, black shako with a brass plate, musket on his shoulder",
+      "n": "luc",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "7b0d555c-a7dd-469b-8cc5-097775831747",
+            "submitted": "2026-10-01T10:55:22+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "7b0d555c-a7dd-469b-8cc5-097775831747",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_105515_7b0d555c-a7dd-469b-8cc5-097775831747.png",
+        "finished": "2026-10-01T10:56:11+00:00"
+      }
+    },
+    "morel": {
+      "kind": "character",
+      "prompt": "Character reference sheet: on the left a full-body view standing upright facing the viewer, head to toe, on the right a chest-up portrait of the same person; identical original character in both views, single character only, no other people, no props except those described. Sergeant Morel, French veteran infantry sergeant of 1812 about 50, thick grey moustache, scarred weathered face, grey-brown greatcoat with sergeant's stripes on the sleeves, black shako, white crossbelts, musket",
+      "n": "morel",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "c8f82c78-bcb3-40b3-b9e4-646e38b4f7ca",
+            "submitted": "2026-10-01T10:55:22+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "c8f82c78-bcb3-40b3-b9e4-646e38b4f7ca",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_105515_c8f82c78-bcb3-40b3-b9e4-646e38b4f7ca.png",
+        "finished": "2026-10-01T10:56:11+00:00"
+      }
+    },
+    "antoine": {
+      "kind": "character",
+      "prompt": "Character reference sheet: on the left a full-body view standing upright facing the viewer, head to toe, on the right a chest-up portrait of the same person; identical original character in both views, single character only, no other people, no props except those described. Antoine, French conscript soldier of 1812 about 19, freckled boyish face, short red hair, dark blue French line infantry coat with white lapels, white crossbelts, grey-brown greatcoat, black shako",
+      "n": "antoine",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "1c4a657b-c616-49dd-8590-324023d98199",
+            "submitted": "2026-10-01T10:55:22+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "1c4a657b-c616-49dd-8590-324023d98199",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_105515_1c4a657b-c616-49dd-8590-324023d98199.png",
+        "finished": "2026-10-01T10:56:11+00:00"
+      }
+    },
+    "therese": {
+      "kind": "character",
+      "prompt": "Character reference sheet: on the left a full-body view standing upright facing the viewer, head to toe, on the right a chest-up portrait of the same person; identical original character in both views, single character only, no other people, no props except those described. Thérèse, French army cantinière of 1812 about 35, strong friendly face, dark hair under a red headscarf, short blue military-style jacket, striped wool skirt to mid-calf, boots, a small painted brandy keg on a leather strap",
+      "n": "therese",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "6d3a2738-6c9c-4a0c-a0ca-965bc3b5358d",
+            "submitted": "2026-10-01T10:55:22+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "6d3a2738-6c9c-4a0c-a0ca-965bc3b5358d",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_105515_6d3a2738-6c9c-4a0c-a0ca-965bc3b5358d.png",
+        "finished": "2026-10-01T10:56:12+00:00"
+      }
+    },
+    "cart": {
+      "kind": "location",
+      "prompt": "Reference, a small canvas-covered two-wheeled cantinière's cart of the Napoleonic army pulled by one brown horse, barrels and bundles tied on the back, on a dirt road",
+      "n": "cart",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "04f3b488-45f6-4559-bb0f-2f7805aa66ba",
+            "submitted": "2026-10-01T10:55:22+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "04f3b488-45f6-4559-bb0f-2f7805aa66ba",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_105515_04f3b488-45f6-4559-bb0f-2f7805aa66ba.png",
+        "finished": "2026-10-01T10:56:12+00:00"
+      }
+    },
+    "moscow": {
+      "kind": "location",
+      "prompt": "Location reference, wide establishing view of Moscow on a calm sunny September day in 1812, seen from a street: golden and blue onion domes, white stone churches, grand houses with closed shutters and many wooden houses, wide empty streets, the red Kremlin walls in the distance, completely empty city, no people, no soldiers, no fire, no smoke, no modern buildings",
+      "n": "moscow",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "e5934b6a-5737-45c7-a01d-10d85178250a",
+            "submitted": "2026-10-01T11:00:46+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "e5934b6a-5737-45c7-a01d-10d85178250a",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_110035_e5934b6a-5737-45c7-a01d-10d85178250a.png",
+        "finished": "2026-10-01T11:02:11+00:00"
+      }
+    },
+    "bivouac": {
+      "kind": "location",
+      "prompt": "Location reference, wide establishing view of a snowy Russian road in November 1812: a flat white plain with dark birch and pine forest, the road trampled by an army, small campfires in the snow, abandoned wagons half-buried in snow, grey winter sky, no modern objects",
+      "n": "bivouac",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "08d74439-c0d7-4a34-b84f-69d3ae0dac4b",
+            "submitted": "2026-10-01T10:55:22+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "08d74439-c0d7-4a34-b84f-69d3ae0dac4b",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_105515_08d74439-c0d7-4a34-b84f-69d3ae0dac4b.png",
+        "finished": "2026-10-01T10:56:12+00:00"
+      }
+    },
+    "summer_road": {
+      "n": "summer_road",
+      "kind": "location",
+      "prompt": "Location reference, wide establishing view of a dusty dirt road through flat green fields and birch groves in Lithuania and western Russia in hot summer 1812, a small empty wooden log village with thatched roofs by the road, hazy sun, no people, no modern objects",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "2528824d-f071-402b-a83d-b30e0062687b",
+            "submitted": "2026-10-01T11:00:46+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "2528824d-f071-402b-a83d-b30e0062687b",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_110034_2528824d-f071-402b-a83d-b30e0062687b.png",
+        "finished": "2026-10-01T11:02:11+00:00"
+      }
+    },
+    "berezina": {
+      "n": "berezina",
+      "kind": "location",
+      "prompt": "Location reference, wide establishing view of the Berezina river near Studianka in late November 1812: a wide dark river with floating ice between low snowy banks, marshy ground, dark pine forest, two simple wooden trestle bridges built on posts in the water, grey winter sky, no people, no modern objects",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "c060aa9f-05d4-42c1-9fa5-5d5f10ece1e0",
+            "submitted": "2026-10-01T11:00:46+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "c060aa9f-05d4-42c1-9fa5-5d5f10ece1e0",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_110034_c060aa9f-05d4-42c1-9fa5-5d5f10ece1e0.png",
+        "finished": "2026-10-01T11:02:11+00:00"
+      }
+    },
+    "auvergne": {
+      "n": "auvergne",
+      "kind": "location",
+      "prompt": "Location reference, wide establishing view of a small farming village in the Auvergne mountains of France in spring 1813: grey stone farmhouses with steep roofs, a small stone church, green volcanic hills and pastures, spring flowers, a dirt path up a hill, no people, no modern objects",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "78c7599c-91c3-4585-a4e2-f1911db2ceaa",
+            "submitted": "2026-10-01T11:00:46+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "78c7599c-91c3-4585-a4e2-f1911db2ceaa",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_110035_78c7599c-91c3-4585-a4e2-f1911db2ceaa.png",
+        "finished": "2026-10-01T11:02:11+00:00"
+      }
+    }
+  },
+  "music": [
+    {
+      "from": 1,
+      "track": "Frozen_Star.mp3",
+      "title": "Frozen Star",
+      "mood": "soğuk açılış"
+    },
+    {
+      "from": 2,
+      "track": "Lost_Frontier.mp3",
+      "title": "Lost Frontier",
+      "mood": "yaz yürüyüşü"
+    },
+    {
+      "from": 7,
+      "track": "Darkest_Child.mp3",
+      "title": "Darkest Child",
+      "mood": "Moskova yanıyor"
+    },
+    {
+      "from": 9,
+      "track": "Ossuary_6_-_Air.mp3",
+      "title": "Ossuary 6 - Air",
+      "mood": "bekleyiş, geri çekiliş"
+    },
+    {
+      "from": 11,
+      "track": "Dark_Times.mp3",
+      "title": "Dark Times",
+      "mood": "ilk kar, açlık"
+    },
+    {
+      "from": 16,
+      "track": "Crossing_the_Chasm.mp3",
+      "title": "Crossing the Chasm",
+      "mood": "hayatta kalma kuralları"
+    },
+    {
+      "from": 19,
+      "track": "Winter_Reflections.mp3",
+      "title": "Winter Reflections",
+      "mood": "Antoine"
+    },
+    {
+      "from": 22,
+      "track": "Long_Note_Four.mp3",
+      "title": "Long Note Four",
+      "mood": "Berezina"
+    },
+    {
+      "from": 27,
+      "track": "Dreams_Become_Real.mp3",
+      "title": "Dreams Become Real",
+      "mood": "kurtuluş, eve dönüş"
+    }
+  ],
+  "next_episode_tease": "The Donner Party, 1846–47: an American settler family trapped by snow in the Sierra Nevada",
+  "voice_engine": {
+    "model": "text2speech_v2",
+    "variant": "elevenlabs",
+    "voice_id": "07112420-b262-46e4-8698-6d2a177958f4",
+    "post": "atempo=1.06,highpass=f=70,equalizer=f=250:t=q:w=1.2:g=-2,equalizer=f=3200:t=q:w=1.0:g=3.5,treble=g=2:f=8000,acompressor=threshold=-20dB:ratio=3:attack=5:release=120:makeup=3,loudnorm=I=-16:TP=-1.5"
+  },
+  "scenes": [
+    {
+      "n": 1,
+      "title": "Never sit down",
+      "pov": true,
+      "narration": "Thirty degrees below zero. My breath freezes on my scarf. All around me, men are sitting down in the snow and they do not get up again. My sergeant gave me one rule: never sit down. My name is Luc. I am twenty years old, a soldier in Napoleon's army and this is how I survived the Russian winter of 1812.",
+      "narration_voiced": "Thirty degrees below zero. My breath freezes on my scarf. All around me, men are sitting down in the snow... and they do NOT get up again. My sergeant gave me one rule: never sit down. My name is Luc. I am twenty years old, a soldier in Napoleon's army... and this is how I survived the Russian winter of 1812.",
+      "image_prompt": "POV at night on a snowy Russian road in December 1812: the narrator's hands wrapped in rags held toward a small campfire, exhausted French soldiers in ragged greatcoats and furs huddled around other small fires in the snow, snow-covered shapes of men sitting motionless, dark birch forest",
+      "shots": [
+        "the narrator's rag-wrapped hands tremble over a small fire in the snow",
+        "soldiers in ragged greatcoats huddle around small fires along a snowy road at night",
+        "snow slowly covers a motionless figure sitting by a dying fire"
+      ],
+      "sound": "howling wind, crackling fire, boots crunching on frozen snow",
+      "refs": [
+        "bivouac"
+      ],
+      "voice_mood": "tense",
+      "beat": "SOĞUK AÇILIŞ + FRAGMAN (0:00)",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "4e97cdcd-eaeb-4993-a466-665fee8b5810",
+            "submitted": "2026-10-01T10:57:01+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "4e97cdcd-eaeb-4993-a466-665fee8b5810",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_105655_4e97cdcd-eaeb-4993-a466-665fee8b5810.png",
+        "finished": "2026-10-01T11:00:46+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "77a5ff9c-7b75-4ac3-b742-dd329c4f1839",
+            "submitted": "2026-10-01T11:01:26+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "77a5ff9c-7b75-4ac3-b742-dd329c4f1839",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_110119_77a5ff9c-7b75-4ac3-b742-dd329c4f1839.mp4",
+        "finished": "2026-10-01T11:07:17+00:00"
+      },
+      "must": [
+        "night, deep snow, small campfires",
+        "the narrator's own rag-wrapped hands in the foreground"
+      ],
+      "must_not": [
+        "the narrator's face (first-person view)",
+        "tents, houses with lit windows"
+      ]
+    },
+    {
+      "n": 2,
+      "title": "June 1812",
+      "pov": true,
+      "narration": "Six months earlier. June 1812. The biggest army the world has ever seen crosses the river Niemen into Russia. More than four hundred thousand men: French, Poles, Germans, Italians, Dutch. Nobody thinks about winter. It is so hot that men faint on the road. 'We'll be home before the leaves fall,' everyone says.",
+      "narration_voiced": "Six months earlier. June 1812. The biggest army the world has ever seen crosses the river Niemen into Russia. More than four hundred thousand men: French, Poles, Germans, Italians, Dutch. Nobody thinks about winter. It is so HOT that men faint on the road. 'We'll be home before the leaves fall,' everyone says.",
+      "image_prompt": "POV from the middle of a pontoon bridge over a wide river in hot summer 1812: the narrator's hands on the strap of his musket, the backs of marching infantry in dark blue coats and shakos ahead, flags and dust, green fields on the far bank",
+      "shots": [
+        "POV marching across a pontoon bridge among thousands of soldiers",
+        "the narrator wipes sweat from his face with his sleeve, the sun blazing",
+        "ahead, the column disappears east into green fields and dust"
+      ],
+      "sound": "drums, thousands of marching feet, horses, distant cheering",
+      "refs": [
+        "summer_road"
+      ],
+      "voice_mood": "intrigue",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "55d18dd6-08fc-4dea-b3f5-d1f7cbd84f38",
+            "submitted": "2026-10-01T10:57:01+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "55d18dd6-08fc-4dea-b3f5-d1f7cbd84f38",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_105655_55d18dd6-08fc-4dea-b3f5-d1f7cbd84f38.png",
+        "finished": "2026-10-01T11:00:46+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "96d4e942-06dd-4c8d-b087-61ebe9cd17cd",
+            "submitted": "2026-10-01T11:01:26+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "96d4e942-06dd-4c8d-b087-61ebe9cd17cd",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_110120_96d4e942-06dd-4c8d-b087-61ebe9cd17cd.mp4",
+        "finished": "2026-10-01T11:04:13+00:00"
+      },
+      "must": [
+        "hot summer sun, green fields, dust",
+        "pontoon bridge of boats and planks"
+      ],
+      "must_not": [
+        "snow or ice",
+        "the narrator's face (first-person view)"
+      ]
+    },
+    {
+      "n": 3,
+      "title": "My company",
+      "pov": true,
+      "narration": "I am a fusilier from a little village in the Auvergne mountains. Next to me marches Antoine, my friend since we were children. Our sergeant is Morel. He fought in Egypt, and he complains about everything. And behind us rolls the cart of Thérèse, our cantinière. She sells brandy, sews buttons and knows everything.",
+      "narration_voiced": "I am a fusilier from a little village in the Auvergne mountains. Next to me marches Antoine, my friend since we were children. Our sergeant is Morel. He fought in Egypt, and he complains about everything. And behind us rolls the cart of Thérèse, our cantinière. She sells brandy, sews buttons... and knows everything.",
+      "image_prompt": "POV marching on a dusty summer road: Antoine (French conscript about 19, freckled face, short red hair, dark blue line infantry coat, black shako) walking right beside the camera and grinning at it, Sergeant Morel (veteran about 50, thick grey moustache, grey-brown greatcoat, black shako) ahead looking back grumpily, Thérèse (cantinière about 35, red headscarf, blue jacket) on her small covered cart behind",
+      "shots": [
+        "Antoine walks beside the camera and grins at it",
+        "Sergeant Morel turns around and grumbles at the camera",
+        "Thérèse waves from her small covered cart"
+      ],
+      "sound": "marching feet, cart wheels creaking, laughter, a horse snorting",
+      "refs": [
+        "antoine",
+        "morel",
+        "therese",
+        "cart",
+        "summer_road"
+      ],
+      "voice_mood": "warm",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "7ea34c93-2ccb-4fb0-8b7b-c396aba3f22d",
+            "submitted": "2026-10-01T10:57:01+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "7ea34c93-2ccb-4fb0-8b7b-c396aba3f22d",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_105656_7ea34c93-2ccb-4fb0-8b7b-c396aba3f22d.png",
+        "finished": "2026-10-01T11:00:46+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "2e5c4247-b37e-4cb5-bfd9-adc17bf24e8c",
+            "submitted": "2026-10-01T11:01:26+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "2e5c4247-b37e-4cb5-bfd9-adc17bf24e8c",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_110120_2e5c4247-b37e-4cb5-bfd9-adc17bf24e8c.mp4",
+        "finished": "2026-10-01T11:07:17+00:00"
+      },
+      "must": [
+        "summer dusty road",
+        "Antoine with red hair and freckles; Morel with grey moustache; Thérèse in a red headscarf"
+      ],
+      "must_not": [
+        "snow",
+        "the narrator's face (first-person view)"
+      ],
+      "clip_composite": [
+        [
+          "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_110120_2e5c4247-b37e-4cb5-bfd9-adc17bf24e8c.mp4",
+          0,
+          10.6
+        ],
+        [
+          "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_110120_2e5c4247-b37e-4cb5-bfd9-adc17bf24e8c.mp4",
+          12.1,
+          15.0
+        ]
+      ],
+      "min_speed": 0.6,
+      "note": "10.75-11.85 sn: Morel ikizi (klon) — kesildi (kare kare doğrulandı)"
+    },
+    {
+      "n": 4,
+      "title": "An empty land",
+      "pov": true,
+      "narration": "Picture it: you march for weeks, and the enemy never stands still to fight. Russia just goes away. Every village we reach is empty, the barns burned, the food gone. We march hundreds of kilometres in the heat and the dust. The horses die first, thousands of them, from bad fodder and storms. Morel looks at them and says: 'Remember this, boy. The horses always tell you what's coming.'",
+      "narration_voiced": "Picture it: you march for weeks, and the enemy never stands still to fight. Russia just... goes away. Every village we reach is empty, the barns burned, the food gone. We march hundreds of kilometres in the heat and the dust. The horses die first, thousands of them, from bad fodder and storms. Morel looks at them and says: 'Remember this, boy. The horses always tell you what's coming.'",
+      "image_prompt": "POV marching into an abandoned Russian village in summer 1812: empty wooden log houses, a burned barn still smoking, dead horses at the roadside, soldiers in blue coats looking around, hot dusty light",
+      "shots": [
+        "the column passes empty wooden log houses with open doors",
+        "a burned barn smokes beside the road",
+        "Sergeant Morel (French veteran sergeant about 50, thick grey moustache, scarred weathered face, grey-brown greatcoat with sergeant's stripes on the sleeve, black shako, later a shaggy sheepskin coat) stops beside a fallen horse and looks back at the narrator"
+      ],
+      "sound": "cicadas, distant smoke crackling, flies buzzing, tired footsteps",
+      "refs": [
+        "morel",
+        "summer_road"
+      ],
+      "voice_mood": "intrigue",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "569fe017-91e3-45bc-8782-cd9830c1a302",
+            "submitted": "2026-10-01T11:52:06+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "569fe017-91e3-45bc-8782-cd9830c1a302",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_115154_569fe017-91e3-45bc-8782-cd9830c1a302.png",
+        "finished": "2026-10-01T11:55:28+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "9a8991af-2337-4909-a505-6b763e632396",
+            "submitted": "2026-10-01T12:01:02+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "9a8991af-2337-4909-a505-6b763e632396",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_120047_9a8991af-2337-4909-a505-6b763e632396.mp4",
+        "finished": "2026-10-01T12:07:13+00:00"
+      }
+    },
+    {
+      "n": 5,
+      "title": "Morel's rules",
+      "pov": false,
+      "narration": "Sergeant Morel has rules. A rule for everything. Sleep with your boots under your head. Boil your water. And the most important one: I didn't understand it in the summer. I will. Soon.",
+      "narration_voiced": "Sergeant Morel has rules. A rule for EVERYTHING. Sleep with your boots under your head. Boil your water. And the most important one... I didn't understand it in the summer. I will. Soon.",
+      "image_prompt": "Medium close-up of Luc (French conscript soldier about 20, thin young face, dark curly hair, light stubble, dark blue French line infantry coat with white lapels under a worn grey-brown greatcoat, black shako with a brass plate) sitting on a wooden crate at a summer army camp at dusk, looking straight into the camera as if talking to the viewer, a campfire glowing beside him, tents and soldiers softly out of focus behind",
+      "shots": [
+        "Luc looks straight into the camera and speaks to the viewer"
+      ],
+      "sound": "a campfire crackling, distant voices of a camp",
+      "refs": [
+        "luc"
+      ],
+      "voice_mood": "intrigue",
+      "lipsync": true,
+      "min_speed": 1.0,
+      "no_ambience": true,
+      "must": [
+        "Luc looking straight into the camera, mouth free to speak"
+      ],
+      "must_not": [
+        "other people facing the camera"
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "ff7c0486-d293-4d2c-9a5b-33c36483ef5f",
+            "submitted": "2026-10-01T11:52:06+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "ff7c0486-d293-4d2c-9a5b-33c36483ef5f",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_115154_ff7c0486-d293-4d2c-9a5b-33c36483ef5f.png",
+        "finished": "2026-10-01T11:55:28+00:00"
+      },
+      "note": "lip-sync: wan2_7 sınırı ~13 sn, metin kısaltıldı",
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "fdbbe6bc-59de-493f-802c-9f9bf7c537b1",
+            "submitted": "2026-10-01T12:06:51+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "fdbbe6bc-59de-493f-802c-9f9bf7c537b1",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_120637_fdbbe6bc-59de-493f-802c-9f9bf7c537b1.mp4",
+        "finished": "2026-10-01T12:10:03+00:00"
+      }
+    },
+    {
+      "n": 6,
+      "title": "Moscow",
+      "pov": true,
+      "narration": "In September, after one terrible battle near a village called Borodino, the road to Moscow is open. On the fourteenth of September we march into the city and it is empty. Golden domes, palaces, streets full of shops, and almost no people. We think the war is over. We think we have won.",
+      "narration_voiced": "In September, after one terrible battle near a village called Borodino, the road to Moscow is open. On the fourteenth of September we march into the city... and it is EMPTY. Golden domes, palaces, streets full of shops, and almost no people. We think the war is over. We think we have won.",
+      "image_prompt": "POV marching into an empty Moscow street in September 1812: golden onion domes and white churches above grand houses with closed shutters, the shoulders and shakos of soldiers ahead, Antoine beside the camera staring up in wonder",
+      "shots": [
+        "POV looking up at golden onion domes shining above an empty street",
+        "the camera passes grand houses with closed shutters",
+        "Antoine beside the camera stares up with his mouth open"
+      ],
+      "sound": "echoing footsteps in an empty street, church bells silent, wind",
+      "refs": [
+        "moscow",
+        "antoine"
+      ],
+      "voice_mood": "intrigue",
+      "must": [
+        "calm sunny empty city, golden onion domes"
+      ],
+      "must_not": [
+        "fire, smoke",
+        "Russian civilians in the streets",
+        "snow or ice anywhere (it is a warm September day)"
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "6e2065dc-56d9-47ba-8474-4b01357b3a21",
+            "submitted": "2026-10-01T11:58:20+00:00",
+            "credits": 1.0
+          }
+        ],
+        "history": [
+          {
+            "status": "done",
+            "attempts": [
+              {
+                "job_id": "eecf3670-ea3d-48a2-b186-3e5488c75fd3",
+                "submitted": "2026-10-01T11:52:06+00:00",
+                "credits": 1.0
+              }
+            ],
+            "job_id": "eecf3670-ea3d-48a2-b186-3e5488c75fd3",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_115154_eecf3670-ea3d-48a2-b186-3e5488c75fd3.png",
+            "finished": "2026-10-01T11:55:28+00:00",
+            "redo_reason": "Eylül sahnesinde kar",
+            "redo_at": "2026-10-01T11:56:07+00:00"
+          }
+        ],
+        "job_id": "6e2065dc-56d9-47ba-8474-4b01357b3a21",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_115650_6e2065dc-56d9-47ba-8474-4b01357b3a21.png",
+        "finished": "2026-10-01T11:58:20+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "5b76315a-a7ff-425f-bc34-9ab7900a27a5",
+            "submitted": "2026-10-01T12:01:02+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "5b76315a-a7ff-425f-bc34-9ab7900a27a5",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_120046_5b76315a-a7ff-425f-bc34-9ab7900a27a5.mp4",
+        "finished": "2026-10-01T12:07:15+00:00"
+      }
+    },
+    {
+      "n": 7,
+      "title": "Moscow burns",
+      "pov": true,
+      "narration": "That night, the fires start. One, then ten, then hundreds. The wind carries them from street to street. For four days, Moscow burns, and most of the city is gone. And we, the soldiers we run into the burning houses, and grab whatever we can carry.",
+      "narration_voiced": "That night, the fires start. One, then ten, then hundreds. The wind carries them from street to street. For four days, Moscow burns, and most of the city is gone. And we, the soldiers... we run INTO the burning houses, and grab whatever we can carry.",
+      "image_prompt": "Night in Moscow, September 1812: whole streets of wooden and stone houses in flames, a red sky full of sparks and smoke, French soldiers running out of burning houses carrying loot",
+      "shots": [
+        "flames climb the walls of wooden houses under a red sky",
+        "the wind blows a storm of sparks across the street",
+        "soldiers run out of a burning house carrying silver, silk and paintings"
+      ],
+      "sound": "roaring fire, collapsing timber, shouting, wind",
+      "refs": [
+        "moscow"
+      ],
+      "voice_mood": "tense",
+      "beat": "⚡ KIRILMA 1 (~1:50): Moskova yanıyor",
+      "must": [
+        "night, fire, red sky"
+      ],
+      "must_not": [
+        "daylight, snow"
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "7287a216-d6d4-4d2d-b3e1-f7034298b7bd",
+            "submitted": "2026-10-01T11:52:07+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "7287a216-d6d4-4d2d-b3e1-f7034298b7bd",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_115154_7287a216-d6d4-4d2d-b3e1-f7034298b7bd.png",
+        "finished": "2026-10-01T11:55:28+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "0c7518a9-f6c0-474b-8a75-437a99b33727",
+            "submitted": "2026-10-01T12:01:02+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "0c7518a9-f6c0-474b-8a75-437a99b33727",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_120046_0c7518a9-f6c0-474b-8a75-437a99b33727.mp4",
+        "finished": "2026-10-01T12:07:18+00:00"
+      },
+      "clip_range": [
+        0,
+        8.9
+      ],
+      "min_speed": 0.5,
+      "note": "9.04 sn sonrası iki köşeli şapkalı (Napolyon benzeri) figürler — kesildi"
+    },
+    {
+      "n": 8,
+      "title": "Furs, not silver",
+      "pov": true,
+      "narration": "Antoine fills his pack with silver spoons and a little golden icon. Others take paintings, silk, wine. Morel takes something strange: a heavy, ugly sheepskin coat. We laugh at him. It is September, the sun is warm. He just says: 'Take furs, boys. Silver won't keep you warm.' So I go back and find a lady's fur-lined cloak. Antoine laughs at me all night.",
+      "narration_voiced": "Antoine fills his pack with silver spoons and a little golden icon. Others take paintings, silk, wine. Morel takes something strange: a heavy, ugly sheepskin coat. We laugh at him. It is September, the sun is warm. He just says: 'Take furs, boys. Silver won't keep you warm.' So I go back... and find a lady's fur-lined cloak. Antoine laughs at me all night.",
+      "image_prompt": "POV inside a half-burned Moscow mansion: the narrator's hands holding up a lady's dark fur-lined cloak, Antoine laughing and pointing at it with silver spoons sticking out of his pack, Sergeant Morel in a shaggy sheepskin coat nodding approval",
+      "shots": [
+        "Antoine stuffs silver spoons and a small golden icon into his pack",
+        "Sergeant Morel holds up a shaggy sheepskin coat with a serious face",
+        "the narrator's hands lift a lady's fur-lined cloak; Antoine bursts out laughing"
+      ],
+      "sound": "clinking silver, laughter, distant fire crackling",
+      "refs": [
+        "antoine",
+        "morel"
+      ],
+      "voice_mood": "intrigue",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "f5364951-3019-4871-84bd-8c8a6d70ac4b",
+            "submitted": "2026-10-01T11:58:20+00:00",
+            "credits": 1.0
+          }
+        ],
+        "history": [
+          {
+            "status": "done",
+            "attempts": [
+              {
+                "job_id": "7fd7dea3-3e40-43ae-9c6b-d7cfe7a7f362",
+                "submitted": "2026-10-01T11:52:07+00:00",
+                "credits": 1.0
+              }
+            ],
+            "job_id": "7fd7dea3-3e40-43ae-9c6b-d7cfe7a7f362",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_115155_7fd7dea3-3e40-43ae-9c6b-d7cfe7a7f362.png",
+            "finished": "2026-10-01T11:55:28+00:00",
+            "redo_reason": "pencereden kar görünüyor (Eylül)",
+            "redo_at": "2026-10-01T11:56:07+00:00"
+          }
+        ],
+        "job_id": "f5364951-3019-4871-84bd-8c8a6d70ac4b",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_115650_f5364951-3019-4871-84bd-8c8a6d70ac4b.png",
+        "finished": "2026-10-01T11:58:22+00:00"
+      },
+      "must_not": [
+        "snow or winter visible through windows (it is September)"
+      ],
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "cecaa0ab-16a2-4c4e-afab-3baec0ceaac3",
+            "submitted": "2026-10-01T12:01:02+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "cecaa0ab-16a2-4c4e-afab-3baec0ceaac3",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_120046_cecaa0ab-16a2-4c4e-afab-3baec0ceaac3.mp4",
+        "finished": "2026-10-01T12:07:20+00:00"
+      }
+    },
+    {
+      "n": 9,
+      "title": "The Emperor's weather",
+      "pov": false,
+      "narration": "We wait in Moscow for five weeks. The Emperor waits for the Tsar to ask for peace. The Tsar never answers. The autumn is mild and sunny. 'The Emperor's weather,' we call it. And every day we stay winter comes one day closer.",
+      "narration_voiced": "We wait in Moscow for five weeks. The Emperor waits for the Tsar to ask for peace. The Tsar never answers. The autumn is mild and sunny. 'The Emperor's weather,' we call it. And every day we stay... winter comes one day closer.",
+      "image_prompt": "Golden autumn light over the burned ruins of Moscow, October 1812: blackened chimneys of burned houses among surviving churches, French soldiers sitting idly in the sun playing cards, yellow leaves on the ground",
+      "shots": [
+        "soldiers play cards in the sun among blackened ruins",
+        "yellow leaves blow across an empty square",
+        "a single snowflake drifts down past a golden dome"
+      ],
+      "sound": "gentle wind, cards slapping, distant church bells, leaves rustling",
+      "refs": [
+        "moscow"
+      ],
+      "voice_mood": "intrigue",
+      "must": [
+        "golden autumn light, burned ruins"
+      ],
+      "must_not": [
+        "snow on the ground"
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "8ff0c667-b619-4e14-a244-95beeb85ed02",
+            "submitted": "2026-10-01T11:52:07+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "8ff0c667-b619-4e14-a244-95beeb85ed02",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_115155_8ff0c667-b619-4e14-a244-95beeb85ed02.png",
+        "finished": "2026-10-01T11:55:29+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "594b1b72-8176-4d31-9841-1bdf45c442f4",
+            "submitted": "2026-10-01T12:01:02+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "594b1b72-8176-4d31-9841-1bdf45c442f4",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_120047_594b1b72-8176-4d31-9841-1bdf45c442f4.mp4",
+        "finished": "2026-10-01T12:07:22+00:00"
+      }
+    },
+    {
+      "n": 10,
+      "title": "The retreat",
+      "pov": true,
+      "narration": "On the nineteenth of October, we finally leave. About a hundred thousand men, and behind us a river of carts full of loot, kilometres long. Morel looks at the carts and spits. 'They're carrying their own graves.' We march west, back the way we came, through a land we have already stripped bare.",
+      "narration_voiced": "On the nineteenth of October, we finally leave. About a hundred thousand men, and behind us a river of carts full of loot, kilometres long. Morel looks at the carts and spits. 'They're carrying their own graves.' We march west, back the way we came, through a land we have already stripped bare.",
+      "image_prompt": "October 1812: the French army leaving Moscow on a muddy road, a long column of soldiers followed by an endless line of overloaded carts, carriages and wagons piled with loot, grey sky, bare birch trees",
+      "shots": [
+        "an endless line of carts piled with loot rolls out of the city",
+        "Sergeant Morel (French veteran sergeant about 50, thick grey moustache, scarred weathered face, grey-brown greatcoat with sergeant's stripes on the sleeve, black shako, later a shaggy sheepskin coat) watches the carts and shakes his head",
+        "the column marches west across a bare grey plain"
+      ],
+      "sound": "wheels creaking, mud squelching, horses straining, a cold wind rising",
+      "refs": [
+        "morel",
+        "cart"
+      ],
+      "voice_mood": "tense",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "89f08617-a089-4e0b-acbe-36d8d43e1156",
+            "submitted": "2026-10-01T11:58:20+00:00",
+            "credits": 1.0
+          }
+        ],
+        "history": [
+          {
+            "status": "done",
+            "attempts": [
+              {
+                "job_id": "d9d627a0-03ba-492c-8338-b07e308dd79a",
+                "submitted": "2026-10-01T11:52:07+00:00",
+                "credits": 1.0
+              }
+            ],
+            "job_id": "d9d627a0-03ba-492c-8338-b07e308dd79a",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_115154_d9d627a0-03ba-492c-8338-b07e308dd79a.png",
+            "finished": "2026-10-01T11:55:29+00:00",
+            "redo_reason": "olası Morel ikizi",
+            "redo_at": "2026-10-01T11:56:07+00:00"
+          }
+        ],
+        "job_id": "89f08617-a089-4e0b-acbe-36d8d43e1156",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_115650_89f08617-a089-4e0b-acbe-36d8d43e1156.png",
+        "finished": "2026-10-01T11:58:23+00:00"
+      },
+      "must": [
+        "only ONE sergeant with a grey moustache in the frame (Morel)"
+      ],
+      "must_not": [
+        "a second man who looks like Morel",
+        "snow on the ground (mud and bare trees only)"
+      ],
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "1985f8c7-2c49-4d52-a0b6-7de0c855a406",
+            "submitted": "2026-10-01T12:01:02+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "1985f8c7-2c49-4d52-a0b6-7de0c855a406",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_120046_1985f8c7-2c49-4d52-a0b6-7de0c855a406.mp4",
+        "finished": "2026-10-01T12:07:23+00:00"
+      }
+    },
+    {
+      "n": 11,
+      "title": "First snow",
+      "pov": true,
+      "narration": "At the beginning of November the first snow. At first, it is almost beautiful. The next day, the road is ice. Our horses' shoes have no spikes for ice. They slip, they fall, and they cannot get up. In one day, I see more dead horses than in my whole life.",
+      "narration_voiced": "At the beginning of November... the first snow. At first, it is almost beautiful. The next day, the road is ICE. Our horses' shoes have no spikes for ice. They slip, they fall, and they cannot get up. In one day, I see more dead horses than in my whole life.",
+      "image_prompt": "POV on an icy Russian road in early November 1812, heavy snow falling: a clearly recognisable brown horse with saddle-cloth and harness has slipped on the ice and lies on its side in the middle of the road, two infantrymen pulling on its bridle to help it up, overturned carts and the marching column beyond",
+      "shots": [
+        "snowflakes start falling on the marching column ahead",
+        "a horse right in front slips on the ice and crashes down",
+        "dead horses and overturned carts line the white road ahead"
+      ],
+      "sound": "wind with snow, a horse neighing in panic, hooves sliding on ice",
+      "refs": [
+        "bivouac"
+      ],
+      "voice_mood": "tense",
+      "beat": "⚡ KIRILMA 2 (~3:40): İlk kar, buzda atlar",
+      "must": [
+        "first snow and icy road",
+        "the horse must be clearly a horse (head, legs, mane visible)"
+      ],
+      "must_not": [
+        "summer green leaves"
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "23a4637a-6e9e-400a-b350-46df5cc27093",
+            "submitted": "2026-10-01T11:58:20+00:00",
+            "credits": 1.0
+          }
+        ],
+        "history": [
+          {
+            "status": "done",
+            "attempts": [
+              {
+                "job_id": "25108bdf-4fa0-43ed-916b-ff08f583aafe",
+                "submitted": "2026-10-01T11:52:07+00:00",
+                "credits": 1.0
+              }
+            ],
+            "job_id": "25108bdf-4fa0-43ed-916b-ff08f583aafe",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_115154_25108bdf-4fa0-43ed-916b-ff08f583aafe.png",
+            "finished": "2026-10-01T11:55:29+00:00",
+            "redo_reason": "at tanınmıyor",
+            "redo_at": "2026-10-01T11:56:07+00:00"
+          }
+        ],
+        "job_id": "23a4637a-6e9e-400a-b350-46df5cc27093",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_115650_23a4637a-6e9e-400a-b350-46df5cc27093.png",
+        "finished": "2026-10-01T11:58:24+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "702f8d7d-2658-4348-9dd4-36473eec3ac8",
+            "submitted": "2026-10-01T12:01:02+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "702f8d7d-2658-4348-9dd4-36473eec3ac8",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_120046_702f8d7d-2658-4348-9dd4-36473eec3ac8.mp4",
+        "finished": "2026-10-01T12:07:25+00:00"
+      }
+    },
+    {
+      "n": 12,
+      "title": "Leaving Moscow behind",
+      "pov": true,
+      "narration": "Without horses, the carts stop. The cannons stop. The loot stays in the snow. Antoine drops his silver spoons on the road one by one, because they are too heavy. Paintings, chandeliers, gold half of Moscow lies along the road. And it is getting colder.",
+      "narration_voiced": "Without horses, the carts stop. The cannons stop. The loot stays in the snow. Antoine drops his silver spoons on the road one by one, because they are too heavy. Paintings, chandeliers, gold... half of Moscow lies along the road. And it is getting colder.",
+      "image_prompt": "A snowy road in November 1812 littered with abandoned treasures: an overturned carriage, a gilded painting frame, a chandelier half-buried in snow; Antoine (French conscript about 19, freckled face, short red hair, dark blue line infantry coat, grey-brown greatcoat, black shako) dropping silver spoons into the snow as he walks",
+      "shots": [
+        "an abandoned carriage and a gilded painting lie in the snow",
+        "Antoine (French conscript about 19, freckled face, short red hair, dark blue line infantry coat, grey-brown greatcoat, black shako) lets silver spoons fall one by one into the snow",
+        "snow slowly covers a crystal chandelier lying on the road"
+      ],
+      "sound": "wind, snow crunching, metal clinking softly into snow",
+      "refs": [
+        "antoine",
+        "bivouac"
+      ],
+      "voice_mood": "tense",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "057907dd-65d9-4d01-9f40-d5ef0286dc82",
+            "submitted": "2026-10-01T11:52:07+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "057907dd-65d9-4d01-9f40-d5ef0286dc82",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_115156_057907dd-65d9-4d01-9f40-d5ef0286dc82.png",
+        "finished": "2026-10-01T11:55:29+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "14e371c3-f0c1-493c-b102-3e8854d5c7bc",
+            "submitted": "2026-10-01T12:01:02+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "14e371c3-f0c1-493c-b102-3e8854d5c7bc",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_120046_14e371c3-f0c1-493c-b102-3e8854d5c7bc.mp4",
+        "finished": "2026-10-01T12:07:27+00:00"
+      }
+    },
+    {
+      "n": 13,
+      "title": "Horse meat",
+      "pov": true,
+      "narration": "Now the horses become our food. When one falls, men run to it with knives. We roast the meat over the fire, black outside, raw inside. We have no salt, so some men sprinkle gunpowder on it. I tried it once. It tastes like a battle.",
+      "narration_voiced": "Now the horses become our food. When one falls, men run to it with knives. We roast the meat over the fire, black outside, raw inside. We have no salt, so some men sprinkle gunpowder on it. I tried it once. It tastes like... a battle.",
+      "image_prompt": "POV at an evening bivouac in the snow: the narrator's hand holding a piece of roasted meat on a bayonet over a small fire, Sergeant Morel sprinkling a pinch of black gunpowder on it from a powder horn, Antoine watching hungrily",
+      "shots": [
+        "the narrator holds a piece of meat on a bayonet over the flames",
+        "Morel sprinkles a pinch of black gunpowder over the meat",
+        "Antoine grins and waits for his turn"
+      ],
+      "sound": "fire crackling, meat sizzling, wind, a soldier coughing",
+      "refs": [
+        "morel",
+        "antoine",
+        "bivouac"
+      ],
+      "voice_mood": "intrigue",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "42471194-1a5f-4119-9e27-d031f0f16559",
+            "submitted": "2026-10-01T11:53:24+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "42471194-1a5f-4119-9e27-d031f0f16559",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_115312_42471194-1a5f-4119-9e27-d031f0f16559.png",
+        "finished": "2026-10-01T11:57:15+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "7a97746d-546a-4f71-a5d1-9e2668f436db",
+            "submitted": "2026-10-01T12:01:02+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "7a97746d-546a-4f71-a5d1-9e2668f436db",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_120046_7a97746d-546a-4f71-a5d1-9e2668f436db.mp4",
+        "finished": "2026-10-01T12:07:28+00:00"
+      }
+    },
+    {
+      "n": 14,
+      "title": "Rule number one",
+      "pov": false,
+      "narration": "Morel's first rule. Never. Sit. Down. The snow feels soft. Even warm. You sit down for one minute and you never wake up. Walk. Always walk.",
+      "narration_voiced": "Morel's first rule. Never. Sit. Down. The snow feels soft. Even warm. You sit down for one minute... and you never wake up. Walk. Always walk.",
+      "image_prompt": "Medium close-up of Luc (French conscript soldier about 20, thin frostbitten young face, dark curly hair, frost in his stubble, wrapped in a worn grey-brown greatcoat with a lady's dark fur-lined cloak over his shoulders, a wool scarf tied over his shako and ears) standing on a snowy road in grey daylight, looking straight into the camera as if talking to the viewer, snow falling, the retreating column passing softly out of focus behind him",
+      "shots": [
+        "Luc looks straight into the camera and speaks to the viewer"
+      ],
+      "sound": "wind, falling snow, distant marching",
+      "refs": [
+        "luc",
+        "bivouac"
+      ],
+      "voice_mood": "tense",
+      "lipsync": true,
+      "min_speed": 1.0,
+      "no_ambience": true,
+      "must": [
+        "Luc looking straight into the camera in falling snow"
+      ],
+      "must_not": [
+        "other people facing the camera"
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "96d3ec8a-e727-4852-8142-2c60f179917b",
+            "submitted": "2026-10-01T11:53:24+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "96d3ec8a-e727-4852-8142-2c60f179917b",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_115312_96d3ec8a-e727-4852-8142-2c60f179917b.png",
+        "finished": "2026-10-01T11:57:16+00:00"
+      },
+      "note": "lip-sync: wan2_7 sınırı ~13 sn, metin kısaltıldı",
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "76ee322b-bc5c-4c57-bae9-4ad616ffa0d3",
+            "submitted": "2026-10-01T12:06:51+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "76ee322b-bc5c-4c57-bae9-4ad616ffa0d3",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_120637_76ee322b-bc5c-4c57-bae9-4ad616ffa0d3.mp4",
+        "finished": "2026-10-01T12:10:07+00:00"
+      }
+    },
+    {
+      "n": 15,
+      "title": "Nights in the open",
+      "pov": true,
+      "narration": "Now imagine your night. We sleep around fires in the open. No tents, no houses. Men fight for a place near the flames. The ones in front burn their coats, the ones behind freeze. Morel makes us lie close together, back to back, under one blanket, feet toward the fire. In the morning we count who is still alive.",
+      "narration_voiced": "Now imagine your night. We sleep around fires in the open. No tents, no houses. Men fight for a place near the flames. The ones in front burn their coats, the ones behind freeze. Morel makes us lie close together, back to back, under one blanket, feet toward the fire. In the morning... we count who is still alive.",
+      "image_prompt": "Night bivouac in deep snow: Sergeant Morel (French veteran sergeant about 50, thick grey moustache, scarred weathered face, grey-brown greatcoat with sergeant's stripes on the sleeve, black shako, later a shaggy sheepskin coat), Antoine (French conscript about 19, freckled face, short red hair, dark blue line infantry coat, grey-brown greatcoat, black shako), Thérèse (French army cantinière about 35, strong face, dark hair under a red headscarf, short blue jacket, striped wool skirt, a small brandy keg on a leather strap) and the narrator lying back to back under one blanket with their feet toward a fire, other soldiers crowding around fires in the darkness",
+      "shots": [
+        "soldiers push and shove for a place near the fire",
+        "Sergeant Morel (French veteran sergeant about 50, thick grey moustache, scarred weathered face, grey-brown greatcoat with sergeant's stripes on the sleeve, black shako, later a shaggy sheepskin coat), Antoine (French conscript about 19, freckled face, short red hair, dark blue line infantry coat, grey-brown greatcoat, black shako) and Thérèse (French army cantinière about 35, strong face, dark hair under a red headscarf, short blue jacket, striped wool skirt, a small brandy keg on a leather strap) lie back to back under one blanket, feet to the fire",
+        "grey dawn light over a silent snowy camp"
+      ],
+      "sound": "fire crackling, wind, men coughing, snow hissing in the flames",
+      "refs": [
+        "morel",
+        "antoine",
+        "therese",
+        "bivouac"
+      ],
+      "voice_mood": "intrigue",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "dc60696f-b67b-44b1-aaa6-d5a0de57c67a",
+            "submitted": "2026-10-01T11:53:24+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "dc60696f-b67b-44b1-aaa6-d5a0de57c67a",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_115312_dc60696f-b67b-44b1-aaa6-d5a0de57c67a.png",
+        "finished": "2026-10-01T11:57:18+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "7f7a90cf-c559-4418-9a6b-22e851fb9aea",
+            "submitted": "2026-10-01T12:01:03+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "7f7a90cf-c559-4418-9a6b-22e851fb9aea",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_120046_7f7a90cf-c559-4418-9a6b-22e851fb9aea.mp4",
+        "finished": "2026-10-01T12:07:29+00:00"
+      }
+    },
+    {
+      "n": 16,
+      "title": "Smolensk",
+      "pov": true,
+      "narration": "Everyone dreams of Smolensk. There are warehouses there, they say: flour, biscuits, brandy, enough for the whole army. When we arrive, the first soldiers have already broken in. Men fight over sacks in the street. Thérèse trades her last keg of brandy for half a sack of flour. That half sack keeps four people alive for ten days.",
+      "narration_voiced": "Everyone dreams of Smolensk. There are warehouses there, they say: flour, biscuits, brandy, enough for the whole army. When we arrive, the first soldiers have already broken in. Men fight over sacks in the street. Thérèse trades her last keg of brandy for half a sack of flour. That half sack keeps four people alive for ten days.",
+      "image_prompt": "POV in a snowy street of Smolensk in November 1812: starving soldiers fighting over flour sacks outside a broken warehouse door, Thérèse (cantinière, red headscarf) beside the camera hugging half a sack of flour",
+      "shots": [
+        "soldiers break down a warehouse door and fight over sacks",
+        "Thérèse hands over her small brandy keg",
+        "Thérèse hugs half a sack of flour and nods at the camera"
+      ],
+      "sound": "shouting, wood splintering, wind, coins clinking",
+      "refs": [
+        "therese",
+        "antoine"
+      ],
+      "voice_mood": "intrigue",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "172af77e-0cf1-48ce-8f03-0a604d02832f",
+            "submitted": "2026-10-01T11:53:24+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "172af77e-0cf1-48ce-8f03-0a604d02832f",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_115312_172af77e-0cf1-48ce-8f03-0a604d02832f.png",
+        "finished": "2026-10-01T11:57:19+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "0c4f89fc-9a12-4135-adc6-63129167c0bb",
+            "submitted": "2026-10-01T12:01:03+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "0c4f89fc-9a12-4135-adc6-63129167c0bb",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_120048_0c4f89fc-9a12-4135-adc6-63129167c0bb.mp4",
+        "finished": "2026-10-01T12:07:31+00:00"
+      }
+    },
+    {
+      "n": 17,
+      "title": "Frozen hands",
+      "pov": true,
+      "narration": "Then the cold drops again. Twenty below. Twenty-five. Ears and noses turn white then black. The army's surgeon, Baron Larrey, warns us: never put a frozen hand straight into the fire. Rub it with snow, warm it slowly. The men who run to the flames lose their fingers.",
+      "narration_voiced": "Then the cold drops again. Twenty below. Twenty-five. Ears and noses turn white... then black. The army's surgeon, Baron Larrey, warns us: never put a frozen hand straight into the fire. Rub it with snow, warm it slowly. The men who run to the flames... lose their fingers.",
+      "image_prompt": "POV close-up: the narrator's white frostbitten fingers being rubbed with snow by the hands of an older soldier, a fire glowing at a distance, other soldiers in the background holding hands too close to the flames",
+      "shots": [
+        "the narrator's fingers are white and stiff with frost",
+        "an older soldier rubs the frozen hand gently with snow",
+        "in the background, a soldier pushes his hands right into the flames"
+      ],
+      "sound": "wind, snow scrunching between hands, a man groaning in pain",
+      "refs": [
+        "bivouac"
+      ],
+      "voice_mood": "intrigue",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "04219493-b0b1-4039-8d55-ed10778d2784",
+            "submitted": "2026-10-01T11:53:24+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "04219493-b0b1-4039-8d55-ed10778d2784",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_115312_04219493-b0b1-4039-8d55-ed10778d2784.png",
+        "finished": "2026-10-01T11:57:19+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "725895c1-2d63-421b-b5e1-6978ddc40f49",
+            "submitted": "2026-10-01T12:01:03+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "725895c1-2d63-421b-b5e1-6978ddc40f49",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_120046_725895c1-2d63-421b-b5e1-6978ddc40f49.mp4",
+        "finished": "2026-10-01T12:07:33+00:00"
+      }
+    },
+    {
+      "n": 18,
+      "title": "Lice",
+      "pov": true,
+      "narration": "And there is another enemy. A tiny one. Lice. We haven't washed in months. They live in our coats, our hair, our beards. With them comes the fever: typhus. It kills more men than all the Russian armies. Every evening, Thérèse makes us shake our shirts over the fire. They crackle like grains of salt.",
+      "narration_voiced": "And there is another enemy. A tiny one. Lice. We haven't washed in months. They live in our coats, our hair, our beards. With them comes the fever: typhus. It kills more men than all the Russian armies. Every evening, Thérèse makes us shake our shirts over the fire. They crackle... like grains of salt.",
+      "image_prompt": "POV by a fire in the snow at evening: Thérèse (cantinière, red headscarf) holding a shirt over the flames and shaking it toward the camera, Antoine scratching his head, sparks rising",
+      "shots": [
+        "Thérèse shakes a shirt over the fire, tiny sparks crackling",
+        "Antoine scratches his head and neck",
+        "Thérèse hands the shirt to the camera with a firm look"
+      ],
+      "sound": "fire crackling and popping, wind, a woman muttering",
+      "refs": [
+        "therese",
+        "antoine",
+        "bivouac"
+      ],
+      "voice_mood": "intrigue",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "39696711-9101-4494-b0ad-588a6cf21925",
+            "submitted": "2026-10-01T11:53:24+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "39696711-9101-4494-b0ad-588a6cf21925",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_115312_39696711-9101-4494-b0ad-588a6cf21925.png",
+        "finished": "2026-10-01T11:57:21+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "f8011a3e-9c8f-4521-a711-00d11d7800cc",
+            "submitted": "2026-10-01T12:03:11+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "f8011a3e-9c8f-4521-a711-00d11d7800cc",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_120255_f8011a3e-9c8f-4521-a711-00d11d7800cc.mp4",
+        "finished": "2026-10-01T12:08:43+00:00"
+      }
+    },
+    {
+      "n": 19,
+      "title": "Antoine",
+      "pov": true,
+      "narration": "In the middle of November, Antoine gets the fever. He shivers, then burns, then shivers again. Morel and I carry him between us for two days. On the third night, he gives me his little golden icon. 'Take it home to my mother.' Then he sits down by the fire and in the morning, he doesn't wake up.",
+      "narration_voiced": "In the middle of November, Antoine gets the fever. He shivers, then burns, then shivers again. Morel and I carry him between us for two days. On the third night, he gives me his little golden icon. 'Take it home to my mother.' Then he sits down by the fire... and in the morning, he doesn't wake up.",
+      "image_prompt": "POV at night by a fire in the snow: pale feverish Antoine (freckled, red hair) wrapped in a blanket, pressing a small golden icon into the narrator's open hand, Sergeant Morel watching in silence",
+      "shots": [
+        "the narrator and Morel carry Antoine between them along the snowy road",
+        "Antoine presses a small golden icon into the narrator's hand by the fire",
+        "in grey dawn light, snow lies on an empty blanket by a cold fire"
+      ],
+      "sound": "wind, a weak cough, a fire dying out",
+      "refs": [
+        "antoine",
+        "morel",
+        "bivouac"
+      ],
+      "voice_mood": "tense",
+      "beat": "⚡ KIRILMA 3 (~6:20): Antoine",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "56e81ad1-80c5-4feb-ab0f-4c2cebfee3fb",
+            "submitted": "2026-10-01T11:53:24+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "56e81ad1-80c5-4feb-ab0f-4c2cebfee3fb",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_115312_56e81ad1-80c5-4feb-ab0f-4c2cebfee3fb.png",
+        "finished": "2026-10-01T11:57:22+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "196ef815-b28e-4a6d-9105-b65556f2cd4b",
+            "submitted": "2026-10-01T12:03:11+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "196ef815-b28e-4a6d-9105-b65556f2cd4b",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_120255_196ef815-b28e-4a6d-9105-b65556f2cd4b.mp4",
+        "finished": "2026-10-01T12:08:45+00:00"
+      }
+    },
+    {
+      "n": 20,
+      "title": "Walking for two",
+      "pov": true,
+      "narration": "I put his icon inside my shirt, next to my heart. I want to stop. I want to sit down too. Morel grabs me by the collar. 'You're walking for two now, boy. Walk.' And so I walk. Every step for Antoine.",
+      "narration_voiced": "I put his icon inside my shirt, next to my heart. I want to stop. I want to sit down too. Morel grabs me by the collar. 'You're walking for two now, boy. WALK.' And so I walk. Every step... for Antoine.",
+      "image_prompt": "On a grey snowy road: Sergeant Morel (French veteran sergeant about 50, thick grey moustache, scarred weathered face, grey-brown greatcoat with sergeant's stripes on the sleeve, black shako, later a shaggy sheepskin coat) gripping the narrator's collar with both hands and shouting into his face, the column marching past, snow falling",
+      "shots": [
+        "Sergeant Morel (French veteran sergeant about 50, thick grey moustache, scarred weathered face, grey-brown greatcoat with sergeant's stripes on the sleeve, black shako, later a shaggy sheepskin coat) grabs the narrator by the collar and shouts",
+        "the narrator's hand presses a small golden icon to his chest",
+        "the narrator's feet, wrapped in rags, step forward into deep snow"
+      ],
+      "sound": "wind, a gruff shout, boots crunching on snow",
+      "refs": [
+        "morel",
+        "bivouac"
+      ],
+      "voice_mood": "tense",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "783f7de3-80cd-4a7c-9098-517ba79f5ede",
+            "submitted": "2026-10-01T11:53:24+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "783f7de3-80cd-4a7c-9098-517ba79f5ede",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_115312_783f7de3-80cd-4a7c-9098-517ba79f5ede.png",
+        "finished": "2026-10-01T11:57:23+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "2e9a208a-cc69-4ab2-89da-3936a79ca621",
+            "submitted": "2026-10-01T12:03:11+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "2e9a208a-cc69-4ab2-89da-3936a79ca621",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_120255_2e9a208a-cc69-4ab2-89da-3936a79ca621.mp4",
+        "finished": "2026-10-01T12:08:47+00:00"
+      }
+    },
+    {
+      "n": 21,
+      "title": "Cossacks",
+      "pov": true,
+      "narration": "We are never alone. Cossacks ride beside the column, like wolves following a herd. Anyone who falls behind, anyone who wanders off to find firewood disappears. So we march in a group, muskets ready. Alone, you are dead. Together, you might live.",
+      "narration_voiced": "We are never alone. Cossacks ride beside the column, like wolves following a herd. Anyone who falls behind, anyone who wanders off to find firewood... disappears. So we march in a group, muskets ready. Alone, you are dead. Together, you might live.",
+      "image_prompt": "POV from inside a tight group of ragged French soldiers on a snowy plain at dusk: muskets raised, a few Cossack horsemen with long lances watching from the edge of a birch forest",
+      "shots": [
+        "Cossack riders with long lances watch from the edge of the forest",
+        "a straggler alone in the snow looks over his shoulder at the camera",
+        "soldiers around the camera close ranks with muskets raised"
+      ],
+      "sound": "wind, distant hoofbeats, muskets clicking",
+      "refs": [
+        "bivouac"
+      ],
+      "voice_mood": "tense",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "951614a2-a6f1-4876-a25f-9a207d9d9c63",
+            "submitted": "2026-10-01T11:53:24+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "951614a2-a6f1-4876-a25f-9a207d9d9c63",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_115312_951614a2-a6f1-4876-a25f-9a207d9d9c63.png",
+        "finished": "2026-10-01T11:57:25+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "a4325128-122a-49d6-95ea-78abfebc62ef",
+            "submitted": "2026-10-01T12:03:11+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "a4325128-122a-49d6-95ea-78abfebc62ef",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_120255_a4325128-122a-49d6-95ea-78abfebc62ef.mp4",
+        "finished": "2026-10-01T12:08:48+00:00"
+      },
+      "clip_range": [
+        0,
+        12.25
+      ],
+      "min_speed": 0.55,
+      "note": "12.375 sn sonrası aynı yüzlü asker duvarı (klon) — kesildi"
+    },
+    {
+      "n": 22,
+      "title": "The Berezina",
+      "pov": true,
+      "narration": "At the end of November we reach the river Berezina. The bridge is burned, and Russian armies are closing in from every side. We are trapped. Then the engineers do something impossible. They walk into the freezing river, up to their chests in water full of ice, and build two bridges.",
+      "narration_voiced": "At the end of November we reach the river Berezina. The bridge is burned, and Russian armies are closing in from every side. We are trapped. Then the engineers do something impossible. They walk into the freezing river, up to their chests in water full of ice, and build two bridges.",
+      "image_prompt": "POV from the crowded snowy bank of the Berezina river in November 1812: engineers wading chest-deep into icy black water among floating ice, hammering wooden trestles for a bridge",
+      "shots": [
+        "POV looking over a crowd at ice floating on the black river",
+        "engineers wade into the river up to their chests carrying beams",
+        "men hammer wooden trestles in the freezing water"
+      ],
+      "sound": "water lapping against ice, hammering, wind, men gasping from cold",
+      "refs": [
+        "berezina"
+      ],
+      "voice_mood": "tense",
+      "beat": "⚡ KIRILMA 4 (~7:30): Berezina",
+      "must": [
+        "engineers chest-deep in icy water building wooden trestle bridges"
+      ],
+      "must_not": [
+        "stone or iron bridges, boats with engines"
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "a0629038-09fd-49ef-8455-7389c2d8ee3e",
+            "submitted": "2026-10-01T11:54:33+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "a0629038-09fd-49ef-8455-7389c2d8ee3e",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_115420_a0629038-09fd-49ef-8455-7389c2d8ee3e.png",
+        "finished": "2026-10-01T11:57:26+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "a94f6fa2-15a1-49fd-9ab9-22dc8b0bbfa7",
+            "submitted": "2026-10-01T12:03:11+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "a94f6fa2-15a1-49fd-9ab9-22dc8b0bbfa7",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_120255_a94f6fa2-15a1-49fd-9ab9-22dc8b0bbfa7.mp4",
+        "finished": "2026-10-01T12:08:50+00:00"
+      }
+    },
+    {
+      "n": 23,
+      "title": "The engineers",
+      "pov": false,
+      "narration": "Most of them are Dutch, these engineers. For hours they stand in the black water, hammering wood while the ice cuts their skin. When they come out, some are frozen too stiff to move. Most of them won't live to see the spring. But because of them thousands of us will.",
+      "narration_voiced": "Most of them are Dutch, these engineers. For hours they stand in the black water, hammering wood while the ice cuts their skin. When they come out, some are frozen too stiff to move. Most of them won't live to see the spring. But because of them... thousands of us will.",
+      "image_prompt": "Close view of exhausted engineers climbing out of the icy river, their clothes frozen stiff, ice in their beards, comrades wrapping them in blankets by a fire on the bank",
+      "shots": [
+        "an engineer climbs out of the water, his clothes stiff with ice",
+        "comrades wrap him in a blanket by a fire",
+        "the finished wooden bridge stretches across the icy river"
+      ],
+      "sound": "dripping water, teeth chattering, fire crackling",
+      "refs": [
+        "berezina"
+      ],
+      "voice_mood": "tense",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "6257639d-597f-49d3-9048-80342fa99da3",
+            "submitted": "2026-10-01T11:54:33+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "6257639d-597f-49d3-9048-80342fa99da3",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_115420_6257639d-597f-49d3-9048-80342fa99da3.png",
+        "finished": "2026-10-01T11:57:27+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "50e6db6b-94d8-412d-8099-fafcd9921ccb",
+            "submitted": "2026-10-01T12:03:11+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "50e6db6b-94d8-412d-8099-fafcd9921ccb",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_120257_50e6db6b-94d8-412d-8099-fafcd9921ccb.mp4",
+        "finished": "2026-10-01T12:08:53+00:00"
+      }
+    },
+    {
+      "n": 24,
+      "title": "The crossing",
+      "pov": true,
+      "narration": "The crossing is chaos. Thousands push toward the bridges at once: soldiers, wounded, women, children. Cannonballs fall among us. Thérèse's cart can't pass, so she cuts her horse free and walks. Morel holds my belt and shouts, 'Don't let go!' We cross. Behind us, the bridges burn.",
+      "narration_voiced": "The crossing is chaos. Thousands push toward the bridges at once: soldiers, wounded, women, children. Cannonballs fall among us. Thérèse's cart can't pass, so she cuts her horse free and walks. Morel holds my belt and shouts, 'Don't let go!' We cross. Behind us, the bridges burn.",
+      "image_prompt": "POV in a desperate crowd crossing a narrow wooden bridge over an icy river in the snow, Sergeant Morel (French veteran sergeant about 50, thick grey moustache, scarred weathered face, grey-brown greatcoat with sergeant's stripes on the sleeve, black shako, later a shaggy sheepskin coat) ahead gripping the narrator's belt, Thérèse (French army cantinière about 35, strong face, dark hair under a red headscarf, short blue jacket, striped wool skirt, a small brandy keg on a leather strap) leading her horse, smoke and snow in the air",
+      "shots": [
+        "a huge crowd pushes toward a narrow wooden bridge",
+        "Sergeant Morel (French veteran sergeant about 50, thick grey moustache, scarred weathered face, grey-brown greatcoat with sergeant's stripes on the sleeve, black shako, later a shaggy sheepskin coat) looks back and holds the narrator's belt tight",
+        "behind them, the wooden bridge goes up in flames"
+      ],
+      "sound": "crowd shouting, distant cannon fire, wood creaking, fire",
+      "refs": [
+        "morel",
+        "therese",
+        "berezina"
+      ],
+      "voice_mood": "tense",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "f04b01f3-bd3f-4ec9-8249-cfece6c0e6d7",
+            "submitted": "2026-10-01T11:54:33+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "f04b01f3-bd3f-4ec9-8249-cfece6c0e6d7",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_115420_f04b01f3-bd3f-4ec9-8249-cfece6c0e6d7.png",
+        "finished": "2026-10-01T11:57:28+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "7d8218f6-5f8a-4c37-9b0a-c9154e4b885d",
+            "submitted": "2026-10-01T12:03:11+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "7d8218f6-5f8a-4c37-9b0a-c9154e4b885d",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_120255_7d8218f6-5f8a-4c37-9b0a-c9154e4b885d.mp4",
+        "finished": "2026-10-01T12:08:55+00:00"
+      }
+    },
+    {
+      "n": 25,
+      "title": "Minus thirty",
+      "pov": true,
+      "narration": "December. Put your hand outside on the coldest day of your life. Now make it colder. The worst cold anyone can remember. Thirty below zero. Birds fall frozen from the sky. Our breath freezes in our beards. I wear everything I have: my greatcoat, the lady's fur cloak from Moscow and pieces of blanket wrapped around my feet, because my boots have fallen apart.",
+      "narration_voiced": "December. Put your hand outside on the coldest day of your life. Now make it colder. The worst cold anyone can remember. Thirty below zero. Birds fall frozen from the sky. Our breath freezes in our beards. I wear everything I have: my greatcoat, the lady's fur cloak from Moscow... and pieces of blanket wrapped around my feet, because my boots have fallen apart.",
+      "image_prompt": "POV looking down at the narrator's own feet wrapped in rags and blanket strips sinking into deep snow, December 1812, a small frozen bird lying on the snow ahead, the ragged column stretching away into a white haze",
+      "shots": [
+        "a small frozen bird lies on the white snow",
+        "the narrator's rag-wrapped feet sink into deep snow, step after step",
+        "the narrator's frosted breath clouds in front of the camera"
+      ],
+      "sound": "deep silent cold, snow creaking underfoot, faint wind",
+      "refs": [
+        "bivouac"
+      ],
+      "voice_mood": "tense",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "fa9b040a-546f-4314-9fac-babae0f16d27",
+            "submitted": "2026-10-01T11:54:33+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "fa9b040a-546f-4314-9fac-babae0f16d27",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_115419_fa9b040a-546f-4314-9fac-babae0f16d27.png",
+        "finished": "2026-10-01T11:57:30+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "a0fd2f97-4830-4ac9-bd1f-875c9a6bba9b",
+            "submitted": "2026-10-01T12:03:12+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "a0fd2f97-4830-4ac9-bd1f-875c9a6bba9b",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_120255_a0fd2f97-4830-4ac9-bd1f-875c9a6bba9b.mp4",
+        "finished": "2026-10-01T12:08:57+00:00"
+      }
+    },
+    {
+      "n": 26,
+      "title": "Vilnius",
+      "pov": false,
+      "narration": "On the fifth of December, the Emperor leaves us, racing back to Paris in a sleigh. A few days later we reach Vilnius. There is food there at last. But many men are so hungry and so frozen that they die in the streets within sight of the bread.",
+      "narration_voiced": "On the fifth of December, the Emperor leaves us, racing back to Paris in a sleigh. A few days later we reach Vilnius. There is food there at last. But many men are so hungry and so frozen that they die in the streets... within sight of the bread.",
+      "image_prompt": "Night, December 1812: a small sleigh with a closed carriage body and a few escort riders speeding away across the snow, seen from far away; in the distance, the towers of a snowy city",
+      "shots": [
+        "a sleigh with escort riders races away across the snow at night",
+        "the ragged column approaches the snowy towers of Vilnius",
+        "soldiers crowd at the door of a bakery, bread passed out over heads"
+      ],
+      "sound": "sleigh bells fading, wind, a crowd murmuring",
+      "refs": [],
+      "voice_mood": "tense",
+      "must": [
+        "a sleigh seen from far away at night"
+      ],
+      "must_not": [
+        "any visible face in the sleigh",
+        "fire, flames or a burning city"
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "2cbff0db-3638-49f3-9c93-81fe1669ed90",
+            "submitted": "2026-10-01T11:58:20+00:00",
+            "credits": 1.0
+          }
+        ],
+        "history": [
+          {
+            "status": "done",
+            "attempts": [
+              {
+                "job_id": "67dea932-0e47-4187-b446-074c16ef14d2",
+                "submitted": "2026-10-01T11:54:33+00:00",
+                "credits": 1.0
+              }
+            ],
+            "job_id": "67dea932-0e47-4187-b446-074c16ef14d2",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_115420_67dea932-0e47-4187-b446-074c16ef14d2.png",
+            "finished": "2026-10-01T11:57:31+00:00",
+            "redo_reason": "şehir yanıyor gibi (Vilnius yanmadı)",
+            "redo_at": "2026-10-01T11:58:07+00:00"
+          }
+        ],
+        "job_id": "2cbff0db-3638-49f3-9c93-81fe1669ed90",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_115809_2cbff0db-3638-49f3-9c93-81fe1669ed90.png",
+        "finished": "2026-10-01T11:59:08+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "0230d960-a66f-46e0-b80d-c4b774515385",
+            "submitted": "2026-10-01T12:03:12+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "0230d960-a66f-46e0-b80d-c4b774515385",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_120255_0230d960-a66f-46e0-b80d-c4b774515385.mp4",
+        "finished": "2026-10-01T12:08:59+00:00"
+      }
+    },
+    {
+      "n": 27,
+      "title": "The Niemen again",
+      "pov": true,
+      "narration": "In the middle of December, I cross the river Niemen again: the same river we crossed in June with music and flags. In June, I was one of more than four hundred thousand. Now, I can count the men around me. Morel limps beside me. Thérèse walks behind us. We are three. But we are alive.",
+      "narration_voiced": "In the middle of December, I cross the river Niemen again: the same river we crossed in June with music and flags. In June, I was one of more than four hundred thousand. Now, I can count the men around me. Morel limps beside me. Thérèse walks behind us. We are three. But we are ALIVE.",
+      "image_prompt": "POV crossing the frozen Niemen river at a grey dawn in December 1812: Sergeant Morel limping ahead leaning on a musket, Thérèse wrapped in a shawl beside the camera, a handful of ragged survivors on the ice",
+      "shots": [
+        "a handful of ragged survivors cross the frozen river at dawn",
+        "Morel limps forward ahead, leaning on a musket",
+        "Thérèse puts a hand on the camera's shoulder and smiles weakly"
+      ],
+      "sound": "ice creaking, wind, slow footsteps",
+      "refs": [
+        "morel",
+        "therese"
+      ],
+      "voice_mood": "relief",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "6c975002-e361-4a83-93ec-03d6924d11e2",
+            "submitted": "2026-10-01T11:54:33+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "6c975002-e361-4a83-93ec-03d6924d11e2",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_115420_6c975002-e361-4a83-93ec-03d6924d11e2.png",
+        "finished": "2026-10-01T11:57:32+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "b542234b-0c16-40a3-bcdb-f6b2cca1b45a",
+            "submitted": "2026-10-01T12:03:12+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "b542234b-0c16-40a3-bcdb-f6b2cca1b45a",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_120255_b542234b-0c16-40a3-bcdb-f6b2cca1b45a.mp4",
+        "finished": "2026-10-01T12:09:01+00:00"
+      }
+    },
+    {
+      "n": 28,
+      "title": "How I survived",
+      "pov": false,
+      "narration": "So how did I survive? I took furs, not silver. I never sat down. I warmed my hands slowly. I ate horse with gunpowder. And I never walked alone.",
+      "narration_voiced": "So how did I survive? I took furs, not silver. I never sat down. I warmed my hands slowly. I ate horse... with gunpowder. And I never walked alone.",
+      "image_prompt": "Medium close-up of Luc (French conscript soldier about 20, thin frostbitten young face, dark curly hair, frost in his stubble, wrapped in a worn grey-brown greatcoat with a lady's dark fur-lined cloak over his shoulders, a wool scarf tied over his shako and ears) sitting by a small fire in a quiet snowy forest at dusk, looking straight into the camera as if talking to the viewer, warm firelight on his tired face",
+      "shots": [
+        "Luc looks straight into the camera and speaks to the viewer"
+      ],
+      "sound": "soft fire crackling, quiet forest, light wind",
+      "refs": [
+        "luc",
+        "bivouac"
+      ],
+      "voice_mood": "warm",
+      "lipsync": true,
+      "min_speed": 1.0,
+      "no_ambience": true,
+      "must": [
+        "Luc looking straight into the camera by a small fire"
+      ],
+      "must_not": [
+        "other people facing the camera"
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "cf8670a9-919e-4739-bc57-170b3185d764",
+            "submitted": "2026-10-01T11:54:34+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "cf8670a9-919e-4739-bc57-170b3185d764",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_115420_cf8670a9-919e-4739-bc57-170b3185d764.png",
+        "finished": "2026-10-01T11:57:34+00:00"
+      },
+      "note": "lip-sync: wan2_7 sınırı ~13 sn, metin kısaltıldı",
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "ac21fd3d-248d-4245-9f29-9eb3e21f51c0",
+            "submitted": "2026-10-01T12:06:51+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "ac21fd3d-248d-4245-9f29-9eb3e21f51c0",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_120637_ac21fd3d-248d-4245-9f29-9eb3e21f51c0.mp4",
+        "finished": "2026-10-01T12:10:10+00:00"
+      }
+    },
+    {
+      "n": 29,
+      "title": "Home",
+      "pov": true,
+      "narration": "In the spring of 1813, I come home to my village in the Auvergne. I've lost two toes and my youth. The first thing I do is climb the hill to Antoine's mother, and give her the little golden icon. My name is Luc Bastien, and I survived the winter of 1812. But mine was not the only hard winter in history. If you've stayed with me this far, I think this story stayed with you too. If it did, leave a like and subscribe. That's how I know you want more stories like this one, and it helps them reach more people.",
+      "narration_voiced": "In the spring of 1813, I come home to my village in the Auvergne. I've lost two toes... and my youth. The first thing I do is climb the hill to Antoine's mother, and give her the little golden icon. My name is Luc Bastien, and I survived the winter of 1812. But mine was not the only hard winter in history. If you've stayed with me this far, I think this story stayed with you too. If it did... leave a like, and subscribe. That's how I know you want more stories like this one, and it helps them reach more people.",
+      "image_prompt": "POV in spring 1813 at the door of a stone farmhouse in a green Auvergne mountain village: an old woman in a black shawl in the doorway, the narrator's hand holding out a small golden icon to her",
+      "shots": [
+        "POV walking up a green hill path toward a stone farmhouse",
+        "an old woman in a black shawl opens the door",
+        "the narrator's hand places the small golden icon into hers"
+      ],
+      "sound": "birdsong, a gentle breeze, a door creaking",
+      "refs": [
+        "auvergne"
+      ],
+      "voice_mood": "outro",
+      "must": [
+        "spring, green hills, stone farmhouse"
+      ],
+      "must_not": [
+        "snow"
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "accfcf37-02c6-43e4-bd96-669ae9b0c04a",
+            "submitted": "2026-10-01T11:54:34+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "accfcf37-02c6-43e4-bd96-669ae9b0c04a",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_115420_accfcf37-02c6-43e4-bd96-669ae9b0c04a.png",
+        "finished": "2026-10-01T11:57:35+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "71ad32f3-9341-41e7-9209-ec37e5dce276",
+            "submitted": "2026-10-01T12:03:12+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "71ad32f3-9341-41e7-9209-ec37e5dce276",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_120255_71ad32f3-9341-41e7-9209-ec37e5dce276.mp4",
+        "finished": "2026-10-01T12:09:03+00:00"
+      },
+      "cta": true,
+      "note": "anlatım sonuna kapanış çağrısı eklendi (audio_eleven/029.mp3 = hikâye + 1 sn + çağrı); ikinci klip: Luc köyde gün batımı",
+      "clip_composite": [
+        [
+          "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_120255_71ad32f3-9341-41e7-9209-ec37e5dce276.mp4",
+          0,
+          15.0
+        ],
+        [
+          "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_170309_68de6347-5e00-478e-b58c-619e115a3664.mp4",
+          0,
+          15.0
+        ]
+      ],
+      "min_speed": 0.5
+    },
+    {
+      "n": 30,
+      "title": "What comes next",
+      "pov": false,
+      "narration": "Thirty-four years later, on the other side of the world, a family of American settlers takes a shortcut through the mountains of California. Then the snow begins to fall and it does not stop. How did they survive? That story is next. And here, the fire is still burning.",
+      "narration_voiced": "Thirty-four years later, on the other side of the world, a family of American settlers takes a shortcut through the mountains of California. Then the snow begins to fall... and it does not stop. How did they survive? That story is next. And here, the fire is still burning.",
+      "image_prompt": "1846: a small wagon train of covered wagons climbing toward snowy mountain passes under a darkening sky, the first snowflakes falling, a campfire glowing beside the wagons",
+      "shots": [
+        "covered wagons climb a mountain trail toward snowy peaks",
+        "the first snowflakes fall on the white canvas of a wagon",
+        "a campfire glows beside the wagons as night falls"
+      ],
+      "sound": "wind in pine trees, wagon wheels creaking, a gentle fire",
+      "refs": [],
+      "voice_mood": "outro",
+      "beat": "BİTİŞ EKRANI (son 20 sn)",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "be195c90-7f91-4351-ae84-e1496857b099",
+            "submitted": "2026-10-01T11:54:34+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "be195c90-7f91-4351-ae84-e1496857b099",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_115419_be195c90-7f91-4351-ae84-e1496857b099.png",
+        "finished": "2026-10-01T11:57:36+00:00"
+      },
+      "own_rules": true,
+      "must": [
+        "oxen-drawn covered wagons, pine forests, snowy granite peaks, first snow falling"
+      ],
+      "must_not": [
+        "soldiers, military uniforms, shakos"
+      ],
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "b1363330-de38-4598-b9fa-5948edd2ab5a",
+            "submitted": "2026-10-01T12:03:12+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "b1363330-de38-4598-b9fa-5948edd2ab5a",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261001_120255_b1363330-de38-4598-b9fa-5948edd2ab5a.mp4",
+        "finished": "2026-10-01T12:09:05+00:00"
+      }
+    }
+  ],
+  "max_credits": 330,
+  "music_credit": "Music by Kevin MacLeod (incompetech.com), licensed under Creative Commons: By Attribution 4.0 — \"Frozen Star\", \"Lost Frontier\", \"Darkest Child\", \"Ossuary 6 - Air\", \"Dark Times\", \"Crossing the Chasm\", \"Winter Reflections\", \"Long Note Four\", \"Dreams Become Real\"",
+  "must": [
+    "historically accurate 1812 details only",
+    "French line infantry: dark blue coat with white lapels and white crossbelts, grey-brown greatcoat, black shako, flintlock musket with bayonet",
+    "the same faces, hair and clothes as in the reference images for every named character",
+    "painterly gouache look in every frame"
+  ],
+  "must_not": [
+    "any text, letters, numbers, captions, logos or watermark",
+    "modern objects: zippers, plastic, rubber boots, sunglasses, modern rifles, helmets, backpacks with straps and buckles of modern design",
+    "cars, trains, engines, electric lights, power lines, paved asphalt roads",
+    "Napoleon's face or a close-up of Napoleon",
+    "horned helmets, armour, knights, swords on infantrymen",
+    "gore, open wounds, blood pools, corpses in close-up",
+    "extra fingers, deformed hands, duplicated faces",
+    "the same person appearing twice in one frame (clones, twins, duplicated characters)"
+  ]
+}
