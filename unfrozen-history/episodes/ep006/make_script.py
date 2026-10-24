@@ -28,7 +28,7 @@ GER_IN = "inside the family's round felt ger: wooden lattice walls, red-painted 
 scenes = [
  # ───────── İLK ~60 SN: TAMAMI KLİP ─────────
  dict(title="Fifty below", mode="clip", pov=True, beat="SOĞUK AÇILIŞ (0:00) — kanca ilk 5 sn", mood="tense",
-  v="Fifty degrees below zero. My eyelashes freeze together when I blink. And the only thing between my children and this cold... is a tent made of FELT. Out here, there are no walls, no forests, no cellars. Just my family, two hundred animals... and a winter that wants all of us.",
+  v="Fifty degrees below zero. My eyelashes freeze together when I blink. And the only thing between my children and this cold... is a tent made of FELT. Out here, there are no walls, no forests, no cellars. Just my family, two hundred animals... and a winter that wants all of us. This is how we survive it.",
   img=f"The open Mongolian steppe at dawn in deep winter, about 1900, extreme cold, ice fog glittering in the air: {DO} stands beside his shaggy horse, frost white on his eyelashes, moustache and fur hat, his breath a cloud; behind him a single round white felt ger with smoke rising from its roof ring, a herd of sheep and goats huddled in a stone pen",
   shots=["a gust of wind blasts ice crystals across the herder's frost-white face, he squints and blinks hard",
          "a shaggy horse's muzzle and mane hung with frost, breath steaming",
@@ -74,6 +74,13 @@ scenes = [
           f"{OY} and {BA} lift a thick new sheet of white felt over the wooden roof poles of their ger, adding an extra winter layer, autumn steppe behind"],
   sound="wind, a horse walking slowly, a heavy roll thumping on grass",
   refs=["oyun", "dorj", "bat", "steppe"], must=["at most two people in each image"]),
+ dict(title="A robe that is a bed", mode="stills", ambience_from="Fifty below", pov=False, mood="warm",
+  v="In winter, we wear the deel: a long robe of sheepskin, with the wool turned inside. The sleeves are so long they cover our hands like mittens. The sash holds in the warmth and holds a knife and a pipe. And at night, the deel is our blanket. A herder caught out in a storm can sleep in the snow inside his deel... and wake up alive.",
+  img=f"{DO} in his long sheepskin winter deel",
+  stills=[f"A cold winter morning outside the ger, about 1900: {DO} ties the long orange silk sash around his heavy sheepskin-lined winter deel, the curly white fleece showing at the collar and cuffs, the long sleeves folded down over his hands",
+          "Night on the snowy steppe beside a resting horse: a herder lies curled up asleep in the snow, completely wrapped in his long sheepskin deel with the fleece inside, the fur hat pulled down, only the shape of the robe visible, frost on the wool, moonlight, NO face visible"],
+  sound="wind, leather creaking, fleece rustling",
+  refs=["dorj", "steppe"], must=["sheepskin deel with the fleece on the inside"]),
  dict(title="Fire without wood", mode="stills", ambience_from=1, pov=True, mood="intrigue",
   v="There are no trees here. So our fire burns dung. All summer, Saran and Bat walk the pastures with baskets on their backs, picking up dried cow dung. It burns clean and slow. But for the coldest nights, we save the sheep dung... small, dark, and it burns HOT.",
   img=f"{SA} and {BA} with wicker baskets on their backs collecting dried dung on the summer steppe",
@@ -88,6 +95,13 @@ scenes = [
           "Outside a white felt ger in early winter: frozen pieces of meat wrapped in cloth and stored in a wooden box on a low cart beside the ger, frost on everything, NO people"],
   sound="fire crackling, a knife on wood, wind outside the felt",
   refs=["oyun", "ger_in"], must_not=["blood", "animal carcasses or butchering"]),
+ dict(title="White food, red food", mode="stills", ambience_from="My family", pov=True, mood="warm",
+  v="Our food follows the seasons. In summer, we eat white food: milk, yoghurt, cheese and dried curd. In winter, the animals give almost no milk, so we eat red food: meat and fat. Fat is fuel. A bowl of mutton soup with a little flour keeps a man warm on his horse for half a day. And the dried curd from summer... is our emergency food when everything else runs out.",
+  img=f"{OY} serving mutton soup by the hearth",
+  stills=[f"Summer outside the ger, about 1900: {OY} lays rows of small pieces of white dried curd on a wooden board on the roof of the ger to dry in the sun, wooden pails of milk beside the door, green summer steppe",
+          f"Winter evening, {GER_IN}: an iron cauldron of steaming mutton soup on the hearth fire, {OY} ladling it into wooden bowls, warm amber firelight"],
+  sound="soup bubbling, a ladle on iron, fire crackling",
+  refs=["oyun", "ger_in"], must=["wooden bowls and an iron cauldron only"]),
  dict(title="Counting the nines", mode="stills", ambience_from=1, pov=True, beat="⚡ KIRILMA 1: gerçek soğuk başlıyor", mood="tense",
   v="On the shortest day of the year, the real winter begins. We count it in nines. Nine nines... eighty-one days. In the first nines, the milk vodka freezes. Then the strong vodka. And in the fourth nine, they say, even the horns of an ox can freeze. This is when the cold reaches fifty below.",
   img="The Mongolian steppe at the winter solstice: a lone ger under a deep blue night sky full of stars, everything white with frost",
@@ -125,6 +139,13 @@ scenes = [
           f"Deep night inside the ger, warm low firelight: {OY}, {BA} and {SA} asleep side by side on low wooden beds along the lattice wall, covered with their thick sheepskin robes, frost on the inside of the felt near the door"],
   sound="low crackling fire, soft breathing, wind pressing on the felt",
   refs=["dorj", "oyun", "bat", "saran", "ger_in"], must=["each person appears only once"]),
+ dict(title="A night in the ger", mode="stills", ambience_from="My family", pov=True, mood="warm",
+  v="Inside the ger, everyone has a place. The men on the west side, the women on the east, by the kitchen things. The place of honour, facing the door, is for the oldest and for guests. On the coldest nights, the newborn goats sleep inside with us, close to the fire. Four people and a dozen goats, under one roof of felt. It is loud. But it is warm.",
+  img=f"Night inside the ger, the family sleeping around the hearth with baby goats",
+  stills=[f"Night, {GER_IN}: the family asleep in their robes on low wooden beds around the glowing hearth, {SA} curled up beside three small baby goats lying on a felt rug near the fire, warm amber light, dark felt walls",
+          "Close warm painterly view inside a ger at night: four small baby goats sleeping curled together on a felt rug beside the glowing hearth, the iron fire-ring and a kettle at the edge of the frame, NO people"],
+  sound="soft crackling fire, baby goats breathing, wind outside the felt",
+  refs=["saran", "ger_in"], must=["at most one person visible"]),
  dict(title="The wolves", mode="stills", ambience_from=1, pov=True, mood="tense",
   v="And there are the wolves. Winter makes them hungry and brave. Our dogs sleep outside, against the pen, and when they bark in the night, I go out with a burning stick. One night, the dogs went quiet... and in the morning, there were tracks all around the pen.",
   img="Wolf tracks in the snow around a stone pen at dawn, a big dark Mongolian herding dog standing guard",
@@ -230,12 +251,11 @@ scenes = [
   sound="soft crackling fire",
   refs=["ger_in"]),
  dict(title="What comes next", mode="stills", ambience_from=1, pov=False, beat="SONRAKİ BÖLÜM", mood="intrigue", own_rules=True,
-  v="Far to the west, in medieval Europe, there were people who lived inside walls of stone a metre thick... and still froze. No glass in the windows. One fire for a hall full of people. How did they get through a winter night in a castle? That story is next. And here... the fire is still burning.",
-  img="A medieval stone castle in deep winter snow at dusk, a few small windows glowing with firelight",
-  stills=["A medieval European stone castle on a snowy hill at dusk in deep winter, thick stone walls and towers, a few narrow window slits glowing with orange firelight, heavy snow falling, NO people, NO modern objects",
-          "Inside a medieval castle great hall in winter: a huge stone fireplace with a roaring fire at one end of a long stone hall, long wooden tables, tapestries on the walls, cold blue light at the narrow unglazed windows, NO people"],
-  sound="howling wind against stone, a roaring fire",
-  refs=[], must=["Romanesque or Gothic medieval European castle"], must_not=["Mongolia", "gers", "modern objects"]),
+  v="Far across the world, in the winter of 1777, a ragged army of farmers built log huts in the snow, at a place called Valley Forge. Many of them had no shoes. Their footprints in the snow were marked with blood. How did they hold on until spring? That story is next. And here... the fire is still burning.",
+  img="Valley Forge in the winter of 1777, rows of log huts in the snow",
+  stills=["Pennsylvania, winter 1777: rows of small log huts with mud-chinked walls and smoking stone chimneys in deep snow on a rolling hillside, bare winter trees, grey sky, a few tiny distant figures in long coats and tricorn hats, NO close-up faces, NO modern objects"],
+  sound="wind through bare trees, an axe chopping wood in the distance",
+  refs=[], must=["18th-century American log huts"], must_not=["Mongolia", "gers", "modern objects", "blood"]),
 ]
 
 SHEET = ("Character reference sheet: on the left a full-body front view standing, "
@@ -254,10 +274,10 @@ for k, r in refs.items():
 
 ep = {
  "id": "ep006", "version": 1,
- "title": "How Do Mongolian Nomads Survive −50°C Winters?",
- "title_alt": "You're a Nomad on the Mongolian Steppe. It's −50°C.",
+ "title": "How Mongolian Nomads Survive −50°F Winters in a Tent of Felt",
+ "title_alt": "You're a Nomad on the Mongolian Steppe. It's 50 Below.",
  "title_c": "The Iron Winter: How One Nomad Family Kept 200 Animals Alive",
- "thumbnail": "Bright painterly close-up: the herder's face with thick white frost on his eyelashes, moustache and fox-fur hat, a white felt ger and frosty horses behind on a blue icy steppe; one big word '−50°C' (B: 'FELT', C: no text)",
+ "thumbnail": "Bright painterly close-up: the herder's face with thick white frost on his eyelashes, moustache and fox-fur hat, a white felt ger and frosty horses behind on a blue icy steppe; one big word '−50°F' (B: 'FELT', C: no text)",
  "hook_description": "On the Mongolian steppe, winter can fall to fifty degrees below zero, and a family lives through it in a tent of felt, with two hundred animals that must all survive until spring. Dorj, a herder, tells how nomads cross the winter: the winter camp, the felt, the dung fire, the horses that dig, and the iron dzud.",
  "character": "Dorj, a fictional Mongolian herder in north-western Mongolia about 1900; his wife Oyun, son Bat (11) and daughter Saran (7)",
  "setting": "North-western Mongolia (around the Uvs basin, one of the coldest regions), from autumn to spring, about 1900: a nomadic herding family's winter camp, an iron dzud and an otor migration",
@@ -303,10 +323,16 @@ ep = {
                 "synthetic voice."),
  "refs": refs,
  "music": [],
- "next_episode_tease": "A winter night inside a medieval castle: thick stone walls, no glass in the windows, one fire for the whole hall",
+ "next_episode_tease": "Valley Forge, winter 1777-78: the Continental Army in log huts in the snow",
+ "compact": {"style": "Hand-painted gouache and watercolor storybook illustration, visible brush texture, cold blue winter light with warm amber firelight, cinematic. Historically accurate north-western Mongolia about 1900: long deel robes with silk sashes, fur hats with ear flaps, leather gutal boots; round white felt gers with wooden lattice walls, red roof poles and a roof ring, an open hearth with an iron fire-ring; shaggy Mongolian horses, two-humped Bactrian camels, fat-tailed sheep, goats. Show only what is described.",
+             "avoid": "text, letters, numbers, logos, watermark; stove pipes, iron stoves, metal buckets, plastic, zippers, motorbikes, cars, electric lights; modern clothing; tipis, Chinese or Native American clothing; one-humped camels; gore, blood, dead animals; extra fingers, deformed hands, extra legs, duplicated people; collage or split panels"},
  "voice_engine": None,
  "scenes": [],
 }
+_old = [s for s in scenes if s["title"] not in ("A robe that is a bed", "White food, red food", "A night in the ger")]
+for s in scenes:
+    if isinstance(s.get("ambience_from"), int):
+        s["ambience_from"] = _old[s["ambience_from"] - 1]["title"]
 for s in scenes:
     if "dorj" in s["refs"]: s["pov"] = False  # anlatıcı görünüyorsa POV ifadesi çelişir
 for i, s in enumerate(scenes, 1):
@@ -317,20 +343,21 @@ for i, s in enumerate(scenes, 1):
         sc["shots"] = s["shots"]
     else:
         sc["still_prompts"] = s["stills"]
-        sc["ambience_from"] = s["ambience_from"]
+        sc["ambience_from"] = next(i for i, x in enumerate(scenes, 1) if x["title"] == s["ambience_from"])
     for k in ("beat", "must", "must_not", "own_rules"):
         if s.get(k):
             sc[k] = s[k]
     ep["scenes"].append(sc)
 ep005 = S.load_episode("ep005")
 ep["voice_engine"] = ep005["voice_engine"]
-ep["max_credits"] = 165
-S.save_episode(ep)
+ep["max_credits"] = 360  # ep007 kalitesi (kullanıcı onayı 20 Eki)
+if __name__ == "__main__" and "--force" in sys.argv:
+    S.save_episode(ep)  # DİKKAT: kapıları ve üretilen varlıkları sıfırlar
 
 # Karma bütçe (kredi): klip 7.5 + başlangıç görseli 1k (1) / 2K still 2 / ref 1
 clips = [s for s in ep["scenes"] if s["mode"] == "clip"]
 stills = sum(len(s["still_prompts"]) for s in ep["scenes"] if s["mode"] == "stills")
-cost = len(clips) * (7.5 + 1) + stills * 2 + len(refs) * 1
+cost = len(clips) * (15 + 2.75) + stills * 2.75 + len(refs) * 2.75  # GPT Image 2.5 high 2K + Seedance 720p
 w = [len(s["narration"].split()) for s in ep["scenes"]]
 print(len(w), "sahne", sum(w), "kelime", min(w), max(w), "≈", round(sum(w)/2.81/1.06/60 + len(w)*0.6/60, 1), "dk")
 print("klip:", [s["n"] for s in clips], "| still görsel:", stills, "| tahmini maliyet:", cost, "kredi")

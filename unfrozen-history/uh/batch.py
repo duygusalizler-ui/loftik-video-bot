@@ -16,8 +16,8 @@ from .cli import full_prompt, ref_media, rules
 
 def _still_prompt(ep: dict, s: dict, text: str) -> str:
     """Kısa şablon: sahne + POV + kısa stil + sahne kuralları + kısa yasak listesi (ep['compact'])."""
-    pov = " First-person view: the narrator's gloved hands or parka sleeves may show in the foreground." if s.get("pov") else ""
-    lead = "Keep the same faces and uniforms as the attached reference images; new scene: " if s.get("refs") else ""
+    pov = " First-person view: the narrator's own hands or sleeves may show in the foreground." if s.get("pov") else ""
+    lead = "Keep the same faces and clothes as the attached reference images; new scene: " if s.get("refs") else ""
     c = ep.get("compact")
     if not c:
         style = ep.get("style", C.STYLE)
