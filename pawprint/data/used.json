@@ -60,10 +60,11 @@
     39880714,
     32544548,
     20399672,
-    5540207
+    5540207,
+    32562247,
+    14149488
   ],
   "themes": [
-    "walks",
     "owner_love",
     "everyday_moments",
     "senior_dog",
@@ -82,7 +83,8 @@
     "paws",
     "puppy_to_senior",
     "walks",
-    "owner_love"
+    "owner_love",
+    "everyday_moments"
   ],
   "runs": [
     {
@@ -336,6 +338,14 @@
       "stock": [
         "https://www.pexels.com/video/peaceful-golden-retriever-dog-on-overcast-day-20399672/",
         "https://www.pexels.com/video/young-woman-and-dog-in-park-5540207/"
+      ]
+    },
+    {
+      "at": "20261025_123839",
+      "theme": "everyday_moments",
+      "stock": [
+        "https://www.pexels.com/video/golden-retriever-enjoying-a-sunny-day-outdoors-32562247/",
+        "https://www.pexels.com/video/painted-face-looking-through-window-14149488/"
       ]
     }
   ]
