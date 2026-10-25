@@ -62,10 +62,11 @@
     20399672,
     5540207,
     32562247,
-    14149488
+    14149488,
+    40430779,
+    36040934
   ],
   "themes": [
-    "owner_love",
     "everyday_moments",
     "senior_dog",
     "paws",
@@ -84,7 +85,8 @@
     "puppy_to_senior",
     "walks",
     "owner_love",
-    "everyday_moments"
+    "everyday_moments",
+    "senior_dog"
   ],
   "runs": [
     {
@@ -346,6 +348,14 @@
       "stock": [
         "https://www.pexels.com/video/golden-retriever-enjoying-a-sunny-day-outdoors-32562247/",
         "https://www.pexels.com/video/painted-face-looking-through-window-14149488/"
+      ]
+    },
+    {
+      "at": "20261025_182737",
+      "theme": "senior_dog",
+      "stock": [
+        "https://www.pexels.com/video/peaceful-rest-of-a-siberian-husky-indoors-40430779/",
+        "https://www.pexels.com/video/golden-dog-sitting-on-a-sunny-day-outdoors-36040934/"
       ]
     }
   ]
