@@ -47,7 +47,7 @@ scenes = [
   refs=["eli"], must=["exactly one main soldier in the foreground"]),
  dict(title="Valley Forge", mode="clip", pov=True, mood="intrigue",
   v="On the nineteenth of December, we reached a bare, frozen hillside eighteen miles from Philadelphia. There was no town. No barracks. Not even a roof. Just woods and snow, and the ruins of an old iron forge the British had burned. They called the place Valley Forge.",
-  img="A bare snowy hillside above a frozen creek in Pennsylvania, 19 December 1777, grey winter light: a ragged column of Continental soldiers arriving over the crest with muskets and a few ox-drawn wagons, bare woods all around, the blackened burned ruins of a small stone iron forge by the creek below",
+  img="A bare snowy hillside above a frozen creek in Pennsylvania, 19 December 1777, grey winter light: a ragged column of Continental soldiers arriving over the crest with muskets and a few ox-drawn wagons, bare woods all around, the cold, roofless, long-abandoned blackened stone ruins of a small iron forge by the creek below, burned months ago, snow inside the ruins, NO fire, NO glow, NO smoke from the ruins",
   shots=["the column of soldiers comes over the snowy crest and stops, looking at the empty hillside",
          "the blackened stone ruins of a burned forge beside a half-frozen creek",
          "wind blows snow across an empty hillside of bare trees"],
@@ -108,14 +108,14 @@ scenes = [
   refs=["sam", "hut_in"], must=["exactly one person in the second image"]),
  dict(title="No meat!", mode="clip", pov=True, mood="tense",
   v="Two days after we arrived, a cry started in one hut and spread across the whole camp. No meat! No meat! Thousands of voices in the dark. A surgeon wrote that the valleys echoed it back to us. It wasn't a mutiny. It was hungry men... telling the world they were still there.",
-  img="Night at Valley Forge, December 1777: rows of small log huts and campfires on a snowy hillside under a dark sky, groups of ragged soldiers standing by their fires, shouting together with fists raised",
+  img="Night at Valley Forge, 21 December 1777, before any huts were built: rows of small white canvas army tents and many campfires on a snowy hillside among tree stumps under a dark sky, groups of ragged soldiers in blankets standing by their fires, shouting together with fists raised",
   shots=["soldiers by a campfire cup their hands to their mouths and shout into the night",
-         "the shout spreads to the next row of huts, more men stepping out into the snow",
+         "the shout spreads to the next row of tents, more men stepping out into the snow",
          "a wide view of the dark hillside dotted with campfires, smoke rising into the night"],
   sound="many men chanting 'No meat!' in the distance, echoing, fire crackling",
-  refs=["camp"], must=["18th-century soldiers only", "no weapons pointed at anyone"]),
+  refs=["camp"], must=["18th-century soldiers only", "canvas tents, NO log huts yet", "no weapons pointed at anyone"]),
  dict(title="Barefoot", mode="stills", ambience_from="No shoes", pov=True, mood="tense",
-  v="Two days before Christmas, General Washington wrote to Congress. He counted two thousand, eight hundred and ninety-eight men in camp who could not do their duty, because they were barefoot, and had almost no clothes. Men stood guard standing on their hats, to keep their feet off the snow.",
+  v="Two days before Christmas, General Washington wrote to Congress. He counted two thousand, eight hundred and ninety-eight men in camp who could not do their duty, because they were barefoot, and had almost no clothes. I saw men stand guard on top of their own hats, just to keep their bare feet off the snow.",
   img="A barefoot sentry standing on his hat",
   stills=["Night at Valley Forge, December 1777: a lone ragged Continental sentry with a musket, wrapped in a blanket, standing on his upturned cocked hat in the snow to keep his bare feet off the ground, a hut row and a small fire behind, his face in shadow",
           "Close painterly view of a quill pen, an inkwell and a half-written letter in neat 18th-century handwriting on a small wooden table by candlelight, frost on the window behind, NO people, the writing is not readable"],
@@ -204,12 +204,12 @@ scenes = [
   refs=["eli", "camp"], must=["exactly one close person in the second image"]),
  dict(title="The news from France", mode="clip", pov=True, mood="festive",
   v="On the sixth of May, the news came. France had joined the war on our side. The whole army lined up on the parade ground, and fired a running salute, one musket after another, all the way down the line and back. Thirteen cannon. An extra ration of rum. And for the first time... we cheered as winners.",
-  img="Valley Forge parade ground, 6 May 1778, bright spring day: long lines of Continental soldiers firing muskets into the air one after another in a rolling salute, white powder smoke drifting along the line, cannon on a hill behind, flags of thirteen stripes, cheering men throwing their hats",
+  img="Valley Forge parade ground, 6 May 1778, bright spring day: long lines of Continental soldiers firing muskets into the air one after another in a rolling salute, white powder smoke drifting along the line, cannon on a hill behind, plain silk regimental flags in single colors with a small painted emblem, cheering men throwing their hats",
   shots=["a long line of soldiers fires muskets into the air one after another, smoke rolling down the line",
          "cannon on the hill fire, white smoke billowing",
          "soldiers throw their hats in the air and cheer"],
   sound="a rolling musket salute, cannon booming, men cheering 'Huzzah!'",
-  refs=["camp"], must=["muskets fired into the sky, not at people", "18th-century American flags with thirteen stripes"]),
+  refs=["camp"], must=["muskets fired into the sky, not at people", "regimental flags, NOT the stars and stripes"]),
  # ───────── ÇIKIŞ ─────────
  dict(title="Marching out", mode="clip", pov=True, mood="relief",
   v="On the nineteenth of June, six months to the day after we arrived, we marched out of Valley Forge. Behind us, the hillside was a field of empty huts. Nine days later, at Monmouth, we met the British in the open field... and this time, they did not run us off it.",
@@ -309,14 +309,26 @@ ep = {
                 "of the men who wintered at Valley Forge. The events, places and dates are real. Illustrations and animation "
                 "were created with AI tools; narration uses a synthetic voice."),
  "refs": refs,
- "music": [],
+ "music": [  # 27 Eki müzik planı (Kevin MacLeod, CC BY 4.0)
+  {"from": 1, "track": "Frozen_Star.mp3", "title": "Frozen Star", "mood": "soğuk açılış, yürüyüş"},
+  {"from": 4, "track": "Lost_Frontier.mp3", "title": "Lost Frontier", "mood": "geçmiş, kulübe yapımı"},
+  {"from": 10, "track": "Darkest_Child.mp3", "title": "Darkest Child", "mood": "açlık, yalınayak"},
+  {"from": 15, "track": "Ossuary_6_-_Air.mp3", "title": "Ossuary 6 - Air", "mood": "hastalık, Jonah"},
+  {"from": 19, "track": "Healing.mp3", "title": "Healing", "mood": "sığırlar, Jonah dönüyor"},
+  {"from": 21, "track": "Crossing_the_Chasm.mp3", "title": "Crossing the Chasm", "mood": "von Steuben talimi"},
+  {"from": 23, "track": "Eternal_Hope.mp3", "title": "Eternal Hope", "mood": "bahar, Fransa, çıkış"},
+  {"from": 26, "track": "Winter_Reflections.mp3", "title": "Winter Reflections", "mood": "boş kulübe, özet"},
+  {"from": 28, "track": "Dreams_Become_Real.mp3", "title": "Dreams Become Real", "mood": "kapanış"},
+ ],
  "next_episode_tease": "Bastogne, December 1944: the 101st Airborne surrounded in the snow",
  "compact": {"style": "Hand-painted gouache and watercolor storybook illustration, visible brush texture, cold blue winter light with warm amber firelight, cinematic. Historically accurate Valley Forge, Pennsylvania 1777-78: ragged Continental soldiers in mismatched brown, blue and grey wool coats, linen hunting shirts, cocked hats, blankets as cloaks, rags on feet; flintlock muskets; small log huts with clay-chinked walls and stick-and-clay chimneys; bare winter woods. Show only what is described.",
-             "avoid": "text, letters, numbers, logos, watermark; recognizable faces of real historical people; metal stoves, stovepipes, zippers, plastic, electric lights, modern rifles; 19th/20th-century uniforms; gore, blood, wounds, corpses; extra fingers, deformed hands, duplicated people; collage or split panels"},
+             "avoid": "text, letters, numbers, logos, watermark; recognizable faces of real historical people; metal stoves, glass window panes, stovepipes, zippers, plastic, electric lights, modern rifles; 19th/20th-century uniforms; gore, blood, wounds, corpses; extra fingers, deformed hands, duplicated people; collage or split panels"},
  "voice_engine": None,
  "scenes": [],
 }
 titles = [s["title"] for s in scenes]
+for s in scenes:
+    if "eli" in s["refs"] or s["mode"] == "clip": s["pov"] = False  # anlatıcı görünüyorsa / geniş klip karesinde POV eli çelişir
 for i, s in enumerate(scenes, 1):
     sc = {"n": i, "title": s["title"], "mode": s["mode"], "pov": s["pov"], "narration": plain(s["v"]),
           "narration_voiced": s["v"], "image_prompt": s["img"], "sound": s["sound"], "refs": s["refs"],
@@ -331,6 +343,7 @@ for i, s in enumerate(scenes, 1):
     for k in ("beat", "must", "must_not", "own_rules"):
         if s.get(k):
             sc[k] = s[k]
+    sc["pad"] = 2.2 if i in (3, 9, 14, 18, 20, 22, 25, 27) else 0.8  # müzik değişiminden önce nefes
     ep["scenes"].append(sc)
 ep006 = S.load_episode("ep006")
 ep["voice_engine"] = ep006["voice_engine"]
