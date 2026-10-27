@@ -70,10 +70,11 @@
     32320872,
     11920096,
     39986184,
-    38550302
+    38550302,
+    6715887,
+    35459385
   ],
   "themes": [
-    "puppy_to_senior",
     "walks",
     "owner_love",
     "everyday_moments",
@@ -92,7 +93,8 @@
     "senior_dog",
     "paws",
     "puppy_to_senior",
-    "walks"
+    "walks",
+    "owner_love"
   ],
   "runs": [
     {
@@ -386,6 +388,14 @@
       "stock": [
         "https://www.pexels.com/video/dog-fetching-stick-at-scenic-lakeside-39986184/",
         "https://www.pexels.com/video/woman-and-dog-in-lush-green-field-under-cloudy-sky-38550302/"
+      ]
+    },
+    {
+      "at": "20261027_201738",
+      "theme": "owner_love",
+      "stock": [
+        "https://www.pexels.com/video/woman-petting-her-dog-6715887/",
+        "https://www.pexels.com/video/golden-retriever-walking-along-sunny-lakeside-35459385/"
       ]
     }
   ]
