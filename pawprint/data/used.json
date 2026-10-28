@@ -74,10 +74,11 @@
     6715887,
     35459385,
     28498880,
-    6943536
+    6943536,
+    40430780,
+    40558770
   ],
   "themes": [
-    "owner_love",
     "everyday_moments",
     "senior_dog",
     "paws",
@@ -96,7 +97,8 @@
     "puppy_to_senior",
     "walks",
     "owner_love",
-    "everyday_moments"
+    "everyday_moments",
+    "senior_dog"
   ],
   "runs": [
     {
@@ -406,6 +408,14 @@
       "stock": [
         "https://www.pexels.com/video/a-dog-walking-on-a-sidewalk-with-a-leash-28498880/",
         "https://www.pexels.com/video/a-man-using-a-mobile-phone-on-bed-6943536/"
+      ]
+    },
+    {
+      "at": "20261028_202255",
+      "theme": "senior_dog",
+      "stock": [
+        "https://www.pexels.com/video/peaceful-sleeping-husky-on-a-cozy-dog-bed-40430780/",
+        "https://www.pexels.com/video/golden-retriever-playing-on-outdoor-basketball-court-40558770/"
       ]
     }
   ]
