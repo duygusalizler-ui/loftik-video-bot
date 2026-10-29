@@ -76,10 +76,11 @@
     28498880,
     6943536,
     40430780,
-    40558770
+    40558770,
+    15439857,
+    40607769
   ],
   "themes": [
-    "everyday_moments",
     "senior_dog",
     "paws",
     "puppy_to_senior",
@@ -98,7 +99,8 @@
     "walks",
     "owner_love",
     "everyday_moments",
-    "senior_dog"
+    "senior_dog",
+    "paws"
   ],
   "runs": [
     {
@@ -416,6 +418,14 @@
       "stock": [
         "https://www.pexels.com/video/peaceful-sleeping-husky-on-a-cozy-dog-bed-40430780/",
         "https://www.pexels.com/video/golden-retriever-playing-on-outdoor-basketball-court-40558770/"
+      ]
+    },
+    {
+      "at": "20261029_142843",
+      "theme": "paws",
+      "stock": [
+        "https://www.pexels.com/video/a-dog-walking-on-a-road-in-the-rain-15439857/",
+        "https://www.pexels.com/video/golden-retriever-relaxing-on-rocky-beach-40607769/"
       ]
     }
   ]
