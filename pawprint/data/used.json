@@ -78,10 +78,11 @@
     40430780,
     40558770,
     15439857,
-    40607769
+    40607769,
+    20102192,
+    8746929
   ],
   "themes": [
-    "senior_dog",
     "paws",
     "puppy_to_senior",
     "walks",
@@ -100,7 +101,8 @@
     "owner_love",
     "everyday_moments",
     "senior_dog",
-    "paws"
+    "paws",
+    "puppy_to_senior"
   ],
   "runs": [
     {
@@ -426,6 +428,14 @@
       "stock": [
         "https://www.pexels.com/video/a-dog-walking-on-a-road-in-the-rain-15439857/",
         "https://www.pexels.com/video/golden-retriever-relaxing-on-rocky-beach-40607769/"
+      ]
+    },
+    {
+      "at": "20261029_202156",
+      "theme": "puppy_to_senior",
+      "stock": [
+        "https://www.pexels.com/video/a-white-dog-laying-on-a-bed-in-a-room-20102192/",
+        "https://www.pexels.com/video/close-up-footage-of-a-labrador-retriever-8746929/"
       ]
     }
   ]
