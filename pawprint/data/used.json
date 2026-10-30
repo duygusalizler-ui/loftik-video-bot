@@ -80,10 +80,11 @@
     15439857,
     40607769,
     20102192,
-    8746929
+    8746929,
+    40065534,
+    36658605
   ],
   "themes": [
-    "paws",
     "puppy_to_senior",
     "walks",
     "owner_love",
@@ -102,7 +103,8 @@
     "everyday_moments",
     "senior_dog",
     "paws",
-    "puppy_to_senior"
+    "puppy_to_senior",
+    "walks"
   ],
   "runs": [
     {
@@ -436,6 +438,14 @@
       "stock": [
         "https://www.pexels.com/video/a-white-dog-laying-on-a-bed-in-a-room-20102192/",
         "https://www.pexels.com/video/close-up-footage-of-a-labrador-retriever-8746929/"
+      ]
+    },
+    {
+      "at": "20261030_141927",
+      "theme": "walks",
+      "stock": [
+        "https://www.pexels.com/video/golden-retriever-walking-on-sunny-day-outdoors-40065534/",
+        "https://www.pexels.com/video/happy-dog-playing-fetch-by-the-ocean-36658605/"
       ]
     }
   ]
