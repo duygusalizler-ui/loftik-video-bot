@@ -82,10 +82,11 @@
     20102192,
     8746929,
     40065534,
-    36658605
+    36658605,
+    29477854,
+    38395126
   ],
   "themes": [
-    "puppy_to_senior",
     "walks",
     "owner_love",
     "everyday_moments",
@@ -104,7 +105,8 @@
     "senior_dog",
     "paws",
     "puppy_to_senior",
-    "walks"
+    "walks",
+    "owner_love"
   ],
   "runs": [
     {
@@ -446,6 +448,14 @@
       "stock": [
         "https://www.pexels.com/video/golden-retriever-walking-on-sunny-day-outdoors-40065534/",
         "https://www.pexels.com/video/happy-dog-playing-fetch-by-the-ocean-36658605/"
+      ]
+    },
+    {
+      "at": "20261030_195713",
+      "theme": "owner_love",
+      "stock": [
+        "https://www.pexels.com/video/cheerful-golden-retriever-in-cozy-room-29477854/",
+        "https://www.pexels.com/video/golden-retriever-in-scenic-wheat-field-38395126/"
       ]
     }
   ]
