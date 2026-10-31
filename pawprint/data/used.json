@@ -84,10 +84,11 @@
     40065534,
     36658605,
     29477854,
-    38395126
+    38395126,
+    5744673,
+    7279149
   ],
   "themes": [
-    "walks",
     "owner_love",
     "everyday_moments",
     "senior_dog",
@@ -106,7 +107,8 @@
     "paws",
     "puppy_to_senior",
     "walks",
-    "owner_love"
+    "owner_love",
+    "everyday_moments"
   ],
   "runs": [
     {
@@ -456,6 +458,14 @@
       "stock": [
         "https://www.pexels.com/video/cheerful-golden-retriever-in-cozy-room-29477854/",
         "https://www.pexels.com/video/golden-retriever-in-scenic-wheat-field-38395126/"
+      ]
+    },
+    {
+      "at": "20261031_134355",
+      "theme": "everyday_moments",
+      "stock": [
+        "https://www.pexels.com/video/person-petting-a-dog-5744673/",
+        "https://www.pexels.com/video/dog-lying-in-his-bed-7279149/"
       ]
     }
   ]
