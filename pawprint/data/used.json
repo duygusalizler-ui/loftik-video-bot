@@ -86,10 +86,11 @@
     29477854,
     38395126,
     5744673,
-    7279149
+    7279149,
+    7279090,
+    8498674
   ],
   "themes": [
-    "owner_love",
     "everyday_moments",
     "senior_dog",
     "paws",
@@ -108,7 +109,8 @@
     "puppy_to_senior",
     "walks",
     "owner_love",
-    "everyday_moments"
+    "everyday_moments",
+    "senior_dog"
   ],
   "runs": [
     {
@@ -466,6 +468,14 @@
       "stock": [
         "https://www.pexels.com/video/person-petting-a-dog-5744673/",
         "https://www.pexels.com/video/dog-lying-in-his-bed-7279149/"
+      ]
+    },
+    {
+      "at": "20261031_192308",
+      "theme": "senior_dog",
+      "stock": [
+        "https://www.pexels.com/video/woman-and-baby-lying-on-bed-7279090/",
+        "https://www.pexels.com/video/a-dog-lying-down-at-the-edge-of-a-sofa-8498674/"
       ]
     }
   ]
