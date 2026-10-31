@@ -1,0 +1,1783 @@
+{
+  "id": "ep008",
+  "version": 1,
+  "title": "Valley Forge: Why 2,000 Men Died Without a Single Battle",
+  "title_alt": "You're a Soldier at Valley Forge. You Have No Shoes.",
+  "title_c": "How Washington's Army Survived the Winter at Valley Forge (1777)",
+  "thumbnail": "Bright painterly close-up: the young soldier's frost-bitten face under a worn cocked hat, a ragged blanket on his shoulders, his rag-wrapped feet in the snow in the foreground, log huts and smoke behind; big words 'NO SHOES' (B: '1777', C: no text)",
+  "hook_description": "Winter 1777. The Continental Army marches into a frozen Pennsylvania hillside called Valley Forge, many of the men without shoes. Eli, a 17-year-old private from Connecticut, tells how they built a city of log huts, lived on fire cake and water, and held on until spring, when they marched out as a real army.",
+  "character": "Eli Parker, a fictional 17-year-old Connecticut private; his hutmates Jonah Hale and Sam Freeman",
+  "setting": "Valley Forge, Pennsylvania, 19 December 1777 to 19 June 1778: the Continental Army's winter encampment",
+  "style": "Hand-painted gouache and watercolor storybook illustration, visible brush texture, warm amber firelight against cold blue winter light, cinematic composition, historically accurate Pennsylvania 1777-78: ragged mismatched Continental Army clothing (brown, blue and grey wool coats, linen hunting shirts, cocked hats, round felt hats, wool blankets as cloaks, rags on bare feet), flintlock muskets, small log huts with clay-chinked walls and stick-and-clay chimneys, bare winter woods, no modern objects, soft painterly detail, no text, no letters, no watermark",
+  "ref_style": "Hand-painted gouache and watercolor storybook character reference sheet, same painterly look as the episode, even neutral lighting, plain warm parchment background, historically accurate Continental Army soldier clothing of 1777, original person, no text, no labels, no watermark",
+  "motion_suffix": "Natural real-time motion, no slow motion, soft cuts between shots, painterly style and characters stay consistent across shots, no text; historically accurate Valley Forge 1777-78: Continental soldiers in ragged 18th-century clothing, flintlock muskets, log huts, no modern objects, no metal stoves, no zippers",
+  "cast": {
+    "Eli": "Eli Parker (Connecticut farm boy of 17 in the Continental Army, thin face, hollow cheeks, straight light-brown hair tied back, a few freckles, blue eyes, ragged brown wool coat with patched elbows over a dirty linen shirt, worn black cocked hat, an old grey wool blanket over his shoulders, threadbare grey breeches)",
+    "Jonah": "Jonah Hale (his best friend, 19, big-shouldered, broad red-bearded face, curly red hair, faded blue wool coat with torn red facings, black round felt hat with the brim turned up on one side)",
+    "Sam": "Sam Freeman (a free Black soldier of about 30 from New London, Connecticut, calm lean face, short black hair, small trimmed beard, long brown linen hunting shirt with fringed cape over a wool waistcoat, black cocked hat)"
+  },
+  "preview_scenes": [
+    1,
+    2,
+    3
+  ],
+  "gates": {
+    "script": "2026-10-27T16:21:22+00:00"
+  },
+  "hybrid": {
+    "still_resolution": "2k",
+    "still_quality": "medium",
+    "clip_start_resolution": "1k",
+    "note": "mode=clip → Seedance; mode=stills → 2K görseller + Ken Burns, ortam sesi ambience_from klibinden"
+  },
+  "must": [
+    "historically accurate Valley Forge 1777-78 only (except the final teaser scene)",
+    "the same faces, hair and clothes as in the reference images for every named character",
+    "painterly gouache look in every frame"
+  ],
+  "must_not": [
+    "any text, letters, numbers, captions, logos or watermark",
+    "a recognizable face of a real historical person (George Washington, Baron von Steuben): show them only from behind or far away",
+    "modern objects: metal stoves, stovepipes, zippers, plastic, rubber boots, electric lights, cars, modern rifles",
+    "19th- or 20th-century uniforms, Civil War kepis, Napoleonic shakos",
+    "neat matching parade uniforms in the winter scenes (the winter army is ragged)",
+    "gore, blood, wounds, corpses, skeletons, dead animals",
+    "extra fingers, deformed hands, duplicated faces",
+    "the same person appearing twice in one frame (clones, twins, duplicated characters)",
+    "collage, multiple panels, split screen, several pictures in one image: it must be ONE single continuous scene"
+  ],
+  "sources": [
+    "Joseph Plumb Martin — A Narrative of Some of the Adventures, Dangers and Sufferings of a Revolutionary Soldier (1830)",
+    "Albigence Waldo — 'Valley Forge, 1777-1778: Diary of Surgeon Albigence Waldo' (Pennsylvania Magazine of History and Biography, 1897)",
+    "George Washington — letter to Henry Laurens, 23 December 1777, and General Orders of 18 December 1777 (Founders Online, National Archives)",
+    "Wayne K. Bodle — The Valley Forge Winter: Civilians and Soldiers in War (Penn State University Press, 2002)",
+    "Ricardo A. Herrera — Feeding Washington's Army: Surviving the Valley Forge Winter of 1778 (University of North Carolina Press, 2022)",
+    "John B. B. Trussell Jr. — Birthplace of an Army: A Study of the Valley Forge Encampment (Pennsylvania Historical and Museum Commission, 1976)",
+    "Valley Forge National Historical Park — National Park Service"
+  ],
+  "disclosure": "Eli Parker, Jonah Hale and Sam Freeman are fictional characters, built from the diaries, letters and memoirs of the men who wintered at Valley Forge. The events, places and dates are real. Illustrations and animation were created with AI tools; narration uses a synthetic voice.",
+  "refs": {
+    "eli": {
+      "kind": "character",
+      "prompt": "Character reference sheet: on the left a full-body front view standing, on the right a chest-up portrait of the same person; identical original character in both views, single character only, no other people. Eli Parker (Connecticut farm boy of 17 in the Continental Army, thin face, hollow cheeks, straight light-brown hair tied back, a few freckles, blue eyes, ragged brown wool coat with patched elbows over a dirty linen shirt, worn black cocked hat, an old grey wool blanket over his shoulders, threadbare grey breeches)",
+      "n": "eli",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "e2532109-70f1-4255-ad5a-0d8c3ed8a817",
+            "submitted": "2026-10-27T16:21:36+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "e2532109-70f1-4255-ad5a-0d8c3ed8a817",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261027_162040_e2532109-70f1-4255-ad5a-0d8c3ed8a817.png",
+        "finished": "2026-10-27T16:21:36+00:00"
+      }
+    },
+    "jonah": {
+      "kind": "character",
+      "prompt": "Character reference sheet: on the left a full-body front view standing, on the right a chest-up portrait of the same person; identical original character in both views, single character only, no other people. Jonah Hale (his best friend, 19, big-shouldered, broad red-bearded face, curly red hair, faded blue wool coat with torn red facings, black round felt hat with the brim turned up on one side)",
+      "n": "jonah",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "ea4c85c6-716f-436d-bf95-770694567911",
+            "submitted": "2026-10-27T16:21:36+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "ea4c85c6-716f-436d-bf95-770694567911",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261027_162040_ea4c85c6-716f-436d-bf95-770694567911.png",
+        "finished": "2026-10-27T16:21:36+00:00"
+      }
+    },
+    "sam": {
+      "kind": "character",
+      "prompt": "Character reference sheet: on the left a full-body front view standing, on the right a chest-up portrait of the same person; identical original character in both views, single character only, no other people. Sam Freeman (a free Black soldier of about 30 from New London, Connecticut, calm lean face, short black hair, small trimmed beard, long brown linen hunting shirt with fringed cape over a wool waistcoat, black cocked hat)",
+      "n": "sam",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "3d14f64f-be4a-4bbc-b659-9c1eeb7b9443",
+            "submitted": "2026-10-27T16:21:36+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "3d14f64f-be4a-4bbc-b659-9c1eeb7b9443",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261027_162040_3d14f64f-be4a-4bbc-b659-9c1eeb7b9443.png",
+        "finished": "2026-10-27T16:21:36+00:00"
+      }
+    },
+    "hut_in": {
+      "kind": "location",
+      "prompt": "Location reference, single image, NO people: inside a small soldiers' log hut at Valley Forge, winter 1777-78: rough log walls chinked with clay, a dirt floor, a wooden-and-clay fireplace at the far end with a small fire, three tiers of bunks made of poles and straw along both side walls, muskets leaning on the wall, wet wool blankets and a kettle, smoky dim air",
+      "n": "hut_in",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "8e79edd0-50aa-4635-92dd-0d21e193b073",
+            "submitted": "2026-10-27T16:21:36+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "8e79edd0-50aa-4635-92dd-0d21e193b073",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261027_162041_8e79edd0-50aa-4635-92dd-0d21e193b073.png",
+        "finished": "2026-10-27T16:21:36+00:00"
+      }
+    },
+    "camp": {
+      "kind": "location",
+      "prompt": "Location reference, single image, NO people: Valley Forge, Pennsylvania, winter 1777-78: long straight rows of small log huts with clay-chinked walls and wooden chimneys smoking, on a rolling snowy hillside, tree stumps everywhere where the forest was cut, bare winter woods beyond, a grey sky",
+      "n": "camp",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "1af72dd1-0efb-4598-ba4a-cae011ea93d2",
+            "submitted": "2026-10-27T16:21:36+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "1af72dd1-0efb-4598-ba4a-cae011ea93d2",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261027_162040_1af72dd1-0efb-4598-ba4a-cae011ea93d2.png",
+        "finished": "2026-10-27T16:21:36+00:00"
+      }
+    }
+  },
+  "music": [
+    {
+      "from": 1,
+      "track": "Frozen_Star.mp3",
+      "title": "Frozen Star",
+      "mood": "soğuk açılış, yürüyüş"
+    },
+    {
+      "from": 4,
+      "track": "Lost_Frontier.mp3",
+      "title": "Lost Frontier",
+      "mood": "geçmiş, kulübe yapımı"
+    },
+    {
+      "from": 10,
+      "track": "Darkest_Child.mp3",
+      "title": "Darkest Child",
+      "mood": "açlık, yalınayak"
+    },
+    {
+      "from": 15,
+      "track": "Ossuary_6_-_Air.mp3",
+      "title": "Ossuary 6 - Air",
+      "mood": "hastalık, Jonah"
+    },
+    {
+      "from": 19,
+      "track": "Healing.mp3",
+      "title": "Healing",
+      "mood": "sığırlar, Jonah dönüyor"
+    },
+    {
+      "from": 21,
+      "track": "Crossing_the_Chasm.mp3",
+      "title": "Crossing the Chasm",
+      "mood": "von Steuben talimi"
+    },
+    {
+      "from": 23,
+      "track": "Eternal_Hope.mp3",
+      "title": "Eternal Hope",
+      "mood": "bahar, Fransa, çıkış"
+    },
+    {
+      "from": 26,
+      "track": "Winter_Reflections.mp3",
+      "title": "Winter Reflections",
+      "mood": "boş kulübe, özet"
+    },
+    {
+      "from": 28,
+      "track": "Dreams_Become_Real.mp3",
+      "title": "Dreams Become Real",
+      "mood": "kapanış"
+    }
+  ],
+  "next_episode_tease": "Bastogne, December 1944: the 101st Airborne surrounded in the snow",
+  "compact": {
+    "style": "Hand-painted gouache and watercolor storybook illustration, visible brush texture, cold blue winter light with warm amber firelight, cinematic. Historically accurate Valley Forge, Pennsylvania 1777-78: ragged Continental soldiers in mismatched brown, blue and grey wool coats, linen hunting shirts, cocked hats, blankets as cloaks, rags on feet; flintlock muskets; small log huts with clay-chinked walls and stick-and-clay chimneys; bare winter woods. Show only what is described.",
+    "avoid": "text, letters, numbers, logos, watermark; recognizable faces of real historical people; metal stoves, glass window panes, stovepipes, zippers, plastic, electric lights, modern rifles; 19th/20th-century uniforms; gore, blood, wounds, corpses; extra fingers, deformed hands, duplicated people; collage or split panels"
+  },
+  "voice_engine": {
+    "model": "text2speech_v2",
+    "variant": "elevenlabs",
+    "voice_id": "07112420-b262-46e4-8698-6d2a177958f4",
+    "post": "silenceremove=stop_periods=-1:stop_duration=0.55:stop_threshold=-45dB:stop_silence=0.45,atempo=1.06,highpass=f=70,equalizer=f=250:t=q:w=1.2:g=-2,equalizer=f=3200:t=q:w=1.0:g=3.5,treble=g=2:f=8000,acompressor=threshold=-20dB:ratio=3:attack=5:release=120:makeup=3,loudnorm=I=-16:TP=-1.5"
+  },
+  "scenes": [
+    {
+      "n": 1,
+      "title": "No shoes",
+      "mode": "clip",
+      "pov": false,
+      "narration": "December, seventeen seventy-seven. I am marching through the snow and I have no shoes. Just rags, tied around my feet. And every step I take leaves a red print behind me.",
+      "narration_voiced": "December, seventeen seventy-seven. I am marching through the snow... and I have no shoes. Just rags, tied around my feet. And every step I take... leaves a red print behind me.",
+      "image_prompt": "A frozen country road in Pennsylvania, December 1777, grey dusk, light snow falling: Eli Parker (Connecticut farm boy of 17 in the Continental Army, thin face, hollow cheeks, straight light-brown hair tied back, a few freckles, blue eyes, ragged brown wool coat with patched elbows over a dirty linen shirt, worn black cocked hat, an old grey wool blanket over his shoulders, threadbare grey breeches) marches in a long ragged column of Continental soldiers, his feet wrapped in torn rags tied with string, a flintlock musket on his shoulder, his breath steaming",
+      "sound": "boots and wrapped feet crunching on frozen snow, wind, a drum tapping a slow march far ahead",
+      "refs": [
+        "eli"
+      ],
+      "voice_mood": "tense",
+      "shots": [
+        "close on rag-wrapped feet stepping through thin snow on a frozen rutted road",
+        "the young soldier's tired face under his worn cocked hat, snowflakes on his eyelashes",
+        "a long column of ragged soldiers with muskets trudging up a snowy road into grey dusk"
+      ],
+      "beat": "SOĞUK AÇILIŞ (0:00) — kanca ilk 5 sn, ≤12 sn",
+      "must": [
+        "exactly one close-up soldier, the rest small in the column",
+        "no visible blood or wounds"
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "1206989b-0546-46cd-a6e0-86dfd20fe77b",
+            "submitted": "2026-10-27T16:24:55+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "1206989b-0546-46cd-a6e0-86dfd20fe77b",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261027_162351_1206989b-0546-46cd-a6e0-86dfd20fe77b.png",
+        "finished": "2026-10-27T16:24:55+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "410f64ed-8b62-4a43-8116-55c1fbc70503",
+            "submitted": "2026-10-27T16:39:27+00:00",
+            "credits": 15
+          }
+        ],
+        "history": [
+          {
+            "status": "done",
+            "attempts": [
+              {
+                "job_id": "3cd8bafc-079b-4e48-89e9-9756e106c583",
+                "submitted": "2026-10-27T16:27:04+00:00",
+                "credits": 15.0
+              }
+            ],
+            "job_id": "3cd8bafc-079b-4e48-89e9-9756e106c583",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261027_162658_3cd8bafc-079b-4e48-89e9-9756e106c583.mp4",
+            "finished": "2026-10-27T16:35:00+00:00",
+            "redo_reason": "ayakkabı göründü; paçavralı ayak",
+            "redo_at": "2026-10-27T16:39:27+00:00"
+          }
+        ],
+        "job_id": "410f64ed-8b62-4a43-8116-55c1fbc70503",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261027_163531_410f64ed-8b62-4a43-8116-55c1fbc70503.mp4",
+        "finished": "2026-10-27T16:39:27+00:00"
+      },
+      "pad": 0.8
+    },
+    {
+      "n": 2,
+      "title": "Who I am",
+      "mode": "clip",
+      "pov": false,
+      "narration": "My name is Eli Parker. I'm seventeen, a private in a Connecticut regiment of the Continental Army. Back home, I milked cows and split rails on my father's farm. I signed up to fight for liberty. Nobody told me the hardest enemy would be the winter.",
+      "narration_voiced": "My name is Eli Parker. I'm seventeen, a private in a Connecticut regiment of the Continental Army. Back home, I milked cows and split rails on my father's farm. I signed up to fight for liberty. Nobody told me the hardest enemy... would be the winter.",
+      "image_prompt": "Late afternoon on the snowy march, December 1777: Eli Parker (Connecticut farm boy of 17 in the Continental Army, thin face, hollow cheeks, straight light-brown hair tied back, a few freckles, blue eyes, ragged brown wool coat with patched elbows over a dirty linen shirt, worn black cocked hat, an old grey wool blanket over his shoulders, threadbare grey breeches) pauses at the roadside, adjusting the grey blanket on his shoulders and looking toward the viewer, other soldiers passing behind him with muskets",
+      "sound": "wind, footsteps in snow, a man coughing",
+      "refs": [
+        "eli"
+      ],
+      "voice_mood": "warm",
+      "shots": [
+        "the young soldier pulls the blanket tighter around his shoulders and glances up",
+        "soldiers pass behind him in a ragged column, some wrapped in blankets",
+        "his breath steams as he lifts his musket back onto his shoulder and walks on"
+      ],
+      "must": [
+        "exactly one main soldier in the foreground"
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "935ef9f8-952b-47a4-ae53-66ec114be052",
+            "submitted": "2026-10-27T16:24:55+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "935ef9f8-952b-47a4-ae53-66ec114be052",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261027_162349_935ef9f8-952b-47a4-ae53-66ec114be052.png",
+        "finished": "2026-10-27T16:24:55+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "e0f41984-b810-47c8-ae87-803f6565a122",
+            "submitted": "2026-10-27T16:27:04+00:00",
+            "credits": 15.0
+          }
+        ],
+        "job_id": "e0f41984-b810-47c8-ae87-803f6565a122",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261027_162658_e0f41984-b810-47c8-ae87-803f6565a122.mp4",
+        "finished": "2026-10-27T16:35:00+00:00"
+      },
+      "pad": 0.8
+    },
+    {
+      "n": 3,
+      "title": "Valley Forge",
+      "mode": "clip",
+      "pov": false,
+      "narration": "On the nineteenth of December, we reached a bare, frozen hillside eighteen miles from Philadelphia. There was no town. No barracks. Not even a roof. Just woods and snow, and the ruins of an old iron forge the British had burned. They called the place Valley Forge.",
+      "narration_voiced": "On the nineteenth of December, we reached a bare, frozen hillside eighteen miles from Philadelphia. There was no town. No barracks. Not even a roof. Just woods and snow, and the ruins of an old iron forge the British had burned. They called the place Valley Forge.",
+      "image_prompt": "A bare snowy hillside above a frozen creek in Pennsylvania, 19 December 1777, grey winter light: a ragged column of Continental soldiers arriving over the crest with muskets and a few ox-drawn wagons, bare woods all around, the cold, roofless, long-abandoned blackened stone ruins of a small iron forge by the creek below, burned months ago, snow inside the ruins, NO fire, NO glow, NO smoke from the ruins",
+      "sound": "cold wind across an open hillside, a creek trickling under ice, an ox lowing",
+      "refs": [
+        "camp"
+      ],
+      "voice_mood": "intrigue",
+      "shots": [
+        "the column of soldiers comes over the snowy crest and stops, looking at the empty hillside",
+        "the blackened stone ruins of a burned forge beside a half-frozen creek",
+        "wind blows snow across an empty hillside of bare trees"
+      ],
+      "must": [
+        "no huts yet, only bare woods and snow",
+        "soldiers are small in the frame"
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "f4f5df28-732b-499c-826c-73eede5ff2c7",
+            "submitted": "2026-10-27T16:26:01+00:00",
+            "credits": 2.75
+          }
+        ],
+        "history": [
+          {
+            "status": "done",
+            "attempts": [
+              {
+                "job_id": "330ac2de-0dd4-47d0-8957-cbd406e3e1cc",
+                "submitted": "2026-10-27T16:24:55+00:00",
+                "credits": 2.75
+              }
+            ],
+            "job_id": "330ac2de-0dd4-47d0-8957-cbd406e3e1cc",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261027_162350_330ac2de-0dd4-47d0-8957-cbd406e3e1cc.png",
+            "finished": "2026-10-27T16:24:55+00:00",
+            "redo_reason": "tarih hatası düzeltme",
+            "redo_at": "2026-10-27T16:25:38+00:00"
+          }
+        ],
+        "job_id": "f4f5df28-732b-499c-826c-73eede5ff2c7",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261027_162554_f4f5df28-732b-499c-826c-73eede5ff2c7.png",
+        "finished": "2026-10-27T16:32:31+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "392db5f3-8143-46ff-965b-844dddc26444",
+            "submitted": "2026-10-27T16:34:02+00:00",
+            "credits": 15.0
+          }
+        ],
+        "job_id": "392db5f3-8143-46ff-965b-844dddc26444",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261027_163354_392db5f3-8143-46ff-965b-844dddc26444.mp4",
+        "finished": "2026-10-27T16:37:19+00:00"
+      },
+      "pad": 2.2
+    },
+    {
+      "n": 4,
+      "title": "How we got here",
+      "mode": "stills",
+      "pov": false,
+      "narration": "That autumn had gone badly. We lost the fight at Brandywine Creek in September. Two weeks later, the British marched into Philadelphia, our capital, without firing a shot. We struck back at Germantown in October and lost again. Now the British were warm in the city's houses. And we were out here.",
+      "narration_voiced": "That autumn had gone badly. We lost the fight at Brandywine Creek in September. Two weeks later, the British marched into Philadelphia, our capital, without firing a shot. We struck back at Germantown in October... and lost again. Now the British were warm in the city's houses. And we were out here.",
+      "image_prompt": "The British army in Philadelphia, 1777",
+      "sound": "wind, distant church bell",
+      "refs": [],
+      "voice_mood": "intrigue",
+      "still_prompts": [
+        "Philadelphia, autumn 1777: a column of British redcoat soldiers with muskets marching along a cobbled street of red-brick Georgian houses, townspeople watching from doorways, autumn leaves, NO close-up faces",
+        "Night in Philadelphia, winter 1777: warm candlelight glowing in the windows of red-brick houses on a snowy street, a British sentry in a red coat standing by a doorway, smoke from chimneys, NO close-up faces"
+      ],
+      "ambience_from": 2,
+      "must": [
+        "British soldiers in red coats",
+        "18th-century brick town"
+      ],
+      "must_not": [
+        "modern objects",
+        "street lamps of the 19th century"
+      ],
+      "still_1": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "b29bbaa2-4d38-4a83-9801-ad4b69397c63",
+            "submitted": "2026-10-27T16:29:45+00:00",
+            "credits": 2.75
+          },
+          {
+            "job_id": "8e4e846b-3c4c-4e39-9bba-d6e7f3114559",
+            "submitted": "2026-10-27T16:34:02+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "8e4e846b-3c4c-4e39-9bba-d6e7f3114559",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261027_163334_8e4e846b-3c4c-4e39-9bba-d6e7f3114559.png",
+        "finished": "2026-10-27T16:34:59+00:00"
+      },
+      "still_2": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "d51cde5c-ddab-4f9b-a816-9282c5499a95",
+            "submitted": "2026-10-27T16:29:45+00:00",
+            "credits": 2.75
+          },
+          {
+            "job_id": "abb5d67a-d0f0-4222-9ba0-c1afc64ef080",
+            "submitted": "2026-10-27T16:34:02+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "abb5d67a-d0f0-4222-9ba0-c1afc64ef080",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261027_163335_abb5d67a-d0f0-4222-9ba0-c1afc64ef080.png",
+        "finished": "2026-10-27T16:34:59+00:00"
+      },
+      "stills": [
+        "stills/s004_1.png",
+        "stills/s004_2.png"
+      ],
+      "pad": 0.8
+    },
+    {
+      "n": 5,
+      "title": "Thanksgiving",
+      "mode": "stills",
+      "pov": false,
+      "narration": "The day before we reached camp, Congress declared a day of Thanksgiving. So we got a special dinner. Each man received half a gill of rice and a tablespoon of vinegar. That was it. That was Thanksgiving. We laughed about it. What else could we do?",
+      "narration_voiced": "The day before we reached camp, Congress declared a day of Thanksgiving. So we got a special dinner. Each man received half a gill of rice... and a tablespoon of vinegar. That was it. That was Thanksgiving. We laughed about it. What else could we do?",
+      "image_prompt": "Eli Parker (Connecticut farm boy of 17 in the Continental Army, thin face, hollow cheeks, straight light-brown hair tied back, a few freckles, blue eyes, ragged brown wool coat with patched elbows over a dirty linen shirt, worn black cocked hat, an old grey wool blanket over his shoulders, threadbare grey breeches) holding a tin cup with a little rice",
+      "sound": "small campfire crackling, wind",
+      "refs": [
+        "eli"
+      ],
+      "voice_mood": "tense",
+      "still_prompts": [
+        "A cold roadside camp at dusk, December 1777: Eli Parker (Connecticut farm boy of 17 in the Continental Army, thin face, hollow cheeks, straight light-brown hair tied back, a few freckles, blue eyes, ragged brown wool coat with patched elbows over a dirty linen shirt, worn black cocked hat, an old grey wool blanket over his shoulders, threadbare grey breeches) sits on a log by a small fire and looks down at a few spoonfuls of plain boiled rice in a battered tin cup, a small wooden spoon in his hand, snow on the ground",
+        "Close painterly still life on a frozen log: a battered tin cup with a few spoonfuls of plain rice and a small wooden spoon of vinegar beside it, firelight, snow, NO people"
+      ],
+      "ambience_from": 1,
+      "must": [
+        "exactly one person"
+      ],
+      "still_1": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "55540cf6-a976-4ac9-9559-8633aaee490a",
+            "submitted": "2026-10-27T16:29:45+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "55540cf6-a976-4ac9-9559-8633aaee490a",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261027_162812_55540cf6-a976-4ac9-9559-8633aaee490a.png",
+        "finished": "2026-10-27T16:32:31+00:00"
+      },
+      "still_2": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "b110b496-326d-4c25-a6fd-429d71e561a2",
+            "submitted": "2026-10-27T16:29:45+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "b110b496-326d-4c25-a6fd-429d71e561a2",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261027_162809_b110b496-326d-4c25-a6fd-429d71e561a2.png",
+        "finished": "2026-10-27T16:32:31+00:00"
+      },
+      "stills": [
+        "stills/s005_1.png",
+        "stills/s005_2.png"
+      ],
+      "pad": 0.8
+    },
+    {
+      "n": 6,
+      "title": "Build or freeze",
+      "mode": "clip",
+      "pov": false,
+      "narration": "General Washington gave us an order: build huts, or freeze. Twelve men to a hut, fourteen feet by sixteen, with a fireplace at one end. He offered twelve dollars to the first squad in each regiment to finish. So the whole hillside rang with axes, day and night.",
+      "narration_voiced": "General Washington gave us an order: build huts, or freeze. Twelve men to a hut, fourteen feet by sixteen, with a fireplace at one end. He offered twelve dollars to the first squad in each regiment to finish. So the whole hillside rang with axes, day and night.",
+      "image_prompt": "Valley Forge, late December 1777: soldiers chopping down trees and notching logs on a snowy hillside, Jonah Hale (his best friend, 19, big-shouldered, broad red-bearded face, curly red hair, faded blue wool coat with torn red facings, black round felt hat with the brim turned up on one side) swinging an axe at a log, the half-built log walls of a small hut beside him, stumps and wood chips on the snow",
+      "sound": "many axes chopping, a tree cracking and falling, men calling out",
+      "refs": [
+        "jonah",
+        "camp"
+      ],
+      "voice_mood": "intrigue",
+      "shots": [
+        "the red-bearded soldier swings an axe into a log, chips flying into the snow",
+        "two soldiers lift a notched log onto the half-built wall of a hut",
+        "across the hillside, dozens of men chop trees and raise log walls, smoke from small fires"
+      ],
+      "beat": "SORUN → ÇÖZÜM",
+      "must": [
+        "18th-century hand tools only: axes, saws",
+        "huts are small, made of logs"
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "8ac74f05-1add-4db4-9204-c89cc85d0dcb",
+            "submitted": "2026-10-27T16:24:55+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "8ac74f05-1add-4db4-9204-c89cc85d0dcb",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261027_162352_8ac74f05-1add-4db4-9204-c89cc85d0dcb.png",
+        "finished": "2026-10-27T16:24:55+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "99ba3f05-58d4-4754-a97d-ac63f5a0e716",
+            "submitted": "2026-10-27T16:27:04+00:00",
+            "credits": 15.0
+          }
+        ],
+        "job_id": "99ba3f05-58d4-4754-a97d-ac63f5a0e716",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261027_162658_99ba3f05-58d4-4754-a97d-ac63f5a0e716.mp4",
+        "finished": "2026-10-27T16:35:00+00:00"
+      },
+      "pad": 0.8
+    },
+    {
+      "n": 7,
+      "title": "The general's tent",
+      "mode": "stills",
+      "pov": false,
+      "narration": "And here's something I never forgot. The general could have taken a warm farmhouse on the very first night. Instead, he lived in his own canvas tent in the snow, the same as us, while we started on the huts. Men noticed that. I noticed it.",
+      "narration_voiced": "And here's something I never forgot. The general could have taken a warm farmhouse on the very first night. Instead, he lived in his own canvas tent in the snow, the same as us, while we started on the huts. Men noticed that. I noticed it.",
+      "image_prompt": "General Washington's tent at Valley Forge",
+      "sound": "wind flapping canvas, a candle hissing",
+      "refs": [],
+      "voice_mood": "warm",
+      "still_prompts": [
+        "Valley Forge, December 1777: a large white canvas officers' marquee tent pitched alone on a snowy rise among bare trees, warm candlelight glowing through the canvas at dusk, a tall officer in a blue and buff coat seen only FROM BEHIND standing at the entrance, two sentries with muskets, NO faces visible",
+        "Inside a canvas officers' tent at night, 1777: a small camp table with a candle, a quill, an inkwell and folded letters, a wool cloak over a chair, frost on the canvas, NO people"
+      ],
+      "ambience_from": 6,
+      "must": [
+        "the officer's face is NOT visible, he is seen from behind"
+      ],
+      "must_not": [
+        "a recognizable face of a real person"
+      ],
+      "still_1": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "a73b0bce-c9b2-49fc-b3b0-1fe8fb8df19d",
+            "submitted": "2026-10-27T16:29:45+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "a73b0bce-c9b2-49fc-b3b0-1fe8fb8df19d",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261027_162810_a73b0bce-c9b2-49fc-b3b0-1fe8fb8df19d.png",
+        "finished": "2026-10-27T16:32:31+00:00"
+      },
+      "still_2": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "b39c7ce2-a72e-4e7c-93d4-62525e28d32e",
+            "submitted": "2026-10-27T16:29:45+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "b39c7ce2-a72e-4e7c-93d4-62525e28d32e",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261027_162812_b39c7ce2-a72e-4e7c-93d4-62525e28d32e.png",
+        "finished": "2026-10-27T16:32:31+00:00"
+      },
+      "stills": [
+        "stills/s007_1.png",
+        "stills/s007_2.png"
+      ],
+      "pad": 0.8
+    },
+    {
+      "n": 8,
+      "title": "Our hut",
+      "mode": "stills",
+      "pov": false,
+      "narration": "Our hut took us nine days. Logs for the walls. Clay and straw packed into the cracks. Bunks of poles and straw, three high. The chimney was made of sticks and mud, and it caught fire twice. But on the first night with a roof over us nobody said a word. We just slept.",
+      "narration_voiced": "Our hut took us nine days. Logs for the walls. Clay and straw packed into the cracks. Bunks of poles and straw, three high. The chimney was made of sticks and mud, and it caught fire twice. But on the first night with a roof over us... nobody said a word. We just slept.",
+      "image_prompt": "The inside of the soldiers' hut",
+      "sound": "fire crackling, men breathing in sleep, wind outside",
+      "refs": [
+        "eli",
+        "sam",
+        "hut_in"
+      ],
+      "voice_mood": "warm",
+      "still_prompts": [
+        "Eli Parker (Connecticut farm boy of 17 in the Continental Army, thin face, hollow cheeks, straight light-brown hair tied back, a few freckles, blue eyes, ragged brown wool coat with patched elbows over a dirty linen shirt, worn black cocked hat, an old grey wool blanket over his shoulders, threadbare grey breeches) and Sam Freeman (a free Black soldier of about 30 from New London, Connecticut, calm lean face, short black hair, small trimmed beard, long brown linen hunting shirt with fringed cape over a wool waistcoat, black cocked hat) pack wet clay and straw into the gaps between the logs of their unfinished hut wall, snow on the ground, their breath steaming",
+        "Painterly view inside a finished soldiers' log hut at night, Valley Forge 1777: three tiers of bunks made of poles and straw along the walls, soldiers asleep under grey blankets, a small fire in the clay fireplace at the end, NO faces visible"
+      ],
+      "ambience_from": 6,
+      "must": [
+        "at most two people awake"
+      ],
+      "still_1": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "83aa63c0-c398-4e72-9359-9b21f0cdaaad",
+            "submitted": "2026-10-27T16:29:45+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "83aa63c0-c398-4e72-9359-9b21f0cdaaad",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261027_162810_83aa63c0-c398-4e72-9359-9b21f0cdaaad.png",
+        "finished": "2026-10-27T16:32:31+00:00"
+      },
+      "still_2": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "31fdbd71-93b8-473e-a624-816815054565",
+            "submitted": "2026-10-27T16:29:45+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "31fdbd71-93b8-473e-a624-816815054565",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261027_162811_31fdbd71-93b8-473e-a624-816815054565.png",
+        "finished": "2026-10-27T16:32:31+00:00"
+      },
+      "stills": [
+        "stills/s008_1.png",
+        "stills/s008_2.png"
+      ],
+      "pad": 0.8
+    },
+    {
+      "n": 9,
+      "title": "My hutmates",
+      "mode": "stills",
+      "pov": false,
+      "narration": "I shared it with eleven men. Jonah Hale, my friend since school, who could carry a log by himself. And Sam Freeman from New London. He was a free man, and he chose that name himself. Sam was the best shot in the regiment and the only one of us who could cook.",
+      "narration_voiced": "I shared it with eleven men. Jonah Hale, my friend since school, who could carry a log by himself. And Sam Freeman from New London. He was a free man, and he chose that name himself. Sam was the best shot in the regiment... and the only one of us who could cook.",
+      "image_prompt": "Eli's hutmates by the fire",
+      "sound": "fire crackling, a kettle bubbling, a man laughing softly",
+      "refs": [
+        "jonah",
+        "sam",
+        "hut_in"
+      ],
+      "voice_mood": "warm",
+      "still_prompts": [
+        "Inside the smoky log hut by the fireplace: Jonah Hale (his best friend, 19, big-shouldered, broad red-bearded face, curly red hair, faded blue wool coat with torn red facings, black round felt hat with the brim turned up on one side) laughs while sitting on a low bunk mending the torn sleeve of his coat with a needle and thread",
+        "Inside the smoky log hut: Sam Freeman (a free Black soldier of about 30 from New London, Connecticut, calm lean face, short black hair, small trimmed beard, long brown linen hunting shirt with fringed cape over a wool waistcoat, black cocked hat) kneels by the clay fireplace and stirs a black iron kettle with a wooden spoon, firelight on his calm face"
+      ],
+      "ambience_from": 6,
+      "must": [
+        "exactly one person in each image"
+      ],
+      "still_1": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "4b8f60a4-3a19-4f75-8bc6-b7460bec655e",
+            "submitted": "2026-10-27T16:29:45+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "4b8f60a4-3a19-4f75-8bc6-b7460bec655e",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261027_162813_4b8f60a4-3a19-4f75-8bc6-b7460bec655e.png",
+        "finished": "2026-10-27T16:32:31+00:00"
+      },
+      "still_2": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "cca513b3-ae62-4d22-8fe0-4c525a3fb2f0",
+            "submitted": "2026-10-27T16:29:45+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "cca513b3-ae62-4d22-8fe0-4c525a3fb2f0",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261027_162814_cca513b3-ae62-4d22-8fe0-4c525a3fb2f0.png",
+        "finished": "2026-10-27T16:32:31+00:00"
+      },
+      "stills": [
+        "stills/s009_1.png",
+        "stills/s009_2.png"
+      ],
+      "pad": 2.2
+    },
+    {
+      "n": 10,
+      "title": "Fire cake",
+      "mode": "stills",
+      "pov": true,
+      "narration": "Food was the worst of it. Most days, there was no meat at all. So we made fire cake. Flour and water, mixed into a paste and baked on a hot stone in the fire. If you asked a man what he had for dinner, he'd say: fire cake and water, sir. Fire cake and water.",
+      "narration_voiced": "Food was the worst of it. Most days, there was no meat at all. So we made fire cake. Flour and water, mixed into a paste and baked on a hot stone in the fire. If you asked a man what he had for dinner, he'd say: fire cake and water, sir. Fire cake and water.",
+      "image_prompt": "Fire cake baking on a stone",
+      "sound": "fire crackling, embers hissing",
+      "refs": [
+        "sam",
+        "hut_in"
+      ],
+      "voice_mood": "tense",
+      "still_prompts": [
+        "Close painterly view of a flat stone in the embers of a small fire, two thin grey-white cakes of flour and water baking on it, blackened at the edges, snow around the fire, NO people",
+        "Sam Freeman (a free Black soldier of about 30 from New London, Connecticut, calm lean face, short black hair, small trimmed beard, long brown linen hunting shirt with fringed cape over a wool waistcoat, black cocked hat) uses his fingers to lift a thin blackened fire cake off a hot stone in the hut fireplace and breaks it in half"
+      ],
+      "ambience_from": 6,
+      "must": [
+        "exactly one person in the second image"
+      ],
+      "still_1": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "c64fc234-e166-477f-82fc-281b37319dd9",
+            "submitted": "2026-10-27T16:29:45+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "c64fc234-e166-477f-82fc-281b37319dd9",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261027_162812_c64fc234-e166-477f-82fc-281b37319dd9.png",
+        "finished": "2026-10-27T16:32:31+00:00"
+      },
+      "still_2": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "6a712468-6a8e-4da1-beed-ddb2d08d4ca9",
+            "submitted": "2026-10-27T16:29:45+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "6a712468-6a8e-4da1-beed-ddb2d08d4ca9",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261027_162810_6a712468-6a8e-4da1-beed-ddb2d08d4ca9.png",
+        "finished": "2026-10-27T16:32:31+00:00"
+      },
+      "stills": [
+        "stills/s010_1.png",
+        "stills/s010_2.png"
+      ],
+      "pad": 0.8
+    },
+    {
+      "n": 11,
+      "title": "No meat!",
+      "mode": "clip",
+      "pov": false,
+      "narration": "Two days after we arrived, a cry started in one hut and spread across the whole camp. No meat! No meat! Thousands of voices in the dark. A surgeon wrote that the valleys echoed it back to us. It wasn't a mutiny. It was hungry men telling the world they were still there.",
+      "narration_voiced": "Two days after we arrived, a cry started in one hut and spread across the whole camp. No meat! No meat! Thousands of voices in the dark. A surgeon wrote that the valleys echoed it back to us. It wasn't a mutiny. It was hungry men... telling the world they were still there.",
+      "image_prompt": "Night at Valley Forge, 21 December 1777, before any huts were built: rows of small white canvas army tents and many campfires on a snowy hillside among tree stumps under a dark sky, groups of ragged soldiers in blankets standing by their fires, shouting together with fists raised",
+      "sound": "many men chanting 'No meat!' in the distance, echoing, fire crackling",
+      "refs": [
+        "camp"
+      ],
+      "voice_mood": "tense",
+      "shots": [
+        "soldiers by a campfire cup their hands to their mouths and shout into the night",
+        "the shout spreads to the next row of tents, more men stepping out into the snow",
+        "a wide view of the dark hillside dotted with campfires, smoke rising into the night"
+      ],
+      "must": [
+        "18th-century soldiers only",
+        "canvas tents, NO log huts yet",
+        "no weapons pointed at anyone"
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "3377a0e9-4cac-490d-adc5-53f423256d37",
+            "submitted": "2026-10-27T16:26:01+00:00",
+            "credits": 2.75
+          }
+        ],
+        "history": [
+          {
+            "status": "done",
+            "attempts": [
+              {
+                "job_id": "7bbe31ea-651a-4b5b-ac1b-2867003369db",
+                "submitted": "2026-10-27T16:24:55+00:00",
+                "credits": 2.75
+              }
+            ],
+            "job_id": "7bbe31ea-651a-4b5b-ac1b-2867003369db",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261027_162351_7bbe31ea-651a-4b5b-ac1b-2867003369db.png",
+            "finished": "2026-10-27T16:25:18+00:00",
+            "redo_reason": "tarih hatası düzeltme",
+            "redo_at": "2026-10-27T16:25:38+00:00"
+          }
+        ],
+        "job_id": "3377a0e9-4cac-490d-adc5-53f423256d37",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261027_162554_3377a0e9-4cac-490d-adc5-53f423256d37.png",
+        "finished": "2026-10-27T16:32:31+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "475c510a-ff12-48b9-8967-44b8be8b2f95",
+            "submitted": "2026-10-27T16:34:02+00:00",
+            "credits": 15.0
+          }
+        ],
+        "job_id": "475c510a-ff12-48b9-8967-44b8be8b2f95",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261027_163354_475c510a-ff12-48b9-8967-44b8be8b2f95.mp4",
+        "finished": "2026-10-27T16:38:06+00:00"
+      },
+      "pad": 0.8
+    },
+    {
+      "n": 12,
+      "title": "Barefoot",
+      "mode": "stills",
+      "pov": true,
+      "narration": "Two days before Christmas, General Washington wrote to Congress. He counted two thousand, eight hundred and ninety-eight men in camp who could not do their duty, because they were barefoot, and had almost no clothes. I saw men stand guard on top of their own hats, just to keep their bare feet off the snow.",
+      "narration_voiced": "Two days before Christmas, General Washington wrote to Congress. He counted two thousand, eight hundred and ninety-eight men in camp who could not do their duty, because they were barefoot, and had almost no clothes. I saw men stand guard on top of their own hats, just to keep their bare feet off the snow.",
+      "image_prompt": "A barefoot sentry standing on his hat",
+      "sound": "wind, a sentry stamping his feet",
+      "refs": [
+        "camp"
+      ],
+      "voice_mood": "tense",
+      "still_prompts": [
+        "Night at Valley Forge, December 1777: a lone ragged Continental sentry with a musket, wrapped in a blanket, standing on his upturned cocked hat in the snow to keep his bare feet off the ground, a hut row and a small fire behind, his face in shadow",
+        "Close painterly view of a quill pen, an inkwell and a half-written letter in neat 18th-century handwriting on a small wooden table by candlelight, frost on the window behind, NO people, the writing is not readable"
+      ],
+      "ambience_from": 1,
+      "must": [
+        "exactly one person in the first image"
+      ],
+      "must_not": [
+        "readable text or words"
+      ],
+      "still_1": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "96e41f81-3867-46f9-93a8-c863c3447464",
+            "submitted": "2026-10-27T16:29:45+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "96e41f81-3867-46f9-93a8-c863c3447464",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261027_162931_96e41f81-3867-46f9-93a8-c863c3447464.png",
+        "finished": "2026-10-27T16:32:31+00:00"
+      },
+      "still_2": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "ac45eda5-00b3-497e-b4bb-b32cd223ab8f",
+            "submitted": "2026-10-27T16:29:45+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "ac45eda5-00b3-497e-b4bb-b32cd223ab8f",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261027_162925_ac45eda5-00b3-497e-b4bb-b32cd223ab8f.png",
+        "finished": "2026-10-27T16:32:31+00:00"
+      },
+      "stills": [
+        "stills/s012_1.png",
+        "stills/s012_2.png"
+      ],
+      "pad": 0.8
+    },
+    {
+      "n": 13,
+      "title": "Moccasins of raw hide",
+      "mode": "stills",
+      "pov": false,
+      "narration": "So I made my own shoes. When the butchers killed a cow, I begged a piece of its raw hide and sewed it around my feet like moccasins, hair side in. They kept my feet off the frozen ground. But as they dried, they turned hard as wood, and cut my ankles to pieces.",
+      "narration_voiced": "So I made my own shoes. When the butchers killed a cow, I begged a piece of its raw hide and sewed it around my feet like moccasins, hair side in. They kept my feet off the frozen ground. But as they dried, they turned hard as wood, and cut my ankles to pieces.",
+      "image_prompt": "Eli sewing rawhide moccasins",
+      "sound": "fire crackling, needle pulling through leather",
+      "refs": [
+        "eli",
+        "hut_in"
+      ],
+      "voice_mood": "intrigue",
+      "still_prompts": [
+        "Inside the log hut by the fire: Eli Parker (Connecticut farm boy of 17 in the Continental Army, thin face, hollow cheeks, straight light-brown hair tied back, a few freckles, blue eyes, ragged brown wool coat with patched elbows over a dirty linen shirt, worn black cocked hat, an old grey wool blanket over his shoulders, threadbare grey breeches) sits on a bunk and sews a rough piece of raw cowhide around his foot with a thick needle and sinew, making a crude moccasin",
+        "Close painterly view of a pair of crude hand-sewn moccasins made of stiff raw cowhide with the hair still on, lying on a dirt floor by a fire, NO people"
+      ],
+      "ambience_from": 6,
+      "must": [
+        "exactly one person"
+      ],
+      "still_1": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "342c1b66-9266-4a62-b1bf-f329c4c90dc7",
+            "submitted": "2026-10-27T16:29:45+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "342c1b66-9266-4a62-b1bf-f329c4c90dc7",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261027_162927_342c1b66-9266-4a62-b1bf-f329c4c90dc7.png",
+        "finished": "2026-10-27T16:32:31+00:00"
+      },
+      "still_2": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "9d37a268-5ffe-4224-9900-a03446b26817",
+            "submitted": "2026-10-27T16:29:45+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "9d37a268-5ffe-4224-9900-a03446b26817",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261027_162925_9d37a268-5ffe-4224-9900-a03446b26817.png",
+        "finished": "2026-10-27T16:32:31+00:00"
+      },
+      "stills": [
+        "stills/s013_1.png",
+        "stills/s013_2.png"
+      ],
+      "pad": 0.8
+    },
+    {
+      "n": 14,
+      "title": "The smoke",
+      "mode": "stills",
+      "pov": false,
+      "narration": "Inside the huts, the fire kept us alive. But the chimneys pulled badly, and the smoke had nowhere to go. Our eyes were red and running all winter. Twelve men in a room the size of a stable, with wet blankets, smoke, and no fresh air. We didn't know it yet but that was the real danger.",
+      "narration_voiced": "Inside the huts, the fire kept us alive. But the chimneys pulled badly, and the smoke had nowhere to go. Our eyes were red and running all winter. Twelve men in a room the size of a stable, with wet blankets, smoke, and no fresh air. We didn't know it yet... but that was the real danger.",
+      "image_prompt": "Smoky hut interior",
+      "sound": "coughing, fire crackling, wind",
+      "refs": [
+        "eli",
+        "hut_in"
+      ],
+      "voice_mood": "tense",
+      "still_prompts": [
+        "Inside the smoky log hut, thick grey smoke hanging under the low roof: Eli Parker (Connecticut farm boy of 17 in the Continental Army, thin face, hollow cheeks, straight light-brown hair tied back, a few freckles, blue eyes, ragged brown wool coat with patched elbows over a dirty linen shirt, worn black cocked hat, an old grey wool blanket over his shoulders, threadbare grey breeches) rubs his red, watering eyes with the back of his hand, sitting by the fire, other soldiers as dim shapes on the bunks behind",
+        "Outside a row of log huts at dawn, Valley Forge 1778: thick smoke leaking from the cracks and the crooked stick-and-clay chimneys, wet blankets hung on a line, snow and mud, NO people"
+      ],
+      "ambience_from": 6,
+      "must": [
+        "exactly one close person"
+      ],
+      "still_1": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "efbd0c44-cdd7-4ef5-8ff4-176fc4940778",
+            "submitted": "2026-10-27T16:29:45+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "efbd0c44-cdd7-4ef5-8ff4-176fc4940778",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261027_162926_efbd0c44-cdd7-4ef5-8ff4-176fc4940778.png",
+        "finished": "2026-10-27T16:32:31+00:00"
+      },
+      "still_2": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "152dc5ed-6b3b-458c-ba18-84753c1c69ee",
+            "submitted": "2026-10-27T16:29:45+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "152dc5ed-6b3b-458c-ba18-84753c1c69ee",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261027_162925_152dc5ed-6b3b-458c-ba18-84753c1c69ee.png",
+        "finished": "2026-10-27T16:32:31+00:00"
+      },
+      "stills": [
+        "stills/s014_1.png",
+        "stills/s014_2.png"
+      ],
+      "pad": 2.2
+    },
+    {
+      "n": 15,
+      "title": "The real enemy",
+      "mode": "stills",
+      "pov": true,
+      "narration": "People think the cold killed us at Valley Forge. It wasn't the cold. It was sickness. Typhus. Dysentery. Pneumonia. They moved through the crowded huts like fire. Before we left that camp, nearly two thousand men had died there. And there was never a battle at Valley Forge. Not one.",
+      "narration_voiced": "People think the cold killed us at Valley Forge. It wasn't the cold. It was sickness. Typhus. Dysentery. Pneumonia. They moved through the crowded huts like fire. Before we left that camp, nearly two thousand men had died there. And there was never a battle at Valley Forge. Not one.",
+      "image_prompt": "A hospital hut",
+      "sound": "wind, a man coughing in the distance",
+      "refs": [
+        "camp"
+      ],
+      "voice_mood": "tense",
+      "still_prompts": [
+        "A painterly view of a long log hospital hut at Valley Forge in winter 1778: sick soldiers lying under blankets on straw along both walls, a single surgeon in a dark coat bending over one of them by candlelight, a small fire at the end, faces in shadow, NO blood, NO corpses",
+        "A quiet snowy hillside at Valley Forge at dusk, a long row of huts with thin smoke, bare trees, one lantern glowing in a doorway, a lonely mood, NO people"
+      ],
+      "ambience_from": 1,
+      "beat": "BÜYÜK KIRILMA",
+      "must": [
+        "no blood, no wounds, no corpses"
+      ],
+      "still_1": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "871b37b9-e641-4857-a665-13469b955826",
+            "submitted": "2026-10-27T16:29:45+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "871b37b9-e641-4857-a665-13469b955826",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261027_162924_871b37b9-e641-4857-a665-13469b955826.png",
+        "finished": "2026-10-27T16:32:31+00:00"
+      },
+      "still_2": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "513a5f3a-6311-468e-9cb1-0ea49b0d466e",
+            "submitted": "2026-10-27T16:29:45+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "513a5f3a-6311-468e-9cb1-0ea49b0d466e",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261027_162927_513a5f3a-6311-468e-9cb1-0ea49b0d466e.png",
+        "finished": "2026-10-27T16:32:31+00:00"
+      },
+      "stills": [
+        "stills/s015_1.png",
+        "stills/s015_2.png"
+      ],
+      "pad": 0.8
+    },
+    {
+      "n": 16,
+      "title": "Inoculation",
+      "mode": "stills",
+      "pov": false,
+      "narration": "The one sickness we did fight was smallpox. Washington ordered every man who'd never had it to be inoculated. A doctor cut a small scratch in my arm and put a little of the pox into it. I was sick for two weeks. But I never caught the real thing. Two years before, smallpox had wrecked a whole army of ours in Canada.",
+      "narration_voiced": "The one sickness we did fight was smallpox. Washington ordered every man who'd never had it to be inoculated. A doctor cut a small scratch in my arm and put a little of the pox into it. I was sick for two weeks. But I never caught the real thing. Two years before, smallpox had wrecked a whole army of ours in Canada.",
+      "image_prompt": "A doctor inoculating Eli",
+      "sound": "candle hissing, wind outside, a bench creaking",
+      "refs": [
+        "eli",
+        "hut_in"
+      ],
+      "voice_mood": "intrigue",
+      "still_prompts": [
+        "Inside a log hospital hut, winter 1778: an army surgeon in a dark coat and white neckcloth makes a tiny scratch with a small lancet on the upper arm of Eli Parker (Connecticut farm boy of 17 in the Continental Army, thin face, hollow cheeks, straight light-brown hair tied back, a few freckles, blue eyes, ragged brown wool coat with patched elbows over a dirty linen shirt, worn black cocked hat, an old grey wool blanket over his shoulders, threadbare grey breeches), who sits on a bench with his sleeve rolled up and looks away, candlelight",
+        "Close painterly still life on a wooden table: a small surgeon's lancet, a folded cloth, a little glass vial and a candle, 18th century, NO people"
+      ],
+      "ambience_from": 6,
+      "must": [
+        "exactly two people in the first image, no blood"
+      ],
+      "still_1": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "6c67798e-7cd9-4969-bf3f-1b4d162c6ec6",
+            "submitted": "2026-10-27T16:29:45+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "6c67798e-7cd9-4969-bf3f-1b4d162c6ec6",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261027_162928_6c67798e-7cd9-4969-bf3f-1b4d162c6ec6.png",
+        "finished": "2026-10-27T16:32:31+00:00"
+      },
+      "still_2": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "522aaeb9-efb0-438b-8e33-1bf681dbd9b6",
+            "submitted": "2026-10-27T16:29:45+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "522aaeb9-efb0-438b-8e33-1bf681dbd9b6",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261027_162926_522aaeb9-efb0-438b-8e33-1bf681dbd9b6.png",
+        "finished": "2026-10-27T16:32:31+00:00"
+      },
+      "stills": [
+        "stills/s016_1.png",
+        "stills/s016_2.png"
+      ],
+      "pad": 0.8
+    },
+    {
+      "n": 17,
+      "title": "Jonah",
+      "mode": "stills",
+      "pov": false,
+      "narration": "In January, Jonah got the fever. The biggest, strongest man in our hut and he couldn't lift his own head. They took him to the hospital hut. I sat with him every night I could. So tell me in the comments: in that hut, what would you want most? Shoes, a blanket or meat?",
+      "narration_voiced": "In January, Jonah got the fever. The biggest, strongest man in our hut... and he couldn't lift his own head. They took him to the hospital hut. I sat with him every night I could. So tell me in the comments: in that hut, what would you want most? Shoes, a blanket... or meat?",
+      "image_prompt": "Eli sitting with Jonah",
+      "sound": "candle hissing, slow breathing, wind",
+      "refs": [
+        "eli",
+        "jonah",
+        "hut_in"
+      ],
+      "voice_mood": "tense",
+      "still_prompts": [
+        "Inside a dim hospital hut at night, winter 1778: Eli Parker (Connecticut farm boy of 17 in the Continental Army, thin face, hollow cheeks, straight light-brown hair tied back, a few freckles, blue eyes, ragged brown wool coat with patched elbows over a dirty linen shirt, worn black cocked hat, an old grey wool blanket over his shoulders, threadbare grey breeches) sits on a stool beside a straw bed where Jonah Hale (his best friend, 19, big-shouldered, broad red-bearded face, curly red hair, faded blue wool coat with torn red facings, black round felt hat with the brim turned up on one side) lies pale and feverish under a grey blanket, Eli holds a tin cup of water to his lips, one candle"
+      ],
+      "ambience_from": 1,
+      "must": [
+        "exactly two people",
+        "no blood"
+      ],
+      "still_1": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "bf2f6b99-d45e-4371-aa0d-e67f3e3cb069",
+            "submitted": "2026-10-27T16:29:45+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "bf2f6b99-d45e-4371-aa0d-e67f3e3cb069",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261027_162926_bf2f6b99-d45e-4371-aa0d-e67f3e3cb069.png",
+        "finished": "2026-10-27T16:32:31+00:00"
+      },
+      "stills": [
+        "stills/s017_1.png"
+      ],
+      "pad": 0.8
+    },
+    {
+      "n": 18,
+      "title": "The starving time",
+      "mode": "stills",
+      "pov": false,
+      "narration": "February was the worst. A thaw turned the roads to deep mud, and the wagons couldn't get through. For days, there was nothing in camp. No meat, no bread, not even flour. Back in December, the general had warned Congress that this army might starve, dissolve, or disperse. In February it nearly did.",
+      "narration_voiced": "February was the worst. A thaw turned the roads to deep mud, and the wagons couldn't get through. For days, there was nothing in camp. No meat, no bread, not even flour. Back in December, the general had warned Congress that this army might starve, dissolve, or disperse. In February... it nearly did.",
+      "image_prompt": "Wagons stuck in mud",
+      "sound": "wind, mud squelching, an ox groaning",
+      "refs": [
+        "eli",
+        "sam",
+        "hut_in"
+      ],
+      "voice_mood": "tense",
+      "still_prompts": [
+        "A muddy country road in Pennsylvania during a February thaw, 1778: a supply wagon pulled by thin oxen sunk to its axles in deep mud and melting snow, a teamster pushing a wheel, bare trees, grey sky, faces not visible",
+        "Inside the hut, February 1778: Eli Parker (Connecticut farm boy of 17 in the Continental Army, thin face, hollow cheeks, straight light-brown hair tied back, a few freckles, blue eyes, ragged brown wool coat with patched elbows over a dirty linen shirt, worn black cocked hat, an old grey wool blanket over his shoulders, threadbare grey breeches) and Sam Freeman (a free Black soldier of about 30 from New London, Connecticut, calm lean face, short black hair, small trimmed beard, long brown linen hunting shirt with fringed cape over a wool waistcoat, black cocked hat) sit by a weak fire looking into an empty black kettle, an empty flour sack on the floor"
+      ],
+      "ambience_from": 1,
+      "must": [
+        "at most two people in each image"
+      ],
+      "still_1": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "ec3a7b81-501a-4891-953c-1d0316b09d16",
+            "submitted": "2026-10-27T16:29:45+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "ec3a7b81-501a-4891-953c-1d0316b09d16",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261027_162927_ec3a7b81-501a-4891-953c-1d0316b09d16.png",
+        "finished": "2026-10-27T16:32:31+00:00"
+      },
+      "still_2": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "39608901-0730-460e-93bf-7f0f99a2cb29",
+            "submitted": "2026-10-27T16:31:10+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "39608901-0730-460e-93bf-7f0f99a2cb29",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261027_163049_39608901-0730-460e-93bf-7f0f99a2cb29.png",
+        "finished": "2026-10-27T16:32:31+00:00"
+      },
+      "stills": [
+        "stills/s018_1.png",
+        "stills/s018_2.png"
+      ],
+      "pad": 2.2
+    },
+    {
+      "n": 19,
+      "title": "Foraging",
+      "mode": "stills",
+      "pov": true,
+      "narration": "Then the general sent foraging parties out across the country to find food, and put General Greene in charge of supplies. They came back with herds of cattle, driven through the snow. When the first cattle walked into camp, men cheered like we'd won a battle. Sam cooked a stew that night. I still remember the smell.",
+      "narration_voiced": "Then the general sent foraging parties out across the country to find food, and put General Greene in charge of supplies. They came back with herds of cattle, driven through the snow. When the first cattle walked into camp, men cheered like we'd won a battle. Sam cooked a stew that night. I still remember the smell.",
+      "image_prompt": "Cattle driven into camp",
+      "sound": "cattle lowing, men cheering, then a kettle bubbling",
+      "refs": [
+        "sam",
+        "camp",
+        "hut_in"
+      ],
+      "voice_mood": "intrigue",
+      "still_prompts": [
+        "Late winter 1778, Valley Forge: a herd of cattle driven along a snowy road between rows of log huts by soldiers on foot with sticks, ragged men cheering and waving their hats from the hut doors",
+        "Inside the hut at night: Sam Freeman (a free Black soldier of about 30 from New London, Connecticut, calm lean face, short black hair, small trimmed beard, long brown linen hunting shirt with fringed cape over a wool waistcoat, black cocked hat) lifts the lid of a steaming black iron kettle of meat stew over the fire, warm firelight, steam rising"
+      ],
+      "ambience_from": 6,
+      "must": [
+        "exactly one person in the second image"
+      ],
+      "still_1": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "b82fa285-9de6-4de8-9dee-9768f620592f",
+            "submitted": "2026-10-27T16:31:10+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "b82fa285-9de6-4de8-9dee-9768f620592f",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261027_163053_b82fa285-9de6-4de8-9dee-9768f620592f.png",
+        "finished": "2026-10-27T16:32:31+00:00"
+      },
+      "still_2": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "602ece92-3327-4e58-b48e-ceab0b3c5ea7",
+            "submitted": "2026-10-27T16:31:10+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "602ece92-3327-4e58-b48e-ceab0b3c5ea7",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261027_163052_602ece92-3327-4e58-b48e-ceab0b3c5ea7.png",
+        "finished": "2026-10-27T16:32:31+00:00"
+      },
+      "stills": [
+        "stills/s019_1.png",
+        "stills/s019_2.png"
+      ],
+      "pad": 0.8
+    },
+    {
+      "n": 20,
+      "title": "Jonah comes back",
+      "mode": "stills",
+      "pov": false,
+      "narration": "And in March, Jonah walked back into our hut on his own two feet. Thin as a rail, but alive. He sat down by the fire, looked at the stew pot, and said: Is that meat? I haven't laughed like that before or since.",
+      "narration_voiced": "And in March, Jonah walked back into our hut on his own two feet. Thin as a rail, but alive. He sat down by the fire, looked at the stew pot, and said: Is that meat? I haven't laughed like that before or since.",
+      "image_prompt": "Jonah returns to the hut",
+      "sound": "fire crackling, men laughing",
+      "refs": [
+        "eli",
+        "jonah",
+        "hut_in"
+      ],
+      "voice_mood": "relief",
+      "still_prompts": [
+        "Inside the log hut, March 1778: a thin, pale Jonah Hale (his best friend, 19, big-shouldered, broad red-bearded face, curly red hair, faded blue wool coat with torn red facings, black round felt hat with the brim turned up on one side) stands in the open doorway leaning on the frame, smiling weakly, daylight and melting snow behind him",
+        "Inside the log hut by the fire: Eli Parker (Connecticut farm boy of 17 in the Continental Army, thin face, hollow cheeks, straight light-brown hair tied back, a few freckles, blue eyes, ragged brown wool coat with patched elbows over a dirty linen shirt, worn black cocked hat, an old grey wool blanket over his shoulders, threadbare grey breeches) laughs and hands a steaming tin bowl of stew to a thin Jonah Hale (his best friend, 19, big-shouldered, broad red-bearded face, curly red hair, faded blue wool coat with torn red facings, black round felt hat with the brim turned up on one side), who sits on a bunk wrapped in a blanket"
+      ],
+      "ambience_from": 2,
+      "must": [
+        "at most two people"
+      ],
+      "still_1": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "697891a3-cb9d-48ee-8fee-5882dbc0a304",
+            "submitted": "2026-10-27T16:31:10+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "697891a3-cb9d-48ee-8fee-5882dbc0a304",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261027_163049_697891a3-cb9d-48ee-8fee-5882dbc0a304.png",
+        "finished": "2026-10-27T16:32:31+00:00"
+      },
+      "still_2": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "5dc525b2-0c57-4990-b589-14bf36a0f7fa",
+            "submitted": "2026-10-27T16:31:10+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "5dc525b2-0c57-4990-b589-14bf36a0f7fa",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261027_163052_5dc525b2-0c57-4990-b589-14bf36a0f7fa.png",
+        "finished": "2026-10-27T16:32:31+00:00"
+      },
+      "stills": [
+        "stills/s020_1.png",
+        "stills/s020_2.png"
+      ],
+      "pad": 2.2
+    },
+    {
+      "n": 21,
+      "title": "The Prussian",
+      "mode": "clip",
+      "pov": false,
+      "narration": "In March, a stranger began to drill us. A Prussian officer, Baron von Steuben. He barely spoke English. He shouted at us in German and French, and when he ran out of curses, he'd turn to his aide and say: come and swear at them for me in English! We laughed. But we listened.",
+      "narration_voiced": "In March, a stranger began to drill us. A Prussian officer, Baron von Steuben. He barely spoke English. He shouted at us in German and French, and when he ran out of curses, he'd turn to his aide and say: come and swear at them for me in English! We laughed. But we listened.",
+      "image_prompt": "A parade ground on the snowy fields of Valley Forge, March 1778: a company of about a hundred ragged Continental soldiers with muskets standing in straight lines, a stocky foreign officer in a blue coat with a large silver star on his chest seen FROM BEHIND, waving his arms and shouting at them, an aide beside him",
+      "sound": "a drill officer shouting commands, muskets clacking in unison, boots marching in mud",
+      "refs": [
+        "camp"
+      ],
+      "voice_mood": "intrigue",
+      "shots": [
+        "the stocky officer seen from behind gestures sharply at the lines of soldiers",
+        "soldiers in a ragged line snap their muskets to their shoulders at the same moment",
+        "the company marches forward across the muddy field in neat ranks"
+      ],
+      "beat": "DÖNÜM NOKTASI",
+      "must": [
+        "the officer's face is NOT visible",
+        "18th-century flintlock muskets"
+      ],
+      "must_not": [
+        "a recognizable face of a real person"
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "52386ec8-8eef-494d-ba3d-5594033e7f53",
+            "submitted": "2026-10-27T16:24:55+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "52386ec8-8eef-494d-ba3d-5594033e7f53",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261027_162352_52386ec8-8eef-494d-ba3d-5594033e7f53.png",
+        "finished": "2026-10-27T16:24:55+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "95fa4daf-c4c8-453e-ac02-e034eef91d15",
+            "submitted": "2026-10-27T16:27:04+00:00",
+            "credits": 15.0
+          }
+        ],
+        "job_id": "95fa4daf-c4c8-453e-ac02-e034eef91d15",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261027_162658_95fa4daf-c4c8-453e-ac02-e034eef91d15.mp4",
+        "finished": "2026-10-27T16:35:00+00:00"
+      },
+      "pad": 0.8
+    },
+    {
+      "n": 22,
+      "title": "One army",
+      "mode": "stills",
+      "pov": false,
+      "narration": "Before him, every regiment marched its own way. He gave us one way. How to load faster. How to march in a column and swing into a line. How to use the bayonet instead of running. By May, we weren't thirteen states' worth of farmers anymore. We were one army.",
+      "narration_voiced": "Before him, every regiment marched its own way. He gave us one way. How to load faster. How to march in a column and swing into a line. How to use the bayonet instead of running. By May, we weren't thirteen states' worth of farmers anymore. We were one army.",
+      "image_prompt": "Soldiers drilling in neat lines",
+      "sound": "drums, muskets clacking in unison, marching feet",
+      "refs": [
+        "eli",
+        "sam",
+        "camp"
+      ],
+      "voice_mood": "relief",
+      "still_prompts": [
+        "Spring 1778, Valley Forge: long neat lines of Continental soldiers in mixed brown and blue coats drilling on a green field with fixed bayonets, all muskets at the same angle, officers with swords, log huts on the hill behind, small figures, NO close-up faces",
+        "Eli Parker (Connecticut farm boy of 17 in the Continental Army, thin face, hollow cheeks, straight light-brown hair tied back, a few freckles, blue eyes, ragged brown wool coat with patched elbows over a dirty linen shirt, worn black cocked hat, an old grey wool blanket over his shoulders, threadbare grey breeches) and Sam Freeman (a free Black soldier of about 30 from New London, Connecticut, calm lean face, short black hair, small trimmed beard, long brown linen hunting shirt with fringed cape over a wool waistcoat, black cocked hat) stand side by side in a drill line, loading their flintlock muskets with paper cartridges at exactly the same moment, concentrated faces"
+      ],
+      "ambience_from": 21,
+      "must": [
+        "exactly two close people in the second image"
+      ],
+      "still_1": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "fd5207d9-c082-4288-b44b-25553f17e116",
+            "submitted": "2026-10-27T16:31:10+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "fd5207d9-c082-4288-b44b-25553f17e116",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261027_163051_fd5207d9-c082-4288-b44b-25553f17e116.png",
+        "finished": "2026-10-27T16:32:31+00:00"
+      },
+      "still_2": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "87c5a0c6-348e-417c-b08e-43e97af2ad63",
+            "submitted": "2026-10-27T16:31:10+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "87c5a0c6-348e-417c-b08e-43e97af2ad63",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261027_163050_87c5a0c6-348e-417c-b08e-43e97af2ad63.png",
+        "finished": "2026-10-27T16:32:31+00:00"
+      },
+      "stills": [
+        "stills/s022_1.png",
+        "stills/s022_2.png"
+      ],
+      "pad": 2.2
+    },
+    {
+      "n": 23,
+      "title": "Spring",
+      "mode": "stills",
+      "pov": false,
+      "narration": "Spring came slowly. The snow melted, the mud dried, and the creek ran fast again. Wagons got through. New uniforms came in. Somebody's wife sent a whole crate of stockings. I got my first real pair of shoes since the autumn. I put them on and walked around the hut three times, just to feel it.",
+      "narration_voiced": "Spring came slowly. The snow melted, the mud dried, and the creek ran fast again. Wagons got through. New uniforms came in. Somebody's wife sent a whole crate of stockings. I got my first real pair of shoes since the autumn. I put them on... and walked around the hut three times, just to feel it.",
+      "image_prompt": "Spring at Valley Forge",
+      "sound": "birds singing, a fast creek, wind in new leaves",
+      "refs": [
+        "eli",
+        "camp"
+      ],
+      "voice_mood": "relief",
+      "still_prompts": [
+        "Valley Forge in spring 1778: rows of log huts on a green hillside, the last patches of snow melting, blossoming trees, a creek running fast below, soldiers airing blankets in the sun, small figures",
+        "Outside the log hut in spring sunshine: Eli Parker (Connecticut farm boy of 17 in the Continental Army, thin face, hollow cheeks, straight light-brown hair tied back, a few freckles, blue eyes, ragged brown wool coat with patched elbows over a dirty linen shirt, worn black cocked hat, an old grey wool blanket over his shoulders, threadbare grey breeches) sits on a stump lacing up a new pair of black leather shoes with buckles, grinning down at his feet"
+      ],
+      "ambience_from": 2,
+      "must": [
+        "exactly one close person in the second image"
+      ],
+      "still_1": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "6093e695-1cfa-47fa-8a06-ded4ef63dba8",
+            "submitted": "2026-10-27T16:31:10+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "6093e695-1cfa-47fa-8a06-ded4ef63dba8",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261027_163050_6093e695-1cfa-47fa-8a06-ded4ef63dba8.png",
+        "finished": "2026-10-27T16:32:31+00:00"
+      },
+      "still_2": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "58fb5743-471f-45d0-b756-04e643c53721",
+            "submitted": "2026-10-27T16:31:10+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "58fb5743-471f-45d0-b756-04e643c53721",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261027_163050_58fb5743-471f-45d0-b756-04e643c53721.png",
+        "finished": "2026-10-27T16:32:31+00:00"
+      },
+      "stills": [
+        "stills/s023_1.png",
+        "stills/s023_2.png"
+      ],
+      "pad": 0.8
+    },
+    {
+      "n": 24,
+      "title": "The news from France",
+      "mode": "clip",
+      "pov": false,
+      "narration": "On the sixth of May, the news came. France had joined the war on our side. The whole army lined up on the parade ground, and fired a running salute, one musket after another, all the way down the line and back. Thirteen cannon. An extra ration of rum. And for the first time we cheered as winners.",
+      "narration_voiced": "On the sixth of May, the news came. France had joined the war on our side. The whole army lined up on the parade ground, and fired a running salute, one musket after another, all the way down the line and back. Thirteen cannon. An extra ration of rum. And for the first time... we cheered as winners.",
+      "image_prompt": "Valley Forge parade ground, 6 May 1778, bright spring day: long lines of Continental soldiers firing muskets into the air one after another in a rolling salute, white powder smoke drifting along the line, cannon on a hill behind, plain silk regimental flags in single colors with a small painted emblem, cheering men throwing their hats",
+      "sound": "a rolling musket salute, cannon booming, men cheering 'Huzzah!'",
+      "refs": [
+        "camp"
+      ],
+      "voice_mood": "festive",
+      "shots": [
+        "a long line of soldiers fires muskets into the air one after another, smoke rolling down the line",
+        "cannon on the hill fire, white smoke billowing",
+        "soldiers throw their hats in the air and cheer"
+      ],
+      "must": [
+        "muskets fired into the sky, not at people",
+        "regimental flags, NOT the stars and stripes"
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "b25e72f3-a771-4312-a126-06b41f55a7fc",
+            "submitted": "2026-10-27T16:26:01+00:00",
+            "credits": 2.75
+          }
+        ],
+        "history": [
+          {
+            "status": "done",
+            "attempts": [
+              {
+                "job_id": "beecf1e4-bef8-42a4-8a51-c805de0428f5",
+                "submitted": "2026-10-27T16:24:55+00:00",
+                "credits": 2.75
+              }
+            ],
+            "job_id": "beecf1e4-bef8-42a4-8a51-c805de0428f5",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261027_162350_beecf1e4-bef8-42a4-8a51-c805de0428f5.png",
+            "finished": "2026-10-27T16:24:55+00:00",
+            "redo_reason": "tarih hatası düzeltme",
+            "redo_at": "2026-10-27T16:25:38+00:00"
+          }
+        ],
+        "job_id": "b25e72f3-a771-4312-a126-06b41f55a7fc",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261027_162555_b25e72f3-a771-4312-a126-06b41f55a7fc.png",
+        "finished": "2026-10-27T16:32:31+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "faf009c4-c2ab-4909-b294-2583c56c6be5",
+            "submitted": "2026-10-27T16:34:02+00:00",
+            "credits": 15.0
+          }
+        ],
+        "job_id": "faf009c4-c2ab-4909-b294-2583c56c6be5",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261027_163355_faf009c4-c2ab-4909-b294-2583c56c6be5.mp4",
+        "finished": "2026-10-27T16:38:06+00:00"
+      },
+      "pad": 0.8
+    },
+    {
+      "n": 25,
+      "title": "Marching out",
+      "mode": "clip",
+      "pov": false,
+      "narration": "On the nineteenth of June, six months to the day after we arrived, we marched out of Valley Forge. Behind us, the hillside was a field of empty huts. Nine days later, at Monmouth, we met the British in the open field and this time, they did not run us off it.",
+      "narration_voiced": "On the nineteenth of June, six months to the day after we arrived, we marched out of Valley Forge. Behind us, the hillside was a field of empty huts. Nine days later, at Monmouth, we met the British in the open field... and this time, they did not run us off it.",
+      "image_prompt": "Valley Forge, 19 June 1778, summer morning: a long disciplined column of Continental soldiers in neat ranks marching out along a road, drums and fifes at the front, rows of empty log huts on the green hillside behind",
+      "sound": "fifes and drums playing a march, marching feet, birds",
+      "refs": [
+        "camp"
+      ],
+      "voice_mood": "relief",
+      "shots": [
+        "drummers and fifers lead the column out at a steady march",
+        "rows of soldiers march in step past the empty huts",
+        "the column winds away down the road into green summer country"
+      ],
+      "must": [
+        "the soldiers march in neat ranks",
+        "summer greenery"
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "d946eddc-66f0-4500-9362-e6dae9eb22e9",
+            "submitted": "2026-10-27T16:24:55+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "d946eddc-66f0-4500-9362-e6dae9eb22e9",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261027_162351_d946eddc-66f0-4500-9362-e6dae9eb22e9.png",
+        "finished": "2026-10-27T16:24:55+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "de014e02-5053-4599-a03d-337ea8045810",
+            "submitted": "2026-10-27T16:27:04+00:00",
+            "credits": 15.0
+          }
+        ],
+        "job_id": "de014e02-5053-4599-a03d-337ea8045810",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261027_162631_de014e02-5053-4599-a03d-337ea8045810.mp4",
+        "finished": "2026-10-27T16:35:00+00:00"
+      },
+      "pad": 2.2
+    },
+    {
+      "n": 26,
+      "title": "The empty hut",
+      "mode": "stills",
+      "pov": true,
+      "narration": "Before we left, I went back inside our hut one last time. The fireplace was cold. Somebody had carved twelve names into the logs by the door. Jonah's was there. And Sam's. And mine.",
+      "narration_voiced": "Before we left, I went back inside our hut one last time. The fireplace was cold. Somebody had carved twelve names into the logs by the door. Jonah's was there. And Sam's. And mine.",
+      "image_prompt": "The empty hut",
+      "sound": "birds outside, a soft breeze through the door",
+      "refs": [
+        "hut_in"
+      ],
+      "voice_mood": "warm",
+      "still_prompts": [
+        "Inside an empty soldiers' log hut in summer, Valley Forge 1778: the bunks bare, the clay fireplace cold, sunlight falling through the open door onto the dirt floor, small carved marks on the log beside the door that are NOT readable, NO people"
+      ],
+      "ambience_from": 2,
+      "must_not": [
+        "readable text or words",
+        "people"
+      ],
+      "still_1": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "d574cf3c-904d-4591-8f3a-02cf5301432e",
+            "submitted": "2026-10-27T16:31:10+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "d574cf3c-904d-4591-8f3a-02cf5301432e",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261027_163053_d574cf3c-904d-4591-8f3a-02cf5301432e.png",
+        "finished": "2026-10-27T16:32:32+00:00"
+      },
+      "stills": [
+        "stills/s026_1.png"
+      ],
+      "pad": 0.8
+    },
+    {
+      "n": 27,
+      "title": "How we survived",
+      "mode": "stills",
+      "pov": false,
+      "narration": "So how did we survive Valley Forge? Huts we built with our own hands. Fire cake and water. Shoes made of raw hide. Friends who sat with you through the fever. And a stubborn idea: that if we just held on until spring, we could still win. And we did.",
+      "narration_voiced": "So how did we survive Valley Forge? Huts we built with our own hands. Fire cake and water. Shoes made of raw hide. Friends who sat with you through the fever. And a stubborn idea: that if we just held on until spring, we could still win. And we did.",
+      "image_prompt": "Eli, Jonah and Sam together",
+      "sound": "campfire crackling, crickets",
+      "refs": [
+        "eli",
+        "jonah",
+        "sam"
+      ],
+      "voice_mood": "warm",
+      "still_prompts": [
+        "Summer evening, 1778, by a campfire on the march: Eli Parker (Connecticut farm boy of 17 in the Continental Army, thin face, hollow cheeks, straight light-brown hair tied back, a few freckles, blue eyes, ragged brown wool coat with patched elbows over a dirty linen shirt, worn black cocked hat, an old grey wool blanket over his shoulders, threadbare grey breeches), Jonah Hale (his best friend, 19, big-shouldered, broad red-bearded face, curly red hair, faded blue wool coat with torn red facings, black round felt hat with the brim turned up on one side) and Sam Freeman (a free Black soldier of about 30 from New London, Connecticut, calm lean face, short black hair, small trimmed beard, long brown linen hunting shirt with fringed cape over a wool waistcoat, black cocked hat) sit together by the fire, Jonah laughing, Sam cleaning his musket, Eli looking into the flames with a quiet smile"
+      ],
+      "ambience_from": 2,
+      "beat": "ÖZET",
+      "must": [
+        "exactly three people"
+      ],
+      "still_1": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "2c3e81f9-927d-4f30-bcf0-4a98ec1f8529",
+            "submitted": "2026-10-27T16:31:10+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "2c3e81f9-927d-4f30-bcf0-4a98ec1f8529",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261027_163051_2c3e81f9-927d-4f30-bcf0-4a98ec1f8529.png",
+        "finished": "2026-10-27T16:32:32+00:00"
+      },
+      "stills": [
+        "stills/s027_1.png"
+      ],
+      "pad": 2.2
+    },
+    {
+      "n": 28,
+      "title": "Subscribe",
+      "mode": "stills",
+      "pov": false,
+      "narration": "If you've stayed with me this far, I think this story stayed with you too. If it did, leave a like and subscribe. That's how I know you want more stories like this one, and it helps them reach more people.",
+      "narration_voiced": "If you've stayed with me this far, I think this story stayed with you too. If it did, leave a like and subscribe. That's how I know you want more stories like this one, and it helps them reach more people.",
+      "image_prompt": "Eli looking at the viewer",
+      "sound": "campfire crackling, crickets",
+      "refs": [
+        "eli"
+      ],
+      "voice_mood": "outro",
+      "still_prompts": [
+        "A warm summer evening at an army camp, 1778: Eli Parker (Connecticut farm boy of 17 in the Continental Army, thin face, hollow cheeks, straight light-brown hair tied back, a few freckles, blue eyes, ragged brown wool coat with patched elbows over a dirty linen shirt, worn black cocked hat, an old grey wool blanket over his shoulders, threadbare grey breeches) in a clean new coat sits on a log by a campfire and looks calmly toward the viewer with a small smile, tents and fires behind him"
+      ],
+      "ambience_from": 2,
+      "beat": "SABİT KAPANIŞ ÇAĞRISI",
+      "must": [
+        "exactly one person"
+      ],
+      "own_rules": true,
+      "still_1": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "d97b1c7e-6668-4f6c-90e8-270cb19d0ef6",
+            "submitted": "2026-10-27T16:31:10+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "d97b1c7e-6668-4f6c-90e8-270cb19d0ef6",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261027_163051_d97b1c7e-6668-4f6c-90e8-270cb19d0ef6.png",
+        "finished": "2026-10-27T16:32:32+00:00"
+      },
+      "stills": [
+        "stills/s028_1.png"
+      ],
+      "pad": 0.8
+    },
+    {
+      "n": 29,
+      "title": "What comes next",
+      "mode": "stills",
+      "pov": false,
+      "narration": "A hundred and sixty-seven years later, in another December, another American army was trapped in the snow. Christmas, nineteen forty-four, in the frozen forests of Belgium, at a town called Bastogne. Surrounded, outnumbered, and out of almost everything. How did they hold? That story is next.",
+      "narration_voiced": "A hundred and sixty-seven years later, in another December, another American army was trapped in the snow. Christmas, nineteen forty-four, in the frozen forests of Belgium, at a town called Bastogne. Surrounded, outnumbered, and out of almost everything. How did they hold? That story is next.",
+      "image_prompt": "Bastogne, December 1944",
+      "sound": "wind through pine trees, distant artillery rumble",
+      "refs": [],
+      "voice_mood": "intrigue",
+      "still_prompts": [
+        "The Ardennes forest in Belgium, December 1944: snow-covered pine trees, a foxhole dug at the edge of the woods with a few American soldiers in olive-drab overcoats and M1 helmets seen small and FROM BEHIND, mist, cold blue light, a distant small town with a church steeple, NO close-up faces"
+      ],
+      "ambience_from": 1,
+      "beat": "SONRAKİ BÖLÜM",
+      "must": [
+        "World War II American soldiers"
+      ],
+      "must_not": [
+        "18th-century soldiers",
+        "blood",
+        "modern objects after 1944"
+      ],
+      "own_rules": true,
+      "still_1": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "e5c680cb-f93f-424a-9fb9-7836ebb01185",
+            "submitted": "2026-10-27T16:31:10+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "e5c680cb-f93f-424a-9fb9-7836ebb01185",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261027_163057_e5c680cb-f93f-424a-9fb9-7836ebb01185.png",
+        "finished": "2026-10-27T16:32:32+00:00"
+      },
+      "stills": [
+        "stills/s029_1.png"
+      ],
+      "pad": 0.8
+    }
+  ],
+  "max_credits": 360
+}

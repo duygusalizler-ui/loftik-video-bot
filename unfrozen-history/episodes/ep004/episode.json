@@ -1,0 +1,2010 @@
+{
+  "id": "ep004",
+  "version": 1,
+  "title": "Trapped in the Snow for 4 Months: The Donner Party",
+  "title_alt": "How Did Anyone Survive the Donner Party?",
+  "title_c": "The Donner Party Diary: How One Family Got Out Alive",
+  "thumbnail": "Bright painterly scene: a snow-buried log cabin with only the roof showing, steps cut into the snow, warm light in a tiny window, blue sky over granite peaks; one big word 'TRAPPED' (A/B: '4 MONTHS', and no text)",
+  "hook_description": "In the winter of 1846, eighty-one emigrants were trapped by snow in the Sierra Nevada. Patrick Breen kept a diary through all of it, and his whole family walked out alive. This is their story, told in his words.",
+  "character": "Patrick Breen (born 1795), a real Irish-born emigrant and member of the Donner Party; dramatized first-person narration based on his diary. His face is never shown.",
+  "setting": "The Donner Party: from Iowa in spring 1846 to the snowbound camp at Truckee (now Donner) Lake, winter 1846–47",
+  "style": "Hand-painted gouache and watercolor storybook illustration, visible brush texture, warm amber firelight against cold blue winter light, cinematic composition, historically accurate American emigrants of 1846: wool coats, homespun shirts, bonnets and shawls, wide-brimmed felt hats, rough log cabins, Sierra Nevada granite peaks and pine forest, no modern objects, soft painterly detail, no text, no letters, no watermark",
+  "ref_style": "Hand-painted gouache and watercolor storybook character reference sheet, same painterly look as the episode, even neutral lighting, plain warm parchment background, historically accurate 1846 American pioneer clothing, original person, no text, no labels, no watermark",
+  "motion_suffix": "Gentle natural motion, soft cuts between shots, painterly style and characters stay consistent across shots, no text; historically accurate 1846–47: log cabins, wool and homespun clothing, no modern objects, no vehicles with engines, no electric lights",
+  "cast": {
+    "Peggy": "Peggy (Irish pioneer mother about 40, strong tired face, dark hair pinned under a faded dark blue bonnet or wool shawl, dark brown wool dress, grey knitted shawl)",
+    "Boys": "the Breen boys (six pioneer boys of different ages from about 4 to 14, plain homespun shirts, wool trousers, patched coats, wool caps)",
+    "Isabella": "baby Isabella (an infant under one year old wrapped in a grey wool blanket)"
+  },
+  "preview_scenes": [
+    1,
+    2,
+    3
+  ],
+  "gates": {
+    "script": "2026-10-02T08:10:04+00:00",
+    "preview": "2026-10-02T08:55:35+00:00"
+  },
+  "must": [
+    "historically accurate 1846–47 American emigrant details only",
+    "the same faces, hair and clothes as in the reference images for every named character",
+    "painterly gouache look in every frame",
+    "1840s clothing: wool coats, homespun shirts, bonnets, shawls, felt hats"
+  ],
+  "must_not": [
+    "any text, letters, numbers, captions, logos or watermark",
+    "modern objects: zippers, plastic, nylon jackets, rubber boots, sunglasses, modern rifles, backpacks of modern design, metal snow shovels",
+    "cars, trains, engines, electric lights, power lines, paved roads, modern houses",
+    "Patrick Breen's face: the narrator appears only as hands in POV",
+    "gore, blood, corpses, human remains, bones of humans, anything suggesting cannibalism",
+    "cowboy clichés: revolvers in holsters, cowboy boots with spurs, Native American war paint or feathered headdresses",
+    "extra fingers, deformed hands, duplicated faces",
+    "the same person appearing twice in one frame (clones, twins, duplicated characters)",
+    "collage, multiple panels, split screen, several pictures in one image: it must be ONE single continuous scene"
+  ],
+  "sources": [
+    "Patrick Breen — Diary of Patrick Breen, One of the Donner Party (Nov 1846–Mar 1847; ed. Frederick J. Teggart, 1910)",
+    "Ethan Rarick — Desperate Passage: The Donner Party's Perilous Journey West (Oxford University Press, 2008)",
+    "Daniel James Brown — The Indifferent Stars Above (William Morrow, 2009)",
+    "George R. Stewart — Ordeal by Hunger (1936)",
+    "Charles F. McGlashan — History of the Donner Party (1879)",
+    "Virginia Reed — letter to Mary Keyes, 16 May 1847",
+    "Kristin Johnson (ed.) — \"Unfortunate Emigrants\": Narratives of the Donner Party (Utah State University Press, 1996)",
+    "Donner Memorial State Park, California State Parks"
+  ],
+  "disclosure": "Patrick Breen was a real member of the Donner Party. His words here are a dramatized first-person narration based on his diary and on historical research; lines in quotation marks come from his diary. Other people are portrayed for illustration only. Illustrations and animation were created with AI tools; narration uses a synthetic voice.",
+  "refs": {
+    "peggy": {
+      "kind": "character",
+      "prompt": "Character reference sheet: on the left a full-body front view standing, on the right a chest-up portrait of the same person; identical original character in both views, single character only, no other people, no props except those described. Peggy, Irish-American pioneer mother of 1846 about 40, strong tired face, dark hair pinned up under a faded dark blue cotton bonnet, dark brown wool dress to the ankles, grey knitted wool shawl, worn leather boots",
+      "n": "peggy",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "2bad6629-a080-4058-8919-2fb45dc5c421",
+            "submitted": "2026-10-02T08:10:52+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "2bad6629-a080-4058-8919-2fb45dc5c421",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_081044_2bad6629-a080-4058-8919-2fb45dc5c421.png",
+        "finished": "2026-10-02T08:11:32+00:00"
+      }
+    },
+    "boys": {
+      "kind": "character",
+      "prompt": "Group reference: six pioneer brothers of 1846 standing in a row from oldest to youngest (about 14, 13, 11, 9, 7 and 4 years old), plain homespun linen shirts, brown wool trousers with suspenders, patched wool coats, wool caps, same family resemblance, freckles, brown hair, full body, plain parchment background",
+      "n": "boys",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "f68cedad-7811-4820-863b-0cef0fde732e",
+            "submitted": "2026-10-02T08:10:52+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "f68cedad-7811-4820-863b-0cef0fde732e",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_081044_f68cedad-7811-4820-863b-0cef0fde732e.png",
+        "finished": "2026-10-02T08:11:34+00:00"
+      }
+    },
+    "wagon": {
+      "kind": "location",
+      "prompt": "Single image, one scene only (not a collage, no panels): reference of ONE 1846 emigrant covered wagon (prairie schooner) seen from the side on an empty dirt trail on the summer prairie: wooden wagon box painted blue, white canvas cover over hoops, large wooden wheels with iron tires, a team of four oxen in wooden yokes, NO people, no cabins, no campfire",
+      "n": "wagon",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "3cd2a47b-ec37-4c38-8ce7-c0077e9142b4",
+            "submitted": "2026-10-02T08:12:25+00:00",
+            "credits": 1.0
+          }
+        ],
+        "history": [
+          {
+            "status": "done",
+            "attempts": [
+              {
+                "job_id": "4bb82e0a-83a3-4d48-91d0-a09ef1581340",
+                "submitted": "2026-10-02T08:10:52+00:00",
+                "credits": 1.0
+              }
+            ],
+            "job_id": "4bb82e0a-83a3-4d48-91d0-a09ef1581340",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_081044_4bb82e0a-83a3-4d48-91d0-a09ef1581340.png",
+            "finished": "2026-10-02T08:11:35+00:00",
+            "redo_reason": "kalabalik sahne",
+            "redo_at": "2026-10-02T08:12:08+00:00"
+          }
+        ],
+        "job_id": "3cd2a47b-ec37-4c38-8ce7-c0077e9142b4",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_081218_3cd2a47b-ec37-4c38-8ce7-c0077e9142b4.png",
+        "finished": "2026-10-02T08:13:00+00:00"
+      }
+    },
+    "lake": {
+      "kind": "location",
+      "prompt": "Location reference, wide establishing view of a cold mountain lake in the Sierra Nevada in winter 1846: dark pine forest, granite peaks and a high notch-like pass above, deep snow, three small rough log cabins half-buried in snow near the shore, no people, no modern buildings",
+      "n": "lake",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "a317b52c-e380-4dff-abd2-760679415e22",
+            "submitted": "2026-10-02T08:10:53+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "a317b52c-e380-4dff-abd2-760679415e22",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_081044_a317b52c-e380-4dff-abd2-760679415e22.png",
+        "finished": "2026-10-02T08:11:36+00:00"
+      }
+    },
+    "cabin_in": {
+      "kind": "location",
+      "prompt": "Single image, one scene only (not a collage, no panels, no split screen): interior of ONE small rough log cabin of 1846 seen from inside: dirt floor, walls of unpeeled logs chinked with mud, a stone fireplace with a small fire, low roof of poles patched with ox hides and pine branches, a rough wooden table and bench, blankets on the floor, one tiny window, NO people",
+      "n": "cabin_in",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "111ea3b6-79cf-4a66-b29f-7bd18c190192",
+            "submitted": "2026-10-02T08:12:25+00:00",
+            "credits": 1.0
+          }
+        ],
+        "history": [
+          {
+            "status": "done",
+            "attempts": [
+              {
+                "job_id": "45f6837e-df1e-4da2-ac2e-083c3c4f8d3d",
+                "submitted": "2026-10-02T08:10:53+00:00",
+                "credits": 1.0
+              }
+            ],
+            "job_id": "45f6837e-df1e-4da2-ac2e-083c3c4f8d3d",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_081044_45f6837e-df1e-4da2-ac2e-083c3c4f8d3d.png",
+            "finished": "2026-10-02T08:11:37+00:00",
+            "redo_reason": "kolaj",
+            "redo_at": "2026-10-02T08:12:08+00:00"
+          }
+        ],
+        "job_id": "111ea3b6-79cf-4a66-b29f-7bd18c190192",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_081218_111ea3b6-79cf-4a66-b29f-7bd18c190192.png",
+        "finished": "2026-10-02T08:13:01+00:00"
+      }
+    }
+  },
+  "music": [
+    {
+      "from": 1,
+      "track": "Frozen_Star.mp3",
+      "title": "Frozen Star",
+      "mood": "soğuk açılış"
+    },
+    {
+      "from": 2,
+      "track": "Lost_Frontier.mp3",
+      "title": "Lost Frontier",
+      "mood": "yola çıkış"
+    },
+    {
+      "from": 5,
+      "track": "Dark_Times.mp3",
+      "title": "Dark Times",
+      "mood": "kısayol, çöl"
+    },
+    {
+      "from": 7,
+      "track": "Ossuary_6_-_Air.mp3",
+      "title": "Ossuary 6 - Air",
+      "mood": "göl, mahsur"
+    },
+    {
+      "from": 11,
+      "track": "Crossing_the_Chasm.mp3",
+      "title": "Crossing the Chasm",
+      "mood": "hayatta kalma kuralları"
+    },
+    {
+      "from": 15,
+      "track": "Winter_Reflections.mp3",
+      "title": "Winter Reflections",
+      "mood": "Noel, açlık"
+    },
+    {
+      "from": 19,
+      "track": "Eternal_Hope.mp3",
+      "title": "Eternal Hope",
+      "mood": "ilk kurtarma"
+    },
+    {
+      "from": 22,
+      "track": "Long_Note_Four.mp3",
+      "title": "Long Note Four",
+      "mood": "Towser, Starved Camp"
+    },
+    {
+      "from": 26,
+      "track": "Dreams_Become_Real.mp3",
+      "title": "Dreams Become Real",
+      "mood": "kurtuluş"
+    }
+  ],
+  "next_episode_tease": "The Great Frost of 1709 in France: a village baker keeps his family alive through the coldest winter in 500 years",
+  "voice_engine": {
+    "model": "text2speech_v2",
+    "variant": "elevenlabs",
+    "voice_id": "07112420-b262-46e4-8698-6d2a177958f4",
+    "post": "silenceremove=stop_periods=-1:stop_duration=0.55:stop_threshold=-45dB:stop_silence=0.45,atempo=1.06,highpass=f=70,equalizer=f=250:t=q:w=1.2:g=-2,equalizer=f=3200:t=q:w=1.0:g=3.5,treble=g=2:f=8000,acompressor=threshold=-20dB:ratio=3:attack=5:release=120:makeup=3,loudnorm=I=-16:TP=-1.5"
+  },
+  "scenes": [
+    {
+      "n": 1,
+      "title": "Towser",
+      "pov": true,
+      "narration": "February the twenty-third, 1847. Today. I shot our dog, Towser. I wrote it down in my little book, the way I write everything down. Outside, the snow has buried our cabin to the roof. My name is Patrick Breen. Eighty-one of us are trapped in these mountains. And my family, all nine of us will walk out alive. This is how.",
+      "narration_voiced": "February the twenty-third, 1847. Today... I shot our dog, Towser. I wrote it down in my little book, the way I write everything down. Outside, the snow has buried our cabin to the roof. My name is Patrick Breen. Eighty-one of us are trapped in these mountains. And my family, all NINE of us... will walk out alive. This is how.",
+      "image_prompt": "POV inside a dark snowbound log cabin in February 1847: the narrator's weathered hands of a 51-year-old Irish farmer in frayed brown wool coat sleeves hold a small handmade paper notebook and a pencil on a rough wooden table, a tiny fire in a stone hearth, snow pressing against the small window, an empty dog collar of old leather on the table",
+      "shots": [
+        "the narrator's hand writes slowly in a small worn notebook by firelight",
+        "snow is pressed against the tiny frosted window of the cabin",
+        "an empty old leather dog collar lies on the rough wooden table"
+      ],
+      "sound": "wind over deep snow, a small crackling fire, pencil scratching on paper",
+      "refs": [
+        "cabin_in"
+      ],
+      "voice_mood": "tense",
+      "beat": "SOĞUK AÇILIŞ (0:00) — günlükten gerçek satır",
+      "must": [
+        "the narrator is never seen, only his hands (POV)"
+      ],
+      "must_not": [
+        "a dog's body or blood",
+        "the narrator's face"
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "ae674d65-6614-4299-85bb-f8ad5c9f0529",
+            "submitted": "2026-10-02T08:13:47+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "ae674d65-6614-4299-85bb-f8ad5c9f0529",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_081340_ae674d65-6614-4299-85bb-f8ad5c9f0529.png",
+        "finished": "2026-10-02T08:14:27+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "51a9c387-d801-4a4f-8743-eaa4f4fb996c",
+            "submitted": "2026-10-02T08:17:58+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "51a9c387-d801-4a4f-8743-eaa4f4fb996c",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_081747_51a9c387-d801-4a4f-8743-eaa4f4fb996c.mp4",
+        "finished": "2026-10-02T08:20:57+00:00"
+      },
+      "min_speed": 0.54
+    },
+    {
+      "n": 2,
+      "title": "Ten months earlier",
+      "pov": false,
+      "narration": "Ten months earlier. Spring, 1846. We leave our farm in Iowa with seven children, our wagons and a herd of cattle. Thousands of families are heading west this year, to Oregon and California. I am fifty-one years old, an Irishman who has already crossed one ocean. What is one more continent?",
+      "narration_voiced": "Ten months earlier. Spring, 1846. We leave our farm in Iowa with seven children, our wagons and a herd of cattle. Thousands of families are heading west this year, to Oregon and California. I am fifty-one years old, an Irishman who has already crossed one ocean. What is one more continent?",
+      "image_prompt": "Spring 1846 on the American prairie: a long line of white canvas-covered wagons pulled by teams of oxen, families walking beside them, cattle herded behind, green grass and wildflowers, wide blue sky",
+      "shots": [
+        "a long line of covered wagons rolls slowly across the green prairie",
+        "children walk beside an ox team, a boy cracks a whip",
+        "cattle are herded behind the wagons under a wide sky"
+      ],
+      "sound": "creaking wagon wheels, oxen lowing, prairie wind, children's voices",
+      "refs": [
+        "wagon"
+      ],
+      "voice_mood": "intrigue",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "fd2c08e2-9a4a-43d9-8c24-1a88738b7d7d",
+            "submitted": "2026-10-02T08:15:15+00:00",
+            "credits": 1.0
+          }
+        ],
+        "history": [
+          {
+            "status": "done",
+            "attempts": [
+              {
+                "job_id": "959d4188-2ab6-49b0-9303-547fdb87a4d6",
+                "submitted": "2026-10-02T08:13:47+00:00",
+                "credits": 1.0
+              }
+            ],
+            "job_id": "959d4188-2ab6-49b0-9303-547fdb87a4d6",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_081340_959d4188-2ab6-49b0-9303-547fdb87a4d6.png",
+            "finished": "2026-10-02T08:14:29+00:00",
+            "redo_reason": "kolaj",
+            "redo_at": "2026-10-02T08:14:45+00:00"
+          }
+        ],
+        "job_id": "fd2c08e2-9a4a-43d9-8c24-1a88738b7d7d",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_081509_fd2c08e2-9a4a-43d9-8c24-1a88738b7d7d.png",
+        "finished": "2026-10-02T08:15:52+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "a588fc20-beec-4a22-aa34-664d9e1c7579",
+            "submitted": "2026-10-02T08:17:58+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "a588fc20-beec-4a22-aa34-664d9e1c7579",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_081747_a588fc20-beec-4a22-aa34-664d9e1c7579.mp4",
+        "finished": "2026-10-02T08:20:59+00:00"
+      },
+      "must": [
+        "covered wagons with white canvas and oxen where wagons appear"
+      ]
+    },
+    {
+      "n": 3,
+      "title": "My family",
+      "pov": true,
+      "narration": "My wife, Peggy. Forty years old, and the strongest person I have ever known. Our boys: John, Edward, Patrick, Simon, James and little Peter. And Isabella, not even a year old, in her mother's arms. Every night on the trail, we pray the rosary together. I did not know yet how much we would need it.",
+      "narration_voiced": "My wife, Peggy. Forty years old, and the strongest person I have ever known. Our boys: John, Edward, Patrick, Simon, James and little Peter. And Isabella, not even a year old, in her mother's arms. Every night on the trail, we pray the rosary together. I did not know yet how much we would need it.",
+      "image_prompt": "POV at an evening campfire beside a covered wagon on the prairie, summer 1846. Composition: on the LEFT side of the fire sits Peggy (Irish pioneer mother about 40, dark blue bonnet, grey knitted shawl, dark brown wool dress) holding baby Isabella wrapped in a grey wool blanket, and beside her THREE boys: a tall boy of 14, a boy of 13 and a boy of 11; on the RIGHT side of the fire sit THREE smaller boys: a boy of 9, a boy of 7 and a little boy of 4 leaning sleepily on his brother. Six boys in total, homespun shirts, patched wool coats, wool caps. A wooden rosary in the narrator's hands in the foreground, sunset sky",
+      "shots": [
+        "Peggy rocks the baby gently by the campfire and smiles",
+        "the boys sit around the fire, the youngest leans sleepily on an older brother",
+        "the narrator's hands pass the beads of a wooden rosary"
+      ],
+      "sound": "campfire crackling, crickets, a quiet murmured prayer",
+      "refs": [
+        "peggy",
+        "boys",
+        "wagon"
+      ],
+      "voice_mood": "warm",
+      "must": [
+        "SIX boys in total: three on the left of the fire and three on the right, clearly different ages and heights, plus one baby in the mother's arms",
+        "the narrator is never seen, only his hands",
+        "covered wagons with white canvas and oxen where wagons appear"
+      ],
+      "must_not": [
+        "the narrator's face"
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "90d05ded-bca2-42b0-a4e1-b12603f1ccf4",
+            "submitted": "2026-10-02T08:16:28+00:00",
+            "credits": 1.0
+          }
+        ],
+        "history": [
+          {
+            "status": "done",
+            "attempts": [
+              {
+                "job_id": "7efe689a-dcf8-4f7e-9857-a7990e4e9dd6",
+                "submitted": "2026-10-02T08:13:47+00:00",
+                "credits": 1.0
+              }
+            ],
+            "job_id": "7efe689a-dcf8-4f7e-9857-a7990e4e9dd6",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_081340_7efe689a-dcf8-4f7e-9857-a7990e4e9dd6.png",
+            "finished": "2026-10-02T08:14:29+00:00",
+            "redo_reason": "5 cocuk",
+            "redo_at": "2026-10-02T08:14:45+00:00"
+          },
+          {
+            "status": "done",
+            "attempts": [
+              {
+                "job_id": "2407619a-fc3d-4c6d-9c64-9032c9d6464d",
+                "submitted": "2026-10-02T08:15:15+00:00",
+                "credits": 1.0
+              }
+            ],
+            "job_id": "2407619a-fc3d-4c6d-9c64-9032c9d6464d",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_081509_2407619a-fc3d-4c6d-9c64-9032c9d6464d.png",
+            "finished": "2026-10-02T08:15:53+00:00",
+            "redo_reason": "yine 5 cocuk",
+            "redo_at": "2026-10-02T08:16:08+00:00"
+          }
+        ],
+        "job_id": "90d05ded-bca2-42b0-a4e1-b12603f1ccf4",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_081622_90d05ded-bca2-42b0-a4e1-b12603f1ccf4.png",
+        "finished": "2026-10-02T08:17:04+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "0d1a9b9d-6198-4978-bd87-bd52291ef96d",
+            "submitted": "2026-10-02T08:17:58+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "0d1a9b9d-6198-4978-bd87-bd52291ef96d",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_081748_0d1a9b9d-6198-4978-bd87-bd52291ef96d.mp4",
+        "finished": "2026-10-02T08:22:16+00:00"
+      }
+    },
+    {
+      "n": 4,
+      "title": "The shortcut",
+      "pov": false,
+      "narration": "In July, at Fort Bridger, we hear about a new route. A man named Lansford Hastings has written a book about it: a shortcut, he says, that will save hundreds of miles. Our group decides to take it. The old trail hands shake their heads. But the rest of us we just want to reach California before the snow.",
+      "narration_voiced": "In July, at Fort Bridger, we hear about a new route. A man named Lansford Hastings has written a book about it: a shortcut, he says, that will save hundreds of miles. Our group decides to take it. The old trail hands shake their heads. But the rest of us... we just want to reach California before the snow.",
+      "image_prompt": "Fort Bridger trading post in July 1846: a small log stockade in a green valley with mountains behind, covered wagons camped outside, emigrant men in wide-brimmed hats gathered around one man reading from an open book, oxen grazing",
+      "shots": [
+        "emigrant men gather around a man reading from an open book",
+        "a bearded old trail hand shakes his head and walks away",
+        "covered wagons turn off the main trail onto a faint new track"
+      ],
+      "sound": "men talking, oxen grazing, wind in grass",
+      "refs": [
+        "wagon"
+      ],
+      "voice_mood": "intrigue",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "0c82d5af-eab7-491f-ad1d-d5ca472f06ef",
+            "submitted": "2026-10-02T08:57:31+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "0c82d5af-eab7-491f-ad1d-d5ca472f06ef",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_085717_0c82d5af-eab7-491f-ad1d-d5ca472f06ef.png",
+        "finished": "2026-10-02T09:00:19+00:00"
+      },
+      "must": [
+        "covered wagons with white canvas and oxen where wagons appear"
+      ],
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "1eeede13-e878-4a32-a973-31ea39e8d45b",
+            "submitted": "2026-10-02T09:06:52+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "1eeede13-e878-4a32-a973-31ea39e8d45b",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_090639_1eeede13-e878-4a32-a973-31ea39e8d45b.mp4",
+        "finished": "2026-10-02T09:12:21+00:00"
+      },
+      "clip_range": [
+        0,
+        10.05
+      ],
+      "min_speed": 0.54,
+      "note": "10.25 sn'den sonra bizon (öküz değil) — kesildi"
+    },
+    {
+      "n": 5,
+      "title": "No road",
+      "pov": true,
+      "narration": "The shortcut is a lie. In the Wasatch Mountains there is no road at all. For weeks, our men cut one themselves, with axes, through forest and boulders. Some days we move one mile. Then comes the salt desert: eighty miles of white crust, with no water and no grass. Our oxen fall and do not get up.",
+      "narration_voiced": "The shortcut is a lie. In the Wasatch Mountains there is no road at all. For weeks, our men cut one themselves, with axes, through forest and boulders. Some days we move one mile. Then comes the salt desert: eighty miles of white crust, with no water and no grass. Our oxen fall... and do not get up.",
+      "image_prompt": "POV in August 1846 in a steep rocky canyon of the Wasatch Mountains: emigrant men swinging axes at trees and boulders to clear a path, covered wagons with oxen waiting behind them on the rough slope, dust and hot sunlight",
+      "shots": [
+        "men swing axes at trees blocking a steep canyon, wagons waiting behind",
+        "covered wagons crawl across a blinding white salt flat",
+        "an exhausted ox collapses in its yoke on the salt crust"
+      ],
+      "sound": "axes chopping, men shouting, then hot silent wind, a heavy ox breathing",
+      "refs": [
+        "wagon"
+      ],
+      "voice_mood": "tense",
+      "must_not": [
+        "blood",
+        "dead animals in close-up"
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "a1722067-f27f-4b07-86e2-064935c888e8",
+            "submitted": "2026-10-02T08:57:31+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "a1722067-f27f-4b07-86e2-064935c888e8",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_085717_a1722067-f27f-4b07-86e2-064935c888e8.png",
+        "finished": "2026-10-02T09:00:20+00:00"
+      },
+      "must": [
+        "covered wagons with white canvas and oxen where wagons appear"
+      ],
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "eb3b0cd9-cc2f-4ca6-bfbc-13d63c6f3141",
+            "submitted": "2026-10-02T09:06:52+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "eb3b0cd9-cc2f-4ca6-bfbc-13d63c6f3141",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_090639_eb3b0cd9-cc2f-4ca6-bfbc-13d63c6f3141.mp4",
+        "finished": "2026-10-02T09:12:23+00:00"
+      }
+    },
+    {
+      "n": 6,
+      "title": "Driven out",
+      "pov": false,
+      "narration": "By October we are a month behind, worn out, and angry. In a quarrel by the Humboldt River, a man named James Reed kills another man, John Snyder. The company drives Reed out, ahead of us, into the wilderness. His wife and four children stay behind with us. Nobody knows yet that Reed will come back.",
+      "narration_voiced": "By October we are a month behind, worn out, and angry. In a quarrel by the Humboldt River, a man named James Reed kills another man, John Snyder. The company drives Reed out, ahead of us, into the wilderness. His wife and four children stay behind with us. Nobody knows yet... that Reed will come back.",
+      "image_prompt": "October 1846 by a dry river valley in the Nevada desert: a tense crowd of emigrants beside covered wagons, a bearded man on a horse riding away alone toward distant mountains, seen from behind, a woman with four children watching him go",
+      "shots": [
+        "a tense crowd of emigrants stands silently beside the wagons",
+        "a lone rider rides away toward distant mountains, seen from behind",
+        "a mother holds her four children close and watches him go"
+      ],
+      "sound": "dry wind, a horse's hooves fading, a child crying softly",
+      "refs": [
+        "wagon"
+      ],
+      "voice_mood": "tense",
+      "must": [
+        "the rider is seen only from behind or far away",
+        "covered wagons with white canvas and oxen where wagons appear"
+      ],
+      "must_not": [
+        "weapons being used",
+        "blood",
+        "a fight"
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "93093990-f3e8-4794-b280-e7b0b1a2490e",
+            "submitted": "2026-10-02T08:57:31+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "93093990-f3e8-4794-b280-e7b0b1a2490e",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_085717_93093990-f3e8-4794-b280-e7b0b1a2490e.png",
+        "finished": "2026-10-02T09:00:22+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "4bf4421f-efb8-40b8-86e1-9f1cd638a29d",
+            "submitted": "2026-10-02T09:06:53+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "4bf4421f-efb8-40b8-86e1-9f1cd638a29d",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_090640_4bf4421f-efb8-40b8-86e1-9f1cd638a29d.mp4",
+        "finished": "2026-10-02T09:12:25+00:00"
+      }
+    },
+    {
+      "n": 7,
+      "title": "The lake",
+      "pov": true,
+      "narration": "On the last day of October, we reach a lake below the pass, the final wall of mountains before California. We can see the gap at the top. One more climb, and we are through. That night it starts to snow.",
+      "narration_voiced": "On the last day of October, we reach a lake below the pass, the final wall of mountains before California. We can SEE the gap at the top. One more climb, and we are through. That night... it starts to snow.",
+      "image_prompt": "POV at dusk on 31 October 1846: a cold mountain lake surrounded by dark pine forest and granite peaks, a high notch-like pass in the granite ridge above, covered wagons and oxen just arriving at the empty lakeshore, the first snowflakes falling; the only building is ONE small old abandoned log cabin among the trees",
+      "shots": [
+        "the narrator looks up at a high gap in the granite ridge above the lake",
+        "covered wagons camp at the shore of the cold dark lake",
+        "the first snowflakes begin to fall on the canvas of a wagon"
+      ],
+      "sound": "cold wind over the lake, oxen, the first soft snowfall",
+      "refs": [
+        "lake",
+        "wagon"
+      ],
+      "voice_mood": "intrigue",
+      "beat": "⚡ KIRILMA 1: göl ve geçit",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "aaa23203-d684-4a84-9a87-315114447580",
+            "submitted": "2026-10-02T09:01:28+00:00",
+            "credits": 1.0
+          }
+        ],
+        "history": [
+          {
+            "status": "done",
+            "attempts": [
+              {
+                "job_id": "370c894e-a84c-4faf-ba4b-50925241ffbd",
+                "submitted": "2026-10-02T08:57:31+00:00",
+                "credits": 1.0
+              }
+            ],
+            "job_id": "370c894e-a84c-4faf-ba4b-50925241ffbd",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_085717_370c894e-a84c-4faf-ba4b-50925241ffbd.png",
+            "finished": "2026-10-02T09:00:23+00:00",
+            "redo_reason": "fazla kulube",
+            "redo_at": "2026-10-02T09:00:50+00:00"
+          }
+        ],
+        "job_id": "aaa23203-d684-4a84-9a87-315114447580",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_090105_aaa23203-d684-4a84-9a87-315114447580.png",
+        "finished": "2026-10-02T09:04:00+00:00"
+      },
+      "must": [
+        "only ONE small abandoned log cabin, no other buildings, no campfire village",
+        "covered wagons with white canvas and oxen where wagons appear"
+      ],
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "6fdc4360-b6ff-41ff-8c0f-6fa46aea55bb",
+            "submitted": "2026-10-02T09:06:53+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "6fdc4360-b6ff-41ff-8c0f-6fa46aea55bb",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_090639_6fdc4360-b6ff-41ff-8c0f-6fa46aea55bb.mp4",
+        "finished": "2026-10-02T09:12:27+00:00"
+      }
+    },
+    {
+      "n": 8,
+      "title": "Turned back",
+      "pov": true,
+      "narration": "We try. Men, women, children, oxen, all pushing up toward the pass. The snow is so deep we cannot even find the road. Three miles from the summit, we turn back. Later I write it in my book: 'The snow so deep we were unable to find the road.'",
+      "narration_voiced": "We try. Men, women, children, oxen, all pushing up toward the pass. The snow is so deep we cannot even find the road. Three miles from the summit, we turn back. Later I write it in my book: 'The snow so deep... we were unable to find the road.'",
+      "image_prompt": "POV climbing a steep snowy granite slope toward a mountain pass in early November 1846: emigrants and oxen struggling waist-deep in fresh snow, wagons stuck behind, the pass hidden in grey clouds",
+      "shots": [
+        "emigrants and oxen push up a steep slope through deep snow",
+        "a man stops, looks up at the clouded pass, and shakes his head",
+        "the line of people turns and walks back down the slope"
+      ],
+      "sound": "heavy breathing, oxen bellowing, wind, crunching deep snow",
+      "refs": [
+        "lake"
+      ],
+      "voice_mood": "tense",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "9c49cb43-4a07-45f4-aff6-1f8a083d7cb9",
+            "submitted": "2026-10-02T08:57:31+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "9c49cb43-4a07-45f4-aff6-1f8a083d7cb9",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_085717_9c49cb43-4a07-45f4-aff6-1f8a083d7cb9.png",
+        "finished": "2026-10-02T09:00:24+00:00"
+      },
+      "must": [
+        "covered wagons with white canvas and oxen where wagons appear"
+      ],
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "07cfc857-efd2-41a7-a5c6-c289fa9d8c2a",
+            "submitted": "2026-10-02T09:06:53+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "07cfc857-efd2-41a7-a5c6-c289fa9d8c2a",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_090639_07cfc857-efd2-41a7-a5c6-c289fa9d8c2a.mp4",
+        "finished": "2026-10-02T09:12:29+00:00"
+      }
+    },
+    {
+      "n": 9,
+      "title": "Trapped",
+      "pov": false,
+      "narration": "Then the real storm comes. For eight days it snows, and snows, and does not stop. The pass is closed. Eighty-one of us are trapped on the wrong side of the mountains. Most of us here at the lake the Donner families a few miles away, at Alder Creek.",
+      "narration_voiced": "Then the real storm comes. For eight days it snows, and snows, and does not stop. The pass is closed. Eighty-one of us are trapped on the wrong side of the mountains. Most of us here at the lake... the Donner families a few miles away, at Alder Creek.",
+      "image_prompt": "A heavy blizzard in November 1846 at the mountain lake: snow burying covered wagons up to their canvas tops, oxen standing in deep snow, the granite ridge and pass completely hidden by white storm",
+      "shots": [
+        "snow falls thickly on wagons already buried to their canvas tops",
+        "oxen stand motionless in the deep snow",
+        "the mountain pass disappears behind a white wall of storm"
+      ],
+      "sound": "roaring blizzard wind, muffled snowfall",
+      "refs": [
+        "lake",
+        "wagon"
+      ],
+      "voice_mood": "tense",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "e63e11f5-0d3e-4f9d-82db-72e596541fb0",
+            "submitted": "2026-10-02T08:57:31+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "e63e11f5-0d3e-4f9d-82db-72e596541fb0",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_085717_e63e11f5-0d3e-4f9d-82db-72e596541fb0.png",
+        "finished": "2026-10-02T09:00:25+00:00"
+      },
+      "must": [
+        "covered wagons with white canvas and oxen where wagons appear"
+      ],
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "28e8cb14-8989-48c5-a169-3558419420d3",
+            "submitted": "2026-10-02T09:06:53+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "28e8cb14-8989-48c5-a169-3558419420d3",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_090639_28e8cb14-8989-48c5-a169-3558419420d3.mp4",
+        "finished": "2026-10-02T09:12:31+00:00"
+      }
+    },
+    {
+      "n": 10,
+      "title": "The cabin",
+      "pov": true,
+      "narration": "We are lucky in one thing. By the lake stands an old log cabin, built two years before by other emigrants. We take it. Other families build cabins nearby. Ours has a dirt floor, a stone fireplace, and a roof patched with hides and branches. Nine of us in one small room.",
+      "narration_voiced": "We are lucky in one thing. By the lake stands an old log cabin, built two years before by other emigrants. We take it. Other families build cabins nearby. Ours has a dirt floor, a stone fireplace, and a roof patched with hides and branches. Nine of us... in one small room.",
+      "image_prompt": "POV inside a small rough log cabin in November 1846: dirt floor, a stone fireplace with a small fire, a low roof patched with ox hides and pine branches, Peggy (Irish pioneer mother about 40, strong tired face, dark hair pinned under a faded dark blue bonnet or wool shawl, dark brown wool dress, grey knitted shawl) hanging a pot over the fire, the Breen boys (six pioneer boys of different ages from about 4 to 14, plain homespun shirts, wool trousers, patched coats, wool caps) sitting on blankets on the floor",
+      "shots": [
+        "the narrator's hands pull a hide over a gap in the low roof",
+        "Peggy hangs an iron pot over the small fire",
+        "the boys sit close together on blankets on the dirt floor"
+      ],
+      "sound": "wind outside, small fire crackling, children whispering",
+      "refs": [
+        "cabin_in",
+        "peggy",
+        "boys"
+      ],
+      "voice_mood": "intrigue",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "1a870903-e224-4f51-9a5a-7edc9554a9cb",
+            "submitted": "2026-10-02T08:57:31+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "1a870903-e224-4f51-9a5a-7edc9554a9cb",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_085718_1a870903-e224-4f51-9a5a-7edc9554a9cb.png",
+        "finished": "2026-10-02T09:00:26+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "feb1383a-f370-45b7-9505-77e3cf00c4e0",
+            "submitted": "2026-10-02T09:06:53+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "feb1383a-f370-45b7-9505-77e3cf00c4e0",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_090640_feb1383a-f370-45b7-9505-77e3cf00c4e0.mp4",
+        "finished": "2026-10-02T09:12:32+00:00"
+      }
+    },
+    {
+      "n": 11,
+      "title": "Peggy's rule",
+      "pov": false,
+      "narration": "Peggy makes the first rule. Every piece of meat is counted. Every handful of flour. She hides some away, even from me. 'We eat little, so we can eat long,' she says. In November, other cabins eat well. By January they have nothing.",
+      "narration_voiced": "Peggy makes the first rule. Every piece of meat is counted. Every handful of flour. She hides some away, even from me. 'We eat little, so we can eat long,' she says. In November, other cabins eat well. By January... they have nothing.",
+      "image_prompt": "Inside the dim log cabin by firelight: Peggy (Irish pioneer mother about 40, strong tired face, dark hair pinned under a faded dark blue bonnet or wool shawl, dark brown wool dress, grey knitted shawl) cutting a very small piece of frozen meat with a knife on a wooden board, carefully wrapping the rest in cloth and hiding it in a wooden box, the children watching hungrily",
+      "shots": [
+        "Peggy cuts a very small slice of frozen meat",
+        "she wraps the rest in cloth and hides it in a wooden box",
+        "the boys watch her quietly from the shadows"
+      ],
+      "sound": "knife on wood, fire crackling, wind",
+      "refs": [
+        "cabin_in",
+        "peggy",
+        "boys"
+      ],
+      "voice_mood": "intrigue",
+      "beat": "Hayatta kalma kuralı 1",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "8bfcf712-49b7-4ab5-a3c8-c3a6ba59a1f4",
+            "submitted": "2026-10-02T08:57:31+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "8bfcf712-49b7-4ab5-a3c8-c3a6ba59a1f4",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_085718_8bfcf712-49b7-4ab5-a3c8-c3a6ba59a1f4.png",
+        "finished": "2026-10-02T09:00:28+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "dfdda4b8-dfde-4076-bfd4-b05852e6631b",
+            "submitted": "2026-10-02T09:06:53+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "dfdda4b8-dfde-4076-bfd4-b05852e6631b",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_090640_dfdda4b8-dfde-4076-bfd4-b05852e6631b.mp4",
+        "finished": "2026-10-02T09:12:34+00:00"
+      }
+    },
+    {
+      "n": 12,
+      "title": "The snow takes the cattle",
+      "pov": true,
+      "narration": "We kill our oxen and cows and freeze the meat in the snow. The snow is our icebox. But the snow also steals from us. In the storms, some of the cattle wander off and are buried. Under ten feet of white, nobody can find them again.",
+      "narration_voiced": "We kill our oxen and cows and freeze the meat in the snow. The snow is our icebox. But the snow also steals from us. In the storms, some of the cattle wander off and are buried. Under ten feet of white, nobody can find them again.",
+      "image_prompt": "POV outside the snowbound cabins in December 1846: emigrant men probing deep snow with long poles, searching for buried cattle, cabins buried to the eaves, grey sky, pine trees heavy with snow",
+      "shots": [
+        "men push long poles deep into the snow, searching",
+        "a man shakes his head and pulls his pole out empty",
+        "the cabins sit buried to their eaves under a grey sky"
+      ],
+      "sound": "wind, poles crunching into snow, men calling to each other",
+      "refs": [
+        "lake"
+      ],
+      "voice_mood": "tense",
+      "must_not": [
+        "dead animals",
+        "blood"
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "87a43c88-2236-4136-af9f-c9dd08460675",
+            "submitted": "2026-10-02T08:57:31+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "87a43c88-2236-4136-af9f-c9dd08460675",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_085718_87a43c88-2236-4136-af9f-c9dd08460675.png",
+        "finished": "2026-10-02T09:00:29+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "3526aa9b-2a4b-4469-8a4a-7cf7140c9c8c",
+            "submitted": "2026-10-02T09:06:53+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "3526aa9b-2a4b-4469-8a4a-7cf7140c9c8c",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_090639_3526aa9b-2a4b-4469-8a4a-7cf7140c9c8c.mp4",
+        "finished": "2026-10-02T09:12:35+00:00"
+      }
+    },
+    {
+      "n": 13,
+      "title": "The diary",
+      "pov": true,
+      "narration": "I keep my diary every day. The weather, the wind, who is sick. 'Snow about three feet deep.' Then, 'six feet.' Then, 'eight feet on the level.' And in January: 'must be thirteen feet deep.' We dig steps up from our door just to reach the daylight.",
+      "narration_voiced": "I keep my diary every day. The weather, the wind, who is sick. 'Snow about three feet deep.' Then, 'six feet.' Then, 'eight feet on the level.' And in January: 'must be thirteen feet deep.' We dig steps up from our door just to reach the daylight.",
+      "image_prompt": "POV from inside the dark doorway of a buried log cabin looking up a steep staircase cut into packed snow walls, leading up to a small bright square of daylight far above; in the foreground the narrator's weathered hand holds a small handmade notebook",
+      "shots": [
+        "the narrator's hand writes a line in the small notebook",
+        "steps cut in packed snow climb from the cabin door toward daylight",
+        "a boy climbs the snow steps toward the light above"
+      ],
+      "sound": "pencil scratching, wind far above, snow crunching under small feet",
+      "refs": [
+        "cabin_in"
+      ],
+      "voice_mood": "intrigue",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "fe7d8fa0-76a9-4ba7-9a94-8b946dc0ca82",
+            "submitted": "2026-10-02T08:57:31+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "fe7d8fa0-76a9-4ba7-9a94-8b946dc0ca82",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_085718_fe7d8fa0-76a9-4ba7-9a94-8b946dc0ca82.png",
+        "finished": "2026-10-02T09:00:31+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "ca23df6e-d8cb-4662-84ca-1a1bb72f00c2",
+            "submitted": "2026-10-02T09:06:53+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "ca23df6e-d8cb-4662-84ca-1a1bb72f00c2",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_090640_ca23df6e-d8cb-4662-84ca-1a1bb72f00c2.mp4",
+        "finished": "2026-10-02T09:12:37+00:00"
+      }
+    },
+    {
+      "n": 14,
+      "title": "The Forlorn Hope",
+      "pov": false,
+      "narration": "In December, seventeen of the strongest decide to cross the mountains on homemade snowshoes, to bring help. They call themselves the Forlorn Hope. They take food for six days. The journey will take them thirty-three. Only seven of them will reach the valley.",
+      "narration_voiced": "In December, seventeen of the strongest decide to cross the mountains on homemade snowshoes, to bring help. They call themselves the Forlorn Hope. They take food for six days. The journey will take them thirty-three. Only seven of them... will reach the valley.",
+      "image_prompt": "December 1846: a line of seventeen thin emigrant men and women wrapped in blankets walking away from the buried cabins on crude homemade wooden snowshoes, climbing toward the snowy pass, seen from behind, families watching from the snow",
+      "shots": [
+        "men and women tie crude wooden snowshoes to their boots",
+        "a line of people climbs toward the pass, seen from behind",
+        "families stand in the snow and watch them grow small"
+      ],
+      "sound": "wind, snowshoes crunching, a woman calling a goodbye",
+      "refs": [
+        "lake"
+      ],
+      "voice_mood": "tense",
+      "beat": "⚡ KIRILMA 2: Forlorn Hope",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "6b25c181-de14-4deb-aaa5-7656938cf0f7",
+            "submitted": "2026-10-02T08:57:31+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "6b25c181-de14-4deb-aaa5-7656938cf0f7",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_085717_6b25c181-de14-4deb-aaa5-7656938cf0f7.png",
+        "finished": "2026-10-02T09:00:32+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "89d8a745-8b9d-491c-8483-90e660b595e5",
+            "submitted": "2026-10-02T09:06:53+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "89d8a745-8b9d-491c-8483-90e660b595e5",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_090639_89d8a745-8b9d-491c-8483-90e660b595e5.mp4",
+        "finished": "2026-10-02T09:12:39+00:00"
+      }
+    },
+    {
+      "n": 15,
+      "title": "Christmas",
+      "pov": true,
+      "narration": "Christmas Day. I write: 'Began to snow yesterday snowed all night, and snows yet rapidly. Great difficulty in getting wood.' Peggy has saved a little something for the children. We pray. And outside, the wind screams down off the mountains.",
+      "narration_voiced": "Christmas Day. I write: 'Began to snow yesterday... snowed all night, and snows yet rapidly. Great difficulty in getting wood.' Peggy has saved a little something for the children. We pray. And outside, the wind screams down off the mountains.",
+      "image_prompt": "POV inside the dark cabin on Christmas Day 1846: Peggy (Irish pioneer mother about 40, strong tired face, dark hair pinned under a faded dark blue bonnet or wool shawl, dark brown wool dress, grey knitted shawl) giving each of the Breen boys (six pioneer boys of different ages from about 4 to 14, plain homespun shirts, wool trousers, patched coats, wool caps) a tiny piece of food from a cloth bundle, a single small candle, snow pressing at the window, everyone wrapped in blankets",
+      "shots": [
+        "Peggy hands each boy a tiny piece of food from a cloth bundle",
+        "the youngest boy holds it in both hands and smiles",
+        "the family bows heads in prayer by a single small candle"
+      ],
+      "sound": "howling wind, quiet prayer, a candle flickering",
+      "refs": [
+        "cabin_in",
+        "peggy",
+        "boys"
+      ],
+      "voice_mood": "sad",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "45509053-7f93-46a7-abfc-b649405e993b",
+            "submitted": "2026-10-02T08:57:31+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "45509053-7f93-46a7-abfc-b649405e993b",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_085718_45509053-7f93-46a7-abfc-b649405e993b.png",
+        "finished": "2026-10-02T09:00:32+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "152b8efd-a8f6-4411-a441-7d81702cad1a",
+            "submitted": "2026-10-02T09:06:53+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "152b8efd-a8f6-4411-a441-7d81702cad1a",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_090639_152b8efd-a8f6-4411-a441-7d81702cad1a.mp4",
+        "finished": "2026-10-02T09:12:40+00:00"
+      }
+    },
+    {
+      "n": 16,
+      "title": "Hides",
+      "pov": false,
+      "narration": "By January, the meat is gone. So we eat the hides. Peggy cuts the ox hides into strips, singes off the hair, and boils them for hours, until they turn into a thick, grey glue. It tastes of nothing. I write: 'Hides are the only article we depend on. May God send us help.'",
+      "narration_voiced": "By January, the meat is gone. So we eat the hides. Peggy cuts the ox hides into strips, singes off the hair, and boils them for hours, until they turn into a thick, grey glue. It tastes of nothing. I write: 'Hides are the only article we depend on. May God send us help.'",
+      "image_prompt": "Inside the dim log cabin by firelight: Peggy (Irish pioneer mother about 40, dark blue bonnet, grey knitted shawl, dark brown wool dress) stirring an iron pot of thick grey boiling glue made from ox hide over the fire, steam rising, a strip of singed ox hide in her other hand, two hungry boys watching from the shadows",
+      "shots": [
+        "Peggy holds a strip of ox hide over the flames to burn off the hair",
+        "she stirs a pot of thick grey glue as steam rises",
+        "a boy takes a spoonful and grimaces, then eats it anyway"
+      ],
+      "sound": "sizzling hair, bubbling pot, fire, wind",
+      "refs": [
+        "cabin_in",
+        "peggy",
+        "boys"
+      ],
+      "voice_mood": "tense",
+      "beat": "Hayatta kalma kuralı 2",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "f10094f7-8e9e-4fbd-a030-508b7428dc45",
+            "submitted": "2026-10-02T09:03:47+00:00",
+            "credits": 1.0
+          }
+        ],
+        "history": [
+          {
+            "status": "done",
+            "attempts": [
+              {
+                "job_id": "fdd3cfb6-569d-4a53-908f-4966c32ed316",
+                "submitted": "2026-10-02T08:59:27+00:00",
+                "credits": 1.0
+              }
+            ],
+            "job_id": "fdd3cfb6-569d-4a53-908f-4966c32ed316",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_085915_fdd3cfb6-569d-4a53-908f-4966c32ed316.png",
+            "finished": "2026-10-02T09:01:28+00:00",
+            "redo_reason": "kis sahnesinde okuz/vagon",
+            "redo_at": "2026-10-02T09:01:59+00:00"
+          }
+        ],
+        "job_id": "f10094f7-8e9e-4fbd-a030-508b7428dc45",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_090336_f10094f7-8e9e-4fbd-a030-508b7428dc45.png",
+        "finished": "2026-10-02T09:04:28+00:00"
+      },
+      "must_not": [
+        "covered wagons, oxen, cattle, cows, horses or any living farm animals (by this time all the animals had died or been eaten)"
+      ],
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "7262e903-56c5-48cb-b723-48a8d06cd810",
+            "submitted": "2026-10-02T09:11:20+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "7262e903-56c5-48cb-b723-48a8d06cd810",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_091109_7262e903-56c5-48cb-b723-48a8d06cd810.mp4",
+        "finished": "2026-10-02T09:14:52+00:00"
+      }
+    },
+    {
+      "n": 17,
+      "title": "Nothing wasted",
+      "pov": true,
+      "narration": "Then the bones. We boil them again and again, and when they give nothing more, we burn them and eat them like crackers. The children catch mice. We chew bark, and twigs, and the leather of old shoes. Nothing is wasted. Nothing.",
+      "narration_voiced": "Then the bones. We boil them again and again, and when they give nothing more, we burn them and eat them like crackers. The children catch mice. We chew bark, and twigs, and the leather of old shoes. Nothing is wasted. Nothing.",
+      "image_prompt": "POV in the dim cabin: blackened charred ox bones in the embers of the fire, a boy holding up a small field mouse by its tail with a proud thin face, strips of bark and old leather shoe laces on the table",
+      "shots": [
+        "the narrator's hand pulls a charred bone out of the embers",
+        "a thin boy proudly holds up a small mouse by its tail",
+        "strips of bark and old leather lie on the table"
+      ],
+      "sound": "fire crackling, bone cracking, a child's small laugh",
+      "refs": [
+        "cabin_in",
+        "boys"
+      ],
+      "voice_mood": "tense",
+      "must_not": [
+        "human bones",
+        "skulls",
+        "covered wagons, oxen, cattle, cows, horses or any living farm animals (by this time all the animals had died or been eaten)"
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "1a3c58f6-6fe9-4806-b540-6e39407552b9",
+            "submitted": "2026-10-02T09:03:47+00:00",
+            "credits": 1.0
+          }
+        ],
+        "history": [
+          {
+            "status": "done",
+            "attempts": [
+              {
+                "job_id": "2fa05387-5044-4337-bf47-0f951791fc43",
+                "submitted": "2026-10-02T08:59:27+00:00",
+                "credits": 1.0
+              }
+            ],
+            "job_id": "2fa05387-5044-4337-bf47-0f951791fc43",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_085916_2fa05387-5044-4337-bf47-0f951791fc43.png",
+            "finished": "2026-10-02T09:01:29+00:00",
+            "redo_reason": "kis sahnesinde okuz/vagon",
+            "redo_at": "2026-10-02T09:01:59+00:00"
+          }
+        ],
+        "job_id": "1a3c58f6-6fe9-4806-b540-6e39407552b9",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_090336_1a3c58f6-6fe9-4806-b540-6e39407552b9.png",
+        "finished": "2026-10-02T09:04:30+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "67176c6b-59a1-44cc-91b0-913fd108dc6e",
+            "submitted": "2026-10-02T09:11:20+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "67176c6b-59a1-44cc-91b0-913fd108dc6e",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_091108_67176c6b-59a1-44cc-91b0-913fd108dc6e.mp4",
+        "finished": "2026-10-02T09:14:53+00:00"
+      }
+    },
+    {
+      "n": 18,
+      "title": "The dying",
+      "pov": false,
+      "narration": "Others are not so lucky. In the cabins around us, people begin to die. First the weakest: the old, the babies and the young men who worked the hardest. The ground is frozen hard as iron, so the dead are laid to rest in the snow.",
+      "narration_voiced": "Others are not so lucky. In the cabins around us, people begin to die. First the weakest: the old, the babies... and the young men who worked the hardest. The ground is frozen hard as iron, so the dead are laid to rest in the snow.",
+      "image_prompt": "Grey winter day at the snowbound cabins: two exhausted emigrant men carrying a long shape wrapped in a blanket out of a buried cabin, a woman in a shawl standing at a doorway cut into the snow with her head bowed, pine trees",
+      "shots": [
+        "two thin men carry a blanket-wrapped shape out of a cabin",
+        "a woman in a shawl bows her head at the doorway",
+        "snow falls softly on a small mound beside the cabins"
+      ],
+      "sound": "wind, slow footsteps in snow, a quiet sob",
+      "refs": [],
+      "voice_mood": "sad",
+      "must": [
+        "the body is fully wrapped in a blanket, nothing visible"
+      ],
+      "must_not": [
+        "visible corpse, face or limbs of the dead",
+        "blood",
+        "gore",
+        "covered wagons, oxen, cattle, cows, horses or any living farm animals (by this time all the animals had died or been eaten)"
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "058f7da9-c77a-4e76-9656-26c380c95a6f",
+            "submitted": "2026-10-02T09:03:47+00:00",
+            "credits": 1.0
+          }
+        ],
+        "history": [
+          {
+            "status": "done",
+            "attempts": [
+              {
+                "job_id": "bbbb40e5-3bb0-4df3-9b60-b3c8ef8476e3",
+                "submitted": "2026-10-02T08:59:27+00:00",
+                "credits": 1.0
+              }
+            ],
+            "job_id": "bbbb40e5-3bb0-4df3-9b60-b3c8ef8476e3",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_085916_bbbb40e5-3bb0-4df3-9b60-b3c8ef8476e3.png",
+            "finished": "2026-10-02T09:01:31+00:00",
+            "redo_reason": "kis sahnesinde okuz/vagon",
+            "redo_at": "2026-10-02T09:01:59+00:00"
+          }
+        ],
+        "job_id": "058f7da9-c77a-4e76-9656-26c380c95a6f",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_090336_058f7da9-c77a-4e76-9656-26c380c95a6f.png",
+        "finished": "2026-10-02T09:04:31+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "6538b4a1-7212-4018-8e0d-d9cc3bc82e6a",
+            "submitted": "2026-10-02T09:11:20+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "6538b4a1-7212-4018-8e0d-d9cc3bc82e6a",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_091109_6538b4a1-7212-4018-8e0d-d9cc3bc82e6a.mp4",
+        "finished": "2026-10-02T09:14:54+00:00"
+      }
+    },
+    {
+      "n": 19,
+      "title": "I count",
+      "pov": true,
+      "narration": "I will be honest with you. Some nights I lie awake and I count. How many days of hides. How many children. I write: 'May God relieve us all from this difficulty, if it is His holy will.' Writing it is the only thing that keeps my hands from shaking.",
+      "narration_voiced": "I will be honest with you. Some nights I lie awake... and I count. How many days of hides. How many children. I write: 'May God relieve us all from this difficulty, if it is His holy will.' Writing it is the only thing that keeps my hands from shaking.",
+      "image_prompt": "POV at night lying on a blanket in the dark cabin, looking at the sleeping family by the dim glow of the fire: Peggy (Irish pioneer mother about 40, strong tired face, dark hair pinned under a faded dark blue bonnet or wool shawl, dark brown wool dress, grey knitted shawl) asleep holding baby Isabella (an infant under one year old wrapped in a grey wool blanket), the Breen boys (six pioneer boys of different ages from about 4 to 14, plain homespun shirts, wool trousers, patched coats, wool caps) asleep in a row under blankets, the narrator's hand resting on the small notebook",
+      "shots": [
+        "the narrator looks across the dark room at his sleeping children",
+        "Peggy sleeps holding the baby close by the dim fire",
+        "the narrator's trembling hand rests on the closed notebook"
+      ],
+      "sound": "quiet breathing, dying fire, wind over the snow",
+      "refs": [
+        "cabin_in",
+        "peggy",
+        "boys"
+      ],
+      "voice_mood": "sad",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "560c6855-28e4-4b34-8fff-3f75162e1421",
+            "submitted": "2026-10-02T08:59:27+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "560c6855-28e4-4b34-8fff-3f75162e1421",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_085916_560c6855-28e4-4b34-8fff-3f75162e1421.png",
+        "finished": "2026-10-02T09:01:32+00:00"
+      },
+      "must_not": [
+        "covered wagons, oxen, cattle, cows, horses or any living farm animals (by this time all the animals had died or been eaten)"
+      ],
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "d9af42ac-b0c3-4514-ac53-5b29d62878b3",
+            "submitted": "2026-10-02T09:11:20+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "d9af42ac-b0c3-4514-ac53-5b29d62878b3",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_091109_d9af42ac-b0c3-4514-ac53-5b29d62878b3.mp4",
+        "finished": "2026-10-02T09:14:56+00:00"
+      }
+    },
+    {
+      "n": 20,
+      "title": "Voices in the snow",
+      "pov": true,
+      "narration": "Then, on the eighteenth of February voices in the snow. Seven men from California! The Forlorn Hope made it, and help has come. But they carry only what a man can carry on his back. And they can take out only those strong enough to walk.",
+      "narration_voiced": "Then, on the eighteenth of February... voices in the snow. Seven men from California! The Forlorn Hope made it, and help has come. But they carry only what a man can carry on his back. And they can take out only those strong enough to walk.",
+      "image_prompt": "POV from the top of the snow steps outside the buried cabin in February 1847: seven rescuers in wool coats and fur caps with heavy packs on their backs walking toward the cabins across deep snow, emigrants climbing out of the snow to meet them, bright cold sunlight",
+      "shots": [
+        "seven men with heavy packs appear over the snow",
+        "thin emigrants climb out of the snow holes and stumble toward them",
+        "a rescuer hands out small pieces of dried beef"
+      ],
+      "sound": "distant shouts, crunching snow, a woman crying with joy",
+      "refs": [],
+      "voice_mood": "hopeful",
+      "beat": "⚡ KIRILMA 3: ilk kurtarma",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "b81dda02-bb58-440e-a15b-ec4233f018f9",
+            "submitted": "2026-10-02T09:03:47+00:00",
+            "credits": 1.0
+          }
+        ],
+        "history": [
+          {
+            "status": "done",
+            "attempts": [
+              {
+                "job_id": "84f4c33e-1b2f-4e07-a4ce-9f142c45f123",
+                "submitted": "2026-10-02T08:59:27+00:00",
+                "credits": 1.0
+              }
+            ],
+            "job_id": "84f4c33e-1b2f-4e07-a4ce-9f142c45f123",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_085916_84f4c33e-1b2f-4e07-a4ce-9f142c45f123.png",
+            "finished": "2026-10-02T09:01:33+00:00",
+            "redo_reason": "kis sahnesinde okuz/vagon",
+            "redo_at": "2026-10-02T09:01:59+00:00"
+          }
+        ],
+        "job_id": "b81dda02-bb58-440e-a15b-ec4233f018f9",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_090336_b81dda02-bb58-440e-a15b-ec4233f018f9.png",
+        "finished": "2026-10-02T09:04:33+00:00"
+      },
+      "must_not": [
+        "covered wagons, oxen, cattle, cows, horses or any living farm animals (by this time all the animals had died or been eaten)"
+      ],
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "d7de1e9c-6325-4072-9f24-e7fa1f6718a2",
+            "submitted": "2026-10-02T09:11:20+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "d7de1e9c-6325-4072-9f24-e7fa1f6718a2",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_091108_d7de1e9c-6325-4072-9f24-e7fa1f6718a2.mp4",
+        "finished": "2026-10-02T09:14:57+00:00"
+      }
+    },
+    {
+      "n": 21,
+      "title": "Two of our boys",
+      "pov": false,
+      "narration": "Twenty-three people leave with them, mostly children and mothers. Two of our boys go too, Edward and Simon. Peggy holds them for a long time. The rest of us stay, and wait for the next rescue. We still have hides. Others have nothing at all.",
+      "narration_voiced": "Twenty-three people leave with them, mostly children and mothers. Two of our boys go too, Edward and Simon. Peggy holds them for a long time. The rest of us stay, and wait for the next rescue. We still have hides. Others have nothing at all.",
+      "image_prompt": "Bright cold morning at the buried cabins: Peggy (Irish pioneer mother about 40, strong tired face, dark hair pinned under a faded dark blue bonnet or wool shawl, dark brown wool dress, grey knitted shawl) hugging two boys tightly at the start of a line of thin emigrants and rescuers heading toward the pass, the rest of the Breen boys (six pioneer boys of different ages from about 4 to 14, plain homespun shirts, wool trousers, patched coats, wool caps) standing beside her",
+      "shots": [
+        "Peggy holds two of her boys tightly",
+        "the two boys join a line of people walking toward the pass",
+        "Peggy watches them go, the baby in her arms"
+      ],
+      "sound": "wind, footsteps in snow, a quiet goodbye",
+      "refs": [
+        "peggy",
+        "boys"
+      ],
+      "voice_mood": "sad",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "0e2effb5-0746-47a0-be85-1c756f5ba5b0",
+            "submitted": "2026-10-02T09:03:47+00:00",
+            "credits": 1.0
+          }
+        ],
+        "history": [
+          {
+            "status": "done",
+            "attempts": [
+              {
+                "job_id": "e8cbac94-82c9-4cf7-8602-a1c3ab00d9e9",
+                "submitted": "2026-10-02T08:59:27+00:00",
+                "credits": 1.0
+              }
+            ],
+            "job_id": "e8cbac94-82c9-4cf7-8602-a1c3ab00d9e9",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_085916_e8cbac94-82c9-4cf7-8602-a1c3ab00d9e9.png",
+            "finished": "2026-10-02T09:01:34+00:00",
+            "redo_reason": "kis sahnesinde okuz/vagon",
+            "redo_at": "2026-10-02T09:01:59+00:00"
+          }
+        ],
+        "job_id": "0e2effb5-0746-47a0-be85-1c756f5ba5b0",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_090336_0e2effb5-0746-47a0-be85-1c756f5ba5b0.png",
+        "finished": "2026-10-02T09:04:34+00:00"
+      },
+      "must_not": [
+        "covered wagons, oxen, cattle, cows, horses or any living farm animals (by this time all the animals had died or been eaten)"
+      ],
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "90f74837-4788-47e2-a66b-1f56310a4d55",
+            "submitted": "2026-10-02T09:11:20+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "90f74837-4788-47e2-a66b-1f56310a4d55",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_091109_90f74837-4788-47e2-a66b-1f56310a4d55.mp4",
+        "finished": "2026-10-02T09:14:59+00:00"
+      }
+    },
+    {
+      "n": 22,
+      "title": "Our dog",
+      "pov": true,
+      "narration": "Five days later, I do the thing I have been putting off. 'Shot Towser today,' I write, 'and dressed his flesh.' Our dog. The children loved him. That same morning, a neighbour comes to borrow meat. They think I have meat to spare. I know to the contrary.",
+      "narration_voiced": "Five days later, I do the thing I have been putting off. 'Shot Towser today,' I write, 'and dressed his flesh.' Our dog. The children loved him. That same morning, a neighbour comes to borrow meat. They think I have meat to spare. I know to the contrary.",
+      "image_prompt": "POV at the cabin door cut in the snow: a thin woman in a shawl standing outside asking for food, the narrator's hand on the door, an old leather dog collar hanging on a nail beside the door",
+      "shots": [
+        "an old leather dog collar hangs on a nail by the door",
+        "a thin woman in a shawl stands at the door and asks for meat",
+        "the narrator's hand slowly closes the wooden door on the cold"
+      ],
+      "sound": "wind, a quiet voice asking, a door creaking",
+      "refs": [
+        "cabin_in"
+      ],
+      "voice_mood": "sad",
+      "must_not": [
+        "the dog's body",
+        "blood",
+        "meat of an animal being butchered",
+        "covered wagons, oxen, cattle, cows, horses or any living farm animals (by this time all the animals had died or been eaten)"
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "cdb40d11-b2b4-4e08-a641-847951b62ffe",
+            "submitted": "2026-10-02T09:03:47+00:00",
+            "credits": 1.0
+          }
+        ],
+        "history": [
+          {
+            "status": "done",
+            "attempts": [
+              {
+                "job_id": "e13f9cfc-7ce1-4818-89d4-74b43e74e962",
+                "submitted": "2026-10-02T08:59:27+00:00",
+                "credits": 1.0
+              }
+            ],
+            "job_id": "e13f9cfc-7ce1-4818-89d4-74b43e74e962",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_085916_e13f9cfc-7ce1-4818-89d4-74b43e74e962.png",
+            "finished": "2026-10-02T09:01:36+00:00",
+            "redo_reason": "kis sahnesinde okuz/vagon",
+            "redo_at": "2026-10-02T09:02:00+00:00"
+          }
+        ],
+        "job_id": "cdb40d11-b2b4-4e08-a641-847951b62ffe",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_090336_cdb40d11-b2b4-4e08-a641-847951b62ffe.png",
+        "finished": "2026-10-02T09:04:35+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "95186bde-3096-4d70-bb4a-4ac8d0db8f7f",
+            "submitted": "2026-10-02T09:11:20+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "95186bde-3096-4d70-bb4a-4ac8d0db8f7f",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_091109_95186bde-3096-4d70-bb4a-4ac8d0db8f7f.mp4",
+        "finished": "2026-10-02T09:15:01+00:00"
+      }
+    },
+    {
+      "n": 23,
+      "title": "What I will not say",
+      "pov": false,
+      "narration": "By now, there is talk in the camp that I will not repeat to you. When the living have nothing left some of them turn to the dead. In my diary, I write only what I hear. And I pray it never comes to that in our cabin.",
+      "narration_voiced": "By now, there is talk in the camp that I will not repeat to you. When the living have nothing left... some of them turn to the dead. In my diary, I write only what I hear. And I pray it never comes to that in our cabin.",
+      "image_prompt": "Night at the snowbound cabins: dark log cabins buried in snow, one small window glowing faintly, a lone figure standing in the snow outside looking at another cabin, stars and cold moonlight, eerie silence",
+      "shots": [
+        "moonlight falls on the buried cabins",
+        "one small window glows faintly in the dark",
+        "a lone figure stands in the snow and turns away"
+      ],
+      "sound": "dead silence, faint wind, a distant door closing",
+      "refs": [],
+      "voice_mood": "sad",
+      "must_not": [
+        "bodies",
+        "human remains",
+        "blood",
+        "cooking pots with meat",
+        "anything gory",
+        "covered wagons, oxen, cattle, cows, horses or any living farm animals (by this time all the animals had died or been eaten)"
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "6f866663-c850-40f3-abb4-f745254a9694",
+            "submitted": "2026-10-02T09:03:47+00:00",
+            "credits": 1.0
+          }
+        ],
+        "history": [
+          {
+            "status": "done",
+            "attempts": [
+              {
+                "job_id": "0a86f64d-e29a-4e87-93cd-32771904c40f",
+                "submitted": "2026-10-02T08:59:27+00:00",
+                "credits": 1.0
+              }
+            ],
+            "job_id": "0a86f64d-e29a-4e87-93cd-32771904c40f",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_085916_0a86f64d-e29a-4e87-93cd-32771904c40f.png",
+            "finished": "2026-10-02T09:01:37+00:00",
+            "redo_reason": "kis sahnesinde okuz/vagon",
+            "redo_at": "2026-10-02T09:02:00+00:00"
+          }
+        ],
+        "job_id": "6f866663-c850-40f3-abb4-f745254a9694",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_090336_6f866663-c850-40f3-abb4-f745254a9694.png",
+        "finished": "2026-10-02T09:04:36+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "bf2122cc-5f2c-475b-b641-4997f47a49b7",
+            "submitted": "2026-10-02T09:11:20+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "bf2122cc-5f2c-475b-b641-4997f47a49b7",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_091109_bf2122cc-5f2c-475b-b641-4997f47a49b7.mp4",
+        "finished": "2026-10-02T09:15:03+00:00"
+      }
+    },
+    {
+      "n": 24,
+      "title": "Reed comes back",
+      "pov": true,
+      "narration": "On the first of March, ten more men arrive. And leading them is James Reed. The man we drove out in October. He crossed the mountains and now he has come back for his family. I write my last line: 'We are to start in two or three days.'",
+      "narration_voiced": "On the first of March, ten more men arrive. And leading them is James Reed. The man we drove out in October. He crossed the mountains... and now he has come back for his family. I write my last line: 'We are to start in two or three days.'",
+      "image_prompt": "POV from the cabin roof level on 1 March 1847: a line of ten rescuers with heavy packs crossing the snow toward the buried cabins, a bearded man in a fur cap at the front seen from a distance, a girl running through the snow toward him",
+      "shots": [
+        "ten rescuers cross the bright snow toward the cabins",
+        "a girl runs through the snow toward the man at the front",
+        "the narrator's hand writes a final line and closes the notebook"
+      ],
+      "sound": "shouts of joy, crunching snow, wind",
+      "refs": [],
+      "voice_mood": "hopeful",
+      "beat": "⚡ KIRILMA 4: Reed geri dönüyor",
+      "must": [
+        "the leading man is seen only from a distance or from behind"
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "d8234151-0056-4f22-b301-90b8abe80091",
+            "submitted": "2026-10-02T09:03:47+00:00",
+            "credits": 1.0
+          }
+        ],
+        "history": [
+          {
+            "status": "done",
+            "attempts": [
+              {
+                "job_id": "131973a5-2004-4b51-b8bb-b71ed2fedb3b",
+                "submitted": "2026-10-02T08:59:27+00:00",
+                "credits": 1.0
+              }
+            ],
+            "job_id": "131973a5-2004-4b51-b8bb-b71ed2fedb3b",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_085916_131973a5-2004-4b51-b8bb-b71ed2fedb3b.png",
+            "finished": "2026-10-02T09:01:38+00:00",
+            "redo_reason": "kis sahnesinde okuz/vagon",
+            "redo_at": "2026-10-02T09:02:00+00:00"
+          }
+        ],
+        "job_id": "d8234151-0056-4f22-b301-90b8abe80091",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_090336_d8234151-0056-4f22-b301-90b8abe80091.png",
+        "finished": "2026-10-02T09:04:37+00:00"
+      },
+      "must_not": [
+        "covered wagons, oxen, cattle, cows, horses or any living farm animals (by this time all the animals had died or been eaten)"
+      ],
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "aa0ceb36-4c51-42ba-a2b8-785974b0264f",
+            "submitted": "2026-10-02T09:11:20+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "aa0ceb36-4c51-42ba-a2b8-785974b0264f",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_091108_aa0ceb36-4c51-42ba-a2b8-785974b0264f.mp4",
+        "finished": "2026-10-02T09:15:53+00:00"
+      }
+    },
+    {
+      "n": 25,
+      "title": "Starved Camp",
+      "pov": false,
+      "narration": "We leave the lake with Reed's party, seventeen of us. Two days out, a blizzard hits. Reed's men are starving too. They push ahead to bring back food and leave us behind, my family and a few others, around one fire in the snow. Later, people will call this place Starved Camp.",
+      "narration_voiced": "We leave the lake with Reed's party, seventeen of us. Two days out, a blizzard hits. Reed's men are starving too. They push ahead to bring back food... and leave us behind, my family and a few others, around one fire in the snow. Later, people will call this place Starved Camp.",
+      "image_prompt": "A violent blizzard high in the Sierra Nevada in March 1847: a small group of emigrants huddled in blankets around a single fire in a hollow in the deep snow, a few rescuers walking away into the white storm, seen from behind",
+      "shots": [
+        "a small group huddles around one fire in a violent blizzard",
+        "a few men walk away into the white storm, seen from behind",
+        "a mother pulls a blanket over her children's heads"
+      ],
+      "sound": "screaming blizzard wind, a struggling fire",
+      "refs": [
+        "peggy",
+        "boys"
+      ],
+      "voice_mood": "tense",
+      "beat": "⚡ KIRILMA 5: Starved Camp",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "2a50d36d-c0a1-4f9f-b308-416bac63c956",
+            "submitted": "2026-10-02T09:03:47+00:00",
+            "credits": 1.0
+          }
+        ],
+        "history": [
+          {
+            "status": "done",
+            "attempts": [
+              {
+                "job_id": "f912875e-b697-4603-aaaf-2b4b2a9315b8",
+                "submitted": "2026-10-02T08:59:27+00:00",
+                "credits": 1.0
+              }
+            ],
+            "job_id": "f912875e-b697-4603-aaaf-2b4b2a9315b8",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_085916_f912875e-b697-4603-aaaf-2b4b2a9315b8.png",
+            "finished": "2026-10-02T09:01:39+00:00",
+            "redo_reason": "kis sahnesinde okuz/vagon",
+            "redo_at": "2026-10-02T09:02:00+00:00"
+          }
+        ],
+        "job_id": "2a50d36d-c0a1-4f9f-b308-416bac63c956",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_090336_2a50d36d-c0a1-4f9f-b308-416bac63c956.png",
+        "finished": "2026-10-02T09:04:37+00:00"
+      },
+      "must_not": [
+        "covered wagons, oxen, cattle, cows, horses or any living farm animals (by this time all the animals had died or been eaten)"
+      ],
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "e4378cd1-d2db-41f4-8085-79d07aa71ee1",
+            "submitted": "2026-10-02T09:11:21+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "e4378cd1-d2db-41f4-8085-79d07aa71ee1",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_091109_e4378cd1-d2db-41f4-8085-79d07aa71ee1.mp4",
+        "finished": "2026-10-02T09:15:55+00:00"
+      }
+    },
+    {
+      "n": 26,
+      "title": "Peggy's fire",
+      "pov": true,
+      "narration": "And here, Peggy saves us all. The heat of our fire melts the snow beneath it, and it sinks deeper and deeper into a pit. She keeps it burning. She feeds it every log we have, holds the baby against her chest, and does not sleep. What else happened at that camp. I leave between me and God.",
+      "narration_voiced": "And here, Peggy saves us all. The heat of our fire melts the snow beneath it, and it sinks deeper and deeper into a pit. She keeps it burning. She feeds it every log we have, holds the baby against her chest, and does not sleep. What else happened at that camp... I leave between me and God.",
+      "image_prompt": "POV looking down into a deep pit melted in the snow, a small fire burning on logs at the bottom, Peggy (Irish pioneer mother about 40, strong tired face, dark hair pinned under a faded dark blue bonnet or wool shawl, dark brown wool dress, grey knitted shawl) kneeling beside it feeding it a log while holding baby Isabella (an infant under one year old wrapped in a grey wool blanket) inside her shawl, snow walls around, night blizzard above",
+      "shots": [
+        "the fire burns at the bottom of a deep pit melted in the snow",
+        "Peggy leans down and feeds a log into the fire",
+        "she pulls the baby closer inside her shawl and keeps watch"
+      ],
+      "sound": "wind above, fire hissing on wet wood, a baby whimpering",
+      "refs": [
+        "peggy"
+      ],
+      "voice_mood": "tense",
+      "must_not": [
+        "bodies",
+        "human remains",
+        "blood",
+        "covered wagons, oxen, cattle, cows, horses or any living farm animals (by this time all the animals had died or been eaten)"
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "e51cad25-e282-4f3f-8ef5-83a8ad698cdc",
+            "submitted": "2026-10-02T09:03:47+00:00",
+            "credits": 1.0
+          }
+        ],
+        "history": [
+          {
+            "status": "done",
+            "attempts": [
+              {
+                "job_id": "604c6cce-8439-4fe1-afc7-acce03865c0d",
+                "submitted": "2026-10-02T08:59:27+00:00",
+                "credits": 1.0
+              }
+            ],
+            "job_id": "604c6cce-8439-4fe1-afc7-acce03865c0d",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_085916_604c6cce-8439-4fe1-afc7-acce03865c0d.png",
+            "finished": "2026-10-02T09:01:41+00:00",
+            "redo_reason": "kis sahnesinde okuz/vagon",
+            "redo_at": "2026-10-02T09:02:00+00:00"
+          }
+        ],
+        "job_id": "e51cad25-e282-4f3f-8ef5-83a8ad698cdc",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_090336_e51cad25-e282-4f3f-8ef5-83a8ad698cdc.png",
+        "finished": "2026-10-02T09:04:38+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "94406932-d35a-41e0-8384-7b8ca8a443af",
+            "submitted": "2026-10-02T09:11:21+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "94406932-d35a-41e0-8384-7b8ca8a443af",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_091109_94406932-d35a-41e0-8384-7b8ca8a443af.mp4",
+        "finished": "2026-10-02T09:15:57+00:00"
+      }
+    },
+    {
+      "n": 27,
+      "title": "John Stark",
+      "pov": false,
+      "narration": "After about a week, men come up through the snow: the third rescue. One of them, a big man named John Stark, refuses to leave anyone behind. He carries the little ones on his back, two at a time, all the way down the mountain.",
+      "narration_voiced": "After about a week, men come up through the snow: the third rescue. One of them, a big man named John Stark, refuses to leave anyone behind. He carries the little ones on his back, two at a time, all the way down the mountain.",
+      "image_prompt": "Bright clear morning in the snowy Sierra Nevada in March 1847: a big broad-shouldered rescuer in a fur cap and wool coat walking down a snowy mountain slope carrying two small children on his back, seen from behind, other rescuers helping thin adults behind him, pine trees and blue sky",
+      "shots": [
+        "seen from behind, a big man crouches in the snow as two small children climb onto his back",
+        "he walks down the snowy slope with them, seen from behind",
+        "other rescuers help the thin survivors walk behind him"
+      ],
+      "sound": "crunching snow, heavy breathing, birds returning",
+      "refs": [
+        "boys"
+      ],
+      "voice_mood": "hopeful",
+      "beat": "Kurtuluş",
+      "must": [
+        "the big rescuer is seen from behind or far away"
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "ea7f2628-4eb7-476b-aeda-d8ca05a9ab9e",
+            "submitted": "2026-10-02T09:03:47+00:00",
+            "credits": 1.0
+          }
+        ],
+        "history": [
+          {
+            "status": "done",
+            "attempts": [
+              {
+                "job_id": "28bbdcc9-d92e-4e2f-8cab-d38b86b33a6e",
+                "submitted": "2026-10-02T08:59:27+00:00",
+                "credits": 1.0
+              }
+            ],
+            "job_id": "28bbdcc9-d92e-4e2f-8cab-d38b86b33a6e",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_085916_28bbdcc9-d92e-4e2f-8cab-d38b86b33a6e.png",
+            "finished": "2026-10-02T09:01:42+00:00",
+            "redo_reason": "kis sahnesinde okuz/vagon",
+            "redo_at": "2026-10-02T09:02:00+00:00"
+          }
+        ],
+        "job_id": "ea7f2628-4eb7-476b-aeda-d8ca05a9ab9e",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_090336_ea7f2628-4eb7-476b-aeda-d8ca05a9ab9e.png",
+        "finished": "2026-10-02T09:04:39+00:00"
+      },
+      "must_not": [
+        "covered wagons, oxen, cattle, cows, horses or any living farm animals (by this time all the animals had died or been eaten)"
+      ],
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "370dc6ad-0a44-4036-bae4-d05c6f51c8a8",
+            "submitted": "2026-10-02T09:11:21+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "370dc6ad-0a44-4036-bae4-d05c6f51c8a8",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_091109_370dc6ad-0a44-4036-bae4-d05c6f51c8a8.mp4",
+        "finished": "2026-10-02T09:15:59+00:00"
+      }
+    },
+    {
+      "n": 28,
+      "title": "How we survived",
+      "pov": true,
+      "narration": "So how did my family survive, when so many did not? Peggy rationed from the very first day. We stayed together. We ate every hide, every bone. We kept a fire and a reason to live. And we had luck. A lot of luck. And good men who came back for us.",
+      "narration_voiced": "So how did my family survive, when so many did not? Peggy rationed from the very first day. We stayed together. We ate every hide, every bone. We kept a fire... and a reason to live. And we had luck. A lot of luck. And good men who came back for us.",
+      "image_prompt": "POV in spring 1847 in a green Sacramento Valley meadow: Peggy (Irish pioneer mother about 40, strong tired face, dark hair pinned under a faded dark blue bonnet or wool shawl, dark brown wool dress, grey knitted shawl) sitting on the grass with baby Isabella (an infant under one year old wrapped in a grey wool blanket), all the Breen boys (six pioneer boys of different ages from about 4 to 14, plain homespun shirts, wool trousers, patched coats, wool caps) together around her, thin but alive, sunlight, an oak tree",
+      "shots": [
+        "Peggy sits in the green grass with the baby in her lap",
+        "the boys sit around her in the sunlight, thin but smiling",
+        "the narrator's hand rests on Peggy's shoulder"
+      ],
+      "sound": "birdsong, a gentle breeze, children's quiet laughter",
+      "refs": [
+        "peggy",
+        "boys"
+      ],
+      "voice_mood": "warm",
+      "must": [
+        "exactly six boys and one baby"
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "fb3c26c6-068e-46c3-aff5-ad028db95a00",
+            "submitted": "2026-10-02T09:00:02+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "fb3c26c6-068e-46c3-aff5-ad028db95a00",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_085951_fb3c26c6-068e-46c3-aff5-ad028db95a00.png",
+        "finished": "2026-10-02T09:04:02+00:00"
+      },
+      "must_not": [
+        "covered wagons, oxen, cattle, cows, horses or any living farm animals (by this time all the animals had died or been eaten)"
+      ],
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "ff75e76f-e03b-46b8-af29-612be6564d2b",
+            "submitted": "2026-10-02T09:12:02+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "ff75e76f-e03b-46b8-af29-612be6564d2b",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_091148_ff75e76f-e03b-46b8-af29-612be6564d2b.mp4",
+        "finished": "2026-10-02T09:16:01+00:00"
+      },
+      "clip_composite": [
+        [
+          "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_091148_ff75e76f-e03b-46b8-af29-612be6564d2b.mp4",
+          0,
+          5.3
+        ],
+        [
+          "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_091148_ff75e76f-e03b-46b8-af29-612be6564d2b.mp4",
+          9.9,
+          15.0
+        ]
+      ],
+      "min_speed": 0.58
+    },
+    {
+      "n": 29,
+      "title": "What came after",
+      "pov": false,
+      "narration": "Of the eighty-seven people who took that shortcut, thirty-nine died. Forty-eight lived. Ours was one of only two families that came out complete. We settled in San Juan Bautista, in California, and ran an inn for travellers. And our baby, Isabella, lived to be nearly ninety: the very last survivor of us all. If you've stayed with me this far. I think this story stayed with you too. If it did, leave a like, and subscribe. That's how I know you want more stories like this one, and it helps them reach more people.",
+      "narration_voiced": "Of the eighty-seven people who took that shortcut, thirty-nine died. Forty-eight lived. Ours was one of only two families that came out complete. We settled in San Juan Bautista, in California, and ran an inn for travellers. And our baby, Isabella, lived to be nearly ninety: the very last survivor of us all. If you've stayed with me this far... I think this story stayed with you too. If it did, leave a like, and subscribe. That's how I know you want more stories like this one, and it helps them reach more people.",
+      "image_prompt": "Sunny California mission town of San Juan Bautista around 1850: a two-storey adobe building with a wooden balcony used as an inn, the white mission church nearby, a stagecoach and horses in front, travellers arriving, green hills",
+      "shots": [
+        "sunlight on a two-storey adobe inn with a wooden balcony",
+        "travellers step down from a stagecoach in front of the inn",
+        "the white mission church stands quietly nearby"
+      ],
+      "sound": "horses, a stagecoach rolling in, church bell in the distance",
+      "refs": [],
+      "voice_mood": "warm",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "6dc6b7c4-e759-479e-8406-669f3e3df576",
+            "submitted": "2026-10-02T09:00:02+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "6dc6b7c4-e759-479e-8406-669f3e3df576",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_085950_6dc6b7c4-e759-479e-8406-669f3e3df576.png",
+        "finished": "2026-10-02T09:04:03+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "745f8161-6e44-49dd-8ae7-02c36956e6ac",
+            "submitted": "2026-10-02T09:12:02+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "745f8161-6e44-49dd-8ae7-02c36956e6ac",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_091148_745f8161-6e44-49dd-8ae7-02c36956e6ac.mp4",
+        "finished": "2026-10-02T09:14:49+00:00"
+      },
+      "clip_composite": [
+        [
+          "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_091148_745f8161-6e44-49dd-8ae7-02c36956e6ac.mp4",
+          0,
+          15.0
+        ],
+        [
+          "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_091148_83cbb524-b42f-4092-a820-217f06d2934c.mp4",
+          0,
+          15.0
+        ]
+      ]
+    },
+    {
+      "n": 30,
+      "title": "What comes next",
+      "pov": false,
+      "narration": "A hundred and thirty-seven years before us, in France, the coldest winter in five hundred years freezes the rivers, the wine in the barrels and even the sea along the coast. In a small village, a baker has to keep his family alive. How did he do it? That story is next. And here the fire is still burning.",
+      "narration_voiced": "A hundred and thirty-seven years before us, in France, the coldest winter in five hundred years freezes the rivers, the wine in the barrels... and even the sea along the coast. In a small village, a baker has to keep his family alive. How did he do it? That story is next. And here... the fire is still burning.",
+      "image_prompt": "A French village in January 1709 in a deep frost: frozen river with ice, snow on steep slate and thatched roofs, a stone bakery with a warm glowing window and smoke from the oven chimney, frost-covered vineyard on the hillside, dawn light",
+      "shots": [
+        "the frozen river shines in grey dawn light beside the village",
+        "frost covers the vines on the hillside",
+        "a warm light glows in the window of a small stone bakery"
+      ],
+      "sound": "frozen silence, cracking ice, a distant church bell",
+      "refs": [],
+      "voice_mood": "intrigue",
+      "beat": "SONRAKİ BÖLÜM",
+      "must": [
+        "France in 1709: early 18th-century village"
+      ],
+      "must_not": [
+        "1840s American pioneers, covered wagons",
+        "modern objects"
+      ],
+      "own_rules": true,
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "b3925e30-c9ed-47de-89dd-cfa825c17975",
+            "submitted": "2026-10-02T09:00:02+00:00",
+            "credits": 1.0
+          }
+        ],
+        "job_id": "b3925e30-c9ed-47de-89dd-cfa825c17975",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_085950_b3925e30-c9ed-47de-89dd-cfa825c17975.png",
+        "finished": "2026-10-02T09:04:04+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "ecc1df23-6e66-4d0a-a88c-0eab68495dd0",
+            "submitted": "2026-10-02T09:12:02+00:00",
+            "credits": 7.5
+          }
+        ],
+        "job_id": "ecc1df23-6e66-4d0a-a88c-0eab68495dd0",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_091148_ecc1df23-6e66-4d0a-a88c-0eab68495dd0.mp4",
+        "finished": "2026-10-02T09:14:13+00:00"
+      },
+      "clip_composite": [
+        [
+          "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_091148_ecc1df23-6e66-4d0a-a88c-0eab68495dd0.mp4",
+          0,
+          5.3
+        ],
+        [
+          "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261002_091148_ecc1df23-6e66-4d0a-a88c-0eab68495dd0.mp4",
+          10.05,
+          15.0
+        ]
+      ],
+      "min_speed": 0.55,
+      "note": "5.4–10.0 sn arası tel askılı bağ (1709'da yok) — çıkarıldı"
+    }
+  ],
+  "max_credits": 330,
+  "music_credit": "Music by Kevin MacLeod (incompetech.com), licensed under Creative Commons: By Attribution 4.0 — \"Frozen Star\", \"Lost Frontier\", \"Dark Times\", \"Ossuary 6 - Air\", \"Crossing the Chasm\", \"Winter Reflections\", \"Eternal Hope\", \"Long Note Four\", \"Dreams Become Real\""
+}
