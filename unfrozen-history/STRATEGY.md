@@ -195,3 +195,13 @@ Ders: sonraki konular "bilinen olay + sayı" kalıbına yaslansın; kapakta haya
 - Cihaz: telefon %61,8, bilgisayar %33,7, TV %3,7. Altyazı: İngilizce %49,1 açık (!), İspanyolca %4,2.
 - Not: örnek küçük (~2K izlenme, yaş/cinsiyet yalnız oturum açmış kullanıcılardan) ama sinyal net: klasik "yaşlı erkek tarih izleyicisi".
 - Sonuçlar: (1) askerî/sınır tarihi öne (Napolyon kırılımı tesadüf değil); ABD odaklı konular: Valley Forge 1777, Chosin 1950, Bulge 1944, 1888 Blizzard, Klondike 1897, Shackleton 1915. (2) Her videoya doğru EN altyazı ŞART (izleyicinin yarısı açıyor). (3) Kapak: büyük, yüksek kontrastlı 1–2 kelime; abartı clickbait yok. (4) Sakin, net anlatım; "History for Sleep" bu kitleye uygun.
+
+## 26. YENİ DÜZEN: haftada 1 bölüm, tamamı video, gerçekçi (31 Eki, kullanıcı kararı)
+- Higgsfield aboneliği iptal edildi; kalan ~3.150 kredi ile **önce 2 bölüm** sırayla üretilir, sonra durum değerlendirilir. MIN_BALANCE_RESERVE 500 korunur.
+- **Her sahne hareketli klip** (stills/Ken Burns yok). Stil: **fotogerçekçi sinematik film karesi** (eski: gouache/storybook).
+- Model adayı: Kling 3.0 Pro 15 sn sesli = 37,5 kr (bölüm ≈ 1.170 kr) · Seedance Mini 15 sn = 15 kr (bölüm ≈ 540 kr). Seçim 31 Eki test klibiyle kullanıcıya bırakıldı.
+- **Kare kare QA zorunlu:** her klip 3+ kareden kontrol; anlatımla çelişen her detay (ör. ep008 ayakkabı/paçavra, kulübe/çadır, yanan yıkıntı) yeniden üretilir.
+- **Yayın: Perşembe 22:00 TR** (= ABD doğu 14:00, İngiltere 19:00; 1 Kasım sonrası). Gerekçe (31 Eki analiz): kitle %100 erkek 55+, ABD %75 / GB %15 / CA %8; izlenmenin ~%90'ı ana sayfa (browse). Napolyon Çarşamba yayınlandı → Per 350, Cum 290, Cmt 300, **Paz 760**: patlama yayından 1 gün sonra başlar, hafta sonu zirve. Perşembe yayını hafta sonuna 1 gün test süresi bırakır. 4 hafta sonra Cumartesi ile karşılaştır (tek değişken).
+- Haftalık akış: **Pzt** senaryo → onay · **Salı** üretim · **Çar** montaj + kare kare QA + teslim; kullanıcı Liste dışı yükler + planlar · **Per 22:00** yayın · **Paz/Pzt** 72 saat verisi → bir sonraki bölümde tek iyileştirme.
+- Sıradaki: ep009 Bastogne (Per 5 Kasım), ep010 Shackleton (Per 12 Kasım).
+- Ücretsiz yedek plan (krediler bitince): Kaggle GPU + Wan 2.2 (video) + Chatterbox (ses klonu); kalite/hız beklentisi daha düşük, test edilecek.
