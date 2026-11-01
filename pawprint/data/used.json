@@ -90,10 +90,11 @@
     7279090,
     8498674,
     35637296,
-    17029769
+    17029769,
+    7279095,
+    35475036
   ],
   "themes": [
-    "senior_dog",
     "paws",
     "puppy_to_senior",
     "walks",
@@ -112,7 +113,8 @@
     "owner_love",
     "everyday_moments",
     "senior_dog",
-    "paws"
+    "paws",
+    "puppy_to_senior"
   ],
   "runs": [
     {
@@ -486,6 +488,14 @@
       "stock": [
         "https://www.pexels.com/video/curly-coated-dog-enjoys-treat-on-rocky-path-35637296/",
         "https://www.pexels.com/video/a-yellow-dog-sitting-on-the-floor-looking-up-17029769/"
+      ]
+    },
+    {
+      "at": "20261101_194731",
+      "theme": "puppy_to_senior",
+      "stock": [
+        "https://www.pexels.com/video/mother-and-child-sleeping-together-with-their-dog-7279095/",
+        "https://www.pexels.com/video/relaxed-dogs-resting-outside-rustic-shed-35475036/"
       ]
     }
   ]
