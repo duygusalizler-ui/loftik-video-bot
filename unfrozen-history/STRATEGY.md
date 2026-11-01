@@ -205,3 +205,10 @@ Ders: sonraki konular "bilinen olay + sayı" kalıbına yaslansın; kapakta haya
 - Haftalık akış: **Pzt** senaryo → onay · **Salı** üretim · **Çar** montaj + kare kare QA + teslim; kullanıcı Liste dışı yükler + planlar · **Per 22:00** yayın · **Paz/Pzt** 72 saat verisi → bir sonraki bölümde tek iyileştirme.
 - Sıradaki: ep009 Bastogne (Per 5 Kasım), ep010 Shackleton (Per 12 Kasım).
 - Ücretsiz yedek plan (krediler bitince): Kaggle GPU + Wan 2.2 (video) + Chatterbox (ses klonu); kalite/hız beklentisi daha düşük, test edilecek.
+
+## 27. Otomasyon kararı (1 Kas, kullanıcı)
+- Model: **Seedance 2.0 Mini 720p** (31 Eki Kling Pro ile karşılaştırma testinden sonra kullanıcı seçti). Bölüm ≈ 540 kredi.
+- **Senaryo onayı Claude'a bırakıldı**: konu + senaryo + tarih doğrulaması Claude'da; kullanıcı yalnızca bitmiş videoyu görür.
+- Haftalık zamanlanmış görev: **her Pazartesi 09:41 TR** bu oturumda üretimi başlatır; Çarşamba akşamı teslim.
+- Yayın adımı: kullanıcı videoyu (+kapak, srt, bitiş ekranı) Liste dışı yükler, ID'yi verir → onayıyla Claude vidIQ ile başlık/açıklama/etiket + **Perşembe 22:00 TR** planlamasını yapar. Onaysız yükleme/güncelleme/planlama yok.
+- Konu sırası: ep009 Bastogne 1944 (Per 5 Kas) → ep010 Shackleton/Endurance 1915 (Per 12 Kas) → değerlendirme → Klondike 1897–98 → Leningrad 1941–42 → 1888 Büyük Kar Fırtınası.
