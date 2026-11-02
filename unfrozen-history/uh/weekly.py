@@ -18,7 +18,7 @@ from . import config as C
 from . import state as S
 from .assemble import duration
 
-CDN = "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_"
+CDN = "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_"  # + "TARİH_SAAT_jobid"
 VOICE_FX = ("highpass=f=70,equalizer=f=250:t=q:w=1.2:g=-2,equalizer=f=3200:t=q:w=1.0:g=3.5,treble=g=2:f=8000,"
             "acompressor=threshold=-20dB:ratio=3:attack=5:release=120:makeup=3,loudnorm=I=-16:TP=-1.5")
 

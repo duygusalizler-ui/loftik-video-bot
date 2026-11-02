@@ -48,27 +48,92 @@
     "joe": {
       "kind": "character",
       "prompt": "Character reference sheet, photorealistic: on the left a full-body front view standing, on the right a chest-up portrait of the same person; identical original character in both views, single character only, plain neutral grey studio background. Joe Novak (American paratrooper of 19, thin pale face, unshaven, frost-cracked lips, grey-blue eyes, olive-drab M1 helmet with camouflage netting, stained M1942 paratrooper jump jacket under an olive wool overcoat, grey wool scarf, wool gloves), holding an M1 Garand rifle",
-      "n": "joe"
+      "n": "joe",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "07ddcdf3-eb4f-4450-aa41-a52eeaec4228",
+            "submitted": "2026-11-02T06:50:16+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "07ddcdf3-eb4f-4450-aa41-a52eeaec4228",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261102_064843_07ddcdf3-eb4f-4450-aa41-a52eeaec4228.png",
+        "finished": "2026-11-02T06:50:17+00:00"
+      }
     },
     "lenny": {
       "kind": "character",
       "prompt": "Character reference sheet, photorealistic: on the left a full-body front view standing, on the right a chest-up portrait of the same person; identical original character in both views, single character only, plain neutral grey studio background. Lenny Hart (American paratrooper of 22, lanky, long face, sharp nose, thick dark eyebrows, black stubble, olive-drab M1 helmet with netting, M1942 jump jacket, a grey wool army blanket over his shoulders), holding a Thompson submachine gun",
-      "n": "lenny"
+      "n": "lenny",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "c46e61b3-82c6-42de-8ee5-7577e211da4e",
+            "submitted": "2026-11-02T06:50:16+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "c46e61b3-82c6-42de-8ee5-7577e211da4e",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261102_064842_c46e61b3-82c6-42de-8ee5-7577e211da4e.png",
+        "finished": "2026-11-02T06:50:17+00:00"
+      }
     },
     "marie": {
       "kind": "character",
       "prompt": "Character reference sheet, photorealistic: on the left a full-body front view standing, on the right a chest-up portrait of the same person; identical original character in both views, single character only, plain neutral grey studio background. Marie (Belgian woman of about 50, kind lined face, grey hair under a dark wool headscarf, long brown wool coat, thick knitted gloves)",
-      "n": "marie"
+      "n": "marie",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "e24345a4-cf40-4a9c-85e1-ce76e577b1bd",
+            "submitted": "2026-11-02T06:50:16+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "e24345a4-cf40-4a9c-85e1-ce76e577b1bd",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261102_064843_e24345a4-cf40-4a9c-85e1-ce76e577b1bd.png",
+        "finished": "2026-11-02T06:50:17+00:00"
+      }
     },
     "woods": {
       "kind": "location",
       "prompt": "Location reference, single photorealistic image, NO people: a line of snow-covered foxholes at the edge of a dark snowy pine forest above an open white field near Bastogne, Belgium, December 1944, fog, grey winter light",
-      "n": "woods"
+      "n": "woods",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "609c3003-cf22-415d-9aec-e15ed2bdf3be",
+            "submitted": "2026-11-02T06:50:16+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "609c3003-cf22-415d-9aec-e15ed2bdf3be",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261102_064842_609c3003-cf22-415d-9aec-e15ed2bdf3be.png",
+        "finished": "2026-11-02T06:50:17+00:00"
+      }
     },
     "town": {
       "kind": "location",
       "prompt": "Location reference, single photorealistic image, NO people: the small Belgian town of Bastogne in December 1944: grey stone houses with slate roofs, a church steeple, snowy cobbled streets, some shell-damaged walls",
-      "n": "town"
+      "n": "town",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "36d048c3-e58c-4a09-9b88-d7d56a6ad143",
+            "submitted": "2026-11-02T06:50:16+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "36d048c3-e58c-4a09-9b88-d7d56a6ad143",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261102_064843_36d048c3-e58c-4a09-9b88-d7d56a6ad143.png",
+        "finished": "2026-11-02T06:50:17+00:00"
+      }
     }
   },
   "music": [
@@ -167,7 +232,50 @@
         "exactly one American in the foreground",
         "the white flag clearly visible",
         "German soldiers without any insignia or emblems"
-      ]
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "02474c22-c850-43c0-a205-30404b456254",
+            "submitted": "2026-11-02T06:53:31+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "02474c22-c850-43c0-a205-30404b456254",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261102_065136_02474c22-c850-43c0-a205-30404b456254.png",
+        "finished": "2026-11-02T06:53:44+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "4dd2e30d-a678-40a4-ab22-c6f5026773ae",
+            "submitted": "2026-11-02T07:00:36+00:00",
+            "credits": 15.0
+          }
+        ],
+        "history": [
+          {
+            "status": "done",
+            "attempts": [
+              {
+                "job_id": "6f9d90f1-c455-4c1d-ae4d-3bb6e190c478",
+                "submitted": "2026-11-02T06:55:28+00:00",
+                "credits": 15.0
+              }
+            ],
+            "job_id": "6f9d90f1-c455-4c1d-ae4d-3bb6e190c478",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261102_065514_6f9d90f1-c455-4c1d-ae4d-3bb6e190c478.mp4",
+            "finished": "2026-11-02T06:59:49+00:00",
+            "redo_reason": "mektup/pul yakın çekimi",
+            "redo_at": "2026-11-02T07:00:36+00:00"
+          }
+        ],
+        "job_id": "4dd2e30d-a678-40a4-ab22-c6f5026773ae",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261102_070026_4dd2e30d-a678-40a4-ab22-c6f5026773ae.mp4",
+        "finished": "2026-11-02T07:05:13+00:00"
+      }
     },
     {
       "n": 2,
@@ -191,7 +299,33 @@
       "must": [
         "American paratroopers only",
         "no gore"
-      ]
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "2e5dc318-a579-4cfe-ae3e-e97053618707",
+            "submitted": "2026-11-02T06:53:31+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "2e5dc318-a579-4cfe-ae3e-e97053618707",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261102_065135_2e5dc318-a579-4cfe-ae3e-e97053618707.png",
+        "finished": "2026-11-02T06:53:44+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "6926c8d3-85b7-47f6-8f72-7d0e0589d7e1",
+            "submitted": "2026-11-02T06:55:29+00:00",
+            "credits": 15.0
+          }
+        ],
+        "job_id": "6926c8d3-85b7-47f6-8f72-7d0e0589d7e1",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261102_065515_6926c8d3-85b7-47f6-8f72-7d0e0589d7e1.mp4",
+        "finished": "2026-11-02T06:59:49+00:00"
+      }
     },
     {
       "n": 3,
@@ -212,7 +346,33 @@
       "pad": 0.8,
       "must": [
         "1944 US Army equipment only"
-      ]
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "3c5f9783-682c-45f7-80e5-c380d015a740",
+            "submitted": "2026-11-02T06:53:31+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "3c5f9783-682c-45f7-80e5-c380d015a740",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261102_065134_3c5f9783-682c-45f7-80e5-c380d015a740.png",
+        "finished": "2026-11-02T06:53:44+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "f2f3a5e8-af82-47f9-b300-26952636feac",
+            "submitted": "2026-11-02T06:55:29+00:00",
+            "credits": 15.0
+          }
+        ],
+        "job_id": "f2f3a5e8-af82-47f9-b300-26952636feac",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261102_065514_f2f3a5e8-af82-47f9-b300-26952636feac.mp4",
+        "finished": "2026-11-02T06:59:49+00:00"
+      }
     },
     {
       "n": 4,
@@ -235,7 +395,33 @@
       "pad": 0.8,
       "must": [
         "exactly one main soldier in close view"
-      ]
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "c94dfa3f-0631-4aef-bdc2-d6e52966f393",
+            "submitted": "2026-11-02T06:53:31+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "c94dfa3f-0631-4aef-bdc2-d6e52966f393",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261102_065137_c94dfa3f-0631-4aef-bdc2-d6e52966f393.png",
+        "finished": "2026-11-02T06:53:44+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "ab4c4843-cec3-4ef9-b56c-d71f2dc76a9c",
+            "submitted": "2026-11-02T06:55:29+00:00",
+            "credits": 15.0
+          }
+        ],
+        "job_id": "ab4c4843-cec3-4ef9-b56c-d71f2dc76a9c",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261102_065514_ab4c4843-cec3-4ef9-b56c-d71f2dc76a9c.mp4",
+        "finished": "2026-11-02T06:59:49+00:00"
+      }
     },
     {
       "n": 5,
@@ -259,7 +445,33 @@
       ],
       "must_not": [
         "readable words or letters"
-      ]
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "c02905ea-ee52-48c7-8df3-3fd933fd66e0",
+            "submitted": "2026-11-02T06:53:31+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "c02905ea-ee52-48c7-8df3-3fd933fd66e0",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261102_065134_c02905ea-ee52-48c7-8df3-3fd933fd66e0.png",
+        "finished": "2026-11-02T06:53:44+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "0a9e5a2c-6142-4f9d-b647-6e34ee8d11f5",
+            "submitted": "2026-11-02T06:55:29+00:00",
+            "credits": 15.0
+          }
+        ],
+        "job_id": "0a9e5a2c-6142-4f9d-b647-6e34ee8d11f5",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261102_065514_0a9e5a2c-6142-4f9d-b647-6e34ee8d11f5.mp4",
+        "finished": "2026-11-02T06:59:49+00:00"
+      }
     },
     {
       "n": 6,
@@ -282,7 +494,33 @@
       "pad": 0.8,
       "must": [
         "all soldiers in 1944 US Army uniforms"
-      ]
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "6dc8e088-2d7c-4a84-afcb-76b387a4fb9c",
+            "submitted": "2026-11-02T06:53:31+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "6dc8e088-2d7c-4a84-afcb-76b387a4fb9c",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261102_065135_6dc8e088-2d7c-4a84-afcb-76b387a4fb9c.png",
+        "finished": "2026-11-02T06:53:44+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "5cf70a4a-8c14-4edd-a43e-0f0da254a9b3",
+            "submitted": "2026-11-02T06:55:29+00:00",
+            "credits": 15.0
+          }
+        ],
+        "job_id": "5cf70a4a-8c14-4edd-a43e-0f0da254a9b3",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261102_065516_5cf70a4a-8c14-4edd-a43e-0f0da254a9b3.mp4",
+        "finished": "2026-11-02T06:59:49+00:00"
+      }
     },
     {
       "n": 7,
@@ -309,7 +547,33 @@
       ],
       "must_not": [
         "modern cars or buildings"
-      ]
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "2a52144a-8cca-4e86-a702-10618d68460a",
+            "submitted": "2026-11-02T06:53:31+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "2a52144a-8cca-4e86-a702-10618d68460a",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261102_065136_2a52144a-8cca-4e86-a702-10618d68460a.png",
+        "finished": "2026-11-02T06:53:44+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "bb4fc077-52f9-43cf-8a99-19097b81a5ba",
+            "submitted": "2026-11-02T06:55:29+00:00",
+            "credits": 15.0
+          }
+        ],
+        "job_id": "bb4fc077-52f9-43cf-8a99-19097b81a5ba",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261102_065514_bb4fc077-52f9-43cf-8a99-19097b81a5ba.mp4",
+        "finished": "2026-11-02T06:59:49+00:00"
+      }
     },
     {
       "n": 8,
@@ -334,7 +598,33 @@
       "pad": 0.8,
       "must": [
         "exactly two soldiers in close view"
-      ]
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "95a04c43-18bd-472b-a3d8-2b3557f7c9d2",
+            "submitted": "2026-11-02T06:53:31+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "95a04c43-18bd-472b-a3d8-2b3557f7c9d2",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261102_065136_95a04c43-18bd-472b-a3d8-2b3557f7c9d2.png",
+        "finished": "2026-11-02T06:53:44+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "ac97947b-2348-4c5f-ab61-a907a65e2adb",
+            "submitted": "2026-11-02T06:55:29+00:00",
+            "credits": 15.0
+          }
+        ],
+        "job_id": "ac97947b-2348-4c5f-ab61-a907a65e2adb",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261102_065514_ac97947b-2348-4c5f-ab61-a907a65e2adb.mp4",
+        "finished": "2026-11-02T06:59:49+00:00"
+      }
     },
     {
       "n": 9,
@@ -359,7 +649,33 @@
       "pad": 2.2,
       "must": [
         "exactly two soldiers"
-      ]
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "0213aef7-06c6-4b4d-b4f5-4d2c7440c833",
+            "submitted": "2026-11-02T06:53:31+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "0213aef7-06c6-4b4d-b4f5-4d2c7440c833",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261102_065135_0213aef7-06c6-4b4d-b4f5-4d2c7440c833.png",
+        "finished": "2026-11-02T06:53:44+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "be1c514d-7605-4cf2-9ce9-69ab1c44dff2",
+            "submitted": "2026-11-02T06:55:29+00:00",
+            "credits": 15.0
+          }
+        ],
+        "job_id": "be1c514d-7605-4cf2-9ce9-69ab1c44dff2",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261102_065514_be1c514d-7605-4cf2-9ce9-69ab1c44dff2.mp4",
+        "finished": "2026-11-02T06:59:49+00:00"
+      }
     },
     {
       "n": 10,
@@ -385,7 +701,33 @@
       ],
       "must_not": [
         "modern buildings or cars"
-      ]
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "a4bdb78a-85f3-44b7-b0b9-50b1befb3a81",
+            "submitted": "2026-11-02T06:53:31+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "a4bdb78a-85f3-44b7-b0b9-50b1befb3a81",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261102_065135_a4bdb78a-85f3-44b7-b0b9-50b1befb3a81.png",
+        "finished": "2026-11-02T06:53:44+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "8070af52-7ac2-44a7-a6b9-c3a423eb6da8",
+            "submitted": "2026-11-02T06:55:29+00:00",
+            "credits": 15.0
+          }
+        ],
+        "job_id": "8070af52-7ac2-44a7-a6b9-c3a423eb6da8",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261102_065514_8070af52-7ac2-44a7-a6b9-c3a423eb6da8.mp4",
+        "finished": "2026-11-02T06:59:49+00:00"
+      }
     },
     {
       "n": 11,
@@ -410,7 +752,33 @@
       "pad": 0.8,
       "must": [
         "exactly two soldiers"
-      ]
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "22fc45d2-fcb8-43de-9dd1-a9ee3ecc341b",
+            "submitted": "2026-11-02T06:53:31+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "22fc45d2-fcb8-43de-9dd1-a9ee3ecc341b",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261102_065137_22fc45d2-fcb8-43de-9dd1-a9ee3ecc341b.png",
+        "finished": "2026-11-02T06:53:44+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "79c6a84f-50e1-4543-830e-3f0ebf9cc905",
+            "submitted": "2026-11-02T06:55:29+00:00",
+            "credits": 15.0
+          }
+        ],
+        "job_id": "79c6a84f-50e1-4543-830e-3f0ebf9cc905",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261102_065514_79c6a84f-50e1-4543-830e-3f0ebf9cc905.mp4",
+        "finished": "2026-11-02T06:59:49+00:00"
+      }
     },
     {
       "n": 12,
@@ -436,7 +804,33 @@
       "must": [
         "exactly two soldiers",
         "no wounds, no blackened toes"
-      ]
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "04e4e5b1-1da0-4985-8db8-869584d73e24",
+            "submitted": "2026-11-02T06:53:31+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "04e4e5b1-1da0-4985-8db8-869584d73e24",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261102_065136_04e4e5b1-1da0-4985-8db8-869584d73e24.png",
+        "finished": "2026-11-02T06:53:44+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "21f6b0eb-1f67-4425-822f-daff64563001",
+            "submitted": "2026-11-02T06:55:29+00:00",
+            "credits": 15.0
+          }
+        ],
+        "job_id": "21f6b0eb-1f67-4425-822f-daff64563001",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261102_065514_21f6b0eb-1f67-4425-822f-daff64563001.mp4",
+        "finished": "2026-11-02T06:59:49+00:00"
+      }
     },
     {
       "n": 13,
@@ -460,7 +854,33 @@
       "pad": 0.8,
       "must": [
         "white bed sheets used as camouflage"
-      ]
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "c70582a4-5e6d-4844-a0e5-03953e3ddfb1",
+            "submitted": "2026-11-02T06:53:31+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "c70582a4-5e6d-4844-a0e5-03953e3ddfb1",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261102_065232_c70582a4-5e6d-4844-a0e5-03953e3ddfb1.png",
+        "finished": "2026-11-02T06:55:40+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "01e5a287-2acb-4861-b6d3-4b25194823b3",
+            "submitted": "2026-11-02T06:57:16+00:00",
+            "credits": 15.0
+          }
+        ],
+        "job_id": "01e5a287-2acb-4861-b6d3-4b25194823b3",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261102_065703_01e5a287-2acb-4861-b6d3-4b25194823b3.mp4",
+        "finished": "2026-11-02T07:01:14+00:00"
+      }
     },
     {
       "n": 14,
@@ -485,7 +905,33 @@
       "must": [
         "fog",
         "no gore"
-      ]
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "4a6d088b-d699-458d-a593-50946d56c74f",
+            "submitted": "2026-11-02T06:53:31+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "4a6d088b-d699-458d-a593-50946d56c74f",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261102_065232_4a6d088b-d699-458d-a593-50946d56c74f.png",
+        "finished": "2026-11-02T06:55:40+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "f9b73727-b0ec-4fc4-9916-38c0a2860851",
+            "submitted": "2026-11-02T06:57:16+00:00",
+            "credits": 15.0
+          }
+        ],
+        "job_id": "f9b73727-b0ec-4fc4-9916-38c0a2860851",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261102_065703_f9b73727-b0ec-4fc4-9916-38c0a2860851.mp4",
+        "finished": "2026-11-02T07:03:13+00:00"
+      }
     },
     {
       "n": 15,
@@ -510,7 +956,33 @@
       "pad": 0.8,
       "must": [
         "exactly one woman and one soldier in close view"
-      ]
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "127e9ead-6051-4391-b28a-6beab0d613eb",
+            "submitted": "2026-11-02T06:53:31+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "127e9ead-6051-4391-b28a-6beab0d613eb",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261102_065231_127e9ead-6051-4391-b28a-6beab0d613eb.png",
+        "finished": "2026-11-02T06:55:40+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "d4c53d7f-3fd0-4698-9e65-b31adb164f83",
+            "submitted": "2026-11-02T06:57:16+00:00",
+            "credits": 15.0
+          }
+        ],
+        "job_id": "d4c53d7f-3fd0-4698-9e65-b31adb164f83",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261102_065704_d4c53d7f-3fd0-4698-9e65-b31adb164f83.mp4",
+        "finished": "2026-11-02T07:03:13+00:00"
+      }
     },
     {
       "n": 16,
@@ -532,7 +1004,33 @@
       "must": [
         "1944 US Army equipment",
         "no gore"
-      ]
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "333e02f7-bc56-4089-b5e3-4b4da7a92b31",
+            "submitted": "2026-11-02T06:53:31+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "333e02f7-bc56-4089-b5e3-4b4da7a92b31",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261102_065230_333e02f7-bc56-4089-b5e3-4b4da7a92b31.png",
+        "finished": "2026-11-02T06:55:40+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "80bf1b71-a3d2-4717-9b9c-abe47a8eaa22",
+            "submitted": "2026-11-02T06:57:16+00:00",
+            "credits": 15.0
+          }
+        ],
+        "job_id": "80bf1b71-a3d2-4717-9b9c-abe47a8eaa22",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261102_065703_80bf1b71-a3d2-4717-9b9c-abe47a8eaa22.mp4",
+        "finished": "2026-11-02T07:03:13+00:00"
+      }
     },
     {
       "n": 17,
@@ -558,7 +1056,38 @@
       "must_not": [
         "gore",
         "corpses"
-      ]
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "ff1e335d-e9a6-4042-b0da-360a5c989463",
+            "submitted": "2026-11-02T06:53:31+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "ff1e335d-e9a6-4042-b0da-360a5c989463",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261102_065230_ff1e335d-e9a6-4042-b0da-360a5c989463.png",
+        "finished": "2026-11-02T06:55:40+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "787d6553-3d7f-452c-9066-e58d682c3cb2",
+            "submitted": "2026-11-02T06:57:16+00:00",
+            "credits": 15.0
+          },
+          {
+            "job_id": "a78c1de7-7be3-4500-8cf3-544cfd4a26a2",
+            "submitted": "2026-11-02T07:01:14+00:00",
+            "credits": 15.0
+          }
+        ],
+        "job_id": "a78c1de7-7be3-4500-8cf3-544cfd4a26a2",
+        "finished": "2026-11-02T07:05:13+00:00",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261102_070103_a78c1de7-7be3-4500-8cf3-544cfd4a26a2.mp4"
+      }
     },
     {
       "n": 18,
@@ -583,7 +1112,33 @@
       ],
       "must_not": [
         "swastikas or Nazi symbols"
-      ]
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "49d6c187-c8e9-41bc-b055-8e9610935004",
+            "submitted": "2026-11-02T06:53:31+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "49d6c187-c8e9-41bc-b055-8e9610935004",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261102_065232_49d6c187-c8e9-41bc-b055-8e9610935004.png",
+        "finished": "2026-11-02T06:55:40+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "2f0bb19f-fab5-4bd3-88a3-8ffb1f71550a",
+            "submitted": "2026-11-02T06:57:16+00:00",
+            "credits": 15.0
+          }
+        ],
+        "job_id": "2f0bb19f-fab5-4bd3-88a3-8ffb1f71550a",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261102_065703_2f0bb19f-fab5-4bd3-88a3-8ffb1f71550a.mp4",
+        "finished": "2026-11-02T07:01:14+00:00"
+      }
     },
     {
       "n": 19,
@@ -609,7 +1164,33 @@
       "must_not": [
         "readable text or letters",
         "recognizable face of a real person"
-      ]
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "b8733e83-23fd-4db1-bc43-bc3241b60ab1",
+            "submitted": "2026-11-02T06:53:31+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "b8733e83-23fd-4db1-bc43-bc3241b60ab1",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261102_065233_b8733e83-23fd-4db1-bc43-bc3241b60ab1.png",
+        "finished": "2026-11-02T06:55:40+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "4f0b946b-18df-4caf-b830-7208901a7e0b",
+            "submitted": "2026-11-02T06:57:16+00:00",
+            "credits": 15.0
+          }
+        ],
+        "job_id": "4f0b946b-18df-4caf-b830-7208901a7e0b",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261102_065703_4f0b946b-18df-4caf-b830-7208901a7e0b.mp4",
+        "finished": "2026-11-02T07:01:14+00:00"
+      }
     },
     {
       "n": 20,
@@ -633,7 +1214,33 @@
       "pad": 2.2,
       "must": [
         "exactly one soldier"
-      ]
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "83381e57-1607-41b1-811f-49333059aa93",
+            "submitted": "2026-11-02T06:53:31+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "83381e57-1607-41b1-811f-49333059aa93",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261102_065231_83381e57-1607-41b1-811f-49333059aa93.png",
+        "finished": "2026-11-02T06:55:40+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "4e6e855b-861e-4e32-9496-0f41d23ffde0",
+            "submitted": "2026-11-02T06:57:16+00:00",
+            "credits": 15.0
+          }
+        ],
+        "job_id": "4e6e855b-861e-4e32-9496-0f41d23ffde0",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261102_065703_4e6e855b-861e-4e32-9496-0f41d23ffde0.mp4",
+        "finished": "2026-11-02T07:01:14+00:00"
+      }
     },
     {
       "n": 21,
@@ -659,7 +1266,33 @@
       "must": [
         "clear blue sky",
         "World War II cargo planes"
-      ]
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "8dece5a6-6725-48a5-86ea-8cfd056da10d",
+            "submitted": "2026-11-02T06:53:31+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "8dece5a6-6725-48a5-86ea-8cfd056da10d",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261102_065234_8dece5a6-6725-48a5-86ea-8cfd056da10d.png",
+        "finished": "2026-11-02T06:55:40+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "8ede9adc-adf0-435f-9d0a-99484a7a03fa",
+            "submitted": "2026-11-02T06:57:16+00:00",
+            "credits": 15.0
+          }
+        ],
+        "job_id": "8ede9adc-adf0-435f-9d0a-99484a7a03fa",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261102_065703_8ede9adc-adf0-435f-9d0a-99484a7a03fa.mp4",
+        "finished": "2026-11-02T07:01:14+00:00"
+      }
     },
     {
       "n": 22,
@@ -681,7 +1314,33 @@
       "must": [
         "colored cargo parachutes",
         "C-47 aircraft"
-      ]
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "90a60fa9-1efc-4756-970b-87d7d01570ac",
+            "submitted": "2026-11-02T06:53:31+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "90a60fa9-1efc-4756-970b-87d7d01570ac",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261102_065233_90a60fa9-1efc-4756-970b-87d7d01570ac.png",
+        "finished": "2026-11-02T06:55:40+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "1cd43a1a-df20-49e7-b6dc-c18cf00b7706",
+            "submitted": "2026-11-02T06:57:16+00:00",
+            "credits": 15.0
+          }
+        ],
+        "job_id": "1cd43a1a-df20-49e7-b6dc-c18cf00b7706",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261102_065703_1cd43a1a-df20-49e7-b6dc-c18cf00b7706.mp4",
+        "finished": "2026-11-02T07:01:14+00:00"
+      }
     },
     {
       "n": 23,
@@ -709,7 +1368,33 @@
       ],
       "must_not": [
         "readable text or letters on the paper"
-      ]
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "0a6fdcdc-da80-44cc-b3d3-3e141b9290fd",
+            "submitted": "2026-11-02T06:53:31+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "0a6fdcdc-da80-44cc-b3d3-3e141b9290fd",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261102_065231_0a6fdcdc-da80-44cc-b3d3-3e141b9290fd.png",
+        "finished": "2026-11-02T06:55:40+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "2379c247-85c4-43ab-9f0c-2066365b6a52",
+            "submitted": "2026-11-02T06:57:16+00:00",
+            "credits": 15.0
+          }
+        ],
+        "job_id": "2379c247-85c4-43ab-9f0c-2066365b6a52",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261102_065703_2379c247-85c4-43ab-9f0c-2066365b6a52.mp4",
+        "finished": "2026-11-02T07:03:13+00:00"
+      }
     },
     {
       "n": 24,
@@ -735,7 +1420,50 @@
       "must_not": [
         "swastikas or Nazi symbols",
         "blood"
-      ]
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "0c0375df-5514-4cd8-9b9f-9fafa852f30b",
+            "submitted": "2026-11-02T06:56:13+00:00",
+            "credits": 2.75
+          }
+        ],
+        "history": [
+          {
+            "status": "done",
+            "attempts": [
+              {
+                "job_id": "9d9c4e05-47db-4c83-9325-ecda2a5c65fb",
+                "submitted": "2026-11-02T06:53:31+00:00",
+                "credits": 2.75
+              }
+            ],
+            "job_id": "9d9c4e05-47db-4c83-9325-ecda2a5c65fb",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261102_065231_9d9c4e05-47db-4c83-9325-ecda2a5c65fb.png",
+            "finished": "2026-11-02T06:55:40+00:00",
+            "redo_reason": "Tiger yerine Panzer IV",
+            "redo_at": "2026-11-02T06:56:13+00:00"
+          }
+        ],
+        "job_id": "0c0375df-5514-4cd8-9b9f-9fafa852f30b",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261102_065606_0c0375df-5514-4cd8-9b9f-9fafa852f30b.png",
+        "finished": "2026-11-02T06:57:50+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "be722e7f-23c1-4127-bf29-9a1f0db3efad",
+            "submitted": "2026-11-02T06:58:45+00:00",
+            "credits": 15.0
+          }
+        ],
+        "job_id": "be722e7f-23c1-4127-bf29-9a1f0db3efad",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261102_065831_be722e7f-23c1-4127-bf29-9a1f0db3efad.mp4",
+        "finished": "2026-11-02T07:03:13+00:00"
+      }
     },
     {
       "n": 25,
@@ -746,9 +1474,9 @@
       "narration_voiced": "Christmas dinner was one can of cold hash, shared between two of us. Lenny said it was the best Christmas dinner of his life. He was lying. So was I, when I agreed with him.",
       "image_prompt": "Midday in a snowy foxhole, Christmas 1944: Joe Novak (American paratrooper of 19, thin pale face, unshaven, frost-cracked lips, grey-blue eyes, olive-drab M1 helmet with camouflage netting, stained M1942 paratrooper jump jacket under an olive wool overcoat, grey wool scarf, wool gloves) and Lenny Hart (American paratrooper of 22, lanky, long face, sharp nose, thick dark eyebrows, black stubble, olive-drab M1 helmet with netting, M1942 jump jacket, a grey wool army blanket over his shoulders) share one open ration can with spoons, smiling tiredly",
       "shots": [
-        "Lenny scoops cold hash from the can with a spoon and grins",
-        "Joe takes a spoonful and laughs",
-        "they clink their spoons together like a toast"
+        "the two soldiers sit side by side in the snowy foxhole, one holds a small open olive-drab can",
+        "they pass the can between them and smile tiredly",
+        "wide shot of the quiet snowy foxhole line at midday, breath steaming"
       ],
       "sound": "spoons on tin, light laughter, wind",
       "refs": [
@@ -760,7 +1488,38 @@
       "pad": 0.8,
       "must": [
         "exactly two soldiers"
-      ]
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "2c0b3805-f2e1-4829-840b-d02d727093b7",
+            "submitted": "2026-11-02T06:53:31+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "2c0b3805-f2e1-4829-840b-d02d727093b7",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261102_065319_2c0b3805-f2e1-4829-840b-d02d727093b7.png",
+        "finished": "2026-11-02T06:57:27+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "6b10adc9-6dfb-4010-80cb-8dadabf939f9",
+            "submitted": "2026-11-02T06:58:45+00:00",
+            "credits": 15.0
+          },
+          {
+            "job_id": "c2c9edd2-5a9f-4867-86ae-255c1ee16171",
+            "submitted": "2026-11-02T07:04:44+00:00",
+            "credits": 15.0
+          }
+        ],
+        "job_id": "c2c9edd2-5a9f-4867-86ae-255c1ee16171",
+        "finished": "2026-11-02T07:07:54+00:00",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261102_070440_c2c9edd2-5a9f-4867-86ae-255c1ee16171.mp4"
+      }
     },
     {
       "n": 26,
@@ -785,7 +1544,33 @@
       "pad": 2.2,
       "must": [
         "exactly two soldiers"
-      ]
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "717bf4ff-a279-44cd-b584-916df35cafb0",
+            "submitted": "2026-11-02T06:53:31+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "717bf4ff-a279-44cd-b584-916df35cafb0",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261102_065318_717bf4ff-a279-44cd-b584-916df35cafb0.png",
+        "finished": "2026-11-02T06:57:27+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "e3cc2c18-85db-4212-885f-6bc89cad72bb",
+            "submitted": "2026-11-02T06:58:45+00:00",
+            "credits": 15.0
+          }
+        ],
+        "job_id": "e3cc2c18-85db-4212-885f-6bc89cad72bb",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261102_065831_e3cc2c18-85db-4212-885f-6bc89cad72bb.mp4",
+        "finished": "2026-11-02T07:03:13+00:00"
+      }
     },
     {
       "n": 27,
@@ -808,7 +1593,33 @@
       "must": [
         "American Sherman tank with a white star",
         "1944 US Army"
-      ]
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "88c420b3-f022-431c-8ab8-798da5ac36da",
+            "submitted": "2026-11-02T06:53:31+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "88c420b3-f022-431c-8ab8-798da5ac36da",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261102_065318_88c420b3-f022-431c-8ab8-798da5ac36da.png",
+        "finished": "2026-11-02T06:57:27+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "4a52f708-4b53-41a3-821f-b184e8d2966c",
+            "submitted": "2026-11-02T06:58:45+00:00",
+            "credits": 15.0
+          }
+        ],
+        "job_id": "4a52f708-4b53-41a3-821f-b184e8d2966c",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261102_065831_4a52f708-4b53-41a3-821f-b184e8d2966c.mp4",
+        "finished": "2026-11-02T07:03:13+00:00"
+      }
     },
     {
       "n": 28,
@@ -833,7 +1644,33 @@
       "pad": 0.8,
       "must": [
         "no gore, no bodies"
-      ]
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "81d728a4-da10-4aa8-87a5-bc92b12275b2",
+            "submitted": "2026-11-02T06:53:31+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "81d728a4-da10-4aa8-87a5-bc92b12275b2",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261102_065319_81d728a4-da10-4aa8-87a5-bc92b12275b2.png",
+        "finished": "2026-11-02T06:57:27+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "045271fa-115f-4a3f-821d-fc9cfd34f171",
+            "submitted": "2026-11-02T06:58:45+00:00",
+            "credits": 15.0
+          }
+        ],
+        "job_id": "045271fa-115f-4a3f-821d-fc9cfd34f171",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261102_065831_045271fa-115f-4a3f-821d-fc9cfd34f171.mp4",
+        "finished": "2026-11-02T07:03:13+00:00"
+      }
     },
     {
       "n": 29,
@@ -859,7 +1696,33 @@
       "beat": "ÖZET",
       "must": [
         "exactly two soldiers"
-      ]
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "59d6b9a8-b56a-48a7-adf9-6c4937605c48",
+            "submitted": "2026-11-02T06:53:31+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "59d6b9a8-b56a-48a7-adf9-6c4937605c48",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261102_065319_59d6b9a8-b56a-48a7-adf9-6c4937605c48.png",
+        "finished": "2026-11-02T06:57:27+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "746a156b-c7ed-43ae-afc5-3c5070275887",
+            "submitted": "2026-11-02T06:58:45+00:00",
+            "credits": 15.0
+          }
+        ],
+        "job_id": "746a156b-c7ed-43ae-afc5-3c5070275887",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261102_065831_746a156b-c7ed-43ae-afc5-3c5070275887.mp4",
+        "finished": "2026-11-02T07:03:13+00:00"
+      }
     },
     {
       "n": 30,
@@ -870,9 +1733,9 @@
       "narration_voiced": "The newspapers called us the Battered Bastards of Bastogne. We kind of liked it. Lenny got his garage in Texas. And every Christmas for the rest of his life, he sent me a card with one word on it. Nuts.",
       "image_prompt": "A small warm American kitchen in December 1965: an older Joe Novak, about 40, grey at the temples, opens a Christmas card at the table, smiling; a decorated Christmas tree behind him",
       "shots": [
-        "the older man opens a Christmas card and laughs softly",
-        "close on the card in his hands, a simple drawing of a holly sprig, the words not readable",
-        "he props the card on the windowsill next to many others"
+        "the older man opens a Christmas card and laughs softly; the camera sees only the back of the card",
+        "he closes the card and looks at its plain holly-sprig front cover with a warm smile",
+        "he stands the closed card on the windowsill and looks out at the snow"
       ],
       "sound": "quiet kitchen, a clock ticking, soft laughter",
       "refs": [
@@ -884,8 +1747,52 @@
         "exactly one person"
       ],
       "must_not": [
-        "readable text or letters"
-      ]
+        "any writing, handwriting, text or letters on the card or anywhere",
+        "close-up of the inside of the card"
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "496ba735-70db-46af-bd5c-785c01b3e185",
+            "submitted": "2026-11-02T06:53:31+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "496ba735-70db-46af-bd5c-785c01b3e185",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261102_065318_496ba735-70db-46af-bd5c-785c01b3e185.png",
+        "finished": "2026-11-02T06:57:27+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "310b69ca-6615-4b8c-a243-bbb5a1fc631b",
+            "submitted": "2026-11-02T07:04:44+00:00",
+            "credits": 15.0
+          }
+        ],
+        "history": [
+          {
+            "status": "done",
+            "attempts": [
+              {
+                "job_id": "40020df1-441e-4f3d-8766-f69336e3f7b1",
+                "submitted": "2026-11-02T06:58:45+00:00",
+                "credits": 15.0
+              }
+            ],
+            "job_id": "40020df1-441e-4f3d-8766-f69336e3f7b1",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261102_065831_40020df1-441e-4f3d-8766-f69336e3f7b1.mp4",
+            "finished": "2026-11-02T07:03:13+00:00",
+            "redo_reason": "kartın içinde anlamsız yazı; anlatım \"tek kelime\" diyor",
+            "redo_at": "2026-11-02T07:04:16+00:00"
+          }
+        ],
+        "job_id": "310b69ca-6615-4b8c-a243-bbb5a1fc631b",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261102_070440_310b69ca-6615-4b8c-a243-bbb5a1fc631b.mp4",
+        "finished": "2026-11-02T07:08:08+00:00"
+      }
     },
     {
       "n": 31,
@@ -911,7 +1818,33 @@
       "must": [
         "exactly one soldier"
       ],
-      "own_rules": true
+      "own_rules": true,
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "3c3947f8-b143-4c89-85ed-4eea49d01fc5",
+            "submitted": "2026-11-02T06:53:31+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "3c3947f8-b143-4c89-85ed-4eea49d01fc5",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261102_065317_3c3947f8-b143-4c89-85ed-4eea49d01fc5.png",
+        "finished": "2026-11-02T06:57:27+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "b85145ef-07d8-4a4a-97a2-b72323c5bd2d",
+            "submitted": "2026-11-02T06:58:45+00:00",
+            "credits": 15.0
+          }
+        ],
+        "job_id": "b85145ef-07d8-4a4a-97a2-b72323c5bd2d",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261102_065831_b85145ef-07d8-4a4a-97a2-b72323c5bd2d.mp4",
+        "finished": "2026-11-02T07:03:13+00:00"
+      }
     },
     {
       "n": 32,
@@ -938,7 +1871,33 @@
       "must_not": [
         "modern ships or clothing"
       ],
-      "own_rules": true
+      "own_rules": true,
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "29c68786-5890-4512-ba2b-471bcba3bc42",
+            "submitted": "2026-11-02T06:53:31+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "29c68786-5890-4512-ba2b-471bcba3bc42",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261102_065318_29c68786-5890-4512-ba2b-471bcba3bc42.png",
+        "finished": "2026-11-02T06:57:27+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "487f6b98-d8aa-408a-a273-6ecc1f44a170",
+            "submitted": "2026-11-02T06:58:45+00:00",
+            "credits": 15.0
+          }
+        ],
+        "job_id": "487f6b98-d8aa-408a-a273-6ecc1f44a170",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261102_065831_487f6b98-d8aa-408a-a273-6ecc1f44a170.mp4",
+        "finished": "2026-11-02T07:03:13+00:00"
+      }
     }
   ],
   "max_credits": 620
