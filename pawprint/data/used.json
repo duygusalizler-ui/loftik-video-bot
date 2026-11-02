@@ -92,10 +92,11 @@
     35637296,
     17029769,
     7279095,
-    35475036
+    35475036,
+    39834675,
+    40432477
   ],
   "themes": [
-    "paws",
     "puppy_to_senior",
     "walks",
     "owner_love",
@@ -114,7 +115,8 @@
     "everyday_moments",
     "senior_dog",
     "paws",
-    "puppy_to_senior"
+    "puppy_to_senior",
+    "walks"
   ],
   "runs": [
     {
@@ -496,6 +498,14 @@
       "stock": [
         "https://www.pexels.com/video/mother-and-child-sleeping-together-with-their-dog-7279095/",
         "https://www.pexels.com/video/relaxed-dogs-resting-outside-rustic-shed-35475036/"
+      ]
+    },
+    {
+      "at": "20261102_171339",
+      "theme": "walks",
+      "stock": [
+        "https://www.pexels.com/video/border-collie-running-in-sunny-field-39834675/",
+        "https://www.pexels.com/video/golden-grass-swaying-in-the-evening-breeze-40432477/"
       ]
     }
   ]
