@@ -94,10 +94,11 @@
     7279095,
     35475036,
     39834675,
-    40432477
+    40432477,
+    6715887,
+    37013568
   ],
   "themes": [
-    "puppy_to_senior",
     "walks",
     "owner_love",
     "everyday_moments",
@@ -116,7 +117,8 @@
     "senior_dog",
     "paws",
     "puppy_to_senior",
-    "walks"
+    "walks",
+    "owner_love"
   ],
   "runs": [
     {
@@ -506,6 +508,14 @@
       "stock": [
         "https://www.pexels.com/video/border-collie-running-in-sunny-field-39834675/",
         "https://www.pexels.com/video/golden-grass-swaying-in-the-evening-breeze-40432477/"
+      ]
+    },
+    {
+      "at": "20261103_151932",
+      "theme": "owner_love",
+      "stock": [
+        "https://www.pexels.com/video/woman-petting-her-dog-6715887/",
+        "https://www.pexels.com/video/playful-dog-enjoys-belly-rubs-on-grass-37013568/"
       ]
     }
   ]
