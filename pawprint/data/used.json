@@ -98,10 +98,11 @@
     6715887,
     37013568,
     34775806,
-    7267526
+    7267526,
+    31916188,
+    5858725
   ],
   "themes": [
-    "owner_love",
     "everyday_moments",
     "senior_dog",
     "paws",
@@ -120,7 +121,8 @@
     "puppy_to_senior",
     "walks",
     "owner_love",
-    "everyday_moments"
+    "everyday_moments",
+    "senior_dog"
   ],
   "runs": [
     {
@@ -526,6 +528,14 @@
       "stock": [
         "https://www.pexels.com/video/white-dog-barking-behind-garden-fence-34775806/",
         "https://www.pexels.com/video/close-up-shot-of-a-dog-lying-down-7267526/"
+      ]
+    },
+    {
+      "at": "20261104_154243",
+      "theme": "senior_dog",
+      "stock": [
+        "https://www.pexels.com/video/cozy-white-dog-resting-indoors-on-bed-31916188/",
+        "https://www.pexels.com/video/a-kid-sneezing-5858725/"
       ]
     }
   ]
