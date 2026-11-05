@@ -100,10 +100,11 @@
     34775806,
     7267526,
     31916188,
-    5858725
+    5858725,
+    35744093,
+    39401151
   ],
   "themes": [
-    "everyday_moments",
     "senior_dog",
     "paws",
     "puppy_to_senior",
@@ -122,7 +123,8 @@
     "walks",
     "owner_love",
     "everyday_moments",
-    "senior_dog"
+    "senior_dog",
+    "paws"
   ],
   "runs": [
     {
@@ -536,6 +538,14 @@
       "stock": [
         "https://www.pexels.com/video/cozy-white-dog-resting-indoors-on-bed-31916188/",
         "https://www.pexels.com/video/a-kid-sneezing-5858725/"
+      ]
+    },
+    {
+      "at": "20261105_153714",
+      "theme": "paws",
+      "stock": [
+        "https://www.pexels.com/video/jack-russell-terrier-enjoying-snowy-winter-walk-35744093/",
+        "https://www.pexels.com/video/golden-retriever-relaxing-on-sandy-beach-39401151/"
       ]
     }
   ]
