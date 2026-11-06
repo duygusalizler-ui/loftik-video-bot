@@ -104,10 +104,11 @@
     35744093,
     39401151,
     11562570,
-    8746929
+    8746929,
+    40186345,
+    16176899
   ],
   "themes": [
-    "paws",
     "puppy_to_senior",
     "walks",
     "owner_love",
@@ -126,7 +127,8 @@
     "everyday_moments",
     "senior_dog",
     "paws",
-    "puppy_to_senior"
+    "puppy_to_senior",
+    "walks"
   ],
   "runs": [
     {
@@ -556,6 +558,14 @@
       "stock": [
         "https://www.pexels.com/video/puppy-sleeping-in-grass-11562570/",
         "https://www.pexels.com/video/close-up-footage-of-a-labrador-retriever-8746929/"
+      ]
+    },
+    {
+      "at": "20261106_205702",
+      "theme": "walks",
+      "stock": [
+        "https://www.pexels.com/video/playful-dog-in-vibrant-autumn-forest-40186345/",
+        "https://www.pexels.com/video/a-photo-of-the-sun-setting-over-a-field-16176899/"
       ]
     }
   ]
