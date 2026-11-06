@@ -102,10 +102,11 @@
     31916188,
     5858725,
     35744093,
-    39401151
+    39401151,
+    11562570,
+    8746929
   ],
   "themes": [
-    "senior_dog",
     "paws",
     "puppy_to_senior",
     "walks",
@@ -124,7 +125,8 @@
     "owner_love",
     "everyday_moments",
     "senior_dog",
-    "paws"
+    "paws",
+    "puppy_to_senior"
   ],
   "runs": [
     {
@@ -546,6 +548,14 @@
       "stock": [
         "https://www.pexels.com/video/jack-russell-terrier-enjoying-snowy-winter-walk-35744093/",
         "https://www.pexels.com/video/golden-retriever-relaxing-on-sandy-beach-39401151/"
+      ]
+    },
+    {
+      "at": "20261106_151051",
+      "theme": "puppy_to_senior",
+      "stock": [
+        "https://www.pexels.com/video/puppy-sleeping-in-grass-11562570/",
+        "https://www.pexels.com/video/close-up-footage-of-a-labrador-retriever-8746929/"
       ]
     }
   ]
