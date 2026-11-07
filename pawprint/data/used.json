@@ -106,10 +106,11 @@
     11562570,
     8746929,
     40186345,
-    16176899
+    16176899,
+    34337208,
+    7197660
   ],
   "themes": [
-    "puppy_to_senior",
     "walks",
     "owner_love",
     "everyday_moments",
@@ -128,7 +129,8 @@
     "senior_dog",
     "paws",
     "puppy_to_senior",
-    "walks"
+    "walks",
+    "owner_love"
   ],
   "runs": [
     {
@@ -566,6 +568,14 @@
       "stock": [
         "https://www.pexels.com/video/playful-dog-in-vibrant-autumn-forest-40186345/",
         "https://www.pexels.com/video/a-photo-of-the-sun-setting-over-a-field-16176899/"
+      ]
+    },
+    {
+      "at": "20261107_140944",
+      "theme": "owner_love",
+      "stock": [
+        "https://www.pexels.com/video/man-walking-dogs-outdoors-in-nature-34337208/",
+        "https://www.pexels.com/video/woman-bonding-with-pet-dog-7197660/"
       ]
     }
   ]
