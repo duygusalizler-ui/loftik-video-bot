@@ -108,10 +108,11 @@
     40186345,
     16176899,
     34337208,
-    7197660
+    7197660,
+    5501738,
+    8499662
   ],
   "themes": [
-    "walks",
     "owner_love",
     "everyday_moments",
     "senior_dog",
@@ -130,7 +131,8 @@
     "paws",
     "puppy_to_senior",
     "walks",
-    "owner_love"
+    "owner_love",
+    "everyday_moments"
   ],
   "runs": [
     {
@@ -576,6 +578,14 @@
       "stock": [
         "https://www.pexels.com/video/man-walking-dogs-outdoors-in-nature-34337208/",
         "https://www.pexels.com/video/woman-bonding-with-pet-dog-7197660/"
+      ]
+    },
+    {
+      "at": "20261107_192926",
+      "theme": "everyday_moments",
+      "stock": [
+        "https://www.pexels.com/video/a-woman-hiding-from-the-surfboard-5501738/",
+        "https://www.pexels.com/video/a-couple-with-their-dogs-running-on-the-street-8499662/"
       ]
     }
   ]
