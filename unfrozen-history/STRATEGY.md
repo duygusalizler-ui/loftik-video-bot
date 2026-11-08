@@ -212,3 +212,10 @@ Ders: sonraki konular "bilinen olay + sayı" kalıbına yaslansın; kapakta haya
 - Haftalık zamanlanmış görev: **her Pazartesi 09:41 TR** bu oturumda üretimi başlatır; Çarşamba akşamı teslim.
 - Yayın adımı: kullanıcı videoyu (+kapak, srt, bitiş ekranı) Liste dışı yükler, ID'yi verir → onayıyla Claude vidIQ ile başlık/açıklama/etiket + **Perşembe 22:00 TR** planlamasını yapar. Onaysız yükleme/güncelleme/planlama yok.
 - Konu sırası: ep009 Bastogne 1944 (Per 5 Kas) → ep010 Shackleton/Endurance 1915 (Per 12 Kas) → değerlendirme → Klondike 1897–98 → Leningrad 1941–42 → 1888 Büyük Kar Fırtınası.
+
+## 28. Kodla çizilen haritalar ve otomatik QC (8 Kasım)
+- cinecode (sarpstar/cinecode, MIT) incelendi: ana üretim için değil (stilize, gerçekçi değil), yardımcı olarak alındı.
+- `maps/`: eski deniz haritası görünümünde, kendini çizen rota animasyonu (d3 + headless Chromium, 0 kredi).
+  `NODE_PATH=$(npm root -g) node maps/render.mjs maps/specs/<spec>.json build/<ep>/map.mp4 [--preview]` (24 sn ≈ 6 dk render).
+  Bölüm başına 1-2 harita sahnesi; klip yerine geçer → kredi tasarrufu + belgesel güveni.
+- `tools/cinecode/qc.py all <video>`: teslim öncesi donma/siyah/tekrar/patlama/kanca/ses kontrolü (kare kare göz kontrolüne ek).
