@@ -112,10 +112,11 @@
     5501738,
     8499662,
     7196313,
-    5501733
+    5501733,
+    40558777,
+    6576495
   ],
   "themes": [
-    "everyday_moments",
     "senior_dog",
     "paws",
     "puppy_to_senior",
@@ -134,7 +135,8 @@
     "walks",
     "owner_love",
     "everyday_moments",
-    "senior_dog"
+    "senior_dog",
+    "paws"
   ],
   "runs": [
     {
@@ -596,6 +598,14 @@
       "stock": [
         "https://www.pexels.com/video/a-woman-shutting-the-alarm-clock-7196313/",
         "https://www.pexels.com/video/a-man-petting-his-white-dog-5501733/"
+      ]
+    },
+    {
+      "at": "20261108_194601",
+      "theme": "paws",
+      "stock": [
+        "https://www.pexels.com/video/golden-retrievers-drinking-water-outdoors-40558777/",
+        "https://www.pexels.com/video/couple-playing-with-the-dog-in-their-bed-6576495/"
       ]
     }
   ]
