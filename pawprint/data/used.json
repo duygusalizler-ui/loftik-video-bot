@@ -110,10 +110,11 @@
     34337208,
     7197660,
     5501738,
-    8499662
+    8499662,
+    7196313,
+    5501733
   ],
   "themes": [
-    "owner_love",
     "everyday_moments",
     "senior_dog",
     "paws",
@@ -132,7 +133,8 @@
     "puppy_to_senior",
     "walks",
     "owner_love",
-    "everyday_moments"
+    "everyday_moments",
+    "senior_dog"
   ],
   "runs": [
     {
@@ -586,6 +588,14 @@
       "stock": [
         "https://www.pexels.com/video/a-woman-hiding-from-the-surfboard-5501738/",
         "https://www.pexels.com/video/a-couple-with-their-dogs-running-on-the-street-8499662/"
+      ]
+    },
+    {
+      "at": "20261108_142246",
+      "theme": "senior_dog",
+      "stock": [
+        "https://www.pexels.com/video/a-woman-shutting-the-alarm-clock-7196313/",
+        "https://www.pexels.com/video/a-man-petting-his-white-dog-5501733/"
       ]
     }
   ]
