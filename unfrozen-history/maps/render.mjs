@@ -1,5 +1,5 @@
 // Harita animasyonunu MP4'e çevirir (headless Chromium, kare kare, ffmpeg'e boru).
-//   node maps/render.mjs maps/specs/ep010_route.json build/ep010/map_route.mp4 [--preview]
+//   node maps/render.mjs maps/specs/ep010_route.json build/ep010/map_route.mp4 [--preview] [--from A --to B --len L]
 // --preview: 4 sn'de bir kare alıp tek bir kontrol görüntüsü (PNG) üretir.
 import { createRequire } from "node:module";
 import { spawn, execFileSync } from "node:child_process";
@@ -30,9 +30,14 @@ const font = (n, style, weight) =>
   `@font-face{font-family:Garamond;font-style:${style};font-weight:${weight};src:url(data:font/woff2;base64,${rd(n).toString("base64")})}`;
 
 const [specPath, outPath] = process.argv.slice(2);
+fs.mkdirSync(path.dirname(outPath), { recursive: true });
 const preview = process.argv.includes("--preview");
 const spec = JSON.parse(fs.readFileSync(specPath, "utf8"));
-const [W, H] = spec.size, fps = spec.fps, N = Math.round(spec.duration * fps);
+const arg = (k, d) => { const i = process.argv.indexOf(k); return i > 0 ? Number(process.argv[i + 1]) : d; };
+// --from A --to B --len L: harita zamanının A..B aralığını L saniyelik videoya yayar (anlatım süresine uydurmak için)
+const A = arg("--from", 0), B = arg("--to", spec.duration), L = arg("--len", B - A);
+const [W, H] = spec.size, fps = spec.fps, N = Math.round(L * fps);
+const tAt = (i) => A + (B - A) * (N > 1 ? i / (N - 1) : 0);
 
 const html = `<!doctype html><html><head><meta charset="utf-8"><style>
 ${font("g500.woff2", "normal", 500)}${font("g500i.woff2", "italic", 500)}${font("g700.woff2", "normal", 700)}
@@ -60,7 +65,7 @@ if (preview) {
   const ff = spawn("ffmpeg", ["-v", "error", "-y", "-f", "image2pipe", "-framerate", String(fps), "-c:v", "mjpeg", "-i", "-",
     "-c:v", "libx264", "-preset", "medium", "-crf", "16", "-pix_fmt", "yuv420p", outPath], { stdio: ["pipe", "inherit", "inherit"] });
   for (let i = 0; i < N; i++) {
-    const buf = await frame(i / fps);
+    const buf = await frame(tAt(i));
     if (!ff.stdin.write(buf)) await new Promise((r) => ff.stdin.once("drain", r));
   }
   ff.stdin.end();
