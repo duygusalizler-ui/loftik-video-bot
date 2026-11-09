@@ -114,10 +114,11 @@
     7196313,
     5501733,
     40558777,
-    6576495
+    6576495,
+    37437403,
+    6715894
   ],
   "themes": [
-    "senior_dog",
     "paws",
     "puppy_to_senior",
     "walks",
@@ -136,7 +137,8 @@
     "owner_love",
     "everyday_moments",
     "senior_dog",
-    "paws"
+    "paws",
+    "puppy_to_senior"
   ],
   "runs": [
     {
@@ -606,6 +608,14 @@
       "stock": [
         "https://www.pexels.com/video/golden-retrievers-drinking-water-outdoors-40558777/",
         "https://www.pexels.com/video/couple-playing-with-the-dog-in-their-bed-6576495/"
+      ]
+    },
+    {
+      "at": "20261109_173904",
+      "theme": "puppy_to_senior",
+      "stock": [
+        "https://www.pexels.com/video/playful-dogs-enjoying-a-sunny-day-outdoors-37437403/",
+        "https://www.pexels.com/video/man-petting-a-dog-while-talking-to-a-woman-6715894/"
       ]
     }
   ]
