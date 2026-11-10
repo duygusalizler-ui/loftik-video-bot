@@ -116,10 +116,11 @@
     40558777,
     6576495,
     37437403,
-    6715894
+    6715894,
+    7199259,
+    36857004
   ],
   "themes": [
-    "paws",
     "puppy_to_senior",
     "walks",
     "owner_love",
@@ -138,7 +139,8 @@
     "everyday_moments",
     "senior_dog",
     "paws",
-    "puppy_to_senior"
+    "puppy_to_senior",
+    "walks"
   ],
   "runs": [
     {
@@ -616,6 +618,14 @@
       "stock": [
         "https://www.pexels.com/video/playful-dogs-enjoying-a-sunny-day-outdoors-37437403/",
         "https://www.pexels.com/video/man-petting-a-dog-while-talking-to-a-woman-6715894/"
+      ]
+    },
+    {
+      "at": "20261110_154233",
+      "theme": "walks",
+      "stock": [
+        "https://www.pexels.com/video/a-woman-playing-with-her-dog-7199259/",
+        "https://www.pexels.com/video/man-playing-with-dog-in-autumn-park-36857004/"
       ]
     }
   ]
