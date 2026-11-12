@@ -118,10 +118,11 @@
     37437403,
     6715894,
     7199259,
-    36857004
+    36857004,
+    37214032,
+    34710283
   ],
   "themes": [
-    "puppy_to_senior",
     "walks",
     "owner_love",
     "everyday_moments",
@@ -140,7 +141,8 @@
     "senior_dog",
     "paws",
     "puppy_to_senior",
-    "walks"
+    "walks",
+    "owner_love"
   ],
   "runs": [
     {
@@ -626,6 +628,14 @@
       "stock": [
         "https://www.pexels.com/video/a-woman-playing-with-her-dog-7199259/",
         "https://www.pexels.com/video/man-playing-with-dog-in-autumn-park-36857004/"
+      ]
+    },
+    {
+      "at": "20261112_160245",
+      "theme": "owner_love",
+      "stock": [
+        "https://www.pexels.com/video/charming-campus-with-friendly-campus-dog-37214032/",
+        "https://www.pexels.com/video/playful-dogs-in-a-park-setting-34710283/"
       ]
     }
   ]
