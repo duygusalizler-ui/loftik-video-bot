@@ -120,10 +120,11 @@
     7199259,
     36857004,
     37214032,
-    34710283
+    34710283,
+    10117436,
+    7197666
   ],
   "themes": [
-    "walks",
     "owner_love",
     "everyday_moments",
     "senior_dog",
@@ -142,7 +143,8 @@
     "paws",
     "puppy_to_senior",
     "walks",
-    "owner_love"
+    "owner_love",
+    "everyday_moments"
   ],
   "runs": [
     {
@@ -636,6 +638,14 @@
       "stock": [
         "https://www.pexels.com/video/charming-campus-with-friendly-campus-dog-37214032/",
         "https://www.pexels.com/video/playful-dogs-in-a-park-setting-34710283/"
+      ]
+    },
+    {
+      "at": "20261113_153023",
+      "theme": "everyday_moments",
+      "stock": [
+        "https://www.pexels.com/video/elderly-woman-sitting-at-the-sofa-holding-book-10117436/",
+        "https://www.pexels.com/video/woman-spending-time-with-her-dog-7197666/"
       ]
     }
   ]
