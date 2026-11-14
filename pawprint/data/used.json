@@ -124,10 +124,11 @@
     10117436,
     7197666,
     5247150,
-    40558772
+    40558772,
+    16168331,
+    5262620
   ],
   "themes": [
-    "everyday_moments",
     "senior_dog",
     "paws",
     "puppy_to_senior",
@@ -146,7 +147,8 @@
     "walks",
     "owner_love",
     "everyday_moments",
-    "senior_dog"
+    "senior_dog",
+    "paws"
   ],
   "runs": [
     {
@@ -656,6 +658,14 @@
       "stock": [
         "https://www.pexels.com/video/cat-sleeping-on-the-bed-5247150/",
         "https://www.pexels.com/video/playful-golden-retrievers-wrestling-indoors-40558772/"
+      ]
+    },
+    {
+      "at": "20261114_195832",
+      "theme": "paws",
+      "stock": [
+        "https://www.pexels.com/video/a-woman-hugging-a-dog-on-the-floor-16168331/",
+        "https://www.pexels.com/video/a-boy-holding-a-book-while-looking-at-the-dog-5262620/"
       ]
     }
   ]
