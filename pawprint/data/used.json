@@ -126,10 +126,11 @@
     5247150,
     40558772,
     16168331,
-    5262620
+    5262620,
+    34929178,
+    5229788
   ],
   "themes": [
-    "senior_dog",
     "paws",
     "puppy_to_senior",
     "walks",
@@ -148,7 +149,8 @@
     "owner_love",
     "everyday_moments",
     "senior_dog",
-    "paws"
+    "paws",
+    "puppy_to_senior"
   ],
   "runs": [
     {
@@ -666,6 +668,14 @@
       "stock": [
         "https://www.pexels.com/video/a-woman-hugging-a-dog-on-the-floor-16168331/",
         "https://www.pexels.com/video/a-boy-holding-a-book-while-looking-at-the-dog-5262620/"
+      ]
+    },
+    {
+      "at": "20261115_145114",
+      "theme": "puppy_to_senior",
+      "stock": [
+        "https://www.pexels.com/video/adorable-sleeping-puppies-captured-up-close-34929178/",
+        "https://www.pexels.com/video/playful-dog-owner-petting-and-loving-her-dog-5229788/"
       ]
     }
   ]
