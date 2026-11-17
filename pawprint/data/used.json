@@ -132,10 +132,11 @@
     35879035,
     40558773,
     7197663,
-    5501230
+    5501230,
+    6574526,
+    5228660
   ],
   "themes": [
-    "walks",
     "owner_love",
     "everyday_moments",
     "senior_dog",
@@ -154,7 +155,8 @@
     "paws",
     "puppy_to_senior",
     "walks",
-    "owner_love"
+    "owner_love",
+    "everyday_moments"
   ],
   "runs": [
     {
@@ -696,6 +698,14 @@
       "stock": [
         "https://www.pexels.com/video/woman-training-a-dog-7197663/",
         "https://www.pexels.com/video/a-couple-spending-time-together-with-their-dog-5501230/"
+      ]
+    },
+    {
+      "at": "20261117_165753",
+      "theme": "everyday_moments",
+      "stock": [
+        "https://www.pexels.com/video/woman-hugging-her-dog-6574526/",
+        "https://www.pexels.com/video/a-woman-standing-by-the-window-with-her-dog-5228660/"
       ]
     }
   ]
