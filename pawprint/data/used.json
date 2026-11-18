@@ -134,10 +134,11 @@
     7197663,
     5501230,
     6574526,
-    5228660
+    5228660,
+    7505656,
+    10117748
   ],
   "themes": [
-    "owner_love",
     "everyday_moments",
     "senior_dog",
     "paws",
@@ -156,7 +157,8 @@
     "puppy_to_senior",
     "walks",
     "owner_love",
-    "everyday_moments"
+    "everyday_moments",
+    "senior_dog"
   ],
   "runs": [
     {
@@ -706,6 +708,14 @@
       "stock": [
         "https://www.pexels.com/video/woman-hugging-her-dog-6574526/",
         "https://www.pexels.com/video/a-woman-standing-by-the-window-with-her-dog-5228660/"
+      ]
+    },
+    {
+      "at": "20261118_163343",
+      "theme": "senior_dog",
+      "stock": [
+        "https://www.pexels.com/video/a-little-girl-sleeping-on-bed-7505656/",
+        "https://www.pexels.com/video/elderly-woman-holding-a-dog-10117748/"
       ]
     }
   ]
