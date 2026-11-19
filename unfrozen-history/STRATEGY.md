@@ -219,3 +219,16 @@ Ders: sonraki konular "bilinen olay + sayı" kalıbına yaslansın; kapakta haya
   `NODE_PATH=$(npm root -g) node maps/render.mjs maps/specs/<spec>.json build/<ep>/map.mp4 [--preview]` (24 sn ≈ 6 dk render).
   Bölüm başına 1-2 harita sahnesi; klip yerine geçer → kredi tasarrufu + belgesel güveni.
 - `tools/cinecode/qc.py all <video>`: teslim öncesi donma/siyah/tekrar/patlama/kanca/ses kontrolü (kare kare göz kontrolüne ek).
+
+## 29. Ozillo videosu analizi (19 Kasım) → küçük niş kayması (öneri)
+Kaynak: "Yapay Zekayla Sıfırdan YouTube Videosu Yaptım" (Ozillo Studio, 14 bin izlenme, outlier ×15).
+Akış: Claude metin + 25 görsel istemi → Google Flow görseller → ses klonu → SRT'ye göre otomatik kurgu (Ken Burns + geçiş).
+Bizde zaten olanlar: metin, görsel/klip, klon ses, SRT, otomatik montaj, QC. Yeni alınacaklar:
+1. **İkinci tekil şahıs kanca ("sen")**: "Yıl 1998. 18 yaşındasın…" → "December 1944. You're nineteen…". Açılış 2. tekil,
+   sonra kurgusal anlatıcı devralır ("…that was me"). Niş: "Soğukta hayatta kalma — onu SEN yaşıyorsun" (Unfrozen History
+   adı/kimliği aynı; izleyici farkı hissetmez, başlıklar "You're…" kalıbına kayar).
+2. **Düzensiz sahne süresi**: her görüntü eşit kalmasın (3–12 sn). Montajda kısa/uzun karışık kesim.
+3. **Melez görüntü (kullanıcı onayı bekliyor)**: anahtar 8–10 an klip (15 kr), gerisi kamera hareketli fotogerçekçi
+   görsel (2,75 kr) → bölüm ~600 yerine ~200 kredi. 2 Kas kararı "tamamı video" idi; değişiklik kullanıcıya soruldu.
+4. Rakamları anlatım metninde yazıyla yaz (seslendirme doğallığı).
+Almıyoruz: başka kanalın storyboard'unu kopyalamak, ücretli Ozillo araçları (eşdeğerleri bizde var).
