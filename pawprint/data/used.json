@@ -136,10 +136,11 @@
     6574526,
     5228660,
     7505656,
-    10117748
+    10117748,
+    34629283,
+    39519404
   ],
   "themes": [
-    "everyday_moments",
     "senior_dog",
     "paws",
     "puppy_to_senior",
@@ -158,7 +159,8 @@
     "walks",
     "owner_love",
     "everyday_moments",
-    "senior_dog"
+    "senior_dog",
+    "paws"
   ],
   "runs": [
     {
@@ -716,6 +718,14 @@
       "stock": [
         "https://www.pexels.com/video/a-little-girl-sleeping-on-bed-7505656/",
         "https://www.pexels.com/video/elderly-woman-holding-a-dog-10117748/"
+      ]
+    },
+    {
+      "at": "20261119_163906",
+      "theme": "paws",
+      "stock": [
+        "https://www.pexels.com/video/cat-balancing-on-log-in-autumn-forest-path-34629283/",
+        "https://www.pexels.com/video/adorable-puppies-enjoying-sunny-day-outdoors-39519404/"
       ]
     }
   ]
