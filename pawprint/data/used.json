@@ -138,10 +138,11 @@
     7505656,
     10117748,
     34629283,
-    39519404
+    39519404,
+    7279096,
+    20218500
   ],
   "themes": [
-    "senior_dog",
     "paws",
     "puppy_to_senior",
     "walks",
@@ -160,7 +161,8 @@
     "owner_love",
     "everyday_moments",
     "senior_dog",
-    "paws"
+    "paws",
+    "puppy_to_senior"
   ],
   "runs": [
     {
@@ -726,6 +728,14 @@
       "stock": [
         "https://www.pexels.com/video/cat-balancing-on-log-in-autumn-forest-path-34629283/",
         "https://www.pexels.com/video/adorable-puppies-enjoying-sunny-day-outdoors-39519404/"
+      ]
+    },
+    {
+      "at": "20261120_161550",
+      "theme": "puppy_to_senior",
+      "stock": [
+        "https://www.pexels.com/video/a-pet-dog-on-the-bed-while-mother-and-baby-is-sleeping-7279096/",
+        "https://www.pexels.com/video/a-man-hugging-a-dog-with-a-white-shirt-20218500/"
       ]
     }
   ]
