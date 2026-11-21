@@ -140,10 +140,11 @@
     34629283,
     39519404,
     7279096,
-    20218500
+    20218500,
+    35289402,
+    31345803
   ],
   "themes": [
-    "paws",
     "puppy_to_senior",
     "walks",
     "owner_love",
@@ -162,7 +163,8 @@
     "everyday_moments",
     "senior_dog",
     "paws",
-    "puppy_to_senior"
+    "puppy_to_senior",
+    "walks"
   ],
   "runs": [
     {
@@ -736,6 +738,14 @@
       "stock": [
         "https://www.pexels.com/video/a-pet-dog-on-the-bed-while-mother-and-baby-is-sleeping-7279096/",
         "https://www.pexels.com/video/a-man-hugging-a-dog-with-a-white-shirt-20218500/"
+      ]
+    },
+    {
+      "at": "20261121_152702",
+      "theme": "walks",
+      "stock": [
+        "https://www.pexels.com/video/dog-walking-outdoors-in-sunny-landscape-35289402/",
+        "https://www.pexels.com/video/serene-sunset-over-dwingelderveld-grasslands-31345803/"
       ]
     }
   ]
