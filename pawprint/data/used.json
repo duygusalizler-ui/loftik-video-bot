@@ -142,10 +142,11 @@
     7279096,
     20218500,
     35289402,
-    31345803
+    31345803,
+    12768729,
+    12183257
   ],
   "themes": [
-    "puppy_to_senior",
     "walks",
     "owner_love",
     "everyday_moments",
@@ -164,7 +165,8 @@
     "senior_dog",
     "paws",
     "puppy_to_senior",
-    "walks"
+    "walks",
+    "owner_love"
   ],
   "runs": [
     {
@@ -746,6 +748,14 @@
       "stock": [
         "https://www.pexels.com/video/dog-walking-outdoors-in-sunny-landscape-35289402/",
         "https://www.pexels.com/video/serene-sunset-over-dwingelderveld-grasslands-31345803/"
+      ]
+    },
+    {
+      "at": "20261122_152801",
+      "theme": "owner_love",
+      "stock": [
+        "https://www.pexels.com/video/girl-holding-puppies-12768729/",
+        "https://www.pexels.com/video/family-with-dog-in-living-room-12183257/"
       ]
     }
   ]
