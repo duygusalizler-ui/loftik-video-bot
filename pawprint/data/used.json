@@ -144,10 +144,11 @@
     35289402,
     31345803,
     12768729,
-    12183257
+    12183257,
+    41203063,
+    41198970
   ],
   "themes": [
-    "walks",
     "owner_love",
     "everyday_moments",
     "senior_dog",
@@ -166,7 +167,8 @@
     "paws",
     "puppy_to_senior",
     "walks",
-    "owner_love"
+    "owner_love",
+    "everyday_moments"
   ],
   "runs": [
     {
@@ -756,6 +758,14 @@
       "stock": [
         "https://www.pexels.com/video/girl-holding-puppies-12768729/",
         "https://www.pexels.com/video/family-with-dog-in-living-room-12183257/"
+      ]
+    },
+    {
+      "at": "20261123_191953",
+      "theme": "everyday_moments",
+      "stock": [
+        "https://www.pexels.com/video/golden-retriever-relaxing-on-sunny-patio-41203063/",
+        "https://www.pexels.com/video/golden-retrievers-swimming-indoors-pool-fun-41198970/"
       ]
     }
   ]
