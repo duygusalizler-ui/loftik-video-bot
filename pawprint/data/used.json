@@ -146,10 +146,11 @@
     12768729,
     12183257,
     41203063,
-    41198970
+    41198970,
+    40926941,
+    5229966
   ],
   "themes": [
-    "owner_love",
     "everyday_moments",
     "senior_dog",
     "paws",
@@ -168,7 +169,8 @@
     "puppy_to_senior",
     "walks",
     "owner_love",
-    "everyday_moments"
+    "everyday_moments",
+    "senior_dog"
   ],
   "runs": [
     {
@@ -766,6 +768,14 @@
       "stock": [
         "https://www.pexels.com/video/golden-retriever-relaxing-on-sunny-patio-41203063/",
         "https://www.pexels.com/video/golden-retrievers-swimming-indoors-pool-fun-41198970/"
+      ]
+    },
+    {
+      "at": "20261124_185811",
+      "theme": "senior_dog",
+      "stock": [
+        "https://www.pexels.com/video/adorable-cocker-spaniel-resting-on-sofa-40926941/",
+        "https://www.pexels.com/video/cute-dog-resting-beside-it-s-owner-5229966/"
       ]
     }
   ]
