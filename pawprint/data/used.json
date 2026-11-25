@@ -148,10 +148,11 @@
     41203063,
     41198970,
     40926941,
-    5229966
+    5229966,
+    6132713,
+    35459385
   ],
   "themes": [
-    "everyday_moments",
     "senior_dog",
     "paws",
     "puppy_to_senior",
@@ -170,7 +171,8 @@
     "walks",
     "owner_love",
     "everyday_moments",
-    "senior_dog"
+    "senior_dog",
+    "paws"
   ],
   "runs": [
     {
@@ -776,6 +778,14 @@
       "stock": [
         "https://www.pexels.com/video/adorable-cocker-spaniel-resting-on-sofa-40926941/",
         "https://www.pexels.com/video/cute-dog-resting-beside-it-s-owner-5229966/"
+      ]
+    },
+    {
+      "at": "20261125_180852",
+      "theme": "paws",
+      "stock": [
+        "https://www.pexels.com/video/a-close-up-of-a-dog-getting-a-haircut-6132713/",
+        "https://www.pexels.com/video/golden-retriever-walking-along-sunny-lakeside-35459385/"
       ]
     }
   ]
