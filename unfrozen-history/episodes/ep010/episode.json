@@ -1,0 +1,1824 @@
+{
+  "id": "ep010",
+  "version": 1,
+  "title": "Trapped in Antarctic Ice for 497 Days: How All 28 Men Survived (1915)",
+  "title_alt": "Their Ship Sank in the Antarctic. 28 Men Were Left on the Ice.",
+  "title_c": "Shackleton's Endurance: The Greatest Survival Story Ever Told",
+  "thumbnail": "Photorealistic: a frost-bearded polar explorer seen from behind in the foreground, the wooden ship crushed and tilted in the pack ice behind; big words '28 MEN' (B: 'TRAPPED', C: no text)",
+  "hook_description": "May 1916. Three ragged men walk out of the mountains into a whaling station on South Georgia. Their ship, the Endurance, sank in the Antarctic ice six months earlier, and 22 of their men are still waiting on a frozen rock 800 miles away.",
+  "character": "Nils Halvorsen, a fictional Norwegian worker at the Stromness whaling station, who heard the story from the men themselves",
+  "setting": "Weddell Sea, Elephant Island and South Georgia, December 1914 to August 1916",
+  "style": "Photorealistic cinematic film still, shot on 35mm film, natural light, muted cold polar colors, gritty realistic texture, shallow depth of field. Historically accurate 1914-1916 Antarctic expedition and South Georgia whaling station: heavy wool and gabardine polar clothing, wooden lifeboats, pack ice, black stony beaches",
+  "ref_style": "Photorealistic reference, neutral light, historically accurate 1914-1916, original person, no text, no labels, no watermark",
+  "motion_suffix": "Photorealistic cinematic historical film, natural real-time motion, no slow motion, soft cuts between shots, faces and clothing stay consistent across shots, no text; historically accurate 1914-1916 polar expedition, no modern objects",
+  "cast": {
+    "Nils": "Nils Halvorsen (Norwegian whaling station worker of 24, broad shoulders, ruddy weathered face, short reddish-blond beard, pale blue eyes, knitted grey wool cap, thick dark wool sweater under a worn oilskin coat, leather work gloves)"
+  },
+  "gates": {
+    "script": "2026-11-09T06:46:50+00:00"
+  },
+  "must": [
+    "historically accurate 1914-1916 only (except the final teaser and the 1940s pier scene)",
+    "the same face and clothing as in the reference image for Nils",
+    "photorealistic cinematic look in every frame"
+  ],
+  "must_not": [
+    "any text, letters, numbers, captions, logos or watermark (including a name on the ship)",
+    "a recognizable face of a real historical person (Shackleton, Worsley, Crean, Wild and the whole Endurance crew): show them only from behind, far away or with faces hidden by hoods",
+    "modern objects, modern ships, modern clothing",
+    "gore, blood, dead animals, corpses",
+    "extra fingers, deformed hands, duplicated faces",
+    "the same person appearing twice in one frame (clones, twins)",
+    "collage, multiple panels, split screen: it must be ONE single continuous scene",
+    "cartoon, painting or illustration style"
+  ],
+  "sources": [
+    "Ernest Shackleton, South: The Story of Shackleton's Last Expedition 1914-1917 (1919)",
+    "Frank Worsley, Shackleton's Boat Journey (1940) and Endurance: An Epic of Polar Adventure (1931)",
+    "Alfred Lansing, Endurance: Shackleton's Incredible Voyage (1959)",
+    "Caroline Alexander, The Endurance: Shackleton's Legendary Antarctic Expedition (1998)",
+    "Scott Polar Research Institute, University of Cambridge: Imperial Trans-Antarctic Expedition archive",
+    "Royal Geographical Society: Frank Hurley's expedition photographs"
+  ],
+  "disclosure": "Nils Halvorsen is a fictional character, a witness at the Stromness whaling station built from the accounts of the expedition. The events, people, places and dates are real. Video was created with AI tools; the maps are drawn from the expedition's recorded route (the drift track is approximate); narration uses a synthetic voice.",
+  "refs": {
+    "nils": {
+      "kind": "character",
+      "prompt": "Character reference sheet, photorealistic: on the left a full-body front view standing, on the right a chest-up portrait of the same person; identical original character in both views, single character only, plain neutral grey studio background. Nils Halvorsen (Norwegian whaling station worker of 24, broad shoulders, ruddy weathered face, short reddish-blond beard, pale blue eyes, knitted grey wool cap, thick dark wool sweater under a worn oilskin coat, leather work gloves)",
+      "n": "nils",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "742b6ae8-a362-4435-abe2-b7845b60a876",
+            "submitted": "2026-11-09T06:47:07+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "742b6ae8-a362-4435-abe2-b7845b60a876",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261109_064702_742b6ae8-a362-4435-abe2-b7845b60a876.png",
+        "finished": "2026-11-09T06:48:23+00:00"
+      }
+    },
+    "station": {
+      "kind": "location",
+      "prompt": "Location reference, single photorealistic image, NO people: the Stromness whaling station on South Georgia in 1916: wooden sheds and red-roofed huts, a tall brick chimney, rusty boilers, a wooden pier, snowy mountains rising steeply behind, grey sky",
+      "n": "station",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "a35a8088-c2da-4200-9cec-5a48e30713f6",
+            "submitted": "2026-11-09T06:47:07+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "a35a8088-c2da-4200-9cec-5a48e30713f6",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261109_064702_a35a8088-c2da-4200-9cec-5a48e30713f6.png",
+        "finished": "2026-11-09T06:48:23+00:00"
+      }
+    },
+    "ship": {
+      "kind": "location",
+      "prompt": "Location reference, single photorealistic image, NO people: a black-hulled wooden three-masted barquentine of 1914 (square yards only on the foremast, gaff rig on the main and mizzen) with a white deckhouse and a tall thin funnel frozen fast in endless flat Antarctic pack ice under a pale grey polar sky, pressure ridges of broken blue ice, 1915",
+      "n": "ship",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "c99d5269-8a9d-42d6-80b7-a25cbf986811",
+            "submitted": "2026-11-09T06:47:07+00:00",
+            "credits": 2.75
+          },
+          {
+            "job_id": "0ac03641-094a-4c39-9d0b-a30880866727",
+            "submitted": "2026-11-09T06:48:43+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "0ac03641-094a-4c39-9d0b-a30880866727",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261109_064836_0ac03641-094a-4c39-9d0b-a30880866727.png",
+        "finished": "2026-11-09T06:49:31+00:00"
+      }
+    },
+    "camp": {
+      "kind": "location",
+      "prompt": "Location reference, single photorealistic image, NO people: a small camp of five worn canvas bell tents and three wooden lifeboats on a flat snowy ice floe in the Weddell Sea, 1916, pale grey sky",
+      "n": "camp",
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "7b1f3ce6-632d-44b9-a1e9-9dfca3be8d79",
+            "submitted": "2026-11-09T06:47:07+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "7b1f3ce6-632d-44b9-a1e9-9dfca3be8d79",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261109_064702_7b1f3ce6-632d-44b9-a1e9-9dfca3be8d79.png",
+        "finished": "2026-11-09T06:48:23+00:00"
+      }
+    }
+  },
+  "music": [
+    {
+      "from": 1,
+      "track": "Frozen_Star.mp3",
+      "title": "Frozen Star",
+      "mood": "dağdan inen üç adam"
+    },
+    {
+      "from": 3,
+      "track": "Lost_Frontier.mp3",
+      "title": "Lost Frontier",
+      "mood": "istasyon, gemi, yola çıkış"
+    },
+    {
+      "from": 7,
+      "track": "Winter_Reflections.mp3",
+      "title": "Winter Reflections",
+      "mood": "buzda hayat, kutup gecesi"
+    },
+    {
+      "from": 9,
+      "track": "Darkest_Child.mp3",
+      "title": "Darkest Child",
+      "mood": "sıkışma, terk, batış"
+    },
+    {
+      "from": 14,
+      "track": "Long_Note_Four.mp3",
+      "title": "Long Note Four",
+      "mood": "buz üstünde aylar"
+    },
+    {
+      "from": 15,
+      "track": "Dark_Times.mp3",
+      "title": "Dark Times",
+      "mood": "buz kırılır, filikalar"
+    },
+    {
+      "from": 17,
+      "track": "Eternal_Hope.mp3",
+      "title": "Eternal Hope",
+      "mood": "Elephant Island"
+    },
+    {
+      "from": 19,
+      "track": "Crossing_the_Chasm.mp3",
+      "title": "Crossing the Chasm",
+      "mood": "James Caird, okyanus, dağlar"
+    },
+    {
+      "from": 25,
+      "track": "Echoes_of_Time.mp3",
+      "title": "Echoes of Time",
+      "mood": "düdük, Stromness"
+    },
+    {
+      "from": 27,
+      "track": "Healing.mp3",
+      "title": "Healing",
+      "mood": "kurtarma, sonrası"
+    },
+    {
+      "from": 30,
+      "track": "Dreams_Become_Real.mp3",
+      "title": "Dreams Become Real",
+      "mood": "kapanış"
+    }
+  ],
+  "next_episode_tease": "The Klondike Gold Rush, 1897-1898",
+  "compact": {
+    "style": "Photorealistic cinematic film still, shot on 35mm film, natural light, muted cold polar colors, gritty realistic texture, shallow depth of field. Historically accurate 1914-1916 Antarctic expedition and South Georgia whaling station: heavy wool and gabardine polar clothing, wooden lifeboats, pack ice, black stony beaches. Show only what is described.",
+    "avoid": "text, letters, numbers, readable signs, logos, watermark, a name on the ship; recognizable faces of real historical people; modern objects, ships or clothing; gore, blood, dead animals, corpses; extra fingers, deformed hands, duplicated people; collage or split panels; painting, cartoon or illustration style"
+  },
+  "srt_replace": {},
+  "voice_engine": {
+    "model": "text2speech_v2",
+    "variant": "elevenlabs",
+    "voice_id": "07112420-b262-46e4-8698-6d2a177958f4",
+    "post": "silenceremove=stop_periods=-1:stop_duration=0.55:stop_threshold=-45dB:stop_silence=0.45,atempo=1.06,highpass=f=70,equalizer=f=250:t=q:w=1.2:g=-2,equalizer=f=3200:t=q:w=1.0:g=3.5,treble=g=2:f=8000,acompressor=threshold=-20dB:ratio=3:attack=5:release=120:makeup=3,loudnorm=I=-16:TP=-1.5"
+  },
+  "scenes": [
+    {
+      "n": 1,
+      "title": "Three men",
+      "mode": "clip",
+      "pov": false,
+      "narration": "May 20th, 1916. Three men walked down out of the mountains into our whaling station. Their ship had sunk six months before.",
+      "narration_voiced": "May 20th, 1916. Three men walked down out of the mountains into our whaling station. Their ship had sunk six months before.",
+      "image_prompt": "the Stromness whaling station on South Georgia in 1916: wooden sheds and red-roofed huts, a tall brick chimney, rusty boilers, a wooden pier, snowy mountains rising steeply behind, grey sky, early morning: three ragged exhausted men seen from behind walk slowly down a snowy slope toward the wooden sheds of the station, long matted hair, filthy torn clothes, one carrying a coiled rope",
+      "shots": [
+        "three ragged men seen from behind stumble down a snowy slope toward the whaling station",
+        "close on their worn boots with screws sticking out of the soles, crunching through the snow",
+        "two whalers by the sheds stop working and stare at the strangers"
+      ],
+      "sound": "wind, boots in snow, distant steam whistle, gulls",
+      "refs": [
+        "station"
+      ],
+      "voice_mood": "tense",
+      "pad": 0.8,
+      "beat": "SOĞUK AÇILIŞ (0:00) — ilk cümle ≤8 sn",
+      "must": [
+        "the three men seen only from behind, faces never visible",
+        "1916 whaling station"
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "ae86cf57-8c29-450a-9eee-93b632650cb1",
+            "submitted": "2026-11-09T06:50:41+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "ae86cf57-8c29-450a-9eee-93b632650cb1",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261109_065030_ae86cf57-8c29-450a-9eee-93b632650cb1.png",
+        "finished": "2026-11-09T06:52:24+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "98a2fc71-1ef5-4ef0-9b06-5821de95a8e2",
+            "submitted": "2026-11-09T06:55:47+00:00",
+            "credits": 15.0
+          }
+        ],
+        "job_id": "98a2fc71-1ef5-4ef0-9b06-5821de95a8e2",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261109_065537_98a2fc71-1ef5-4ef0-9b06-5821de95a8e2.mp4",
+        "finished": "2026-11-09T06:58:42+00:00"
+      }
+    },
+    {
+      "n": 2,
+      "title": "Twenty-two more",
+      "mode": "clip",
+      "pov": false,
+      "narration": "They'd been gone almost two years. And twenty-two more of their men were still waiting on a frozen rock, eight hundred miles away. Over the next nights, they told us everything. How twenty-eight men survived something that should have killed them all.",
+      "narration_voiced": "They'd been gone almost two years. And twenty-two more of their men were still waiting on a frozen rock, eight hundred miles away. Over the next nights, they told us everything. How twenty-eight men survived something that should have killed them all.",
+      "image_prompt": "A tiny rocky black beach under huge ice cliffs on Elephant Island, Antarctica, 1916, grey stormy sea, two upturned wooden boats on the stones, small distant figures of men huddled around a smoky fire",
+      "shots": [
+        "slow push over a grey stormy sea toward a black rocky beach under ice cliffs",
+        "two upturned wooden boats on the stones with smoke rising beside them",
+        "distant huddled figures by a small fire, wind tearing at the smoke"
+      ],
+      "sound": "howling wind, waves on stones, a crackling fire",
+      "refs": [],
+      "voice_mood": "tense",
+      "pad": 2.2,
+      "must": [
+        "men only small and distant, no faces"
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "8410e205-caba-4c52-81d8-c2e9bfa7b288",
+            "submitted": "2026-11-09T06:53:08+00:00",
+            "credits": 2.75
+          }
+        ],
+        "history": [
+          {
+            "status": "done",
+            "attempts": [
+              {
+                "job_id": "868b2477-33cc-478c-952e-1acf78d75db2",
+                "submitted": "2026-11-09T06:50:41+00:00",
+                "credits": 2.75
+              }
+            ],
+            "job_id": "868b2477-33cc-478c-952e-1acf78d75db2",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261109_065032_868b2477-33cc-478c-952e-1acf78d75db2.png",
+            "finished": "2026-11-09T06:52:24+00:00",
+            "redo_reason": "Elephant Island açıklarında gemi var (Endurance batmıştı)",
+            "redo_at": "2026-11-09T06:53:08+00:00"
+          }
+        ],
+        "job_id": "8410e205-caba-4c52-81d8-c2e9bfa7b288",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261109_065255_8410e205-caba-4c52-81d8-c2e9bfa7b288.png",
+        "finished": "2026-11-09T06:54:29+00:00"
+      },
+      "must_not": [
+        "any ship or sailing vessel at sea or in the background"
+      ],
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "5cfb1bdb-a65e-4028-a931-3e1a228befcf",
+            "submitted": "2026-11-09T06:55:47+00:00",
+            "credits": 15.0
+          }
+        ],
+        "job_id": "5cfb1bdb-a65e-4028-a931-3e1a228befcf",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261109_065537_5cfb1bdb-a65e-4028-a931-3e1a228befcf.mp4",
+        "finished": "2026-11-09T06:59:36+00:00"
+      }
+    },
+    {
+      "n": 3,
+      "title": "Who I am",
+      "mode": "clip",
+      "pov": false,
+      "narration": "My name's Nils Halvorsen. I came from Norway at eighteen to work the whale station at Stromness. Hard work blood, smoke and cold. In 1914, their ship stopped at Grytviken, just down the coast. Nobody had heard a word from them since.",
+      "narration_voiced": "My name's Nils Halvorsen. I came from Norway at eighteen to work the whale station at Stromness. Hard work... blood, smoke and cold. In 1914, their ship stopped at Grytviken, just down the coast. Nobody had heard a word from them since.",
+      "image_prompt": "the Stromness whaling station on South Georgia in 1916: wooden sheds and red-roofed huts, a tall brick chimney, rusty boilers, a wooden pier, snowy mountains rising steeply behind, grey sky, daytime: Nils Halvorsen (Norwegian whaling station worker of 24, broad shoulders, ruddy weathered face, short reddish-blond beard, pale blue eyes, knitted grey wool cap, thick dark wool sweater under a worn oilskin coat, leather work gloves) stands on the wooden pier with a long flensing knife on his shoulder, looking out at the grey bay",
+      "shots": [
+        "the young whaler stands on the wooden pier and looks out at the bay",
+        "close on his weathered face, wind in his beard",
+        "steam drifts from the station's boilers behind him"
+      ],
+      "sound": "wind, gulls, creaking pier, distant machinery",
+      "refs": [
+        "nils",
+        "station"
+      ],
+      "voice_mood": "warm",
+      "pad": 0.8,
+      "must": [
+        "exactly one man"
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "0b9373b1-396f-457a-bed0-15b865e0848b",
+            "submitted": "2026-11-09T06:50:41+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "0b9373b1-396f-457a-bed0-15b865e0848b",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261109_065031_0b9373b1-396f-457a-bed0-15b865e0848b.png",
+        "finished": "2026-11-09T06:52:24+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "721a7034-70f9-4b93-8294-f14276dbdd58",
+            "submitted": "2026-11-09T06:55:47+00:00",
+            "credits": 15.0
+          }
+        ],
+        "job_id": "721a7034-70f9-4b93-8294-f14276dbdd58",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261109_065537_721a7034-70f9-4b93-8294-f14276dbdd58.mp4",
+        "finished": "2026-11-09T06:59:36+00:00"
+      }
+    },
+    {
+      "n": 4,
+      "title": "Endurance",
+      "mode": "clip",
+      "pov": false,
+      "narration": "She was called Endurance. A wooden ship, built in my own country, in Sandefjord. Their leader was Sir Ernest Shackleton. His plan was to land in Antarctica and cross the whole continent on foot. Nobody had ever done it.",
+      "narration_voiced": "She was called Endurance. A wooden ship, built in my own country, in Sandefjord. Their leader was Sir Ernest Shackleton. His plan was to land in Antarctica and cross the whole continent on foot. Nobody had ever done it.",
+      "image_prompt": "Grytviken harbour, South Georgia, November 1914: a black-hulled wooden three-masted barquentine of 1914 (square yards only on the foremast, gaff rig on the main and mizzen) with a white deckhouse and a tall thin funnel lies at anchor in a calm grey bay beneath snowy mountains, small boats beside it",
+      "shots": [
+        "the wooden three-masted ship lies at anchor in a calm bay under snowy peaks",
+        "slow move along her rigging and masts",
+        "seen from behind, a man in a dark coat stands on deck looking south"
+      ],
+      "sound": "water lapping, rigging creaking, gulls",
+      "refs": [
+        "ship"
+      ],
+      "voice_mood": "intrigue",
+      "pad": 0.8,
+      "must": [
+        "the man seen only from behind",
+        "no readable name on the ship"
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "6852ad63-8e26-4412-894e-1dcbbbee346f",
+            "submitted": "2026-11-09T06:50:41+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "6852ad63-8e26-4412-894e-1dcbbbee346f",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261109_065033_6852ad63-8e26-4412-894e-1dcbbbee346f.png",
+        "finished": "2026-11-09T06:52:24+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "e4682e96-2682-4269-a8fc-c4371ad4705e",
+            "submitted": "2026-11-09T06:55:47+00:00",
+            "credits": 15.0
+          }
+        ],
+        "job_id": "e4682e96-2682-4269-a8fc-c4371ad4705e",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261109_065537_e4682e96-2682-4269-a8fc-c4371ad4705e.mp4",
+        "finished": "2026-11-09T06:59:36+00:00"
+      }
+    },
+    {
+      "n": 5,
+      "title": "Into the ice",
+      "mode": "clip",
+      "pov": false,
+      "narration": "On December 5th, 1914, she sailed south into the Weddell Sea. Within days, they were pushing through thick pack ice. Then, on January 18th, 1915, the ice closed around her. Shut in tight, they said like an almond in a piece of toffee.",
+      "narration_voiced": "On December 5th, 1914, she sailed south into the Weddell Sea. Within days, they were pushing through thick pack ice. Then, on January 18th, 1915, the ice closed around her. Shut in tight, they said... like an almond in a piece of toffee.",
+      "image_prompt": "(harita sahnesi — maps/specs/ep010_route.json, 0-12,5 sn)",
+      "shots": [],
+      "sound": "",
+      "refs": [],
+      "voice_mood": "intrigue",
+      "pad": 0.8,
+      "map": true,
+      "no_ambience": true,
+      "clip": {
+        "status": "done",
+        "attempts": [],
+        "url": "local:maps/specs/ep010_route.json",
+        "job_id": "map"
+      },
+      "image": {
+        "status": "done",
+        "attempts": [],
+        "url": "local:map",
+        "job_id": "map"
+      }
+    },
+    {
+      "n": 6,
+      "title": "One day from land",
+      "mode": "clip",
+      "pov": false,
+      "narration": "They were one day's sail from where they meant to land. They could see the coast. They waited for the ice to open again. It never did.",
+      "narration_voiced": "They were one day's sail from where they meant to land. They could see the coast. They waited for the ice to open again. It never did.",
+      "image_prompt": "endless flat Antarctic pack ice under a pale grey polar sky, pressure ridges of broken blue ice, 1915: a black-hulled wooden three-masted barquentine of 1914 (square yards only on the foremast, gaff rig on the main and mizzen) with a white deckhouse and a tall thin funnel frozen fast in the pack ice, men in heavy coats stand on the ice beside her looking toward a faint line of land on the horizon",
+      "shots": [
+        "the ship sits frozen fast in a sea of white ice",
+        "seen from behind, men stand on the ice and stare toward the horizon",
+        "wide shot: the tiny ship alone in the endless white"
+      ],
+      "sound": "polar wind, ice creaking softly",
+      "refs": [
+        "ship"
+      ],
+      "voice_mood": "tense",
+      "pad": 2.2,
+      "must": [
+        "men seen from behind or far away, faces never visible"
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "4f31063c-cf42-4f52-a43b-41709531ce8a",
+            "submitted": "2026-11-09T06:50:41+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "4f31063c-cf42-4f52-a43b-41709531ce8a",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261109_065032_4f31063c-cf42-4f52-a43b-41709531ce8a.png",
+        "finished": "2026-11-09T06:52:24+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "29c4469c-5c3d-4f5b-8f61-c12884dd8692",
+            "submitted": "2026-11-09T06:55:47+00:00",
+            "credits": 15.0
+          }
+        ],
+        "job_id": "29c4469c-5c3d-4f5b-8f61-c12884dd8692",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261109_065537_29c4469c-5c3d-4f5b-8f61-c12884dd8692.mp4",
+        "finished": "2026-11-09T06:58:42+00:00"
+      }
+    },
+    {
+      "n": 7,
+      "title": "Life on the ice",
+      "mode": "clip",
+      "pov": false,
+      "narration": "So the ship became their home. They built little ice houses for the dogs out on the floe. They played football on the ice. They had a banjo, and on the bad nights, someone always played it.",
+      "narration_voiced": "So the ship became their home. They built little ice houses for the dogs out on the floe. They played football on the ice. They had a banjo, and on the bad nights, someone always played it.",
+      "image_prompt": "endless flat Antarctic pack ice under a pale grey polar sky, pressure ridges of broken blue ice, 1915, daytime: polar explorers of 1915 in heavy wool jumpers and pale gabardine windproof smocks, wool balaclavas and hoods, frost-covered beards, faces mostly hidden by hoods and scarves play football on the flat ice beside the frozen ship, sled dogs watching from small snow kennels",
+      "shots": [
+        "men in heavy wool clothes kick a ball across the flat ice, laughing",
+        "sled dogs curled up beside small snow kennels",
+        "the frozen ship in the background with smoke from her funnel"
+      ],
+      "sound": "men laughing, dogs barking, a ball thudding on snow",
+      "refs": [
+        "ship"
+      ],
+      "voice_mood": "warm",
+      "pad": 0.8,
+      "must": [
+        "faces hidden by hoods or far away"
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "b8c17823-4fff-4732-9a63-2f2d8de59d51",
+            "submitted": "2026-11-09T06:50:41+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "b8c17823-4fff-4732-9a63-2f2d8de59d51",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261109_065031_b8c17823-4fff-4732-9a63-2f2d8de59d51.png",
+        "finished": "2026-11-09T06:52:24+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "db1f5cf8-4877-48bc-98eb-967f51f36dfe",
+            "submitted": "2026-11-09T06:55:47+00:00",
+            "credits": 15.0
+          }
+        ],
+        "job_id": "db1f5cf8-4877-48bc-98eb-967f51f36dfe",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261109_065537_db1f5cf8-4877-48bc-98eb-967f51f36dfe.mp4",
+        "finished": "2026-11-09T06:58:42+00:00"
+      }
+    },
+    {
+      "n": 8,
+      "title": "The long night",
+      "mode": "clip",
+      "pov": false,
+      "narration": "In May, the sun went down and didn't come back for months. Twenty-eight men in the dark, drifting with the ice, a thousand miles from anyone. Shackleton kept them busy. Meals on time. Jobs every day. No man was allowed to give up.",
+      "narration_voiced": "In May, the sun went down... and didn't come back for months. Twenty-eight men in the dark, drifting with the ice, a thousand miles from anyone. Shackleton kept them busy. Meals on time. Jobs every day. No man was allowed to give up.",
+      "image_prompt": "Antarctic polar night, 1915: a black-hulled wooden three-masted barquentine of 1914 (square yards only on the foremast, gaff rig on the main and mizzen) with a white deckhouse and a tall thin funnel frozen in the ice under a starry sky with faint green aurora, warm lamplight glowing from her small portholes",
+      "shots": [
+        "the frozen ship under a dark starry sky, faint aurora overhead",
+        "warm lamplight glows from the portholes",
+        "snow blows across the dark ice"
+      ],
+      "sound": "polar wind, faint banjo music from inside the ship",
+      "refs": [
+        "ship"
+      ],
+      "voice_mood": "tense",
+      "pad": 2.2,
+      "must": [
+        "no people visible or only tiny silhouettes"
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "5e06235c-7467-4dab-a362-63d8d179c188",
+            "submitted": "2026-11-09T06:50:41+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "5e06235c-7467-4dab-a362-63d8d179c188",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261109_065033_5e06235c-7467-4dab-a362-63d8d179c188.png",
+        "finished": "2026-11-09T06:52:24+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "fddcc074-698b-4dd5-aa74-22a1fd280787",
+            "submitted": "2026-11-09T06:55:47+00:00",
+            "credits": 15.0
+          }
+        ],
+        "job_id": "fddcc074-698b-4dd5-aa74-22a1fd280787",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261109_065537_fddcc074-698b-4dd5-aa74-22a1fd280787.mp4",
+        "finished": "2026-11-09T06:58:42+00:00"
+      }
+    },
+    {
+      "n": 9,
+      "title": "The squeeze",
+      "mode": "clip",
+      "pov": false,
+      "narration": "When spring came, the ice began to move. Huge plates of it pushed against the ship from both sides. The men could hear her timbers groan and crack, day and night, like something alive in pain.",
+      "narration_voiced": "When spring came, the ice began to move. Huge plates of it pushed against the ship from both sides. The men could hear her timbers groan and crack, day and night, like something alive in pain.",
+      "image_prompt": "endless flat Antarctic pack ice under a pale grey polar sky, pressure ridges of broken blue ice, 1915: huge slabs of pack ice pile up and press against the wooden side of a black-hulled wooden three-masted barquentine of 1914 (square yards only on the foremast, gaff rig on the main and mizzen) with a white deckhouse and a tall thin funnel, the hull visibly bending",
+      "shots": [
+        "massive slabs of ice grind against the wooden hull",
+        "close on wooden planks bending and splitting under pressure",
+        "the ship's masts tilt as the ice pushes her over"
+      ],
+      "sound": "deep groaning ice, cracking timber",
+      "refs": [
+        "ship"
+      ],
+      "voice_mood": "tense",
+      "pad": 0.8,
+      "must": [
+        "no people visible"
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "775dfe2a-e633-4a49-b711-eaf078a354eb",
+            "submitted": "2026-11-09T06:50:41+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "775dfe2a-e633-4a49-b711-eaf078a354eb",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261109_065030_775dfe2a-e633-4a49-b711-eaf078a354eb.png",
+        "finished": "2026-11-09T06:52:24+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "a578cece-d5eb-438f-9c0f-d2af826ca935",
+            "submitted": "2026-11-09T06:55:47+00:00",
+            "credits": 15.0
+          }
+        ],
+        "job_id": "a578cece-d5eb-438f-9c0f-d2af826ca935",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261109_065537_a578cece-d5eb-438f-9c0f-d2af826ca935.mp4",
+        "finished": "2026-11-09T06:59:36+00:00"
+      }
+    },
+    {
+      "n": 10,
+      "title": "She's going",
+      "mode": "clip",
+      "pov": false,
+      "narration": "On October 27th, 1915, Shackleton gave the order to leave the ship. He said just: She's going, boys. They dragged the lifeboats, the tents and the food out onto the ice. Their home was dying in front of them.",
+      "narration_voiced": "On October 27th, 1915, Shackleton gave the order to leave the ship. He said just: She's going, boys. They dragged the lifeboats, the tents and the food out onto the ice. Their home was dying in front of them.",
+      "image_prompt": "endless flat Antarctic pack ice under a pale grey polar sky, pressure ridges of broken blue ice, 1915: men in heavy clothing seen from behind drag a wooden lifeboat across the ice away from a black-hulled wooden three-masted barquentine of 1914 (square yards only on the foremast, gaff rig on the main and mizzen) with a white deckhouse and a tall thin funnel, which tilts badly, crushed by ice",
+      "shots": [
+        "men seen from behind haul a heavy wooden lifeboat across the ice",
+        "boxes of supplies dragged on sledges",
+        "the crushed ship tilts behind them, her masts leaning"
+      ],
+      "sound": "wind, men straining, ice cracking, timbers breaking",
+      "refs": [
+        "ship"
+      ],
+      "voice_mood": "dramatic",
+      "pad": 0.8,
+      "must": [
+        "men seen only from behind, faces never visible"
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "3cdda526-3c40-457b-8852-5be9726da2c4",
+            "submitted": "2026-11-09T06:50:41+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "3cdda526-3c40-457b-8852-5be9726da2c4",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261109_065033_3cdda526-3c40-457b-8852-5be9726da2c4.png",
+        "finished": "2026-11-09T06:52:24+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "b7f14ce0-1744-4282-9caf-fb20d6efbc92",
+            "submitted": "2026-11-09T07:00:12+00:00",
+            "credits": 15.0
+          }
+        ],
+        "history": [
+          {
+            "status": "done",
+            "attempts": [
+              {
+                "job_id": "4aa904c6-9711-423c-8c40-9ed860c2b86c",
+                "submitted": "2026-11-09T06:55:47+00:00",
+                "credits": 15.0
+              }
+            ],
+            "job_id": "4aa904c6-9711-423c-8c40-9ed860c2b86c",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261109_065537_4aa904c6-9711-423c-8c40-9ed860c2b86c.mp4",
+            "finished": "2026-11-09T06:58:42+00:00",
+            "redo_reason": "sandıklarda sahte yazı",
+            "redo_at": "2026-11-09T07:00:12+00:00"
+          }
+        ],
+        "job_id": "b7f14ce0-1744-4282-9caf-fb20d6efbc92",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261109_070006_b7f14ce0-1744-4282-9caf-fb20d6efbc92.mp4",
+        "finished": "2026-11-09T07:05:27+00:00"
+      }
+    },
+    {
+      "n": 11,
+      "title": "Two pounds",
+      "mode": "clip",
+      "pov": false,
+      "narration": "Each man could keep two pounds of personal things. That's it. Shackleton pulled out his gold coins and threw them into the snow. But he made sure they kept the banjo. He said it was vital medicine for the mind.",
+      "narration_voiced": "Each man could keep two pounds of personal things. That's it. Shackleton pulled out his gold coins and threw them into the snow. But he made sure they kept the banjo. He said it was vital medicine for the mind.",
+      "image_prompt": "endless flat Antarctic pack ice under a pale grey polar sky, pressure ridges of broken blue ice, 1915, overcast: close on a gloved hand dropping a few gold coins into the snow, beside a small pile of left-behind belongings",
+      "shots": [
+        "gold coins fall from a gloved hand into the snow",
+        "a few left-behind belongings lie on the ice: books, a pocket watch, a shaving brush",
+        "a wooden banjo is carefully wrapped in a blanket"
+      ],
+      "sound": "wind, coins in snow",
+      "refs": [],
+      "voice_mood": "reflective",
+      "pad": 0.8,
+      "must": [
+        "only hands visible, no faces",
+        "no readable text on books"
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "02afcada-238a-4583-ad03-8d50f84c36c6",
+            "submitted": "2026-11-09T06:50:41+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "02afcada-238a-4583-ad03-8d50f84c36c6",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261109_065031_02afcada-238a-4583-ad03-8d50f84c36c6.png",
+        "finished": "2026-11-09T06:52:24+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "0b3df465-2f45-4242-b60a-caec3b80c596",
+            "submitted": "2026-11-09T06:55:47+00:00",
+            "credits": 15.0
+          }
+        ],
+        "job_id": "0b3df465-2f45-4242-b60a-caec3b80c596",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261109_065539_0b3df465-2f45-4242-b60a-caec3b80c596.mp4",
+        "finished": "2026-11-09T06:59:36+00:00"
+      }
+    },
+    {
+      "n": 12,
+      "title": "Your choice",
+      "mode": "clip",
+      "pov": false,
+      "narration": "So tell me in the comments if you had two pounds to save from your whole life, what would you carry onto that ice?",
+      "narration_voiced": "So tell me in the comments... if you had two pounds to save from your whole life, what would you carry onto that ice?",
+      "image_prompt": "endless flat Antarctic pack ice under a pale grey polar sky, pressure ridges of broken blue ice, 1915: a single worn canvas kitbag sits on the snow beside a wooden sledge, soft grey light",
+      "shots": [
+        "a worn canvas kitbag on the snow",
+        "slow push in on the kitbag as snow drifts past",
+        "wide view of the empty white ice"
+      ],
+      "sound": "soft wind",
+      "refs": [],
+      "voice_mood": "warm",
+      "pad": 0.8,
+      "beat": "YORUM SORUSU",
+      "must": [
+        "no people"
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "a3a7401a-b314-44ea-987d-68ec0ae8b51c",
+            "submitted": "2026-11-09T06:50:41+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "a3a7401a-b314-44ea-987d-68ec0ae8b51c",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261109_065031_a3a7401a-b314-44ea-987d-68ec0ae8b51c.png",
+        "finished": "2026-11-09T06:52:24+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "ccaa2729-b931-4663-b912-5dc4c669b6ce",
+            "submitted": "2026-11-09T06:55:47+00:00",
+            "credits": 15.0
+          }
+        ],
+        "job_id": "ccaa2729-b931-4663-b912-5dc4c669b6ce",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261109_065537_ccaa2729-b931-4663-b912-5dc4c669b6ce.mp4",
+        "finished": "2026-11-09T06:59:36+00:00"
+      }
+    },
+    {
+      "n": 13,
+      "title": "She's gone",
+      "mode": "clip",
+      "pov": false,
+      "narration": "On November 21st, 1915, they watched her go. The stern rose up out of the ice and she slid down into the black water. Shackleton said: She's gone, boys. They were alone on the ice, with three small boats and almost nothing else.",
+      "narration_voiced": "On November 21st, 1915, they watched her go. The stern rose up out of the ice... and she slid down into the black water. Shackleton said: She's gone, boys. They were alone on the ice, with three small boats and almost nothing else.",
+      "image_prompt": "endless flat Antarctic pack ice under a pale grey polar sky, pressure ridges of broken blue ice, 1915, overcast: the stern of a black-hulled wooden three-masted barquentine of 1914 (square yards only on the foremast, gaff rig on the main and mizzen) with a white deckhouse and a tall thin funnel rises at a steep angle from a gap in the ice as she sinks, distant small figures of men watching from the ice",
+      "shots": [
+        "the ship's stern rises from a gap in the pack ice",
+        "she slides slowly down into the dark water",
+        "seen from behind, small figures stand on the ice watching the empty hole"
+      ],
+      "sound": "ice groaning, water rushing, then silence and wind",
+      "refs": [
+        "ship"
+      ],
+      "voice_mood": "dramatic",
+      "pad": 2.2,
+      "must": [
+        "men only from behind and far away"
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "5f8677b6-76ce-4a44-b53e-9aef0ed8877c",
+            "submitted": "2026-11-09T06:50:41+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "5f8677b6-76ce-4a44-b53e-9aef0ed8877c",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261109_065031_5f8677b6-76ce-4a44-b53e-9aef0ed8877c.png",
+        "finished": "2026-11-09T06:52:24+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "fc918f68-4b68-4d46-9e57-c8ae60ba21a8",
+            "submitted": "2026-11-09T06:55:47+00:00",
+            "credits": 15.0
+          }
+        ],
+        "job_id": "fc918f68-4b68-4d46-9e57-c8ae60ba21a8",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261109_065537_fc918f68-4b68-4d46-9e57-c8ae60ba21a8.mp4",
+        "finished": "2026-11-09T06:59:36+00:00"
+      }
+    },
+    {
+      "n": 14,
+      "title": "Living on a floe",
+      "mode": "clip",
+      "pov": false,
+      "narration": "For months they lived on a slab of ice, drifting north. They ate seal and penguin. They burned blubber in a stove made from scrap metal. Their sleeping bags never dried. And under them, the ice grew thinner every week.",
+      "narration_voiced": "For months they lived on a slab of ice, drifting north. They ate seal and penguin. They burned blubber in a stove made from scrap metal. Their sleeping bags never dried. And under them, the ice grew thinner every week.",
+      "image_prompt": "a small camp of five worn canvas bell tents and three wooden lifeboats on a flat snowy ice floe in the Weddell Sea, 1916, pale grey sky: men in heavy clothing sit around a smoky blubber stove outside the tents, faces hidden by hoods",
+      "shots": [
+        "smoke rises from a crude blubber stove in front of the tents",
+        "a man stirs a pot with his back to the camera",
+        "wide view of the tiny camp on the vast drifting ice"
+      ],
+      "sound": "wind, crackling blubber stove, distant penguins",
+      "refs": [
+        "camp"
+      ],
+      "voice_mood": "tense",
+      "pad": 2.2,
+      "must": [
+        "faces hidden or from behind"
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "dbd5bf3f-2436-4d48-9c40-99e16278d9b1",
+            "submitted": "2026-11-09T06:51:28+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "dbd5bf3f-2436-4d48-9c40-99e16278d9b1",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261109_065120_dbd5bf3f-2436-4d48-9c40-99e16278d9b1.png",
+        "finished": "2026-11-09T06:53:09+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "7471a592-07ce-4d01-9305-659269e8ca9d",
+            "submitted": "2026-11-09T06:56:41+00:00",
+            "credits": 15.0
+          }
+        ],
+        "job_id": "7471a592-07ce-4d01-9305-659269e8ca9d",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261109_065633_7471a592-07ce-4d01-9305-659269e8ca9d.mp4",
+        "finished": "2026-11-09T07:00:32+00:00"
+      }
+    },
+    {
+      "n": 15,
+      "title": "The floe breaks",
+      "mode": "clip",
+      "pov": false,
+      "narration": "On April 9th, 1916, the floe cracked right through their camp. It was time. They launched the three boats into the freezing sea, rowing between the ice, with nowhere to go but the nearest land.",
+      "narration_voiced": "On April 9th, 1916, the floe cracked right through their camp. It was time. They launched the three boats into the freezing sea, rowing between the ice, with nowhere to go but the nearest land.",
+      "image_prompt": "a small camp of five worn canvas bell tents and three wooden lifeboats on a flat snowy ice floe in the Weddell Sea, 1916, pale grey sky: a crack of black water splits the ice floe between the tents, men pushing a wooden lifeboat toward the water",
+      "shots": [
+        "a black crack splits the ice floe through the camp",
+        "men seen from behind push a wooden lifeboat into the icy water",
+        "three small boats row away between floating ice"
+      ],
+      "sound": "ice splitting, shouting, oars in water",
+      "refs": [
+        "camp"
+      ],
+      "voice_mood": "dramatic",
+      "pad": 0.8,
+      "must": [
+        "faces never visible"
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "df22dfb9-7409-4708-af9d-47c8214d8c58",
+            "submitted": "2026-11-09T06:51:28+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "df22dfb9-7409-4708-af9d-47c8214d8c58",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261109_065122_df22dfb9-7409-4708-af9d-47c8214d8c58.png",
+        "finished": "2026-11-09T06:53:09+00:00"
+      },
+      "must_not": [
+        "any ship or sailing vessel at sea or in the background"
+      ],
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "ab333619-0aa9-4001-93b4-04e86341bd9e",
+            "submitted": "2026-11-09T06:56:41+00:00",
+            "credits": 15.0
+          }
+        ],
+        "job_id": "ab333619-0aa9-4001-93b4-04e86341bd9e",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261109_065633_ab333619-0aa9-4001-93b4-04e86341bd9e.mp4",
+        "finished": "2026-11-09T07:00:32+00:00"
+      }
+    },
+    {
+      "n": 16,
+      "title": "Seven days",
+      "mode": "clip",
+      "pov": false,
+      "narration": "Seven days and nights in open boats. Spray froze on their clothes. Some of them couldn't feel their feet. They had no fresh water, so they chewed on frozen seal meat. Nobody slept.",
+      "narration_voiced": "Seven days and nights in open boats. Spray froze on their clothes. Some of them couldn't feel their feet. They had no fresh water, so they chewed on frozen seal meat. Nobody slept.",
+      "image_prompt": "Grey stormy Southern Ocean, April 1916: a small open wooden lifeboat crowded with huddled men under a tattered sail, ice crusted on the gunwales, waves breaking over the bow",
+      "shots": [
+        "a small open boat climbs a grey wave, spray flying",
+        "ice crusts the wooden gunwales",
+        "huddled hooded figures bail water, faces hidden"
+      ],
+      "sound": "crashing waves, wind, creaking wood",
+      "refs": [],
+      "voice_mood": "tense",
+      "pad": 2.2,
+      "must": [
+        "faces hidden by hoods"
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "6e3a5702-d655-452c-bb09-5e1e9e546436",
+            "submitted": "2026-11-09T06:53:51+00:00",
+            "credits": 2.75
+          }
+        ],
+        "history": [
+          {
+            "status": "done",
+            "attempts": [
+              {
+                "job_id": "da101c85-c8c9-415b-a87d-c6c6369ec958",
+                "submitted": "2026-11-09T06:51:28+00:00",
+                "credits": 2.75
+              }
+            ],
+            "job_id": "da101c85-c8c9-415b-a87d-c6c6369ec958",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261109_065120_da101c85-c8c9-415b-a87d-c6c6369ec958.png",
+            "finished": "2026-11-09T06:53:09+00:00",
+            "redo_reason": "arka planda olmaması gereken gemi",
+            "redo_at": "2026-11-09T06:53:27+00:00"
+          }
+        ],
+        "job_id": "6e3a5702-d655-452c-bb09-5e1e9e546436",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261109_065344_6e3a5702-d655-452c-bb09-5e1e9e546436.png",
+        "finished": "2026-11-09T06:54:29+00:00"
+      },
+      "must_not": [
+        "any ship or sailing vessel at sea or in the background"
+      ],
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "4ce9240b-c108-4438-a868-7c3bd12f2ba6",
+            "submitted": "2026-11-09T06:56:41+00:00",
+            "credits": 15.0
+          }
+        ],
+        "job_id": "4ce9240b-c108-4438-a868-7c3bd12f2ba6",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261109_065633_4ce9240b-c108-4438-a868-7c3bd12f2ba6.mp4",
+        "finished": "2026-11-09T07:00:32+00:00"
+      }
+    },
+    {
+      "n": 17,
+      "title": "Elephant Island",
+      "mode": "clip",
+      "pov": false,
+      "narration": "On April 15th, 1916, the boats hit the stones of Elephant Island. It was the first solid ground they'd stood on in four hundred and ninety-seven days. Some of them laughed. Some just picked up stones and held them.",
+      "narration_voiced": "On April 15th, 1916, the boats hit the stones of Elephant Island. It was the first solid ground they'd stood on in four hundred and ninety-seven days. Some of them laughed. Some just picked up stones and held them.",
+      "image_prompt": "A narrow black stony beach under dark cliffs on Elephant Island, 1916: three wooden lifeboats pulled up on the stones, exhausted men in ragged clothes on the beach, waves behind",
+      "shots": [
+        "three wooden boats run onto a black stony beach",
+        "a gloved hand picks up a smooth stone and holds it tight",
+        "seen from behind, exhausted men stand on the beach looking at the cliffs"
+      ],
+      "sound": "waves on stones, wind, a man laughing",
+      "refs": [],
+      "voice_mood": "hopeful",
+      "pad": 0.8,
+      "must": [
+        "faces never visible"
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "538b3583-9851-4706-a3d8-1c5717ee24d6",
+            "submitted": "2026-11-09T06:51:28+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "538b3583-9851-4706-a3d8-1c5717ee24d6",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261109_065121_538b3583-9851-4706-a3d8-1c5717ee24d6.png",
+        "finished": "2026-11-09T06:53:09+00:00"
+      },
+      "must_not": [
+        "any ship or sailing vessel at sea or in the background"
+      ],
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "bce85fe6-8503-4ef9-91ca-e64920395bb3",
+            "submitted": "2026-11-09T06:56:41+00:00",
+            "credits": 15.0
+          }
+        ],
+        "job_id": "bce85fe6-8503-4ef9-91ca-e64920395bb3",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261109_065633_bce85fe6-8503-4ef9-91ca-e64920395bb3.mp4",
+        "finished": "2026-11-09T07:00:32+00:00"
+      }
+    },
+    {
+      "n": 18,
+      "title": "Eight hundred miles",
+      "mode": "clip",
+      "pov": false,
+      "narration": "But nobody would ever look for them there. The nearest help was here, at South Georgia eight hundred miles away, across the worst ocean on Earth. Shackleton decided to go and get it himself.",
+      "narration_voiced": "But nobody would ever look for them there. The nearest help was here, at South Georgia... eight hundred miles away, across the worst ocean on Earth. Shackleton decided to go and get it himself.",
+      "image_prompt": "(harita sahnesi — maps/specs/ep010_route.json, 12-24 sn)",
+      "shots": [],
+      "sound": "",
+      "refs": [],
+      "voice_mood": "tense",
+      "pad": 2.2,
+      "map": true,
+      "no_ambience": true,
+      "clip": {
+        "status": "done",
+        "attempts": [],
+        "url": "local:maps/specs/ep010_route.json",
+        "job_id": "map"
+      },
+      "image": {
+        "status": "done",
+        "attempts": [],
+        "url": "local:map",
+        "job_id": "map"
+      }
+    },
+    {
+      "n": 19,
+      "title": "The James Caird",
+      "mode": "clip",
+      "pov": false,
+      "narration": "He picked the strongest boat, the James Caird. Twenty-two feet long. The carpenter built up her sides with wood from the other boats and covered the deck with canvas. On April 24th, six men sailed away.",
+      "narration_voiced": "He picked the strongest boat, the James Caird. Twenty-two feet long. The carpenter built up her sides with wood from the other boats and covered the deck with canvas. On April 24th, six men sailed away.",
+      "image_prompt": "Elephant Island stony beach, April 1916: a small wooden lifeboat with a canvas-covered deck and one short mast being pushed into the surf by men seen from behind",
+      "shots": [
+        "men seen from behind push the small boat into the waves",
+        "the boat's patched canvas deck and short mast",
+        "the boat sails away into the grey sea, figures on the beach waving"
+      ],
+      "sound": "surf, wind, men shouting farewell",
+      "refs": [],
+      "voice_mood": "intrigue",
+      "pad": 0.8,
+      "must": [
+        "faces never visible",
+        "no readable text"
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "b0cc74a8-a4f7-47dc-89b0-c559672262c8",
+            "submitted": "2026-11-09T06:53:51+00:00",
+            "credits": 2.75
+          }
+        ],
+        "history": [
+          {
+            "status": "done",
+            "attempts": [
+              {
+                "job_id": "6c35568c-f227-41cb-84be-b5a7a9f4a13e",
+                "submitted": "2026-11-09T06:51:28+00:00",
+                "credits": 2.75
+              }
+            ],
+            "job_id": "6c35568c-f227-41cb-84be-b5a7a9f4a13e",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261109_065121_6c35568c-f227-41cb-84be-b5a7a9f4a13e.png",
+            "finished": "2026-11-09T06:53:09+00:00",
+            "redo_reason": "arka planda olmaması gereken gemi",
+            "redo_at": "2026-11-09T06:53:27+00:00"
+          }
+        ],
+        "job_id": "b0cc74a8-a4f7-47dc-89b0-c559672262c8",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261109_065344_b0cc74a8-a4f7-47dc-89b0-c559672262c8.png",
+        "finished": "2026-11-09T06:54:29+00:00"
+      },
+      "must_not": [
+        "any ship or sailing vessel at sea or in the background"
+      ],
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "08bfd390-a72f-41c5-8745-44a19c96ea0a",
+            "submitted": "2026-11-09T06:56:41+00:00",
+            "credits": 15.0
+          }
+        ],
+        "job_id": "08bfd390-a72f-41c5-8745-44a19c96ea0a",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261109_065633_08bfd390-a72f-41c5-8745-44a19c96ea0a.mp4",
+        "finished": "2026-11-09T06:59:36+00:00"
+      }
+    },
+    {
+      "n": 20,
+      "title": "The Boss may come today",
+      "mode": "clip",
+      "pov": false,
+      "narration": "Twenty-two men stayed behind, living under two upturned boats. Their second-in-command, Frank Wild, kept them going. Every morning he'd shout: Lash up and stow, boys the Boss may come today.",
+      "narration_voiced": "Twenty-two men stayed behind, living under two upturned boats. Their second-in-command, Frank Wild, kept them going. Every morning he'd shout: Lash up and stow, boys... the Boss may come today.",
+      "image_prompt": "Elephant Island, 1916, grey light: two upturned wooden boats on low stone walls form a crude hut on a black beach, smoke from a gap, snow falling",
+      "shots": [
+        "the crude hut made of two upturned boats on the beach",
+        "a hooded man seen from behind looks out to sea",
+        "snow falls on the boats as smoke rises"
+      ],
+      "sound": "wind, waves, a man calling out",
+      "refs": [],
+      "voice_mood": "warm",
+      "pad": 0.8,
+      "must": [
+        "faces never visible"
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "acb82e4c-3bf5-491f-9dce-cda5ab13dce1",
+            "submitted": "2026-11-09T06:53:51+00:00",
+            "credits": 2.75
+          }
+        ],
+        "history": [
+          {
+            "status": "done",
+            "attempts": [
+              {
+                "job_id": "433b3d5e-40d2-4ad1-8a47-2d4b5297d523",
+                "submitted": "2026-11-09T06:51:28+00:00",
+                "credits": 2.75
+              }
+            ],
+            "job_id": "433b3d5e-40d2-4ad1-8a47-2d4b5297d523",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261109_065122_433b3d5e-40d2-4ad1-8a47-2d4b5297d523.png",
+            "finished": "2026-11-09T06:53:09+00:00",
+            "redo_reason": "arka planda olmaması gereken gemi",
+            "redo_at": "2026-11-09T06:53:27+00:00"
+          }
+        ],
+        "job_id": "acb82e4c-3bf5-491f-9dce-cda5ab13dce1",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261109_065343_acb82e4c-3bf5-491f-9dce-cda5ab13dce1.png",
+        "finished": "2026-11-09T06:54:29+00:00"
+      },
+      "must_not": [
+        "any ship or sailing vessel at sea or in the background"
+      ],
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "425eb100-a390-42d7-a13c-82d671e7bbc0",
+            "submitted": "2026-11-09T06:56:41+00:00",
+            "credits": 15.0
+          }
+        ],
+        "job_id": "425eb100-a390-42d7-a13c-82d671e7bbc0",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261109_065633_425eb100-a390-42d7-a13c-82d671e7bbc0.mp4",
+        "finished": "2026-11-09T07:00:32+00:00"
+      }
+    },
+    {
+      "n": 21,
+      "title": "The worst ocean",
+      "mode": "clip",
+      "pov": false,
+      "narration": "The boat was soaked every minute. Ice built up on her so thick she started to sink, and the men crawled out to chip it off. Their navigator, Worsley, saw the sun only a few times. Every reading was a guess.",
+      "narration_voiced": "The boat was soaked every minute. Ice built up on her so thick she started to sink, and the men crawled out to chip it off. Their navigator, Worsley, saw the sun only a few times. Every reading was a guess.",
+      "image_prompt": "Huge grey waves of the Southern Ocean, May 1916: the small canvas-decked lifeboat heavy with ice, a hooded man kneeling on the deck chipping ice with an axe",
+      "shots": [
+        "the small boat climbs a towering grey wave",
+        "a hooded figure chips thick ice from the deck with an axe",
+        "close on a brass sextant held up toward a pale sun in the clouds"
+      ],
+      "sound": "huge waves, wind, axe on ice",
+      "refs": [],
+      "voice_mood": "tense",
+      "pad": 0.8,
+      "must": [
+        "faces hidden by hoods"
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "61bef4bf-02c6-4259-bcbb-c09e3b6078a8",
+            "submitted": "2026-11-09T06:51:28+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "61bef4bf-02c6-4259-bcbb-c09e3b6078a8",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261109_065119_61bef4bf-02c6-4259-bcbb-c09e3b6078a8.png",
+        "finished": "2026-11-09T06:53:09+00:00"
+      },
+      "must_not": [
+        "any ship or sailing vessel at sea or in the background"
+      ],
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "aa5a032d-7812-4df8-b185-37dd78357497",
+            "submitted": "2026-11-09T06:56:41+00:00",
+            "credits": 15.0
+          }
+        ],
+        "job_id": "aa5a032d-7812-4df8-b185-37dd78357497",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261109_065634_aa5a032d-7812-4df8-b185-37dd78357497.mp4",
+        "finished": "2026-11-09T07:00:32+00:00"
+      }
+    },
+    {
+      "n": 22,
+      "title": "The wave",
+      "mode": "clip",
+      "pov": false,
+      "narration": "One night, Shackleton saw a white line in the sky and thought it was clearing weather. It wasn't. It was the top of the biggest wave he'd seen in twenty-six years at sea.",
+      "narration_voiced": "One night, Shackleton saw a white line in the sky and thought it was clearing weather. It wasn't. It was the top of the biggest wave he'd seen in twenty-six years at sea.",
+      "image_prompt": "Night on the Southern Ocean, 1916: an enormous white-crested wave rises over a tiny wooden lifeboat in the dark",
+      "shots": [
+        "a pale line on the dark horizon",
+        "the line grows into an enormous breaking wave",
+        "the tiny boat is lifted and buried in white water"
+      ],
+      "sound": "roaring wave, wind",
+      "refs": [],
+      "voice_mood": "dramatic",
+      "pad": 0.8,
+      "must": [
+        "no faces"
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "fe548abb-f02e-481f-b88d-aff4542375bc",
+            "submitted": "2026-11-09T06:51:28+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "fe548abb-f02e-481f-b88d-aff4542375bc",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261109_065121_fe548abb-f02e-481f-b88d-aff4542375bc.png",
+        "finished": "2026-11-09T06:53:09+00:00"
+      },
+      "must_not": [
+        "any ship or sailing vessel at sea or in the background"
+      ],
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "20756d17-e605-4eca-9fa7-413167147002",
+            "submitted": "2026-11-09T06:56:41+00:00",
+            "credits": 15.0
+          }
+        ],
+        "job_id": "20756d17-e605-4eca-9fa7-413167147002",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261109_065633_20756d17-e605-4eca-9fa7-413167147002.mp4",
+        "finished": "2026-11-09T07:00:32+00:00"
+      }
+    },
+    {
+      "n": 23,
+      "title": "Wrong side",
+      "mode": "clip",
+      "pov": false,
+      "narration": "On May 10th, after sixteen days, they landed on South Georgia. But on the wrong side. The whaling stations were on the far coast. The boat was too broken to sail around. Between them and us mountains no one had ever crossed.",
+      "narration_voiced": "On May 10th, after sixteen days, they landed on South Georgia. But on the wrong side. The whaling stations were on the far coast. The boat was too broken to sail around. Between them and us... mountains no one had ever crossed.",
+      "image_prompt": "A small rocky cove on the wild south coast of South Georgia, May 1916: the battered lifeboat pulled onto the shingle, steep glaciers and jagged snowy mountains rising behind",
+      "shots": [
+        "the battered boat lies on a rocky shingle beach",
+        "slow tilt up to jagged snowy mountains and glaciers",
+        "three figures seen from behind look up at the peaks"
+      ],
+      "sound": "surf, wind, seabirds",
+      "refs": [],
+      "voice_mood": "tense",
+      "pad": 0.8,
+      "must": [
+        "faces never visible"
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "4d01485a-4d20-420b-8ef2-1f52c9441659",
+            "submitted": "2026-11-09T06:53:51+00:00",
+            "credits": 2.75
+          }
+        ],
+        "history": [
+          {
+            "status": "done",
+            "attempts": [
+              {
+                "job_id": "58bbc89e-acc6-4cbe-8c5e-8a880d13fd91",
+                "submitted": "2026-11-09T06:51:28+00:00",
+                "credits": 2.75
+              }
+            ],
+            "job_id": "58bbc89e-acc6-4cbe-8c5e-8a880d13fd91",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261109_065120_58bbc89e-acc6-4cbe-8c5e-8a880d13fd91.png",
+            "finished": "2026-11-09T06:53:09+00:00",
+            "redo_reason": "arka planda olmaması gereken gemi",
+            "redo_at": "2026-11-09T06:53:27+00:00"
+          }
+        ],
+        "job_id": "4d01485a-4d20-420b-8ef2-1f52c9441659",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261109_065343_4d01485a-4d20-420b-8ef2-1f52c9441659.png",
+        "finished": "2026-11-09T06:54:29+00:00"
+      },
+      "must_not": [
+        "any ship or sailing vessel at sea or in the background"
+      ],
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "159a87d9-62e1-4e9a-b19d-ec2d6a6c362a",
+            "submitted": "2026-11-09T06:56:41+00:00",
+            "credits": 15.0
+          }
+        ],
+        "job_id": "159a87d9-62e1-4e9a-b19d-ec2d6a6c362a",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261109_065634_159a87d9-62e1-4e9a-b19d-ec2d6a6c362a.mp4",
+        "finished": "2026-11-09T07:00:32+00:00"
+      }
+    },
+    {
+      "n": 24,
+      "title": "Over the mountains",
+      "mode": "clip",
+      "pov": false,
+      "narration": "Shackleton, Worsley and Tom Crean went on foot. Thirty-six hours without stopping. They put screws in their boots to grip the ice. Once, lost on a mountainside at dusk, they sat down on a coiled rope and slid down the slope in the dark.",
+      "narration_voiced": "Shackleton, Worsley and Tom Crean went on foot. Thirty-six hours without stopping. They put screws in their boots to grip the ice. Once, lost on a mountainside at dusk, they sat down on a coiled rope and slid down the slope in the dark.",
+      "image_prompt": "Snowy mountain ridge on South Georgia at dusk, 1916: three roped men seen from behind cross a glacier under a pale moon",
+      "shots": [
+        "three roped men seen from behind trudge across a glacier",
+        "close on a boot with screws in the sole biting into ice",
+        "three figures slide down a long snowy slope at dusk"
+      ],
+      "sound": "wind, crunching ice, heavy breathing",
+      "refs": [],
+      "voice_mood": "tense",
+      "pad": 2.2,
+      "must": [
+        "faces never visible"
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "f06993df-bcda-4f3b-a586-b9546e134eff",
+            "submitted": "2026-11-09T06:53:51+00:00",
+            "credits": 2.75
+          }
+        ],
+        "history": [
+          {
+            "status": "done",
+            "attempts": [
+              {
+                "job_id": "f54b4838-44ca-498a-9122-c7845b289e3f",
+                "submitted": "2026-11-09T06:51:28+00:00",
+                "credits": 2.75
+              }
+            ],
+            "job_id": "f54b4838-44ca-498a-9122-c7845b289e3f",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261109_065120_f54b4838-44ca-498a-9122-c7845b289e3f.png",
+            "finished": "2026-11-09T06:53:09+00:00",
+            "redo_reason": "arka planda olmaması gereken gemi",
+            "redo_at": "2026-11-09T06:53:27+00:00"
+          }
+        ],
+        "job_id": "f06993df-bcda-4f3b-a586-b9546e134eff",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261109_065343_f06993df-bcda-4f3b-a586-b9546e134eff.png",
+        "finished": "2026-11-09T06:54:29+00:00"
+      },
+      "must_not": [
+        "any ship or sailing vessel at sea or in the background"
+      ],
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "e103cbdd-eb1a-431b-ad77-35c6eeaa5458",
+            "submitted": "2026-11-09T06:56:42+00:00",
+            "credits": 15.0
+          }
+        ],
+        "job_id": "e103cbdd-eb1a-431b-ad77-35c6eeaa5458",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261109_065634_e103cbdd-eb1a-431b-ad77-35c6eeaa5458.mp4",
+        "finished": "2026-11-09T07:00:32+00:00"
+      }
+    },
+    {
+      "n": 25,
+      "title": "The whistle",
+      "mode": "clip",
+      "pov": false,
+      "narration": "At seven in the morning, they heard it. The steam whistle at Stromness, calling us to work. The first sound from the outside world in seventeen months.",
+      "narration_voiced": "At seven in the morning, they heard it. The steam whistle at Stromness, calling us to work. The first sound from the outside world in seventeen months.",
+      "image_prompt": "the Stromness whaling station on South Georgia in 1916: wooden sheds and red-roofed huts, a tall brick chimney, rusty boilers, a wooden pier, snowy mountains rising steeply behind, grey sky, dawn: steam bursts from a whistle on top of a brick boiler house, the bay behind",
+      "shots": [
+        "a jet of white steam bursts from the station whistle at dawn",
+        "the sound echoes across the bay and the mountains",
+        "seen from behind, three ragged men on a high ridge look down at the station"
+      ],
+      "sound": "loud steam whistle echoing, wind",
+      "refs": [
+        "station"
+      ],
+      "voice_mood": "hopeful",
+      "pad": 0.8,
+      "must": [
+        "men only from behind and far away"
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "57a27995-c7a9-4be6-9c1b-4219ca10c9ca",
+            "submitted": "2026-11-09T06:51:28+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "57a27995-c7a9-4be6-9c1b-4219ca10c9ca",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261109_065121_57a27995-c7a9-4be6-9c1b-4219ca10c9ca.png",
+        "finished": "2026-11-09T06:53:09+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "f6a658ef-d847-44b3-a6a1-1c2c2818a4a6",
+            "submitted": "2026-11-09T06:56:42+00:00",
+            "credits": 15.0
+          }
+        ],
+        "job_id": "f6a658ef-d847-44b3-a6a1-1c2c2818a4a6",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261109_065633_f6a658ef-d847-44b3-a6a1-1c2c2818a4a6.mp4",
+        "finished": "2026-11-09T07:00:32+00:00"
+      }
+    },
+    {
+      "n": 26,
+      "title": "My name is Shackleton",
+      "mode": "clip",
+      "pov": false,
+      "narration": "That was the morning I saw them. Our station manager knew Shackleton well. He looked at these three black-faced strangers and said: Who the hell are you? The man in the middle said quietly: My name is Shackleton. I saw grown men turn away and cry.",
+      "narration_voiced": "That was the morning I saw them. Our station manager knew Shackleton well. He looked at these three black-faced strangers and said: Who the hell are you? The man in the middle said quietly: My name is Shackleton. I saw grown men turn away and cry.",
+      "image_prompt": "the Stromness whaling station on South Georgia in 1916: wooden sheds and red-roofed huts, a tall brick chimney, rusty boilers, a wooden pier, snowy mountains rising steeply behind, grey sky, morning: Nils Halvorsen (Norwegian whaling station worker of 24, broad shoulders, ruddy weathered face, short reddish-blond beard, pale blue eyes, knitted grey wool cap, thick dark wool sweater under a worn oilskin coat, leather work gloves) stands by a wooden shed watching, behind him in soft focus three ragged men stand in front of the manager's house",
+      "shots": [
+        "the young whaler watches with wide eyes",
+        "in soft focus behind him, three ragged men stand at the manager's door, seen from behind",
+        "close on the whaler's face as his eyes fill with tears"
+      ],
+      "sound": "quiet wind, a door opening",
+      "refs": [
+        "nils",
+        "station"
+      ],
+      "voice_mood": "warm",
+      "pad": 2.2,
+      "must": [
+        "only Nils's face is visible; the three men seen only from behind"
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "3e2697c2-eb6b-44f2-a4d9-f6b5f34c9763",
+            "submitted": "2026-11-09T06:51:28+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "3e2697c2-eb6b-44f2-a4d9-f6b5f34c9763",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261109_065119_3e2697c2-eb6b-44f2-a4d9-f6b5f34c9763.png",
+        "finished": "2026-11-09T06:53:09+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "b888b2d5-cd80-486e-8cb3-51925344f315",
+            "submitted": "2026-11-09T06:56:42+00:00",
+            "credits": 15.0
+          }
+        ],
+        "job_id": "b888b2d5-cd80-486e-8cb3-51925344f315",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261109_065634_b888b2d5-cd80-486e-8cb3-51925344f315.mp4",
+        "finished": "2026-11-09T07:00:32+00:00"
+      }
+    },
+    {
+      "n": 27,
+      "title": "All safe, all well",
+      "mode": "clip",
+      "pov": false,
+      "narration": "It took four tries to reach Elephant Island through the ice. On August 30th, 1916, a small Chilean steamer, the Yelcho, came into the bay. Shackleton counted the figures on the beach. Twenty-two. All safe. All well.",
+      "narration_voiced": "It took four tries to reach Elephant Island through the ice. On August 30th, 1916, a small Chilean steamer, the Yelcho, came into the bay. Shackleton counted the figures on the beach. Twenty-two. All safe. All well.",
+      "image_prompt": "Elephant Island, 30 August 1916: a small steam tug with a single funnel anchored off a black beach under ice cliffs, a rowing boat heading toward the shore, small figures waving on the beach",
+      "shots": [
+        "a small steamer comes into view through the mist",
+        "a rowing boat heads toward the beach",
+        "tiny figures on the beach wave their arms"
+      ],
+      "sound": "ship's horn, waves, distant cheering",
+      "refs": [],
+      "voice_mood": "hopeful",
+      "pad": 0.8,
+      "must": [
+        "men small and distant, no faces"
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "8d5f5c59-90f1-4396-821d-dddd57e5126e",
+            "submitted": "2026-11-09T06:51:54+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "8d5f5c59-90f1-4396-821d-dddd57e5126e",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261109_065147_8d5f5c59-90f1-4396-821d-dddd57e5126e.png",
+        "finished": "2026-11-09T06:54:29+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "c1acd69a-bc6c-476a-8967-e05bfd40e0d7",
+            "submitted": "2026-11-09T06:57:12+00:00",
+            "credits": 15.0
+          }
+        ],
+        "job_id": "c1acd69a-bc6c-476a-8967-e05bfd40e0d7",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261109_065705_c1acd69a-bc6c-476a-8967-e05bfd40e0d7.mp4",
+        "finished": "2026-11-09T07:00:32+00:00"
+      }
+    },
+    {
+      "n": 28,
+      "title": "How they survived",
+      "mode": "clip",
+      "pov": false,
+      "narration": "People ask me how they did it. I think it was this. Their leader never let a single man believe it was over. Not on the ice. Not in the boats. Not for one day.",
+      "narration_voiced": "People ask me how they did it. I think it was this. Their leader never let a single man believe it was over. Not on the ice. Not in the boats. Not for one day.",
+      "image_prompt": "a small camp of five worn canvas bell tents and three wooden lifeboats on a flat snowy ice floe in the Weddell Sea, 1916, pale grey sky, golden evening light: men in heavy clothing seen from behind stand together on the ice looking toward a low sun",
+      "shots": [
+        "men seen from behind stand shoulder to shoulder on the ice",
+        "the low sun glows on the ice",
+        "slow pull back over the tiny camp"
+      ],
+      "sound": "soft wind",
+      "refs": [
+        "camp"
+      ],
+      "voice_mood": "reflective",
+      "pad": 0.8,
+      "must": [
+        "faces never visible"
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "ae51a03c-6a53-4841-9a5a-66bd2c4e3e0f",
+            "submitted": "2026-11-09T06:51:54+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "ae51a03c-6a53-4841-9a5a-66bd2c4e3e0f",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261109_065148_ae51a03c-6a53-4841-9a5a-66bd2c4e3e0f.png",
+        "finished": "2026-11-09T06:54:29+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "1ea63af0-90b3-4d75-9016-eb15f53fa1d8",
+            "submitted": "2026-11-09T06:57:12+00:00",
+            "credits": 15.0
+          }
+        ],
+        "job_id": "1ea63af0-90b3-4d75-9016-eb15f53fa1d8",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261109_065705_1ea63af0-90b3-4d75-9016-eb15f53fa1d8.mp4",
+        "finished": "2026-11-09T07:01:27+00:00"
+      }
+    },
+    {
+      "n": 29,
+      "title": "Endurance",
+      "mode": "clip",
+      "pov": false,
+      "narration": "I stayed in the whaling trade for thirty more years. Whenever a hard winter came, I'd think of twenty-eight men on the ice and one word. Endurance.",
+      "narration_voiced": "I stayed in the whaling trade for thirty more years. Whenever a hard winter came, I'd think of twenty-eight men on the ice... and one word. Endurance.",
+      "image_prompt": "the Stromness whaling station on South Georgia in 1916: wooden sheds and red-roofed huts, a tall brick chimney, rusty boilers, a wooden pier, snowy mountains rising steeply behind, grey sky in winter, 1940s: an older Nils Halvorsen (Norwegian whaling station worker of about 55, broad shoulders, ruddy weathered face, grey beard, pale blue eyes, knitted grey wool cap, thick dark wool sweater under a worn oilskin coat, leather work gloves) stands on the pier looking out at the snowy bay at sunset",
+      "shots": [
+        "the older whaler stands on the pier at sunset",
+        "close on his lined face, eyes on the horizon",
+        "wide view of the snowy bay and the mountains"
+      ],
+      "sound": "wind, gulls, water",
+      "refs": [
+        "nils",
+        "station"
+      ],
+      "voice_mood": "reflective",
+      "pad": 2.2,
+      "must": [
+        "exactly one man"
+      ],
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "7d0e47ba-95a9-457e-b8c5-98e7a5f86f6c",
+            "submitted": "2026-11-09T06:51:54+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "7d0e47ba-95a9-457e-b8c5-98e7a5f86f6c",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261109_065148_7d0e47ba-95a9-457e-b8c5-98e7a5f86f6c.png",
+        "finished": "2026-11-09T06:54:29+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "809623eb-4602-4bb7-98a7-c9ad3de574b6",
+            "submitted": "2026-11-09T06:57:12+00:00",
+            "credits": 15.0
+          }
+        ],
+        "job_id": "809623eb-4602-4bb7-98a7-c9ad3de574b6",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261109_065705_809623eb-4602-4bb7-98a7-c9ad3de574b6.mp4",
+        "finished": "2026-11-09T07:01:27+00:00"
+      }
+    },
+    {
+      "n": 30,
+      "title": "Subscribe",
+      "mode": "clip",
+      "pov": false,
+      "narration": "If you've stayed with me this far, I think this story stayed with you too. If it did, leave a like and subscribe. That's how I know you want more stories like this one, and it helps them reach more people.",
+      "narration_voiced": "If you've stayed with me this far, I think this story stayed with you too. If it did, leave a like and subscribe. That's how I know you want more stories like this one, and it helps them reach more people.",
+      "image_prompt": "the Stromness whaling station on South Georgia in 1916: wooden sheds and red-roofed huts, a tall brick chimney, rusty boilers, a wooden pier, snowy mountains rising steeply behind, grey sky, golden hour: Nils Halvorsen (Norwegian whaling station worker of 24, broad shoulders, ruddy weathered face, short reddish-blond beard, pale blue eyes, knitted grey wool cap, thick dark wool sweater under a worn oilskin coat, leather work gloves) sits on a wooden crate by the pier and looks straight toward the viewer with a small warm smile",
+      "shots": [
+        "the young whaler looks toward the viewer and nods slightly",
+        "gulls drift over the bay behind him",
+        "the camera slowly pulls back over the quiet station"
+      ],
+      "sound": "soft wind, gulls",
+      "refs": [
+        "nils",
+        "station"
+      ],
+      "voice_mood": "outro",
+      "pad": 0.8,
+      "beat": "SABİT KAPANIŞ ÇAĞRISI",
+      "must": [
+        "exactly one man"
+      ],
+      "own_rules": true,
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "5029bad2-562c-486d-8052-678831e23ee7",
+            "submitted": "2026-11-09T06:51:54+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "5029bad2-562c-486d-8052-678831e23ee7",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261109_065148_5029bad2-562c-486d-8052-678831e23ee7.png",
+        "finished": "2026-11-09T06:54:29+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "a0fb47b7-b631-4415-894c-838aea844f72",
+            "submitted": "2026-11-09T06:57:12+00:00",
+            "credits": 15.0
+          }
+        ],
+        "job_id": "a0fb47b7-b631-4415-894c-838aea844f72",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261109_065705_a0fb47b7-b631-4415-894c-838aea844f72.mp4",
+        "finished": "2026-11-09T07:01:27+00:00"
+      }
+    },
+    {
+      "n": 31,
+      "title": "What comes next",
+      "mode": "clip",
+      "pov": false,
+      "narration": "In 1897, a hundred thousand men set out for the Klondike gold fields in the Yukon. To get there, they had to haul a ton of supplies over a frozen mountain pass. Most never found any gold. That story is next.",
+      "narration_voiced": "In 1897, a hundred thousand men set out for the Klondike gold fields in the Yukon. To get there, they had to haul a ton of supplies over a frozen mountain pass. Most never found any gold. That story is next.",
+      "image_prompt": "Chilkoot Pass, Alaska, winter 1898: a long line of men carrying heavy packs climbs a steep snowy mountain slope in single file",
+      "shots": [
+        "a long line of men with heavy packs climbs a steep snowy slope",
+        "close on boots cutting steps into the frozen snow",
+        "wide view of the endless line disappearing into the clouds"
+      ],
+      "sound": "wind, heavy breathing, boots in snow",
+      "refs": [],
+      "voice_mood": "intrigue",
+      "pad": 0.8,
+      "beat": "SONRAKİ BÖLÜM",
+      "must": [
+        "1898 clothing and gear",
+        "no recognizable faces"
+      ],
+      "must_not": [
+        "modern clothing or gear"
+      ],
+      "own_rules": true,
+      "image": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "7ce2863b-aec7-4eee-971a-ea4ed4f607a2",
+            "submitted": "2026-11-09T06:51:54+00:00",
+            "credits": 2.75
+          }
+        ],
+        "job_id": "7ce2863b-aec7-4eee-971a-ea4ed4f607a2",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261109_065148_7ce2863b-aec7-4eee-971a-ea4ed4f607a2.png",
+        "finished": "2026-11-09T06:54:29+00:00"
+      },
+      "clip": {
+        "status": "done",
+        "attempts": [
+          {
+            "job_id": "ac947b8e-1cf9-4d97-b839-14238f7349a5",
+            "submitted": "2026-11-09T06:57:12+00:00",
+            "credits": 15.0
+          }
+        ],
+        "job_id": "ac947b8e-1cf9-4d97-b839-14238f7349a5",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JNaSHcr3JhGhtM4azgveIkjvu0/hf_20261109_065705_ac947b8e-1cf9-4d97-b839-14238f7349a5.mp4",
+        "finished": "2026-11-09T07:01:27+00:00"
+      }
+    }
+  ],
+  "max_credits": 600
+}
