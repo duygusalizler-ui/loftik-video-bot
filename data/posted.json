@@ -439,6 +439,14 @@
       "mod": "gonderi",
       "kare": 4,
       "bot": false
+    },
+    {
+      "url": "https://www.loftikayakkabi.com/urun/mn2433-sst-erkek-bot-taba",
+      "title": "MN2433 - SST Erkek Bot TABA",
+      "posted_at": "2026-11-27T12:38:11.104554+00:00",
+      "mod": "gonderi",
+      "kare": 4,
+      "bot": true
     }
   ]
 }
