@@ -150,10 +150,11 @@
     40926941,
     5229966,
     6132713,
-    35459385
+    35459385,
+    5229584,
+    11562575
   ],
   "themes": [
-    "senior_dog",
     "paws",
     "puppy_to_senior",
     "walks",
@@ -172,7 +173,8 @@
     "owner_love",
     "everyday_moments",
     "senior_dog",
-    "paws"
+    "paws",
+    "puppy_to_senior"
   ],
   "runs": [
     {
@@ -786,6 +788,14 @@
       "stock": [
         "https://www.pexels.com/video/a-close-up-of-a-dog-getting-a-haircut-6132713/",
         "https://www.pexels.com/video/golden-retriever-walking-along-sunny-lakeside-35459385/"
+      ]
+    },
+    {
+      "at": "20261127_173143",
+      "theme": "puppy_to_senior",
+      "stock": [
+        "https://www.pexels.com/video/close-up-video-of-a-dog-5229584/",
+        "https://www.pexels.com/video/vertical-video-of-sleeping-puppy-11562575/"
       ]
     }
   ]
