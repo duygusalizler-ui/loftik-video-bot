@@ -152,10 +152,11 @@
     6132713,
     35459385,
     5229584,
-    11562575
+    11562575,
+    28874226,
+    35481318
   ],
   "themes": [
-    "paws",
     "puppy_to_senior",
     "walks",
     "owner_love",
@@ -174,7 +175,8 @@
     "everyday_moments",
     "senior_dog",
     "paws",
-    "puppy_to_senior"
+    "puppy_to_senior",
+    "walks"
   ],
   "runs": [
     {
@@ -796,6 +798,14 @@
       "stock": [
         "https://www.pexels.com/video/close-up-video-of-a-dog-5229584/",
         "https://www.pexels.com/video/vertical-video-of-sleeping-puppy-11562575/"
+      ]
+    },
+    {
+      "at": "20261128_161609",
+      "theme": "walks",
+      "stock": [
+        "https://www.pexels.com/video/sunset-glow-behind-a-lone-tree-in-field-28874226/",
+        "https://www.pexels.com/video/dog-walking-on-coastal-pathway-by-the-ocean-35481318/"
       ]
     }
   ]
